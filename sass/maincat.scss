@@ -1,0 +1,60 @@
+.maincat{
+	position:relative;
+	margin-bottom: 54px;
+	.maincat__item{
+		color:#000;
+		font-weight:600;
+		font-size:14px;
+		line-height:20px;
+		text-align:center;
+		background-color: $white;
+	}
+	.maincat__wrap{
+		display:block; 
+		border:1px solid $lightGray; 
+		margin: -1px 0 0 -1px; 
+		position: relative;
+		background-color: $white;
+	}
+	.maincat__wrap:hover{
+		border-color:$orange; 
+		z-index: 1;
+	}
+
+	.maincat__title{padding-bottom:18px;min-height:65px;width:80%;margin:0 auto}
+	.maincat__image{height:195px;line-height:195px}
+	.maincat__image img{vertical-align:middle;line-height:195px;max-height:195px;overflow:hidden;}
+
+	.maincat__all{position:absolute;top:0;left:0;margin:auto;right:0;bottom:0;width:140px;height:98px;text-align:left}
+	.maincat__all span{border-bottom:1px solid rgba(0,0,0,0.4);font-size:32px;font-weight:bolder;line-height:36px}
+	.maincat__all span:before,
+	.maincat__all span:after{content:' ';display:block;position:absolute;right:-9px;width:11px;height:20px;bottom:30px;background:url(../img/all-cat.png) no-repeat 0 0;opacity:1}
+	.maincat__all span:after{background-position:0 -20px;opacity:0}
+
+	.maincat__item:hover .maincat__all span{border-color:rgba(240,170,50,0.4)}
+	.maincat__item:hover .maincat__all span:after{opacity:1}
+	.maincat__item:hover .maincat__all span:before{opacity:0}
+}
+
+.maincat_dark{
+	.maincat__pseudo-lnk{
+		color: $blue;
+		display: inline-block;
+		border-bottom: 1px solid $blue;
+	}
+	.maincat__subtext{
+		color: $gray;
+		margin-bottom: 10px;
+	}
+	.maincat__wrap:hover{
+		background-color: $dark;
+		border: $brdLnk3;
+		.maincat__title{
+			color: $white;	
+		}
+		.maincat__pseudo-lnk{
+			color: $orange;
+			border-bottom: 1px solid $orange;
+		}
+	}	
+}
