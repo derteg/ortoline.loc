@@ -4,11 +4,11 @@ Error: Undefined variable: "$white".
 
 1: .product{
 2: 	background-color: $white;
-3: 	padding: 30px 66px;
-4: 	.title__h1_s2{
-5: 
-6: 	}
-7: }
+3: 	padding: 30px 66px 64px;
+4: 	margin-bottom: 80px;
+5: }
+6: .product__row{
+7: 	.pl20{
 
 Backtrace:
 c:/MAMP/htdocs/ortoline.loc/sass/product.scss:2
@@ -65,4 +65,4 @@ c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 2 of c:/MAMP/htdocs/ortoline.loc/sass/product.scss\A \A 1: .product{\A 2: 	background-color: $white;\A 3: 	padding: 30px 66px;\A 4: 	.title__h1_s2{\A 5: \A 6: 	}\A 7: }"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 2 of c:/MAMP/htdocs/ortoline.loc/sass/product.scss\A \A 1: .product{\A 2: 	background-color: $white;\A 3: 	padding: 30px 66px 64px;\A 4: 	margin-bottom: 80px;\A 5: }\A 6: .product__row{\A 7: 	.pl20{"; }

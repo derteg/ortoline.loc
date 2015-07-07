@@ -1,38 +1,13 @@
-$(function(){
 
-	// var isOpera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
-	// var isFirefox = typeof InstallTrigger !== 'undefined'; 
-	// var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
-	// var isChrome = !!window.chrome && !isOpera;              
-	// var isIE = /*@cc_on!@*/false || !!document.documentMode;
-	
-	// var is_touch_device = 'ontouchstart' in document.documentElement;
-	// var is_windows_touch = false;
-	// if (navigator.userAgent.toLowerCase().indexOf("windows phone") != -1) {is_windows_touch = true;}
-	// var isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
-	
-	// if (isOpera) {$('html').addClass('opera')}
-	// if (isFirefox) {$('html').addClass('ff')}
-	// if (isSafari) {$('html').addClass('safari')}
-	// if (isChrome) {$('html').addClass('chrome')}
-	// if (isIE) {$('html').addClass('ie')}
-	
-	// function isIEVersion() {
- //  	var myNav = navigator.userAgent.toLowerCase();
- //  	return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
-	// }
-	
-	// if(isIEVersion() == 9) {$('html').addClass('ie9');}
-	
-	// if (is_touch_device) {$('html').addClass('touch');}
-	// if (is_windows_touch) {$('html').addClass('wp');}
-	// if (isAndroid) {$('html').addClass('android');}
-	
-	
-	
-	
+
+
+
+
+$(function(){
 	// ! width classes
-	
+	$('.js-product__slider_for').productSlider();
+
+
 	function widthClasses() {
 		var $html = $('html');
 		
@@ -184,17 +159,7 @@ $(function(){
 
 		// fourth slider
 		
-		var slider4 = $('.js-product__slider').Peppermint({
-			speed: 300,
-			touchSpeed: 300,
-			slideshow: false,
-			slideshowInterval: 4000,
-			stopSlideshowAfterInteraction: false,
-			dots:true,
-			onSetup: function(n) {
-				console.log(this);
-			}
-		});
+		
 		
 		// $('.new-arrow--right').on('click', function(e){
 		// 	e.preventDefault();
@@ -342,6 +307,34 @@ $(function(){
 	
 	
 });
+
+
+
+(function($){
+	$.fn.productSlider = function(){
+		var $sliderFor = this,
+			$sliderNav = $sliderFor.next();
+
+		$sliderFor.slick({
+			slideToShow: 1,
+			slideToScroll: 1,
+			arrows: false,
+			fade: true,
+			asNavFor: '.js-product__slider_nav'
+		});
+
+		$sliderNav.slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			asNavFor: '.js-product__slider_for',
+			dots: true,
+			centerMode: true,
+			focusOnSelect: true
+		})
+	}
+})(jQuery);
+
+
 /*!
  * Less - Leaner CSS v1.7.3
  * http://lesscss.org
