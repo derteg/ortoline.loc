@@ -1,21 +1,21 @@
 /*
-Error: Undefined variable: "$blue".
-        on line 15 of c:/MAMP/htdocs/ortoline.loc/sass/breadcrumbs.scss
+Error: Undefined variable: "$orange".
+        on line 13 of c:/MAMP/htdocs/ortoline.loc/sass/info__tabs.scss
 
-10: 	.breadcrumbs__item:first-child{
-11: 		border-left: none;
-12: 		padding-left: 0;
-13: 	}
-14: 	.breadcrumbs__link{
-15: 		color: $blue;
-16: 		border-color: $blue;		
-17: 	}
-18: 	.breadcrumbs__link:hover{
-19: 		color: $orange;
-20: 		border-color: $orange;
+8: 	cursor: pointer;
+9: 	.text{
+10: 		border-bottom: 1px dotted transparent;
+11: 	}
+12: 	.num{
+13: 		color: $orange;
+14: 		margin-left: 4px;
+15: 	}
+16: }
+17: .info-tabs__item.current{
+18: 	background-color: #f3f0eb;
 
 Backtrace:
-c:/MAMP/htdocs/ortoline.loc/sass/breadcrumbs.scss:15
+c:/MAMP/htdocs/ortoline.loc/sass/info__tabs.scss:13
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
@@ -80,4 +80,4 @@ c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$blue\".\A         on line 15 of c:/MAMP/htdocs/ortoline.loc/sass/breadcrumbs.scss\A \A 10: 	.breadcrumbs__item:first-child{\A 11: 		border-left: none;\A 12: 		padding-left: 0;\A 13: 	}\A 14: 	.breadcrumbs__link{\A 15: 		color: $blue;\A 16: 		border-color: $blue;		\A 17: 	}\A 18: 	.breadcrumbs__link:hover{\A 19: 		color: $orange;\A 20: 		border-color: $orange;"; }
+  content: "Error: Undefined variable: \"$orange\".\A         on line 13 of c:/MAMP/htdocs/ortoline.loc/sass/info__tabs.scss\A \A 8: 	cursor: pointer;\A 9: 	.text{\A 10: 		border-bottom: 1px dotted transparent;\A 11: 	}\A 12: 	.num{\A 13: 		color: $orange;\A 14: 		margin-left: 4px;\A 15: 	}\A 16: }\A 17: .info-tabs__item.current{\A 18: 	background-color: #f3f0eb;"; }

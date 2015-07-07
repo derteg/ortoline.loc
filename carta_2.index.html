@@ -3,9 +3,9 @@
     
     <head>
         <meta charset="utf-8" />
-        <meta content="width=1000px, target-densitydpi=device-dpi" name="viewport"
-        />
+        <meta content="width=1000px, target-densitydpi=device-dpi" name="viewport" />
         <meta content="telephone=no" name="format-detection" />
+        <title>Ortoline :: Каталог товаров</title>
         <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
         <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <!--[if lt IE 9]>
@@ -15,7 +15,10 @@
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,800&amp;subset=latin,cyrillic-ext"
         rel="stylesheet" type="text/css" />
         <link href="css/style.css" rel="stylesheet" type="text/css" />
-        <title>Ortoline</title>
+
+        <script src="js/libs/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/libs/jquery.min.js">\x3C/script>')</script>
+        <script src="js/scripts.js"></script>
     </head>
     
     <body>
@@ -36,6 +39,7 @@
                     </div>
                 </header>
                 <!--header-->
+                
                 <div class="mainmenu clearfix">
                     <div class="inside">
                         <ul class="mainmenu__list">
@@ -59,134 +63,201 @@
                             <a class="button button--blue" href="#0"><span>Каталог товаров</span></a>
                             <a class="button button--orange" href="#0"><img src="img/ic-location.png" alt="ic-location" width="12" /><span>Наши салоны</span></a>
                         </div>
+                    </div>
+                </div>
+                
+                <div class="bg_01">
+                    <div class="inside">
+                        <form class="search__menu">
+                            <a href="#0" class="button button--blue search__menu_btn">Каталог товаров</a>
+                        
+                            <div class="search__menu_field">
+                                <input class="search__menu_inp" type="search" placeholder="НАЙТИ В КАТАЛОГЕ ">
+                                <div class="search__menu_item">
+                                    <p>Например, <a href="#0" class="example">Корсеты (бандажи)</a></p>
+                                </div>
+                            </div>
+                        </form>                    
+                        
+                            <section class="product clearfix">
+                                <div class="breadcrumbs clearfix">
+                                    <ul class="breadcrumbs__list">
+                                        <li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link">Главная</a></li>
+                                        <li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link">Наш каталог</a></li>
+                                        <li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link">Ортопедическая обувь</a></li>
+                                        <li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link current">Ортопедическая обувь Салво 4039</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <h1 class="title__h1_s2">Ортопедическая обувь Салво 4039</h1>
+                                <div class="product__row clearfix">
+                                    <div class="product__info col col--50">
+                                        <div class="product__slider js-product__slider peppermint peppermint-inactive">
+                                          <figure>
+                                              <img src="pic/pic_07.jpg" height="304" width="500" alt="">
+                                          </figure>
+                                        
+                                          <figure>
+                                              <img src="pic/pic_07.jpg" alt="" width="500" height="304">
+                                          </figure>
+                                        
+                                          <figure>
+                                              <img src="pic/pic_07.jpg" alt="" width="500" height="304">
+                                          </figure>
+                                        </div>
+                                    
+                                        <div class="product__info-nav">
+                                            <a class="button button--gray">Таблица размеров</a>
+                                            <div class="social social_gray">
+                                                <ul class="social__list">
+                                                    <li class="social__item vk"><span class="ico"></span><span class="num">+1</span></li>
+                                                    <li class="social__item fb"><span class="ico"></span><span class="num">+2</span></li>
+                                                    <li class="social__item gp"><span class="ico"></span><span class="num">0</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="product__aside col col--50">
+                                        <div class="product__settings">
+                                            <h4 class="product__sizes-title">Выберите размер:</h4>
+                                            <ul class="product__sizes-list">
+                                                <li class="product__sizes-item">35</li>
+                                                <li class="product__sizes-item">36</li>
+                                                <li class="product__sizes-item current">37</li>
+                                                <li class="product__sizes-item">38</li>
+                                                <li class="product__sizes-item">39</li>
+                                                <li class="product__sizes-item">40</li>
+                                                <li class="product__sizes-item">41</li>
+                                                <li class="product__sizes-item">42</li>
+                                                <li class="product__sizes-item">43</li>
+                                                <li class="product__sizes-item">44</li>
+                                                <li class="product__sizes-item">45</li>
+                                                <li class="product__sizes-item">46</li>
+                                                <li class="product__sizes-item">47</li>
+                                                <li class="product__sizes-item">48</li>
+                                            </ul>
+                                        
+                                            <div class="product__amount">
+                                                <p class="product__amount-name">Кол-во:</p>
+                                                <div class="product__amount-wrap">
+                                                    <span class="product__amount-btn"><i class="minus"></i></span>
+                                                    <span class="product__amount-sum">1</span>
+                                                    <span class="product__amount-btn"><i class="plus"></i></span>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="product__color">
+                                                <p class="product__color-name">Цвет:</p>
+                                                <div class="product__color-wrap">
+                                                    <span class="product__colorize current"><i class="color_01"></i></span>
+                                                    <span class="product__colorize"><i class="color_02"></i></span>
+                                                    <span class="product__colorize"><i class="color_03"></i></span>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="product__price">
+                                                <span class="price">2 990 </span>
+                                                <span class="price__old"> 3 590 </span>
+                                            </div>
+                                        
+                                            <div class="button button--blue button--round">В корзину</div>
+                                        </div>
+                                    
+                                        <p class="product__brand">Бренд: <img src="pic/pic_08.jpg" height="82" width="201" alt=""></p>                                
+                                    </div>
+                                </div>
+                        
+                                <div class="product__row clearfix">
+                                    <div class="info-tabs col col--50">
+                                        <ul class="info-tabs__list">
+                                            <li class="info-tabs__item current"><span class="text">Описание</span></li>
+                                            <li class="info-tabs__item"><span class="text">Отзывы <span class="num">3</span></span></li>
+                                            <li class="info-tabs__item"><span class="text">Наличие в салонах <span class="num">4</span></span></li>
+                                        </ul>
+                                    
+                                        <div class="info-tabs__text">
+                                            <p>Суперлегкие мужские туфли из нежной телячьей кожи, со съемной ортопедической стелькой (может заменена на индивидуальную)  Обеспечивают комфорт и правильную постановку стоп.</p>
+                                    
+                                            <h4>Особенности</h4>
+                                            <ul>
+                                                <li>Стиль</li>
+                                                <li>Удобство</li>
+                                                <li>Качество материалов</li>
+                                                <li>Дизайн</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="product__info_text col col--50">
+                                        <h4>Компенсация и возмещение</h4>
+                                        <p>Valleverde начиная с семидесятых годов находится в Coriano, деревне расположенной на холмах между Римини и Риччоне. Фабрика спроектировала и разработала ряд патентов удобной обуви, сочетающей в себе четыре основные характеристики: стиль, удобство, качество материалов и дизайна. </p>
+                                    
+                                        <p>Производство такой обуви требует соблюдения определенных норм и стандартов, должно отвечать специфике разработки моделей обуви данной категории. Каждая пара должна разрабатываться специально с учетом индивидуальных особенностей стопы, при необходимости требуется проведение консультации специалистов. </p>
+                                    
+                                        <p><a href="#0">Узнать больше о производителе</a></p>
+                                    </div>
+                                </div>
+                            </section>
+                        
+                            <section class="product__sub clearfix">
+                                <h3 class="product__sub-title">С этим товаром рекомендуем</h3>
+                                <div class="product__sub-card__list clearfix">
+                                    <figure class="product__sub-card__item col col--25">
+                                        <div class="wrap">
+                                            <div class="pic">
+                                                <div class="pic__cont">
+                                                    <img src="pic/pic_09.jpg" height="164" width="185" alt="">
+                                                </div>
+                                            </div>
+                                            <figcaption>Ортопедическая обувь МАЯМИ женская. Цвет: синий</figcaption>
+                                            <p class="product__sub-price">4 100</p>
+                                            <div class="product__sub-price__btn">В корзину</div>
+                                        </div>
+                                    </figure>
+                                    <figure class="product__sub-card__item col col--25">
+                                        <div class="wrap">
+                                            <div class="pic">
+                                                <div class="pic__cont">
+                                                    <img src="pic/pic_10.jpg" alt="" width="183" height="179">
+                                                </div>
+                                            </div>
+                                            <figcaption>Детская ортопедическая обувь ORTEK (утепленные). Цвет: сирень/розовый </figcaption>
+                                            <p class="product__sub-price">1 250</p>
+                                        </div>
+                                        <div class="product__sub-price__btn">В корзину</div>
+                                    </figure>
+                                    <figure class="product__sub-card__item col col--25">
+                                        <div class="wrap">
+                                            <div class="pic">
+                                                <div class="pic__cont">
+                                                    <img src="pic/pic_11.jpg" alt="" width="176" height="150">
+                                                </div>
+                                            </div>
+                                            <figcaption>Пояс согревающий противорадикулитный (Италия)</figcaption>
+                                            <p class="product__sub-price">1 250</p>
+                                            <div class="product__sub-price__btn">В корзину</div>
+                                        </div>
+                                    </figure>
+                                    <figure class="product__sub-card__item col col--25">
+                                        <div class="wrap">
+                                            <div class="pic">
+                                                <div class="pic__cont">
+                                                    <img src="pic/pic_11.jpg" alt="" width="176" height="150">
+                                                </div>
+                                            </div>
+                                            <figcaption>Пояс согревающий противорадикулитный (Италия)</figcaption>
+                                            <p class="product__sub-price">1 250</p>
+                                            <div class="product__sub-price__btn">В корзину</div>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </section>
+
+                    </div>
                 </div>
             </div>
-            <section class="maincat maincat_dark clearfix">
-                <div class="inside">
-                <div class="breadcrumbs clearfix">
-                    <ul class="breadcrumbs__list">
-                        <li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link">Главная</a></li>
-                        <li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link">Информация</a></li>
-                        <li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link current">Производители</a></li>
-                    </ul>
-                </div>
-                <h1 class="title_h1">Производители</h1>
-                    <div class="col col--75" data-inrow="3" data-max="parent">
-                        <div class="col col--33 maincat__item">
-                            <a class="maincat__wrap" data-max="child" href="#0">
-                                <div class="maincat__image">
-                                    <img src="pic/pic_01.png" width="168" height="73" />
-                                </div>
-                                <p class="maincat__pseudo-lnk">SanaGens</p>
-                                <p class="maincat__subtext">Италия</p>
-                                <h6 class="maincat__title">Ортопедическая обувь</h6>
-                            </a>
-                        </div>
-                        <div class="col col--33 maincat__item">
-                            <a class="maincat__wrap" data-max="child" href="#0">
-                                <div class="maincat__image">
-                                    <img src="pic/pic_02.png" width="159" height="71" />
-                                </div>
-                                <p class="maincat__pseudo-lnk">Valleverde</p>
-                                <p class="maincat__subtext">Италия</p>
-                                <h6 class="maincat__title">Модельная ортопедическая обувь класса ЛЮКС </h6>
-                            </a>
-                        </div>
-                        <div class="col col--33 maincat__item">
-                            <a class="maincat__wrap" data-max="child" href="#0">
-                                <div class="maincat__image">
-                                    <img src="pic/pic_03.png" height="82" width="165" />
-                                </div>
-                                <p class="maincat__pseudo-lnk">Inovasan</p>
-                                <p class="maincat__subtext">Италия</p>
-                                <h6 class="maincat__title">Ортопедическая обувь</h6>
-                            </a>
-                        </div>
-                        <div class="col col--33 maincat__item">
-                            <a class="maincat__wrap" data-max="child" href="#0">
-                                <div class="maincat__image">
-                                    <img src="pic/pic_04.png" height="109" width="171" />
-                                </div>
-                                <p class="maincat__pseudo-lnk">Vital</p>
-                                <p class="maincat__subtext">Австрия</p>
-                                <h6 class="maincat__title">Ортопедическая обувь</h6>
-                            </a>
-                        </div>
-                        <div class="col col--33 maincat__item">
-                            <a class="maincat__wrap" data-max="child" href="#0">
-                                <div class="maincat__image">
-                                    <img src="pic/pic_05.png" height="93" width="173" />
-                                </div>
-                                <p class="maincat__pseudo-lnk">ORTMANN</p>
-                                <p class="maincat__subtext">Германия</p>
-                                <h6 class="maincat__title">Ортопедическая обувь</h6>
-                            </a>
-                        </div>
-                        <div class="col col--33 maincat__item">
-                            <a class="maincat__wrap" data-max="child" href="#0">
-                                <div class="maincat__image">
-                                    <img src="pic/pic_06.png" width="163" height="85" />
-                                </div>
-                                <p class="maincat__pseudo-lnk">РИНТЕК</p>
-                                <p class="maincat__subtext">Италия</p>
-                                <h6 class="maincat__title">Ортопедическая обувь</h6>
-                            </a>
-                        </div>
-                        <div class="col col--33 maincat__item">
-                            <a class="maincat__wrap" data-max="child" href="#0">
-                                <div class="maincat__image">
-                                    <img src="pic/pic_02.png" width="159" height="71" />
-                                </div>
-                                <p class="maincat__pseudo-lnk">Valleverde</p>
-                                <p class="maincat__subtext">Италия</p>
-                                <h6 class="maincat__title">Модельная ортопедическая обувь класса ЛЮКС </h6>
-                            </a>
-                        </div>
-                        <div class="col col--33 maincat__item">
-                            <a class="maincat__wrap" data-max="child" href="#0">
-                                <div class="maincat__image">
-                                    <img src="pic/pic_03.png" height="82" width="165" />
-                                </div>
-                                <p class="maincat__pseudo-lnk">Inovasan</p>
-                                <p class="maincat__subtext">Италия</p>
-                                <h6 class="maincat__title">Ортопедическая обувь</h6>
-                            </a>
-                        </div>
-                    </div>
-                    <aside class="col col--25 aside">
-                        <h2 class="aside__title">Информация</h2>
-                        <div class="aside__menu">
-                            <ul class="aside__menu_list">
-                                <li class="li aside__menu_item"><a href="#0" class="aside__menu_lnk"><span class="brd">Видео</span></a></li>
-                                <li class="li aside__menu_item"><a href="#0" class="aside__menu_lnk"><span class="brd">Полезные статьи</span></a></li>
-                                <li class="li aside__menu_item"><a href="#0" class="aside__menu_lnk active"><span class="brd">Производители</span></a></li>
-                            </ul>
-                        </div>
-
-                        <div class="aside__info aside__info_quest">
-                            <div class="aside__info_pic"></div>
-                            <h4 class="aside__info_title">Вопрос-ответ</h4>
-                            <p class="aside__info_text">Задайте вопрос<br/> врачу ортопеду-травмотологу</p>
-                            <a href="#0" class="aside__info_lnk">Задать вопрос</a>
-                        </div>
-
-                        <div class="aside__info aside__info_courier">
-                            <div class="aside__info_pic"></div>
-                            <h4 class="aside__info_title">Служба доставки</h4>
-                            <p class="aside__info_text">Доставка по Москве и по всей России</p>
-                            <a href="#0" class="aside__info_lnk">О доставке</a>
-                        </div>
-                    </aside>
-                </div>
-            </section>
         </div>
-        </div>
-        </div>
-        </section>
-        </div>
-        <!--#wrap-->
-        </div>
-        <!--#all-->
         <footer class="footer">
             <div class="inside">
                 <div class="footer-col footer-col--1">
@@ -271,8 +342,6 @@
             </div>
         </footer>
     </body>
-    <!--body -->
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+    <!--body -->    
 
 </html>

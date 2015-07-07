@@ -1,5 +1,4 @@
 .breadcrumbs{
-	margin: 38px 0 0px;
 	.breadcrumbs__item{
 		float: left;
 		border-left: 1px solid #a9a9a9;
@@ -10,6 +9,7 @@
 	}
 	.breadcrumbs__item:first-child{
 		border-left: none;
+		padding-left: 0;
 	}
 	.breadcrumbs__link{
 		color: $blue;
