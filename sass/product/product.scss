@@ -3,7 +3,13 @@
 	padding: 30px 66px 64px;
 	margin-bottom: 80px;
 }
+
 .product__row{
+	position: relative;
+	&.brd{
+		border-bottom: 1px dotted $gray;
+		margin-bottom: 34px;
+	}
 	.pl20{
 		padding-left: 20px;
 		box-sizing: border-box;
@@ -17,7 +23,7 @@
 	background-color: #f6f6f6;
 	border-radius: 8px;
 	padding: 34px;
-	margin-bottom: 40px;
+	margin-bottom: 10px;
 }
 .product__sizes-list{
 	width: 70%;
@@ -142,7 +148,7 @@
 		border: 1px solid $gray;
 		cursor: pointer;
 	}
-	&:hover{
+	&.current{
 		border: 1px solid $gray;
 		cursor: default;
 	}
@@ -204,6 +210,9 @@
 
 .product__info-nav{
 	text-align: center;
+	padding-bottom: 25px;
+	border-bottom: 1px dotted $gray;
+	margin-bottom: 44px;
 	.button{
 		text-transform: uppercase;
 		letter-spacing: 2px;
@@ -321,5 +330,113 @@
 	cursor: pointer;
 	&:hover{
 		border: $brdLnkHov5;
+	}
+}
+
+.product__achieve{
+	margin-bottom: 36px;
+}
+.product__achieve-list{
+	text-align: center;
+}
+.product__achieve-item{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 26px;
+	p{
+		margin-top: 6px;
+	}
+}
+
+.product__help{
+	margin-bottom: 24px;
+}
+.product__help-pic{
+	float: left;
+	padding: 0 6px;
+	border: 2px solid $lightGray;
+	border-radius: 4px;
+	box-sizing: border-box;
+	line-height: 74px;
+	text-align: center;
+	img{
+		vertical-align: middle;
+	}
+}
+.product__help-cont{
+	margin-left: 100px;
+	margin-top: -10px;
+	h3{
+		font-size: 15px;
+		margin-bottom: 6px;
+	}
+	p{
+		margin-bottom: 6px;		
+	}
+	a{
+		color: $blue;
+		border-bottom: $brdLnk1;
+		&:hover{
+			border-bottom: 1px solid transparent;
+		}
+	}
+}
+
+.product__help_video{
+	.product__help-pic{
+		padding: 0;
+		border: none;
+		width: 180px;
+		height: 110px;
+		overflow: hidden;
+		position: relative;
+	}
+	.product__help-pic:before{
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		height: 100%;
+		width: 100%;
+		display: block;
+		background-color: $black;
+		opacity: 0.4;
+		-webkit-transition: opacity .25s;
+		transition: opacity .25s;		
+	}
+	&:hover{
+		.product__help-pic:before{
+			opacity: 0.25;
+		}		
+	}
+	.ico__play{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 43px;
+		height: 43px;
+		border: 1px solid #fff;
+		border-radius: 22px;
+		margin-top: -22px;
+		margin-left: -22px;
+		cursor: pointer;		
+		&:after{
+			content: "";
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 12px 0 12px 22px;
+			border-color: transparent transparent transparent #ffffff;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -12px;
+			margin-left: -9px;
+		}
+	}
+	.product__help-cont{
+		margin-left: 210px;
 	}
 }

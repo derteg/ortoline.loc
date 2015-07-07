@@ -5,7 +5,9 @@
 
 $(function(){
 	// ! width classes
-	$('.js-product__slider_for').productSlider();
+	if($('.js-product__slider_for').length){
+		$('.js-product__slider_for').productSlider();
+	}	
 
 
 	function widthClasses() {
@@ -316,22 +318,28 @@ $(function(){
 			$sliderNav = $sliderFor.next();
 
 		$sliderFor.slick({
-			slideToShow: 1,
+			slidesToShow: 1,
 			slideToScroll: 1,
 			arrows: false,
 			fade: true,
 			speed: 0,
-			asNavFor: '.js-product__slider_nav'
+			swipe: false,
+			asNavFor: '.js-product__slider_nav',
+			infinite: false
 		});
 
 		$sliderNav.slick({
-			slidesToShow: 3,
+			slidesToShow: 5,
 			slidesToScroll: 1,
+			initialSlide: '0',
+			centerPadding: '0px',
+			vertical: true,
+			verticalSwiping: true,
 			asNavFor: '.js-product__slider_for',
-			dots: true,
 			centerMode: true,
-			focusOnSelect: true
-		})
+			focusOnSelect: true,
+			infinite: false
+		});
 	}
 })(jQuery);
 

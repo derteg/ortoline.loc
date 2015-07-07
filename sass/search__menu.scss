@@ -1,6 +1,64 @@
 .search__menu{
+	padding-top: 30px;
+	margin-bottom: 40px;
 	.button:hover{
 		color: $white;
 		background-color: $blueHov;
+	}
+}
+.search__menu_btn{
+	width: 264px;
+	box-sizing: border-box;
+	float: left;
+	position: relative;
+	padding-right: 36px;
+	.ico{
+		display: inline-block;
+		background: transparent $sprite -128px -8px no-repeat;
+		width: 16px;
+		height: 15px;
+		position: absolute;
+		top: 15px;
+		right: 20px;		
+	}
+}
+.search__menu_field{
+	margin-left: 280px;
+	position: relative;
+}
+.search__menu_inp{
+	height: 45px;
+	width: 100%;
+	border: none;
+	border-radius: 4px;
+	padding: 15px 264px 15px 24px;
+	box-sizing: border-box;
+}
+.search__menu_item{	
+	position: absolute;
+	right: 20px;
+	top: 1px;
+	line-height: 42px;
+	height: 43px;
+	background-color: $white;
+	p{
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 16px;
+	}
+	.example{
+		color: $blue;
+		border-bottom: 1px dotted $blue;
+		&:hover{
+			color: $blue;
+			border-bottom: 1px solid transparent;
+		}
+	}
+	.search__ico{
+		background: transparent $sprite -152px 0 no-repeat;
+		display: inline-block;
+		vertical-align: middle;
+		width: 22px;
+		height: 22px;
 	}
 }
