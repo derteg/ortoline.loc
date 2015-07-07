@@ -1,0 +1,24 @@
+.product__slider_for{
+	text-align: center;
+	img{
+		max-width: 450px;
+		height: auto;
+		margin: 0 auto;
+	}
+}
+
+.product__slider_nav{
+	text-align: center;
+	img{
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
+	.slick-slide{
+		padding: 10px;
+		box-sizing: border-box;
+		width: 74px;
+		height: 68px;
+		border: 3px solid $lightGray;
+	}
+}

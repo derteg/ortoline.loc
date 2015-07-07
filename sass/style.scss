@@ -31,8 +31,10 @@ $sprite: url('../ico/sprite_01.png');
 @import "breadcrumbs.scss";
 @import "maincat.scss";
 @import "grid.scss";
-@import "product.scss";
 @import "gui.scss";
 @import "search__menu.scss";
 @import "info__tabs.scss";
 @import "slick.scss";
+
+@import "product/product.scss";
+@import "product/slider.scss";

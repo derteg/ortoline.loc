@@ -320,6 +320,7 @@ $(function(){
 			slideToScroll: 1,
 			arrows: false,
 			fade: true,
+			speed: 0,
 			asNavFor: '.js-product__slider_nav'
 		});
 
