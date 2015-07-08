@@ -5,6 +5,7 @@
         <meta charset="utf-8" />
         <meta content="width=1000px, target-densitydpi=device-dpi" name="viewport"
         />
+        <title>Ortoline :: Главная</title>
         <meta content="telephone=no" name="format-detection" />
         <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
         <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
@@ -15,7 +16,14 @@
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,800&amp;subset=latin,cyrillic-ext"
         rel="stylesheet" type="text/css" />
         <link href="css/style.css" rel="stylesheet" type="text/css" />
-        <title>Ortoline</title>
+
+
+        <script src="js/libs/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/libs/jquery.min.js">\x3C/script>')</script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+        <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+        <script src="js/libs/plugins.js"></script>
+        <script src="js/scripts.js"></script>
     </head>
     
     <body>
@@ -139,7 +147,7 @@
                             </a>
                         </div>
                         <div class="col col--25 maincat__item">
-                            <a class="maincat__wrap" href="#" >
+                            <a class="maincat__wrap final" href="#" >
                                 <span class="maincat__all">
                                     <span class="maincat__toall">Весь каталог</span>
                                 </span>
@@ -342,8 +350,8 @@
                     <div class="dvnt-wrap">
                         <h2>Наши преимущества</h2>
                         <div class="dvnt-oh">
-                            <div class="cols">
-                                <div class="col col--25">
+                            <div class="cols" data-max="parent">
+                                <div class="col col--25" data-max="child">
                                     <div class="dvnt-item">
                                         <div class="dvnt-image">
                                             <img src="img/a-1.png" alt="a-1" />
@@ -353,7 +361,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col col--25">
+                                <div class="col col--25" data-max="child">
                                     <div class="dvnt-item">
                                         <div class="dvnt-image">
                                             <img src="img/a-2.png" alt="a-1" />
@@ -363,7 +371,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col col--25">
+                                <div class="col col--25" data-max="child">
                                     <div class="dvnt-item">
                                         <div class="dvnt-image">
                                             <img src="img/a-3.png" alt="a-1" />
@@ -373,7 +381,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col col--25">
+                                <div class="col col--25" data-max="child">
                                     <div class="dvnt-item">
                                         <div class="dvnt-image">
                                             <img src="img/a-4.png" alt="a-1" />
@@ -383,7 +391,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col col--25">
+                                <div class="col col--25" data-max="child">
                                     <div class="dvnt-item">
                                         <div class="dvnt-image">
                                             <img src="img/a-5.png" alt="a-1" />
@@ -393,7 +401,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col col--25">
+                                <div class="col col--25" data-max="child">
                                     <div class="dvnt-item">
                                         <div class="dvnt-image">
                                             <img src="img/a-6.png" alt="a-1" />
@@ -404,7 +412,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col col--25">
+                                <div class="col col--25" data-max="child">
                                     <div class="dvnt-item">
                                         <div class="dvnt-image">
                                             <img src="img/a-7.png" alt="a-1" />
@@ -415,7 +423,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col col--25">
+                                <div class="col col--25" data-max="child">
                                     <div class="dvnt-item">
                                         <div class="dvnt-image">
                                             <img src="img/a-8.png" alt="a-1" />
@@ -725,7 +733,4 @@
         </footer>
     </body>
     <!--body -->
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="js/scripts.js"></script>
-
 </html>

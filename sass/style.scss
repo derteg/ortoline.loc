@@ -9,6 +9,7 @@ $grayHov2: #C8C7C7;
 $lightGray: #e9e9e9;
 $orange: #f3a942;
 $orangeHov: #FAB24E;
+$red: #ea1c1c;
 
 $bg01: #f4f1ec;
 
@@ -32,9 +33,12 @@ $sprite: url('../ico/sprite_01.png');
 @import "maincat.scss";
 @import "grid.scss";
 @import "gui.scss";
+@import "select.scss";
 @import "search__menu.scss";
 @import "info__tabs.scss";
 @import "slick.scss";
 
 @import "product/product.scss";
 @import "product/slider.scss";
+
+@import "salons_list2/salons_list2.scss"

@@ -1,20 +1,73 @@
-$(document).ready(function(){heightsToMax();});
-$(window).load(function(){heightsToMax();});
-$(window).resize(function(){heightsToMax();});
-
-$(window).load(function(){initLikes();});
+$(window).load(function(){
+	heightsToMax();
+	initLikes();
+}).resize(function(){
+	heightsToMax();
+});
 
 $(function(){
+	$('#adressMap').adressMap();
 	$('.js-product__slider-for').productSlider();
 	$('.js-product__news-slider').productNewsSlider();
 	$('.js-product__amount').amountCart();
+	$('.js-select').selectCustom();
 
 	$('.js-info-tabs').lightTabs();
-	// widthClasses();
+
 	initPeppermint();
 	initSwiper();
 	hiddenText();
 });
+
+(function($){
+	$.fn.adressMap = function(){
+		ymaps.ready(init);
+
+		var myMap,
+		myPlacemark,
+			coordsBlue = [
+    			[55.90, 37.70], [55.75, 37.71], [55.70, 37.70]
+    		];
+    		coordsYellow = [
+    			[55.80, 37.50], [55.85, 37.71], [55.75, 37.50]
+    		];
+
+		function init () {
+		    myMap = new ymaps.Map('adressMap', {
+		        center: [55.76, 37.64],
+		        zoom: 10,
+		        controls: []
+			});
+
+			var myCollectionBlue = new ymaps.GeoObjectCollection({}, {
+		       iconLayout: 'default#image',
+		       iconImageHref: 'img/ico_08.png',
+		       iconImageSize: [32, 44],
+		       iconImageOffset: [0, 0]
+		    });
+
+		    var myCollectionYellow = new ymaps.GeoObjectCollection({}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'img/ico_07.png',
+				iconImageSize: [32, 44],
+				iconImageOffset: [0, 0]
+		    });
+
+		    for(var i = 0; i < coordsBlue.length; i++){
+		    	myCollectionBlue.add(new ymaps.Placemark(coordsBlue[i]));
+		    }
+
+		    myMap.geoObjects.add(myCollectionBlue);
+
+		    for(var i = 0; i < coordsYellow.length; i++){
+		    	myCollectionYellow.add(new ymaps.Placemark(coordsYellow[i]));
+		    }
+
+		    myMap.geoObjects.add(myCollectionYellow);
+
+		}
+	}
+})(jQuery);
 
 
 
@@ -348,15 +401,26 @@ function hiddenText() {
 			$minus = $('.minus', $block),
 			$plus = $('.plus', $block),
 			$sum = $('.sum', $block);
+			// $price = $('#productPrice .price'),
+			// $priceVal = parseFloat($price.text());
 
 		$minus.on('click', function(e){
 			var num = parseFloat($sum.text());
 			if(num > 1) {
 				$sum.text(num - 1);
 				$minus.removeClass('disabled');
-			}			
+				// num = parseFloat($sum.text());
+				// var multy = $priceVal * num;
+				// console.log($priceVal);
+				// console.log(num);
+				// $price.text(multy);
+
+			}
 			if(num <= 2){
 				$minus.addClass('disabled');
+				// num = parseFloat($sum.text());
+				// var multy = $priceVal * num;
+				// $price.text(multy);
 			}
 		});
 
@@ -366,6 +430,91 @@ function hiddenText() {
 				$sum.text(num + 1);
 				$minus.removeClass('disabled');
 			}
+		});
+	}
+})(jQuery);
+
+
+(function($){
+	$.fn.selectCustom = function(){
+		var select = this;
+		var numberOfSelects = select.length;
+
+		// Iterate over each select element
+		select.each( function() {
+		    
+		    // Cache the number of options
+		    var $this = $(this),
+		        numberOfOptions = $(this).children('option').length;
+		    
+		    // Hides the select element
+		    $this.addClass('hidden');
+		    
+		    // Wrap the select element in a div
+		    $this.wrap('<div class="select" />');
+		    
+		    // Insert a styled div to sit over the top of the hidden select element
+		    $this.after('<div class="styledSelect"></div>');
+		    
+		    // Cache the styled div
+		    var $styledSelect = $this.next('div.styledSelect');
+		    
+		    // Show the first select option in the styled div
+		    $styledSelect.text($this.children('option').eq(0).text());		    
+		    
+		    // Insert an unordered list after the styled div and also cache the list
+		    var $list = $('<ul />', {
+		        'class' : 'options'
+		    }).insertAfter($styledSelect);
+		    
+		    // Insert a list item into the unordered list for each select option
+		    for(var i = 0; i < numberOfOptions; i++) {
+		        $('<li />', {
+		            text: $this.children('option').eq(i).text(),
+		            'class': $this.children('option').eq(i).val()
+		        }).appendTo($list);
+		    }
+		    
+		    // Cache the list items
+		    var $listItems = $list.children('li');
+		    
+		    // Show the unordered list when the styled div is clicked (also hides it if the div is clicked again)
+		    $styledSelect.click( function(e) {
+		        e.stopPropagation();
+
+		        $('styledSelect.active').each( function() {
+		            $(this).removeClass('active')
+		                .next('ul.options').filter(':not(:animated)').slideUp(250);   
+		        });
+		        /* Use this instead of the .each() method when dealing with a large number of elements:
+		        for(var i = 0; i < numberOfSelects; i++) {
+		            if($('div.styledSelect').eq(i).hasClass('active') === true) {
+		                $('div.styledSelect').eq(i).removeClass('active')
+		                    .next('ul.options').filter(':not(:animated)').slideUp(250);
+		            }
+		        } */
+		        $(this).toggleClass('active')
+		            .next('ul.options').filter(':not(:animated)').slideToggle(250);
+		    });
+		    
+		    // Hides the unordered list when a list item is clicked and updates the styled div to show the selected list item
+		    // Updates the select element to have the value of the equivalent option
+		    $listItems.click( function(e) {
+		        e.stopPropagation();
+		        var that = $(this);
+		        $styledSelect.parent().next(".select__ico").attr('class', 'select__ico ' + that.attr('class'));
+		        $styledSelect.text($(this).text())
+		            .removeClass('active');
+		        $this.val($(this).text().toLowerCase());
+		        $list.filter(':not(:animated)').slideUp(250);
+		    });
+		    
+		    // Hides the unordered list when clicking outside of it
+		    $(document).click( function() {
+		        $styledSelect.removeClass('active');
+		        $list.filter(':not(:animated)').slideUp(250);
+		    });
+		    
 		});
 	}
 })(jQuery);

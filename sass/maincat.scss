@@ -1,6 +1,10 @@
+.promoslider + .maincat{
+	margin-top: 0;
+}
 .maincat{
 	position:relative;
-	margin-bottom: 54px;
+	margin-bottom: 54px;	
+	margin-top: 40px;
 	.maincat__item{
 		color:#000;
 		font-weight:600;
@@ -15,10 +19,13 @@
 		margin: -1px 0 0 -1px; 
 		position: relative;
 		background-color: $white;
-	}
-	.maincat__wrap:hover{
-		border-color:$orange; 
-		z-index: 1;
+		&:hover{
+			border-color:$orange; 
+			z-index: 1;
+		}
+		&.final{
+			height: 280px;
+		}
 	}
 
 	.maincat__title{padding-bottom:18px;min-height:65px;width:80%;margin:0 auto}

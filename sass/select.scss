@@ -1,0 +1,85 @@
+.hidden {
+    visibility: hidden;
+}
+.select {
+    cursor: pointer;
+    display: inline-block;
+    padding-right: 16px;
+    position: relative;
+    -webkit-user-select:none;
+       -moz-user-select:none;
+        -ms-user-select:none;
+         -o-user-select:none;
+            user-select:none;
+}
+.styledSelect {
+    font: 14px/58px sans-serif;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0 20px 0 50px;
+    background-color: $white;    
+    color: #444;
+    border: $brdLnk4;
+    border-radius: 4px;
+    box-sizing: border-box;
+    &:hover{
+        border: $brdLnk5;
+    }
+    &:before,
+    &.active:before{
+        content: "";
+        width: 15px;
+        height: 8px;
+        position: absolute;
+        top: 50%;
+        right: 21px;
+        margin-top: -4px;   
+    }    
+    &:before{
+        background: transparent url("../ico/sprite_01.png") -237px -28px no-repeat;
+    }
+    &.active:before{
+        background: transparent url("../ico/sprite_01.png") -213px -28px no-repeat;
+    }
+    &:after{
+        content: "";
+        width: 56px;
+        height: 58px;
+        border-left: $brdLnk4;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline-block;
+    }    
+}
+.options {
+    border-radius: 4px;
+    background-color: #fff;
+    color: #444;
+    display: none;
+    font: 14px/24px sans-serif;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 57px;
+    left: 0;
+    z-index: 999;
+    border: $brdLnk4;
+    box-sizing: border-box;
+    li {
+        padding: 0 20px;
+        height: 58px;
+        line-height: 58px;
+        border-top: $brdLnk4;
+        &:first-child{
+            border-top: 1px solid transparent;
+        }
+        &:hover{
+            background-color: $lightGray;
+        }
+    }
+}
+.active + .options {
+    z-index: 9999;
+}

@@ -1,0 +1,160 @@
+
+
+.adress__map{
+	height: 780px;
+}
+
+.adress__tbl{
+	td{
+		width: 33%;
+		vertical-align: top;
+		padding-right: 20px;
+		padding-bottom: 25px;
+	}
+}
+.adress__map-type{
+	line-height: 20px;
+	color: $gray;
+}
+.adress__map-metro{	
+	line-height: 20px;
+	.color{
+		width: 8px;
+		height: 8px;
+		float: left;
+		margin-top: 8px;
+		border-radius: 4px;
+	}
+	.name{
+		font-size: 14px;
+		margin-left: 14px;
+	}
+	.red{
+		background-color: $red;
+	}
+}
+.adress__map-lnk{
+	color: $blue;
+	line-height: 20px;
+	border-bottom: none;
+}
+.adress__map-phone{
+	font-size: 18px;
+	font-weight: bold;
+}
+.adress__map-subphone{
+	font-size: 12px;
+	color: $gray;
+}
+
+.adress__nav{
+	margin-bottom: 40px;
+}
+.adress__nav-select_wrap{
+	position: relative;
+	display: inline-block;
+	height: 58px;
+	width: 336px;
+	vertical-align: middle;
+	.styledSelect{
+		height: 58px;
+		width: 336px;		
+	}
+	.options{
+		width: 336px;
+	}
+	.select__ico{
+	    content: "";
+	    position: absolute;    
+	    display: inline-block;
+	    border-radius: 6px;
+		width: 12px;
+        height: 12px;
+        top: 24px;
+	    left: 18px;
+	    &.all{
+	    	border-radius: 0;
+	        top: 22px;
+	        left: 18px;
+	        width: 22px;
+	        height: 15px;
+	        background: transparent $sprite -264px 0 no-repeat;
+	    }
+	    &.orange{
+	    	background-color: $orange;
+	    }
+	    &.gray{
+	    	background-color: $gray;
+	    }
+	    &.blue{	        
+	        background-color: $blue;
+	    }
+	}
+}
+
+.adress__nav-type{
+	line-height: 20px;
+	display: inline-block;
+	margin-left: 144px;
+	.text{
+		font-size: 14px;
+		vertical-align: middle;
+		font-weight: bold;
+	}
+	.ico{
+		vertical-align: middle;
+		background: transparent url('../img/ico_09.png') left top no-repeat;
+		width: 46px;
+		height: 38px;
+		margin: 0px 6px;
+		display: inline-block;
+	}
+}
+.adress__nav-btn__list{
+	float: right;
+}
+.adress__nav-btn__item{
+	margin-left: 10px;
+	font-size: 14px;
+	span{
+		border-bottom: none;
+		text-shadow: none;
+	}
+	.text{
+		padding-bottom: 0;
+		line-height: 24px;
+		vertical-align: middle;
+	}
+	&.gray:hover{
+		span{
+			color: $black;
+		}		
+	}
+	&.gray{
+		background-color: $lightGray;
+		color: $black;
+		.ico.cart{
+			background: transparent $sprite -296px 0 no-repeat;
+			display: inline-block;
+			width: 16px;
+			height: 24px;
+			padding: 0;
+			position: relative;
+			top: 0px;
+			right: 8px;
+		}
+	}
+	&.dark{
+		background-color: $dark;
+		.ico.list{
+			background: transparent $sprite -320px 0 no-repeat;
+			display: inline-block;
+			width: 24px;
+			height: 18px;
+			padding: 0;
+			position: relative;
+			top: 4px;
+			right: 8px;
+		}
+	}
+}

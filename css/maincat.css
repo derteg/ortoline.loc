@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$white".
-        on line 10 of c:/MAMP/htdocs/ortoline.loc/sass/maincat.scss
+        on line 14 of c:/MAMP/htdocs/ortoline.loc/sass/maincat.scss
 
-5: 		color:#000;
-6: 		font-weight:600;
-7: 		font-size:14px;
-8: 		line-height:20px;
-9: 		text-align:center;
-10: 		background-color: $white;
-11: 	}
-12: 	.maincat__wrap{
-13: 		display:block; 
-14: 		border:1px solid $lightGray; 
-15: 		margin: -1px 0 0 -1px; 
+9: 		color:#000;
+10: 		font-weight:600;
+11: 		font-size:14px;
+12: 		line-height:20px;
+13: 		text-align:center;
+14: 		background-color: $white;
+15: 	}
+16: 	.maincat__wrap{
+17: 		display:block; 
+18: 		border:1px solid $lightGray; 
+19: 		margin: -1px 0 0 -1px; 
 
 Backtrace:
-c:/MAMP/htdocs/ortoline.loc/sass/maincat.scss:10
+c:/MAMP/htdocs/ortoline.loc/sass/maincat.scss:14
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
@@ -68,20 +68,16 @@ c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:4
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:209:in `each'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:293:in `watch'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-1.0.1/lib/compass/sass_compiler.rb:46:in `watch!'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-1.0.1/lib/compass/commands/watch_project.rb:41:in `perform'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-1.0.1/lib/compass/commands/base.rb:18:in `execute'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-1.0.1/lib/compass/commands/project_base.rb:19:in `execute'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-1.0.1/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-1.0.1/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-1.1.0.alpha.3/bin/compass:30:in `block in <top (required)>'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-1.1.0.alpha.3/bin/compass:44:in `call'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-1.1.0.alpha.3/bin/compass:44:in `<top (required)>'
-c:/Ruby200-x64/bin/compass:23:in `load'
-c:/Ruby200-x64/bin/compass:23:in `<main>'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:469:in `on_file_changed'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:328:in `block in watch'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/listener.rb:252:in `call'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 10 of c:/MAMP/htdocs/ortoline.loc/sass/maincat.scss\A \A 5: 		color:#000;\A 6: 		font-weight:600;\A 7: 		font-size:14px;\A 8: 		line-height:20px;\A 9: 		text-align:center;\A 10: 		background-color: $white;\A 11: 	}\A 12: 	.maincat__wrap{\A 13: 		display:block; \A 14: 		border:1px solid $lightGray; \A 15: 		margin: -1px 0 0 -1px; "; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 14 of c:/MAMP/htdocs/ortoline.loc/sass/maincat.scss\A \A 9: 		color:#000;\A 10: 		font-weight:600;\A 11: 		font-size:14px;\A 12: 		line-height:20px;\A 13: 		text-align:center;\A 14: 		background-color: $white;\A 15: 	}\A 16: 	.maincat__wrap{\A 17: 		display:block; \A 18: 		border:1px solid $lightGray; \A 19: 		margin: -1px 0 0 -1px; "; }
