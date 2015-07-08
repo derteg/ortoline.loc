@@ -1,61 +1,24 @@
 /*
-Error: Undefined variable: "$orange".
-        on line 42 of c:/MAMP/htdocs/ortoline.loc/sass/product/slider.scss
+Error: Undefined variable: "$white".
+        on line 25 of c:/MAMP/htdocs/ortoline.loc/sass/product/slider.scss
 
-37: 			box-sizing: border-box;
-38: 			margin-bottom: 10px;
-39: 		}
-40: 		&.slick-center{
-41: 			.wrap{
-42: 				border: 3px solid $orange;
-43: 			}
-44: 			.cont{
-45: 				border: 1px solid transparent;
-46: 			}
-47: 		}
+20: 		display: inline-block;
+21: 		vertical-align: middle;
+22: 	}
+23: }
+24: .product__flag_new{
+25: 	color: $white;
+26: 	font-family: 'HelveticaNeue',Verdana,Arial,sans-serif;
+27: 	line-height: 16px;
+28: 	font-size: 14px;
+29: 	text-transform: uppercase;
+30: 	letter-spacing: 3px;
 
 Backtrace:
-c:/MAMP/htdocs/ortoline.loc/sass/product/slider.scss:42
+c:/MAMP/htdocs/ortoline.loc/sass/product/slider.scss:25
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/list_literal.rb:62:in `block in _perform'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/list_literal.rb:62:in `map'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/list_literal.rb:62:in `_perform'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `block in with_base'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:115:in `with_frame'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `with_base'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `visit'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:420:in `map'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `block in with_base'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:115:in `with_frame'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `with_base'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `visit'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:420:in `map'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `block in with_base'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:115:in `with_frame'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `with_base'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `visit'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:420:in `map'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:36:in `visit'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `block in with_base'
@@ -106,4 +69,4 @@ c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$orange\".\A         on line 42 of c:/MAMP/htdocs/ortoline.loc/sass/product/slider.scss\A \A 37: 			box-sizing: border-box;\A 38: 			margin-bottom: 10px;\A 39: 		}\A 40: 		&.slick-center{\A 41: 			.wrap{\A 42: 				border: 3px solid $orange;\A 43: 			}\A 44: 			.cont{\A 45: 				border: 1px solid transparent;\A 46: 			}\A 47: 		}"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 25 of c:/MAMP/htdocs/ortoline.loc/sass/product/slider.scss\A \A 20: 		display: inline-block;\A 21: 		vertical-align: middle;\A 22: 	}\A 23: }\A 24: .product__flag_new{\A 25: 	color: $white;\A 26: 	font-family: 'HelveticaNeue',Verdana,Arial,sans-serif;\A 27: 	line-height: 16px;\A 28: 	font-size: 14px;\A 29: 	text-transform: uppercase;\A 30: 	letter-spacing: 3px;"; }

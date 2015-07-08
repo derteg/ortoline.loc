@@ -2,7 +2,7 @@
 <html lang="ru">
     
     <head>
-        <meta charset="utf-8" />
+        <meta charset="utf-8">
         <meta content="width=1000px, target-densitydpi=device-dpi" name="viewport" />
         <meta content="telephone=no" name="format-detection" />
         <title>Ortoline :: Каталог товаров</title>
@@ -19,6 +19,7 @@
         <script src="js/libs/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/libs/jquery.min.js">\x3C/script>')</script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+        <script src="js/libs/plugins.js"></script>
         <script src="js/scripts.js"></script>
     </head>
     
@@ -94,7 +95,8 @@
                                 <h1 class="title__h1_s2">Ортопедическая обувь Салво 4039</h1>
                                 <div class="product__row brd clearfix">
                                     <div class="product__info col col--50 pl20">
-                                        <div class="product__slider_for js-product__slider_for">
+                                        <div class="product__flag product__flag_new">новинка</div>
+                                        <div class="product__slider-for js-product__slider-for">
                                           <div>
                                               <img src="pic/pic_12.jpg" alt="pic_slide">
                                           </div>
@@ -124,7 +126,7 @@
                                           </div>
                                         </div>
 
-                                        <div class="product__slider_nav js-product__slider_nav">
+                                        <div class="product__slider-nav js-product__slider-nav">
                                           <div>
                                               <div class="wrap">
                                                   <div class="cont">
@@ -183,7 +185,7 @@
                                         </div>
                                     
                                         <div class="product__info-nav">
-                                            <a class="button button--gray">Таблица размеров</a>
+                                            <a class="button button--gray" href="#0">Таблица размеров</a>
                                             <div class="social social_gray">
                                                 <ul class="social__list">
                                                     <li class="social__item vk"><span class="ico"></span><span class="num">+1</span></li>
@@ -234,10 +236,10 @@
                                         
                                             <div class="product__amount">
                                                 <p class="product__amount-name">Кол-во:</p>
-                                                <div class="product__amount-wrap">
-                                                    <span class="product__amount-btn"><i class="minus"></i></span>
-                                                    <span class="product__amount-sum">1</span>
-                                                    <span class="product__amount-btn"><i class="plus"></i></span>
+                                                <div class="product__amount-wrap js-product__amount">
+                                                    <span class="product__amount-btn minus disabled"><i></i></span>
+                                                    <span class="product__amount-sum sum">1</span>
+                                                    <span class="product__amount-btn plus"><i></i></span>
                                                 </div>
                                             </div>
                                     
@@ -284,23 +286,46 @@
                                 </div>
                         
                                 <div class="product__row clearfix">
-                                    <div class="info-tabs col col--50 pl20">
+                                    <div class="info-tabs js-info-tabs col col--50 pl20">
                                         <ul class="info-tabs__list">
                                             <li class="info-tabs__item current"><span class="text">Описание</span></li>
                                             <li class="info-tabs__item"><span class="text">Отзывы <span class="num">3</span></span></li>
                                             <li class="info-tabs__item"><span class="text">Наличие в салонах <span class="num">4</span></span></li>
                                         </ul>
                                     
-                                        <div class="info-tabs__text">
-                                            <p>Суперлегкие мужские туфли из нежной телячьей кожи, со съемной ортопедической стелькой (может заменена на индивидуальную)  Обеспечивают комфорт и правильную постановку стоп.</p>
-                                    
-                                            <h4>Особенности</h4>
-                                            <ul>
-                                                <li>Стиль</li>
-                                                <li>Удобство</li>
-                                                <li>Качество материалов</li>
-                                                <li>Дизайн</li>
-                                            </ul>
+                                        <div class="info-tabs__cont">
+                                            <div class="info-tabs__text">
+                                                <p>Суперлегкие мужские туфли из нежной телячьей кожи 1, со съемной ортопедической стелькой (может заменена на индивидуальную)  Обеспечивают комфорт и правильную постановку стоп.</p>
+                                                                                
+                                                <h4>Особенности</h4>
+                                                <ul>
+                                                    <li>Стиль</li>
+                                                    <li>Удобство</li>
+                                                    <li>Качество материалов</li>
+                                                    <li>Дизайн</li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="info-tabs__text">
+                                                <p>Суперлегкие мужские туфли из нежной телячьей кожи 2, со съемной ортопедической стелькой (может заменена на индивидуальную)  Обеспечивают комфорт и правильную постановку стоп.</p>
+                                                                                
+                                                <h4>Особенности</h4>
+                                                <ul>
+                                                    <li>Качество материалов</li>
+                                                    <li>Дизайн</li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="info-tabs__text">
+                                                <p>Суперлегкие мужские туфли из нежной телячьей кожи 3, со съемной ортопедической стелькой (может заменена на индивидуальную)  Обеспечивают комфорт и правильную постановку стоп.</p>
+                                                                                
+                                                <h4>Особенности</h4>
+                                                <ul>
+                                                    <li>Удобство</li>
+                                                    <li>Качество материалов</li>
+                                                    <li>Стиль</li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                         
@@ -368,8 +393,45 @@
                                     </figure>
                                 </div>
                             </section>
-
                     </div>
+
+                    <section class="product__news clearfix">
+                        <div class="inside">
+                            <h3 class="product__sub-title">Наши новинки</h3>
+                            <div class="product__news-slider js-product__news-slider">
+                                <div>
+                                    <img src="pic/pic_22.jpg" alt="" width="130" height="110">
+                                    <p>Детская ортопедическая обувь МАЙЯ</p>
+                                    <p class="price orange">6 200<nobr class="rouble">p</nobr></p>
+                                </div>
+                                <div>
+                                    <img src="pic/pic_23.jpg" alt="" width="130" height="110">
+                                    <p>Детская ортопедическая обувь Ангел</p>
+                                    <p class="price orange">6 200<nobr class="rouble">p</nobr></p>
+                                </div>
+                                <div>
+                                    <img src="pic/pic_24.jpg" alt="" width="130" height="110">
+                                    <p>Ортопедическая обувь КАНАДА 6651</p>
+                                    <p class="price orange">6 200<nobr class="rouble">p</nobr></p>
+                                </div>
+                                <div>
+                                    <img src="pic/pic_25.jpg" alt="" width="130" height="110">
+                                    <p>Детская ортопедическая обувь Ангел</p>
+                                    <p class="price orange">6 200<nobr class="rouble">p</nobr></p>
+                                </div>
+                                <div>
+                                    <img src="pic/pic_23.jpg" alt="" width="130" height="110">
+                                    <p>Ортопедическая обувь КАНАДА 6651</p>
+                                    <p class="price orange">6 200<nobr class="rouble">p</nobr></p>
+                                </div>
+                                <div>
+                                    <img src="pic/pic_24.jpg" alt="" width="130" height="110">
+                                    <p>Ортопедическая обувь КАНАДА 6651</p>
+                                    <p class="price orange">6 200<nobr class="rouble">p</nobr></p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
