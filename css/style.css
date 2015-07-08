@@ -1582,30 +1582,30 @@ a.cart { position: relative; background: url(../img/i-cart.png) no-repeat left 2
 .active + .options { z-index: 9999; }
 
 /* line 1, ../sass/search__menu.scss */
-.search__menu { padding-top: 30px; }
-/* line 3, ../sass/search__menu.scss */
+.search__menu { padding-top: 30px; margin-bottom: 40px; }
+/* line 4, ../sass/search__menu.scss */
 .search__menu .button:hover { color: #ffffff; background-color: #2B86C7; }
 
-/* line 8, ../sass/search__menu.scss */
+/* line 9, ../sass/search__menu.scss */
 .search__menu_btn { width: 264px; box-sizing: border-box; float: left; position: relative; padding-right: 36px; }
-/* line 14, ../sass/search__menu.scss */
+/* line 15, ../sass/search__menu.scss */
 .search__menu_btn .ico { display: inline-block; background: transparent url("../ico/sprite_01.png") -128px -8px no-repeat; width: 16px; height: 15px; position: absolute; top: 15px; right: 20px; }
 
-/* line 24, ../sass/search__menu.scss */
+/* line 25, ../sass/search__menu.scss */
 .search__menu_field { margin-left: 280px; position: relative; }
 
-/* line 28, ../sass/search__menu.scss */
+/* line 29, ../sass/search__menu.scss */
 .search__menu_inp { height: 45px; width: 100%; border: none; border-radius: 4px; padding: 15px 264px 15px 24px; box-sizing: border-box; }
 
-/* line 36, ../sass/search__menu.scss */
+/* line 37, ../sass/search__menu.scss */
 .search__menu_item { position: absolute; right: 20px; top: 1px; line-height: 42px; height: 43px; background-color: #ffffff; }
-/* line 43, ../sass/search__menu.scss */
+/* line 44, ../sass/search__menu.scss */
 .search__menu_item p { display: inline-block; vertical-align: middle; margin-right: 16px; }
-/* line 48, ../sass/search__menu.scss */
+/* line 49, ../sass/search__menu.scss */
 .search__menu_item .example { color: #1376ba; border-bottom: 1px dotted #1376ba; }
-/* line 51, ../sass/search__menu.scss */
+/* line 52, ../sass/search__menu.scss */
 .search__menu_item .example:hover { color: #1376ba; border-bottom: 1px solid transparent; }
-/* line 56, ../sass/search__menu.scss */
+/* line 57, ../sass/search__menu.scss */
 .search__menu_item .search__ico { background: transparent url("../ico/sprite_01.png") -152px 0 no-repeat; display: inline-block; vertical-align: middle; width: 22px; height: 22px; }
 
 /* line 1, ../sass/info__tabs.scss */
