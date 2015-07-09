@@ -1,0 +1,79 @@
+.promo-stock-hits{
+	margin: 62px 0 44px;
+}
+.promo-stock-hits__wrap{
+	position: relative;
+	border: 1px solid $grayBrd;
+}
+
+.hits__label{
+	position: absolute;
+	background: $orange;
+	color: $white;
+	height: 30px;
+	padding: 0 10px;
+	top: 18px;
+	left: 40px;
+	line-height: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	z-index: 99;
+	&:before{
+		content: ' ';
+		display: block;
+		position: absolute;
+		width: 0;
+		top: 0;
+		left: -10px;
+		height: 0;
+		border-top: 15px solid $orange;
+		border-left: 10px solid transparent;
+	}
+	&:after{
+		content: ' ';
+		display: block;
+		position: absolute;
+		width: 0;
+		bottom: 0;
+		left: -10px;
+		height: 0;
+		border-bottom: 15px solid $orange;
+		border-left: 10px solid transparent;
+	}
+}
+
+.stock__label{
+	position: absolute;
+	background: $blue;
+	color: $white;
+	height: 30px;
+	padding: 0 15px;
+	top: 20px;
+	line-height: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	top: 18px;
+	left: 44px;
+	&:before{
+		content: ' ';
+		display: block;
+		position: absolute;
+		width: 0;
+		top: 0;
+		left: -10px;
+		height: 0;
+		border-top: 15px solid $blue;
+		border-left: 10px solid transparent;
+	}
+	&:after{
+		content: ' ';
+		display: block;
+		position: absolute;
+		width: 0;
+		bottom: 0;
+		left: -10px;
+		height: 0;
+		border-bottom: 15px solid $blue;
+		border-left: 10px solid transparent;
+	}
+}

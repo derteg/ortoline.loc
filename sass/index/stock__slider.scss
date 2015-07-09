@@ -1,0 +1,107 @@
+.stock__slider{
+	height: 458px;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: -4px;
+	width: 75%;
+	border-right: 1px solid #dadada;
+	.slick-prev,
+	.slick-next{
+		border: $brdLnk5;		
+		background-color: transparent;
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		border-radius: 26px;
+		outline: none;
+		top: 50%;
+		margin-top: -26px;
+		z-index: 7;
+		cursor: pointer;
+		@include linkTextOffscreen;
+		@include transition(background-color .25s, border-color .25s);
+		&:before{
+			content: "";
+			background: transparent $sprite no-repeat;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 10px;
+			height: 18px;
+			margin-left: -5px;
+			margin-top: -9px;
+		}
+		&:hover{
+			background: $orange;
+			border-color: $orange;
+		}
+	}
+	.slick-prev{
+		left: 10px;
+		&:before{
+			background-position: -216px 0px;
+		}
+	}
+	.slick-next{
+		right: 10px;
+		&:before{
+			background-position: -240px 0px;
+		}
+	}
+}
+.stock__slide{
+	position: relative;
+}
+.stock__image{
+	width: 53%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: -4px;
+	vertical-align: middle;
+	line-height: 490px;
+	height: 450px;
+	padding-left: 5%;
+	text-align: right;
+	img{
+		vertical-align: middle;
+		line-height: 490px;
+		display: inline-block;
+	}
+}
+.stock__text{
+	position: relative;
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: -4px;
+	vertical-align: middle;
+	padding-top: 40px;
+}
+.stock__title{
+	font-size: 29px;
+	line-height: 38px;
+	color: $white;
+	background: $orange;
+	display: inline;
+	padding: 4px 0 3px 0;
+	font-weight: bold;
+	position: relative;
+	outline: $orange solid 10px;
+	span{
+		position: relative;
+	}
+}
+.stock__list{
+	display: block;
+	padding-top: 28px;
+	font-size: 14px;
+	line-height: 20px;
+}
+.stock__item{
+	background: url(../img/i-tick.png) no-repeat left 3px;
+	min-height: 17px;
+	padding-left: 25px;
+	margin-left: -10px;
+	margin-bottom: 8px;
+}

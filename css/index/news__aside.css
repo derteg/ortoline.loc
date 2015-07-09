@@ -1,0 +1,14 @@
+/* line 1, ../../sass/index/news__aside.scss */
+.news-aside { font-size: 13px; line-height: 20px; }
+
+/* line 5, ../../sass/index/news__aside.scss */
+.news-aside li { margin-bottom: 32px; }
+
+/* line 8, ../../sass/index/news__aside.scss */
+.news-aside__link { font-size: 14px; line-height: 20px; font-weight: bold; }
+
+/* line 13, ../../sass/index/news__aside.scss */
+.news-aside__date { font-size: 12px; line-height: 22px; color: #9e9e9e; padding-bottom: 2px; }
+
+/* line 19, ../../sass/index/news__aside.scss */
+.news-aside__summary { padding-top: 5px; }

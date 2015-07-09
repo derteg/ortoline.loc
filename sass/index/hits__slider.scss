@@ -1,0 +1,58 @@
+.card-price{
+	.hits{
+		margin-top: 5px;
+		margin-bottom: -5px;	
+	}
+}
+
+.hits__slider{
+	position: relative;
+	overflow: hidden;
+	margin-left: 0;
+	height: 450px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: -4px;
+	width: 25%;
+	.slick-dots{
+		position: absolute;
+		bottom: 38px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		z-index: 9;
+		opacity: .7;
+		@include transition(opacity .25s);
+		&:hover{
+			opacity: 1;
+		}
+		li{
+			display: inline-block;
+			margin: 0 5px;
+			width: 8px;
+			height: 8px;
+		}
+		button{
+			width: 8px;
+			height: 8px;
+			outline: none;
+			cursor: pointer;			
+			border-radius: 4px;
+			background: $gray;
+			padding: 0;
+			@include linkTextOffscreen;
+			text-align: start;
+			font-size: 1px;
+			border: none;
+		}
+		.slick-active{
+			button{
+				background: $orange;
+				cursor: default;
+			}			
+		}
+	}
+}
+.hits__slide{
+	position: relative;	
+}

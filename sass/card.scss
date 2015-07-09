@@ -1,0 +1,143 @@
+.card{
+	display: block;
+	position: relative;
+	text-align: center;	
+	overflow: hidden;
+}
+.card__wrap{
+	background-color: #ffffff;
+	padding: 20px 10px;
+	margin-left: 20px;
+	text-align: center;
+	border-radius: 6px;
+	position: relative;
+	padding-bottom: 90px;
+}
+.card_nowrap{
+	padding-bottom: 95px;
+	.card__info{
+		padding: 30px;
+	}
+}
+.card__info{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	background: rgba(255, 255, 255, 0.9);
+	text-align: left;
+	z-index: 5;
+	bottom: -300px;
+	display: none;
+	padding: 10px 20px;
+	p{
+		margin-bottom: 18px;
+	}
+}
+.card__image{
+	height: 190px;
+	line-height: 170px;
+	text-align: center;
+	img{
+		display: inline-block;
+		width: 60%;
+		height: auto;
+		vertical-align: middle;
+		line-height: 170px;
+		max-height: 190px;
+	}
+}
+.card__text{
+	position: relative;
+}
+.card__title{
+	font-size: 16px;
+	line-height: 22px;
+	padding: 20px 0 10px 0;
+	width: 85%;
+	margin: 0 auto;
+	font-weight: bold;
+}
+.card__brand{
+	color: #757575;
+	font-size: 13px;
+	display: block;
+	text-align: center;
+	padding: 0 0 10px 0;
+	font-weight: 600;
+}
+.card__price{
+	color: #166bae;
+	font-size: 22px;
+	font-weight: bold;
+	position: relative;
+}
+.card__button{
+	display: block;
+	max-width: 145px;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: 1px solid #000;
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	height: 35px;
+	line-height: 37px;
+	margin: 40px auto 0;
+	border-radius: 50px;
+	@include transition(all .25s);
+	&:hover{
+		background: #166bae;
+		border-color: #166bae;
+		color: #fff;
+	}
+}
+.card__line{
+	position: absolute;
+	height: 1px;
+	width: 100%;
+	left: 0;
+	top: 185px;
+	background: #f3f0eb;
+	z-index: 6;
+}
+.card__circle{
+	position: absolute;
+	background: #f3f0eb;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	left: 50%;
+	margin-left: -15px;
+	top: 50%;
+	margin-top: -15px;
+	cursor: pointer;
+	&:before{
+		content: '';
+		display: block;
+		position: absolute;
+		width: 14px;
+		border-top: 2px solid #8797a7;
+		border-bottom: 2px solid #8797a7;
+		left: 50%;
+		margin-left: -7px;
+		height: 3px;
+		top: 9px;
+		@include transition(all .25s);
+	}
+	&:after{
+		content: '';
+		display: block;
+		position: absolute;
+		width: 10px;
+		background: #8797a7;
+		left: 50%;
+		margin-left: -7px;
+		height: 2px;
+		top: 19px;
+		@include transition(all .25s);
+	}
+	&:hover{
+		background-color: $orange;
+	}
+}

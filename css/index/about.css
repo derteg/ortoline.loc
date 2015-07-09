@@ -1,0 +1,20 @@
+/* line 1, ../../sass/index/about.scss */
+.about { padding-bottom: 70px; padding-top: 59px; }
+
+/* line 5, ../../sass/index/about.scss */
+.about h2 { font-family: 'Open Sans',sans-serif; margin-bottom: 20px; }
+
+/* line 9, ../../sass/index/about.scss */
+.about big { margin-bottom: 20px; display: block; font-size: 18px; line-height: 30px; }
+
+/* line 15, ../../sass/index/about.scss */
+.about p { margin-bottom: 20px; }
+
+/* line 18, ../../sass/index/about.scss */
+.about-side { margin-left: 20px; margin-right: 0; position: relative; }
+
+/* line 23, ../../sass/index/about.scss */
+.about-side h2 { margin-bottom: 25px; }
+
+/* line 26, ../../sass/index/about.scss */
+.about-content { width: 92%; }

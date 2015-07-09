@@ -91,14 +91,13 @@
 		border: none;
 		width: 51px;
 		height: 51px;
-		text-indent: -9999px;
-		font-size: 1px;
 		position: absolute;
 		outline: none;
 		left: 50%;
 		margin-left: -26px;
 		opacity: 1;
-		transition: opacity .25s;
+		@include transition(opacity .25s);
+		@include linkTextOffscreen;
 	}
 	.slick-disabled{
 		opacity: 0.5;
@@ -161,11 +160,10 @@
 		border: $brdLnk4;
 		border-radius: 26px;
 		width: 51px;
-		height: 51px;
-		text-indent: -9999px;
-		font-size: 1px;
+		height: 51px;		
 		position: absolute;
 		outline: none;
+		@include linkTextOffscreen;
 		&:hover{
 			background-color: $orange;
 			border: $brdLnk2;

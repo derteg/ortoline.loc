@@ -1,0 +1,39 @@
+.dvnt{
+	position:relative;
+	padding-bottom:0;
+	margin-top: 30px;	 
+}
+.dvnt h2{
+	background:#fff;
+	position:absolute;
+	top:-23px;
+	left:50%;
+	width:400px;
+	margin-left:-200px;
+	text-align:center;
+	width:350px;
+	margin-left:-175px
+}
+.dvnt-wrap{
+	position:relative;
+	border:5px solid #f3a942;
+	padding:55px 0 13px 100px
+}
+.dvnt-oh{
+	overflow:hidden
+}
+.dvnt .cols{
+	margin-right:-40px
+}
+.dvnt-image{
+	height:70px;
+	line-height:70px;
+	position:relative
+}
+.dvnt-item{
+	width:80%;
+	font-size:15px;
+	line-height:22px;
+	font-weight:bold;
+	padding-bottom:40px
+}
