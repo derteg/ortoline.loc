@@ -20,7 +20,9 @@
 		position: relative;
 		background-color: $white;
 		@include transition(border-color .7s, color .2s, background-color .25s);
-		&:hover{
+		&:hover,
+		&:active,
+		&:focus{
 			border-color:$orange; 
 			z-index: 1;
 		}

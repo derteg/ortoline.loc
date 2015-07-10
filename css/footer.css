@@ -1,59 +1,59 @@
 /* line 1, ../sass/footer.scss */
-.footer { background: #f3f0eb; color: #2f2f2f; }
+.footer { position: relative; height: 400px; background: #f3f0eb; color: #2f2f2f; }
 
-/* line 5, ../sass/footer.scss */
+/* line 7, ../sass/footer.scss */
 .footer-col { display: -moz-inline-stack; display: inline-block; vertical-align: top; *zoom: 1; *display: inline; margin-right: -4px; width: 20%; font-family: 'Open Sans',sans-serif; padding-top: 47px; padding-bottom: 10px; }
 
-/* line 17, ../sass/footer.scss */
+/* line 19, ../sass/footer.scss */
 .footer-col h3 { text-transform: uppercase; margin-bottom: 10px; }
 
-/* line 21, ../sass/footer.scss */
+/* line 23, ../sass/footer.scss */
 .footer-col a { border: 0; }
 
-/* line 24, ../sass/footer.scss */
+/* line 26, ../sass/footer.scss */
 .footer-col li { line-height: 16px; margin-bottom: 20px; }
 
-/* line 28, ../sass/footer.scss */
+/* line 30, ../sass/footer.scss */
 .footer-col--1 { width: 14%; padding-right: 3%; }
 
-/* line 32, ../sass/footer.scss */
+/* line 34, ../sass/footer.scss */
 .footer-col--2 { width: 18%; padding-right: 2%; }
 
-/* line 36, ../sass/footer.scss */
+/* line 38, ../sass/footer.scss */
 .footer-col--3 { width: 18%; padding-right: 3%; }
 
-/* line 40, ../sass/footer.scss */
+/* line 42, ../sass/footer.scss */
 .footer-col--4 { width: 20%; padding-right: 3%; }
 
-/* line 44, ../sass/footer.scss */
+/* line 46, ../sass/footer.scss */
 .footer-col--5 { width: 19%; font-size: 12px; line-height: 18px; color: #747579; }
 
-/* line 50, ../sass/footer.scss */
+/* line 52, ../sass/footer.scss */
 .footer-col--5 a { color: #f3a942; }
 
-/* line 53, ../sass/footer.scss */
+/* line 55, ../sass/footer.scss */
 .footer-col--5 a:hover { color: #000; }
 
-/* line 56, ../sass/footer.scss */
+/* line 58, ../sass/footer.scss */
 .social-likes__widget { margin: 6px 10px; }
 
-/* line 59, ../sass/footer.scss */
+/* line 61, ../sass/footer.scss */
 .footer-adr { padding-top: 25px; padding-bottom: 25px; }
 
-/* line 63, ../sass/footer.scss */
+/* line 65, ../sass/footer.scss */
 .likes { margin-left: -4px; }
 
-/* line 66, ../sass/footer.scss */
+/* line 68, ../sass/footer.scss */
 .footer-bottom { background: #121212; color: #747579; position: absolute; left: 0; width: 100%; height: 50px; bottom: 0; font-family: Arial, sans-serif; }
 
-/* line 76, ../sass/footer.scss */
+/* line 78, ../sass/footer.scss */
 .footer-left { position: absolute; left: 20px; top: 0; height: 50px; line-height: 50px; }
 
-/* line 83, ../sass/footer.scss */
+/* line 85, ../sass/footer.scss */
 .footer-right { position: absolute; top: 0; height: 50px; line-height: 50px; right: 20px; width: 20%; }
 
-/* line 91, ../sass/footer.scss */
+/* line 93, ../sass/footer.scss */
 .footer-right a { color: #fff; text-transform: uppercase; letter-spacing: 1px; border: 0; }
 
-/* line 97, ../sass/footer.scss */
+/* line 99, ../sass/footer.scss */
 .footer-right a:hover { color: #747579; }

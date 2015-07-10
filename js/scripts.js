@@ -305,7 +305,8 @@ function heightsToMax() {
 		slider.slick({
 			dots: true,
 			autoplay: true,
-			autoplaySpeed: 3000
+			autoplaySpeed: 3000,
+			mobileFirst: true
 		});
 	}
 })(jQuery);

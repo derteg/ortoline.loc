@@ -1,9 +1,113 @@
+html,body{
+	height:100%;
+	background:#fff;
+	font-family:'HelveticaNeue',Verdana,Arial,sans-serif;
+	font-size:14px;
+	line-height:20px
+}
+img{border:0}
+ul,nav{list-style:none; padding-left: 0;}
+a{text-decoration: none;}
+.italic{font-style:italic}
+.bold{font-weight:bold}
+.fl{float:left}
+.fl{float:right}
+.absolute{position:absolute}
+.fixed{position:fixed}
+.hidden{display:none}
+.black{color:#000}
+
+/* Clearfix */
+.clearfix, .wrapper, .wrapper-contacts {
+	*zoom: 1;
+}
+.clearfix:before, .clearfix:after, .wrapper:before, .wrapper:after, .wrapper-contacts:before, .wrapper-contacts:after {
+	content: ''; display: table;
+}
+.clearfix:after, .wrapper:after, .wrapper-contacts:after {
+	clear: both;
+}
+.pointer{cursor:pointer}
+.default{cursor:default}
+
+
+.i-block,.iblock{display:-moz-inline-stack;display:inline-block;vertical-align:top;*zoom:1;*display:inline;margin-right:-4px}
+.i-block-mid,.iblockmid{display:-moz-inline-stack;display:inline-block;vertical-align:middle;*zoom:1;*display:inline;margin-right:-4px}
+.uper{text-transform:uppercase;letter-spacing:1px}
+.textCenter{display:block;text-align:center}
+.positionCenter{position:absolute;top:0;left:0;bottom:0;right:0;max-width:100%;max-height:auto;margin:auto}
+.after{content:' ';display:block;position:absolute}
+.trn{@include transition(all 35s)}
+.lnk__black{
+	color: $black;
+	border-bottom:1px solid $black;
+	border-bottom:1px solid rgba(0,0,0,0.3);
+}
+.lnk__black:hover{
+	color:#f3a942;
+	border-bottom-color:#f3a942;
+	border-bottom-color:rgba(240,170,50,0.4);
+}
+.dotted{
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+	font-family:'Open Sans',sans-serif;
+	font-weight:bold;
+}
+h1{
+	font-size: 43px;
+	letter-spacing: -1px;
+	line-height: 70px;
+	margin-bottom: 20px;
+	color: $black;
+}
+.title__h1_s2{
+	font-size: 26px;
+	letter-spacing: 1px;
+	margin-top: 8px;
+	text-transform: uppercase;
+	font-family: 'HelveticaNeue',Verdana,Arial,sans-serif;
+	font-weight: bold;
+}
+h2{
+	font-size:32px;
+	line-height:40px;
+	font-family:'PFDinDisplayPro',Verdana,sans-serif;
+}
+h3{
+	font-size:14px;
+	font-weight:bold;
+	line-height:36px;
+}
+#wrap{
+	height:auto;
+	min-height:100%;
+	position:relative;
+	padding-bottom:400px;
+}
+.inside{
+	position:relative;
+	margin:0 auto;
+	padding:0 20px;
+	max-width:1200px;
+}
+
+.bg_01{
+	background-color: $bg01;
+}
+
+
+
+
 .button {
 	display: inline-block;
-	vertical-align: top;
-	margin-right: 0;
-	padding: 12px 25px;
-	color: #fff;	
+	vertical-align: middle;
+	padding: 14px 25px;
+	color: $white;	
 	font-size: 18px;
 	font-weight: 500;
 	cursor: pointer;
@@ -40,12 +144,12 @@
 	background:$orangeHov;
 }
 .button--gray{
-	color: $white;
-	background: $gray2;
+	color: $black;
+	background: $lightGray;
 }
 .button--gray:hover{
-	color: $white;
-	background: $grayHov2;
+	color: $dark;
+	background: $lightGrayHov;
 }
 .outlineBut{
 	position:relative;

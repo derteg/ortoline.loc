@@ -1,29 +1,14 @@
 .panoram{
 	position:relative;
-	background:url(../img/girl.jpg) no-repeat bottom center;
-	height:730px;
+	background:url(../img/girl.jpg) bottom center no-repeat;
+	background-size: cover;
 }
-.panoram-content{
+.panoram__content{
 	position:relative;
 	margin-left:52%;
-	padding-top:100px;
+	padding:100px 0;
 }
-.panoram-content p{
-	font-size:18px;
-	line-height:24px;
-	font-weight:600;
-	width:60%;
-}
-.panoram-content ul{
-	font-size:15px;
-	line-height:24px;
-	margin-top:25px;
-	margin-bottom:35px;
-}
-.panoram-content ul li{
-	margin-bottom:10px;
-}
-.panoram-content h1{
+.panoram__title{
 	font-size:40px;
 	line-height:50px;
 	margin-bottom:20px;
@@ -31,4 +16,24 @@
 	text-transform:uppercase;
 	letter-spacing:1.5px !important;
 	font-family:'Open Sans',sans-serif;
+}
+@media (max-width:1024px) {
+	.panoram__title{
+		font-size: 34px;
+	}
+}
+.panoram__sub-title{
+	font-size:18px;
+	line-height:24px;
+	font-weight:600;
+	width:60%;
+}
+.panoram__list{
+	font-size:15px;
+	line-height:24px;
+	margin-top:25px;
+	margin-bottom:35px;
+}
+.panoram__item{
+	margin-bottom:10px;
 }

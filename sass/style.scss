@@ -8,6 +8,7 @@ $gray2: #b5b5b5;
 $grayBrd: #dadada;
 $grayHov2: #C8C7C7;
 $lightGray: #e9e9e9;
+$lightGrayHov: #e5e0d8;
 $orange: #f3a942;
 $orangeHov: #FAB24E;
 $red: #ea1c1c;
@@ -38,10 +39,8 @@ $sprite: url('../ico/sprite_01.png');
 @import "header.scss";
 @import "footer.scss";
 
-@import "compass/reset";
 @import "aside.scss";
 
-@import "base.scss";
 @import "breadcrumbs.scss";
 @import "maincat.scss";
 @import "select.scss";
@@ -65,4 +64,11 @@ $sprite: url('../ico/sprite_01.png');
 @import "product/product.scss";
 @import "product/slider.scss";
 
-@import "salons_list2/salons_list2.scss"
+@import "salons_list2/salons_list2.scss";
+
+@import "media_1024/header__1024.scss";
+
+@import "media_768/base__768.scss";
+@import "media_768/header__768.scss";
+@import "media_768/index/promo__slider__768.scss";
+@import "media_768/index/panorama__768.scss";
