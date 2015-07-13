@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$white".
-        on line 16 of c:/MAMP/htdocs/ortoline.loc/sass/index/usfl.scss
+        on line 15 of c:/MAMP/htdocs/ortoline.loc/sass/index/usfl.scss
 
-11: 	padding-bottom:55px;
-12: 	margin-right:-40px
-13: }
-14: .usfl-item{
-15: 	position:relative;
-16: 	background:$white;
-17: 	border-radius:10px;
-18: 	width:92%;
-19: 	display:block;
-20: 	border:0
-21: }
+10: 	padding-bottom:55px;
+11: 	margin-right:-40px
+12: }
+13: .usfl-item{
+14: 	position:relative;
+15: 	background:$white;
+16: 	border-radius:10px;
+17: 	width:92%;
+18: 	display:block;
+19: 	border:0;
+20: 	color: $black;
 
 Backtrace:
-c:/MAMP/htdocs/ortoline.loc/sass/index/usfl.scss:16
+c:/MAMP/htdocs/ortoline.loc/sass/index/usfl.scss:15
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
@@ -69,4 +69,4 @@ c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 16 of c:/MAMP/htdocs/ortoline.loc/sass/index/usfl.scss\A \A 11: 	padding-bottom:55px;\A 12: 	margin-right:-40px\A 13: }\A 14: .usfl-item{\A 15: 	position:relative;\A 16: 	background:$white;\A 17: 	border-radius:10px;\A 18: 	width:92%;\A 19: 	display:block;\A 20: 	border:0\A 21: }"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 15 of c:/MAMP/htdocs/ortoline.loc/sass/index/usfl.scss\A \A 10: 	padding-bottom:55px;\A 11: 	margin-right:-40px\A 12: }\A 13: .usfl-item{\A 14: 	position:relative;\A 15: 	background:$white;\A 16: 	border-radius:10px;\A 17: 	width:92%;\A 18: 	display:block;\A 19: 	border:0;\A 20: 	color: $black;"; }

@@ -2,7 +2,7 @@
 .video { position: relative; padding-top: 70px; background: #f4f1ec; overflow: hidden; -webkit-font-smoothing: antialiased; }
 
 /* line 8, ../sass/video.scss */
-.video .cols { padding-top: 23px; padding-bottom: 57px; margin-right: -40px; }
+.video .cols { padding-top: 23px; padding-bottom: 18px; margin-right: -40px; }
 
 /* line 13, ../sass/video.scss */
 .video-item { position: relative; background: #fff; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; width: 92%; }

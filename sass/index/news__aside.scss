@@ -9,6 +9,15 @@
 	font-size:14px;
 	line-height:20px;
 	font-weight:bold;
+	color: $black;
+	border-bottom: 1px solid $gray;
+}
+.news-aside__link:hover{
+	font-size:14px;
+	line-height:20px;
+	font-weight:bold;
+	color: $orange;
+	border-bottom: 1px solid transparent;
 }
 .news-aside__date{
 	font-size:12px;

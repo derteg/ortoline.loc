@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'transition'.
-        on line 40 of c:/MAMP/htdocs/ortoline.loc/sass/gui.scss, in `transition'
-        from line 40 of c:/MAMP/htdocs/ortoline.loc/sass/gui.scss
+        on line 43 of c:/MAMP/htdocs/ortoline.loc/sass/gui.scss, in `transition'
+        from line 43 of c:/MAMP/htdocs/ortoline.loc/sass/gui.scss
 
-35: .i-block-mid,.iblockmid{display:-moz-inline-stack;display:inline-block;vertical-align:middle;*zoom:1;*display:inline;margin-right:-4px}
-36: .uper{text-transform:uppercase;letter-spacing:1px}
-37: .textCenter{display:block;text-align:center}
-38: .positionCenter{position:absolute;top:0;left:0;bottom:0;right:0;max-width:100%;max-height:auto;margin:auto}
-39: .after{content:' ';display:block;position:absolute}
-40: .trn{@include transition(all 35s)}
-41: .lnk__black{
-42: 	color: $black;
-43: 	border-bottom:1px solid $black;
-44: 	border-bottom:1px solid rgba(0,0,0,0.3);
-45: }
+38: .i-block-mid,.iblockmid{display:-moz-inline-stack;display:inline-block;vertical-align:middle;*zoom:1;*display:inline;margin-right:-4px}
+39: .uper{text-transform:uppercase;letter-spacing:1px}
+40: .textCenter{display:block;text-align:center}
+41: .positionCenter{position:absolute;top:0;left:0;bottom:0;right:0;max-width:100%;max-height:auto;margin:auto}
+42: .after{content:' ';display:block;position:absolute}
+43: .trn{@include transition(all 35s)}
+44: .lnk__black{
+45: 	color: $black;
+46: 	border-bottom:1px solid $gray;
+47: 	@include transition(color .25s, border-color .25s);
+48: }
 
 Backtrace:
-c:/MAMP/htdocs/ortoline.loc/sass/gui.scss:40:in `transition'
-c:/MAMP/htdocs/ortoline.loc/sass/gui.scss:40
+c:/MAMP/htdocs/ortoline.loc/sass/gui.scss:43:in `transition'
+c:/MAMP/htdocs/ortoline.loc/sass/gui.scss:43
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:98:in `block in with_mixin'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:115:in `with_frame'
@@ -73,4 +73,4 @@ c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'transition'.\A         on line 40 of c:/MAMP/htdocs/ortoline.loc/sass/gui.scss, in `transition'\A         from line 40 of c:/MAMP/htdocs/ortoline.loc/sass/gui.scss\A \A 35: .i-block-mid,.iblockmid{display:-moz-inline-stack;display:inline-block;vertical-align:middle;*zoom:1;*display:inline;margin-right:-4px}\A 36: .uper{text-transform:uppercase;letter-spacing:1px}\A 37: .textCenter{display:block;text-align:center}\A 38: .positionCenter{position:absolute;top:0;left:0;bottom:0;right:0;max-width:100%;max-height:auto;margin:auto}\A 39: .after{content:' ';display:block;position:absolute}\A 40: .trn{@include transition(all 35s)}\A 41: .lnk__black{\A 42: 	color: $black;\A 43: 	border-bottom:1px solid $black;\A 44: 	border-bottom:1px solid rgba(0,0,0,0.3);\A 45: }"; }
+  content: "Error: Undefined mixin 'transition'.\A         on line 43 of c:/MAMP/htdocs/ortoline.loc/sass/gui.scss, in `transition'\A         from line 43 of c:/MAMP/htdocs/ortoline.loc/sass/gui.scss\A \A 38: .i-block-mid,.iblockmid{display:-moz-inline-stack;display:inline-block;vertical-align:middle;*zoom:1;*display:inline;margin-right:-4px}\A 39: .uper{text-transform:uppercase;letter-spacing:1px}\A 40: .textCenter{display:block;text-align:center}\A 41: .positionCenter{position:absolute;top:0;left:0;bottom:0;right:0;max-width:100%;max-height:auto;margin:auto}\A 42: .after{content:' ';display:block;position:absolute}\A 43: .trn{@include transition(all 35s)}\A 44: .lnk__black{\A 45: 	color: $black;\A 46: 	border-bottom:1px solid $gray;\A 47: 	@include transition(color .25s, border-color .25s);\A 48: }"; }

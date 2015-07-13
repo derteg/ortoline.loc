@@ -49,12 +49,13 @@
 }
 .card__text{
 	position: relative;
+  	margin-bottom: 24px;
 }
 .card__title{
 	font-size: 16px;
 	line-height: 22px;
-	padding: 20px 0 10px 0;
-	width: 85%;
+	padding: 20px 0 8px 0;
+	width: 75%;
 	margin: 0 auto;
 	font-weight: bold;
 }
@@ -63,7 +64,7 @@
 	font-size: 13px;
 	display: block;
 	text-align: center;
-	padding: 0 0 10px 0;
+	margin-bottom: 16px;
 	font-weight: 600;
 }
 .card__price{
@@ -71,6 +72,9 @@
 	font-size: 22px;
 	font-weight: bold;
 	position: relative;
+}
+.card__button_cont{
+
 }
 .card__button{
 	display: block;
@@ -83,8 +87,8 @@
 	border: 1px solid rgba(0, 0, 0, 0.4);
 	height: 35px;
 	line-height: 37px;
-	margin: 40px auto 0;
-	border-radius: 50px;
+	margin: 0 auto;
+	border-radius: 19px;
 	@include transition(all .25s);
 	&:hover{
 		background: #166bae;

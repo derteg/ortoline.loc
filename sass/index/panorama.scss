@@ -2,20 +2,21 @@
 	position:relative;
 	background:url(../img/girl.jpg) bottom center no-repeat;
 	background-size: cover;
+	margin-bottom: 64px;
 }
 .panoram__content{
-	position:relative;
-	margin-left:52%;
-	padding:100px 0;
+	position: relative;
+	left: 620px;
+	padding: 100px 0;
 }
 .panoram__title{
-	font-size:40px;
-	line-height:50px;
-	margin-bottom:20px;
-	font-weight:900;
-	text-transform:uppercase;
-	letter-spacing:1.5px !important;
-	font-family:'Open Sans',sans-serif;
+	font-size: 40px;
+	line-height: 50px;
+	margin-bottom: 20px;
+	width: 50%;
+	margin-top: -56px;
+	letter-spacing: 0;
+	text-transform: uppercase;
 }
 @media (max-width:1024px) {
 	.panoram__title{
@@ -26,7 +27,7 @@
 	font-size:18px;
 	line-height:24px;
 	font-weight:600;
-	width:60%;
+	width: 50%;
 }
 .panoram__list{
 	font-size:15px;

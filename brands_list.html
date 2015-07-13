@@ -24,46 +24,61 @@
     </head>
     
     <body>
-        <header class="header js-header_fix header_brd">
+        <header class="header js-header_fix brd__bottom">
             <div class="inside">
-                <div class="header__wrap clearfix">
-                    <div class="header__left">
-                        <a href="links.html"><img src="img/logo.png" alt="logo" width="351" height="89" class="logo" /></a>
+                <div class="header__wrap cols">
+                    <div class="header__left col">
+                            <a class="logo__lnk" href="links.html"><img src="img/logo.png" alt="logo" class="logo" /></a>
+                            
+                            <div class="header__left_wrap">
+                                <div class="header__contact">
+                                    <div class="header__tel">+7 495 988-95-05</div>
+                                    <div class="header__call"><a class="lnk dotted" href="#">Заказать звонок</a></div>
+                                </div>
+                                
+                                <div class="mainmenu__buttons mainmenu__buttons_centr">
+                                    <a class="button button--blue" href="#0"><span>Каталог товаров</span></a>
+                                    <a class="button button--orange" href="#0"><img src="img/ic-location.png" alt="ic-location" width="12" /><span>Наши салоны</span></a>
+                                </div>
+                            </div>
                     </div>
-                    <div class="header__center">
-                        <div class="header__tel">+7 495 988-95-05</div>
-                        <div class="header__call"><a class="dashed" href="#">Заказать звонок</a></div>
-                    </div>
-                    <div class="mainmenu__buttons mainmenu__buttons_centr">
-                        <a class="button button--blue" href="#0"><span>Каталог товаров</span></a>
-                        <a class="button button--orange" href="#0"><img src="img/ic-location.png" alt="ic-location" width="12" /><span>Наши салоны</span></a>
-                    </div>
-                    <div class="header__right">
-                        <a class="header__tocart" href="#"><span>Личный кабинет</span></a>
-                        <a class="header__cart cart" href="#">
-                            <span class="cart__label">Заказ на сумму </span>
-                            <span class="cart__price">2 650 <span class="b-rub">Р</span></span>
-                            <span class="cart__badge">5</span>
-                        </a>
+                    <div class="header__right col">
+                        <div class="cols header__right_cont">                            
+                            <a class="header__right_btn basket-btn" href="#">
+                                <div class="basket-btn__badge">
+                                    <span class="pic"></span>
+                                    <span class="num">5</span>
+                                </div>
+                                <div class="basket-btn__cont">
+                                    <p class="basket__label">Заказ на сумму </p>
+                                    <p class="basket__price">2 650 <span class="b-rub">Р</span></p>
+                                </div>
+                            </a>
+                            <a class="header__right_btn profile-btn" href="#">
+                                <div class="profile-btn__pic"></div>
+                                <span class="profile-btn__text">Личный<br/> кабинет</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             
                 <nav class="mainmenu clearfix">
+                    <div class="mainmenu__btn-all"><a href="#0" class="button button--gray"><span class="ico"></span>Все разделы сайта</a></div>
                     <ul class="mainmenu__list">
                         <li class="mainmenu__item">
-                            <a class="mainmenu__link" href="company.html">Компания</a>
+                            <a class="lnk__black mainmenu__link" href="#0">Компания</a>
                         </li>
                         <li class="mainmenu__item">
-                            <a class="mainmenu__link" href="services.html">Услуги</a>
+                            <a class="lnk__black mainmenu__link" href="#0">Услуги</a>
                         </li>
                         <li class="mainmenu__item">
-                            <a class="mainmenu__link" href="info.html">Информация</a>
+                            <a class="lnk__black mainmenu__link" href="#0">Информация</a>
                         </li>
                         <li class="mainmenu__item">
-                            <a class="mainmenu__link" href="delivery.html">Доставка</a>
+                            <a class="lnk__black mainmenu__link" href="#0">Доставка</a>
                         </li>
                         <li class="mainmenu__item">
-                            <a class="mainmenu__link" href="contacts.html">Контакты </a>
+                            <a class="lnk__black mainmenu__link" href="#0">Контакты </a>
                         </li>
                     </ul>
                     <div class="mainmenu__buttons mainmenu__buttons_fr">
@@ -77,7 +92,7 @@
             <div id="wrap">
 
                 <div class="inside">                                        
-                    <div class="clearfix">
+                    <div class="cols">
                         <section class="maincat maincat_dark clearfix col col--75">
                             <div class="breadcrumbs clearfix">
                                 <ul class="breadcrumbs__list">
@@ -88,9 +103,9 @@
                             </div>
                             
                             <h1 class="title_h1">Производители</h1>
-                            <div data-inrow="3" data-max="parent">
+                            <div class="cols">
                                 <div class="col col--33 maincat__item">
-                                    <a class="maincat__wrap" data-max="child" href="#0">
+                                    <a class="maincat__wrap" href="#0">
                                         <div class="maincat__image">
                                             <img src="pic/pic_01.png" width="168" height="73" alt="pic_1" />
                                         </div>
@@ -100,7 +115,7 @@
                                     </a>
                                 </div>
                                 <div class="col col--33 maincat__item">
-                                    <a class="maincat__wrap" data-max="child" href="#0">
+                                    <a class="maincat__wrap" href="#0">
                                         <div class="maincat__image">
                                             <img src="pic/pic_02.png" width="159" height="71" alt="pic_1" />
                                         </div>
@@ -110,7 +125,7 @@
                                     </a>
                                 </div>
                                 <div class="col col--33 maincat__item">
-                                    <a class="maincat__wrap" data-max="child" href="#0">
+                                    <a class="maincat__wrap" href="#0">
                                         <div class="maincat__image">
                                             <img src="pic/pic_03.png" height="82" width="165" alt="pic_1" />
                                         </div>
@@ -120,7 +135,7 @@
                                     </a>
                                 </div>
                                 <div class="col col--33 maincat__item">
-                                    <a class="maincat__wrap" data-max="child" href="#0">
+                                    <a class="maincat__wrap" href="#0">
                                         <div class="maincat__image">
                                             <img src="pic/pic_04.png" height="109" width="171" alt="pic_1" />
                                         </div>
@@ -130,7 +145,7 @@
                                     </a>
                                 </div>
                                 <div class="col col--33 maincat__item">
-                                    <a class="maincat__wrap" data-max="child" href="#0">
+                                    <a class="maincat__wrap" href="#0">
                                         <div class="maincat__image">
                                             <img src="pic/pic_05.png" height="93" width="173" alt="pic_1" />
                                         </div>
@@ -140,7 +155,7 @@
                                     </a>
                                 </div>
                                 <div class="col col--33 maincat__item">
-                                    <a class="maincat__wrap" data-max="child" href="#0">
+                                    <a class="maincat__wrap" href="#0">
                                         <div class="maincat__image">
                                             <img src="pic/pic_06.png" width="163" height="85" alt="pic_1" />
                                         </div>
@@ -150,7 +165,7 @@
                                     </a>
                                 </div>
                                 <div class="col col--33 maincat__item">
-                                    <a class="maincat__wrap" data-max="child" href="#0">
+                                    <a class="maincat__wrap" href="#0">
                                         <div class="maincat__image">
                                             <img src="pic/pic_02.png" width="159" height="71" alt="pic_1" />
                                         </div>
@@ -160,7 +175,7 @@
                                     </a>
                                 </div>
                                 <div class="col col--33 maincat__item">
-                                    <a class="maincat__wrap" data-max="child" href="#0">
+                                    <a class="maincat__wrap" href="#0">
                                         <div class="maincat__image">
                                             <img src="pic/pic_03.png" height="82" width="165" alt="pic_1" />
                                         </div>

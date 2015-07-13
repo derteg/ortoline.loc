@@ -1,5 +1,5 @@
 .promo-stock-hits{
-	margin: 62px 0 44px;
+	margin-bottom: 40px;
 }
 .promo-stock-hits__wrap{
 	position: relative;
@@ -76,4 +76,9 @@
 		border-bottom: 15px solid $blue;
 		border-left: 10px solid transparent;
 	}
+}
+
+.product__news{
+	background-color: $white;
+	margin-bottom: 82px;
 }

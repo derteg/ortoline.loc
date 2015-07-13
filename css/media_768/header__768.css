@@ -5,8 +5,8 @@
   /* line 8, ../../sass/media_768/header__768.scss */
   .header__tocart { display: none; }
   /* line 11, ../../sass/media_768/header__768.scss */
-  .header__right { padding-top: 15px; } }
-/* line 17, ../../sass/media_768/header__768.scss */
-.header_fix .header__center { display: block; padding-top: 15px; }
-/* line 21, ../../sass/media_768/header__768.scss */
-.header_fix .mainmenu__buttons_centr { display: none; }
+  .header__right { padding-top: 15px; }
+  /* line 16, ../../sass/media_768/header__768.scss */
+  .header_fix .header__center { display: block; padding-top: 15px; }
+  /* line 20, ../../sass/media_768/header__768.scss */
+  .header_fix .mainmenu__buttons_centr { display: none; } }

@@ -1,5 +1,7 @@
 html,body{
 	height:100%;
+	width: 100%;
+	margin: 0;
 	background:#fff;
 	font-family:'HelveticaNeue',Verdana,Arial,sans-serif;
 	font-size:14px;
@@ -8,6 +10,7 @@ html,body{
 img{border:0}
 ul,nav{list-style:none; padding-left: 0;}
 a{text-decoration: none;}
+p{margin: 0;}
 .italic{font-style:italic}
 .bold{font-weight:bold}
 .fl{float:left}
@@ -40,13 +43,16 @@ a{text-decoration: none;}
 .trn{@include transition(all 35s)}
 .lnk__black{
 	color: $black;
-	border-bottom:1px solid $black;
-	border-bottom:1px solid rgba(0,0,0,0.3);
+	border-bottom:1px solid $gray;
+	@include transition(color .25s, border-color .25s);
 }
 .lnk__black:hover{
-	color:#f3a942;
-	border-bottom-color:#f3a942;
-	border-bottom-color:rgba(240,170,50,0.4);
+	color:$orange;
+	border-bottom-color:transparent;
+}
+.lnk__blue{
+	color: $blue;
+	border-bottom:1px solid $blue;
 }
 .dotted{
 	border-bottom-style: dotted;
@@ -57,6 +63,7 @@ a{text-decoration: none;}
 h1,h2,h3,h4,h5,h6{
 	font-family:'Open Sans',sans-serif;
 	font-weight:bold;
+	margin: 0;
 }
 h1{
 	font-size: 43px;
@@ -76,7 +83,6 @@ h1{
 h2{
 	font-size:32px;
 	line-height:40px;
-	font-family:'PFDinDisplayPro',Verdana,sans-serif;
 }
 h3{
 	font-size:14px;
@@ -181,11 +187,52 @@ h3{
 	border-radius: 23px;
 }
 
-.col{
-	float: left;
-}
-.col--33{width:33%}
+// .col{
+// 	display: inline-block;
+// 	vertical-align: top;
+// 	margin-left: -4px;
+// 	box-sizing: border-box;
+// }
+.col--33{width:33.3%}
 .col--20{width:20%}
 .col--25{width:25%}
 .col--50{width:50%}
 .col--75{width:75%}
+
+.cols{
+	text-align: justify;
+
+    /* Обнуляем для родителя*/
+    line-height: 0;
+    font-size: 1px; /* 1px для Opera */
+
+    /* Лекарство для IE6-7*/
+    text-justify: newspaper;
+    zoom:1;
+
+    /* Включаем в работу последнюю строку*/
+    text-align-last: justify;
+}
+.cols:after{
+    content: '';
+	width: 100%;
+    height: 0;
+    display: inline-block;
+    overflow: hidden;
+    visibility: hidden;
+}
+.col{
+    display: inline-block;
+    text-align: left;
+
+    /* Востанавливаем у потомков, кроме последнего*/
+    line-height: normal;
+    font-size: 14px;
+
+    /* Без него в Opera будет отступ под элементами */
+    vertical-align: top;
+
+    /* эмуляция inline-block для IE6-7*/
+    //display : inline;
+    //zoom : 1;
+}

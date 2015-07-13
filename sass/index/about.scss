@@ -1,19 +1,21 @@
 .about{
-	padding-bottom:70px;
-	padding-top:59px
+	padding-top:60px;
 }
 .about h2{
 	font-family:'Open Sans',sans-serif;
-	margin-bottom:20px
+	margin-bottom:22px;
 }
-.about big{
-	margin-bottom:20px;
-	display:block;
-	font-size:18px;
-	line-height:30px
+.about{
+	.promo__txt{
+		display:block;
+		font-size:18px;
+		line-height:30px;
+		margin-bottom:18px;
+	}
 }
 .about p{
-	margin-bottom:20px
+	margin-bottom:20px;
+	line-height: 20px;
 }
 .about-side{
 	margin-left:20px;

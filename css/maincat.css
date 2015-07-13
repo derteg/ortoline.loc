@@ -1,35 +1,24 @@
 /*
 Error: Undefined variable: "$white".
-        on line 14 of c:/MAMP/htdocs/ortoline.loc/sass/maincat.scss
+        on line 13 of c:/MAMP/htdocs/ortoline.loc/sass/maincat.scss
 
-9: 		color:#000;
-10: 		font-weight:600;
-11: 		font-size:14px;
-12: 		line-height:20px;
-13: 		text-align:center;
-14: 		background-color: $white;
-15: 	}
-16: 	.maincat__wrap{
-17: 		display:block; 
-18: 		border:1px solid $lightGray; 
-19: 		margin: -1px 0 0 -1px; 
+8: .maincat__item{
+9: 	color:#000;
+10: 	font-weight:600;
+11: 	font-size:14px;
+12: 	line-height:20px;	
+13: 	background-color: $white;
+14: }
+15: .maincat__wrap{
+16: 	display:block; 
+17: 	text-align:center;
+18: 	border:1px solid $lightGray; 
 
 Backtrace:
-c:/MAMP/htdocs/ortoline.loc/sass/maincat.scss:14
+c:/MAMP/htdocs/ortoline.loc/sass/maincat.scss:13
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `block in with_base'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:115:in `with_frame'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `with_base'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `visit'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:420:in `map'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:36:in `visit'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `block in with_base'
@@ -80,4 +69,4 @@ c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 14 of c:/MAMP/htdocs/ortoline.loc/sass/maincat.scss\A \A 9: 		color:#000;\A 10: 		font-weight:600;\A 11: 		font-size:14px;\A 12: 		line-height:20px;\A 13: 		text-align:center;\A 14: 		background-color: $white;\A 15: 	}\A 16: 	.maincat__wrap{\A 17: 		display:block; \A 18: 		border:1px solid $lightGray; \A 19: 		margin: -1px 0 0 -1px; "; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 13 of c:/MAMP/htdocs/ortoline.loc/sass/maincat.scss\A \A 8: .maincat__item{\A 9: 	color:#000;\A 10: 	font-weight:600;\A 11: 	font-size:14px;\A 12: 	line-height:20px;	\A 13: 	background-color: $white;\A 14: }\A 15: .maincat__wrap{\A 16: 	display:block; \A 17: 	text-align:center;\A 18: 	border:1px solid $lightGray; "; }

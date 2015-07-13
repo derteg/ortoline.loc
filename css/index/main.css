@@ -3,7 +3,7 @@ Error: Undefined variable: "$grayBrd".
         on line 6 of c:/MAMP/htdocs/ortoline.loc/sass/index/main.scss
 
 1: .promo-stock-hits{
-2: 	margin: 62px 0 44px;
+2: 	margin-bottom: 40px;
 3: }
 4: .promo-stock-hits__wrap{
 5: 	position: relative;
@@ -73,4 +73,4 @@ c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$grayBrd\".\A         on line 6 of c:/MAMP/htdocs/ortoline.loc/sass/index/main.scss\A \A 1: .promo-stock-hits{\A 2: 	margin: 62px 0 44px;\A 3: }\A 4: .promo-stock-hits__wrap{\A 5: 	position: relative;\A 6: 	border: 1px solid $grayBrd;\A 7: }\A 8: \A 9: .hits__label{\A 10: 	position: absolute;\A 11: 	background: $orange;"; }
+  content: "Error: Undefined variable: \"$grayBrd\".\A         on line 6 of c:/MAMP/htdocs/ortoline.loc/sass/index/main.scss\A \A 1: .promo-stock-hits{\A 2: 	margin-bottom: 40px;\A 3: }\A 4: .promo-stock-hits__wrap{\A 5: 	position: relative;\A 6: 	border: 1px solid $grayBrd;\A 7: }\A 8: \A 9: .hits__label{\A 10: 	position: absolute;\A 11: 	background: $orange;"; }
