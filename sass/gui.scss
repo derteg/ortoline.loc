@@ -7,7 +7,7 @@ html,body{
 	font-size:14px;
 	line-height:20px
 }
-img{border:0}
+img{border:0; width: 100%; height: auto;}
 ul,nav{list-style:none; padding-left: 0;}
 a{text-decoration: none; @include transition(color .25s, border-color .25s);}
 p{margin: 0;}

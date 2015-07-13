@@ -355,9 +355,52 @@
 .product__achieve-item{
 	display: inline-block;
 	vertical-align: top;
+	height: 100%;
 	margin: 0 26px;
+	text-align: center;
 	p{
 		margin-top: 6px;
+		opacity: 0;
+		@include transition(opacity .25s);
+	}
+	&:hover p{
+		opacity: 1;
+	}
+	.ico{
+		background: transparent $sprite02 no-repeat;
+		display: inline-block;
+	}
+	.ico_01{
+		background-position: 0 0;
+		width: 47px;
+		height: 44px;
+	}	
+	&:hover .ico_01{
+		background-position: 0 100%;
+	}
+	.ico_02{
+		background-position: -69px 0;
+		width: 68px;
+		height: 34px;
+	}	
+	&:hover .ico_02{
+		background-position: -69px 100%;
+	}
+	.ico_03{
+		background-position: -184px 0;
+		width: 32px;
+		height: 43px;
+	}	
+	&:hover .ico_03{
+		background-position: -184px 100%;
+	}
+	.ico_04{
+		background-position: -280px 0;
+		width: 40px;
+		height: 40px;
+	}	
+	&:hover .ico_04{
+		background-position: -280px 100%;
 	}
 }
 
