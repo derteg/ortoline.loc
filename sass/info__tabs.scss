@@ -1,9 +1,9 @@
 .info-tabs__list{
-	margin-bottom: 24px;
+	margin-bottom: 30px;
 }
 .info-tabs__item{
 	display: inline-block;
-	padding: 14px 32px;
+	padding: 8px 20px;
 	font-size: 15px;
 	cursor: pointer;
 	.text{
@@ -37,7 +37,9 @@
 		margin-bottom: 20px;
 	}
 	h4{
-		margin-bottom: 20px;
+		margin-bottom: 20px;		
+	}	
+	h4.lower{
 		text-transform: uppercase;
 	}
 	li{
@@ -52,5 +54,39 @@
 		background-color: $blue;
 		vertical-align: middle;
 		margin-right: 8px;
+	}
+}
+
+.tabs__title_top{
+	position: relative;
+	top: -62px;
+	font-size: 18px;
+}
+.tabs__title_top + .product__info_text{
+	margin-top: -20px;
+}
+
+.tabs-comment__form{		
+	margin-top: -20px;
+	textarea{
+		height: 142px;
+	}
+}
+
+.info-tabs__col{
+	.info-tabs__adress{
+		padding-left: 40px;
+		box-sizing: border-box;
+	}
+}
+.info-tabs__adress{	
+	.adress__metro{
+		margin-bottom: 20px;
+	}
+	.adress__lnk{
+		margin-bottom: 18px;
+	}
+	.adress__phone{
+		margin-bottom: 6px;
 	}
 }

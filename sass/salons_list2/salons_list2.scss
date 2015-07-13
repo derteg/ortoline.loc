@@ -12,11 +12,11 @@
 		padding-bottom: 25px;
 	}
 }
-.adress__map-type{
+.adress__type{
 	line-height: 20px;
 	color: $gray;
 }
-.adress__map-metro{	
+.adress__metro{	
 	line-height: 20px;
 	.color{
 		width: 8px;
@@ -33,16 +33,17 @@
 		background-color: $red;
 	}
 }
-.adress__map-lnk{
+.adress__lnk{
 	color: $blue;
 	line-height: 20px;
 	border-bottom: none;
+	display: inline-block;
 }
-.adress__map-phone{
+.adress__phone{
 	font-size: 18px;
 	font-weight: bold;
 }
-.adress__map-subphone{
+.adress__subphone{
 	font-size: 12px;
 	color: $gray;
 }

@@ -243,3 +243,40 @@ h3{
     //display : inline;
     //zoom : 1;
 }
+
+
+.date-sub{
+	font-size: 12px;
+	color: $gray;
+	font-family: $openSans;
+	.ico{
+		background: transparent $sprite -352px 0 no-repeat;
+		width: 17px;
+		height: 17px;
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 4px;
+	}
+}
+
+.form{
+	.field__cell{
+		margin-bottom: 10px;
+	}
+	input{
+		height: 45px;
+		width: 100%;
+		border-radius: 4px;
+		border: $brdLnk5;
+		padding: 6px 10px;
+		box-sizing: border-box;
+	}
+	textarea{
+		height: 45px;
+		width: 100%;
+		border-radius: 4px;
+		border: $brdLnk5;
+		padding: 6px 10px;
+		box-sizing: border-box;
+	}
+}

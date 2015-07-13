@@ -225,9 +225,7 @@
 		margin-top: 12px;
 	}
 	.mainmenu{
-		position: absolute;
-		opacity: 0;
-		z-index: -1;
+		display: none;
 	}	
 }
 .header_brd{

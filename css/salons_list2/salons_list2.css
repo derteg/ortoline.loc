@@ -5,11 +5,11 @@ Error: Undefined variable: "$gray".
 12: 		padding-bottom: 25px;
 13: 	}
 14: }
-15: .adress__map-type{
+15: .adress__type{
 16: 	line-height: 20px;
 17: 	color: $gray;
 18: }
-19: .adress__map-metro{	
+19: .adress__metro{	
 20: 	line-height: 20px;
 21: 	.color{
 22: 		width: 8px;
@@ -69,4 +69,4 @@ c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$gray\".\A         on line 17 of c:/MAMP/htdocs/ortoline.loc/sass/salons_list2/salons_list2.scss\A \A 12: 		padding-bottom: 25px;\A 13: 	}\A 14: }\A 15: .adress__map-type{\A 16: 	line-height: 20px;\A 17: 	color: $gray;\A 18: }\A 19: .adress__map-metro{	\A 20: 	line-height: 20px;\A 21: 	.color{\A 22: 		width: 8px;"; }
+  content: "Error: Undefined variable: \"$gray\".\A         on line 17 of c:/MAMP/htdocs/ortoline.loc/sass/salons_list2/salons_list2.scss\A \A 12: 		padding-bottom: 25px;\A 13: 	}\A 14: }\A 15: .adress__type{\A 16: 	line-height: 20px;\A 17: 	color: $gray;\A 18: }\A 19: .adress__metro{	\A 20: 	line-height: 20px;\A 21: 	.color{\A 22: 		width: 8px;"; }
