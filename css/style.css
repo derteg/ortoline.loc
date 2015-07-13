@@ -1234,27 +1234,6 @@ h3 { font-size: 14px; font-weight: bold; line-height: 36px; }
 /* line 28, ../sass/index/news__aside.scss */
 .news-aside__summary { padding-top: 5px; }
 
-/* line 1, ../sass/index/about.scss */
-.about { padding-top: 60px; }
-
-/* line 4, ../sass/index/about.scss */
-.about h2 { font-family: 'Open Sans',sans-serif; margin-bottom: 22px; }
-
-/* line 9, ../sass/index/about.scss */
-.about .promo__txt { display: block; font-size: 18px; line-height: 30px; margin-bottom: 18px; }
-
-/* line 16, ../sass/index/about.scss */
-.about p { margin-bottom: 20px; line-height: 20px; }
-
-/* line 20, ../sass/index/about.scss */
-.about-side { margin-left: 20px; margin-right: 0; position: relative; }
-
-/* line 25, ../sass/index/about.scss */
-.about-side h2 { margin-bottom: 25px; }
-
-/* line 28, ../sass/index/about.scss */
-.about-content { width: 92%; }
-
 /* line 1, ../sass/index/dvnt.scss */
 .dvnt { position: relative; margin-bottom: 50px; }
 
@@ -1736,7 +1715,60 @@ h3 { font-size: 14px; font-weight: bold; line-height: 36px; }
 .adress__nav-btn__item.dark .ico.list { background: transparent url("../ico/sprite_01.png") -320px 0 no-repeat; display: inline-block; width: 24px; height: 18px; padding: 0; position: relative; top: 4px; right: 8px; }
 
 /* line 1, ../sass/about/about.scss */
-.about_pic { width: 100%; height: auto; }
+.about-promo { padding-top: 60px; }
+
+/* line 4, ../sass/about/about.scss */
+.about__content > h2 { margin-top: 0; }
+
+/* line 7, ../sass/about/about.scss */
+.about { margin-bottom: 40px; }
+
+/* line 10, ../sass/about/about.scss */
+.about h2 { font-family: 'Open Sans',sans-serif; margin-top: 44px; margin-bottom: 20px; }
+
+/* line 16, ../sass/about/about.scss */
+.about .promo__txt { display: block; font-size: 18px; line-height: 30px; margin-bottom: 18px; }
+
+/* line 23, ../sass/about/about.scss */
+.about p { margin-bottom: 26px; line-height: 20px; }
+/* line 26, ../sass/about/about.scss */
+.about p a { color: #1376ba; border-bottom: 1px solid #1376ba; }
+/* line 29, ../sass/about/about.scss */
+.about p a:hover { border-bottom-color: transparent; }
+
+/* line 34, ../sass/about/about.scss */
+.about__side { margin-left: 20px; margin-right: 0; position: relative; }
+
+/* line 39, ../sass/about/about.scss */
+.about__side h2 { margin-bottom: 25px; }
+
+/* line 42, ../sass/about/about.scss */
+.about__content { width: 92%; }
+
+/* line 46, ../sass/about/about.scss */
+.about__pic { display: block; width: 100%; height: auto; margin-bottom: 6%; }
+
+/* line 53, ../sass/about/about.scss */
+.about-ours { margin-top: 54px; margin-bottom: 50px; }
+/* line 56, ../sass/about/about.scss */
+.about-ours .text { font-size: 14px; line-height: 22px; margin-bottom: 0; }
+
+/* line 62, ../sass/about/about.scss */
+.about-ours__round { width: 180px; height: 180px; display: inline-block; border-radius: 90px; position: relative; text-align: center; margin-bottom: 34px; }
+/* line 70, ../sass/about/about.scss */
+.about-ours__round.blue { background-color: #1376ba; }
+/* line 73, ../sass/about/about.scss */
+.about-ours__round.orange { background-color: #f3a942; }
+/* line 76, ../sass/about/about.scss */
+.about-ours__round .sub__title { line-height: 180px; vertical-align: middle; font-size: 48px; text-transform: uppercase; color: #ffffff; }
+
+/* line 84, ../sass/about/about.scss */
+.about-partner__list { margin-left: -20px; margin-bottom: 12px; }
+
+/* line 88, ../sass/about/about.scss */
+.about-partner__lnk { display: block; height: 150px; border: 1px solid #a9a9a9; margin-left: 20px; text-align: center; line-height: 150px; }
+/* line 95, ../sass/about/about.scss */
+.about-partner__lnk img { vertical-align: middle; }
 
 @media (max-width: 1080px) { /* line 2, ../sass/media_1024/header__1024.scss */
   .mainmenu__list { display: none; }

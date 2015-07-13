@@ -1,4 +1,98 @@
-.about_pic{
+.about-promo{
+	padding-top:60px;
+}
+.about__content > h2{
+	margin-top: 0;
+}
+.about{
+	margin-bottom: 40px;
+}
+.about h2{
+	font-family:'Open Sans',sans-serif;
+	margin-top: 44px;
+	margin-bottom: 20px;
+}
+.about{
+	.promo__txt{
+		display:block;
+		font-size:18px;
+		line-height:30px;
+		margin-bottom:18px;
+	}
+}
+.about p{
+	margin-bottom:26px;
+	line-height: 20px;
+	a{
+	color: $blue;
+	border-bottom: $brdLnk1;
+		&:hover{
+			border-bottom-color: transparent;
+		}
+	}
+}
+.about__side{
+	margin-left:20px;
+	margin-right:0;
+	position:relative
+}
+.about__side h2{
+	margin-bottom:25px
+}
+.about__content{
+	width:92%;
+}
+
+.about__pic{
+	display: block;
 	width: 100%;
 	height: auto;
+	margin-bottom: 6%;
+}
+
+.about-ours{
+	margin-top: 54px;
+	margin-bottom: 50px;
+	.text{
+		font-size: 14px;
+		line-height: 22px;
+		margin-bottom: 0;
+	}
+}
+.about-ours__round{
+	width: 180px;
+	height: 180px;
+	display: inline-block;
+	border-radius: 90px;
+	position: relative;
+	text-align: center;
+	margin-bottom: 34px;
+	&.blue{
+		background-color: $blue;
+	}
+	&.orange{
+		background-color: $orange;
+	}
+	.sub__title{		
+		line-height: 180px;
+		vertical-align: middle;
+		font-size: 48px;
+		text-transform: uppercase;
+		color: $white;
+	}
+}
+.about-partner__list{
+	margin-left: -20px;
+	margin-bottom: 12px;
+}
+.about-partner__lnk{
+	display: block;
+	height: 150px;
+	border: 1px solid $gray;
+	margin-left: 20px;
+	text-align: center;
+	line-height: 150px;
+	img{
+		vertical-align: middle;
+	}
 }
