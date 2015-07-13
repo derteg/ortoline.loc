@@ -18,6 +18,7 @@
 }
 .header__left{
 	white-space: nowrap;
+	float: left;
 	.logo{
 		@include transition(width .25s);
 	}
@@ -62,6 +63,7 @@
 .header__right{
 	margin-top: 28px;
 	padding-right: 1%;
+	float: right;
 }
 .header__right_btn{
 	float: right;

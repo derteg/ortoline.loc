@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$orange".
-        on line 16 of c:/MAMP/htdocs/ortoline.loc/sass/conditions.scss
+        on line 20 of c:/MAMP/htdocs/ortoline.loc/sass/conditions.scss
 
-11: 	padding: 0px 20px;
-12: 	box-sizing: border-box;
-13: }
-14: .conditions-promo{
-15: 	padding: 32px 36px;
-16: 	border: 5px solid $orange;
+15: 	padding: 0px 20px;
+16: 	box-sizing: border-box;
 17: }
-18: .conditions-promo__title{
-19: 	font-size: 16px;
-20: 	margin-bottom: 24px;
+18: .conditions-promo_brd{
+19: 	padding: 32px 36px;
+20: 	border: 5px solid $orange;
 21: }
+22: .conditions-promo__title{
+23: 	font-size: 16px;
+24: 	margin-bottom: 24px;
+25: }
 
 Backtrace:
-c:/MAMP/htdocs/ortoline.loc/sass/conditions.scss:16
+c:/MAMP/htdocs/ortoline.loc/sass/conditions.scss:20
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/list_literal.rb:62:in `block in _perform'
@@ -73,4 +73,4 @@ c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$orange\".\A         on line 16 of c:/MAMP/htdocs/ortoline.loc/sass/conditions.scss\A \A 11: 	padding: 0px 20px;\A 12: 	box-sizing: border-box;\A 13: }\A 14: .conditions-promo{\A 15: 	padding: 32px 36px;\A 16: 	border: 5px solid $orange;\A 17: }\A 18: .conditions-promo__title{\A 19: 	font-size: 16px;\A 20: 	margin-bottom: 24px;\A 21: }"; }
+  content: "Error: Undefined variable: \"$orange\".\A         on line 20 of c:/MAMP/htdocs/ortoline.loc/sass/conditions.scss\A \A 15: 	padding: 0px 20px;\A 16: 	box-sizing: border-box;\A 17: }\A 18: .conditions-promo_brd{\A 19: 	padding: 32px 36px;\A 20: 	border: 5px solid $orange;\A 21: }\A 22: .conditions-promo__title{\A 23: 	font-size: 16px;\A 24: 	margin-bottom: 24px;\A 25: }"; }
