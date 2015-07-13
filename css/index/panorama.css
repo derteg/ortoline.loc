@@ -1,19 +1,19 @@
 /* line 1, ../../sass/index/panorama.scss */
-.panoram { position: relative; background: url(../img/girl.jpg) bottom center no-repeat; background-size: cover; margin-bottom: 64px; }
+.panoram { position: relative; background: url(../img/girl.jpg) 54% 0 no-repeat; background-size: cover; margin-bottom: 64px; min-height: 727px; }
 
-/* line 7, ../../sass/index/panorama.scss */
-.panoram__content { position: relative; left: 620px; width: 50%; display: inline-block; padding: 100px 0; }
+/* line 8, ../../sass/index/panorama.scss */
+.panoram__content { position: absolute; right: 0px; top: 155px; width: 50%; display: inline-block; }
 
-/* line 14, ../../sass/index/panorama.scss */
+/* line 15, ../../sass/index/panorama.scss */
 .panoram__title { font-size: 40px; line-height: 50px; margin-bottom: 20px; width: 50%; margin-top: -56px; letter-spacing: 0; text-transform: uppercase; }
 
-@media (max-width: 1024px) { /* line 24, ../../sass/index/panorama.scss */
+@media (max-width: 1024px) { /* line 25, ../../sass/index/panorama.scss */
   .panoram__title { font-size: 34px; } }
-/* line 28, ../../sass/index/panorama.scss */
+/* line 29, ../../sass/index/panorama.scss */
 .panoram__sub-title { font-size: 18px; line-height: 24px; font-weight: 600; width: 50%; }
 
-/* line 34, ../../sass/index/panorama.scss */
+/* line 35, ../../sass/index/panorama.scss */
 .panoram__list { font-size: 15px; line-height: 24px; margin-top: 25px; margin-bottom: 35px; }
 
-/* line 40, ../../sass/index/panorama.scss */
+/* line 41, ../../sass/index/panorama.scss */
 .panoram__item { margin-bottom: 10px; }

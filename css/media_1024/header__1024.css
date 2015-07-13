@@ -1,4 +1,4 @@
-@media (max-width: 1160px) { /* line 2, ../../sass/media_1024/header__1024.scss */
+@media (max-width: 1080px) { /* line 2, ../../sass/media_1024/header__1024.scss */
   .mainmenu__list { display: none; }
   /* line 5, ../../sass/media_1024/header__1024.scss */
   .mainmenu__btn-all { display: block; } }
