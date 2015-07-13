@@ -990,47 +990,47 @@ h3 { font-size: 14px; font-weight: bold; line-height: 36px; }
 .card__wrap { background-color: #ffffff; padding: 20px 10px; margin-left: 20px; text-align: center; border-radius: 6px; position: relative; padding-bottom: 90px; }
 
 /* line 10, ../sass/card.scss */
-.card_nowrap { padding-bottom: 95px; }
-/* line 12, ../sass/card.scss */
+.card_nowrap { padding-bottom: 95px; text-align: center; }
+/* line 13, ../sass/card.scss */
 .card_nowrap .card__info { padding: 30px; }
 
-/* line 16, ../sass/card.scss */
+/* line 17, ../sass/card.scss */
 .card__info { position: absolute; top: 0; left: 0; background: #fff; background: rgba(255, 255, 255, 0.9); text-align: left; z-index: 5; bottom: -300px; display: none; padding: 10px 20px; }
-/* line 27, ../sass/card.scss */
+/* line 28, ../sass/card.scss */
 .card__info p { margin-bottom: 18px; }
 
-/* line 31, ../sass/card.scss */
+/* line 32, ../sass/card.scss */
 .card__image { height: 190px; line-height: 170px; text-align: center; }
-/* line 35, ../sass/card.scss */
+/* line 36, ../sass/card.scss */
 .card__image img { display: inline-block; width: 60%; height: auto; vertical-align: middle; line-height: 170px; max-height: 190px; }
 
-/* line 44, ../sass/card.scss */
+/* line 45, ../sass/card.scss */
 .card__text { position: relative; margin-bottom: 24px; }
 
-/* line 48, ../sass/card.scss */
+/* line 49, ../sass/card.scss */
 .card__title { font-size: 16px; line-height: 22px; padding: 20px 0 8px 0; width: 75%; margin: 0 auto; font-weight: bold; }
 
-/* line 56, ../sass/card.scss */
+/* line 57, ../sass/card.scss */
 .card__brand { color: #757575; font-size: 13px; display: block; text-align: center; margin-bottom: 16px; font-weight: 600; }
 
-/* line 64, ../sass/card.scss */
+/* line 65, ../sass/card.scss */
 .card__price { color: #166bae; font-size: 22px; font-weight: bold; position: relative; }
 
-/* line 73, ../sass/card.scss */
+/* line 74, ../sass/card.scss */
 .card__button { display: block; max-width: 145px; text-align: center; font-size: 12px; font-weight: bold; text-transform: uppercase; border: 1px solid #000; border: 1px solid rgba(0, 0, 0, 0.4); height: 35px; line-height: 37px; margin: 0 auto; border-radius: 19px; -moz-transition: all 0.25s; -o-transition: all 0.25s; -webkit-transition: all 0.25s; transition: all 0.25s; }
-/* line 87, ../sass/card.scss */
+/* line 88, ../sass/card.scss */
 .card__button:hover { background: #166bae; border-color: #166bae; color: #fff; }
 
-/* line 93, ../sass/card.scss */
+/* line 94, ../sass/card.scss */
 .card__line { position: absolute; height: 1px; width: 100%; left: 0; top: 185px; background: #f3f0eb; z-index: 6; }
 
-/* line 102, ../sass/card.scss */
+/* line 103, ../sass/card.scss */
 .card__circle { position: absolute; background: #f3f0eb; width: 30px; height: 30px; border-radius: 15px; left: 50%; margin-left: -15px; top: 50%; margin-top: -15px; cursor: pointer; }
-/* line 113, ../sass/card.scss */
+/* line 114, ../sass/card.scss */
 .card__circle:before { content: ''; display: block; position: absolute; width: 14px; border-top: 2px solid #8797a7; border-bottom: 2px solid #8797a7; left: 50%; margin-left: -7px; height: 3px; top: 9px; -moz-transition: all 0.25s; -o-transition: all 0.25s; -webkit-transition: all 0.25s; transition: all 0.25s; }
-/* line 126, ../sass/card.scss */
+/* line 127, ../sass/card.scss */
 .card__circle:after { content: ''; display: block; position: absolute; width: 10px; background: #8797a7; left: 50%; margin-left: -7px; height: 2px; top: 19px; -moz-transition: all 0.25s; -o-transition: all 0.25s; -webkit-transition: all 0.25s; transition: all 0.25s; }
-/* line 138, ../sass/card.scss */
+/* line 139, ../sass/card.scss */
 .card__circle:hover { background-color: #f3a942; }
 
 /* line 1, ../sass/index/main.scss */

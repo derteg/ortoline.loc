@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'transition'.
-        on line 86 of c:/MAMP/htdocs/ortoline.loc/sass/card.scss, in `transition'
-        from line 86 of c:/MAMP/htdocs/ortoline.loc/sass/card.scss
+        on line 87 of c:/MAMP/htdocs/ortoline.loc/sass/card.scss, in `transition'
+        from line 87 of c:/MAMP/htdocs/ortoline.loc/sass/card.scss
 
-81: 	border: 1px solid rgba(0, 0, 0, 0.4);
-82: 	height: 35px;
-83: 	line-height: 37px;
-84: 	margin: 0 auto;
-85: 	border-radius: 19px;
-86: 	@include transition(all .25s);
-87: 	&:hover{
-88: 		background: #166bae;
-89: 		border-color: #166bae;
-90: 		color: #fff;
-91: 	}
+82: 	border: 1px solid rgba(0, 0, 0, 0.4);
+83: 	height: 35px;
+84: 	line-height: 37px;
+85: 	margin: 0 auto;
+86: 	border-radius: 19px;
+87: 	@include transition(all .25s);
+88: 	&:hover{
+89: 		background: #166bae;
+90: 		border-color: #166bae;
+91: 		color: #fff;
+92: 	}
 
 Backtrace:
-c:/MAMP/htdocs/ortoline.loc/sass/card.scss:86:in `transition'
-c:/MAMP/htdocs/ortoline.loc/sass/card.scss:86
+c:/MAMP/htdocs/ortoline.loc/sass/card.scss:87:in `transition'
+c:/MAMP/htdocs/ortoline.loc/sass/card.scss:87
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:98:in `block in with_mixin'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:115:in `with_frame'
@@ -73,4 +73,4 @@ c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'transition'.\A         on line 86 of c:/MAMP/htdocs/ortoline.loc/sass/card.scss, in `transition'\A         from line 86 of c:/MAMP/htdocs/ortoline.loc/sass/card.scss\A \A 81: 	border: 1px solid rgba(0, 0, 0, 0.4);\A 82: 	height: 35px;\A 83: 	line-height: 37px;\A 84: 	margin: 0 auto;\A 85: 	border-radius: 19px;\A 86: 	@include transition(all .25s);\A 87: 	&:hover{\A 88: 		background: #166bae;\A 89: 		border-color: #166bae;\A 90: 		color: #fff;\A 91: 	}"; }
+  content: "Error: Undefined mixin 'transition'.\A         on line 87 of c:/MAMP/htdocs/ortoline.loc/sass/card.scss, in `transition'\A         from line 87 of c:/MAMP/htdocs/ortoline.loc/sass/card.scss\A \A 82: 	border: 1px solid rgba(0, 0, 0, 0.4);\A 83: 	height: 35px;\A 84: 	line-height: 37px;\A 85: 	margin: 0 auto;\A 86: 	border-radius: 19px;\A 87: 	@include transition(all .25s);\A 88: 	&:hover{\A 89: 		background: #166bae;\A 90: 		border-color: #166bae;\A 91: 		color: #fff;\A 92: 	}"; }
