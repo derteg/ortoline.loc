@@ -213,11 +213,6 @@ h3{
     /* Включаем в работу последнюю строку*/
     text-align-last: justify;
 }
-.cols_left{
-	&:after{
-		display: inline;
-	}
-}
 .cols:after{
     content: '';
 	width: 100%;
@@ -225,6 +220,12 @@ h3{
     display: inline-block;
     overflow: hidden;
     visibility: hidden;
+}
+.cols.cols_left{
+	&:after{
+		width: auto;
+		display: none;
+	}
 }
 .col{
     display: inline-block;
