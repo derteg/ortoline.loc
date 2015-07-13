@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$blue".
-        on line 17 of c:/MAMP/htdocs/ortoline.loc/sass/breadcrumbs.scss
+        on line 18 of c:/MAMP/htdocs/ortoline.loc/sass/breadcrumbs.scss
 
-12: .breadcrumbs__item:first-child{
-13: 	border-left: none;
-14: 	padding-left: 0;
-15: }
-16: .breadcrumbs__link{
-17: 	color: $blue;
-18: 	border-color: $blue;		
-19: }
-20: .breadcrumbs__link:hover{
-21: 	color: $orange;
-22: 	border-color: $orange;
+13: .breadcrumbs__item:first-child{
+14: 	border-left: none;
+15: 	padding-left: 0;
+16: }
+17: .breadcrumbs__link{
+18: 	color: $blue;
+19: 	border-color: $blue;		
+20: }
+21: .breadcrumbs__link:hover{
+22: 	color: $orange;
+23: 	border-color: $orange;
 
 Backtrace:
-c:/MAMP/htdocs/ortoline.loc/sass/breadcrumbs.scss:17
+c:/MAMP/htdocs/ortoline.loc/sass/breadcrumbs.scss:18
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
@@ -69,4 +69,4 @@ c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$blue\".\A         on line 17 of c:/MAMP/htdocs/ortoline.loc/sass/breadcrumbs.scss\A \A 12: .breadcrumbs__item:first-child{\A 13: 	border-left: none;\A 14: 	padding-left: 0;\A 15: }\A 16: .breadcrumbs__link{\A 17: 	color: $blue;\A 18: 	border-color: $blue;		\A 19: }\A 20: .breadcrumbs__link:hover{\A 21: 	color: $orange;\A 22: 	border-color: $orange;"; }
+  content: "Error: Undefined variable: \"$blue\".\A         on line 18 of c:/MAMP/htdocs/ortoline.loc/sass/breadcrumbs.scss\A \A 13: .breadcrumbs__item:first-child{\A 14: 	border-left: none;\A 15: 	padding-left: 0;\A 16: }\A 17: .breadcrumbs__link{\A 18: 	color: $blue;\A 19: 	border-color: $blue;		\A 20: }\A 21: .breadcrumbs__link:hover{\A 22: 	color: $orange;\A 23: 	border-color: $orange;"; }

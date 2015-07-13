@@ -1,28 +1,28 @@
 /*
-Error: Undefined mixin 'transition'.
-        on line 12 of c:/MAMP/htdocs/ortoline.loc/sass/gui.scss, in `transition'
-        from line 12 of c:/MAMP/htdocs/ortoline.loc/sass/gui.scss
+Error: Undefined variable: "$orange".
+        on line 16 of c:/MAMP/htdocs/ortoline.loc/sass/conditions.scss
 
-7: 	font-size:14px;
-8: 	line-height:20px
-9: }
-10: img{border:0;}
-11: ul,nav{list-style:none; padding-left: 0; margin: 0;}
-12: a{text-decoration: none; @include transition(color .25s, border-color .25s);}
-13: p{margin: 0;}
-14: .italic{font-style:italic}
-15: .bold{font-weight:bold}
-16: .fl{float:left}
-17: .fl{float:right}
+11: 	padding: 0px 20px;
+12: 	box-sizing: border-box;
+13: }
+14: .conditions-promo{
+15: 	padding: 32px 36px;
+16: 	border: 5px solid $orange;
+17: }
+18: .conditions-promo__title{
+19: 	font-size: 16px;
+20: 	margin-bottom: 24px;
+21: }
 
 Backtrace:
-c:/MAMP/htdocs/ortoline.loc/sass/gui.scss:12:in `transition'
-c:/MAMP/htdocs/ortoline.loc/sass/gui.scss:12
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:98:in `block in with_mixin'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:115:in `with_frame'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:98:in `with_mixin'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:336:in `visit_mixin'
+c:/MAMP/htdocs/ortoline.loc/sass/conditions.scss:16
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/variable.rb:49:in `_perform'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/list_literal.rb:62:in `block in _perform'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/list_literal.rb:62:in `map'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/list_literal.rb:62:in `_perform'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:36:in `visit'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `block in with_base'
@@ -73,4 +73,4 @@ c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'transition'.\A         on line 12 of c:/MAMP/htdocs/ortoline.loc/sass/gui.scss, in `transition'\A         from line 12 of c:/MAMP/htdocs/ortoline.loc/sass/gui.scss\A \A 7: 	font-size:14px;\A 8: 	line-height:20px\A 9: }\A 10: img{border:0;}\A 11: ul,nav{list-style:none; padding-left: 0; margin: 0;}\A 12: a{text-decoration: none; @include transition(color .25s, border-color .25s);}\A 13: p{margin: 0;}\A 14: .italic{font-style:italic}\A 15: .bold{font-weight:bold}\A 16: .fl{float:left}\A 17: .fl{float:right}"; }
+  content: "Error: Undefined variable: \"$orange\".\A         on line 16 of c:/MAMP/htdocs/ortoline.loc/sass/conditions.scss\A \A 11: 	padding: 0px 20px;\A 12: 	box-sizing: border-box;\A 13: }\A 14: .conditions-promo{\A 15: 	padding: 32px 36px;\A 16: 	border: 5px solid $orange;\A 17: }\A 18: .conditions-promo__title{\A 19: 	font-size: 16px;\A 20: 	margin-bottom: 24px;\A 21: }"; }

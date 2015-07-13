@@ -8,7 +8,7 @@ html,body{
 	line-height:20px
 }
 img{border:0;}
-ul,nav{list-style:none; padding-left: 0;}
+ul,nav{list-style:none; padding-left: 0; margin: 0;}
 a{text-decoration: none; @include transition(color .25s, border-color .25s);}
 p{margin: 0;}
 .italic{font-style:italic}
@@ -44,14 +44,17 @@ p{margin: 0;}
 .lnk__black{
 	color: $black;
 	border-bottom:1px solid $gray;	
-}
-.lnk__black:hover{
-	color:$orange;
-	border-bottom-color:transparent;
+	&:hover{
+		color:$orange;
+		border-bottom-color:transparent;
+	}
 }
 .lnk__blue{
 	color: $blue;
 	border-bottom:1px solid $blue;
+	&:hover{
+		border-bottom-color:transparent;
+	}
 }
 .dotted{
 	border-bottom-style: dotted;
@@ -67,8 +70,8 @@ h1,h2,h3,h4,h5,h6{
 h1{
 	font-size: 43px;
 	letter-spacing: -1px;
-	line-height: 70px;
-	margin-bottom: 20px;
+	line-height: 50px;
+	margin-bottom: 30px;
 	color: $black;
 }
 .title__h1_s2{
@@ -89,7 +92,7 @@ h3{
 	line-height:36px;
 }
 #all{
-	padding-bottom: 350px;
+	padding-bottom: 400px;
 }
 #wrap{
 	height:auto;
@@ -279,4 +282,15 @@ h3{
 		padding: 6px 10px;
 		box-sizing: border-box;
 	}
+}
+
+.my-list{
+	margin: 0;
+}
+.my-item{
+	position: relative;
+	background: transparent url('../img/ico_10.png') 0 3px no-repeat;
+	padding-left: 22px;
+	margin-bottom: 18px;
+	line-height: 22px;
 }
