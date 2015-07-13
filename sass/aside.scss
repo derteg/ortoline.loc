@@ -1,20 +1,25 @@
 .aside{	
-	padding: 0  20px 0 84px;
+	padding: 0  20px 0 64px;
 	box-sizing: border-box;
-	margin-top: 80px;
+	margin-top: 86px;
 }
 .aside__title{
 	font-size: 20px;
+	line-height: 1;
 	color: $black;
+	margin-bottom: 14px;
 }
 
 .aside__menu{
 	margin-bottom: 46px;
+	.aside__menu_list{
+		margin: 0;
+	}
 	.aside__menu_item{		
 		border-bottom: 1px solid $lightGray;		
 	}
 	.aside__menu_lnk{
-		padding: 21px 0;
+		padding: 19px 0;
 		position: relative;
 		border: none;		
 		display: block;
@@ -54,7 +59,7 @@
 
 .aside__info{
 	padding: 10px 0;
-	margin-bottom: 40px;
+	margin-bottom: 46px;
 	box-sizing: border-box;
 	.aside__info_title{
 		color: $black;
@@ -86,13 +91,16 @@
 		background: transparent url('../ico/sprite_01.png') 0 0 no-repeat;
 		width: 44px;
 		height: 50px;
+		margin-left: 24px;
+		margin-bottom: 20px;
 	}
 }
 .aside__info_courier{
 	.aside__info_pic{
 		display: inline-block;
 		background: transparent url('../ico/sprite_01.png') -56px 0 no-repeat;
-		width: 42px;
+		width: 72px;
 		height: 35px;
+		margin-bottom: 24px;
 	}
 }

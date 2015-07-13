@@ -213,6 +213,11 @@ h3{
     /* Включаем в работу последнюю строку*/
     text-align-last: justify;
 }
+.cols_left{
+	&:after{
+		display: inline;
+	}
+}
 .cols:after{
     content: '';
 	width: 100%;
