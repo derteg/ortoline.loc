@@ -390,84 +390,84 @@ h2 { font-size: 32px; line-height: 40px; }
 h3 { font-size: 14px; font-weight: bold; line-height: 36px; }
 
 /* line 91, ../sass/gui.scss */
-#all { padding-bottom: 350px; position: relative; }
+#all { padding-bottom: 350px; }
 
-/* line 95, ../sass/gui.scss */
+/* line 94, ../sass/gui.scss */
 #wrap { height: auto; min-height: 100%; position: relative; }
 
-/* line 100, ../sass/gui.scss */
+/* line 99, ../sass/gui.scss */
 .inside { position: relative; margin: 0 auto; padding: 0 20px; max-width: 1200px; }
 
-/* line 107, ../sass/gui.scss */
+/* line 106, ../sass/gui.scss */
 .bg_01 { background-color: #f4f1ec; }
 
-/* line 114, ../sass/gui.scss */
+/* line 113, ../sass/gui.scss */
 .button { display: inline-block; vertical-align: middle; padding: 14px 25px; color: #ffffff; font-size: 18px; font-weight: 500; cursor: pointer; border-radius: 4px; }
 
-/* line 124, ../sass/gui.scss */
+/* line 123, ../sass/gui.scss */
 .button span { padding-bottom: 2px; border-bottom: 1px solid #fff; border-bottom: 1px solid rgba(255, 255, 255, 0.4); text-shadow: 0 0 1px rgba(0, 0, 0, 0.2); -webkit-transition: all .35s; transition: all .35s; }
 
-/* line 132, ../sass/gui.scss */
+/* line 131, ../sass/gui.scss */
 .button img { vertical-align: top; margin-right: 10px; margin-top: 1px; }
 
-/* line 133, ../sass/gui.scss */
+/* line 132, ../sass/gui.scss */
 .button:hover span { color: #ffffff; border-bottom-color: rgba(255, 255, 255, 0.8); -webkit-transition: all .35s; transition: all .35s; }
 
-/* line 139, ../sass/gui.scss */
+/* line 138, ../sass/gui.scss */
 .button--blue { background: #1376ba; border-bottom-color: #559cca; }
 
-/* line 143, ../sass/gui.scss */
+/* line 142, ../sass/gui.scss */
 .button--blue:hover { background: #2B86C7; }
 
-/* line 146, ../sass/gui.scss */
+/* line 145, ../sass/gui.scss */
 .button--orange { background: #f3a942; border-bottom-color: #f6c070; }
 
-/* line 151, ../sass/gui.scss */
+/* line 150, ../sass/gui.scss */
 .button--orange:hover { background: #FAB24E; }
 
-/* line 154, ../sass/gui.scss */
+/* line 153, ../sass/gui.scss */
 .button--gray { color: #2c2c2c; background: #e9e9e9; }
 
-/* line 158, ../sass/gui.scss */
+/* line 157, ../sass/gui.scss */
 .button--gray:hover { color: #282828; background: #e5e0d8; }
 
-/* line 162, ../sass/gui.scss */
+/* line 161, ../sass/gui.scss */
 .outlineBut { position: relative; display: -moz-inline-stack; display: inline-block; vertical-align: top; *zoom: 1; *display: inline; margin-right: -4px; border: 2px solid #166bae; border: 2px solid rgba(35, 125, 190, 0.4); color: #166bae; font-size: 16px; padding: 12px 14px 10px 14px; border-radius: 19px; font-weight: 600; }
 
-/* line 178, ../sass/gui.scss */
+/* line 177, ../sass/gui.scss */
 .outlineBut:hover { color: #f3a942; border-color: #f3a942; border-color: rgba(240, 170, 50, 0.4); }
 
-/* line 183, ../sass/gui.scss */
+/* line 182, ../sass/gui.scss */
 .outlineBut img { margin-top: 1px; margin-right: 8px; }
 
-/* line 188, ../sass/gui.scss */
+/* line 187, ../sass/gui.scss */
 .button--round { border-radius: 23px; }
 
-/* line 198, ../sass/gui.scss */
+/* line 197, ../sass/gui.scss */
 .col--33 { width: 33.3%; }
 
-/* line 199, ../sass/gui.scss */
+/* line 198, ../sass/gui.scss */
 .col--20 { width: 20%; }
 
-/* line 200, ../sass/gui.scss */
+/* line 199, ../sass/gui.scss */
 .col--25 { width: 25%; }
 
-/* line 201, ../sass/gui.scss */
+/* line 200, ../sass/gui.scss */
 .col--50 { width: 50%; }
 
-/* line 202, ../sass/gui.scss */
+/* line 201, ../sass/gui.scss */
 .col--75 { width: 75%; }
 
-/* line 204, ../sass/gui.scss */
+/* line 203, ../sass/gui.scss */
 .cols { text-align: justify; /* ╨Ю╨▒╨╜╤Г╨╗╤П╨╡╨╝ ╨┤╨╗╤П ╤А╨╛╨┤╨╕╤В╨╡╨╗╤П*/ line-height: 0; font-size: 1px; /* 1px ╨┤╨╗╤П Opera */ /* ╨Ы╨╡╨║╨░╤А╤Б╤В╨▓╨╛ ╨┤╨╗╤П IE6-7*/ text-justify: newspaper; zoom: 1; /* ╨Т╨║╨╗╤О╤З╨░╨╡╨╝ ╨▓ ╤А╨░╨▒╨╛╤В╤Г ╨┐╨╛╤Б╨╗╨╡╨┤╨╜╤О╤О ╤Б╤В╤А╨╛╨║╤Г*/ text-align-last: justify; }
 
-/* line 218, ../sass/gui.scss */
+/* line 217, ../sass/gui.scss */
 .cols:after { content: ''; width: 100%; height: 0; display: inline-block; overflow: hidden; visibility: hidden; }
 
-/* line 227, ../sass/gui.scss */
+/* line 226, ../sass/gui.scss */
 .cols.cols_left:after { width: auto; display: none; }
 
-/* line 232, ../sass/gui.scss */
+/* line 231, ../sass/gui.scss */
 .col { display: inline-block; text-align: left; /* ╨Т╨╛╤Б╤В╨░╨╜╨░╨▓╨╗╨╕╨▓╨░╨╡╨╝ ╤Г ╨┐╨╛╤В╨╛╨╝╨║╨╛╨▓, ╨║╤А╨╛╨╝╨╡ ╨┐╨╛╤Б╨╗╨╡╨┤╨╜╨╡╨│╨╛*/ line-height: normal; font-size: 14px; /* ╨С╨╡╨╖ ╨╜╨╡╨│╨╛ ╨▓ Opera ╨▒╤Г╨┤╨╡╤В ╨╛╤В╤Б╤В╤Г╨┐ ╨┐╨╛╨┤ ╤Н╨╗╨╡╨╝╨╡╨╜╤В╨░╨╝╨╕ */ vertical-align: top; /* ╤Н╨╝╤Г╨╗╤П╤Ж╨╕╤П inline-block ╨┤╨╗╤П IE6-7*/ }
 
 /* line 1, ../sass/header.scss */
