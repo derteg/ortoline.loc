@@ -132,6 +132,8 @@
 	padding-top:12px;
 	padding-bottom: 30px;
 	z-index:8;	
+	opacity: 1;
+	@include transition(opacity .25s);
 }
 .mainmenu__btn{
 	display: none;
@@ -222,7 +224,9 @@
 		margin-top: 12px;
 	}
 	.mainmenu{
-		display: none;
+		position: absolute;
+		opacity: 0;
+		z-index: -1;
 	}	
 }
 .header_brd{
