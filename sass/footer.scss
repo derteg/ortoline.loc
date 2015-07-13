@@ -21,7 +21,10 @@
 	margin-bottom:10px
 }
 .footer-col a{
-	border:0
+	border:0;
+	&:hover{
+		color: $orange;
+	}
 }
 .footer-col li{
 	line-height:16px;
@@ -104,5 +107,5 @@
 	border:0
 }
 .footer-right a:hover{
-	color:#747579
+	color: $orange;
 }

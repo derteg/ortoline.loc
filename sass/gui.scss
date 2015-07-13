@@ -9,7 +9,7 @@ html,body{
 }
 img{border:0}
 ul,nav{list-style:none; padding-left: 0;}
-a{text-decoration: none;}
+a{text-decoration: none; @include transition(color .25s, border-color .25s);}
 p{margin: 0;}
 .italic{font-style:italic}
 .bold{font-weight:bold}
@@ -43,8 +43,7 @@ p{margin: 0;}
 .trn{@include transition(all 35s)}
 .lnk__black{
 	color: $black;
-	border-bottom:1px solid $gray;
-	@include transition(color .25s, border-color .25s);
+	border-bottom:1px solid $gray;	
 }
 .lnk__black:hover{
 	color:$orange;
@@ -89,11 +88,14 @@ h3{
 	font-weight:bold;
 	line-height:36px;
 }
+#all{
+	padding-bottom: 350px;
+	position: relative;
+}
 #wrap{
 	height:auto;
 	min-height:100%;
-	position:relative;
-	padding-bottom:400px;
+	position:relative;	
 }
 .inside{
 	position:relative;

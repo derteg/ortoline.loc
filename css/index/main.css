@@ -1,21 +1,18 @@
 /*
 Error: Undefined variable: "$grayBrd".
-        on line 6 of c:/MAMP/htdocs/ortoline.loc/sass/index/main.scss
+        on line 3 of c:/MAMP/htdocs/ortoline.loc/sass/index/main.scss
 
-1: .promo-stock-hits{
-2: 	margin-bottom: 40px;
-3: }
-4: .promo-stock-hits__wrap{
-5: 	position: relative;
-6: 	border: 1px solid $grayBrd;
-7: }
-8: 
-9: .hits__label{
-10: 	position: absolute;
-11: 	background: $orange;
+1: .promo-stock-hits__wrap{
+2: 	position: relative;
+3: 	border: 1px solid $grayBrd;
+4: }
+5: 
+6: .hits__label{
+7: 	position: absolute;
+8: 	background: $orange;
 
 Backtrace:
-c:/MAMP/htdocs/ortoline.loc/sass/index/main.scss:6
+c:/MAMP/htdocs/ortoline.loc/sass/index/main.scss:3
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/list_literal.rb:62:in `block in _perform'
@@ -73,4 +70,4 @@ c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$grayBrd\".\A         on line 6 of c:/MAMP/htdocs/ortoline.loc/sass/index/main.scss\A \A 1: .promo-stock-hits{\A 2: 	margin-bottom: 40px;\A 3: }\A 4: .promo-stock-hits__wrap{\A 5: 	position: relative;\A 6: 	border: 1px solid $grayBrd;\A 7: }\A 8: \A 9: .hits__label{\A 10: 	position: absolute;\A 11: 	background: $orange;"; }
+  content: "Error: Undefined variable: \"$grayBrd\".\A         on line 3 of c:/MAMP/htdocs/ortoline.loc/sass/index/main.scss\A \A 1: .promo-stock-hits__wrap{\A 2: 	position: relative;\A 3: 	border: 1px solid $grayBrd;\A 4: }\A 5: \A 6: .hits__label{\A 7: 	position: absolute;\A 8: 	background: $orange;"; }
