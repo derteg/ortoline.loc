@@ -290,7 +290,7 @@
 html, body { height: 100%; width: 100%; margin: 0; background: #fff; font-family: 'HelveticaNeue',Verdana,Arial,sans-serif; font-size: 14px; line-height: 20px; }
 
 /* line 10, ../sass/gui.scss */
-img { border: 0; width: 100%; height: auto; }
+img { border: 0; }
 
 /* line 11, ../sass/gui.scss */
 ul, nav { list-style: none; padding-left: 0; }
