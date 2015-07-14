@@ -470,16 +470,20 @@ h3 { font-size: 14px; font-weight: bold; line-height: 36px; }
 .date-sub .ico { background: transparent url("../ico/sprite_01.png") -352px 0 no-repeat; width: 17px; height: 17px; display: inline-block; vertical-align: middle; margin-right: 4px; }
 
 /* line 235, ../sass/gui.scss */
-.form .field__cell { margin-bottom: 10px; }
+.form .field__cell { margin-bottom: 16px; }
 /* line 238, ../sass/gui.scss */
+.form label { margin-bottom: 6px; display: block; color: #2c2c2c; }
+/* line 243, ../sass/gui.scss */
 .form input { height: 45px; width: 100%; border-radius: 4px; border: 1px solid #dadada; padding: 6px 10px; box-sizing: border-box; }
-/* line 246, ../sass/gui.scss */
+/* line 251, ../sass/gui.scss */
 .form textarea { height: 45px; width: 100%; border-radius: 4px; border: 1px solid #dadada; padding: 6px 10px; box-sizing: border-box; }
+/* line 259, ../sass/gui.scss */
+.form button { border: none; outline: none; }
 
-/* line 256, ../sass/gui.scss */
+/* line 265, ../sass/gui.scss */
 .my__list { margin: 0; }
 
-/* line 259, ../sass/gui.scss */
+/* line 268, ../sass/gui.scss */
 .my__item { position: relative; background: transparent url("../img/ico_10.png") 0 3px no-repeat; padding-left: 22px; margin-bottom: 18px; line-height: 22px; }
 
 /* line 1, ../sass/header.scss */
@@ -745,7 +749,7 @@ h3 { font-size: 14px; font-weight: bold; line-height: 36px; }
 .promoslider + .maincat { margin-top: 1px; }
 
 /* line 4, ../sass/maincat.scss */
-.maincat { position: relative; margin-bottom: 54px; }
+.maincat { position: relative; margin-bottom: 80px; }
 
 /* line 8, ../sass/maincat.scss */
 .maincat__item { color: #000; font-weight: 600; font-size: 14px; line-height: 20px; background-color: #ffffff; }
@@ -898,15 +902,17 @@ h3 { font-size: 14px; font-weight: bold; line-height: 36px; }
 .tabs-comment__form { margin-top: -20px; }
 /* line 71, ../sass/info__tabs.scss */
 .tabs-comment__form textarea { height: 142px; }
+/* line 74, ../sass/info__tabs.scss */
+.tabs-comment__form button { margin-top: 10px; }
 
-/* line 77, ../sass/info__tabs.scss */
+/* line 80, ../sass/info__tabs.scss */
 .info-tabs__col .info-tabs__adress { padding-left: 40px; box-sizing: border-box; }
 
-/* line 83, ../sass/info__tabs.scss */
-.info-tabs__adress .adress__metro { margin-bottom: 20px; }
 /* line 86, ../sass/info__tabs.scss */
-.info-tabs__adress .adress__lnk { margin-bottom: 18px; }
+.info-tabs__adress .adress__metro { margin-bottom: 20px; }
 /* line 89, ../sass/info__tabs.scss */
+.info-tabs__adress .adress__lnk { margin-bottom: 18px; }
+/* line 92, ../sass/info__tabs.scss */
 .info-tabs__adress .adress__phone { margin-bottom: 6px; }
 
 /* line 1, ../sass/video.scss */
@@ -1640,78 +1646,81 @@ h3 { font-size: 14px; font-weight: bold; line-height: 36px; }
 /* line 195, ../sass/product/slider.scss */
 .product__news-slider .slick-next:before { background: transparent url("../ico/sprite_01.png") -240px top no-repeat; }
 
-/* line 3, ../sass/salons_list2/salons_list2.scss */
+/* line 2, ../sass/salons_list2/salons_list2.scss */
+.adress { margin-bottom: 70px; }
+
+/* line 5, ../sass/salons_list2/salons_list2.scss */
 .adress__map { height: 780px; }
 
-/* line 8, ../sass/salons_list2/salons_list2.scss */
+/* line 10, ../sass/salons_list2/salons_list2.scss */
 .adress__tbl td { width: 33%; vertical-align: top; padding-right: 20px; padding-bottom: 25px; }
 
-/* line 15, ../sass/salons_list2/salons_list2.scss */
+/* line 17, ../sass/salons_list2/salons_list2.scss */
 .adress__type { line-height: 20px; color: #a9a9a9; }
 
-/* line 19, ../sass/salons_list2/salons_list2.scss */
-.adress__metro { line-height: 20px; }
 /* line 21, ../sass/salons_list2/salons_list2.scss */
+.adress__metro { line-height: 20px; }
+/* line 23, ../sass/salons_list2/salons_list2.scss */
 .adress__metro .color { width: 8px; height: 8px; float: left; margin-top: 8px; border-radius: 4px; }
-/* line 28, ../sass/salons_list2/salons_list2.scss */
+/* line 30, ../sass/salons_list2/salons_list2.scss */
 .adress__metro .name { font-size: 14px; margin-left: 14px; }
-/* line 32, ../sass/salons_list2/salons_list2.scss */
+/* line 34, ../sass/salons_list2/salons_list2.scss */
 .adress__metro .red { background-color: #ea1c1c; }
 
-/* line 36, ../sass/salons_list2/salons_list2.scss */
+/* line 38, ../sass/salons_list2/salons_list2.scss */
 .adress__lnk { color: #1376ba; line-height: 20px; border-bottom: none; display: inline-block; }
 
-/* line 42, ../sass/salons_list2/salons_list2.scss */
+/* line 44, ../sass/salons_list2/salons_list2.scss */
 .adress__phone { font-size: 18px; font-weight: bold; }
 
-/* line 46, ../sass/salons_list2/salons_list2.scss */
+/* line 48, ../sass/salons_list2/salons_list2.scss */
 .adress__subphone { font-size: 12px; color: #a9a9a9; }
 
-/* line 51, ../sass/salons_list2/salons_list2.scss */
+/* line 53, ../sass/salons_list2/salons_list2.scss */
 .adress__nav { margin-bottom: 40px; }
 
-/* line 54, ../sass/salons_list2/salons_list2.scss */
+/* line 56, ../sass/salons_list2/salons_list2.scss */
 .adress__nav-select_wrap { position: relative; display: inline-block; height: 58px; width: 336px; vertical-align: middle; }
-/* line 60, ../sass/salons_list2/salons_list2.scss */
+/* line 62, ../sass/salons_list2/salons_list2.scss */
 .adress__nav-select_wrap .styledSelect { height: 58px; width: 336px; }
-/* line 64, ../sass/salons_list2/salons_list2.scss */
+/* line 66, ../sass/salons_list2/salons_list2.scss */
 .adress__nav-select_wrap .options { width: 336px; }
-/* line 67, ../sass/salons_list2/salons_list2.scss */
+/* line 69, ../sass/salons_list2/salons_list2.scss */
 .adress__nav-select_wrap .select__ico { content: ""; position: absolute; display: inline-block; border-radius: 6px; width: 12px; height: 12px; top: 24px; left: 18px; }
-/* line 76, ../sass/salons_list2/salons_list2.scss */
+/* line 78, ../sass/salons_list2/salons_list2.scss */
 .adress__nav-select_wrap .select__ico.all { border-radius: 0; top: 22px; left: 18px; width: 22px; height: 15px; background: transparent url("../ico/sprite_01.png") -264px 0 no-repeat; }
-/* line 84, ../sass/salons_list2/salons_list2.scss */
+/* line 86, ../sass/salons_list2/salons_list2.scss */
 .adress__nav-select_wrap .select__ico.orange { background-color: #f3a942; }
-/* line 87, ../sass/salons_list2/salons_list2.scss */
+/* line 89, ../sass/salons_list2/salons_list2.scss */
 .adress__nav-select_wrap .select__ico.gray { background-color: #a9a9a9; }
-/* line 90, ../sass/salons_list2/salons_list2.scss */
+/* line 92, ../sass/salons_list2/salons_list2.scss */
 .adress__nav-select_wrap .select__ico.blue { background-color: #1376ba; }
 
-/* line 96, ../sass/salons_list2/salons_list2.scss */
+/* line 98, ../sass/salons_list2/salons_list2.scss */
 .adress__nav-type { line-height: 20px; display: inline-block; margin-left: 144px; }
-/* line 100, ../sass/salons_list2/salons_list2.scss */
+/* line 102, ../sass/salons_list2/salons_list2.scss */
 .adress__nav-type .text { font-size: 14px; vertical-align: middle; font-weight: bold; }
-/* line 105, ../sass/salons_list2/salons_list2.scss */
+/* line 107, ../sass/salons_list2/salons_list2.scss */
 .adress__nav-type .ico { vertical-align: middle; background: transparent url("../img/ico_09.png") left top no-repeat; width: 46px; height: 38px; margin: 0px 6px; display: inline-block; }
 
-/* line 114, ../sass/salons_list2/salons_list2.scss */
+/* line 116, ../sass/salons_list2/salons_list2.scss */
 .adress__nav-btn__list { float: right; }
 
-/* line 117, ../sass/salons_list2/salons_list2.scss */
+/* line 119, ../sass/salons_list2/salons_list2.scss */
 .adress__nav-btn__item { margin-left: 10px; font-size: 14px; }
-/* line 120, ../sass/salons_list2/salons_list2.scss */
+/* line 122, ../sass/salons_list2/salons_list2.scss */
 .adress__nav-btn__item span { border-bottom: none; text-shadow: none; }
-/* line 124, ../sass/salons_list2/salons_list2.scss */
+/* line 126, ../sass/salons_list2/salons_list2.scss */
 .adress__nav-btn__item .text { padding-bottom: 0; line-height: 24px; vertical-align: middle; }
-/* line 130, ../sass/salons_list2/salons_list2.scss */
+/* line 132, ../sass/salons_list2/salons_list2.scss */
 .adress__nav-btn__item.gray:hover span { color: #2c2c2c; }
-/* line 134, ../sass/salons_list2/salons_list2.scss */
+/* line 136, ../sass/salons_list2/salons_list2.scss */
 .adress__nav-btn__item.gray { background-color: #e9e9e9; color: #2c2c2c; }
-/* line 137, ../sass/salons_list2/salons_list2.scss */
+/* line 139, ../sass/salons_list2/salons_list2.scss */
 .adress__nav-btn__item.gray .ico.cart { background: transparent url("../ico/sprite_01.png") -296px 0 no-repeat; display: inline-block; width: 16px; height: 24px; padding: 0; vertical-align: middle; position: relative; top: 0px; right: 8px; }
-/* line 149, ../sass/salons_list2/salons_list2.scss */
-.adress__nav-btn__item.dark { background-color: #282828; }
 /* line 151, ../sass/salons_list2/salons_list2.scss */
+.adress__nav-btn__item.dark { background-color: #282828; }
+/* line 153, ../sass/salons_list2/salons_list2.scss */
 .adress__nav-btn__item.dark .ico.list { background: transparent url("../ico/sprite_01.png") -320px 0 no-repeat; display: inline-block; width: 24px; height: 18px; padding: 0; position: relative; top: 4px; right: 8px; }
 
 /* line 1, ../sass/about/about.scss */
@@ -1721,7 +1730,7 @@ h3 { font-size: 14px; font-weight: bold; line-height: 36px; }
 .about__content > h2 { margin-top: 0; }
 
 /* line 7, ../sass/about/about.scss */
-.about { margin-bottom: 40px; }
+.about { margin-bottom: 80px; }
 
 /* line 10, ../sass/about/about.scss */
 .about h2 { font-family: 'Open Sans',sans-serif; margin-top: 44px; margin-bottom: 20px; }
@@ -1746,56 +1755,65 @@ h3 { font-size: 14px; font-weight: bold; line-height: 36px; }
 .about__content { width: 92%; }
 
 /* line 46, ../sass/about/about.scss */
-.about__pic { display: block; width: 100%; height: auto; margin-bottom: 6%; }
+.about__pic { display: block; width: 100%; height: auto; margin-bottom: 54px; margin-top: -60px; }
 
-/* line 53, ../sass/about/about.scss */
+/* line 54, ../sass/about/about.scss */
 .about-ours { margin-top: 54px; margin-bottom: 50px; }
-/* line 56, ../sass/about/about.scss */
+/* line 57, ../sass/about/about.scss */
 .about-ours .text { font-size: 14px; line-height: 22px; margin-bottom: 0; }
 
-/* line 62, ../sass/about/about.scss */
+/* line 63, ../sass/about/about.scss */
 .about-ours__round { width: 180px; height: 180px; display: inline-block; border-radius: 90px; position: relative; text-align: center; margin-bottom: 34px; }
-/* line 70, ../sass/about/about.scss */
+/* line 71, ../sass/about/about.scss */
 .about-ours__round.blue { background-color: #1376ba; }
-/* line 73, ../sass/about/about.scss */
+/* line 74, ../sass/about/about.scss */
 .about-ours__round.orange { background-color: #f3a942; }
-/* line 76, ../sass/about/about.scss */
+/* line 77, ../sass/about/about.scss */
 .about-ours__round .sub__title { line-height: 180px; vertical-align: middle; font-size: 48px; text-transform: uppercase; color: #ffffff; }
 
-/* line 84, ../sass/about/about.scss */
+/* line 85, ../sass/about/about.scss */
 .about-partner__list { margin-left: -20px; margin-bottom: 12px; }
 
-/* line 88, ../sass/about/about.scss */
+/* line 89, ../sass/about/about.scss */
 .about-partner__lnk { display: block; height: 150px; border: 1px solid #a9a9a9; margin-left: 20px; text-align: center; line-height: 150px; }
-/* line 95, ../sass/about/about.scss */
+/* line 96, ../sass/about/about.scss */
 .about-partner__lnk img { vertical-align: middle; }
 
 /* line 1, ../sass/conditions.scss */
-.conditions__sub-title { font-size: 22px; line-height: 40px; }
+.conditions { margin-bottom: 80px; }
 
-/* line 5, ../sass/conditions.scss */
+/* line 4, ../sass/conditions.scss */
+.conditions__sub-title { font-size: 22px; line-height: 40px; margin-top: -10px; }
+
+/* line 9, ../sass/conditions.scss */
 .conditions__par { font-size: 16px; line-height: 24px; margin-bottom: 30px; }
 
-/* line 10, ../sass/conditions.scss */
-.conditions__row { margin-left: -20px; margin-top: 64px; }
+/* line 15, ../sass/conditions.scss */
+.conditions__row { margin-left: -20px; margin-top: 44px; }
 
-/* line 14, ../sass/conditions.scss */
-.conditions__col { padding: 0px 20px; box-sizing: border-box; }
-
-/* line 18, ../sass/conditions.scss */
-.conditions-promo_brd { padding: 32px 36px; border: 5px solid #f3a942; }
+/* line 19, ../sass/conditions.scss */
+.conditions__sub-title + .conditions__row { margin-top: 36px; }
 
 /* line 22, ../sass/conditions.scss */
+.conditions__row + .conditions__row { margin-top: 64px; }
+
+/* line 25, ../sass/conditions.scss */
+.conditions__col { padding: 0px 20px; box-sizing: border-box; }
+
+/* line 29, ../sass/conditions.scss */
+.conditions-promo_brd { padding: 32px 36px 22px; border: 5px solid #f3a942; }
+
+/* line 33, ../sass/conditions.scss */
 .conditions-promo__title { font-size: 16px; margin-bottom: 24px; }
 
-/* line 26, ../sass/conditions.scss */
-.conditions-promo__list { margin-bottom: 20px; }
+/* line 37, ../sass/conditions.scss */
+.conditions-promo__list { margin-bottom: 30px; }
 
-/* line 30, ../sass/conditions.scss */
+/* line 41, ../sass/conditions.scss */
 .conditions__content h2 { font-size: 30px; line-height: 34px; margin-bottom: 22px; }
-/* line 35, ../sass/conditions.scss */
+/* line 46, ../sass/conditions.scss */
 .conditions__content h6 { font-family: "HelveticaNeue", Verdana, Arial, sans-serif; font-weight: normal; font-size: 18px; line-height: 22px; margin-bottom: 24px; }
-/* line 42, ../sass/conditions.scss */
+/* line 53, ../sass/conditions.scss */
 .conditions__content p { font-size: 14px; line-height: 22px; margin-bottom: 22px; }
 
 @media (max-width: 1080px) { /* line 2, ../sass/media_1024/header__1024.scss */

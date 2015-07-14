@@ -375,7 +375,7 @@ function heightsToMax() {
 		    if (w.scrollTop() > 100) {
 		    	that.addClass('header_fix');
 		    	$('#all').css('top', that.height());
-		    	$('#footer').css('margin-top', -400 + that.height())
+		    	$('#footer').css('margin-top', -400)
 		    } else {
 		    	that.removeClass('header_fix');
 		    	$('#all').css('top', 0);

@@ -1,22 +1,33 @@
+.conditions{
+	margin-bottom: 80px;
+}
 .conditions__sub-title{
 	font-size: 22px;
 	line-height: 40px;
+	margin-top: -10px;
 }
 .conditions__par{
 	font-size: 16px;
 	line-height: 24px;
 	margin-bottom: 30px;
 }
+
 .conditions__row{
 	  margin-left: -20px;
-	  margin-top: 64px;
+	  margin-top: 44px;
+}
+.conditions__sub-title + .conditions__row{
+	margin-top: 36px;
+}
+.conditions__row + .conditions__row{
+	margin-top: 64px;
 }
 .conditions__col {
 	padding: 0px 20px;
 	box-sizing: border-box;
 }
 .conditions-promo_brd{
-	padding: 32px 36px;
+	padding: 32px 36px 22px;
 	border: 5px solid $orange;
 }
 .conditions-promo__title{
@@ -24,7 +35,7 @@
 	margin-bottom: 24px;
 }
 .conditions-promo__list{
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 .conditions__content{
 	h2{

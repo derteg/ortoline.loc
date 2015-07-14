@@ -233,7 +233,12 @@ h3{
 
 .form{
 	.field__cell{
-		margin-bottom: 10px;
+		margin-bottom: 16px;
+	}
+	label{
+		margin-bottom: 6px;
+		display: block;
+		color: $black;
 	}
 	input{
 		height: 45px;
@@ -250,6 +255,10 @@ h3{
 		border: $brdLnk5;
 		padding: 6px 10px;
 		box-sizing: border-box;
+	}
+	button{
+		border: none;
+		outline: none;
 	}
 }
 

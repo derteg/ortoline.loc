@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$gray".
-        on line 17 of c:/MAMP/htdocs/ortoline.loc/sass/salons_list2/salons_list2.scss
+        on line 19 of c:/MAMP/htdocs/ortoline.loc/sass/salons_list2/salons_list2.scss
 
-12: 		padding-bottom: 25px;
-13: 	}
-14: }
-15: .adress__type{
-16: 	line-height: 20px;
-17: 	color: $gray;
-18: }
-19: .adress__metro{	
-20: 	line-height: 20px;
-21: 	.color{
-22: 		width: 8px;
+14: 		padding-bottom: 25px;
+15: 	}
+16: }
+17: .adress__type{
+18: 	line-height: 20px;
+19: 	color: $gray;
+20: }
+21: .adress__metro{	
+22: 	line-height: 20px;
+23: 	.color{
+24: 		width: 8px;
 
 Backtrace:
-c:/MAMP/htdocs/ortoline.loc/sass/salons_list2/salons_list2.scss:17
+c:/MAMP/htdocs/ortoline.loc/sass/salons_list2/salons_list2.scss:19
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
@@ -69,4 +69,4 @@ c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$gray\".\A         on line 17 of c:/MAMP/htdocs/ortoline.loc/sass/salons_list2/salons_list2.scss\A \A 12: 		padding-bottom: 25px;\A 13: 	}\A 14: }\A 15: .adress__type{\A 16: 	line-height: 20px;\A 17: 	color: $gray;\A 18: }\A 19: .adress__metro{	\A 20: 	line-height: 20px;\A 21: 	.color{\A 22: 		width: 8px;"; }
+  content: "Error: Undefined variable: \"$gray\".\A         on line 19 of c:/MAMP/htdocs/ortoline.loc/sass/salons_list2/salons_list2.scss\A \A 14: 		padding-bottom: 25px;\A 15: 	}\A 16: }\A 17: .adress__type{\A 18: 	line-height: 20px;\A 19: 	color: $gray;\A 20: }\A 21: .adress__metro{	\A 22: 	line-height: 20px;\A 23: 	.color{\A 24: 		width: 8px;"; }
