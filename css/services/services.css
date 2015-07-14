@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$black".
-        on line 32 of c:/MAMP/htdocs/ortoline.loc/sass/services.scss
+        on line 32 of c:/MAMP/htdocs/ortoline.loc/sass/services/services.scss
 
 27: 		width: 100%;
 28: 		height: auto;
@@ -15,7 +15,7 @@ Error: Undefined variable: "$black".
 37: .services__list_2-col{
 
 Backtrace:
-c:/MAMP/htdocs/ortoline.loc/sass/services.scss:32
+c:/MAMP/htdocs/ortoline.loc/sass/services/services.scss:32
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
@@ -69,4 +69,4 @@ c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$black\".\A         on line 32 of c:/MAMP/htdocs/ortoline.loc/sass/services.scss\A \A 27: 		width: 100%;\A 28: 		height: auto;\A 29: 	}	\A 30: }\A 31: p.services__info{\A 32: 	color: $black;\A 33: 	font-size: 18px;\A 34: 	line-height: 28px;\A 35: 	margin-bottom: 20px;\A 36: }\A 37: .services__list_2-col{"; }
+  content: "Error: Undefined variable: \"$black\".\A         on line 32 of c:/MAMP/htdocs/ortoline.loc/sass/services/services.scss\A \A 27: 		width: 100%;\A 28: 		height: auto;\A 29: 	}	\A 30: }\A 31: p.services__info{\A 32: 	color: $black;\A 33: 	font-size: 18px;\A 34: 	line-height: 28px;\A 35: 	margin-bottom: 20px;\A 36: }\A 37: .services__list_2-col{"; }

@@ -1,0 +1,173 @@
+.services__sub-title{
+	margin-bottom: 40px;
+	font-weight: normal;
+}
+.services__map{
+	height: 220px;
+	width: 100%;
+}
+.services__row{
+	margin-bottom: 60px;
+}
+.services__col{
+	padding: 0px 20px;
+}
+.services{
+	h2{
+		margin-bottom: 20px;
+	}
+}
+.services__content{
+	p{
+		margin-bottom: 40px;
+	}
+}
+.services__pic{
+	img{
+		width: 100%;
+		height: auto;
+	}	
+}
+p.services__info{
+	color: $black;
+	font-size: 18px;
+	line-height: 28px;
+	margin-bottom: 20px;
+}
+.services__list_2-col{
+	margin-top: 40px;
+	li{
+		width: 50%;
+		float: left;
+	}
+}
+
+.services__person {
+	width: 70%;
+	float: left;
+	margin-bottom: 50px;
+}
+.services__person__pic{
+	float: left;
+}
+.services__person__cont{
+	margin-left: 208px;
+	margin-top: -6px;
+}
+.services__person__cont{
+	p{
+		margin-bottom: 24px;
+	}	
+	.strong__text{
+		font-size: 19px;
+		margin-bottom: 16px;
+	}
+	.services__person__sub-info{
+		a{			
+			color: $gray;
+			font-size: 16px;
+			font-family: $openSans;
+		}
+		.ico{
+			background: transparent $sprite -418px 0 no-repeat;
+			width: 22px;
+			height: 28px;
+			display: inline-block;
+			vertical-align: middle;
+			padding-right: 10px;
+		}
+	}
+}
+.services__company{
+	width: 30%;
+	float: left;
+	text-align: left;
+	margin-bottom: 10px;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+.services__company__logo{
+	margin-bottom: 6px;
+}
+
+.services__promo{
+	display: table;
+}
+.services__promo__pic{
+	display: table-cell;	
+	overflow: hidden;
+	width: 40%;
+	background: transparent url('../pic/pic_36.jpg') 50% 50% no-repeat;
+	background-size: cover;
+	img{
+		display: inline-block;
+		@include transition(width .25s, height .25s);
+	}
+}
+.services__promo__wrap{
+	display: table-cell;
+	vertical-align: top;
+	width: 60%;
+}
+
+.services__gallery__list{
+    text-align: justify;
+
+    /* Обнуляем для родителя*/
+    line-height: 0;
+    font-size: 1px; /* 1px для Opera */
+
+    /* Лекарство для IE6-7*/
+    text-justify: newspaper;
+    zoom:1;
+
+    /* Включаем в работу последнюю строку*/
+    text-align-last: justify;
+    &:after{
+    	width: 100%;
+        height: 0px;
+        visibility: hidden;
+        overflow: hidden;
+        content: '';
+        display: inline-block;
+    }
+}
+.services__gallery__item{
+    width: 142px;
+    display: inline-block;
+    text-align: left;
+
+    /* Востанавливаем у потомков, кроме последнего*/
+    line-height: normal;
+    font-size: 14px;
+
+    /* Без него в Opera будет отступ под элементами */
+    vertical-align: top;
+
+    /* эмуляция inline-block для IE6-7*/
+    *display : inline;
+    *zoom : 1;
+    .pic{
+    	margin-bottom: 10px;
+    	position: relative;
+    	&:after{
+    		content: "";
+    		position: absolute;
+    		background: $blue $sprite -377px -13px no-repeat;
+    		width: 26px;
+    		height: 26px;
+    		bottom: 0;
+    		left: 50%;
+    		margin-left: -13px;
+    		margin-top: -13px;
+    		border-radius: 13px;
+    	}
+    }
+    .title{
+    	font-weight: bold;
+    	color: $black;
+    }
+}
+.services__gallery__wrap{
+	text-align: center;
+}

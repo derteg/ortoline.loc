@@ -275,3 +275,22 @@ h3{
 	line-height: 22px;
 	box-sizing: border-box;
 }
+
+.my__list_num{
+	margin: 0;
+	padding: 0;
+	counter-reset: item;
+}
+.my__item_num{
+	position: relative;
+	margin-bottom: 18px;
+	line-height: 22px;
+	box-sizing: border-box;
+	list-style: none;
+	&:before{
+		content: counters(item, ".") ". "; 
+		counter-increment: item; 
+		font-weight:bold;
+		color: $blue;
+	}
+}

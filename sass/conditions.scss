@@ -26,6 +26,9 @@
 	padding: 0px 20px;
 	box-sizing: border-box;
 }
+.conditions-promo{
+	box-sizing: border-box;
+}
 .conditions-promo_brd{
 	padding: 32px 36px 22px;
 	border: 5px solid $orange;
@@ -34,8 +37,17 @@
 	font-size: 16px;
 	margin-bottom: 24px;
 }
+.conditions-promo__title_2{
+	font-size: 20px;
+	line-height: 26px;
+	margin-bottom: 24px;
+	text-transform: uppercase;
+}
 .conditions-promo__list{
 	margin-bottom: 30px;
+}
+.conditions-promo__item_num{
+	font-size: 16px;
 }
 .conditions__content{
 	h2{
