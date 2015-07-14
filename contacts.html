@@ -5,7 +5,7 @@
         <meta charset="utf-8" />
         <meta content="width=1000px, target-densitydpi=device-dpi" name="viewport" />
         <meta content="telephone=no" name="format-detection" />
-        <title>Ortoline :: Каталог товаров</title>
+        <title>Ortoline :: «ОРТОЛАЙН» на Бескудниковском бульваре</title>
         <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
         <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <!--[if lt IE 9]>
@@ -15,9 +15,11 @@
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,800&amp;subset=latin,cyrillic-ext"
         rel="stylesheet" type="text/css" />
         <link href="css/style.css" rel="stylesheet" type="text/css" />
-
+        
         <script src="js/libs/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/libs/jquery.min.js">\x3C/script>')</script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+        <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
         <script src="js/scripts.js"></script>
     </head>
     
@@ -26,19 +28,19 @@
             <div class="inside">
                 <div class="header__wrap clearfix">
                     <div class="header__left">
-                            <a class="logo__lnk" href="links.html"><img src="img/logo.png" alt="logo" class="logo" /></a>
-                            
-                            <div class="header__left_wrap">
-                                <div class="header__contact">
-                                    <div class="header__tel">+7 495 988-95-05</div>
-                                    <div class="header__call"><a class="lnk dotted" href="#">Заказать звонок</a></div>
-                                </div>
-                                
-                                <div class="mainmenu__buttons mainmenu__buttons_centr">
-                                    <a class="button button--blue" href="#0"><span>Каталог товаров</span></a>
-                                    <a class="button button--orange" href="#0"><img src="img/ic-location.png" alt="ic-location" width="12" /><span>Наши салоны</span></a>
-                                </div>
+                        <a class="logo__lnk" href="links.html"><img src="img/logo.png" alt="logo" class="logo" /></a>
+                        
+                        <div class="header__left_wrap">
+                            <div class="header__contact">
+                                <div class="header__tel">+7 495 988-95-05</div>
+                                <div class="header__call"><a class="lnk dotted" href="#">Заказать звонок</a></div>
                             </div>
+                            
+                            <div class="mainmenu__buttons mainmenu__buttons_centr">
+                                <a class="button button--blue" href="#0"><span>Каталог товаров</span></a>
+                                <a class="button button--orange" href="#0"><img src="img/ic-location.png" alt="ic-location" width="12" /><span>Наши салоны</span></a>
+                            </div>
+                        </div>
                     </div>
                     <div class="header__right">
                         <div class="cols header__right_cont">                            
@@ -88,64 +90,76 @@
         </header>
         
         <div id="all">
-            <div id="wrap">                
-                <div class="inside">
-                    <table class="links__tbl">
-                        <tr>
-                            <th colspan="2">LINKS.html</th>
-                        </tr>
-                        <tr>
-                            <td><a href="index.html">Главная</a></td>
-                            <td><a href="index.html">index.html</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="brands_list.html">Производители</a></td>
-                            <td><a href="brands_list.html">brands_list.html</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="carta_2.html">Карточка товара</a></td>
-                            <td><a href="carta_2.html">carta_2.html</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="salons_list2.html">Наши салоны</a></td>
-                            <td><a href="salons_list2.html">salons_list2.html</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="salons_1.html">«ОРТОЛАЙН» на Бескудниковском бульваре</a></td>
-                            <td><a href="salons_1.html">salons_1.html</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="contacts.html">Контакты</a></td>
-                            <td><a href="contacts.html">contacts.html</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="company.html">О компании</a></td>
-                            <td><a href="company.html">company.html</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="compensation_cost.html">Компенсация стоимости</a></td>
-                            <td><a href="compensation_cost.html">compensation_cost.html</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="exchange_and_returns.html">Обмен и возврат</a></td>
-                            <td><a href="exchange_and_returns.html">exchange_and_returns.html</a></td>
-                        </tr>
-                    </table>
+            <div class="inside">
+                <section class="contacts">
+                    <div class="breadcrumbs clearfix">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link">Главная</a></li>
+                            <li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link current">Контакты</a></li>
+                        </ul>
+                    </div>
+                    
+                    <h1 class="title_h1">Контакты</h1>
 
-                    <style>
-                        .links__tbl{
-                            margin: 100px auto;
-                        }
-                        .links__tbl th{
-                            font-size: 28px;
-                            padding: 0px 30px 34px;
-                        }
-                        .links__tbl td{
-                            padding: 0px 30px 14px;
-                        }
-                    </style>
-                </div>
+                    <div class="contacts__cont clearfix">
+                        <div class="contacts__left fl">
+                            <div class="contacts__phone">+ 7 (495) 988-95-05<span class="contacts__phone__sub">(Телефон для справок)</span></div>
+                            <div class="contacts__block clearfix">
+                                <div class="contacts__info">
+                                    <div class="contacts__el contacts__el_yellow">
+                                        <p class="label"><strong>Центральный офис</strong></p>
+                                        <div class="contacts__coord clearfix">
+                                            <div class="contacts__coord__text fl">
+                                                <p class="text">Бизнес-парк «РУМЯНЦЕВО» <br/>
+                                                <i>(Киевское шоссе, 500 м от МКАД)</i><br/> 
+                                                Вход — 9 подъезд, 5 этаж, офис 510А</p>
+                                            </div>
+                                            <div class="contacts__scheme fr">
+                                                <a href="#0" class="lnk lnk__black">
+                                                    <div class="pic"><img src="pic/pic_32.jpg" alt=""></div>
+                                                    <div class="text"><span class="dotted" href="">Схема проезда</span></div>
+                                                </a>        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
+                                <div class="contacts__info">
+                                    <div class="contacts__el contacts__el_blue">
+                                        <p class="label"><strong>Центральный офис</strong></p>
+                                        <div class="contacts__coord clearfix">
+                                            <div class="contacts__coord__text fl">
+                                                <p class="text">Бизнес-парк «РУМЯНЦЕВО» <br/>
+                                                <i>(Киевское шоссе, 500 м от МКАД)</i><br/> 
+                                                Вход — 9 подъезд, 5 этаж, офис 510А</p>
+                                            </div>
+                                            <div class="contacts__scheme fr">
+                                                <a href="#0" class="lnk lnk__black">
+                                                    <div class="pic"><img src="pic/pic_32.jpg" alt=""></div>
+                                                    <div class="text"><span class="dotted" href="">Схема проезда</span></div>
+                                                </a>        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__right fr">
+                            <h4 class="contacts__title">Адреса салонов</h4>
+                            <p class="contacts__sub-title">Посмотрите адреса и телефоны всех салонов «Ортолайн»</p>
+                            <ul class="adress__nav-btn__list">
+                                <li class="adress__nav-btn__item button button--gray adress__nav-btn_sheme">
+                                    <span class="ico cart"></span>
+                                    <span class="text">На схеме метро</span>
+                                </li>
+                                <li class="adress__nav-btn__item button button--gray adress__nav-btn_lists">
+                                    <span class="ico list"></span>
+                                    <span class="text">Списком</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
         <footer class="footer" id="footer">
@@ -187,7 +201,7 @@
                         </li>
                         <li><a href="#0">Диагностика стоп </a>
                         </li>
-                        <li><a href="#0">Ответы на вопросы	</a>
+                        <li><a href="#0">Ответы на вопросы  </a>
                         </li>
                     </ul>
                 </div>
@@ -232,6 +246,6 @@
             </div>
         </footer>
     </body>
-    <!--body -->    
+    <!--body -->
 
 </html>

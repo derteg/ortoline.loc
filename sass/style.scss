@@ -64,7 +64,11 @@ $sprite02: url('../ico/sprite_02.png');
 @import "product/product.scss";
 @import "product/slider.scss";
 
-@import "salons_list2/salons_list2.scss";
+@import "salons/salons_1.scss";
+@import "salons/salons_list2.scss";
+@import "salons/contacts.scss";
+
+@import "services.scss";
 
 @import "about/about.scss";
 

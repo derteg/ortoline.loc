@@ -5,13 +5,20 @@ $(window).load(function(){
 });
 
 $(function(){
-	$('.js-promoslider').promoSlider();
-	$('.js-stock__slider').stockSlider();	
-	$('.js-hits__slider').hitsSlider();
-	$('.js-card__info').cardInfo();
 	if($('#adressMap').length){
 		$('#adressMap').adressMap();
 	}
+	if($('#adressInnerMap').length){
+		$('#adressInnerMap').adressInnerMap();
+	}
+	if($('#servicesMap').length){
+		$('#servicesMap').servicesMap();
+	}
+
+	$('.js-promoslider').promoSlider();
+	$('.js-stock__slider').stockSlider();	
+	$('.js-hits__slider').hitsSlider();
+	$('.js-card__info').cardInfo();	
 	$('.js-product__slider-for').productSlider();
 	$('.js-product__news-slider').productNewsSlider();
 	$('.js-product__amount').amountCart();
@@ -77,6 +84,68 @@ $(window).load(function(){initLikes();});
 
 		    myMap.geoObjects.add(myCollectionYellow);
 
+		}
+	}
+})(jQuery);
+
+(function($){
+	$.fn.adressInnerMap = function(){
+		var that = this,
+			lat = that.attr('data-point-lat'),
+			lon = that.attr('data-point-lon');
+
+		ymaps.ready(init);
+
+		var myMap;
+
+		function init () {
+			myMap = new ymaps.Map("adressInnerMap", {
+				center: [55.76, 37.64],
+				zoom: 10,
+				controls: []
+			});
+
+			var myCollectionBlue = new ymaps.GeoObjectCollection({}, {
+		       iconLayout: 'default#image',
+		       iconImageHref: 'img/ico_11.png',
+		       iconImageSize: [32, 44],
+		       iconImageOffset: [0, 0]
+		    });
+
+			myCollectionBlue.add(new ymaps.Placemark([+lat, +lon]));
+
+			myMap.geoObjects.add(myCollectionBlue);
+		}
+	}
+})(jQuery);
+
+(function($){
+	$.fn.servicesMap = function(){
+		var that = this,
+			lat = that.attr('data-point-lat'),
+			lon = that.attr('data-point-lon');
+
+		ymaps.ready(init);
+
+		var myMap;
+
+		function init () {
+			myMap = new ymaps.Map("servicesMap", {
+				center: [55.76, 37.64],
+				zoom: 10,
+				controls: []
+			});
+
+			var myCollectionBlue = new ymaps.GeoObjectCollection({}, {
+		       iconLayout: 'default#image',
+		       iconImageHref: 'img/ico_11.png',
+		       iconImageSize: [32, 44],
+		       iconImageOffset: [0, 0]
+		    });
+
+			myCollectionBlue.add(new ymaps.Placemark([+lat, +lon]));
+
+			myMap.geoObjects.add(myCollectionBlue);
 		}
 	}
 })(jQuery);
@@ -375,7 +444,7 @@ function heightsToMax() {
 		    if (w.scrollTop() > 100) {
 		    	that.addClass('header_fix');
 		    	$('#all').css('top', that.height());
-		    	$('#footer').css('margin-top', -400)
+		    	$('#footer').css('margin-top', -400 + that.height())
 		    } else {
 		    	that.removeClass('header_fix');
 		    	$('#all').css('top', 0);

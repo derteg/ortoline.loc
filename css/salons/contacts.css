@@ -1,28 +1,24 @@
 /*
-Error: Undefined mixin 'transition'.
-        on line 12 of c:/MAMP/htdocs/ortoline.loc/sass/gui.scss, in `transition'
-        from line 12 of c:/MAMP/htdocs/ortoline.loc/sass/gui.scss
+Error: Undefined variable: "$black".
+        on line 10 of c:/MAMP/htdocs/ortoline.loc/sass/salons/contacts.scss
 
-7: 	font-size:14px;
-8: 	line-height:20px
-9: }
-10: img{border:0;}
-11: ul,nav{list-style:none; padding-left: 0; margin: 0;}
-12: a{text-decoration: none; @include transition(color .25s, border-color .25s);}
-13: p{margin: 0;}
-14: .italic{font-style:italic}
-15: .bold{font-weight:bold}
-16: .fl{float:left}
-17: .fr{float:right}
+5: 	width: 30%;
+6: }
+7: .contacts__phone{
+8: 	font-size: 30px;
+9: 	line-height: 1;
+10: 	color: $black;
+11: 	font-weight: bold;
+12: 	margin-top: 24px;
+13: 	margin-bottom: 34px;
+14: }
+15: .contacts__phone__sub{
 
 Backtrace:
-c:/MAMP/htdocs/ortoline.loc/sass/gui.scss:12:in `transition'
-c:/MAMP/htdocs/ortoline.loc/sass/gui.scss:12
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:98:in `block in with_mixin'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:115:in `with_frame'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:98:in `with_mixin'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:336:in `visit_mixin'
+c:/MAMP/htdocs/ortoline.loc/sass/salons/contacts.scss:10
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/variable.rb:49:in `_perform'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:36:in `visit'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `block in with_base'
@@ -73,4 +69,4 @@ c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'transition'.\A         on line 12 of c:/MAMP/htdocs/ortoline.loc/sass/gui.scss, in `transition'\A         from line 12 of c:/MAMP/htdocs/ortoline.loc/sass/gui.scss\A \A 7: 	font-size:14px;\A 8: 	line-height:20px\A 9: }\A 10: img{border:0;}\A 11: ul,nav{list-style:none; padding-left: 0; margin: 0;}\A 12: a{text-decoration: none; @include transition(color .25s, border-color .25s);}\A 13: p{margin: 0;}\A 14: .italic{font-style:italic}\A 15: .bold{font-weight:bold}\A 16: .fl{float:left}\A 17: .fr{float:right}"; }
+  content: "Error: Undefined variable: \"$black\".\A         on line 10 of c:/MAMP/htdocs/ortoline.loc/sass/salons/contacts.scss\A \A 5: 	width: 30%;\A 6: }\A 7: .contacts__phone{\A 8: 	font-size: 30px;\A 9: 	line-height: 1;\A 10: 	color: $black;\A 11: 	font-weight: bold;\A 12: 	margin-top: 24px;\A 13: 	margin-bottom: 34px;\A 14: }\A 15: .contacts__phone__sub{"; }

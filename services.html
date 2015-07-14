@@ -5,7 +5,7 @@
         <meta charset="utf-8" />
         <meta content="width=1000px, target-densitydpi=device-dpi" name="viewport" />
         <meta content="telephone=no" name="format-detection" />
-        <title>Ortoline :: Каталог товаров</title>
+        <title>Ortoline :: «ОРТОЛАЙН» на Бескудниковском бульваре</title>
         <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
         <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <!--[if lt IE 9]>
@@ -15,9 +15,11 @@
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,800&amp;subset=latin,cyrillic-ext"
         rel="stylesheet" type="text/css" />
         <link href="css/style.css" rel="stylesheet" type="text/css" />
-
+        
         <script src="js/libs/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/libs/jquery.min.js">\x3C/script>')</script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+        <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
         <script src="js/scripts.js"></script>
     </head>
     
@@ -26,19 +28,19 @@
             <div class="inside">
                 <div class="header__wrap clearfix">
                     <div class="header__left">
-                            <a class="logo__lnk" href="links.html"><img src="img/logo.png" alt="logo" class="logo" /></a>
-                            
-                            <div class="header__left_wrap">
-                                <div class="header__contact">
-                                    <div class="header__tel">+7 495 988-95-05</div>
-                                    <div class="header__call"><a class="lnk dotted" href="#">Заказать звонок</a></div>
-                                </div>
-                                
-                                <div class="mainmenu__buttons mainmenu__buttons_centr">
-                                    <a class="button button--blue" href="#0"><span>Каталог товаров</span></a>
-                                    <a class="button button--orange" href="#0"><img src="img/ic-location.png" alt="ic-location" width="12" /><span>Наши салоны</span></a>
-                                </div>
+                        <a class="logo__lnk" href="links.html"><img src="img/logo.png" alt="logo" class="logo" /></a>
+                        
+                        <div class="header__left_wrap">
+                            <div class="header__contact">
+                                <div class="header__tel">+7 495 988-95-05</div>
+                                <div class="header__call"><a class="lnk dotted" href="#">Заказать звонок</a></div>
                             </div>
+                            
+                            <div class="mainmenu__buttons mainmenu__buttons_centr">
+                                <a class="button button--blue" href="#0"><span>Каталог товаров</span></a>
+                                <a class="button button--orange" href="#0"><img src="img/ic-location.png" alt="ic-location" width="12" /><span>Наши салоны</span></a>
+                            </div>
+                        </div>
                     </div>
                     <div class="header__right">
                         <div class="cols header__right_cont">                            
@@ -88,64 +90,85 @@
         </header>
         
         <div id="all">
-            <div id="wrap">                
-                <div class="inside">
-                    <table class="links__tbl">
-                        <tr>
-                            <th colspan="2">LINKS.html</th>
-                        </tr>
-                        <tr>
-                            <td><a href="index.html">Главная</a></td>
-                            <td><a href="index.html">index.html</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="brands_list.html">Производители</a></td>
-                            <td><a href="brands_list.html">brands_list.html</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="carta_2.html">Карточка товара</a></td>
-                            <td><a href="carta_2.html">carta_2.html</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="salons_list2.html">Наши салоны</a></td>
-                            <td><a href="salons_list2.html">salons_list2.html</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="salons_1.html">«ОРТОЛАЙН» на Бескудниковском бульваре</a></td>
-                            <td><a href="salons_1.html">salons_1.html</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="contacts.html">Контакты</a></td>
-                            <td><a href="contacts.html">contacts.html</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="company.html">О компании</a></td>
-                            <td><a href="company.html">company.html</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="compensation_cost.html">Компенсация стоимости</a></td>
-                            <td><a href="compensation_cost.html">compensation_cost.html</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="exchange_and_returns.html">Обмен и возврат</a></td>
-                            <td><a href="exchange_and_returns.html">exchange_and_returns.html</a></td>
-                        </tr>
-                    </table>
+            <div class="inside">
+                <section class="services">
+                    <div class="breadcrumbs clearfix">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link">Главная</a></li>
+                            <li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link current">Контакты</a></li>
+                        </ul>
+                    </div>
+                    
+                    <h1 class="title_h1">Кинейзотерапия</h1>
 
-                    <style>
-                        .links__tbl{
-                            margin: 100px auto;
-                        }
-                        .links__tbl th{
-                            font-size: 28px;
-                            padding: 0px 30px 34px;
-                        }
-                        .links__tbl td{
-                            padding: 0px 30px 14px;
-                        }
-                    </style>
-                </div>
+                    <h3 class="services__sub-title">Прогрессивная технология в области лечения и предупреждения травм суставов, мышц и связок</h3>
 
+                    <div class="services__row cols">
+                        <div class="services__col col col--50">
+                            <div class="services__map" id="servicesMap" data-point-lat="55.75" data-point-lon="37.61"></div>
+                        </div>
+                        <div class="services__col col col--50">
+                            <h2>Приглашаем вас в салон!</h2>
+                            <p class="services__info">По адресу <span class="metro__ico"></span> м. Октябрьское Поле (ул.Маршала Бирюзова д.13 (499) 198-52-59 ) мы проводим услуги кинезиотейпирования. </p>
+                            <p class="services__info">Услуга оказывается квалифицированным врачом ортопедом-травматологом, прошедшим обучение по кинезиотейпированию.</p>
+                        </div>
+                    </div>
+
+                    <div class="services__row cols">
+                        <div class="services__col col col--50">
+                            <div class="services__pic">
+                                <img src="pic/pic_33.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="services__col col col--50">
+                            <div class="services__content">
+                                <h2>Что такое тейпирование?</h2>
+                                <p>Наложение тейпов позволяет снизить нагрузку на поврежденные суставы и мышцы без необходимости обездвиживать больную конечность, снизить нагрузку на суставы, связки и сухожилия, облегчить кровоснабжение и лимфоотток поврежденной области.</p>
+                                <h2>Что такое тейпы?</h2>
+                                <p>Тейпы – это специальные хлопковые ленты, не содержащие латекс, с нейлоновым термоактивным покрытием, аналогичные по эластичности человеческой коже.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services__row cols">
+                        <h2>Кинезиотейпирование эффективено в лечении:</h2>
+
+                        <ul class="my__list services__list_2-col clearfix">
+                            <li class="my__item">Растяжений связок;</li>
+                            <li class="my__item">Болей в колене, подвывиха надколенника, болевого синдрома при хондромаляции;</li>
+                            <li class="my__item">Ушибов мягких тканей и гематомы;</li>
+                            <li class="my__item">Болей в шее;</li>
+                            <li class="my__item">Подвывихов лодыжки, плеча, пальцев;</li>
+                            <li class="my__item">Головной боли;</li>
+                            <li class="my__item">Плечелопаточного периартрита (боли в плече);</li>
+                            <li class="my__item">Боли в пояснице и отёков ног у беременных;</li>
+                            <li class="my__item">Локтя теннисиста и других эпикондилитов;</li>
+                            <li class="my__item">Остеохондроза позвоночника;</li>
+                            <li class="my__item">Плантарного фасциита (пяточной шпоры);</li>
+                            <li class="my__item">Люмбаго.</li>
+                        </ul>
+                    </div>
+
+                    <div class="services__row clearfix">
+                        <div class="services__person clearfix">
+                            <div class="services__person__pic">
+                                <img src="pic/pic_34.png" alt="">
+                            </div>
+                            <div class="services__person__cont">
+                                <p>Прием ведет Мальцев Илья Владимирович (травматолог-ортопед)</p>
+                                <p>Проходил обучение техникам кинезиотейпирования в 2014 в г.Москва (Международная Ассоциация Кинезиотейпирования (KTAI).</p>
+                                <p class="strong__text"><strong>Предварительная запись по телефону (499) 198-52-59</strong></p>
+                                <p class="services__person__sub-info"><a href="#0"><span class="ico"></span>Сертификат</a></p>                                
+                            </div>
+                        </div>
+                        <div class="services__company">
+                            <div class="services__company__logo">
+                                <img src="pic/pic_35.png" alt="">
+                            </div>
+                            <p><p>При наложении мы используем самые качественные и эластичные кинезиотейпы Rocktape Classic</p></p>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
         <footer class="footer" id="footer">
@@ -187,7 +210,7 @@
                         </li>
                         <li><a href="#0">Диагностика стоп </a>
                         </li>
-                        <li><a href="#0">Ответы на вопросы	</a>
+                        <li><a href="#0">Ответы на вопросы  </a>
                         </li>
                     </ul>
                 </div>
@@ -232,6 +255,6 @@
             </div>
         </footer>
     </body>
-    <!--body -->    
+    <!--body -->
 
 </html>

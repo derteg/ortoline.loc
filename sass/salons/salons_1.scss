@@ -1,0 +1,57 @@
+.adress-inner__map{
+	width: 100%;
+	height: 428px;
+}
+.adress-inner__col{
+	padding: 0px 10px;
+	box-sizing: border-box;
+	&:first-child{
+		padding-left: 0;
+	}
+}
+
+.adress-inner__row{
+	margin-bottom: 50px;
+}
+.adress-inner__info_row + .conditions-promo{
+	margin-top: 40px;	
+}
+.adress-inner__info_row{
+	margin-bottom: 28px;
+}
+.adress-inner__info_col{
+	padding-right: 20px;
+}
+.adress-inner__label{
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 22px;
+	margin-bottom: 4px;
+}
+
+.adress-inner__text{
+	font-size: 14px;
+}
+
+.adress-inner__gallery{
+	margin: 40px 0 70px;
+}
+.adress-inner__gallery__slide{
+	text-align: center;
+	.pic{
+		margin-bottom: 28px;
+	}
+	.title{
+		color: $black;
+		font-size: 14px;
+		line-height: 20px;
+		margin-bottom: 10px;
+		strong{
+			font-size: 20px;
+			display: block;
+		}
+	}
+	.sub-title{
+		color: $gray;
+	}
+}

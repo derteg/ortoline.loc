@@ -14,7 +14,7 @@ p{margin: 0;}
 .italic{font-style:italic}
 .bold{font-weight:bold}
 .fl{float:left}
-.fl{float:right}
+.fr{float:right}
 .absolute{position:absolute}
 .fixed{position:fixed}
 .hidden{display:none}
@@ -87,17 +87,15 @@ h2{
 	line-height:40px;
 }
 h3{
-	font-size:14px;
+	font-size:20px;
 	font-weight:bold;
 	line-height:36px;
 }
 #all{
 	padding-bottom: 400px;
-}
-#wrap{
 	height:auto;
 	min-height:100%;
-	position:relative;	
+	position:relative;
 }
 .inside{
 	position:relative;
@@ -133,7 +131,6 @@ h3{
 }
 .button img{vertical-align:top;margin-right:10px;margin-top:1px}
 .button:hover span{
-	color: $white;
 	border-bottom-color:rgba(255,255,255,0.8);
 	-webkit-transition: all .35s;
 	transition: all .35s;
@@ -145,10 +142,15 @@ h3{
 .button--blue:hover{
 	background:$blueHov;
 }
+.button--dark{
+	background:$dark;
+}
+.button--dark:hover{
+	background: $dark;
+}
 .button--orange{
 	background:$orange;
 	border-bottom-color:#f6c070;
-
 }
 .button--orange:hover{
 	background:$orangeHov;
@@ -160,6 +162,9 @@ h3{
 .button--gray:hover{
 	color: $dark;
 	background: $lightGrayHov;
+}
+.button--round{
+	border-radius: 23px;
 }
 .outlineBut{
 	position:relative;
@@ -187,9 +192,6 @@ h3{
 	margin-right:8px
 }
 
-.button--round{
-	border-radius: 23px;
-}
 
 // .col{
 // 	display: inline-block;
@@ -271,4 +273,5 @@ h3{
 	padding-left: 22px;
 	margin-bottom: 18px;
 	line-height: 22px;
+	box-sizing: border-box;
 }

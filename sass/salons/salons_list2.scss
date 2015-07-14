@@ -113,9 +113,6 @@
 		display: inline-block;
 	}
 }
-.adress__nav-btn__list{
-	float: right;
-}
 .adress__nav-btn__item{
 	margin-left: 10px;
 	font-size: 14px;
@@ -128,37 +125,40 @@
 		line-height: 24px;
 		vertical-align: middle;
 	}
-	&.gray:hover{
-		span{
-			color: $black;
-		}		
+	&:first-child{
+		margin-left: 0;
+	}	
+}
+.adress__nav-btn__item{
+	.ico{
+		background: transparent $sprite no-repeat;
+		display: inline-block;
+		padding: 0;
+		vertical-align: middle;
+		position: relative;
 	}
-	&.gray{
-		background-color: $lightGray;
-		color: $black;
-		.ico.cart{
-			background: transparent $sprite -296px 0 no-repeat;
-			display: inline-block;
-			width: 16px;
-			height: 24px;
-			padding: 0;
-			vertical-align: middle;
-			position: relative;
-			top: 0px;
-			right: 8px;
-		}
+}
+.adress__nav-btn_sheme{
+	.ico{		
+		width: 16px;
+		height: 24px;
+		right: 8px;
 	}
-	&.dark{
-		background-color: $dark;
-		.ico.list{
-			background: transparent $sprite -320px 0 no-repeat;
-			display: inline-block;
-			width: 24px;
-			height: 18px;
-			padding: 0;
-			position: relative;
-			top: 4px;
-			right: 8px;
-		}
+}
+.adress__nav-btn_lists{
+	.ico{
+		width: 24px;
+		height: 18px;
+		right: 8px;
 	}
+}
+.adress__nav-btn_sheme.button--gray{
+	.ico{
+		background-position: -298px 100%;
+	}	
+}
+.adress__nav-btn_lists.button--gray{
+	.ico{
+		background-position: -320px 100%;
+	}	
 }
