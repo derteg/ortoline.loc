@@ -1,71 +1,72 @@
-/* line 1, ../sass/video.scss */
-.video { position: relative; padding-top: 70px; background: #f4f1ec; overflow: hidden; -webkit-font-smoothing: antialiased; }
+/*
+Error: Undefined variable: "$white".
+        on line 29 of c:/MAMP/htdocs/ortoline.loc/sass/video.scss
 
-/* line 8, ../sass/video.scss */
-.video .cols { padding-top: 23px; padding-bottom: 18px; margin-right: -40px; }
+24: 	}
+25: }
+26: .video-item{
+27: 	width: 94%;
+28: 	position:relative;
+29: 	background: $white;
+30: 	border-radius:10px;
+31: 	border: 1px solid #eaeaea;
+32: }
+33: .video-wrap{
+34: 	position:relative;
 
-/* line 13, ../sass/video.scss */
-.video-item { position: relative; background: #fff; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; width: 92%; }
-
-/* line 23, ../sass/video.scss */
-.video-wrap { position: relative; height: auto; -webkit-border-radius: 10px 10px 0 0; -moz-border-radius: 10px 10px 0 0; -ms-border-radius: 10px 10px 0 0; -o-border-radius: 10px 10px 0 0; border-radius: 10px 10px 0 0; overflow: hidden; cursor: pointer; line-height: 0; height: 174px; overflow: hidden; }
-
-/* line 38, ../sass/video.scss */
-.video-wrap:before { content: ' '; display: block; position: absolute; left: 0; top: 0; background: url(../img/corner-lt--w.png) no-repeat; width: 7px; height: 7px; z-index: 10; }
-
-/* line 49, ../sass/video.scss */
-.video-wrap:after { content: ' '; display: block; position: absolute; right: 0; top: 0; background: url(../img/corner-rt--w.png) no-repeat; width: 7px; height: 7px; z-index: 10; }
-
-/* line 60, ../sass/video.scss */
-.video-poster { position: relative; width: 100%; height: auto; }
-
-/* line 65, ../sass/video.scss */
-.video-content { padding: 16px 25px 25px 25px; }
-
-/* line 68, ../sass/video.scss */
-.video-title { text-align: center; font-size: 16px; line-height: 24px; font-weight: bold; }
-
-/* line 74, ../sass/video.scss */
-.video-text { font-size: 13px; line-height: 20px; padding-top: 10px; text-align: center; padding-bottom: 40px; }
-
-/* line 81, ../sass/video.scss */
-.video-footer { position: absolute; bottom: 25px; left: 25px; }
-
-/* line 86, ../sass/video.scss */
-.vide-footer { color: #787878; font-size: 12px; font-family: "PFDinDisplayPro", Verdana, sans-serif; }
-
-/* line 91, ../sass/video.scss */
-.video-clock { background: url(../img/ic-clock.png) no-repeat left center; padding-left: 20px; height: 20px; display: -moz-inline-stack; display: inline-block; vertical-align: top; *zoom: 1; *display: inline; margin-right: -4px; margin-right: 15px; color: #787878; }
-
-/* line 104, ../sass/video.scss */
-.video-eye { background: url(../img/ic-eye.png) no-repeat left center; padding-left: 26px; height: 20px; display: -moz-inline-stack; display: inline-block; vertical-align: top; *zoom: 1; *display: inline; margin-right: -4px; margin-right: 0; color: #787878; }
-
-/* line 117, ../sass/video.scss */
-.video-play { background: url(../img/ic-play.png) no-repeat; width: 68px; height: 68px; position: absolute; top: 0; left: 0; bottom: 0; right: 0; max-width: 100%; max-height: auto; margin: auto; }
-
-/* line 131, ../sass/video.scss */
-.video-wrap .video-play { -webkit-transform: scale(1); transform: scale(1); -webkit-transition: -webkit-transform .4s; transition: transform 0.4s; }
-
-/* line 137, ../sass/video.scss */
-.video-wrap:hover .video-play { -webkit-transform: scale(1.2); transform: scale(1.2); -webkit-transition: -webkit-transform .4s; transition: transform 0.4s; }
-
-/* line 143, ../sass/video.scss */
-.video ul { list-style: none; display: block; }
-
-/* line 147, ../sass/video.scss */
-.video ul a { border: 0; }
-
-/* line 150, ../sass/video.scss */
-.video li { min-height: 100px; clear: both; position: relative; list-style: none; font-size: 16px; line-height: 18px; font-family: 'PFDinDisplayPro',Verdana,sans-serif; display: block; margin-top: 15px; margin-bottom: 25px; }
-
-/* line 162, ../sass/video.scss */
-.video-im { width: 90px; height: 90px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; position: relative; overflow: hidden; float: left; background: #f8f8f8; }
-
-/* line 175, ../sass/video.scss */
-.video-li { color: #f3a942; display: block; position: relative; border: 0; -o-transition: all .35s; -ms-transition: all .35s; -moz-transition: all .35s; -webkit-transition: all .35s; transition: all 0.35s; }
-
-/* line 186, ../sass/video.scss */
-.video-li:hover .video-span { color: #000; -o-transition: all .35s; -ms-transition: all .35s; -moz-transition: all .35s; -webkit-transition: all .35s; transition: all 0.35s; }
-
-/* line 194, ../sass/video.scss */
-.video-span { color: #f3a942; margin-left: 110px; max-width: 150px; padding-top: 25px; }
+Backtrace:
+c:/MAMP/htdocs/ortoline.loc/sass/video.scss:29
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/variable.rb:49:in `_perform'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `block in with_base'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:115:in `with_frame'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `with_base'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:420:in `map'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `block in with_base'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:115:in `with_frame'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `with_base'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:52:in `map'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:157:in `visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:8:in `visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/root_node.rb:36:in `css_tree'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/root_node.rb:20:in `render'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/engine.rb:268:in `render'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:491:in `update_stylesheet'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:209:in `each'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:469:in `on_file_changed'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:328:in `block in watch'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/listener.rb:252:in `call'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$white\".\A         on line 29 of c:/MAMP/htdocs/ortoline.loc/sass/video.scss\A \A 24: 	}\A 25: }\A 26: .video-item{\A 27: 	width: 94%;\A 28: 	position:relative;\A 29: 	background: $white;\A 30: 	border-radius:10px;\A 31: 	border: 1px solid #eaeaea;\A 32: }\A 33: .video-wrap{\A 34: 	position:relative;"; }

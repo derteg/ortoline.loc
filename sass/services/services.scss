@@ -92,17 +92,24 @@ p.services__info{
 
 .services__promo{
 	display: table;
+	margin-bottom: 72px;
 }
 .services__promo__pic{
 	display: table-cell;	
 	overflow: hidden;
-	width: 40%;
-	background: transparent url('../pic/pic_36.jpg') 50% 50% no-repeat;
-	background-size: cover;
+	width: 40%;		
 	img{
 		display: inline-block;
 		@include transition(width .25s, height .25s);
 	}
+}
+.services__promo__pic_01{
+	background: transparent url('../pic/pic_36.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+.services__promo__pic_02{
+	background: transparent url('../pic/pic_44.jpg') 50% 50% no-repeat;
+	background-size: cover;
 }
 .services__promo__wrap{
 	display: table-cell;
@@ -110,7 +117,12 @@ p.services__info{
 	width: 60%;
 }
 
-.services__gallery__list{
+.services__gallery-resp{
+	padding: 40px 0 50px;
+	margin-bottom: 62px;
+}
+.services__gallery-resp__list{
+	margin-top: 34px;
     text-align: justify;
 
     /* Обнуляем для родителя*/
@@ -132,13 +144,13 @@ p.services__info{
         display: inline-block;
     }
 }
-.services__gallery__item{
+.services__gallery-resp__item{
     width: 142px;
     display: inline-block;
     text-align: left;
 
     /* Востанавливаем у потомков, кроме последнего*/
-    line-height: normal;
+    line-height: 20px;
     font-size: 14px;
 
     /* Без него в Opera будет отступ под элементами */
@@ -148,7 +160,7 @@ p.services__info{
     *display : inline;
     *zoom : 1;
     .pic{
-    	margin-bottom: 10px;
+    	margin-bottom: 22px;
     	position: relative;
     	&:after{
     		content: "";
@@ -168,6 +180,47 @@ p.services__info{
     	color: $black;
     }
 }
-.services__gallery__wrap{
+.services__gallery-resp__wrap{
 	text-align: center;
+}
+
+.services__gallery_col-4{
+	margin-bottom: 80px;
+}
+.services__gallery_col-4__title{
+	text-align: center;
+}
+.services__gallery_col-4__list{
+	margin-top: 54px;
+}
+.services__gallery_col-4__item{
+	text-align: center;
+	padding-bottom: 40px;
+	box-sizing: border-box;
+	position: relative;
+	vertical-align: baseline;
+	.title{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+}
+.services__info_bottom{
+	background: transparent url('../img/ico_14.png') 50% top no-repeat;
+	padding: 112px 200px 0;
+	text-align: center;
+	margin-bottom: 120px;
+	p{
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 16px;
+	}
+	.button{
+		padding-right: 40px;
+		padding-left: 40px;
+		margin-top: 20px;
+	}
 }
