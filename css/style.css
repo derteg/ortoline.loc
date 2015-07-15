@@ -723,6 +723,27 @@ h3 { font-size: 20px; font-weight: bold; line-height: 36px; }
 /* line 57, ../sass/gui/search__menu.scss */
 .search__menu_item .search__ico { background: transparent url("../ico/sprite_01.png") -152px 0 no-repeat; display: inline-block; vertical-align: middle; width: 22px; height: 22px; }
 
+/* line 1, ../sass/gui/paginator.scss */
+.paginator { text-align: right; }
+
+/* line 4, ../sass/gui/paginator.scss */
+.paginator__list { display: inline-block; }
+
+/* line 7, ../sass/gui/paginator.scss */
+.paginator__lnk { width: 34px; height: 34px; border: 1px solid #dadada; display: inline-block; vertical-align: bottom; text-align: center; background-color: #ffffff; color: #282828; border-radius: 4px; line-height: 34px; margin: 0px 5px; opacity: 1; -moz-transition: color 0.25s, border-color 0.25s, opacity 0.25s; -o-transition: color 0.25s, border-color 0.25s, opacity 0.25s; -webkit-transition: color 0.25s, border-color 0.25s, opacity 0.25s; transition: color 0.25s, border-color 0.25s, opacity 0.25s; }
+/* line 21, ../sass/gui/paginator.scss */
+.paginator__lnk:hover { border-color: transparent; background-color: #f3a942; color: #ffffff; }
+/* line 26, ../sass/gui/paginator.scss */
+.paginator__lnk.current { border-color: transparent; background-color: #1376ba; color: #ffffff; }
+/* line 31, ../sass/gui/paginator.scss */
+.paginator__lnk.disabled, .paginator__lnk.disabled:hover { background-color: #ffffff; cursor: default; opacity: 0.6; border: 1px solid #dadada; }
+/* line 38, ../sass/gui/paginator.scss */
+.paginator__lnk .ico { display: inline-block; vertical-align: middle; width: 6px; height: 12px; }
+/* line 44, ../sass/gui/paginator.scss */
+.paginator__lnk .larr { background: transparent url("../ico/sprite_01.png") -776px 0 no-repeat; }
+/* line 47, ../sass/gui/paginator.scss */
+.paginator__lnk .rarr { background: transparent url("../ico/sprite_01.png") -776px -20px no-repeat; }
+
 /* line 1, ../sass/header.scss */
 .header { position: relative; background-color: #ffffff; -webkit-box-shadow: 0px 4px 5px 0px transparent; -moz-box-shadow: 0px 4px 5px 0px transparent; box-shadow: 0px 4px 5px 0px transparent; -moz-transition: box-shadow 0.25s; -o-transition: box-shadow 0.25s; -webkit-transition: box-shadow 0.25s; transition: box-shadow 0.25s; }
 
@@ -1023,107 +1044,110 @@ h3 { font-size: 20px; font-weight: bold; line-height: 36px; }
 .card__circle:hover { background-color: #f3a942; }
 
 /* line 1, ../sass/faq.scss */
-.faq-main { font-family: "Open Sans", sans-serif; width: 66.6%; }
+.faq-main { font-family: "Open Sans", sans-serif; width: 66.6%; margin-bottom: 52px; }
 
-/* line 5, ../sass/faq.scss */
+/* line 6, ../sass/faq.scss */
+.faq-main__list { margin-bottom: 44px; }
+
+/* line 9, ../sass/faq.scss */
 .faq-main__item { padding: 38px 0 30px; border-radius: 6px; border: 1px solid #dadada; background-color: #ffffff; margin-top: 22px; }
-/* line 11, ../sass/faq.scss */
+/* line 15, ../sass/faq.scss */
 .faq-main__item:first-child { margin-top: 0; }
 
-/* line 15, ../sass/faq.scss */
+/* line 19, ../sass/faq.scss */
 .faq-main__top, .faq-main__answer, .faq-main__footer { padding: 0 46px; box-sizing: border-box; }
 
-/* line 21, ../sass/faq.scss */
+/* line 25, ../sass/faq.scss */
 .faq-main__top { margin-bottom: 22px; }
 
-/* line 24, ../sass/faq.scss */
+/* line 28, ../sass/faq.scss */
 .faq-main__right { text-align: right; }
 
-/* line 27, ../sass/faq.scss */
+/* line 31, ../sass/faq.scss */
 .faq-main__voting, .faq-main__published { font-size: 12px; color: #a9a9a9; margin-left: 4px; }
-/* line 32, ../sass/faq.scss */
+/* line 36, ../sass/faq.scss */
 .faq-main__voting .ico, .faq-main__voting .text, .faq-main__published .ico, .faq-main__published .text { vertical-align: middle; line-height: 17px; display: inline-block; margin-right: 10px; }
 
-/* line 41, ../sass/faq.scss */
+/* line 45, ../sass/faq.scss */
 .faq-main__published .ico { background: transparent url("../ico/sprite_01.png") -352px 0 no-repeat; width: 17px; height: 17px; }
 
-/* line 47, ../sass/faq.scss */
+/* line 51, ../sass/faq.scss */
 .faq-main__voting { cursor: pointer; color: #a9a9a9; }
-/* line 50, ../sass/faq.scss */
+/* line 54, ../sass/faq.scss */
 .faq-main__voting .ico { background: transparent url("../ico/sprite_01.png") -744px 0 no-repeat; width: 16px; height: 14px; }
-/* line 55, ../sass/faq.scss */
+/* line 59, ../sass/faq.scss */
 .faq-main__voting.current { color: #1376ba; }
-/* line 57, ../sass/faq.scss */
-.faq-main__voting.current .ico { background: transparent url("../ico/sprite_01.png") -744px -20px no-repeat; }
 /* line 61, ../sass/faq.scss */
+.faq-main__voting.current .ico { background: transparent url("../ico/sprite_01.png") -744px -20px no-repeat; }
+/* line 65, ../sass/faq.scss */
 .faq-main__voting:hover { color: #1376ba; }
-/* line 63, ../sass/faq.scss */
-.faq-main__voting:hover .ico { background: transparent url("../ico/sprite_01.png") -744px -20px no-repeat; }
 /* line 67, ../sass/faq.scss */
+.faq-main__voting:hover .ico { background: transparent url("../ico/sprite_01.png") -744px -20px no-repeat; }
+/* line 71, ../sass/faq.scss */
 .faq-main__voting .text { font-weight: bold; }
 
-/* line 71, ../sass/faq.scss */
+/* line 75, ../sass/faq.scss */
 .faq-main__user__name { font-size: 16px; margin-bottom: 6px; }
 
-/* line 75, ../sass/faq.scss */
+/* line 79, ../sass/faq.scss */
 .faq-main__user__data { color: #a9a9a9; }
 
-/* line 79, ../sass/faq.scss */
-.faq-main__quest { padding: 0 46px; border-bottom: 1px solid #dadada; padding-bottom: 6px; }
 /* line 83, ../sass/faq.scss */
-.faq-main__quest p { line-height: 22px; margin-bottom: 22px; }
+.faq-main__quest { padding: 0 46px; border-bottom: 1px solid #dadada; padding-bottom: 6px; }
 /* line 87, ../sass/faq.scss */
+.faq-main__quest p { line-height: 22px; margin-bottom: 22px; }
+/* line 91, ../sass/faq.scss */
 .faq-main__quest a { color: #1376ba; border-bottom: 1px solid #1376ba; }
-/* line 90, ../sass/faq.scss */
+/* line 94, ../sass/faq.scss */
 .faq-main__quest a:hover { border-bottom-color: transparent; }
 
-/* line 95, ../sass/faq.scss */
+/* line 99, ../sass/faq.scss */
 .faq-main__answer { padding-top: 32px; }
-/* line 97, ../sass/faq.scss */
-.faq-main__answer p { line-height: 22px; margin-bottom: 22px; }
 /* line 101, ../sass/faq.scss */
+.faq-main__answer p { line-height: 22px; margin-bottom: 22px; }
+/* line 105, ../sass/faq.scss */
 .faq-main__answer a { color: #1376ba; border-bottom: 1px solid #1376ba; }
-/* line 104, ../sass/faq.scss */
+/* line 108, ../sass/faq.scss */
 .faq-main__answer a:hover { border-bottom-color: transparent; }
 
 /********** faq-aside **********/
-/* line 112, ../sass/faq.scss */
+/* line 116, ../sass/faq.scss */
 .faq-aside { width: 33.3%; margin-top: -64px; padding-left: 4%; }
 
-/* line 117, ../sass/faq.scss */
+/* line 121, ../sass/faq.scss */
 .faq-aside__title { margin-bottom: 30px; text-align: center; }
 
-/* line 121, ../sass/faq.scss */
+/* line 125, ../sass/faq.scss */
 .faq-quest__item { background-color: #ffffff; border-radius: 6px; box-sizing: border-box; margin-bottom: 20px; overflow: hidden; border: 1px solid #dadada; }
 
-/* line 129, ../sass/faq.scss */
+/* line 133, ../sass/faq.scss */
 .faq-quest__left, .faq-quest__right { display: table-cell; }
 
-/* line 133, ../sass/faq.scss */
+/* line 137, ../sass/faq.scss */
 .faq-quest__left { border-right: 1px solid #dadada; width: 84%; }
-/* line 136, ../sass/faq.scss */
+/* line 140, ../sass/faq.scss */
 .faq-quest__left .question { border-bottom: 1px solid transparent; padding: 20px; padding-top: 16px; -moz-transition: border-bottom 1s; -o-transition: border-bottom 1s; -webkit-transition: border-bottom 1s; transition: border-bottom 1s; }
-/* line 142, ../sass/faq.scss */
+/* line 146, ../sass/faq.scss */
 .faq-quest__left .answer { padding: 20px; padding-bottom: 16px; display: none; }
 
-/* line 148, ../sass/faq.scss */
+/* line 152, ../sass/faq.scss */
 .faq-quest__cont { display: table; }
-/* line 151, ../sass/faq.scss */
+/* line 155, ../sass/faq.scss */
 .faq-quest__cont.opened .question { border-bottom: 1px solid #dadada; }
 
-/* line 156, ../sass/faq.scss */
+/* line 160, ../sass/faq.scss */
 .faq-quest__right { width: 16%; text-align: center; vertical-align: middle; cursor: pointer; background-color: #ffffff; -moz-transition: background-color 0.25s; -o-transition: background-color 0.25s; -webkit-transition: background-color 0.25s; transition: background-color 0.25s; }
-/* line 163, ../sass/faq.scss */
+/* line 167, ../sass/faq.scss */
 .faq-quest__right .ico { background: transparent url("../ico/sprite_01.png") -696px 0 no-repeat; display: inline-block; width: 12px; height: 12px; padding-bottom: 0px; -moz-transition: opacity 1s; -o-transition: opacity 1s; -webkit-transition: opacity 1s; transition: opacity 1s; }
-/* line 171, ../sass/faq.scss */
+/* line 175, ../sass/faq.scss */
 .faq-quest__right:hover { background-color: #F7F7F7; }
 
-/* line 176, ../sass/faq.scss */
+/* line 180, ../sass/faq.scss */
 .faq-quest__cont.opened .faq-quest__right { vertical-align: bottom; }
-/* line 178, ../sass/faq.scss */
+/* line 182, ../sass/faq.scss */
 .faq-quest__cont.opened .faq-quest__right .ico { padding-bottom: 10px; background: transparent url("../ico/sprite_01.png") -720px 0 no-repeat; }
 
-/* line 184, ../sass/faq.scss */
+/* line 188, ../sass/faq.scss */
 .faq__quest__lnk { width: 100%; text-align: center; box-sizing: border-box; }
 
 /* line 1, ../sass/index/main.scss */
