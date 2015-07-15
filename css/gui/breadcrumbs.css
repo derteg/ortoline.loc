@@ -1,21 +1,21 @@
 /*
-Error: Undefined variable: "$black".
-        on line 10 of c:/MAMP/htdocs/ortoline.loc/sass/salons/contacts.scss
+Error: Undefined variable: "$blue".
+        on line 18 of c:/MAMP/htdocs/ortoline.loc/sass/gui/breadcrumbs.scss
 
-5: 	width: 30%;
-6: }
-7: .contacts__phone{
-8: 	font-size: 30px;
-9: 	line-height: 1;
-10: 	color: $black;
-11: 	font-weight: bold;
-12: 	margin-top: 24px;
-13: 	margin-bottom: 34px;
-14: }
-15: .contacts__phone__sub{
+13: .breadcrumbs__item:first-child{
+14: 	border-left: none;
+15: 	padding-left: 0;
+16: }
+17: .breadcrumbs__link{
+18: 	color: $blue;
+19: 	border-color: $blue;		
+20: }
+21: .breadcrumbs__link:hover{
+22: 	color: $orange;
+23: 	border-color: $orange;
 
 Backtrace:
-c:/MAMP/htdocs/ortoline.loc/sass/salons/contacts.scss:10
+c:/MAMP/htdocs/ortoline.loc/sass/gui/breadcrumbs.scss:18
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
@@ -73,4 +73,4 @@ c:/Ruby200-x64/bin/compass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$black\".\A         on line 10 of c:/MAMP/htdocs/ortoline.loc/sass/salons/contacts.scss\A \A 5: 	width: 30%;\A 6: }\A 7: .contacts__phone{\A 8: 	font-size: 30px;\A 9: 	line-height: 1;\A 10: 	color: $black;\A 11: 	font-weight: bold;\A 12: 	margin-top: 24px;\A 13: 	margin-bottom: 34px;\A 14: }\A 15: .contacts__phone__sub{"; }
+  content: "Error: Undefined variable: \"$blue\".\A         on line 18 of c:/MAMP/htdocs/ortoline.loc/sass/gui/breadcrumbs.scss\A \A 13: .breadcrumbs__item:first-child{\A 14: 	border-left: none;\A 15: 	padding-left: 0;\A 16: }\A 17: .breadcrumbs__link{\A 18: 	color: $blue;\A 19: 	border-color: $blue;		\A 20: }\A 21: .breadcrumbs__link:hover{\A 22: 	color: $orange;\A 23: 	border-color: $orange;"; }

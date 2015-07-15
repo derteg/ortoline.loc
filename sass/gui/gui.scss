@@ -17,7 +17,7 @@ p{margin: 0;}
 .fr{float:right}
 .absolute{position:absolute}
 .fixed{position:fixed}
-.hidden{display:none}
+// .hidden{display:none}
 .black{color:#000}
 
 /* Clearfix */
@@ -292,5 +292,32 @@ h3{
 		counter-increment: item; 
 		font-weight:bold;
 		color: $blue;
+	}
+}
+
+
+.tag__item{
+	display: inline-block;
+	margin-left: 6px;
+	&:first-child{
+		margin-left: 0;
+	}
+	&.current{
+		a{
+			background-color: $blue;			
+		}
+	}
+	a{
+		font-size: 13px;
+		text-transform: lowercase;
+		line-height: 22px;
+		color: $white;
+		padding: 2px 10px;
+		border-radius: 4px;
+		background-color: $gray;
+		@include transition(background-color .25s);
+		&:hover{
+			background-color: $blue;
+		}
 	}
 }

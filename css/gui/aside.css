@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$black".
-        on line 10 of c:/MAMP/htdocs/ortoline.loc/sass/salons/contacts.scss
+        on line 9 of c:/MAMP/htdocs/ortoline.loc/sass/gui/aside.scss
 
-5: 	width: 30%;
-6: }
-7: .contacts__phone{
-8: 	font-size: 30px;
-9: 	line-height: 1;
-10: 	color: $black;
-11: 	font-weight: bold;
-12: 	margin-top: 24px;
-13: 	margin-bottom: 34px;
-14: }
-15: .contacts__phone__sub{
+4: 	margin-top: 86px;
+5: }
+6: .aside__title{
+7: 	font-size: 20px;
+8: 	line-height: 1;
+9: 	color: $black;
+10: 	margin-bottom: 14px;
+11: }
+12: 
+13: .aside__menu{
+14: 	margin-bottom: 46px;
 
 Backtrace:
-c:/MAMP/htdocs/ortoline.loc/sass/salons/contacts.scss:10
+c:/MAMP/htdocs/ortoline.loc/sass/gui/aside.scss:9
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
@@ -73,4 +73,4 @@ c:/Ruby200-x64/bin/compass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$black\".\A         on line 10 of c:/MAMP/htdocs/ortoline.loc/sass/salons/contacts.scss\A \A 5: 	width: 30%;\A 6: }\A 7: .contacts__phone{\A 8: 	font-size: 30px;\A 9: 	line-height: 1;\A 10: 	color: $black;\A 11: 	font-weight: bold;\A 12: 	margin-top: 24px;\A 13: 	margin-bottom: 34px;\A 14: }\A 15: .contacts__phone__sub{"; }
+  content: "Error: Undefined variable: \"$black\".\A         on line 9 of c:/MAMP/htdocs/ortoline.loc/sass/gui/aside.scss\A \A 4: 	margin-top: 86px;\A 5: }\A 6: .aside__title{\A 7: 	font-size: 20px;\A 8: 	line-height: 1;\A 9: 	color: $black;\A 10: 	margin-bottom: 14px;\A 11: }\A 12: \A 13: .aside__menu{\A 14: 	margin-bottom: 46px;"; }

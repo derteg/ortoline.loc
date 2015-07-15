@@ -187,3 +187,118 @@
 	max-width:150px;
 	padding-top:25px
 }
+
+.video__player__cont{
+	width: 100%;
+	padding-bottom: 64px;
+	margin-bottom: 100px;
+	margin-bottom: 56px;
+	border-bottom: $brdLnk5;
+}
+.video__player{	
+	margin-bottom: 28px;
+	iframe{
+		width: 100%;
+	}
+}
+.video__player__sub{
+	p{
+		color: $black;
+		float: left;
+		line-height: 22px;
+		width: 66.6%;
+	}
+}
+.video__player__chanel{
+	float: right;
+	border-radius: 6px;
+	overflow: hidden;
+	.ico{
+		width: 60px;
+		height: 60px;
+		background-color: #dcd9d4;
+		position: relative;		
+		&:after{
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 11px 0 11px 22px;
+			border-color: transparent transparent transparent #ffffff;
+			margin-top: -11px;
+			margin-left: -11px;
+			transform: scale(1);
+			@include transition(transform .5s);
+		}
+	}
+	.b-lnk{
+		background-color: $lightGray;
+		margin-left: 60px;
+		text-transform: uppercase;
+		font-weight: bold;
+		padding: 20px;
+		span{
+			color: $dark;
+			border-bottom: $brdLnk3;
+			@include transition(color .25s, border-bottom .25s);
+		}
+	}
+	&:hover{
+		.b-lnk{
+			span{
+				color: $black;
+				border-bottom-color: transparent;
+			}
+		}		
+		.ico{
+			&:after{
+				transform: scale(1.2);
+			}
+		}
+	}
+}
+
+.video__nav{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.video__dots{
+	display: inline-block;
+	margin-top: 8px;
+}
+.video__dots__item{
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	margin: 0px 5px;
+	background-color: $white;
+	border-radius: 5px;
+	background-color: $lightGray;
+	&.current{
+		background-color: $orange;
+	}
+}
+.video__arrs{
+	float: right;
+}
+.video__arrs__lnk{
+	width: 38px;
+	height: 38px;
+	border-radius: 19px;
+	display: inline-block;
+	overflow: hidden;
+	margin-left: 10px;
+	vertical-align: bottom;
+	&:first-child{
+		margin-left: 0;
+	}
+}
+.video__arr_left{
+	background: $lightGray $sprite -202px 11px no-repeat;
+}
+.video__arr_right{
+	background: $lightGray $sprite -224px 11px no-repeat;
+}

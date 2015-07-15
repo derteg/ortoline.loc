@@ -25,9 +25,10 @@ $(function(){
 	$('.js-select').selectCustom();
 	$('.js-header_fix').headerFixed();
 	$('.js-info-tabs').lightTabs();
-
-
+	$('.js-faq__list').faqList();
 });
+
+
 
 function initLikes() {
 	$('.sl').socialLikes();
@@ -451,5 +452,25 @@ function heightsToMax() {
 		    	$('#footer').css('margin-top', '-400px')
 		    }
 		});
+	}
+})(jQuery);
+
+
+(function($){
+	$.fn.faqList = function(){
+		var $btn = this;
+
+		$btn.on('click', function(event){
+			var $par = $(this).parent('.faq-quest__cont'),
+				$answer = $('.answer', $par);
+
+			if($par.hasClass('opened')){
+				$par.removeClass('opened');
+				$answer.slideUp();
+			} else {
+				$par.addClass('opened');
+				$answer.slideDown();
+			}
+		})
 	}
 })(jQuery);

@@ -35,21 +35,20 @@ $sprite02: url('../ico/sprite_02.png');
 
 @import "gui/mixin.scss";
 @import "gui/social.scss";
-@import "gui.scss";
+@import "gui/gui.scss";
+@import "gui/aside.scss";
+@import "gui/breadcrumbs.scss";
+@import "gui/select.scss";
+@import "gui/info__tabs.scss";
+@import "gui/slick.scss";
+@import "gui/search__menu.scss";
 
 @import "header.scss";
 @import "footer.scss";
 
-@import "aside.scss";
-
-@import "breadcrumbs.scss";
 @import "maincat.scss";
-@import "select.scss";
-@import "search__menu.scss";
-@import "info__tabs.scss";
-@import "video.scss";
-@import "slick.scss";
 @import "card.scss";
+@import "faq.scss";
 
 @import "index/main.scss";
 @import "index/panorama.scss";
@@ -60,6 +59,8 @@ $sprite02: url('../ico/sprite_02.png');
 @import "index/dvnt.scss";
 @import "index/usfl.scss";
 @import "index/faqmain.scss";
+
+@import "video/video.scss";
 
 @import "product/product.scss";
 @import "product/slider.scss";

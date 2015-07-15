@@ -1,24 +1,35 @@
 /*
-Error: Undefined variable: "$black".
-        on line 10 of c:/MAMP/htdocs/ortoline.loc/sass/salons/contacts.scss
+Error: Undefined variable: "$orange".
+        on line 13 of c:/MAMP/htdocs/ortoline.loc/sass/gui/info__tabs.scss
 
-5: 	width: 30%;
-6: }
-7: .contacts__phone{
-8: 	font-size: 30px;
-9: 	line-height: 1;
-10: 	color: $black;
-11: 	font-weight: bold;
-12: 	margin-top: 24px;
-13: 	margin-bottom: 34px;
-14: }
-15: .contacts__phone__sub{
+8: 	cursor: pointer;
+9: 	.text{
+10: 		border-bottom: 1px dotted transparent;
+11: 	}
+12: 	.num{
+13: 		color: $orange;
+14: 		margin-left: 4px;
+15: 	}
+16: }
+17: .info-tabs__item.active{
+18: 	background-color: #f3f0eb;
 
 Backtrace:
-c:/MAMP/htdocs/ortoline.loc/sass/salons/contacts.scss:10
+c:/MAMP/htdocs/ortoline.loc/sass/gui/info__tabs.scss:13
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `block in with_base'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:115:in `with_frame'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `with_base'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:420:in `map'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:36:in `visit'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `block in with_base'
@@ -73,4 +84,4 @@ c:/Ruby200-x64/bin/compass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$black\".\A         on line 10 of c:/MAMP/htdocs/ortoline.loc/sass/salons/contacts.scss\A \A 5: 	width: 30%;\A 6: }\A 7: .contacts__phone{\A 8: 	font-size: 30px;\A 9: 	line-height: 1;\A 10: 	color: $black;\A 11: 	font-weight: bold;\A 12: 	margin-top: 24px;\A 13: 	margin-bottom: 34px;\A 14: }\A 15: .contacts__phone__sub{"; }
+  content: "Error: Undefined variable: \"$orange\".\A         on line 13 of c:/MAMP/htdocs/ortoline.loc/sass/gui/info__tabs.scss\A \A 8: 	cursor: pointer;\A 9: 	.text{\A 10: 		border-bottom: 1px dotted transparent;\A 11: 	}\A 12: 	.num{\A 13: 		color: $orange;\A 14: 		margin-left: 4px;\A 15: 	}\A 16: }\A 17: .info-tabs__item.active{\A 18: 	background-color: #f3f0eb;"; }
