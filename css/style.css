@@ -1088,43 +1088,43 @@ h3 { font-size: 20px; font-weight: bold; line-height: 36px; }
 
 /********** faq-aside **********/
 /* line 112, ../sass/faq.scss */
-.faq-aside { width: 33.3%; margin-top: -64px; }
+.faq-aside { width: 33.3%; margin-top: -64px; padding-left: 4%; }
 
-/* line 116, ../sass/faq.scss */
+/* line 117, ../sass/faq.scss */
 .faq-aside__title { margin-bottom: 30px; text-align: center; }
 
-/* line 120, ../sass/faq.scss */
-.faq-quest__item { background-color: #ffffff; border-radius: 6px; box-sizing: border-box; margin-bottom: 20px; overflow: hidden; }
+/* line 121, ../sass/faq.scss */
+.faq-quest__item { background-color: #ffffff; border-radius: 6px; box-sizing: border-box; margin-bottom: 20px; overflow: hidden; border: 1px solid #dadada; }
 
-/* line 127, ../sass/faq.scss */
+/* line 129, ../sass/faq.scss */
 .faq-quest__left, .faq-quest__right { display: table-cell; }
 
-/* line 131, ../sass/faq.scss */
-.faq-quest__left { border-right: 1px solid #dadada; width: 87%; }
-/* line 134, ../sass/faq.scss */
+/* line 133, ../sass/faq.scss */
+.faq-quest__left { border-right: 1px solid #dadada; width: 84%; }
+/* line 136, ../sass/faq.scss */
 .faq-quest__left .question { border-bottom: 1px solid transparent; padding: 20px; padding-top: 16px; -moz-transition: border-bottom 1s; -o-transition: border-bottom 1s; -webkit-transition: border-bottom 1s; transition: border-bottom 1s; }
-/* line 140, ../sass/faq.scss */
+/* line 142, ../sass/faq.scss */
 .faq-quest__left .answer { padding: 20px; padding-bottom: 16px; display: none; }
 
-/* line 146, ../sass/faq.scss */
+/* line 148, ../sass/faq.scss */
 .faq-quest__cont { display: table; }
-/* line 149, ../sass/faq.scss */
+/* line 151, ../sass/faq.scss */
 .faq-quest__cont.opened .question { border-bottom: 1px solid #dadada; }
 
-/* line 154, ../sass/faq.scss */
-.faq-quest__right { width: 13%; text-align: center; vertical-align: middle; cursor: pointer; background-color: #ffffff; -moz-transition: background-color 0.25s; -o-transition: background-color 0.25s; -webkit-transition: background-color 0.25s; transition: background-color 0.25s; }
-/* line 161, ../sass/faq.scss */
+/* line 156, ../sass/faq.scss */
+.faq-quest__right { width: 16%; text-align: center; vertical-align: middle; cursor: pointer; background-color: #ffffff; -moz-transition: background-color 0.25s; -o-transition: background-color 0.25s; -webkit-transition: background-color 0.25s; transition: background-color 0.25s; }
+/* line 163, ../sass/faq.scss */
 .faq-quest__right .ico { background: transparent url("../ico/sprite_01.png") -696px 0 no-repeat; display: inline-block; width: 12px; height: 12px; padding-bottom: 0px; -moz-transition: opacity 1s; -o-transition: opacity 1s; -webkit-transition: opacity 1s; transition: opacity 1s; }
-/* line 169, ../sass/faq.scss */
+/* line 171, ../sass/faq.scss */
 .faq-quest__right:hover { background-color: #F7F7F7; }
 
-/* line 174, ../sass/faq.scss */
-.faq-quest__cont.opened .faq-quest__right { vertical-align: bottom; }
 /* line 176, ../sass/faq.scss */
+.faq-quest__cont.opened .faq-quest__right { vertical-align: bottom; }
+/* line 178, ../sass/faq.scss */
 .faq-quest__cont.opened .faq-quest__right .ico { padding-bottom: 10px; background: transparent url("../ico/sprite_01.png") -720px 0 no-repeat; }
 
-/* line 182, ../sass/faq.scss */
-.faq__quest__lnk { width: 100%; text-align: center; }
+/* line 184, ../sass/faq.scss */
+.faq__quest__lnk { width: 100%; text-align: center; box-sizing: border-box; }
 
 /* line 1, ../sass/index/main.scss */
 .promo-stock-hits__wrap { position: relative; border: 1px solid #dadada; }

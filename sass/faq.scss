@@ -112,6 +112,7 @@
 .faq-aside{
 	width: 33.3%;
 	margin-top: -64px;
+	padding-left: 4%;
 }
 .faq-aside__title{
 	margin-bottom: 30px;
@@ -123,6 +124,7 @@
 	box-sizing: border-box;
 	margin-bottom: 20px;
 	overflow: hidden;
+	border: $brdLnk5;
 }
 .faq-quest__left,
 .faq-quest__right{
@@ -130,7 +132,7 @@
 }
 .faq-quest__left{
 	border-right: $brdLnk5;
-	width: 87%;
+	width: 84%;
 	.question{
 		border-bottom: 1px solid transparent;
 		padding: 20px;
@@ -152,7 +154,7 @@
 	}
 }
 .faq-quest__right{
-	width: 13%;
+	width: 16%;
 	text-align: center;
 	vertical-align: middle;
 	cursor: pointer;
@@ -182,4 +184,5 @@
 .faq__quest__lnk{
 	width: 100%;
 	text-align: center;
+	box-sizing: border-box;
 }
