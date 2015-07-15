@@ -3,17 +3,9 @@
     
     <head>
         <meta charset="utf-8" />
-        <meta content="width=1000px, target-densitydpi=device-dpi" name="viewport" />
-        <meta content="telephone=no" name="format-detection" />
-        <title>Ortoline :: Производители</title>
-        <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
-        <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-        <!--[if lt IE 9]>
-            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-        <![endif]-->
-        <link href="fonts/style.css" rel="stylesheet" type="text/css" />
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,800&amp;subset=latin,cyrillic-ext"
-        rel="stylesheet" type="text/css" />
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Наши салоны :: Ortoline</title>
+
         <link href="css/style.css" rel="stylesheet" type="text/css" />
         
         <script src="js/libs/jquery.min.js"></script>
@@ -21,7 +13,7 @@
         <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
         <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
         <script src="js/scripts.js"></script>
-    </head>
+    </head> 
     
     <body>
         <header class="header js-header_fix brd__bottom">
@@ -90,155 +82,153 @@
         </header>
         
         <div id="all">
-            <div id="wrap">
-                <div class="inside">                                        
-                    <section class="maincat maincat_dark">
-                        <div class="breadcrumbs clearfix">
-                            <ul class="breadcrumbs__list">
-                                <li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link">Главная</a></li>
-                                <li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link current">Наши салоны</a></li>
+            <div class="inside">                                        
+                <section class="maincat maincat_dark">
+                    <div class="breadcrumbs clearfix">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link">Главная</a></li>
+                            <li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link current">Наши салоны</a></li>
+                        </ul>
+                    </div>
+                    
+                    <h1 class="title_h1">Наши салоны</h1>
+                    
+                    <div class="adress">
+                        <div class="adress__nav">
+                            <div class="adress__nav-select_wrap">
+                                <select class="adress__nav-select js-select select">
+                                    <option value="all" selected>Все станции метро</option>
+                                    <option value="orange">Таганская</option>
+                                    <option value="blue">Краснопресненская</option>
+                                    <option value="gray">Пролетарская</option>
+                                </select>
+                                <span class="select__ico all"></span>
+                            </div>
+
+                            <div class="adress__nav-type">
+                                <span class="text">Салоны</span>
+                                <span class="ico"></span>
+                                <span class="text">Мини-салоны</span>
+                            </div>
+                            <ul class="adress__nav-btn__list fr">
+                                <li class="adress__nav-btn__item adress__nav-btn_sheme button button--gray">
+                                    <span class="ico cart"></span>
+                                    <span class="text">На схеме метро</span>
+                                </li>
+                                <li class="adress__nav-btn__item button button--gray adress__nav-btn_lists">
+                                    <span class="ico list"></span>
+                                    <span class="text">Списком</span>
+                                </li>
                             </ul>
                         </div>
+                        <div class="adress__wrap cols">
+                            <table class="adress__tbl col col--50">
+                                <tr>
+                                    <td>
+                                        <p class="adress__type">Салон</p>
+                                        <p class="adress__metro"><span class="color red"></span><span class="name">м. Юго-Западная</span></p>
+                                    </td>
+                                    <td><a href="" class="adress__lnk">Бизнес-парк «РУМЯНЦЕВО», ВХОД № 3</a></td>
+                                    <td>
+                                        <p class="adress__phone">(495) 989-66-35</p>
+                                        <p class="adress__subphone">Бесплатная консультация врача ортопеда-травматолога</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="adress__type">Салон</p>
+                                        <p class="adress__metro"><span class="color red"></span><span class="name">м. Юго-Западная</span></p>
+                                    </td>
+                                    <td><a href="" class="adress__lnk">Бизнес-парк «РУМЯНЦЕВО», ВХОД № 3</a></td>
+                                    <td>
+                                        <p class="adress__phone">(495) 989-66-35</p>
+                                        <p class="adress__subphone">Бесплатная консультация врача ортопеда-травматолога</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="adress__type">Салон</p>
+                                        <p class="adress__metro"><span class="color red"></span><span class="name">м. Юго-Западная</span></p>
+                                    </td>
+                                    <td><a href="" class="adress__lnk">Бизнес-парк «РУМЯНЦЕВО», ВХОД № 3</a></td>
+                                    <td>
+                                        <p class="adress__phone">(495) 989-66-35</p>
+                                        <p class="adress__subphone">Бесплатная консультация врача ортопеда-травматолога</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="adress__type">Салон</p>
+                                        <p class="adress__metro"><span class="color red"></span><span class="name">м. Юго-Западная</span></p>
+                                    </td>
+                                    <td><a href="" class="adress__lnk">Бизнес-парк «РУМЯНЦЕВО», ВХОД № 3</a></td>
+                                    <td>
+                                        <p class="adress__phone">(495) 989-66-35</p>
+                                        <p class="adress__subphone">Бесплатная консультация врача ортопеда-травматолога</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="adress__type">Салон</p>
+                                        <p class="adress__metro"><span class="color red"></span><span class="name">м. Юго-Западная</span></p>
+                                    </td>
+                                    <td><a href="" class="adress__lnk">Бизнес-парк «РУМЯНЦЕВО», ВХОД № 3</a></td>
+                                    <td>
+                                        <p class="adress__phone">(495) 989-66-35</p>
+                                        <p class="adress__subphone">Бесплатная консультация врача ортопеда-травматолога</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="adress__type">Салон</p>
+                                        <p class="adress__metro"><span class="color red"></span><span class="name">м. Юго-Западная</span></p>
+                                    </td>
+                                    <td><a href="" class="adress__lnk">Бизнес-парк «РУМЯНЦЕВО», ВХОД № 3</a></td>
+                                    <td>
+                                        <p class="adress__phone">(495) 989-66-35</p>
+                                        <p class="adress__subphone">Бесплатная консультация врача ортопеда-травматолога</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="adress__type">Салон</p>
+                                        <p class="adress__metro"><span class="color red"></span><span class="name">м. Юго-Западная</span></p>
+                                    </td>
+                                    <td><a href="" class="adress__lnk">Бизнес-парк «РУМЯНЦЕВО», ВХОД № 3</a></td>
+                                    <td>
+                                        <p class="adress__phone">(495) 989-66-35</p>
+                                        <p class="adress__subphone">Бесплатная консультация врача ортопеда-травматолога</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="adress__type">Салон</p>
+                                        <p class="adress__metro"><span class="color red"></span><span class="name">м. Юго-Западная</span></p>
+                                    </td>
+                                    <td><a href="" class="adress__lnk">Бизнес-парк «РУМЯНЦЕВО», ВХОД № 3</a></td>
+                                    <td>
+                                        <p class="adress__phone">(495) 989-66-35</p>
+                                        <p class="adress__subphone">Бесплатная консультация врача ортопеда-травматолога</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="adress__type">Салон</p>
+                                        <p class="adress__metro"><span class="color red"></span><span class="name">м. Юго-Западная</span></p>
+                                    </td>
+                                    <td><a href="" class="adress__lnk">Бизнес-парк «РУМЯНЦЕВО», ВХОД № 3</a></td>
+                                    <td>
+                                        <p class="adress__phone">(495) 989-66-35</p>
+                                        <p class="adress__subphone">Бесплатная консультация врача ортопеда-травматолога</p>
+                                    </td>
+                                </tr>
+                            </table>
                         
-                        <h1 class="title_h1">Наши салоны</h1>
-                        
-                        <div class="adress">
-                            <div class="adress__nav">
-                                <div class="adress__nav-select_wrap">
-                                    <select class="adress__nav-select js-select select">
-                                        <option value="all" selected>Все станции метро</option>
-                                        <option value="orange">Таганская</option>
-                                        <option value="blue">Краснопресненская</option>
-                                        <option value="gray">Пролетарская</option>
-                                    </select>
-                                    <span class="select__ico all"></span>
-                                </div>
-
-                                <div class="adress__nav-type">
-                                    <span class="text">Салоны</span>
-                                    <span class="ico"></span>
-                                    <span class="text">Мини-салоны</span>
-                                </div>
-                                <ul class="adress__nav-btn__list fr">
-                                    <li class="adress__nav-btn__item adress__nav-btn_sheme button button--gray">
-                                        <span class="ico cart"></span>
-                                        <span class="text">На схеме метро</span>
-                                    </li>
-                                    <li class="adress__nav-btn__item button button--gray adress__nav-btn_lists">
-                                        <span class="ico list"></span>
-                                        <span class="text">Списком</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="adress__wrap cols">
-                                <table class="adress__tbl col col--50">
-                                    <tr>
-                                        <td>
-                                            <p class="adress__type">Салон</p>
-                                            <p class="adress__metro"><span class="color red"></span><span class="name">м. Юго-Западная</span></p>
-                                        </td>
-                                        <td><a href="" class="adress__lnk">Бизнес-парк «РУМЯНЦЕВО», ВХОД № 3</a></td>
-                                        <td>
-                                            <p class="adress__phone">(495) 989-66-35</p>
-                                            <p class="adress__subphone">Бесплатная консультация врача ортопеда-травматолога</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p class="adress__type">Салон</p>
-                                            <p class="adress__metro"><span class="color red"></span><span class="name">м. Юго-Западная</span></p>
-                                        </td>
-                                        <td><a href="" class="adress__lnk">Бизнес-парк «РУМЯНЦЕВО», ВХОД № 3</a></td>
-                                        <td>
-                                            <p class="adress__phone">(495) 989-66-35</p>
-                                            <p class="adress__subphone">Бесплатная консультация врача ортопеда-травматолога</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p class="adress__type">Салон</p>
-                                            <p class="adress__metro"><span class="color red"></span><span class="name">м. Юго-Западная</span></p>
-                                        </td>
-                                        <td><a href="" class="adress__lnk">Бизнес-парк «РУМЯНЦЕВО», ВХОД № 3</a></td>
-                                        <td>
-                                            <p class="adress__phone">(495) 989-66-35</p>
-                                            <p class="adress__subphone">Бесплатная консультация врача ортопеда-травматолога</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p class="adress__type">Салон</p>
-                                            <p class="adress__metro"><span class="color red"></span><span class="name">м. Юго-Западная</span></p>
-                                        </td>
-                                        <td><a href="" class="adress__lnk">Бизнес-парк «РУМЯНЦЕВО», ВХОД № 3</a></td>
-                                        <td>
-                                            <p class="adress__phone">(495) 989-66-35</p>
-                                            <p class="adress__subphone">Бесплатная консультация врача ортопеда-травматолога</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p class="adress__type">Салон</p>
-                                            <p class="adress__metro"><span class="color red"></span><span class="name">м. Юго-Западная</span></p>
-                                        </td>
-                                        <td><a href="" class="adress__lnk">Бизнес-парк «РУМЯНЦЕВО», ВХОД № 3</a></td>
-                                        <td>
-                                            <p class="adress__phone">(495) 989-66-35</p>
-                                            <p class="adress__subphone">Бесплатная консультация врача ортопеда-травматолога</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p class="adress__type">Салон</p>
-                                            <p class="adress__metro"><span class="color red"></span><span class="name">м. Юго-Западная</span></p>
-                                        </td>
-                                        <td><a href="" class="adress__lnk">Бизнес-парк «РУМЯНЦЕВО», ВХОД № 3</a></td>
-                                        <td>
-                                            <p class="adress__phone">(495) 989-66-35</p>
-                                            <p class="adress__subphone">Бесплатная консультация врача ортопеда-травматолога</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p class="adress__type">Салон</p>
-                                            <p class="adress__metro"><span class="color red"></span><span class="name">м. Юго-Западная</span></p>
-                                        </td>
-                                        <td><a href="" class="adress__lnk">Бизнес-парк «РУМЯНЦЕВО», ВХОД № 3</a></td>
-                                        <td>
-                                            <p class="adress__phone">(495) 989-66-35</p>
-                                            <p class="adress__subphone">Бесплатная консультация врача ортопеда-травматолога</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p class="adress__type">Салон</p>
-                                            <p class="adress__metro"><span class="color red"></span><span class="name">м. Юго-Западная</span></p>
-                                        </td>
-                                        <td><a href="" class="adress__lnk">Бизнес-парк «РУМЯНЦЕВО», ВХОД № 3</a></td>
-                                        <td>
-                                            <p class="adress__phone">(495) 989-66-35</p>
-                                            <p class="adress__subphone">Бесплатная консультация врача ортопеда-травматолога</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p class="adress__type">Салон</p>
-                                            <p class="adress__metro"><span class="color red"></span><span class="name">м. Юго-Западная</span></p>
-                                        </td>
-                                        <td><a href="" class="adress__lnk">Бизнес-парк «РУМЯНЦЕВО», ВХОД № 3</a></td>
-                                        <td>
-                                            <p class="adress__phone">(495) 989-66-35</p>
-                                            <p class="adress__subphone">Бесплатная консультация врача ортопеда-травматолога</p>
-                                        </td>
-                                    </tr>
-                                </table>
-                            
-                                <div class="adress__map col col--50" id="adressMap">
-                                </div>
+                            <div class="adress__map col col--50" id="adressMap">
                             </div>
                         </div>
-                    </section>
-                </div>
+                    </div>
+                </section>
             </div>
         </div>
         <footer class="footer" id="footer">

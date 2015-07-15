@@ -3,17 +3,9 @@
     
     <head>
         <meta charset="utf-8" />
-        <meta content="width=1000px, target-densitydpi=device-dpi" name="viewport" />
-        <meta content="telephone=no" name="format-detection" />
-        <title>Ortoline :: «ОРТОЛАЙН» на Бескудниковском бульваре</title>
-        <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
-        <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-        <!--[if lt IE 9]>
-            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-        <![endif]-->
-        <link href="fonts/style.css" rel="stylesheet" type="text/css" />
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,800&amp;subset=latin,cyrillic-ext"
-        rel="stylesheet" type="text/css" />
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>«ОРТОЛАЙН» на Бескудниковском бульваре :: Ortoline</title>
+
         <link href="css/style.css" rel="stylesheet" type="text/css" />
         
         <script src="js/libs/jquery.min.js"></script>
@@ -21,7 +13,7 @@
         <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
         <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
         <script src="js/scripts.js"></script>
-    </head>
+    </head>    
     
     <body>
         <header class="header js-header_fix brd__bottom">
@@ -90,109 +82,106 @@
         </header>
         
         <div id="all">
-            <div id="wrap">
+            <div class="inside">                                        
+                <section class="adress-inner">
+                    <div class="breadcrumbs clearfix">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link">Главная</a></li>
+                            <li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link">Наши салоны</a></li>
+                            <li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link current">«ОРТОЛАЙН» на Бескудниковском бульваре</a></li>
+                        </ul>
+                    </div>
+                    
+                    <h1 class="title_h1">«ОРТОЛАЙН» на Бескудниковском бульваре</h1>
 
-                <div class="inside">                                        
-                    <section class="adress-inner">
-                        <div class="breadcrumbs clearfix">
-                            <ul class="breadcrumbs__list">
-                                <li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link">Главная</a></li>
-                                <li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link">Наши салоны</a></li>
-                                <li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link current">«ОРТОЛАЙН» на Бескудниковском бульваре</a></li>
-                            </ul>
+                    <div class="adress-inner__row cols">
+                        <div class="adress-inner__col col col--50">
+                            <div id="adressInnerMap" class="adress-inner__map" data-point-lat="55.75" data-point-lon="37.61"></div>
                         </div>
-                        
-                        <h1 class="title_h1">«ОРТОЛАЙН» на Бескудниковском бульваре</h1>
-
-                        <div class="adress-inner__row cols">
-                            <div class="adress-inner__col col col--50">
-                                <div id="adressInnerMap" class="adress-inner__map" data-point-lat="55.75" data-point-lon="37.61"></div>
-                            </div>
-                            <div class="adress-inner__col col col--50">
-                                <div class="adress-inner__pic"><img src="pic/pic_27.jpg" alt=""></div>
-                            </div>
+                        <div class="adress-inner__col col col--50">
+                            <div class="adress-inner__pic"><img src="pic/pic_27.jpg" alt=""></div>
                         </div>
+                    </div>
 
-                        <div class="adress-inner__row cols">
-                            <div class="adress-inner__col col col--50">
-                                <div class="adress-inner__info">
-                                    <div class="adress-inner__info_row cols">
-                                        <div class="adress-inner__info_col col col--50">
-                                            <p class="adress-inner__label">Адрес</p>
-                                            <p class="adress-inner__text">Бескудниковский бульвар, д.32, корп.5</p>
-                                        </div>
-                                        <div class="adress-inner__info_col col col--50">
-                                            <p class="adress-inner__label">Телефон</p>
-                                            <p class="adress-inner__text">+7 (499) 489-00-62</p>
-                                        </div>
+                    <div class="adress-inner__row cols">
+                        <div class="adress-inner__col col col--50">
+                            <div class="adress-inner__info">
+                                <div class="adress-inner__info_row cols">
+                                    <div class="adress-inner__info_col col col--50">
+                                        <p class="adress-inner__label">Адрес</p>
+                                        <p class="adress-inner__text">Бескудниковский бульвар, д.32, корп.5</p>
                                     </div>
+                                    <div class="adress-inner__info_col col col--50">
+                                        <p class="adress-inner__label">Телефон</p>
+                                        <p class="adress-inner__text">+7 (499) 489-00-62</p>
+                                    </div>
+                                </div>
+                                <div class="adress-inner__info_row">
+                                    <div class="adress-inner__info_col">
+                                        <p class="adress-inner__label">Проезд</p>
+                                        <p class="adress-inner__text">Метро «Петровско-Разумовская», далее автобус № 167, 206 до остановки «Рогачевский пер.» или «Школа». <br/>Метро «Тимирязевская», далее автобус № 206 до остановки «Рогачевский пер.» или «Школа»</p>
+                                    </div>
+                                </div>
+                                <div class="adress-inner__info_row">
+                                    <a href="#0" class="button button--round button--blue">Оставить отзыв</a>
+                                </div>
+                                <div class="conditions-promo conditions-promo_brd">
                                     <div class="adress-inner__info_row">
-                                        <div class="adress-inner__info_col">
-                                            <p class="adress-inner__label">Проезд</p>
-                                            <p class="adress-inner__text">Метро «Петровско-Разумовская», далее автобус № 167, 206 до остановки «Рогачевский пер.» или «Школа». <br/>Метро «Тимирязевская», далее автобус № 206 до остановки «Рогачевский пер.» или «Школа»</p>
-                                        </div>
+                                        <p class="adress-inner__label">Часы работы</p>
+                                        <p class="adress-inner__text">Понедельник-пятница: <b>10.00 - 20.00</b><br/>
+                                        Суббота, воскресенье: <b>11.00 - 18.00</b></p>
                                     </div>
+
                                     <div class="adress-inner__info_row">
-                                        <a href="#0" class="button button--round button--blue">Оставить отзыв</a>
+                                        <p class="adress-inner__label">Бесплатная консультация врача ортопеда-травматолога:</p>
+                                        <p class="adress-inner__text">Понедельник, среда: <b>16.00 - 20.00</b><br/> Через субботу: <b>11.00 - 18.00</b></p>
                                     </div>
-                                    <div class="conditions-promo conditions-promo_brd">
-                                        <div class="adress-inner__info_row">
-                                            <p class="adress-inner__label">Часы работы</p>
-                                            <p class="adress-inner__text">Понедельник-пятница: <b>10.00 - 20.00</b><br/>
-                                            Суббота, воскресенье: <b>11.00 - 18.00</b></p>
-                                        </div>
-
-                                        <div class="adress-inner__info_row">
-                                            <p class="adress-inner__label">Бесплатная консультация врача ортопеда-травматолога:</p>
-                                            <p class="adress-inner__text">Понедельник, среда: <b>16.00 - 20.00</b><br/> Через субботу: <b>11.00 - 18.00</b></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="adress-inner__col col col--50">
-                                <div class="about_gray">
-                                    <h3>О салоне</h3>
-                                    <p>В ортопедических салонах «ОРТОЛАЙН» представлен широкий ассортимент ортопедических изделий и медицинского компрессионного трикотажа, а также средства реабилитации после травм и операций. Квалифицированный персонал поможет подобрать необходимые лечебные изделия, которые оптимально подойдут пациенту в каждом конкретном случае. В ортопедических салонах «ОРТОЛАЙН» каждый может получить бесплатную консультацию врача ортопеда-травматолога. Наши специалисты оказывают профессиональную консультацию в подборе ортопедических изделий, компрессионного трикотажа, ортопедической обуви. Вы можете воспользоваться услугой диагностики стопы на плантоскопе и в случае необходимости изготовить индивидуальные стельки-супинаторы. Записаться на консультацию к врачу можно по телефону в любой удобный для Вас салон «ОРТОЛАЙН».</p>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="adress-inner__row">
-                            <h2 class="title__h1_s2">Специалисты салона</h2>
-
-                            <div class="adress-inner__gallery cols">
-                                <div class="adress-inner__gallery__slide col col--25">
-                                    <div class="pic">
-                                        <img src="pic/pic_28.png" alt="">
-                                    </div>
-                                    <h4 class="title"><strong>Палкина</strong> Ольга Михайловна</h4>
-                                    <p class="sub-title">Заведующая</p>
-                                </div>
-                                <div class="adress-inner__gallery__slide col col--25">
-                                    <div class="pic">
-                                        <img src="pic/pic_29.png" alt="">
-                                    </div>
-                                    <h4 class="title"><strong>Палкина</strong> Ольга Михайловна</h4>
-                                    <p class="sub-title">Консультант</p>
-                                </div>
-                                <div class="adress-inner__gallery__slide col col--25">
-                                    <div class="pic">
-                                        <img src="pic/pic_30.png" alt="">
-                                    </div>
-                                    <h4 class="title"><strong>Палкина</strong> Ольга Михайловна</h4>
-                                    <p class="sub-title">Консультант</p>
-                                </div>
-                                <div class="adress-inner__gallery__slide col col--25">
-                                    <div class="pic">
-                                        <img src="pic/pic_31.png" alt="">
-                                    </div>
-                                    <h4 class="title"><strong>Палкина</strong> Ольга Михайловна</h4>
-                                    <p class="sub-title">Врач ортопед</p>
-                                </div>
+                        <div class="adress-inner__col col col--50">
+                            <div class="about_gray">
+                                <h3>О салоне</h3>
+                                <p>В ортопедических салонах «ОРТОЛАЙН» представлен широкий ассортимент ортопедических изделий и медицинского компрессионного трикотажа, а также средства реабилитации после травм и операций. Квалифицированный персонал поможет подобрать необходимые лечебные изделия, которые оптимально подойдут пациенту в каждом конкретном случае. В ортопедических салонах «ОРТОЛАЙН» каждый может получить бесплатную консультацию врача ортопеда-травматолога. Наши специалисты оказывают профессиональную консультацию в подборе ортопедических изделий, компрессионного трикотажа, ортопедической обуви. Вы можете воспользоваться услугой диагностики стопы на плантоскопе и в случае необходимости изготовить индивидуальные стельки-супинаторы. Записаться на консультацию к врачу можно по телефону в любой удобный для Вас салон «ОРТОЛАЙН».</p>
                             </div>
                         </div>
-                    </section>
-                </div>
+                    </div>
+
+                    <div class="adress-inner__row">
+                        <h2 class="title__h1_s2">Специалисты салона</h2>
+
+                        <div class="adress-inner__gallery cols">
+                            <div class="adress-inner__gallery__slide col col--25">
+                                <div class="pic">
+                                    <img src="pic/pic_28.png" alt="">
+                                </div>
+                                <h4 class="title"><strong>Палкина</strong> Ольга Михайловна</h4>
+                                <p class="sub-title">Заведующая</p>
+                            </div>
+                            <div class="adress-inner__gallery__slide col col--25">
+                                <div class="pic">
+                                    <img src="pic/pic_29.png" alt="">
+                                </div>
+                                <h4 class="title"><strong>Палкина</strong> Ольга Михайловна</h4>
+                                <p class="sub-title">Консультант</p>
+                            </div>
+                            <div class="adress-inner__gallery__slide col col--25">
+                                <div class="pic">
+                                    <img src="pic/pic_30.png" alt="">
+                                </div>
+                                <h4 class="title"><strong>Палкина</strong> Ольга Михайловна</h4>
+                                <p class="sub-title">Консультант</p>
+                            </div>
+                            <div class="adress-inner__gallery__slide col col--25">
+                                <div class="pic">
+                                    <img src="pic/pic_31.png" alt="">
+                                </div>
+                                <h4 class="title"><strong>Палкина</strong> Ольга Михайловна</h4>
+                                <p class="sub-title">Врач ортопед</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
         <footer class="footer" id="footer">

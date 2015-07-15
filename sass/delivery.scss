@@ -1,0 +1,44 @@
+.delivery__ico{
+	.ico{
+		float: left;
+	}
+	.text{
+		margin-left: 50px;
+		display: block;
+	}
+}
+.delivery__ico-money{
+	.ico{
+		background: transparent $sprite -795px 0 no-repeat;
+		width: 34px;
+		height: 24px;
+	}
+}
+.delivery__ico-wallet{
+	.ico{
+		background: transparent $sprite -835px 0 no-repeat;
+		width: 34px;
+		height: 23px;
+	}
+}
+.delivery__ico-range{
+	.ico{
+		background: transparent $sprite -880px 0 no-repeat;
+		width: 34px;
+		height: 17px;
+	}
+}
+.delivery__ico-post{
+	margin-top: -22px;
+	margin-bottom: 20px;
+	img{
+		line-height: 60px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.text{
+		display: inline-block;
+		vertical-align: middle;
+		line-height: 60px;
+	}
+}

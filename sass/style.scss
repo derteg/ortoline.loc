@@ -13,9 +13,14 @@ $orange: #f3a942;
 $orangeHov: #FAB24E;
 $red: #ea1c1c;
 
+@import "gui/fonts.scss";
+
 $openSans: 'Open Sans',sans-serif;
 $PFDinDisplayPro:'PFDinDisplayPro',Verdana,sans-serif;
-$HelveticaNeue: 'HelveticaNeue',Verdana,Arial,sans-serif;
+$HelveticaNeue: 'helveticaneuecyrroman',Verdana,Arial,sans-serif;
+$HelveticaNeueBold: 'helveticaneuecyrbold',Verdana,Arial,sans-serif;
+$HelveticaNeueLight: 'helveticaneuecyrlight',Verdana,Arial,sans-serif;
+
 
 $bg01: #f4f1ec;
 
@@ -43,6 +48,7 @@ $sprite02: url('../ico/sprite_02.png');
 @import "gui/slick.scss";
 @import "gui/search__menu.scss";
 @import "gui/paginator.scss";
+@import "gui/services__img.scss";
 
 @import "header.scss";
 @import "footer.scss";
@@ -50,6 +56,7 @@ $sprite02: url('../ico/sprite_02.png');
 @import "maincat.scss";
 @import "card.scss";
 @import "faq.scss";
+@import "delivery.scss";
 
 @import "index/main.scss";
 @import "index/panorama.scss";

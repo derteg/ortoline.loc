@@ -1,26 +1,19 @@
 /*
-Error: Undefined variable: "$orange".
-        on line 34 of c:/MAMP/htdocs/ortoline.loc/sass/conditions.scss
+Error: Undefined variable: "$openSans".
+        on line 3 of c:/MAMP/htdocs/ortoline.loc/sass/conditions.scss
 
-29: .conditions-promo{
-30: 	box-sizing: border-box;
-31: }
-32: .conditions-promo_brd{
-33: 	padding: 32px 36px 22px;
-34: 	border: 5px solid $orange;
-35: }
-36: .conditions-promo__title{
-37: 	font-size: 16px;
-38: 	margin-bottom: 24px;
-39: }
+1: .conditions{
+2: 	margin-bottom: 80px;
+3: 	font-family: $openSans;
+4: }
+5: .conditions__sub-title{
+6: 	font-size: 22px;
+7: 	line-height: 40px;
+8: 	margin-top: -10px;
 
 Backtrace:
-c:/MAMP/htdocs/ortoline.loc/sass/conditions.scss:34
+c:/MAMP/htdocs/ortoline.loc/sass/conditions.scss:3
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/variable.rb:49:in `_perform'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/list_literal.rb:62:in `block in _perform'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/list_literal.rb:62:in `map'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/list_literal.rb:62:in `_perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:36:in `visit'
@@ -73,4 +66,4 @@ c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$orange\".\A         on line 34 of c:/MAMP/htdocs/ortoline.loc/sass/conditions.scss\A \A 29: .conditions-promo{\A 30: 	box-sizing: border-box;\A 31: }\A 32: .conditions-promo_brd{\A 33: 	padding: 32px 36px 22px;\A 34: 	border: 5px solid $orange;\A 35: }\A 36: .conditions-promo__title{\A 37: 	font-size: 16px;\A 38: 	margin-bottom: 24px;\A 39: }"; }
+  content: "Error: Undefined variable: \"$openSans\".\A         on line 3 of c:/MAMP/htdocs/ortoline.loc/sass/conditions.scss\A \A 1: .conditions{\A 2: 	margin-bottom: 80px;\A 3: 	font-family: $openSans;\A 4: }\A 5: .conditions__sub-title{\A 6: 	font-size: 22px;\A 7: 	line-height: 40px;\A 8: 	margin-top: -10px;"; }

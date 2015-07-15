@@ -36,6 +36,8 @@
 	min-height:65px;
 	width:80%;
 	margin:0 auto;
+	font-weight: bold;
+	font-size: 14px;
 }
 .maincat__image{
 	height:195px;
@@ -61,7 +63,7 @@
 .maincat__all span{
 	border-bottom:1px solid rgba(0,0,0,0.4);
 	font-size:32px;
-	font-weight:bolder;
+	font-weight:bold;
 	line-height:36px;
 }
 .maincat__all span:before,
