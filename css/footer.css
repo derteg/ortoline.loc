@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$orange".
-        on line 27 of c:/MAMP/htdocs/ortoline.loc/sass/footer.scss
+        on line 28 of c:/MAMP/htdocs/ortoline.loc/sass/footer.scss
 
-22: 	font-size: 14px;
-23: }
-24: .footer-col a{
-25: 	border:0;
-26: 	&:hover{
-27: 		color: $orange;
-28: 	}
-29: }
-30: .footer-col li{
-31: 	line-height:16px;
-32: 	margin-bottom:20px;
+23: 	font-size: 14px;
+24: }
+25: .footer-col a{
+26: 	border:0;
+27: 	&:hover{
+28: 		color: $orange;
+29: 	}
+30: }
+31: .footer-col li{
+32: 	line-height:16px;
+33: 	margin-bottom:20px;
 
 Backtrace:
-c:/MAMP/htdocs/ortoline.loc/sass/footer.scss:27
+c:/MAMP/htdocs/ortoline.loc/sass/footer.scss:28
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
@@ -80,4 +80,4 @@ c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$orange\".\A         on line 27 of c:/MAMP/htdocs/ortoline.loc/sass/footer.scss\A \A 22: 	font-size: 14px;\A 23: }\A 24: .footer-col a{\A 25: 	border:0;\A 26: 	&:hover{\A 27: 		color: $orange;\A 28: 	}\A 29: }\A 30: .footer-col li{\A 31: 	line-height:16px;\A 32: 	margin-bottom:20px;"; }
+  content: "Error: Undefined variable: \"$orange\".\A         on line 28 of c:/MAMP/htdocs/ortoline.loc/sass/footer.scss\A \A 23: 	font-size: 14px;\A 24: }\A 25: .footer-col a{\A 26: 	border:0;\A 27: 	&:hover{\A 28: 		color: $orange;\A 29: 	}\A 30: }\A 31: .footer-col li{\A 32: 	line-height:16px;\A 33: 	margin-bottom:20px;"; }

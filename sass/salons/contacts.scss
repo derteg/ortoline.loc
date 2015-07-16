@@ -95,3 +95,20 @@
 	color: $gray;
 	margin-bottom: 22px;
 }
+
+.contact__popup{
+	width: 640px;
+	height: 470px;
+	display: none;
+	.b-close{
+		background: transparent $sprite -968px 0 no-repeat;
+		width: 20px;
+		height: 20px;
+		padding: 0;
+		position: absolute;
+		left: 100%;
+		top: 0;
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+}

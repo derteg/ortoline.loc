@@ -12,6 +12,7 @@
         <script>window.jQuery || document.write('<script src="js/libs/jquery.min.js">\x3C/script>')</script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
         <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+        <script src="js/libs/plugins.js"></script>
         <script src="js/scripts.js"></script>
     </head> 
     
@@ -125,106 +126,320 @@
                         </div>
                     </div>
                     
-                    <div class="cols" data-max="parent">
-                        <div class="col col--33">
-                            <div class="video-item">
-                                <div class="video-wrap">
-                                    <img src="img/video-1.png" alt="video-1" width="284" height="174" class="video-poster"
-                                    />
-                                    <div class="video-play"></div>
-                                </div>
-                                <div class="video-content" data-max="child">
-                                    <div class="video-title">Ортопедические товары для бущущих мам</div>
-                                    <div class="video-text">Врач ортопед-травматолог Морозов В.В. рассказывает об ортопедических изделиях
-                                        для беременных</div>
-                                    <div class="video-footer">
-                                        <div class="video-clock">05:02</div>
-                                        <div class="video-eye">12 450</div>
+                    <div class="video__slider" id="videoSlider" data-max="parent">
+                        <div class="video__slide cols">
+                            <div class="col col--33">
+                                <div class="video-item">
+                                    <div class="video-wrap">
+                                        <img src="img/video-1.png" alt="video-1" width="284" height="174" class="video-poster"
+                                        />
+                                        <div class="video-play"></div>
+                                    </div>
+                                    <div class="video-content" data-max="child">
+                                        <div class="video-title">Ортопедические товары для бущущих мам</div>
+                                        <div class="video-text">Врач ортопед-травматолог Морозов В.В. рассказывает об ортопедических изделиях
+                                            для беременных</div>
+                                        <div class="video-footer">
+                                            <div class="video-clock">05:02</div>
+                                            <div class="video-eye">12 450</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col col--33">
-                            <div class="video-item">
-                                <div class="video-wrap">
-                                    <img src="img/v-2.png" alt="video-1" class="video-poster" width="284" height="174" />
-                                    <div class="video-play"></div>
-                                </div>
-                                <div class="video-content" data-max="child">
-                                    <div class="video-title">Выбираем ортопедическую обувь для детей</div>
-                                    <div class="video-text">Как правильно подобрать ортопедическую обувь ребенку?</div>
-                                    <div class="video-footer">
-                                        <div class="video-clock">05:02</div>
-                                        <div class="video-eye">12 450</div>
+                            <div class="col col--33">
+                                <div class="video-item">
+                                    <div class="video-wrap">
+                                        <img src="img/v-2.png" alt="video-1" class="video-poster" width="284" height="174" />
+                                        <div class="video-play"></div>
+                                    </div>
+                                    <div class="video-content" data-max="child">
+                                        <div class="video-title">Выбираем ортопедическую обувь для детей</div>
+                                        <div class="video-text">Как правильно подобрать ортопедическую обувь ребенку?</div>
+                                        <div class="video-footer">
+                                            <div class="video-clock">05:02</div>
+                                            <div class="video-eye">12 450</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col col--33">
-                            <div class="video-item">
-                                <div class="video-wrap">
-                                    <img src="img/v-3.png" alt="video-1" class="video-poster" />
-                                    <div class="video-play"></div>
+                            <div class="col col--33">
+                                <div class="video-item">
+                                    <div class="video-wrap">
+                                        <img src="img/v-3.png" alt="video-1" class="video-poster" />
+                                        <div class="video-play"></div>
+                                    </div>
+                                    <div class="video-content" data-max="child">
+                                        <div class="video-title">Профилактическая и лечебная обувь для детей</div>
+                                        <div class="video-text">Профилактическая и лечебная ортопедическая обувь для детей: отличия и
+                                            показания</div>
+                                        <div class="video-footer">
+                                            <div class="video-clock">05:02</div>
+                                            <div class="video-eye">12 450</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="video-content" data-max="child">
-                                    <div class="video-title">Профилактическая и лечебная обувь для детей</div>
-                                    <div class="video-text">Профилактическая и лечебная ортопедическая обувь для детей: отличия и
-                                        показания</div>
-                                    <div class="video-footer">
-                                        <div class="video-clock">05:02</div>
-                                        <div class="video-eye">12 450</div>
+                            </div>
+                        
+                            <div class="col col--33">
+                                <div class="video-item">
+                                    <div class="video-wrap">
+                                        <img src="img/video-1.png" alt="video-1" width="284" height="174" class="video-poster"
+                                        />
+                                        <div class="video-play"></div>
+                                    </div>
+                                    <div class="video-content" data-max="child">
+                                        <div class="video-title">Ортопедические товары для бущущих мам</div>
+                                        <div class="video-text">Врач ортопед-травматолог Морозов В.В. рассказывает об ортопедических изделиях
+                                            для беременных</div>
+                                        <div class="video-footer">
+                                            <div class="video-clock">05:02</div>
+                                            <div class="video-eye">12 450</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col--33">
+                                <div class="video-item">
+                                    <div class="video-wrap">
+                                        <img src="img/v-2.png" alt="video-1" class="video-poster" width="284" height="174" />
+                                        <div class="video-play"></div>
+                                    </div>
+                                    <div class="video-content" data-max="child">
+                                        <div class="video-title">Выбираем ортопедическую обувь для детей</div>
+                                        <div class="video-text">Как правильно подобрать ортопедическую обувь ребенку?</div>
+                                        <div class="video-footer">
+                                            <div class="video-clock">05:02</div>
+                                            <div class="video-eye">12 450</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col--33">
+                                <div class="video-item">
+                                    <div class="video-wrap">
+                                        <img src="img/v-3.png" alt="video-1" class="video-poster" />
+                                        <div class="video-play"></div>
+                                    </div>
+                                    <div class="video-content" data-max="child">
+                                        <div class="video-title">Профилактическая и лечебная обувь для детей</div>
+                                        <div class="video-text">Профилактическая и лечебная ортопедическая обувь для детей: отличия и
+                                            показания</div>
+                                        <div class="video-footer">
+                                            <div class="video-clock">05:02</div>
+                                            <div class="video-eye">12 450</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col col--33">
-                            <div class="video-item">
-                                <div class="video-wrap">
-                                    <img src="img/video-1.png" alt="video-1" width="284" height="174" class="video-poster"
-                                    />
-                                    <div class="video-play"></div>
+                        <div class="video__slide cols">
+                            <div class="col col--33">
+                                <div class="video-item">
+                                    <div class="video-wrap">
+                                        <img src="img/video-1.png" alt="video-1" width="284" height="174" class="video-poster"
+                                        />
+                                        <div class="video-play"></div>
+                                    </div>
+                                    <div class="video-content" data-max="child">
+                                        <div class="video-title">Ортопедические товары для бущущих мам</div>
+                                        <div class="video-text">Врач ортопед-травматолог Морозов В.В. рассказывает об ортопедических изделиях
+                                            для беременных</div>
+                                        <div class="video-footer">
+                                            <div class="video-clock">05:02</div>
+                                            <div class="video-eye">12 450</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="video-content" data-max="child">
-                                    <div class="video-title">Ортопедические товары для бущущих мам</div>
-                                    <div class="video-text">Врач ортопед-травматолог Морозов В.В. рассказывает об ортопедических изделиях
-                                        для беременных</div>
-                                    <div class="video-footer">
-                                        <div class="video-clock">05:02</div>
-                                        <div class="video-eye">12 450</div>
+                            </div>
+                            <div class="col col--33">
+                                <div class="video-item">
+                                    <div class="video-wrap">
+                                        <img src="img/v-2.png" alt="video-1" class="video-poster" width="284" height="174" />
+                                        <div class="video-play"></div>
+                                    </div>
+                                    <div class="video-content" data-max="child">
+                                        <div class="video-title">Выбираем ортопедическую обувь для детей</div>
+                                        <div class="video-text">Как правильно подобрать ортопедическую обувь ребенку?</div>
+                                        <div class="video-footer">
+                                            <div class="video-clock">05:02</div>
+                                            <div class="video-eye">12 450</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col--33">
+                                <div class="video-item">
+                                    <div class="video-wrap">
+                                        <img src="img/v-3.png" alt="video-1" class="video-poster" />
+                                        <div class="video-play"></div>
+                                    </div>
+                                    <div class="video-content" data-max="child">
+                                        <div class="video-title">Профилактическая и лечебная обувь для детей</div>
+                                        <div class="video-text">Профилактическая и лечебная ортопедическая обувь для детей: отличия и
+                                            показания</div>
+                                        <div class="video-footer">
+                                            <div class="video-clock">05:02</div>
+                                            <div class="video-eye">12 450</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="col col--33">
+                                <div class="video-item">
+                                    <div class="video-wrap">
+                                        <img src="img/video-1.png" alt="video-1" width="284" height="174" class="video-poster"
+                                        />
+                                        <div class="video-play"></div>
+                                    </div>
+                                    <div class="video-content" data-max="child">
+                                        <div class="video-title">Ортопедические товары для бущущих мам</div>
+                                        <div class="video-text">Врач ортопед-травматолог Морозов В.В. рассказывает об ортопедических изделиях
+                                            для беременных</div>
+                                        <div class="video-footer">
+                                            <div class="video-clock">05:02</div>
+                                            <div class="video-eye">12 450</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col--33">
+                                <div class="video-item">
+                                    <div class="video-wrap">
+                                        <img src="img/v-2.png" alt="video-1" class="video-poster" width="284" height="174" />
+                                        <div class="video-play"></div>
+                                    </div>
+                                    <div class="video-content" data-max="child">
+                                        <div class="video-title">Выбираем ортопедическую обувь для детей</div>
+                                        <div class="video-text">Как правильно подобрать ортопедическую обувь ребенку?</div>
+                                        <div class="video-footer">
+                                            <div class="video-clock">05:02</div>
+                                            <div class="video-eye">12 450</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col--33">
+                                <div class="video-item">
+                                    <div class="video-wrap">
+                                        <img src="img/v-3.png" alt="video-1" class="video-poster" />
+                                        <div class="video-play"></div>
+                                    </div>
+                                    <div class="video-content" data-max="child">
+                                        <div class="video-title">Профилактическая и лечебная обувь для детей</div>
+                                        <div class="video-text">Профилактическая и лечебная ортопедическая обувь для детей: отличия и
+                                            показания</div>
+                                        <div class="video-footer">
+                                            <div class="video-clock">05:02</div>
+                                            <div class="video-eye">12 450</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col col--33">
-                            <div class="video-item">
-                                <div class="video-wrap">
-                                    <img src="img/v-2.png" alt="video-1" class="video-poster" width="284" height="174" />
-                                    <div class="video-play"></div>
-                                </div>
-                                <div class="video-content" data-max="child">
-                                    <div class="video-title">Выбираем ортопедическую обувь для детей</div>
-                                    <div class="video-text">Как правильно подобрать ортопедическую обувь ребенку?</div>
-                                    <div class="video-footer">
-                                        <div class="video-clock">05:02</div>
-                                        <div class="video-eye">12 450</div>
+
+                        <div class="video__slide cols">
+                            <div class="col col--33">
+                                <div class="video-item">
+                                    <div class="video-wrap">
+                                        <img src="img/video-1.png" alt="video-1" width="284" height="174" class="video-poster"
+                                        />
+                                        <div class="video-play"></div>
+                                    </div>
+                                    <div class="video-content" data-max="child">
+                                        <div class="video-title">Ортопедические товары для бущущих мам</div>
+                                        <div class="video-text">Врач ортопед-травматолог Морозов В.В. рассказывает об ортопедических изделиях
+                                            для беременных</div>
+                                        <div class="video-footer">
+                                            <div class="video-clock">05:02</div>
+                                            <div class="video-eye">12 450</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col col--33">
-                            <div class="video-item">
-                                <div class="video-wrap">
-                                    <img src="img/v-3.png" alt="video-1" class="video-poster" />
-                                    <div class="video-play"></div>
+                            <div class="col col--33">
+                                <div class="video-item">
+                                    <div class="video-wrap">
+                                        <img src="img/v-2.png" alt="video-1" class="video-poster" width="284" height="174" />
+                                        <div class="video-play"></div>
+                                    </div>
+                                    <div class="video-content" data-max="child">
+                                        <div class="video-title">Выбираем ортопедическую обувь для детей</div>
+                                        <div class="video-text">Как правильно подобрать ортопедическую обувь ребенку?</div>
+                                        <div class="video-footer">
+                                            <div class="video-clock">05:02</div>
+                                            <div class="video-eye">12 450</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="video-content" data-max="child">
-                                    <div class="video-title">Профилактическая и лечебная обувь для детей</div>
-                                    <div class="video-text">Профилактическая и лечебная ортопедическая обувь для детей: отличия и
-                                        показания</div>
-                                    <div class="video-footer">
-                                        <div class="video-clock">05:02</div>
-                                        <div class="video-eye">12 450</div>
+                            </div>
+                            <div class="col col--33">
+                                <div class="video-item">
+                                    <div class="video-wrap">
+                                        <img src="img/v-3.png" alt="video-1" class="video-poster" />
+                                        <div class="video-play"></div>
+                                    </div>
+                                    <div class="video-content" data-max="child">
+                                        <div class="video-title">Профилактическая и лечебная обувь для детей</div>
+                                        <div class="video-text">Профилактическая и лечебная ортопедическая обувь для детей: отличия и
+                                            показания</div>
+                                        <div class="video-footer">
+                                            <div class="video-clock">05:02</div>
+                                            <div class="video-eye">12 450</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="col col--33">
+                                <div class="video-item">
+                                    <div class="video-wrap">
+                                        <img src="img/video-1.png" alt="video-1" width="284" height="174" class="video-poster"
+                                        />
+                                        <div class="video-play"></div>
+                                    </div>
+                                    <div class="video-content" data-max="child">
+                                        <div class="video-title">Ортопедические товары для бущущих мам</div>
+                                        <div class="video-text">Врач ортопед-травматолог Морозов В.В. рассказывает об ортопедических изделиях
+                                            для беременных</div>
+                                        <div class="video-footer">
+                                            <div class="video-clock">05:02</div>
+                                            <div class="video-eye">12 450</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col--33">
+                                <div class="video-item">
+                                    <div class="video-wrap">
+                                        <img src="img/v-2.png" alt="video-1" class="video-poster" width="284" height="174" />
+                                        <div class="video-play"></div>
+                                    </div>
+                                    <div class="video-content" data-max="child">
+                                        <div class="video-title">Выбираем ортопедическую обувь для детей</div>
+                                        <div class="video-text">Как правильно подобрать ортопедическую обувь ребенку?</div>
+                                        <div class="video-footer">
+                                            <div class="video-clock">05:02</div>
+                                            <div class="video-eye">12 450</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col--33">
+                                <div class="video-item">
+                                    <div class="video-wrap">
+                                        <img src="img/v-3.png" alt="video-1" class="video-poster" />
+                                        <div class="video-play"></div>
+                                    </div>
+                                    <div class="video-content" data-max="child">
+                                        <div class="video-title">Профилактическая и лечебная обувь для детей</div>
+                                        <div class="video-text">Профилактическая и лечебная ортопедическая обувь для детей: отличия и
+                                            показания</div>
+                                        <div class="video-footer">
+                                            <div class="video-clock">05:02</div>
+                                            <div class="video-eye">12 450</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

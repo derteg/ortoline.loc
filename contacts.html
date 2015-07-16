@@ -12,6 +12,7 @@
         <script>window.jQuery || document.write('<script src="js/libs/jquery.min.js">\x3C/script>')</script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
         <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+        <script src="js/libs/plugins.js"></script>
         <script src="js/scripts.js"></script>
     </head>
     
@@ -107,7 +108,7 @@
                                                 Вход — 9 подъезд, 5 этаж, офис 510А</p>
                                             </div>
                                             <div class="contacts__scheme fr">
-                                                <a href="#0" class="lnk lnk__black">
+                                                <a href="#0" class="lnk lnk__black js-lnk_popup">
                                                     <div class="pic"><img src="pic/pic_32.jpg" alt=""></div>
                                                     <div class="text">
                                                         <div class="text-cont">
@@ -222,6 +223,11 @@
                 </div>
             </div>
         </footer>
+
+        <div class="contact__popup" id="contactPopup">
+            <img src="pic/pic_51.jpg" alt="" width="640" height="470">
+            <span class="button b-close"><i></i></span>            
+        </div>
     </body>
     <!--body -->
 

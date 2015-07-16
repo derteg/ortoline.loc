@@ -9,10 +9,10 @@ Error: Undefined variable: "$openSans".
 5: 	background:#fff;
 6: 	font-family: $openSans,Arial,Verdana,sans-serif;
 7: 	font-size:14px;
-8: 	line-height:20px
-9: }
-10: img{border:0;}
-11: ul,nav{list-style:none; padding-left: 0; margin: 0;}
+8: 	line-height:20px;
+9: 	position: relative;
+10: }
+11: img{border:0;}
 
 Backtrace:
 c:/MAMP/htdocs/ortoline.loc/sass/gui/gui.scss:6
@@ -73,4 +73,4 @@ c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$openSans\".\A         on line 6 of c:/MAMP/htdocs/ortoline.loc/sass/gui/gui.scss\A \A 1: html,body{\A 2: 	height:100%;\A 3: 	width: 100%;\A 4: 	margin: 0;\A 5: 	background:#fff;\A 6: 	font-family: $openSans,Arial,Verdana,sans-serif;\A 7: 	font-size:14px;\A 8: 	line-height:20px\A 9: }\A 10: img{border:0;}\A 11: ul,nav{list-style:none; padding-left: 0; margin: 0;}"; }
+  content: "Error: Undefined variable: \"$openSans\".\A         on line 6 of c:/MAMP/htdocs/ortoline.loc/sass/gui/gui.scss\A \A 1: html,body{\A 2: 	height:100%;\A 3: 	width: 100%;\A 4: 	margin: 0;\A 5: 	background:#fff;\A 6: 	font-family: $openSans,Arial,Verdana,sans-serif;\A 7: 	font-size:14px;\A 8: 	line-height:20px;\A 9: 	position: relative;\A 10: }\A 11: img{border:0;}"; }
