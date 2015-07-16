@@ -1,3 +1,6 @@
+.contacts{
+	margin-bottom: 80px;
+}
 .contacts__left{
 	width: 70%;
 }
@@ -42,19 +45,17 @@
 		border-bottom: none;
 	}
 	.pic{		
-		display: inline-block;
+		float: left;
 		img{
 			vertical-align: bottom;
 		}
-	}
+	}	
 	.text{
 		position: relative;
-		display: inline-block;
-		padding: 0 26px;
-		line-height: 58px;
-		vertical-align: bottom;
-		margin-left: -4px;
-		text-align: center;
+		display: block;
+		margin-left: 65px;
+		padding: 0 24px;
+		line-height: 18px;
 		box-sizing: border-box;
 		a{
 			vertical-align: middle;
@@ -71,6 +72,16 @@
 			border-width: 11px 10px 11px 0;
 			border-color: transparent $lightGray transparent transparent;
 		}
+	}
+	.text-cont{
+		display: inline-block;
+		line-height: 58px;
+		vertical-align: middle;
+	}
+	.text-wrap{
+		display: inline-block;
+		line-height: 18px;
+		vertical-align: middle;
 	}
 }
 

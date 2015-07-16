@@ -1,0 +1,73 @@
+.aside__accordion__section{
+    padding-bottom: 20px;
+}
+.aside__accordion__section__title {
+    width:100%;
+    padding: 6px 40px 6px 10px;
+    display:inline-block;
+    border-radius: 4px;
+    font-weight: 700;
+    color: $white;
+    box-sizing: border-box;
+    background: $gray;
+    position: relative;
+    @include transition(background-color .25s);
+
+    &.active{
+        background-color: $blue;
+    }
+    &:hover{
+        background-color: $orange;
+    }
+    .ico{
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        display: inline-block;
+    }
+    .ico-arr{
+        width: 11px;
+        height: 8px;
+        margin-top: -4px;
+        background: transparent $sprite -920px top no-repeat;        
+    }
+    &.active{
+        .ico-arr{
+            background: transparent $sprite -944px top no-repeat;
+        }
+    }
+}
+ 
+.aside__accordion__section__content {
+    padding: 22px 10px;
+    display:none;
+    &.open{
+        display: block;
+    }
+    .field__cell{
+        margin-top: 20px;
+        margin-bottom: 0;
+        &:first-child{
+            margin-top: 0;
+        }
+    }
+
+    .accordion__lnk-list{
+        padding: 0px 10px;
+    }
+    .accordion__lnk-list__item{
+        margin-top: 26px;
+        &:first-child{
+            margin-top: 0;
+        }
+    }
+    .accordion__lnk-list__lnk{
+        font-size: 14px;
+        text-transform: uppercase;
+        font-family: $HelveticaNeue;
+        color: $black;
+        &:hover{
+            color: $dark;
+        }
+    }
+}

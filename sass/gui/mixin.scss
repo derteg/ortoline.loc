@@ -44,3 +44,36 @@
         #{$property}: $value;
     }
 }
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin linear-gradient($color-1, $color-2) {
+    background:-webkit-linear-gradient($color-1, $color-2);
+    background:   -moz-linear-gradient($color-1, $color-2);
+    background:    -ms-linear-gradient($color-1, $color-2);
+    background:     -o-linear-gradient($color-1, $color-2);
+    background:        linear-gradient($color-1, $color-2);
+}
+
+@mixin box-sizing($box-sizing-mode) {
+  -webkit-box-sizing:$box-sizing-mode;
+     -moz-box-sizing:$box-sizing-mode;
+          box-sizing:$box-sizing-mode;
+}
+
+@mixin absolute-center($top:auto, $left:auto) {
+    position:absolute;
+    top:$top;
+    left:$left;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+}

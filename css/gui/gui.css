@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$openSans".
-        on line 8 of c:/MAMP/htdocs/ortoline.loc/sass/gui/gui.scss
+        on line 6 of c:/MAMP/htdocs/ortoline.loc/sass/gui/gui.scss
 
-3: html,body{
-4: 	height:100%;
-5: 	width: 100%;
-6: 	margin: 0;
-7: 	background:#fff;
-8: 	font-family: $openSans,Arial,Verdana,sans-serif;
-9: 	font-size:14px;
-10: 	line-height:20px
-11: }
-12: img{border:0;}
-13: ul,nav{list-style:none; padding-left: 0; margin: 0;}
+1: html,body{
+2: 	height:100%;
+3: 	width: 100%;
+4: 	margin: 0;
+5: 	background:#fff;
+6: 	font-family: $openSans,Arial,Verdana,sans-serif;
+7: 	font-size:14px;
+8: 	line-height:20px
+9: }
+10: img{border:0;}
+11: ul,nav{list-style:none; padding-left: 0; margin: 0;}
 
 Backtrace:
-c:/MAMP/htdocs/ortoline.loc/sass/gui/gui.scss:8
+c:/MAMP/htdocs/ortoline.loc/sass/gui/gui.scss:6
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/list_literal.rb:62:in `block in _perform'
@@ -73,4 +73,4 @@ c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$openSans\".\A         on line 8 of c:/MAMP/htdocs/ortoline.loc/sass/gui/gui.scss\A \A 3: html,body{\A 4: 	height:100%;\A 5: 	width: 100%;\A 6: 	margin: 0;\A 7: 	background:#fff;\A 8: 	font-family: $openSans,Arial,Verdana,sans-serif;\A 9: 	font-size:14px;\A 10: 	line-height:20px\A 11: }\A 12: img{border:0;}\A 13: ul,nav{list-style:none; padding-left: 0; margin: 0;}"; }
+  content: "Error: Undefined variable: \"$openSans\".\A         on line 6 of c:/MAMP/htdocs/ortoline.loc/sass/gui/gui.scss\A \A 1: html,body{\A 2: 	height:100%;\A 3: 	width: 100%;\A 4: 	margin: 0;\A 5: 	background:#fff;\A 6: 	font-family: $openSans,Arial,Verdana,sans-serif;\A 7: 	font-size:14px;\A 8: 	line-height:20px\A 9: }\A 10: img{border:0;}\A 11: ul,nav{list-style:none; padding-left: 0; margin: 0;}"; }

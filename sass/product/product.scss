@@ -33,7 +33,7 @@
 	padding: 34px;
 	margin-bottom: 10px;
 }
-.product__sizes-list{
+.product .product__sizes-list{
 	width: 70%;
 	margin-bottom: 12px;
 }
@@ -47,7 +47,7 @@
 	border: 1px solid $gray;
 	border-radius: 15px;
 	text-align: center;
-	line-height: 30px;
+	line-height: 28px;
 	vertical-align: middle;
 }
 .product__sizes-item:hover,
@@ -262,10 +262,16 @@
 .product__sub{
 	margin-bottom: 50px;
 }
-.product__sub-title{
+h3.product__sub-title{
 	font-size: 30px;
 	line-height: 45px;
 	margin-bottom: 32px;
+}
+h4.product__sub-title{
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 40px;
+	margin-bottom: 20px;
 }
 .product__sub-card__item{
 	.wrap{
@@ -505,3 +511,11 @@
 	}
 }
 
+.product-catalogue{
+	.search__menu_field{
+		margin-left: 20px;
+	}
+}
+.product-catalogue__row{
+	margin-bottom: 26px;
+}

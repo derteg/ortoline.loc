@@ -31,7 +31,8 @@
 	width: 100%;
 	border: none;
 	border-radius: 4px;
-	padding: 15px 264px 15px 24px;
+	font-size: 14px;
+	padding: 15px 35% 15px 24px;
 	box-sizing: border-box;
 }
 .search__menu_item{	
@@ -41,6 +42,12 @@
 	line-height: 42px;
 	height: 43px;
 	background-color: $white;
+	opacity: 1;
+	@include transition(opacity .5s);
+	&.hidden{
+		opacity: 0;
+		z-index: -1;
+	}
 	p{
 		display: inline-block;
 		vertical-align: middle;
