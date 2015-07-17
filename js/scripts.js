@@ -443,15 +443,16 @@ function heightsToMax() {
 		var that = this;
 
 		$(window).on('scroll', function() {
-			var w = $(this);
-		    if (w.scrollTop() > 100) {
+			var w = $(this),
+				hH = that.height();
+		    if (w.scrollTop() > 0) {
 		    	that.addClass('header_fix');
-		    	$('#all').css({'top': that.height()});
-		    	$('#footer').css('margin-top', -400 + that.height())
+		    	$('#all').css({'padding-top': 77});
+		    	$('#footer').css('top', -399 + that.height())
 		    } else {
 		    	that.removeClass('header_fix');
-		    	$('#all').css({'top': 0});
-		    	$('#footer').css('margin-top', '-400px')
+		    	$('#all').css({'padding-top': 208});
+		    	$('#footer').css('top', '-399px')
 		    }
 		});
 	}

@@ -1,36 +1,43 @@
 .header{
-	position:relative;	
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 	background-color: $white;
-	-webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0);
-	-moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0);
-	box-shadow: 0px 4px 5px 0px rgba(0,0,0,0);
-	@include transition(box-shadow .25s);
+	z-index: 1000;
 }
 .header.brd__bottom{
 	-webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.4);
 	-moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.4);
 	box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.4);
-	@include transition(box-shadow .25s);
 }
 .header__wrap{
-	padding: 20px 0 2px;
+	padding: 20px 0 94px;
 	@include transition(padding .25s);
 }
 .header__left{
-	white-space: nowrap;
 	float: left;
+	width: 65%;
+	position: relative;
 	.logo{
+		width: 100%;
+		max-width: 350px;
 		@include transition(width .25s);
 	}
 	.logo__lnk{
 		display: inline-block;
+		vertical-align: middle;
+		margin-left: -4px;
 	}
 }
 .header__left_wrap{
 	display: inline-block;
-	vertical-align: top;
-	margin-top: 26px;
-	padding-left: 15%;
+	vertical-align: middle;
+	height: 60px;
+	right: 0;
+	width: 100%;
+	max-width: 270px;
+	position: absolute;
 }
 .header__call a{
 	color: #828282;
@@ -47,12 +54,22 @@
 	line-height: 16px;
 }
 .mainmenu__buttons_centr{
-	display:none;
-	padding-top: 30px;
-	padding-left: 20px;
-	@include transition(left .25s);
+	position: absolute;
+	top: 0;
+	right: 0;
+	opacity: 0;
+	will-change: top;
+	@include transition(top .25s);
 }
 
+.header__contact{
+	opacity: 1;
+	position: absolute;
+	top: 30px;
+	right: 20%;
+	will-change: top;
+	@include transition(top .25s);
+}
 .header__tel{
 	font-size:22px;
 	font-weight:600;
@@ -61,16 +78,21 @@
 	font-family:"Open Sans",sans-serif
 }
 .header__right{
-	margin-top: 28px;
-	padding-right: 1%;
+	padding-top: 28px;
 	float: right;
+	width: 35%;
+	text-align: right;
+	@include transition(padding .25s);
 }
 .header__right_btn{
-	float: right;
+	display: inline-block;
+	margin-left: 10%;
+	vertical-align: top;
+	&:first-child{
+		margin-left: 0;
+	}
 }
-.profile-btn{
-	margin-right: 46px;
-}
+
 .profile-btn__pic{
 	background:url(../img/i-user.png) no-repeat;
 	width:33px;
@@ -130,36 +152,49 @@
 
 
 .mainmenu{
-	position:relative;
-	padding-top:12px;
-	padding-bottom: 30px;
-	z-index:8;	
+	position: absolute;
+	top: 54%;
+	left: 0;
+	right: 0;
+	width: 100%;
+	padding: 12px 20px 30px;
+	display: block;
 	opacity: 1;
-	@include transition(opacity .25s);
+	box-sizing: border-box;
+	@include transition(padding .25s, top .25s);
 }
 .mainmenu__btn{
 	display: none;
 }
 .mainmenu__list{
 	float: left;
-	width: 58%;
-	margin-top: 14px;
-	opacity: 1;
-	right: 0;
-	position: relative;
-	white-space: nowrap;
-	@include transition(opacity .25s, right .25s);
+	padding-top: 10px;
+	width: 60%;
+	max-width: 685px;
+	text-align: justify;
+    /* Обнуляем для родителя*/
+    line-height: 0;
+    font-size: 1px; /* 1px для Opera */
+	&:after{
+		width: 100%;
+        height: 0;
+        visibility: hidden;
+        overflow: hidden;
+        content: '';
+        display: inline-block;
+	}
 }
 .mainmenu__item{
-	display: inline-block;
-	padding-left: 5%;
-}
-.mainmenu__item:first-child{
-	padding-left: 0;
+    display: inline-block;
+    text-align: left;
+    /* Востанавливаем у потомков, кроме последнего*/
+    line-height: normal;
+    font-size: 14px;
+    /* Без него в Opera будет отступ под элементами */
+    vertical-align: top;
 }
 .mainmenu__link{
 	font-size:20px;
-	font-family:'Open Sans',sans-serif;
 	font-weight:600;
 }
 .mainmenu__link.lnk__black{
@@ -167,19 +202,36 @@
 		color: $blue;
 	}
 }
-.mainmenu__buttons{	
-	text-align: right;
+.mainmenu__buttons{
+	text-align: justify;
+	line-height: 0;
+	font-size: 1px; /* 1px для Opera */
+	/* Лекарство для IE6-7*/
+	text-justify: newspaper;
+	zoom:1;
+	/* Включаем в работу последнюю строку*/
+	text-align-last: justify;
+	&:after{
+		width: 100%;
+		height: 0px;
+		visibility: hidden;
+		overflow: hidden;
+		content: '';
+		display: inline-block;
+	}
+	.button{
+        text-align: left;
+        /* Востанавливаем у потомков, кроме последнего*/
+        line-height: normal;
+        font-size: 18px;
+        /* Без него в Opera будет отступ под элементами */
+        vertical-align: top;
+	}
 }
 .mainmenu__buttons_fr{
 	float: right;
-}
-.mainmenu__buttons {
-	.button{
-		margin-left: 22px;
-		&:first-child{
-			margin-left: 0;
-		}
-	}	
+	width: 40%;
+	max-width: 410px;
 }
 .mainmenu__btn-all{
 	display: none;
@@ -205,29 +257,42 @@
 	-moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.3);
 	box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.3);
 	.header__wrap {
-		padding: 14px 0;
+		padding: 7px 0;
 	}
 	.header__left{
-		.logo__lnk img{
-			width: 230px;
+		.logo__lnk{
+			width: 40%;
+			img{
+				width: 230px;
+			}
 		}
 	}
 	.header__left_wrap{
-		padding-left: 13%;
-		margin-top: 0px;
+		width: 100%;
+		right: 0;
+		text-align: center;
+		max-width: 430px;
 	}
 	.mainmenu__buttons_centr{
-		padding-top: 8px;
-		display: inline-block;
+		opacity: 1;
+		position: absolute;
+		top: 8px;
+		right: 0;
+		width: 100%;
+		max-width: 420px;
 	}
 	.header__contact{
-		display: none;
+		opacity: 0;
 	}
 	.header__right{
-		margin-top: 12px;
+		padding-top: 16px;
 	}
 	.mainmenu{
-		display: none;
+		position: absolute;
+		top: 100%;
+		opacity: 0;
+		z-index: -1;
+		padding: 0 20px;
 	}	
 }
 .header_brd{

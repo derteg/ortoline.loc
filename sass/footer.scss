@@ -1,9 +1,11 @@
 .footer{
 	position: relative;
 	height: 400px;
-	margin-top: -400px;
+	top: -399px;
 	background:#f3f0eb;
 	color:#2f2f2f;
+	will-change: top;
+	@include transition(top .25s);
 }
 .footer-col{
 	display:-moz-inline-stack;

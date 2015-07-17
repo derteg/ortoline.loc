@@ -1,35 +1,28 @@
 /*
-Error: Undefined variable: "$orange".
-        on line 28 of c:/MAMP/htdocs/ortoline.loc/sass/footer.scss
+Error: Undefined mixin 'transition'.
+        on line 8 of c:/MAMP/htdocs/ortoline.loc/sass/footer.scss, in `transition'
+        from line 8 of c:/MAMP/htdocs/ortoline.loc/sass/footer.scss
 
-23: 	font-size: 14px;
-24: }
-25: .footer-col a{
-26: 	border:0;
-27: 	&:hover{
-28: 		color: $orange;
-29: 	}
-30: }
-31: .footer-col li{
-32: 	line-height:16px;
-33: 	margin-bottom:20px;
+3: 	height: 400px;
+4: 	top: -399px;
+5: 	background:#f3f0eb;
+6: 	color:#2f2f2f;
+7: 	will-change: top;
+8: 	@include transition(top .25s);
+9: }
+10: .footer-col{
+11: 	display:-moz-inline-stack;
+12: 	display:inline-block;
+13: 	vertical-align:top;
 
 Backtrace:
-c:/MAMP/htdocs/ortoline.loc/sass/footer.scss:28
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/variable.rb:49:in `_perform'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `block in with_base'
+c:/MAMP/htdocs/ortoline.loc/sass/footer.scss:8:in `transition'
+c:/MAMP/htdocs/ortoline.loc/sass/footer.scss:8
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:98:in `block in with_mixin'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:115:in `with_frame'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `with_base'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `visit'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:420:in `map'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:98:in `with_mixin'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:336:in `visit_mixin'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/base.rb:36:in `visit'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/stack.rb:79:in `block in with_base'
@@ -80,4 +73,4 @@ c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$orange\".\A         on line 28 of c:/MAMP/htdocs/ortoline.loc/sass/footer.scss\A \A 23: 	font-size: 14px;\A 24: }\A 25: .footer-col a{\A 26: 	border:0;\A 27: 	&:hover{\A 28: 		color: $orange;\A 29: 	}\A 30: }\A 31: .footer-col li{\A 32: 	line-height:16px;\A 33: 	margin-bottom:20px;"; }
+  content: "Error: Undefined mixin 'transition'.\A         on line 8 of c:/MAMP/htdocs/ortoline.loc/sass/footer.scss, in `transition'\A         from line 8 of c:/MAMP/htdocs/ortoline.loc/sass/footer.scss\A \A 3: 	height: 400px;\A 4: 	top: -399px;\A 5: 	background:#f3f0eb;\A 6: 	color:#2f2f2f;\A 7: 	will-change: top;\A 8: 	@include transition(top .25s);\A 9: }\A 10: .footer-col{\A 11: 	display:-moz-inline-stack;\A 12: 	display:inline-block;\A 13: 	vertical-align:top;"; }

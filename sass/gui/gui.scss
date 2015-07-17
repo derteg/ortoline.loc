@@ -99,8 +99,10 @@ h3{
 }
 #all{
 	padding-bottom: 400px;
+	padding-top: 208px;
 	height:auto;
 	position:relative;
+	@include transition(padding .25s);
 }
 .inside{
 	position:relative;

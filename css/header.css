@@ -1,18 +1,21 @@
 /*
 Error: Undefined variable: "$white".
-        on line 3 of c:/MAMP/htdocs/ortoline.loc/sass/header.scss
+        on line 6 of c:/MAMP/htdocs/ortoline.loc/sass/header.scss
 
 1: .header{
-2: 	position:relative;	
-3: 	background-color: $white;
-4: 	-webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0);
-5: 	-moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0);
-6: 	box-shadow: 0px 4px 5px 0px rgba(0,0,0,0);
-7: 	@include transition(box-shadow .25s);
+2: 	position: absolute;
+3: 	top: 0;
+4: 	left: 0;
+5: 	width: 100%;
+6: 	background-color: $white;
+7: 	z-index: 1000;
 8: }
+9: .header.brd__bottom{
+10: 	-webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.4);
+11: 	-moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.4);
 
 Backtrace:
-c:/MAMP/htdocs/ortoline.loc/sass/header.scss:3
+c:/MAMP/htdocs/ortoline.loc/sass/header.scss:6
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
@@ -66,4 +69,4 @@ c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 3 of c:/MAMP/htdocs/ortoline.loc/sass/header.scss\A \A 1: .header{\A 2: 	position:relative;	\A 3: 	background-color: $white;\A 4: 	-webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0);\A 5: 	-moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0);\A 6: 	box-shadow: 0px 4px 5px 0px rgba(0,0,0,0);\A 7: 	@include transition(box-shadow .25s);\A 8: }"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 6 of c:/MAMP/htdocs/ortoline.loc/sass/header.scss\A \A 1: .header{\A 2: 	position: absolute;\A 3: 	top: 0;\A 4: 	left: 0;\A 5: 	width: 100%;\A 6: 	background-color: $white;\A 7: 	z-index: 1000;\A 8: }\A 9: .header.brd__bottom{\A 10: 	-webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.4);\A 11: 	-moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.4);"; }
