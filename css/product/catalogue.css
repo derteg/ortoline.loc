@@ -1,17 +1,21 @@
 /*
 Error: Undefined variable: "$white".
-        on line 2 of c:/MAMP/htdocs/ortoline.loc/sass/product/product.scss
+        on line 18 of c:/MAMP/htdocs/ortoline.loc/sass/product/catalogue.scss
 
-1: .product__news{
-2: 	background-color: $white;
-3: 	padding: 40px 0;
-4: }
-5: .product{
-6: 	background-color: $white;
-7: 	padding: 30px 66px 64px;
+13: 	border-radius: 6px;
+14: 	height: 100%;
+15: 	position: relative;	
+16: 	padding-bottom: 100px;
+17: 	box-sizing: border-box;
+18: 	background-color: $white;
+19: 	display: block;
+20: 	margin: 0px 10px;
+21: 	.pic{
+22: 		line-height: 236px;
+23: 		width: 100%;
 
 Backtrace:
-c:/MAMP/htdocs/ortoline.loc/sass/product/product.scss:2
+c:/MAMP/htdocs/ortoline.loc/sass/product/catalogue.scss:18
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
@@ -65,4 +69,4 @@ c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 2 of c:/MAMP/htdocs/ortoline.loc/sass/product/product.scss\A \A 1: .product__news{\A 2: 	background-color: $white;\A 3: 	padding: 40px 0;\A 4: }\A 5: .product{\A 6: 	background-color: $white;\A 7: 	padding: 30px 66px 64px;"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 18 of c:/MAMP/htdocs/ortoline.loc/sass/product/catalogue.scss\A \A 13: 	border-radius: 6px;\A 14: 	height: 100%;\A 15: 	position: relative;	\A 16: 	padding-bottom: 100px;\A 17: 	box-sizing: border-box;\A 18: 	background-color: $white;\A 19: 	display: block;\A 20: 	margin: 0px 10px;\A 21: 	.pic{\A 22: 		line-height: 236px;\A 23: 		width: 100%;"; }

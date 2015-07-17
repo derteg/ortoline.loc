@@ -440,14 +440,15 @@ function heightsToMax() {
 
 (function($){
 	$.fn.headerFixed = function(){
-		var that = this;
+		var that = this,
+			w = $(window);
 
-		$(window).on('scroll', function() {
+		w.on('scroll resize', function() {
 			var w = $(this),
 				hH = that.height();
 		    if (w.scrollTop() > 0) {
 		    	that.addClass('header_fix');
-		    	$('#all').css({'padding-top': 157});
+		    	$('#all').css({'padding-top': 77});
 		    	$('#footer').css('top', -399 + that.height())
 		    } else {
 		    	that.removeClass('header_fix');
