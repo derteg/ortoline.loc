@@ -1,10 +1,11 @@
- ✔ @low <a href="http://localhost/ortoline.loc/contacts.html">http://localhost/ortoline.loc/contacts.html</a> открыть картинку в попап: http://orto.su/about/contacts/   @done (15-07-16 19:52)
---- ✄ -----------------------
- ✔ @started http://localhost/ortoline.loc/video__view.html *create slider* @done (15-07-16 19:52)
- --- ✄ -----------------------
- ☐ @critical Header scroll
- ✔ по меню после скролла еще высоту его немного уменьшим, пикс по 7 снизу и сверху @done (15-07-17 16:17)
- --- ✄ -----------------------
- ✔ @critical при клике на обратный звонок, дергается этот блок @done (15-07-17 14:44)
- --- ✄ -----------------------
- ☐ @critical Сделать страничку с типовыми блоками
+Tasks: 
+	✔ @low <a href="http://localhost/ortoline.loc/contacts.html">http://localhost/ortoline.loc/contacts.html</a> открыть картинку в попап: http://orto.su/about/contacts/   @done (15-07-16 19:52)
+	✔ @started http://localhost/ortoline.loc/video__view.html *create slider* @done (15-07-16 19:52)
+	✔ @critical Header scroll @done (15-07-31 17:14)
+	✔ по меню после скролла еще высоту его немного уменьшим, пикс по 7 снизу и сверху @done (15-07-17 16:17)
+	✔ @critical при клике на обратный звонок, дергается этот блок @done (15-07-17 14:44)
+
+New @created(15-07-31 17:23): 
+	☐ @high Пофиксить font-size + line-height
+	☐ @low продублироваь *Header
+

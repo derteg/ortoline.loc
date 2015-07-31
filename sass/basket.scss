@@ -1,0 +1,159 @@
+.basket__cont{
+	margin-bottom: 70px;
+}
+.basket__row{
+	border-bottom: $brdLnk5;
+	padding-bottom: 34px;
+	margin-bottom: 34px;
+	text-align: justify;
+	line-height: 0;
+	font-size: 0px;
+	&:after{
+		width: 100%;
+		height: 0;
+		visibility: hidden;
+		overflow: hidden;
+		content: '';
+		display: inline-block;
+	}
+}
+.basket__cell-product{
+	width: 50%;
+	max-width: 380px;
+	.pic{
+		line-height: 73px;
+		width: 68px;
+		height: 73px;
+		border-radius: 4px;
+		border: 2px solid $grayBrd;
+		text-align: center;
+		img{
+			vertical-align: middle;
+		}
+	}
+	.text{
+		font-size: 14px;
+		line-height: 22px;
+		margin-left: 104px;
+	}
+}
+.basket__cell-amount{
+	.product__amount-name{
+		display: block;
+		font-size: 14px;
+		line-height: 22px;
+		color: $gray;
+		margin-bottom: 20px;
+	}
+	.product__amount-wrap{
+		margin: 0;
+	}
+}
+.basket__cell-price{
+	.title{
+		font-size: 14px;
+		line-height: 22px;
+		color: $gray;
+		margin-bottom: 20px;
+	}
+	.price{
+		font-size: 30px;
+		line-height: 34px;
+		font-weight: bold;
+	}
+}
+.basket__cell-put{
+	margin-top: 44px;
+	.button{
+		color: #ffffff;
+		font-family: 'HelveticaNeue',Verdana,Arial,sans-serif;
+		line-height: 16px;
+		font-size: 14px;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		background-color: $gray;
+		border-radius: 4px;
+		padding: 7px 13px;
+		@include transition(background-color .25s);
+		&:hover{
+			background-color: $gray2;
+		}
+	}
+}
+.basket__cell-del{
+	margin-top: 44px;
+	.ico{
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		border-radius: 4px;
+		cursor: pointer;
+		background: $gray $sprite -958px -30px no-repeat;
+		@include transition(background-color .25s);
+		&:hover{
+			background-color: $gray2;
+		}
+	}
+}
+.basket__row-final{
+	padding: 0px 30px 34px;
+	&.no-brd{
+		border-bottom: none;
+	}
+}
+.basket__row-final{
+	.text{
+		font-size: 16px;
+		line-height: 45px;
+	}
+	.num{
+		font-weight: bold;
+		margin-left: 10px;
+		&.fsz_01{
+			font-size: 16px;
+		}
+		&.fsz_02{
+			font-size: 20px;
+		}
+		&.fsz_03{
+			font-size: 30px;
+		}
+	}
+	.form__btn{
+		padding: 14px 60px;
+		font-size: 13px;
+		text-transform: uppercase;
+		border: none;
+	}
+}
+
+
+.delivery{
+	textarea{
+		height: 178px;
+	}
+	.radio-cust__label{
+		.ico{
+			float: left;
+		}
+		strong,
+		.text{
+			margin-left: 40px;
+			display: block;
+			line-height: 22px;
+		}
+		strong{
+			font-weight: bold;
+			font-size: 16px;
+		}
+		.text{
+			font-size: 14px;
+		}
+	}
+	.center{
+		text-align: center;
+	}
+}
+.delivery_row{
+	padding: 78px 0;
+}

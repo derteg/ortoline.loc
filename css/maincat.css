@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$white".
-        on line 13 of c:/MAMP/htdocs/ortoline.loc/sass/maincat.scss
+        on line 19 of c:/MAMP/htdocs/ortoline.loc/sass/maincat.scss
 
-8: .maincat__item{
-9: 	color:#000;
-10: 	font-weight:600;
-11: 	font-size:14px;
-12: 	line-height:20px;	
-13: 	background-color: $white;
-14: }
-15: .maincat__wrap{
-16: 	display:block; 
-17: 	text-align:center;
-18: 	border:1px solid $lightGray; 
+14: 	margin: 0;
+15: 	color:#000;
+16: 	font-weight:600;
+17: 	font-size:14px;
+18: 	line-height:20px;	
+19: 	background-color: $white;
+20: }
+21: .maincat__wrap{
+22: 	display:block; 
+23: 	text-align:center;
+24: 	border:1px solid $lightGray; 
 
 Backtrace:
-c:/MAMP/htdocs/ortoline.loc/sass/maincat.scss:13
+c:/MAMP/htdocs/ortoline.loc/sass/maincat.scss:19
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
@@ -69,4 +69,4 @@ c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 13 of c:/MAMP/htdocs/ortoline.loc/sass/maincat.scss\A \A 8: .maincat__item{\A 9: 	color:#000;\A 10: 	font-weight:600;\A 11: 	font-size:14px;\A 12: 	line-height:20px;	\A 13: 	background-color: $white;\A 14: }\A 15: .maincat__wrap{\A 16: 	display:block; \A 17: 	text-align:center;\A 18: 	border:1px solid $lightGray; "; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 19 of c:/MAMP/htdocs/ortoline.loc/sass/maincat.scss\A \A 14: 	margin: 0;\A 15: 	color:#000;\A 16: 	font-weight:600;\A 17: 	font-size:14px;\A 18: 	line-height:20px;	\A 19: 	background-color: $white;\A 20: }\A 21: .maincat__wrap{\A 22: 	display:block; \A 23: 	text-align:center;\A 24: 	border:1px solid $lightGray; "; }

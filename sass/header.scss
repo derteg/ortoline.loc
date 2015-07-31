@@ -67,6 +67,7 @@
 	position: absolute;
 	top: 30px;
 	right: 20%;
+	z-index: 10;
 	will-change: top;
 	@include transition(top .25s);
 }
@@ -93,18 +94,38 @@
 	}
 }
 
+
+.profile-btn.autorized{
+	.profile-btn__pic{
+		&:after{
+			content: "";
+			position: absolute;
+			top: 100%;
+			left: 100%;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			margin-left: -12px;
+			margin-top: -10px;
+			background: transparent $sprite -1008px 0 no-repeat;
+		}
+	}
+}
 .profile-btn__pic{
 	background:url(../img/i-user.png) no-repeat;
 	width:33px;
 	height:33px;
 	float: left;
+	position: relative;	
 }
 .profile-btn__text{
 	margin-left: 56px;
 	display: block;
 	color: $black;
-	font-size: 15px;
+	font-size: 13px;
 	line-height: 18px;
+	text-align: left;
+	.sub-text{font-size: 12px;}
 }
 
 .basket-btn__price{

@@ -264,36 +264,28 @@ function heightsToMax() {
 	$.fn.amountCart = function(){
 		var $block = this,
 			$minus = $('.minus', $block),
-			$plus = $('.plus', $block),
-			$sum = $('.sum', $block);
+			$plus = $('.plus', $block);
 			// $price = $('#productPrice .price'),
 			// $priceVal = parseFloat($price.text());
 
 		$minus.on('click', function(e){
-			var num = parseFloat($sum.text());
+			var that = $(this),
+				$sum = that.parent().find('.sum'),
+				num = parseFloat($sum.text());
 			if(num > 1) {
 				$sum.text(num - 1);
-				$minus.removeClass('disabled');
-				// num = parseFloat($sum.text());
-				// var multy = $priceVal * num;
-				// console.log($priceVal);
-				// console.log(num);
-				// $price.text(multy);
-
+				that.removeClass('disabled');
 			}
-			if(num <= 2){
-				$minus.addClass('disabled');
-				// num = parseFloat($sum.text());
-				// var multy = $priceVal * num;
-				// $price.text(multy);
-			}
+			if(num <= 2){ that.addClass('disabled'); }
 		});
 
 		$plus.on('click', function(e){
-			var num = parseFloat($sum.text());
+			var that = $(this),
+				$sum = that.parent().find('.sum'),
+				num = parseFloat($sum.text());
 			if(num >= 1) {
 				$sum.text(num + 1);
-				$minus.removeClass('disabled');
+				that.parent().find('.minus').removeClass('disabled');
 			}
 		});
 	}
@@ -445,7 +437,7 @@ function heightsToMax() {
 		$(window).on('scroll resize', function() {
 			var w = $(this),
 				hH = that.height();
-		    if (w.scrollTop() > 0) {
+		    if (w.scrollTop() > 220) {
 		    	that.addClass('header_fix');
 		    	$('#all').css({'padding-top': 77});
 		    	$('#footer').css('top', -399 + that.height())
@@ -540,10 +532,30 @@ function heightsToMax() {
 	$.fn.contactPopup = function(){
 		var $lnk = this;
 
-		$lnk.on('click', function(){
-			$('#contactPopup').bPopup({
-				opacity: 0.2
-			});
+		$lnk.on('click', function(e){
+			e.preventDefault();
+			var type = $(this).data('popup-type');
+
+			if(type == 'contacts'){
+				$('#contactPopup').bPopup({
+					opacity: 0.2,
+					content:'image',
+					contentContainer:'.content',
+					loadUrl:'pic/pic_51.jpg'
+				});
+			}
+
+			if(type == 'callback'){
+				$('#callbackPopup').bPopup({
+					opacity: 0.2
+				});
+			}
+
+			if(type == 'login'){
+				$('#loginPopup').bPopup({
+					opacity: 0.2
+				});
+			}
 		});
 	}
 })(jQuery);

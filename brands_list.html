@@ -3,7 +3,7 @@
     
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Производители :: Ortoline</title>
 
         <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -26,7 +26,7 @@
                         <div class="header__left_wrap">
                             <div class="header__contact">
                                 <div class="header__tel">+7 495 988-95-05</div>
-                                <div class="header__call"><a class="lnk dotted" href="#0">Заказать звонок</a></div>
+                                <div class="header__call"><a class="lnk dotted js-lnk_popup" data-popup-type="callback" href="#0">Заказать звонок</a></div>
                             </div>
                             
                             <div class="mainmenu__buttons mainmenu__buttons_centr">
@@ -37,9 +37,9 @@
                     </div>
                     <div class="header__right">
                         <div class="header__right_cont">
-                            <a class="header__right_btn profile-btn" href="#">
+                            <a class="header__right_btn autorized profile-btn" data-popup-type="login" href="#">
                                 <div class="profile-btn__pic"></div>
-                                <span class="profile-btn__text">Личный<br/> кабинет</span>
+                                <span class="profile-btn__text">Репин<br/> <span class="sub-text">Сергей Васильевич</span></span>
                             </a>
                             <a class="header__right_btn basket-btn" href="#">
                                 <div class="basket-btn__badge">
@@ -290,6 +290,45 @@
                 </div>
             </div>
         </footer>
+
+        <div class="form__popup form__popup_center callback__popup" id="callbackPopup">
+            <h3>Заказ звонка</h3>
+            <form class="form" action="index_submit" method="get" accept-charset="utf-8">           
+                <div class="field__cell">
+                    <input type="text" placeholder="Представьтесь пожалуйста">
+                </div>
+                <div class="field__cell">
+                    <input type="text" placeholder="Телефон">
+                </div>
+                <div class="field__cell">
+                    <textarea name="comment" id="inp_03" cols="30" rows="10" placeholder="Комментарий"></textarea>
+                </div>
+                <div class="field__cell field__cell_button">
+                    <button class="button button--blue">Заказать</button>
+                </div>
+            </form>
+            <span class="button b-close"><i></i></span>            
+        </div>
+
+        <div class="form__popup form__popup_center login__popup" id="loginPopup">
+            <h3>Вход</h3>
+            <form class="form" action="index_submit" method="get" accept-charset="utf-8">
+                <div class="field__cell">
+                    <input type="text" placeholder="Логин">
+                </div>
+                <div class="field__cell">
+                    <input type="text" placeholder="Пароль">
+                </div>
+                <div class="form__links">
+                    <p><a href="#0" class="gray">Забыли пароль?</a></p>
+                    <p><a href="#0">Регистрация</a></p>
+                </div>
+                <div class="field__cell field__cell_button">
+                    <button class="button button--blue">Войти</button>
+                </div>
+            </form>
+            <span class="button b-close"><i></i></span>
+        </div>
     </body>
     <!--body -->
 

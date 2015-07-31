@@ -3,8 +3,8 @@
 	
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width initial-scale=1.0">
-		<title>Контакты :: Ortoline</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Корзина :: Ortoline</title>
 
 		<link href="css/style.css" rel="stylesheet" type="text/css" />
 		
@@ -26,7 +26,7 @@
 						<div class="header__left_wrap">
 							<div class="header__contact">
 								<div class="header__tel">+7 495 988-95-05</div>
-								<div class="header__call"><a class="lnk dotted" href="#0">Заказать звонок</a></div>
+								<div class="header__call"><a class="lnk dotted js-lnk_popup" data-popup-type="callback" href="#0">Заказать звонок</a></div>
 							</div>
 							
 							<div class="mainmenu__buttons mainmenu__buttons_centr">
@@ -37,9 +37,9 @@
 					</div>
 					<div class="header__right">
 						<div class="header__right_cont">
-							<a class="header__right_btn profile-btn" href="#">
+							<a class="header__right_btn autorized profile-btn" data-popup-type="login" href="#">
 								<div class="profile-btn__pic"></div>
-								<span class="profile-btn__text">Личный<br/> кабинет</span>
+								<span class="profile-btn__text">Репин<br/> <span class="sub-text">Сергей Васильевич</span></span>
 							</a>
 							<a class="header__right_btn basket-btn" href="#">
 								<div class="basket-btn__badge">
@@ -83,63 +83,105 @@
 		</header>
 		
 		<div id="all">
-			<div class="inside">
-				<section class="contacts">
+			<section class="basket">
+				<div class="inside">
 					<div class="breadcrumbs clearfix">
 						<ul class="breadcrumbs__list">
 							<li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link">Главная</a></li>
-							<li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link current">Контакты</a></li>
+							<li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link current">Корзина</a></li>
 						</ul>
 					</div>
 					
-					<h1 class="title_h1">Контакты</h1>
+					<h1 class="title_h1">Корзина</h1>
+					<div class="basket__cont col--75">
+						<div class="basket__row cols">
+							<div class="basket__cell col basket__cell-product clearfix">
+								<div class="pic fl"><img src="pic/pic_68.jpg" height="35" width="58" alt=""></div>
+								<p class="text">Детская ортопедическая обувь ORTEK (утепленные). Бренд: Valleverde</p>
+							</div>
+							<div class="basket__cell product__amount basket__cell-amount">
+								<p class="product__amount-name">Кол-во:</p>
+								<div class="product__amount-wrap js-product__amount">
+									<span class="product__amount-btn minus disabled"><i></i></span>
+									<span class="product__amount-sum sum">1</span>
+									<span class="product__amount-btn plus"><i></i></span>
+								</div>
+							</div>
+							<div class="basket__cell col basket__cell-price">
+								<p class="title">Стоимость</p>
+								<p class="price">2 990 <span class="b-rub">Р</span></p>
+							</div>
+							<div class="basket__cell col basket__cell-put">
+								<div class="button button--gray">отложить</div>
+							</div>
+							<div class="basket__cell col basket__cell-del">
+								<span class="ico"></span>
+							</div>
+						</div>
 
-					<div class="contacts__cont clearfix">
-						<div class="contacts__left fl">
-							<div class="contacts__phone">+ 7 (495) 988-95-05<span class="contacts__phone__sub">(Телефон для справок)</span></div>
-							<div class="contacts__block clearfix">
-								<div class="contacts__info">
-									<div class="contacts__el contacts__el_yellow">
-										<p class="label"><strong>Центральный офис</strong></p>
-										<div class="contacts__coord clearfix">
-											<div class="contacts__coord__text fl">
-												<p class="text">Бизнес-парк «РУМЯНЦЕВО» <br/>
-												<i>(Киевское шоссе, 500 м от МКАД)</i><br/> 
-												Вход — 9 подъезд, 5 этаж, офис 510А</p>
-											</div>
-											<div class="contacts__scheme fr">
-												<a href="#0" class="lnk lnk__black js-lnk_popup" data-popup-type="contacts">
-													<div class="pic"><img src="pic/pic_32.jpg" alt=""></div>
-													<div class="text">
-														<div class="text-cont">
-															<span class="text-wrap"><span class="dotted">Схема проезда<br/> в центральный офис</span></span>
-														</div>
-													</div>
-												</a>        
-											</div>
-										</div>
-									</div>
+						<div class="basket__row cols">
+							<div class="basket__cell col basket__cell-product clearfix">
+								<div class="pic fl"><img src="pic/pic_69.jpg" height="32" width="58" alt=""></div>
+								<p class="text">Детская ортопедическая обувь ORTEK (утепленные). Бренд: Valleverde</p>
+							</div>
+							<div class="basket__cell product__amount basket__cell-amount">
+								<p class="product__amount-name">Кол-во:</p>
+								<div class="product__amount-wrap js-product__amount">
+									<span class="product__amount-btn minus disabled"><i></i></span>
+									<span class="product__amount-sum sum">1</span>
+									<span class="product__amount-btn plus"><i></i></span>
+								</div>
+							</div>
+							<div class="basket__cell col basket__cell-price">
+								<p class="title">Стоимость</p>
+								<p class="price">2 990 <span class="b-rub">Р</span></p>
+							</div>
+							<div class="basket__cell col basket__cell-put">
+								<div class="button button--gray">отложить</div>
+							</div>
+							<div class="basket__cell col basket__cell-del">
+								<span class="ico"></span>
+							</div>
+						</div>
+
+						<div class="basket__row cols">
+							<div class="basket__cell col basket__cell-product clearfix">
+								<div class="pic fl"><img src="pic/pic_70.jpg" height="55" width="56" alt=""></div>
+								<p class="text">Детская ортопедическая обувь ORTEK (утепленные). Бренд: Valleverde</p>
+							</div>
+							<div class="basket__cell product__amount basket__cell-amount">
+								<p class="product__amount-name">Кол-во:</p>
+								<div class="product__amount-wrap js-product__amount">
+									<span class="product__amount-btn minus disabled"><i></i></span>
+									<span class="product__amount-sum sum">1</span>
+									<span class="product__amount-btn plus"><i></i></span>
+								</div>
+							</div>
+							<div class="basket__cell col basket__cell-price">
+								<p class="title">Стоимость</p>
+								<p class="price">2 990 <span class="b-rub">Р</span></p>
+							</div>
+							<div class="basket__cell col basket__cell-put">
+								<div class="button button--gray">отложить</div>
+							</div>
+							<div class="basket__cell col basket__cell-del">
+								<span class="ico"></span>
+							</div>
+						</div>
+
+						<div class="basket__row basket__row-final cols no-brd">
+							<p class="col col--50"><span class="text">Общая сумма заказа</span><span class="num fsz_03">2 990 <span class="b-rub">Р</span></span></p>
+							<div class="col col--50 right">
+								<div class="field__cell">
+								    <button type="button" class="button button--orange button--round form__btn">Оформить заказ</button>
 								</div>
 							</div>
 						</div>
-						<div class="contacts__right fr">
-							<h4 class="contacts__title">Адреса салонов</h4>
-							<p class="contacts__sub-title">Посмотрите адреса и телефоны всех салонов «Ортолайн»</p>
-							<ul class="adress__nav-btn__list">
-								<li class="adress__nav-btn__item button button--gray adress__nav-btn_sheme">
-									<span class="ico cart"></span>
-									<span class="text">На схеме метро</span>
-								</li>
-								<li class="adress__nav-btn__item button button--gray adress__nav-btn_lists">
-									<span class="ico list"></span>
-									<span class="text">Списком</span>
-								</li>
-							</ul>
-						</div>
 					</div>
-				</section>
-			</div>
+				</div>
+			</section>
 		</div>
+		
 		<footer class="footer" id="footer">
 			<div class="inside">
 				<div class="footer-col footer-col--1">
@@ -224,10 +266,43 @@
 			</div>
 		</footer>
 
-		<div class="contact__popup" id="contactPopup">
-			<!-- <img src="pic/pic_51.jpg" alt="" width="640" height="470"> -->
+		<div class="form__popup form__popup_center callback__popup" id="callbackPopup">
+			<h3>Заказ звонка</h3>
+			<form class="form" action="index_submit" method="get" accept-charset="utf-8">           
+				<div class="field__cell">
+					<input type="text" placeholder="Представьтесь пожалуйста">
+				</div>
+				<div class="field__cell">
+					<input type="text" placeholder="Телефон">
+				</div>
+				<div class="field__cell">
+					<textarea name="comment" id="inp_N01" cols="30" rows="10" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="field__cell field__cell_button">
+					<button class="button button--blue">Заказать</button>
+				</div>
+			</form>
 			<span class="button b-close"><i></i></span>            
-			<div class="content"></div>
+		</div>
+
+		<div class="form__popup form__popup_center login__popup" id="loginPopup">
+			<h3>Вход</h3>
+			<form class="form" action="index_submit" method="get" accept-charset="utf-8">
+				<div class="field__cell">
+					<input type="text" placeholder="Логин">
+				</div>
+				<div class="field__cell">
+					<input type="text" placeholder="Пароль">
+				</div>
+				<div class="form__links">
+					<p><a href="#0" class="gray">Забыли пароль?</a></p>
+					<p><a href="#0">Регистрация</a></p>
+				</div>
+				<div class="field__cell field__cell_button">
+					<button class="button button--blue">Войти</button>
+				</div>
+			</form>
+			<span class="button b-close"><i></i></span>
 		</div>
 	</body>
 	<!--body -->

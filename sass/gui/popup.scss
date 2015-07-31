@@ -1,0 +1,72 @@
+.form__popup{
+	background-color: #fff;
+	width: 460px;
+	padding: 72px 54px 26px;
+	border-radius: 8px;
+	border: $brdLnk5;
+	text-align: center;
+	display: none;
+	box-sizing: border-box;
+	h3{
+		font-size: 30px;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 38px;
+	}
+	.form__links{
+		margin-top: 22px;
+		p{
+			margin-top: 6px;
+			&:first-child{ margin-top: 0; }
+		}
+		.gray{ color: $gray; }
+		a{ color: $blue; }
+	}
+}
+.form__popup_center{
+	.button{
+		text-align: center;
+	}
+}
+.form__popup .b-close{
+	width: 40px;
+	height: 40px;
+	background: $gray2 $sprite -952px -24px no-repeat;
+	position: absolute;
+	top: 17px;
+	right: 12px;
+	padding: 0;
+	@include transition(background-color .15s);
+	&:hover{
+		background-color: $grayHov2;
+	}
+}
+.field__cell_button{
+	margin-top: 40px;	
+	.button{
+		text-transform: uppercase;
+		font-size: 13px;
+		letter-spacing: 1px;
+		padding: 14px 60px;
+	}
+}
+
+
+// contact__popup
+
+.contact__popup{
+	min-width: 640px;
+	height: 470px;
+	display: none;
+	.b-close{
+		background: transparent $sprite -968px 0 no-repeat;
+		width: 20px;
+		height: 20px;
+		padding: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		margin-right: -30px;
+		margin-top: 10px;
+	}
+}

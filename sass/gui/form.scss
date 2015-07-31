@@ -1,0 +1,136 @@
+.form{	
+	input[type="text"]{
+		height: 46px;
+		width: 100%;
+		border-radius: 4px;
+		border: $brdLnk5;
+		padding: 6px 10px;
+		font-size: 15px;
+		font-family: $HelveticaNeue;
+		box-sizing: border-box;
+	}
+	label{
+		margin-bottom: 6px;
+		font-size: 14px;
+		line-height: 20px;
+		display: block;
+		color: $black;
+	}
+	textarea{
+		width: 100%;
+		border-radius: 4px;
+		border: $brdLnk5;
+		padding: 12px 10px;
+		font-size: 15px;
+		font-family: $HelveticaNeue;
+		box-sizing: border-box;
+	}
+	button{
+		border: none;
+		outline: none;
+	}
+	fieldset{
+		border: none;
+	}
+	legend{
+		font-size: 20px;
+		line-height: 24px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-top: 12px;
+		margin-bottom: 40px;
+	}
+}
+.field__cell{
+	margin-bottom: 16px;
+}
+.radio__cell{
+	margin-bottom: 34px;
+}
+
+.form__tow-col{
+	// margin: 0px -10px 0px -10px;
+	.field__row{
+		padding: 0px 10px;
+	}
+	input.capcha-inp{
+		height: 94px;
+		border: $brdLnk5;
+	}
+}
+
+.form__title{
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 26px;
+	margin-bottom: 24px;
+	text-transform: uppercase;
+}
+
+.form__register{
+	.b-capcha{
+		margin-bottom: 22px;
+	}
+	.capcha{
+		padding-left: 30px;
+		height: 94px;
+		box-sizing: border-box;
+		line-height: 94px;
+		img{
+			width: 100%;
+			height: auto;
+			vertical-align: middle;
+		}
+	}
+	.form__btn{
+		padding: 14px 60px;
+		font-size: 13px;
+		text-transform: uppercase;
+		border: none;
+	}
+}
+
+
+.chk-cust {
+    display:none;
+}
+.chk-cust + .chk-cust__label .ico {
+    display:inline-block;
+    width:20px;
+    height:20px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background-color: $lightGray;
+    cursor:pointer;
+}
+.chk-cust:checked + .chk-cust__label .ico {
+    background: $lightGray $sprite -380px -55px no-repeat;
+}
+
+.radio-cust {
+    display:none;
+}
+.radio-cust + .radio-cust__label .ico {
+    display:inline-block;
+    width:20px;
+    height:20px;
+    border-radius: 12px;
+    margin:2px 4px 0 0;
+    vertical-align:middle;
+    border: $brdLnk5;
+    cursor:pointer;
+    position: relative;
+}
+.radio-cust:checked + .radio-cust__label .ico:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -5px;
+	margin-left: -5px;
+    background: $blue;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}

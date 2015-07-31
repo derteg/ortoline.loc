@@ -1,769 +1,808 @@
 <!DOCTYPE html>
 <html lang="ru">
-    
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width initial-scale=1.0">
-        <title>Главная :: Ortoline</title>
+	
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0">
+		<title>Главная :: Ortoline</title>
 
-        <link href="css/style.css" rel="stylesheet" type="text/css" />
-        
-        <script src="js/libs/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/libs/jquery.min.js">\x3C/script>')</script>
-        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
-        <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-        <script src="js/libs/plugins.js"></script>
-        <script src="js/scripts.js"></script>
-    </head>
-    
-    <body>
-        <header class="header js-header_fix">
-            <div class="inside">
-                <div class="header__wrap clearfix">
-                    <div class="header__left">
-                        <a class="logo__lnk" href="links.html"><img src="img/logo.png" alt="logo" class="logo" /></a>
-                        
-                        <div class="header__left_wrap">
-                            <div class="header__contact">
-                                <div class="header__tel">+7 495 988-95-05</div>
-                                <div class="header__call"><a class="lnk dotted" href="#0">Заказать звонок</a></div>
-                            </div>
-                            
-                            <div class="mainmenu__buttons mainmenu__buttons_centr">
-                                <a class="button button--blue" href="#0"><span>Каталог товаров</span></a>
-                                <a class="button button--orange" href="#0"><img src="img/ic-location.png" alt="ic-location" width="12" /><span>Наши салоны</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="header__right">
-                        <div class="header__right_cont">
-                            <a class="header__right_btn profile-btn" href="#">
-                                <div class="profile-btn__pic"></div>
-                                <span class="profile-btn__text">Личный<br/> кабинет</span>
-                            </a>
-                            <a class="header__right_btn basket-btn" href="#">
-                                <div class="basket-btn__badge">
-                                    <span class="pic"></span>
-                                    <span class="num">5</span>
-                                </div>
-                                <div class="basket-btn__cont">
-                                    <p class="basket__label">Заказ на сумму </p>
-                                    <p class="basket__price">2 650 <span class="b-rub">Р</span></p>
-                                </div>
-                            </a>                            
-                        </div>
-                    </div>
-                </div>
-            
-                <nav class="mainmenu clearfix">
-                    <div class="mainmenu__btn-all"><a href="#0" class="button button--gray"><span class="ico"></span>Все разделы сайта</a></div>
-                    <ul class="mainmenu__list">
-                        <li class="mainmenu__item">
-                            <a class="lnk__black mainmenu__link" href="#0">Компания</a>
-                        </li>
-                        <li class="mainmenu__item">
-                            <a class="lnk__black mainmenu__link" href="#0">Услуги</a>
-                        </li>
-                        <li class="mainmenu__item">
-                            <a class="lnk__black mainmenu__link" href="#0">Информация</a>
-                        </li>
-                        <li class="mainmenu__item">
-                            <a class="lnk__black mainmenu__link" href="#0">Доставка</a>
-                        </li>
-                        <li class="mainmenu__item">
-                            <a class="lnk__black mainmenu__link" href="#0">Контакты </a>
-                        </li>
-                    </ul>
-                    <div class="mainmenu__buttons mainmenu__buttons_fr">
-                        <a class="button button--blue" href="#0"><span>Каталог товаров</span></a>
-                        <a class="button button--orange" href="#0"><img src="img/ic-location.png" alt="ic-location" width="12" /><span>Наши салоны</span></a>
-                    </div>
-                </nav>
-            </div>
-        </header>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		
+		<script src="js/libs/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/libs/jquery.min.js">\x3C/script>')</script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+		<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+		<script src="js/libs/plugins.js"></script>
+		<script src="js/scripts.js"></script>
+	</head>
+	
+	<body>
+		<header class="header js-header_fix">
+			<div class="inside">
+				<div class="header__wrap clearfix">
+					<div class="header__left">
+						<a class="logo__lnk" href="links.html"><img src="img/logo.png" alt="logo" class="logo" /></a>
+						
+						<div class="header__left_wrap">
+							<div class="header__contact">
+								<div class="header__tel">+7 495 988-95-05</div>
+								<div class="header__call"><a class="lnk dotted js-lnk_popup" data-popup-type="callback" href="#0">Заказать звонок</a></div>
+							</div>
+							
+							<div class="mainmenu__buttons mainmenu__buttons_centr">
+								<a class="button button--blue" href="#0"><span>Каталог товаров</span></a>
+								<a class="button button--orange" href="#0"><img src="img/ic-location.png" alt="ic-location" width="12" /><span>Наши салоны</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="header__right">
+						<div class="header__right_cont">
+							<a class="header__right_btn profile-btn js-lnk_popup" data-popup-type="login" href="#">
+								<div class="profile-btn__pic"></div>
+								<span class="profile-btn__text">Личный<br/> кабинет</span>
+							</a>
+							<a class="header__right_btn basket-btn" href="#">
+								<div class="basket-btn__badge">
+									<span class="pic"></span>
+									<span class="num">5</span>
+								</div>
+								<div class="basket-btn__cont">
+									<p class="basket__label">Заказ на сумму </p>
+									<p class="basket__price">2 650 <span class="b-rub">Р</span></p>
+								</div>
+							</a>                            
+						</div>
+					</div>
+				</div>
+			
+				<nav class="mainmenu clearfix">
+					<div class="mainmenu__btn-all"><a href="#0" class="button button--gray"><span class="ico"></span>Все разделы сайта</a></div>
+					<ul class="mainmenu__list">
+						<li class="mainmenu__item">
+							<a class="lnk__black mainmenu__link" href="#0">Компания</a>
+						</li>
+						<li class="mainmenu__item">
+							<a class="lnk__black mainmenu__link" href="#0">Услуги</a>
+						</li>
+						<li class="mainmenu__item">
+							<a class="lnk__black mainmenu__link" href="#0">Информация</a>
+						</li>
+						<li class="mainmenu__item">
+							<a class="lnk__black mainmenu__link" href="#0">Доставка</a>
+						</li>
+						<li class="mainmenu__item">
+							<a class="lnk__black mainmenu__link" href="#0">Контакты </a>
+						</li>
+					</ul>
+					<div class="mainmenu__buttons mainmenu__buttons_fr">
+						<a class="button button--blue" href="#0"><span>Каталог товаров</span></a>
+						<a class="button button--orange" href="#0"><img src="img/ic-location.png" alt="ic-location" width="12" /><span>Наши салоны</span></a>
+					</div>
+				</nav>
+			</div>
+		</header>
 
-        <div id="all">
-            <section class="promoslider__cont">
-                <div class="inside">
-                    <div class="promoslider js-promoslider">
-                        <div class="promoslider__slide">
-                            <img class="promoslider__pic" src="img/img1.jpg" alt="img1" width="1202" height="550" />
-                            <h3 class="promoslider__text">Средства реабилитации после травм и&nbsp;операций</h3>
-                        </div>
-                        <div class="promoslider__slide">
-                            <img class="promoslider__pic" src="img/img1.jpg" alt="img1" width="1202" height="550" />
-                            <h3 class="promoslider__text">Средства реабилитации после травм и&nbsp;операций</h3>
-                        </div>
-                        <div class="promoslider__slide">
-                            <img class="promoslider__pic" src="img/img1.jpg" alt="img1" width="1202" height="550" />
-                            <h3 class="promoslider__text">Средства реабилитации после травм и&nbsp;операций</h3>
-                        </div>
-                        <div class="promoslider__slide">
-                            <img class="promoslider__pic" src="img/img1.jpg" alt="img1" width="1202" height="550" />
-                            <h3 class="promoslider__text">Средства реабилитации после травм и&nbsp;операций</h3>
-                        </div>
-                        <div class="promoslider__slide">
-                            <img class="promoslider__pic" src="img/img1.jpg" alt="img1" width="1202" height="550" />
-                            <h3 class="promoslider__text">Средства реабилитации после травм и&nbsp;операций</h3>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="maincat">
-                <div class="inside">
-                    <div class="cols">
-                        <div class="col col--25 maincat__item">
-                            <a class="maincat__wrap lnk__black" href="#0" >
-                                <div class="maincat__image">
-                                <img src="img/p-1.png" width="164" height="118" alt=""/></div>
-                                <h4 class="maincat__title">Ортопедическая обувь для взрослых</h4>
-                            </a>
-                        </div>
-                        <div class="col col--25 maincat__item">
-                            <a class="maincat__wrap lnk__black" href="#0" >
-                                <div class="maincat__image">
-                                <img src="img/p-2.png" width="160" height="160" alt=""/></div>
-                                <h4 class="maincat__title">Ортопедическая обувь для детей</h4>
-                            </a>
-                        </div>
-                        <div class="col col--25 maincat__item">
-                            <a class="maincat__wrap lnk__black" href="#0" >
-                                <div class="maincat__image">
-                                <img src="img/p-3.png" width="171" height="116" alt=""/></div>
-                                <h4 class="maincat__title">Реабилитационная (послеоперационная) обувь</h4>
-                            </a>
-                        </div>
-                        <div class="col col--25 maincat__item">
-                            <a class="maincat__wrap lnk__black" href="#0" >
-                                <div class="maincat__image">
-                                <img src="img/p-4.png" width="114" height="141" alt=""/></div>
-                                <h4 class="maincat__title">Ортезы для шейного отдела позвоночника</h4>
-                            </a>
-                        </div>
-                        <div class="col col--25 maincat__item">
-                            <a class="maincat__wrap lnk__black" href="#0" >
-                                <div class="maincat__image">
-                                <img src="img/p-5.png" width="128" height="131" alt=""/></div>
-                                <h4 class="maincat__title">Корсеты (бандажи) ортопедические пояснично-крестцовые</h4>
-                            </a>
-                        </div>
-                        <div class="col col--25 maincat__item">
-                            <a class="maincat__wrap lnk__black" href="#0" >
-                                <div class="maincat__image">
-                                <img src="img/m-6.png" width="136" height="163" alt=""/></div>
-                                <h4 class="maincat__title">Kорректоры осанки (реклинаторы)</h4>
-                            </a>
-                        </div>
-                        <div class="col col--25 maincat__item">
-                            <a class="maincat__wrap lnk__black" href="#0" >
-                                <div class="maincat__image">
-                                <img src="img/m-7.png" width="123" height="151" alt=""/></div>
-                                <h4 class="maincat__title">Бандажи эластичные противорадикулитные</h4>
-                            </a>
-                        </div>
-                        <div class="col col--25 maincat__item">
-                            <a class="maincat__wrap lnk__black final" href="#0" >
-                                <span class="maincat__all">
-                                    <span class="maincat__toall">Весь каталог</span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="panoram">
-                <div class="inside">
-                    <div class="panoram__content">
-                        <h1 class="panoram__title">Индивидуальное изготовление стелек</h1>
-                        <p class="panoram__sub-title">Мы изготавливаем индивидуальные<br/> ортопедические стельки:</p>
-                        <ul class="panoram__list">
-                            <li class="panoram__item">— Строго с учетом индивидуальных особенностей стопы человека</li>
-                            <li class="panoram__item">— По методике немецких ортопедов</li>
-                            <li class="panoram__item">— За 15 минут</li>
-                        </ul>
-                        <a class="outlineBut" href="#"><img src="img/i-pin.png" alt="i-pin" width="11" height="16" /> Найти ближайший салон</a>
-                    </div>
-                </div>
-            </section>
-            <section class="promo-stock-hits">
-                <div class="inside">
-                    <div class="promo-stock-hits__wrap">
-                        <div class="stock__slider js-stock__slider">
-                            <div class="stock__slide">
-                                <div class="stock__label">Акция</div>
-                                <div class="stock__image">
-                                    <img src="img/banner-1.png" alt="banner-1" width="422" height="385" />
-                                </div>
-                                <div class="stock__text">
-                                    <div class="stock__title_wrap">
-                                        <h4 class="stock__title"><span>Цифровая<br />диагностика стоп 1</span>
-                                        </h4>
-                                    </div>
-                                    <ul class="stock__list">
-                                        <li class="stock__item">Детская (до 35 размера) — <span class="big">600 руб. </span>
-                                        </li>
-                                        <li class="stock__item">Взрослая (с 36 размера) — <span class="big">750 руб. </span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="stock__slide">
-                                <div class="stock__label">Акция</div>
-                                <div class="stock__image">
-                                    <img src="img/banner-1.png" alt="banner-1" width="422" height="385" />
-                                </div>
-                                <div class="stock__text">
-                                    <div class="stock__title_wrap">
-                                        <h4 class="stock__title"><span>Цифровая<br />диагностика стоп 2</span>
-                                        </h4>
-                                    </div>
-                                    <ul class="stock__list">
-                                        <li class="stock__item">Детская (до 35 размера) — <span class="big">600 руб. </span>
-                                        </li>
-                                        <li class="stock__item">Взрослая (с 36 размера) — <span class="big">750 руб. </span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="stock__slide">
-                                <div class="stock__label">Акция</div>
-                                <div class="stock__image">
-                                    <img src="img/banner-1.png" alt="banner-1" width="422" height="385" />
-                                </div>
-                                <div class="stock__text">
-                                    <div class="stock__title_wrap">
-                                        <h4 class="stock__title"><span>Цифровая<br />диагностика стоп 3</span>
-                                        </h4>
-                                    </div>
-                                    <ul class="stock__list">
-                                        <li class="stock__item">Детская (до 35 размера) — <span class="big">600 руб. </span>
-                                        </li>
-                                        <li class="stock__item">Взрослая (с 36 размера) — <span class="big">750 руб. </span>	
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hits__slider js-hits__slider">
-                            <div class="hits__slide">
-                                <div class="hits__label">Хит</div>
-                                <div class="card card_nowrap">
-                                    <div class="card__image">
-                                        <img src="img/m-8.png" alt="rec-2" />
-                                    </div>
-                                    <div class="card__text">
-                                        <div class="card__title">Ортопедическая обувь БЕРН</div>
-                                        <div class="card__brand">Бренд <span class="black">Ortmann</span>
-                                        </div>
-                                        <div class="card__price">4 100 <span class="b-rub">Р</span>
-                                        </div>
-                                        <div class="card__info">
-                                            <p>Отопедические полуботинки для людей с деформацией стопы. Обувь из мягкой
-                                                телячьей кожи.</p>
-                                            <p>Наличие удобных застёжек "липучек" гарантирует лёгкое надевание обуви
-                                                и даёт возможность регулировать объем.</p>
-                                        </div>
-                                    </div>
-                                    <div class="card__button_cont">
-                                        <a class="lnk__black card__button" href="#">В корзину</a>
-                                    </div>
-                                    <div class="card__line">
-                                        <div class="card__circle js-card__info"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="hits__slide">
-                                <div class="hits__label">Хит</div>
-                                <div class="card card_nowrap">
-                                    <div class="card__image">
-                                        <img src="img/m-8.png" alt="rec-2" />
-                                    </div>
-                                    <div class="card__text">
-                                        <div class="card__title">Ортопедическая обувь БЕРН</div>
-                                        <div class="card__brand">Бренд <span class="black">Ortmann</span>
-                                        </div>
-                                        <div class="card__price">2 600 <span class="b-rub">Р</span>
-                                        </div>
-                                        <div class="card__info">
-                                            <p>Отопедические полуботинки для людей с деформацией стопы. Обувь из мягкой
-                                                телячьей кожи.</p>
-                                            <p>Наличие удобных застёжек "липучек" гарантирует лёгкое надевание обуви
-                                                и даёт возможность регулировать объем.</p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <a class="lnk__black card__button" href="#">В корзину</a>
-                                    </div>
-                                    <div class="card__line">
-                                        <div class="card__circle js-card__info"></div>
-                                    </div>
-                                </div>
-                            </div>
+		<div id="all">
+			<section class="promoslider__cont">
+				<div class="inside">
+					<div class="promoslider js-promoslider">
+						<div class="promoslider__slide">
+							<img class="promoslider__pic" src="img/img1.jpg" alt="img1" width="1202" height="550" />
+							<h3 class="promoslider__text">Средства реабилитации после травм и&nbsp;операций</h3>
+						</div>
+						<div class="promoslider__slide">
+							<img class="promoslider__pic" src="img/img1.jpg" alt="img1" width="1202" height="550" />
+							<h3 class="promoslider__text">Средства реабилитации после травм и&nbsp;операций</h3>
+						</div>
+						<div class="promoslider__slide">
+							<img class="promoslider__pic" src="img/img1.jpg" alt="img1" width="1202" height="550" />
+							<h3 class="promoslider__text">Средства реабилитации после травм и&nbsp;операций</h3>
+						</div>
+						<div class="promoslider__slide">
+							<img class="promoslider__pic" src="img/img1.jpg" alt="img1" width="1202" height="550" />
+							<h3 class="promoslider__text">Средства реабилитации после травм и&nbsp;операций</h3>
+						</div>
+						<div class="promoslider__slide">
+							<img class="promoslider__pic" src="img/img1.jpg" alt="img1" width="1202" height="550" />
+							<h3 class="promoslider__text">Средства реабилитации после травм и&nbsp;операций</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="maincat">
+				<div class="inside">
+					<div class="cols">
+						<div class="col col--25 maincat__item">
+							<a class="maincat__wrap lnk__black" href="#0" >
+								<div class="maincat__image">
+								<img src="img/p-1.png" width="164" height="118" alt=""/></div>
+								<h4 class="maincat__title">Ортопедическая обувь для взрослых</h4>
+							</a>
+						</div>
+						<div class="col col--25 maincat__item">
+							<a class="maincat__wrap lnk__black" href="#0" >
+								<div class="maincat__image">
+								<img src="img/p-2.png" width="160" height="160" alt=""/></div>
+								<h4 class="maincat__title">Ортопедическая обувь для детей</h4>
+							</a>
+						</div>
+						<div class="col col--25 maincat__item">
+							<a class="maincat__wrap lnk__black" href="#0" >
+								<div class="maincat__image">
+								<img src="img/p-3.png" width="171" height="116" alt=""/></div>
+								<h4 class="maincat__title">Реабилитационная (послеоперационная) обувь</h4>
+							</a>
+						</div>
+						<div class="col col--25 maincat__item">
+							<a class="maincat__wrap lnk__black" href="#0" >
+								<div class="maincat__image">
+								<img src="img/p-4.png" width="114" height="141" alt=""/></div>
+								<h4 class="maincat__title">Ортезы для шейного отдела позвоночника</h4>
+							</a>
+						</div>
+						<div class="col col--25 maincat__item">
+							<a class="maincat__wrap lnk__black" href="#0" >
+								<div class="maincat__image">
+								<img src="img/p-5.png" width="128" height="131" alt=""/></div>
+								<h4 class="maincat__title">Корсеты (бандажи) ортопедические пояснично-крестцовые</h4>
+							</a>
+						</div>
+						<div class="col col--25 maincat__item">
+							<a class="maincat__wrap lnk__black" href="#0" >
+								<div class="maincat__image">
+								<img src="img/m-6.png" width="136" height="163" alt=""/></div>
+								<h4 class="maincat__title">Kорректоры осанки (реклинаторы)</h4>
+							</a>
+						</div>
+						<div class="col col--25 maincat__item">
+							<a class="maincat__wrap lnk__black" href="#0" >
+								<div class="maincat__image">
+								<img src="img/m-7.png" width="123" height="151" alt=""/></div>
+								<h4 class="maincat__title">Бандажи эластичные противорадикулитные</h4>
+							</a>
+						</div>
+						<div class="col col--25 maincat__item">
+							<a class="maincat__wrap lnk__black final" href="#0" >
+								<span class="maincat__all">
+									<span class="maincat__toall">Весь каталог</span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="panoram">
+				<div class="inside">
+					<div class="panoram__content">
+						<h1 class="panoram__title">Индивидуальное изготовление стелек</h1>
+						<p class="panoram__sub-title">Мы изготавливаем индивидуальные<br/> ортопедические стельки:</p>
+						<ul class="panoram__list">
+							<li class="panoram__item">— Строго с учетом индивидуальных особенностей стопы человека</li>
+							<li class="panoram__item">— По методике немецких ортопедов</li>
+							<li class="panoram__item">— За 15 минут</li>
+						</ul>
+						<a class="outlineBut" href="#"><img src="img/i-pin.png" alt="i-pin" width="11" height="16" /> Найти ближайший салон</a>
+					</div>
+				</div>
+			</section>
+			<section class="promo-stock-hits">
+				<div class="inside">
+					<div class="promo-stock-hits__wrap">
+						<div class="stock__slider js-stock__slider">
+							<div class="stock__slide">
+								<div class="stock__label">Акция</div>
+								<div class="stock__image">
+									<img src="img/banner-1.png" alt="banner-1" width="422" height="385" />
+								</div>
+								<div class="stock__text">
+									<div class="stock__title_wrap">
+										<h4 class="stock__title"><span>Цифровая<br />диагностика стоп 1</span>
+										</h4>
+									</div>
+									<ul class="stock__list">
+										<li class="stock__item">Детская (до 35 размера) — <span class="big">600 руб. </span>
+										</li>
+										<li class="stock__item">Взрослая (с 36 размера) — <span class="big">750 руб. </span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="stock__slide">
+								<div class="stock__label">Акция</div>
+								<div class="stock__image">
+									<img src="img/banner-1.png" alt="banner-1" width="422" height="385" />
+								</div>
+								<div class="stock__text">
+									<div class="stock__title_wrap">
+										<h4 class="stock__title"><span>Цифровая<br />диагностика стоп 2</span>
+										</h4>
+									</div>
+									<ul class="stock__list">
+										<li class="stock__item">Детская (до 35 размера) — <span class="big">600 руб. </span>
+										</li>
+										<li class="stock__item">Взрослая (с 36 размера) — <span class="big">750 руб. </span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="stock__slide">
+								<div class="stock__label">Акция</div>
+								<div class="stock__image">
+									<img src="img/banner-1.png" alt="banner-1" width="422" height="385" />
+								</div>
+								<div class="stock__text">
+									<div class="stock__title_wrap">
+										<h4 class="stock__title"><span>Цифровая<br />диагностика стоп 3</span>
+										</h4>
+									</div>
+									<ul class="stock__list">
+										<li class="stock__item">Детская (до 35 размера) — <span class="big">600 руб. </span>
+										</li>
+										<li class="stock__item">Взрослая (с 36 размера) — <span class="big">750 руб. </span>	
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="hits__slider js-hits__slider">
+							<div class="hits__slide">
+								<div class="hits__label">Хит</div>
+								<div class="card card_nowrap">
+									<div class="card__image">
+										<img src="img/m-8.png" alt="rec-2" />
+									</div>
+									<div class="card__text">
+										<div class="card__title">Ортопедическая обувь БЕРН</div>
+										<div class="card__brand">Бренд <span class="black">Ortmann</span>
+										</div>
+										<div class="card__price">4 100 <span class="b-rub">Р</span>
+										</div>
+										<div class="card__info">
+											<p>Отопедические полуботинки для людей с деформацией стопы. Обувь из мягкой
+												телячьей кожи.</p>
+											<p>Наличие удобных застёжек "липучек" гарантирует лёгкое надевание обуви
+												и даёт возможность регулировать объем.</p>
+										</div>
+									</div>
+									<div class="card__button_cont">
+										<a class="lnk__black card__button" href="#">В корзину</a>
+									</div>
+									<div class="card__line">
+										<div class="card__circle js-card__info"></div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="hits__slide">
+								<div class="hits__label">Хит</div>
+								<div class="card card_nowrap">
+									<div class="card__image">
+										<img src="img/m-8.png" alt="rec-2" />
+									</div>
+									<div class="card__text">
+										<div class="card__title">Ортопедическая обувь БЕРН</div>
+										<div class="card__brand">Бренд <span class="black">Ortmann</span>
+										</div>
+										<div class="card__price">2 600 <span class="b-rub">Р</span>
+										</div>
+										<div class="card__info">
+											<p>Отопедические полуботинки для людей с деформацией стопы. Обувь из мягкой
+												телячьей кожи.</p>
+											<p>Наличие удобных застёжек "липучек" гарантирует лёгкое надевание обуви
+												и даёт возможность регулировать объем.</p>
+										</div>
+									</div>
+									<div>
+										<a class="lnk__black card__button" href="#">В корзину</a>
+									</div>
+									<div class="card__line">
+										<div class="card__circle js-card__info"></div>
+									</div>
+								</div>
+							</div>
 
-                            <div class="hits__slide">
-                                <div class="hits__label">Хит</div>
-                                <div class="card card_nowrap">
-                                    <div class="card__image">
-                                        <img src="img/m-8.png" alt="rec-2" />
-                                    </div>
-                                    <div class="card__text">
-                                        <div class="card__title">Ортопедическая обувь БЕРН</div>
-                                        <div class="card__brand">Бренд <span class="black">Ortmann</span>
-                                        </div>
-                                        <div class="card__price">3 500 <span class="b-rub">Р</span>
-                                        </div>
-                                        <div class="card__info">
-                                            <p>Отопедические полуботинки для людей с деформацией стопы. Обувь из мягкой
-                                                телячьей кожи.</p>
-                                            <p>Наличие удобных застёжек "липучек" гарантирует лёгкое надевание обуви
-                                                и даёт возможность регулировать объем.</p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <a class="lnk__black card__button" href="#">В корзину</a>
-                                    </div>
-                                    <div class="card__line">
-                                        <div class="card__circle js-card__info"></div>
-                                    </div>
-                                </div>
-                            </div>
+							<div class="hits__slide">
+								<div class="hits__label">Хит</div>
+								<div class="card card_nowrap">
+									<div class="card__image">
+										<img src="img/m-8.png" alt="rec-2" />
+									</div>
+									<div class="card__text">
+										<div class="card__title">Ортопедическая обувь БЕРН</div>
+										<div class="card__brand">Бренд <span class="black">Ortmann</span>
+										</div>
+										<div class="card__price">3 500 <span class="b-rub">Р</span>
+										</div>
+										<div class="card__info">
+											<p>Отопедические полуботинки для людей с деформацией стопы. Обувь из мягкой
+												телячьей кожи.</p>
+											<p>Наличие удобных застёжек "липучек" гарантирует лёгкое надевание обуви
+												и даёт возможность регулировать объем.</p>
+										</div>
+									</div>
+									<div>
+										<a class="lnk__black card__button" href="#">В корзину</a>
+									</div>
+									<div class="card__line">
+										<div class="card__circle js-card__info"></div>
+									</div>
+								</div>
+							</div>
 
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="product__news clearfix">
-                <div class="inside">
-                    <h3 class="product__sub-title">Наши новинки</h3>
-                    <div class="product__news-slider js-product__news-slider">
-                        <div>
-                            <a href="#0">
-                                <img src="pic/pic_22.jpg" alt="" width="130" height="110">
-                                <p>Детская ортопедическая обувь МАЙЯ</p>
-                                <p class="price orange">6 200<span class="rouble">p</span></p>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#0">
-                                <img src="pic/pic_23.jpg" alt="" width="130" height="110">
-                                <p>Детская ортопедическая обувь Ангел</p>
-                                <p class="price orange">6 200<span class="rouble">p</span></p>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#0">
-                                <img src="pic/pic_24.jpg" alt="" width="130" height="110">
-                                <p>Ортопедическая обувь КАНАДА 6651</p>
-                                <p class="price orange">6 200<span class="rouble">p</span></p>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#0">
-                                <img src="pic/pic_25.jpg" alt="" width="130" height="110">
-                                <p>Детская ортопедическая обувь Ангел</p>
-                                <p class="price orange">6 200<span class="rouble">p</span></p>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#0">
-                                <img src="pic/pic_23.jpg" alt="" width="130" height="110">
-                                <p>Ортопедическая обувь КАНАДА 6651</p>
-                                <p class="price orange">6 200<span class="rouble">p</span></p>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#0">
-                                <img src="pic/pic_24.jpg" alt="" width="130" height="110">
-                                <p>Ортопедическая обувь КАНАДА 6651</p>
-                                <p class="price orange">6 200<span class="rouble">p</span></p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="dvnt">
-                <div class="inside">
-                    <div class="dvnt-wrap">
-                        <h2 class="dvnt__title"><span class="dvnt__title_sub-title">Наши преимущества</span></h2>
-                        <div class="dvnt-oh">
-                            <div class="cols" data-max="parent">
-                                <div class="col col--25" data-max="child">
-                                    <div class="dvnt-item">
-                                        <div class="dvnt-image">
-                                            <img src="img/a-1.png" alt="a-1" />
-                                        </div>
-                                        <div class="dvnt-text">
-                                            <p>Бесплатная консультация ортопеда-травматолога</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col col--25" data-max="child">
-                                    <div class="dvnt-item">
-                                        <div class="dvnt-image">
-                                            <img src="img/a-2.png" alt="a-1" />
-                                        </div>
-                                        <div class="dvnt-text">
-                                            <p>Все продавцы консультанты имеют мед. образование</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col col--25" data-max="child">
-                                    <div class="dvnt-item">
-                                        <div class="dvnt-image">
-                                            <img src="img/a-3.png" alt="a-1" />
-                                        </div>
-                                        <div class="dvnt-text">
-                                            <p>Компенсация ДСЗН</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col col--25" data-max="child">
-                                    <div class="dvnt-item">
-                                        <div class="dvnt-image">
-                                            <img src="img/a-4.png" alt="a-1" />
-                                        </div>
-                                        <div class="dvnt-text">
-                                            <p>Дисконтная программа</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col col--25" data-max="child">
-                                    <div class="dvnt-item">
-                                        <div class="dvnt-image">
-                                            <img src="img/a-5.png" alt="a-1" />
-                                        </div>
-                                        <div class="dvnt-text">
-                                            <p>Скидки!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col col--25" data-max="child">
-                                    <div class="dvnt-item">
-                                        <div class="dvnt-image">
-                                            <img src="img/a-6.png" alt="a-1" />
-                                        </div>
-                                        <div class="dvnt-text">
-                                            <p>Оплата
-                                                <br />кредитной картой</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col col--25" data-max="child">
-                                    <div class="dvnt-item">
-                                        <div class="dvnt-image">
-                                            <img src="img/a-7.png" alt="a-1" />
-                                        </div>
-                                        <div class="dvnt-text">
-                                            <p>Доставка
-                                                <br />на следующий день!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col col--25" data-max="child">
-                                    <div class="dvnt-item">
-                                        <div class="dvnt-image">
-                                            <img src="img/a-8.png" alt="a-1" />
-                                        </div>
-                                        <div class="dvnt-text">
-                                            <p>Доставка по России</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="faqmain">
-                <div class="inside">
-                    <h2 class="faqmain__title"><a href="#" class="lnk__black">Вопросы и ответы</a></h2>
-                    <div class="cols">
-                        <div class="col col--50">
-                            <div class="faqmain-item">
-                                <div class="faqmain-number">Вопрос № 967847</div>
-                                <div class="faqmain-question">
-                                    <p>Здравствуйте, у меня травма колена, пока еще не сказали какая. Назначили
-                                        МРТ и бандаж коленный мягкий с силиконовым кольцом для надколенника Genumedi
-                                        компании Medi expert. Стоит он в среднем 3500 руб. Есть ли более дешевые
-                                        его аналоги?</p>
-                                </div>
-                                <div class="faqmain-answer">
-                                    <p>Более экономичный вариант наколенника с силиконовым кольцом - <a href="#">Бандаж на коленный сустав</a> (Артикул:
-                                        NKN 209) - 1120 рублей. Но более качественный и комфортный наколенник,
-                                        произведенный в Германии - Бандаж на коленный сустав (Артикул: 50K15) -
-                                        3300 рублей.</p>
-                                    <div class="faqmain-doctor">
-                                        <div class="faqmain-photo">
-                                            <img src="img/si.png" alt="p-4" />
-                                        </div>
-                                        <div class="faqmain-name">Сергей Ивановович</div>
-                                        <div class="faqmain-position">Врач-ортопед</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col--50">
-                            <div class="faqmain-item">
-                                <div class="faqmain-number">Вопрос № 967847</div>
-                                <div class="faqmain-question">
-                                    <p>Здравствуйте, у меня травма колена, пока еще не сказали какая. Назначили
-                                        МРТ и бандаж коленный мягкий с силиконовым кольцом для надколенника Genumedi
-                                        компании Medi expert. Стоит он в среднем 3500 руб. Есть ли более дешевые
-                                        его аналоги?</p>
-                                </div>
-                                <div class="faqmain-answer">
-                                    <p>Более экономичный вариант наколенника с силиконовым кольцом - <a href="#">Бандаж на коленный сустав</a> (Артикул:
-                                        NKN 209) - 1120 рублей. Но более качественный и комфортный наколенник,
-                                        произведенный в Германии - Бандаж на коленный сустав (Артикул: 50K15) -
-                                        3300 рублей.</p>
-                                    <div class="faqmain-doctor">
-                                        <div class="faqmain-photo">
-                                            <img src="img/si.png" alt="p-4" />
-                                        </div>
-                                        <div class="faqmain-name">Сергей Ивановович</div>
-                                        <div class="faqmain-position">Врач-ортопед</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="video bg_01 video_main">
-                <div class="inside">
-                    <h2><a href="#" class="lnk__black">Видео</a></h2>
-                    <div class="cols" data-max="parent">
-                        <div class="col col--25">
-                            <div class="video-item">
-                                <div class="video-wrap">
-                                    <img src="img/video-1.png" alt="video-1" width="284" height="174" class="video-poster"
-                                    />
-                                    <div class="video-play"></div>
-                                </div>
-                                <div class="video-content" data-max="child">
-                                    <div class="video-title">Ортопедические товары для бущущих мам</div>
-                                    <div class="video-text">Врач ортопед-травматолог Морозов В.В. рассказывает об ортопедических изделиях
-                                        для беременных</div>
-                                    <div class="video-footer">
-                                        <div class="video-clock">05:02</div>
-                                        <div class="video-eye">12 450</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col--25">
-                            <div class="video-item">
-                                <div class="video-wrap">
-                                    <img src="img/v-2.png" alt="video-1" class="video-poster" width="284" height="174" />
-                                    <div class="video-play"></div>
-                                </div>
-                                <div class="video-content" data-max="child">
-                                    <div class="video-title">Выбираем ортопедическую обувь для детей</div>
-                                    <div class="video-text">Как правильно подобрать ортопедическую обувь ребенку?</div>
-                                    <div class="video-footer">
-                                        <div class="video-clock">05:02</div>
-                                        <div class="video-eye">12 450</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col--25">
-                            <div class="video-item">
-                                <div class="video-wrap">
-                                    <img src="img/v-3.png" alt="video-1" class="video-poster" />
-                                    <div class="video-play"></div>
-                                </div>
-                                <div class="video-content" data-max="child">
-                                    <div class="video-title">Профилактическая и лечебная обувь для детей</div>
-                                    <div class="video-text">Профилактическая и лечебная ортопедическая обувь для детей: отличия и
-                                        показания</div>
-                                    <div class="video-footer">
-                                        <div class="video-clock">05:02</div>
-                                        <div class="video-eye">12 450</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col--25">
-                            <div class="video-item">
-                                <div class="video-wrap">
-                                    <img src="img/v-3.png" alt="video-1" class="video-poster" />
-                                    <div class="video-play"></div>
-                                </div>
-                                <div class="video-content" data-max="child">
-                                    <div class="video-title">Профилактическая и лечебная обувь для детей</div>
-                                    <div class="video-text">Профилактическая и лечебная ортопедическая обувь для детей: отличия и
-                                        показания</div>
-                                    <div class="video-footer">
-                                        <div class="video-clock">05:02</div>
-                                        <div class="video-eye">12 450</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="usfl">
-                <div class="inside">
-                    <h2><a href="#" class="lnk__black">Полезная информация</a></h2>
-                    <div class="cols" data-max="parent">
-                        <div class="col col--25"><a class="usfl-item" href="#"><div class="usfl-wrap"><img src="img/v-5.png" alt="video-1" class="usfl-poster" /></div><div class="usfl-content" data-max="child"><div class="usfl-title">Корректоры осанки</div><div class="usfl-text">Врач ортопед-травматолог Морозов В.В. рассказывает об ортопедических изделиях для беременных</div><div class="usfl-footer"><div class="video-eye">12 450</div></div></div></a>
-                        </div>
-                        <div class="col col--25"><a class="usfl-item" href="#"><div class="usfl-wrap"><img src="img/v-6.png" alt="video-1" class="usfl-poster" /></div><div class="usfl-content" data-max="child"><div class="usfl-title">Выбираем ортопедическую обувь для детей</div><div class="usfl-text">Как правильно подобрать ортопедическую обувь ребенку?</div><div class="usfl-footer"><div class="video-eye">12 450</div></div></div></a>
-                        </div>
-                        <div class="col col--25"><a class="usfl-item" href="#"><div class="usfl-wrap"><img src="img/v-7.png" alt="video-1" class="usfl-poster" /></div><div class="usfl-content" data-max="child"><div class="usfl-title">Ортопедические товары для бущущих мам</div><div class="usfl-text">Врач ортопед-травматолог Морозов В.В. рассказывает об ортопедических изделиях для беременных	</div><div class="usfl-footer"><div class="video-eye">1 245</div></div></div></a>
-                        </div>
-                        <div class="col col--25"><a class="usfl-item" href="#"><div class="usfl-wrap"><img src="img/v-8.png" alt="video-1" class="usfl-poster" /></div><div class="usfl-content" data-max="child"><div class="usfl-title">Ортопедические товары для бущущих мам</div><div class="usfl-text">Врач ортопед-травматолог Морозов В.В. рассказывает об ортопедических изделиях для беременных	</div><div class="usfl-footer"><div class="video-eye">12 450</div></div></div></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="about about-promo clearfix">
-                <div class="inside">
-                    <div class="cols">
-                        <div class="col col--75">
-                            <div class="about__content">
-                                <h2>О компании</h2>
-                                <p class="promo__txt">Компания "Ортолайн", основанная в 1998 году, представляет собой розничную сеть ортопедических салонов по всей Москве. Мы работаем с ведущими производителями ортопедических изделий.
-                                </p>
-                                <p>У нас Вы найдете все необходимые ортопедические товары высокого качества
-                                    по доступным ценам. Мы предлагаем Вам большой выбор ортопедической обуви
-                                    для детей и взрослых, в том числе ортопедическую обувь от компании ORTEK,
-                                    ортопедические стельки, широкий ассортимент ортопедической обуви для женщин,
-                                    а также для людей, страдающих диабетом, ортопедические матрасы и подушки,
-                                    бандажи и другие товары для будущих мам. В наших салонах Вы также сможете
-                                    найти изделия из медицинского компрессионного трикотажа, средства реабилитации
-                                    после травм и операций, налокотники, наколенники, фиксаторы голеностопа;
-                                    костыли и трости, массажеры, товары корректирующей серии (корректоры осанки
-                                    - реклинаторы) и многое другое.</p>
-                                <p>В наших магазинах вы найдете качественную ортопедическую обувь отечественных
-                                    и зарубежных производителей: ORTMAN (Ортман), SANAGENS (Санадженс), VALLEVERDE
-                                    (Веллаверде), ORTEK (Ортек), KALKOS (Калькос), FIDELIO (Фиделио). В наших
-                                    магазинах вы также сможете приобрести терапевтическую (послеоперационную)
-                                    обувь.</p>
-                                <p>Сеть ортопедических салонов «Ортолайн» постоянно растет: Вы можете приобрести
-                                    необходимые товары более чем в 10 салонах, расположенных по всей Москве.
-                                    Наши ортопедические салоны есть на Юго-Западной, Петровско-Разумовской,
-                                    Марьино, Чертановской, Автозаводской, Ленинском Проспекте и в Перово. Недавно
-                                    отрылись новые магазины ортопедических товаров в Крылатском, на Октябрьском
-                                    поле, Бабушкинской и на Кутузовком проспекте.</p>
-                                <p>В любом из наших салонов опытные продавцы – консультанты помогут Вам правильно
-                                    выбрать необходимую продукцию, кроме того, в ортопедических салонах «Ортолайн»
-                                    вы можете получить бесплатную консультацию врача ортопеда – травматолога.</p>
-                            </div>
-                        </div>
-                        <div class="col col--25">
-                            <div class="about__side">
-                                <h2><a href="#" class="lnk__black">Новости</a></h2>
-                                <ul class="about__list news-aside">
-                                    <li>
-                                        <div class="news-aside__date">04 апр 2015</div>
-                                        <a class="news-aside__link" href="#">Открыли новый салон</a>
-                                        <div class="news-aside__summary">Приглашаем посетить новый ортопедический салон «Ортолайн», расположенный дресу: ул. Первомайская, д.112</div>
-                                    </li>
-                                    <li>
-                                        <div class="news-aside__date">04 апр 2015</div>
-                                        <a class="news-aside__link" href="#">Осенне-зимняя коллекция элегантной ортопедической обуви VALLEVERDE (Италия)</a>
-                                        <div class="news-aside__summary">Поступление новой коллекции ортопедической обуви из Италии</div>
-                                    </li>
-                                    <li>
-                                        <div class="news-aside__date">04 апр 2015</div>
-                                        <a class="news-aside__link" href="#">Зимняя ортопедическая обувь для детей</a>
-                                        <div class="news-aside__summary">В наших ортопедических салонах новые модели зимней ортопедической обуви для детей</div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <!--#all-->
-        <footer class="footer" id="footer">
-            <div class="inside">
-                <div class="footer-col footer-col--1">
-                    <h3>О КОМПАНИИ</h3>
-                    <ul>
-                        <li><a href="#">Ортолайн </a>
-                        </li>
-                        <li><a href="#">Новости </a>
-                        </li>
-                        <li><a href="#">Видео </a>
-                        </li>
-                        <li><a href="#">Полезная информация </a>
-                        </li>
-                        <li><a href="#">Производители </a>
-                        </li>
-                        <li><a href="#">Вакансии </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-col footer-col--2">
-                    <h3>ЛИЧНЫЙ КАБИНЕТ</h3>
-                    <ul>
-                        <li><a href="#">Корзина</a>
-                        </li>
-                        <li><a href="#">Личный кабинет</a>
-                        </li>
-                        <li><a href="#">Доставка заказа</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-col footer-col--3">
-                    <h3>Услуги</h3>
-                    <ul>
-                        <li><a href="#">Бесплатная консультация ортопеда </a>
-                        </li>
-                        <li><a href="#">Индивидуальное изготовление стелек </a>
-                        </li>
-                        <li><a href="#">Диагностика стоп </a>
-                        </li>
-                        <li><a href="#">Ответы на вопросы	</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-col footer-col--4">
-                    <h3>ПОЛЕЗНАЯ ИНФОРМАЦИЯ</h3>
-                    <ul>
-                        <li><a href="#">Где купить</a>
-                        </li>
-                        <li><a href="#">Салоны</a>
-                        </li>
-                        <li><a href="#">Видео</a>
-                        </li>
-                        <li><a href="#">Статьи</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-col footer-col--5">
-                    <div class="footer-socs">
-                        <div class="likes">
-                            <div class="sl">
-                                <div class="vkontakte"></div>
-                                <div class="twitter"></div>
-                                <div class="facebook"></div>
-                                <div class="odnoklassniki"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-adr">142784, Московская область,
-                        <br />Бизнес-Парк «Румянцево»,
-                        <br />офис 510А (Киевское шоссе, 500 м от МКАД).</div>
-                    <div class="footer-tel">Телефон/факс: <strong>(495) 988-95-05</strong>
-                        <br /><a href="mailto:info@orto.su">info@orto.su</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="inside">
-                    <div class="footer-left">© 2015. Услуги представляются ООО «Экзотик-Центр»</div>
-                    <div class="footer-right">Создание сайта — <a href="http://nikoland.ru" target="_blank">nikoland</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </body>
-    <!--body -->
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="product__news clearfix">
+				<div class="inside">
+					<h3 class="product__sub-title">Наши новинки</h3>
+					<div class="product__news-slider js-product__news-slider">
+						<div>
+							<a href="#0">
+								<img src="pic/pic_22.jpg" alt="" width="130" height="110">
+								<p>Детская ортопедическая обувь МАЙЯ</p>
+								<p class="price orange">6 200<span class="rouble">p</span></p>
+							</a>
+						</div>
+						<div>
+							<a href="#0">
+								<img src="pic/pic_23.jpg" alt="" width="130" height="110">
+								<p>Детская ортопедическая обувь Ангел</p>
+								<p class="price orange">6 200<span class="rouble">p</span></p>
+							</a>
+						</div>
+						<div>
+							<a href="#0">
+								<img src="pic/pic_24.jpg" alt="" width="130" height="110">
+								<p>Ортопедическая обувь КАНАДА 6651</p>
+								<p class="price orange">6 200<span class="rouble">p</span></p>
+							</a>
+						</div>
+						<div>
+							<a href="#0">
+								<img src="pic/pic_25.jpg" alt="" width="130" height="110">
+								<p>Детская ортопедическая обувь Ангел</p>
+								<p class="price orange">6 200<span class="rouble">p</span></p>
+							</a>
+						</div>
+						<div>
+							<a href="#0">
+								<img src="pic/pic_23.jpg" alt="" width="130" height="110">
+								<p>Ортопедическая обувь КАНАДА 6651</p>
+								<p class="price orange">6 200<span class="rouble">p</span></p>
+							</a>
+						</div>
+						<div>
+							<a href="#0">
+								<img src="pic/pic_24.jpg" alt="" width="130" height="110">
+								<p>Ортопедическая обувь КАНАДА 6651</p>
+								<p class="price orange">6 200<span class="rouble">p</span></p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="dvnt">
+				<div class="inside">
+					<div class="dvnt-wrap">
+						<h2 class="dvnt__title"><span class="dvnt__title_sub-title">Наши преимущества</span></h2>
+						<div class="dvnt-oh">
+							<div class="cols" data-max="parent">
+								<div class="col col--25" data-max="child">
+									<div class="dvnt-item">
+										<div class="dvnt-image">
+											<img src="img/a-1.png" alt="a-1" />
+										</div>
+										<div class="dvnt-text">
+											<p>Бесплатная консультация ортопеда-травматолога</p>
+										</div>
+									</div>
+								</div>
+								<div class="col col--25" data-max="child">
+									<div class="dvnt-item">
+										<div class="dvnt-image">
+											<img src="img/a-2.png" alt="a-1" />
+										</div>
+										<div class="dvnt-text">
+											<p>Все продавцы консультанты имеют мед. образование</p>
+										</div>
+									</div>
+								</div>
+								<div class="col col--25" data-max="child">
+									<div class="dvnt-item">
+										<div class="dvnt-image">
+											<img src="img/a-3.png" alt="a-1" />
+										</div>
+										<div class="dvnt-text">
+											<p>Компенсация ДСЗН</p>
+										</div>
+									</div>
+								</div>
+								<div class="col col--25" data-max="child">
+									<div class="dvnt-item">
+										<div class="dvnt-image">
+											<img src="img/a-4.png" alt="a-1" />
+										</div>
+										<div class="dvnt-text">
+											<p>Дисконтная программа</p>
+										</div>
+									</div>
+								</div>
+								<div class="col col--25" data-max="child">
+									<div class="dvnt-item">
+										<div class="dvnt-image">
+											<img src="img/a-5.png" alt="a-1" />
+										</div>
+										<div class="dvnt-text">
+											<p>Скидки!</p>
+										</div>
+									</div>
+								</div>
+								<div class="col col--25" data-max="child">
+									<div class="dvnt-item">
+										<div class="dvnt-image">
+											<img src="img/a-6.png" alt="a-1" />
+										</div>
+										<div class="dvnt-text">
+											<p>Оплата
+												<br />кредитной картой</p>
+										</div>
+									</div>
+								</div>
+								<div class="col col--25" data-max="child">
+									<div class="dvnt-item">
+										<div class="dvnt-image">
+											<img src="img/a-7.png" alt="a-1" />
+										</div>
+										<div class="dvnt-text">
+											<p>Доставка
+												<br />на следующий день!</p>
+										</div>
+									</div>
+								</div>
+								<div class="col col--25" data-max="child">
+									<div class="dvnt-item">
+										<div class="dvnt-image">
+											<img src="img/a-8.png" alt="a-1" />
+										</div>
+										<div class="dvnt-text">
+											<p>Доставка по России</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="faqmain">
+				<div class="inside">
+					<h2 class="faqmain__title"><a href="#" class="lnk__black">Вопросы и ответы</a></h2>
+					<div class="cols">
+						<div class="col col--50">
+							<div class="faqmain-item">
+								<div class="faqmain-number">Вопрос № 967847</div>
+								<div class="faqmain-question">
+									<p>Здравствуйте, у меня травма колена, пока еще не сказали какая. Назначили
+										МРТ и бандаж коленный мягкий с силиконовым кольцом для надколенника Genumedi
+										компании Medi expert. Стоит он в среднем 3500 руб. Есть ли более дешевые
+										его аналоги?</p>
+								</div>
+								<div class="faqmain-answer">
+									<p>Более экономичный вариант наколенника с силиконовым кольцом - <a href="#">Бандаж на коленный сустав</a> (Артикул:
+										NKN 209) - 1120 рублей. Но более качественный и комфортный наколенник,
+										произведенный в Германии - Бандаж на коленный сустав (Артикул: 50K15) -
+										3300 рублей.</p>
+									<div class="faqmain-doctor">
+										<div class="faqmain-photo">
+											<img src="img/si.png" alt="p-4" />
+										</div>
+										<div class="faqmain-name">Сергей Ивановович</div>
+										<div class="faqmain-position">Врач-ортопед</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col col--50">
+							<div class="faqmain-item">
+								<div class="faqmain-number">Вопрос № 967847</div>
+								<div class="faqmain-question">
+									<p>Здравствуйте, у меня травма колена, пока еще не сказали какая. Назначили
+										МРТ и бандаж коленный мягкий с силиконовым кольцом для надколенника Genumedi
+										компании Medi expert. Стоит он в среднем 3500 руб. Есть ли более дешевые
+										его аналоги?</p>
+								</div>
+								<div class="faqmain-answer">
+									<p>Более экономичный вариант наколенника с силиконовым кольцом - <a href="#">Бандаж на коленный сустав</a> (Артикул:
+										NKN 209) - 1120 рублей. Но более качественный и комфортный наколенник,
+										произведенный в Германии - Бандаж на коленный сустав (Артикул: 50K15) -
+										3300 рублей.</p>
+									<div class="faqmain-doctor">
+										<div class="faqmain-photo">
+											<img src="img/si.png" alt="p-4" />
+										</div>
+										<div class="faqmain-name">Сергей Ивановович</div>
+										<div class="faqmain-position">Врач-ортопед</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="video bg_01 video_main">
+				<div class="inside">
+					<h2><a href="#" class="lnk__black">Видео</a></h2>
+					<div class="cols" data-max="parent">
+						<div class="col col--25">
+							<div class="video-item">
+								<div class="video-wrap">
+									<img src="img/video-1.png" alt="video-1" width="284" height="174" class="video-poster"
+									/>
+									<div class="video-play"></div>
+								</div>
+								<div class="video-content" data-max="child">
+									<div class="video-title">Ортопедические товары для бущущих мам</div>
+									<div class="video-text">Врач ортопед-травматолог Морозов В.В. рассказывает об ортопедических изделиях
+										для беременных</div>
+									<div class="video-footer">
+										<div class="video-clock">05:02</div>
+										<div class="video-eye">12 450</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col col--25">
+							<div class="video-item">
+								<div class="video-wrap">
+									<img src="img/v-2.png" alt="video-1" class="video-poster" width="284" height="174" />
+									<div class="video-play"></div>
+								</div>
+								<div class="video-content" data-max="child">
+									<div class="video-title">Выбираем ортопедическую обувь для детей</div>
+									<div class="video-text">Как правильно подобрать ортопедическую обувь ребенку?</div>
+									<div class="video-footer">
+										<div class="video-clock">05:02</div>
+										<div class="video-eye">12 450</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col col--25">
+							<div class="video-item">
+								<div class="video-wrap">
+									<img src="img/v-3.png" alt="video-1" class="video-poster" />
+									<div class="video-play"></div>
+								</div>
+								<div class="video-content" data-max="child">
+									<div class="video-title">Профилактическая и лечебная обувь для детей</div>
+									<div class="video-text">Профилактическая и лечебная ортопедическая обувь для детей: отличия и
+										показания</div>
+									<div class="video-footer">
+										<div class="video-clock">05:02</div>
+										<div class="video-eye">12 450</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col col--25">
+							<div class="video-item">
+								<div class="video-wrap">
+									<img src="img/v-3.png" alt="video-1" class="video-poster" />
+									<div class="video-play"></div>
+								</div>
+								<div class="video-content" data-max="child">
+									<div class="video-title">Профилактическая и лечебная обувь для детей</div>
+									<div class="video-text">Профилактическая и лечебная ортопедическая обувь для детей: отличия и
+										показания</div>
+									<div class="video-footer">
+										<div class="video-clock">05:02</div>
+										<div class="video-eye">12 450</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="usfl">
+				<div class="inside">
+					<h2><a href="#" class="lnk__black">Полезная информация</a></h2>
+					<div class="cols" data-max="parent">
+						<div class="col col--25"><a class="usfl-item" href="#"><div class="usfl-wrap"><img src="img/v-5.png" alt="video-1" class="usfl-poster" /></div><div class="usfl-content" data-max="child"><div class="usfl-title">Корректоры осанки</div><div class="usfl-text">Врач ортопед-травматолог Морозов В.В. рассказывает об ортопедических изделиях для беременных</div><div class="usfl-footer"><div class="video-eye">12 450</div></div></div></a>
+						</div>
+						<div class="col col--25"><a class="usfl-item" href="#"><div class="usfl-wrap"><img src="img/v-6.png" alt="video-1" class="usfl-poster" /></div><div class="usfl-content" data-max="child"><div class="usfl-title">Выбираем ортопедическую обувь для детей</div><div class="usfl-text">Как правильно подобрать ортопедическую обувь ребенку?</div><div class="usfl-footer"><div class="video-eye">12 450</div></div></div></a>
+						</div>
+						<div class="col col--25"><a class="usfl-item" href="#"><div class="usfl-wrap"><img src="img/v-7.png" alt="video-1" class="usfl-poster" /></div><div class="usfl-content" data-max="child"><div class="usfl-title">Ортопедические товары для бущущих мам</div><div class="usfl-text">Врач ортопед-травматолог Морозов В.В. рассказывает об ортопедических изделиях для беременных	</div><div class="usfl-footer"><div class="video-eye">1 245</div></div></div></a>
+						</div>
+						<div class="col col--25"><a class="usfl-item" href="#"><div class="usfl-wrap"><img src="img/v-8.png" alt="video-1" class="usfl-poster" /></div><div class="usfl-content" data-max="child"><div class="usfl-title">Ортопедические товары для бущущих мам</div><div class="usfl-text">Врач ортопед-травматолог Морозов В.В. рассказывает об ортопедических изделиях для беременных	</div><div class="usfl-footer"><div class="video-eye">12 450</div></div></div></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="about about-promo clearfix">
+				<div class="inside">
+					<div class="cols">
+						<div class="col col--75">
+							<div class="about__content">
+								<h2>О компании</h2>
+								<p class="promo__txt">Компания "Ортолайн", основанная в 1998 году, представляет собой розничную сеть ортопедических салонов по всей Москве. Мы работаем с ведущими производителями ортопедических изделий.
+								</p>
+								<p>У нас Вы найдете все необходимые ортопедические товары высокого качества
+									по доступным ценам. Мы предлагаем Вам большой выбор ортопедической обуви
+									для детей и взрослых, в том числе ортопедическую обувь от компании ORTEK,
+									ортопедические стельки, широкий ассортимент ортопедической обуви для женщин,
+									а также для людей, страдающих диабетом, ортопедические матрасы и подушки,
+									бандажи и другие товары для будущих мам. В наших салонах Вы также сможете
+									найти изделия из медицинского компрессионного трикотажа, средства реабилитации
+									после травм и операций, налокотники, наколенники, фиксаторы голеностопа;
+									костыли и трости, массажеры, товары корректирующей серии (корректоры осанки
+									- реклинаторы) и многое другое.</p>
+								<p>В наших магазинах вы найдете качественную ортопедическую обувь отечественных
+									и зарубежных производителей: ORTMAN (Ортман), SANAGENS (Санадженс), VALLEVERDE
+									(Веллаверде), ORTEK (Ортек), KALKOS (Калькос), FIDELIO (Фиделио). В наших
+									магазинах вы также сможете приобрести терапевтическую (послеоперационную)
+									обувь.</p>
+								<p>Сеть ортопедических салонов «Ортолайн» постоянно растет: Вы можете приобрести
+									необходимые товары более чем в 10 салонах, расположенных по всей Москве.
+									Наши ортопедические салоны есть на Юго-Западной, Петровско-Разумовской,
+									Марьино, Чертановской, Автозаводской, Ленинском Проспекте и в Перово. Недавно
+									отрылись новые магазины ортопедических товаров в Крылатском, на Октябрьском
+									поле, Бабушкинской и на Кутузовком проспекте.</p>
+								<p>В любом из наших салонов опытные продавцы – консультанты помогут Вам правильно
+									выбрать необходимую продукцию, кроме того, в ортопедических салонах «Ортолайн»
+									вы можете получить бесплатную консультацию врача ортопеда – травматолога.</p>
+							</div>
+						</div>
+						<div class="col col--25">
+							<div class="about__side">
+								<h2><a href="#" class="lnk__black">Новости</a></h2>
+								<ul class="about__list news-aside">
+									<li>
+										<div class="news-aside__date">04 апр 2015</div>
+										<a class="news-aside__link" href="#">Открыли новый салон</a>
+										<div class="news-aside__summary">Приглашаем посетить новый ортопедический салон «Ортолайн», расположенный дресу: ул. Первомайская, д.112</div>
+									</li>
+									<li>
+										<div class="news-aside__date">04 апр 2015</div>
+										<a class="news-aside__link" href="#">Осенне-зимняя коллекция элегантной ортопедической обуви VALLEVERDE (Италия)</a>
+										<div class="news-aside__summary">Поступление новой коллекции ортопедической обуви из Италии</div>
+									</li>
+									<li>
+										<div class="news-aside__date">04 апр 2015</div>
+										<a class="news-aside__link" href="#">Зимняя ортопедическая обувь для детей</a>
+										<div class="news-aside__summary">В наших ортопедических салонах новые модели зимней ортопедической обуви для детей</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!--#all-->
+		<footer class="footer" id="footer">
+			<div class="inside">
+				<div class="footer-col footer-col--1">
+					<h3>О КОМПАНИИ</h3>
+					<ul>
+						<li><a href="#">Ортолайн </a>
+						</li>
+						<li><a href="#">Новости </a>
+						</li>
+						<li><a href="#">Видео </a>
+						</li>
+						<li><a href="#">Полезная информация </a>
+						</li>
+						<li><a href="#">Производители </a>
+						</li>
+						<li><a href="#">Вакансии </a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col footer-col--2">
+					<h3>ЛИЧНЫЙ КАБИНЕТ</h3>
+					<ul>
+						<li><a href="#">Корзина</a>
+						</li>
+						<li><a href="#">Личный кабинет</a>
+						</li>
+						<li><a href="#">Доставка заказа</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col footer-col--3">
+					<h3>Услуги</h3>
+					<ul>
+						<li><a href="#">Бесплатная консультация ортопеда </a>
+						</li>
+						<li><a href="#">Индивидуальное изготовление стелек </a>
+						</li>
+						<li><a href="#">Диагностика стоп </a>
+						</li>
+						<li><a href="#">Ответы на вопросы	</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col footer-col--4">
+					<h3>ПОЛЕЗНАЯ ИНФОРМАЦИЯ</h3>
+					<ul>
+						<li><a href="#">Где купить</a>
+						</li>
+						<li><a href="#">Салоны</a>
+						</li>
+						<li><a href="#">Видео</a>
+						</li>
+						<li><a href="#">Статьи</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col footer-col--5">
+					<div class="footer-socs">
+						<div class="likes">
+							<div class="sl">
+								<div class="vkontakte"></div>
+								<div class="twitter"></div>
+								<div class="facebook"></div>
+								<div class="odnoklassniki"></div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-adr">142784, Московская область,
+						<br />Бизнес-Парк «Румянцево»,
+						<br />офис 510А (Киевское шоссе, 500 м от МКАД).</div>
+					<div class="footer-tel">Телефон/факс: <strong>(495) 988-95-05</strong>
+						<br /><a href="mailto:info@orto.su">info@orto.su</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="inside">
+					<div class="footer-left">© 2015. Услуги представляются ООО «Экзотик-Центр»</div>
+					<div class="footer-right">Создание сайта — <a href="http://nikoland.ru" target="_blank">nikoland</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="form__popup form__popup_center callback__popup" id="callbackPopup">
+			<h3>Заказ звонка</h3>
+			<form class="form" action="index_submit" method="get" accept-charset="utf-8">	    	
+				<div class="field__cell">
+					<input type="text" placeholder="Представьтесь пожалуйста">
+				</div>
+				<div class="field__cell">
+					<input type="text" placeholder="Телефон">
+				</div>
+				<div class="field__cell">
+					<textarea name="comment" id="inp_03" cols="30" rows="10" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="field__cell field__cell_button">
+					<button class="button button--blue">Заказать</button>
+				</div>
+			</form>
+			<span class="button b-close"><i></i></span>            
+		</div>
+
+		<div class="form__popup form__popup_center login__popup" id="loginPopup">
+			<h3>Вход</h3>
+			<form class="form" action="index_submit" method="get" accept-charset="utf-8">
+				<div class="field__cell">
+					<input type="text" placeholder="Логин">
+				</div>
+				<div class="field__cell">
+					<input type="text" placeholder="Пароль">
+				</div>
+				<div class="form__links">
+					<p><a href="#0" class="gray">Забыли пароль?</a></p>
+					<p><a href="#0">Регистрация</a></p>
+				</div>
+				<div class="field__cell field__cell_button">
+					<button class="button button--blue">Войти</button>
+				</div>
+			</form>
+			<span class="button b-close"><i></i></span>
+		</div>
+	</body>
+	<!--body -->
 </html>

@@ -85,7 +85,7 @@
 }
 .product__amount-btn{
 	display: inline-block;
-	padding: 0px 6px;
+	padding: 0px 8px;
 	height: 30px;
 	line-height: 30px;
 	vertical-align: middle;
@@ -97,6 +97,12 @@
 		vertical-align: middle;
 		width: 14px;
 		height: 17px;
+	}
+	&.minus{
+		border-right: 1px solid $gray;
+	}
+	&.plus{
+		border-left: 1px solid $gray;
 	}
 	&.minus i{
 		background: transparent url('../ico/sprite_01.png') -181px 4px no-repeat;
@@ -110,11 +116,9 @@
 }
 .product__amount-sum{
 	display: inline-block;
-	border-left: 1px solid $gray;
-	border-right: 1px solid $gray;
 	width: 25px;
-	padding: 0px 4px;
 	height: 30px;
+	padding: 0px 2px;
 	line-height: 30px;
 	font-size: 18px;
 	vertical-align: middle;
@@ -432,10 +436,12 @@ h4.product__sub-title{
 	margin-top: -10px;
 	h3{
 		font-size: 15px;
+		line-height: 36px;
 		margin-bottom: 6px;
 	}
 	p{
-		margin-bottom: 6px;		
+		margin-bottom: 6px;
+		line-height: 20px;
 	}
 	a{
 		color: $blue;

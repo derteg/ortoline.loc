@@ -49,8 +49,9 @@ $sprite02: url('../ico/sprite_02.png');
 @import "gui/search__menu.scss";
 @import "gui/paginator.scss";
 @import "gui/services__img.scss";
-@import "gui/checkboxes__radio.scss";
 @import "gui/accordion.scss";
+@import "gui/popup.scss";
+@import "gui/form.scss";
 
 @import "header.scss";
 @import "footer.scss";
@@ -85,6 +86,8 @@ $sprite02: url('../ico/sprite_02.png');
 @import "about/about.scss";
 
 @import "conditions.scss";
+
+@import "basket.scss";
 
 @import "media_1024/header__1024.scss";
 

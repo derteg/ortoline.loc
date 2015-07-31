@@ -1,21 +1,20 @@
 /*
-Error: Undefined variable: "$lightGray".
-        on line 10 of c:/MAMP/htdocs/ortoline.loc/sass/gui/checkboxes__radio.scss
+Error: Undefined variable: "$brdLnk5".
+        on line 5 of c:/MAMP/htdocs/ortoline.loc/sass/basket.scss
 
-5:     display:inline-block;
-6:     width:20px;
-7:     height:20px;
-8:     margin:-1px 4px 0 0;
-9:     vertical-align:middle;
-10:     background-color: $lightGray;
-11:     cursor:pointer;
-12: }
-13: .chk-cust:checked + .chk-cust__label .ico {
-14:     background: $lightGray $sprite -380px -55px no-repeat;
-15: }
+1: .basket__cont{
+2: 	margin-bottom: 70px;
+3: }
+4: .basket__row{
+5: 	border-bottom: $brdLnk5;
+6: 	padding-bottom: 34px;
+7: 	margin-bottom: 34px;
+8: 	text-align: justify;
+9: 	line-height: 0;
+10: 	font-size: 0px;
 
 Backtrace:
-c:/MAMP/htdocs/ortoline.loc/sass/gui/checkboxes__radio.scss:10
+c:/MAMP/htdocs/ortoline.loc/sass/basket.scss:5
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/script/tree/node.rb:50:in `perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
@@ -69,4 +68,4 @@ c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.6/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$lightGray\".\A         on line 10 of c:/MAMP/htdocs/ortoline.loc/sass/gui/checkboxes__radio.scss\A \A 5:     display:inline-block;\A 6:     width:20px;\A 7:     height:20px;\A 8:     margin:-1px 4px 0 0;\A 9:     vertical-align:middle;\A 10:     background-color: $lightGray;\A 11:     cursor:pointer;\A 12: }\A 13: .chk-cust:checked + .chk-cust__label .ico {\A 14:     background: $lightGray $sprite -380px -55px no-repeat;\A 15: }"; }
+  content: "Error: Undefined variable: \"$brdLnk5\".\A         on line 5 of c:/MAMP/htdocs/ortoline.loc/sass/basket.scss\A \A 1: .basket__cont{\A 2: 	margin-bottom: 70px;\A 3: }\A 4: .basket__row{\A 5: 	border-bottom: $brdLnk5;\A 6: 	padding-bottom: 34px;\A 7: 	margin-bottom: 34px;\A 8: 	text-align: justify;\A 9: 	line-height: 0;\A 10: 	font-size: 0px;"; }

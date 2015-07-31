@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Офрмление заказа :: Ortoline</title>
+
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		
+		<script src="js/libs/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/libs/jquery.min.js">\x3C/script>')</script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+		<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+		<script src="js/libs/plugins.js"></script>
+		<script src="js/scripts.js"></script>
+	</head>
+	
+	<body>
+		<header class="header js-header_fix brd__bottom">
+			<div class="inside">
+				<div class="header__wrap clearfix">
+					<div class="header__left">
+						<a class="logo__lnk" href="links.html"><img src="img/logo.png" alt="logo" class="logo" /></a>
+						
+						<div class="header__left_wrap">
+							<div class="header__contact">
+								<div class="header__tel">+7 495 988-95-05</div>
+								<div class="header__call"><a class="lnk dotted js-lnk_popup" data-popup-type="callback" href="#0">Заказать звонок</a></div>
+							</div>
+							
+							<div class="mainmenu__buttons mainmenu__buttons_centr">
+								<a class="button button--blue" href="#0"><span>Каталог товаров</span></a>
+								<a class="button button--orange" href="#0"><img src="img/ic-location.png" alt="ic-location" width="12" /><span>Наши салоны</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="header__right">
+						<div class="header__right_cont">
+							<a class="header__right_btn autorized profile-btn" data-popup-type="login" href="#">
+								<div class="profile-btn__pic"></div>
+								<span class="profile-btn__text">Репин<br/> <span class="sub-text">Сергей Васильевич</span></span>
+							</a>
+							<a class="header__right_btn basket-btn" href="#">
+								<div class="basket-btn__badge">
+									<span class="pic"></span>
+									<span class="num">5</span>
+								</div>
+								<div class="basket-btn__cont">
+									<p class="basket__label">Заказ на сумму </p>
+									<p class="basket__price">2 650 <span class="b-rub">Р</span></p>
+								</div>
+							</a>                            
+						</div>
+					</div>
+				</div>
+			
+				<nav class="mainmenu clearfix">
+					<div class="mainmenu__btn-all"><a href="#0" class="button button--gray"><span class="ico"></span>Все разделы сайта</a></div>
+					<ul class="mainmenu__list">
+						<li class="mainmenu__item">
+							<a class="lnk__black mainmenu__link" href="#0">Компания</a>
+						</li>
+						<li class="mainmenu__item">
+							<a class="lnk__black mainmenu__link" href="#0">Услуги</a>
+						</li>
+						<li class="mainmenu__item">
+							<a class="lnk__black mainmenu__link" href="#0">Информация</a>
+						</li>
+						<li class="mainmenu__item">
+							<a class="lnk__black mainmenu__link" href="#0">Доставка</a>
+						</li>
+						<li class="mainmenu__item">
+							<a class="lnk__black mainmenu__link" href="#0">Контакты </a>
+						</li>
+					</ul>
+					<div class="mainmenu__buttons mainmenu__buttons_fr">
+						<a class="button button--blue" href="#0"><span>Каталог товаров</span></a>
+						<a class="button button--orange" href="#0"><img src="img/ic-location.png" alt="ic-location" width="12" /><span>Наши салоны</span></a>
+					</div>
+				</nav>
+			</div>
+		</header>
+		
+		<div id="all">
+			<section class="basket">
+				<div class="inside">
+					<div class="breadcrumbs clearfix">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link">Главная</a></li>
+							<li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link">Корзина</a></li>
+							<li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link current">Оформление заказа</a></li>
+						</ul>
+					</div>
+					
+					<h1 class="title_h1">Оформление заказа</h1>
+					<div class="basket__cont col--66">
+						<div class="basket__row cols">
+							<div class="basket__cell col basket__cell-product clearfix">
+								<div class="pic fl"><img src="pic/pic_68.jpg" height="35" width="58" alt=""></div>
+								<p class="text">Детская ортопедическая обувь ORTEK (утепленные). Бренд: Valleverde</p>
+							</div>
+							<div class="basket__cell product__amount basket__cell-amount">
+								<p class="product__amount-name">Кол-во:</p>
+								<div class="product__amount-wrap">
+									<span class="product__amount-sum sum">1</span>
+								</div>
+							</div>
+							<div class="basket__cell col basket__cell-price">
+								<p class="title">Стоимость</p>
+								<p class="price">2 990 <span class="b-rub">Р</span></p>
+							</div>
+						</div>
+
+						<div class="basket__row cols">
+							<div class="basket__cell col basket__cell-product clearfix">
+								<div class="pic fl"><img src="pic/pic_69.jpg" height="32" width="58" alt=""></div>
+								<p class="text">Детская ортопедическая обувь ORTEK (утепленные). Бренд: Valleverde</p>
+							</div>
+							<div class="basket__cell product__amount basket__cell-amount">
+								<p class="product__amount-name">Кол-во:</p>
+								<div class="product__amount-wrap">
+									<span class="product__amount-sum sum">1</span>
+								</div>
+							</div>
+							<div class="basket__cell col basket__cell-price">
+								<p class="title">Стоимость</p>
+								<p class="price">2 990 <span class="b-rub">Р</span></p>
+							</div>
+						</div>
+
+						<div class="basket__row cols">
+							<div class="basket__cell col basket__cell-product clearfix">
+								<div class="pic fl"><img src="pic/pic_70.jpg" height="55" width="56" alt=""></div>
+								<p class="text">Детская ортопедическая обувь ORTEK (утепленные). Бренд: Valleverde</p>
+							</div>
+							<div class="basket__cell product__amount basket__cell-amount">
+								<p class="product__amount-name">Кол-во:</p>
+								<div class="product__amount-wrap">
+									<span class="product__amount-sum sum">1</span>
+								</div>
+							</div>
+							<div class="basket__cell col basket__cell-price">
+								<p class="title">Стоимость</p>
+								<p class="price">2 990 <span class="b-rub">Р</span></p>
+							</div>
+						</div>
+
+						<div class="basket__row basket__row-final">
+							<p><span class="text">Налог</span><span class="num fsz_01">0%</span></p>
+							<p><span class="text">Стоимость доставки</span><span class="num fsz_02">30 <span class="b-rub">Р</span></span></p>
+							<p><span class="text">Общая сумма заказа</span><span class="num fsz_03">2 990 <span class="b-rub">Р</span></span></p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="delivery">
+				<form action="#0" class="form form__tow-col cols">
+					<div class="delivery_row bg_01">
+						<div class="inside">
+							<h4 class="form__title">Информация для оплаты и доставки заказа</h4>
+							<fieldset class="field__row col col--50">
+								<div class="field__cell">
+									<label for="inp_01">Представьтесь пожалуйста</label>
+									<input type="text" id="inp_01">
+								</div>
+								<div class="field__cell">
+									<label for="inp_02">Email</label>
+									<input type="text" id="inp_02">
+								</div>
+								<div class="field__cell">
+									<label for="inp_03">Телефон</label>
+									<input type="text" id="inp_03">
+								</div>
+								<div class="field__cell">
+									<label for="inp_04">Индекс</label>
+									<input type="text" id="inp_04">
+								</div>
+								<div class="field__cell">
+									<label for="inp_05">Город</label>
+									<input type="text" id="inp_05">
+								</div>
+							</fieldset>
+
+							<fieldset class="field__row col col--50">
+								<div class="field__cell">
+									<label for="inp_06">Адрес доставки</label>
+									<textarea name="goup_03" id="inp_06"></textarea>
+								</div>
+								<div class="field__cell">
+									<label for="inp_07">Ваш комментарий к заказу</label>
+									<textarea name="goup_03" id="inp_07"></textarea>
+								</div>
+							</fieldset>
+						</div>
+					</div>
+
+					<div class="delivery_row">
+						<div class="inside">
+							<fieldset class="cols">
+								<div class="col col--50">
+									<legend>Варианты доставки</legend>
+									<div class="field__cell radio__cell">
+										<input class="radio-cust" id="radio_01" type="radio" name="group_01" checked>
+										<label class="radio-cust__label" for="radio_01"><span class="ico"></span><strong>Доставка курьером по Москве</strong> <span class="text">Срок доставки от 1 до 2 дней<br/> Стоимость 300 руб<br/> Доставка осуществляется на следующий день.</span></label>
+									</div>
+
+									<div class="field__cell radio__cell">
+										<input class="radio-cust" id="radio_02" type="radio" name="group_01" >
+										<label class="radio-cust__label" for="radio_02"><span class="ico"></span><strong>Почтовая пересылка (EMS)</strong> <span class="text">Срок доставки от 7 до 15 дней <br/>Стоимость 800 руб<br/>Доставка по всей территории России.</span></label>
+									</div>
+
+									<div class="field__cell radio__cell">
+										<input class="radio-cust" id="radio_03" type="radio" name="group_01" >
+										<label class="radio-cust__label" for="radio_03"><span class="ico"></span><strong>Самовывоз из салона</strong> <span class="text">Вы можете самостоятельно забрать заказ в одном из салонов ОРТОЛАЙН.</span></label>
+									</div>
+								</div>
+								<div class="col col--50">
+									<legend>Способы оплаты</legend>
+									<div class="field__cell radio__cell">
+										<input class="radio-cust" id="radio_04" type="radio" name="group_02" checked>
+										<label class="radio-cust__label" for="radio_04"><span class="ico"></span><strong>Доставка курьером по Москве</strong> <span class="text">Срок доставки от 1 до 2 дней Стоимость 300 руб Доставка осуществляется на следующий день.</span></label>
+									</div>
+
+									<div class="field__cell radio__cell">
+										<input class="radio-cust" id="radio_05" type="radio" name="group_02" >
+										<label class="radio-cust__label" for="radio_05"><span class="ico"></span><strong>Доставка курьером по Москве</strong> <span class="text">Срок доставки от 1 до 2 дней Стоимость 300 руб Доставка осуществляется на следующий день.</span></label>
+									</div>
+								</div>
+							</fieldset>
+						</div>
+					</div>
+
+					<div class="field__row center">
+						<div class="field__cell">
+						    <button type="button" class="button button--blue button--round form__btn">Зарегистрироваться</button>
+						</div>
+					</div>
+				</form>
+			</section>
+		</div>
+		
+		<footer class="footer" id="footer">
+			<div class="inside">
+				<div class="footer-col footer-col--1">
+					<h3>О КОМПАНИИ</h3>
+					<ul>
+						<li><a href="#0">Ортолайн </a>
+						</li>
+						<li><a href="#0">Новости </a>
+						</li>
+						<li><a href="#0">Видео </a>
+						</li>
+						<li><a href="#0">Полезная информация </a>
+						</li>
+						<li><a href="#0">Производители </a>
+						</li>
+						<li><a href="#0">Вакансии </a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col footer-col--2">
+					<h3>ЛИЧНЫЙ КАБИНЕТ</h3>
+					<ul>
+						<li><a href="#0">Корзина</a>
+						</li>
+						<li><a href="#0">Личный кабинет</a>
+						</li>
+						<li><a href="#0">Доставка заказа</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col footer-col--3">
+					<h3>Услуги</h3>
+					<ul>
+						<li><a href="#0">Бесплатная консультация ортопеда </a>
+						</li>
+						<li><a href="#0">Индивидуальное изготовление стелек </a>
+						</li>
+						<li><a href="#0">Диагностика стоп </a>
+						</li>
+						<li><a href="#0">Ответы на вопросы  </a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col footer-col--4">
+					<h3>ПОЛЕЗНАЯ ИНФОРМАЦИЯ</h3>
+					<ul>
+						<li><a href="#0">Где купить</a>
+						</li>
+						<li><a href="#0">Салоны</a>
+						</li>
+						<li><a href="#0">Видео</a>
+						</li>
+						<li><a href="#0">Статьи</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col footer-col--5">
+					<div class="footer-socs">
+						<div class="likes">
+							<div class="sl">
+								<div class="vkontakte"></div>
+								<div class="twitter"></div>
+								<div class="facebook"></div>
+								<div class="odnoklassniki"></div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-adr">142784, Московская область,
+						<br />Бизнес-Парк «Румянцево»,
+						<br />офис 510А (Киевское шоссе, 500 м от МКАД).</div>
+					<div class="footer-tel">Телефон/факс: <strong>(495) 988-95-05</strong>
+						<br /><a href="mailto:info@orto.su">info@orto.su</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="inside">
+					<div class="footer-left">© 2015. Услуги представляются ООО «Экзотик-Центр»</div>
+					<div class="footer-right">Создание сайта — <a href="http://nikoland.ru" target="_blank">nikoland</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="form__popup form__popup_center callback__popup" id="callbackPopup">
+			<h3>Заказ звонка</h3>
+			<form class="form" action="index_submit" method="get" accept-charset="utf-8">           
+				<div class="field__cell">
+					<input type="text" placeholder="Представьтесь пожалуйста">
+				</div>
+				<div class="field__cell">
+					<input type="text" placeholder="Телефон">
+				</div>
+				<div class="field__cell">
+					<textarea name="comment" id="inp_N01" cols="30" rows="10" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="field__cell field__cell_button">
+					<button class="button button--blue">Заказать</button>
+				</div>
+			</form>
+			<span class="button b-close"><i></i></span>            
+		</div>
+
+		<div class="form__popup form__popup_center login__popup" id="loginPopup">
+			<h3>Вход</h3>
+			<form class="form" action="index_submit" method="get" accept-charset="utf-8">
+				<div class="field__cell">
+					<input type="text" placeholder="Логин">
+				</div>
+				<div class="field__cell">
+					<input type="text" placeholder="Пароль">
+				</div>
+				<div class="form__links">
+					<p><a href="#0" class="gray">Забыли пароль?</a></p>
+					<p><a href="#0">Регистрация</a></p>
+				</div>
+				<div class="field__cell field__cell_button">
+					<button class="button button--blue">Войти</button>
+				</div>
+			</form>
+			<span class="button b-close"><i></i></span>
+		</div>
+	</body>
+	<!--body -->
+
+</html>
