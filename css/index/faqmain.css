@@ -1,0 +1,44 @@
+/* line 1, ../../sass/index/faqmain.scss */
+.faqmain { position: relative; overflow: hidden; }
+
+/* line 5, ../../sass/index/faqmain.scss */
+.faqmain__title { margin-bottom: 40px; }
+
+/* line 8, ../../sass/index/faqmain.scss */
+.faqmain .cols { position: relative; margin-right: -30px; }
+
+/* line 12, ../../sass/index/faqmain.scss */
+.faqmain .cols a { color: #1466a2; border-color: #1466a2; border-color: rgba(10, 100, 165, 0.2); }
+
+/* line 17, ../../sass/index/faqmain.scss */
+.faqmain .cols a:hover { color: #f3a942; border-color: #f3a942; border-color: rgba(240, 170, 50, 0.4); }
+
+/* line 22, ../../sass/index/faqmain.scss */
+.faqmain-item { border: 1px solid #efefef; border-radius: 15px; padding: 32px 35px 93px 35px; margin: 0 30px 42px 0; }
+
+/* line 28, ../../sass/index/faqmain.scss */
+.faqmain-number { font-weight: bold; font-size: 13px; margin-bottom: 8px; }
+
+/* line 33, ../../sass/index/faqmain.scss */
+.faqmain-question { font-size: 14px; line-height: 22px; margin-bottom: 30px; }
+
+/* line 38, ../../sass/index/faqmain.scss */
+.faqmain-answer { background: #f8f5f1; border-radius: 10px; font-size: 14px; line-height: 22px; position: relative; padding: 30px 30px 20px; }
+
+/* line 46, ../../sass/index/faqmain.scss */
+.faqmain-answer:after { content: ' '; display: block; position: absolute; background: url(../img/bubble.png) no-repeat; width: 90px; height: 32px; right: 20px; bottom: -30px; }
+
+/* line 56, ../../sass/index/faqmain.scss */
+.faqmain-doctor { position: absolute; bottom: -65px; right: 104px; font-size: 13px; line-height: 18px; height: 42px; }
+
+/* line 64, ../../sass/index/faqmain.scss */
+.faqmain-name { font-weight: bold; position: relative; display: block; }
+
+/* line 69, ../../sass/index/faqmain.scss */
+.faqmain-position { color: #6e6e6e; }
+
+/* line 72, ../../sass/index/faqmain.scss */
+.faqmain-photo { position: absolute; bottom: 0; left: -60px; width: 50px; height: 50px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; overflow: hidden; line-height: 0; }
+
+/* line 86, ../../sass/index/faqmain.scss */
+.faqmain-photo img { position: absolute; top: 0; left: 0; width: 100%; height: auto; }

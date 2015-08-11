@@ -1,0 +1,12 @@
+@media (max-width: 890px) { /* line 2, ../../sass/media_768/header__768.scss */
+  .header__wrap { margin-bottom: 20px; }
+  /* line 5, ../../sass/media_768/header__768.scss */
+  .header__center { padding-top: 15px; }
+  /* line 8, ../../sass/media_768/header__768.scss */
+  .header__tocart { display: none; }
+  /* line 11, ../../sass/media_768/header__768.scss */
+  .header__right { padding-top: 15px; }
+  /* line 16, ../../sass/media_768/header__768.scss */
+  .header_fix .header__center { display: block; padding-top: 15px; }
+  /* line 20, ../../sass/media_768/header__768.scss */
+  .header_fix .mainmenu__buttons_centr { display: none; } }
