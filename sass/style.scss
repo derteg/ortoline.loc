@@ -38,60 +38,60 @@ $sprite_base64: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAyCAYAA
 $sprite: url('../ico/sprite_01.png');
 $sprite02: url('../ico/sprite_02.png');
 
-@import "gui/mixin.scss";
-@import "gui/social.scss";
-@import "gui/gui.scss";
-@import "gui/aside.scss";
-@import "gui/breadcrumbs.scss";
-@import "gui/select.scss";
-@import "gui/info__tabs.scss";
-@import "gui/slick.scss";
-@import "gui/search__menu.scss";
-@import "gui/paginator.scss";
-@import "gui/services__img.scss";
-@import "gui/accordion.scss";
-@import "gui/popup.scss";
-@import "gui/form.scss";
+@import "gui/mixin";
+@import "gui/social";
+@import "gui/gui";
+@import "gui/aside";
+@import "gui/breadcrumbs";
+@import "gui/select";
+@import "gui/info__tabs";
+@import "gui/slick";
+@import "gui/search__menu";
+@import "gui/paginator";
+@import "gui/services__img";
+@import "gui/accordion";
+@import "gui/popup";
+@import "gui/form";
 
-@import "header.scss";
-@import "footer.scss";
+@import "header";
+@import "footer";
 
-@import "maincat.scss";
-@import "card.scss";
-@import "faq.scss";
-@import "delivery.scss";
+@import "maincat";
+@import "card";
+@import "faq";
+@import "delivery";
 
-@import "index/main.scss";
-@import "index/panorama.scss";
-@import "index/promo__slider.scss";
-@import "index/stock__slider.scss";
-@import "index/hits__slider.scss";
-@import "index/news__aside.scss";
-@import "index/dvnt.scss";
-@import "index/usfl.scss";
-@import "index/faqmain.scss";
+@import "index/main";
+@import "index/panorama";
+@import "index/promo__slider";
+@import "index/stock__slider";
+@import "index/hits__slider";
+@import "index/news__aside";
+@import "index/dvnt";
+@import "index/usfl";
+@import "index/faqmain";
 
-@import "video/video.scss";
+@import "video/video";
 
-@import "product/product.scss";
-@import "product/slider.scss";
-@import "product/catalogue.scss";
+@import "product/product";
+@import "product/slider";
+@import "product/catalogue";
 
-@import "salons/salons_1.scss";
-@import "salons/salons_list2.scss";
-@import "salons/contacts.scss";
+@import "salons/salons_1";
+@import "salons/salons_list2";
+@import "salons/contacts";
 
-@import "services/services.scss";
+@import "services/services";
 
-@import "about/about.scss";
+@import "about/about";
 
-@import "conditions.scss";
+@import "conditions";
 
-@import "basket.scss";
+@import "basket";
 
-@import "media_1024/header__1024.scss";
+@import "media_1024/header__1024";
 
-@import "media_768/base__768.scss";
-@import "media_768/header__768.scss";
-@import "media_768/index/promo__slider__768.scss";
-@import "media_768/index/panorama__768.scss";
+@import "media_768/base__768";
+@import "media_768/header__768";
+@import "media_768/index/promo__slider__768";
+@import "media_768/index/panorama__768";
