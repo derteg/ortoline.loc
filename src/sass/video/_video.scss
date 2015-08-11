@@ -1,7 +1,10 @@
 .video{
 	position:relative;	
 	margin-bottom: 80px;
-	-webkit-font-smoothing:antialiased
+	-webkit-font-smoothing:antialiased;
+	.cols{
+		margin: 0 -8px;
+	}
 }
 .video_main{
 	padding-top:70px;
@@ -24,7 +27,8 @@
 	}
 }
 .video-item{
-	width: 94%;
+	margin: 0 8px;
+	width: auto;
 	position:relative;
 	background: $white;
 	border-radius:10px;

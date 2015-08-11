@@ -1,24 +1,42 @@
-@media (max-width:890px) {
-	.header__wrap{
-		margin-bottom: 20px;
+	.header__left {
+		width: 72%;
+		.logo{
+			max-width: 250px;
+		}
 	}
-	.header__center{
-		padding-top: 15px;
-	}
-	.header__tocart{
-		display: none;
-	}
-	.header__right{
-		padding-top: 15px;
+	.header__contact{
+		top: 20px;
+		right: 5%;
 	}
 
-	.header_fix{
-		.header__center{
-			display: block;
-			padding-top: 15px;
-		}
-		.mainmenu__buttons_centr{
+	.header__right{
+		padding-top: 20px;
+		width: 28%;
+		.profile-btn{
 			display: none;
 		}
 	}
-}
+
+	.mainmenu__buttons_fr{
+		width: 100%;
+		max-width: 100%;
+		float: none;
+	}
+	.mainmenu__list{
+		display: none;
+	}
+	.mainmenu__btn-all{
+		display: inline-block;
+	}
+
+	.mainmenu__buttons_centr{
+		display: none;
+	}
+	.header_fix {
+		.header__wrap{
+			padding: 7px 0px 10px;
+		}
+		.header__contact{
+			opacity: 1;
+		}
+	}

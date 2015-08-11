@@ -1847,7 +1847,7 @@ p.promo__txt {
   text-align: left;
   /* Востанавливаем у потомков, кроме последнего*/
   line-height: normal;
-  font-size: 14px;
+  font-size: 16px;
   /* Без него в Opera будет отступ под элементами */
   vertical-align: top; }
 
@@ -1889,8 +1889,7 @@ p.promo__txt {
   max-width: 410px; }
 
 .mainmenu__btn-all {
-  display: none;
-  float: left; }
+  display: none; }
   .mainmenu__btn-all .ico {
     background: transparent url("../ico/sprite_01.png") -320px -24px no-repeat;
     width: 24px;
@@ -3001,11 +3000,7 @@ p.promo__txt {
   padding-bottom: 14px; }
 
 .dvnt-oh {
-  overflow: hidden;
   padding: 0px 24px 0px 104px; }
-
-.dvnt .cols {
-  margin-right: -40px; }
 
 .dvnt-image {
   height: 70px;
@@ -3029,13 +3024,13 @@ p.promo__txt {
 .usfl .cols {
   padding-top: 21px;
   padding-bottom: 55px;
-  margin-right: -40px; }
+  margin: 0px -8px; }
 
 .usfl-item {
   position: relative;
   background: #ffffff;
   border-radius: 10px;
-  width: 92%;
+  margin: 0px 8px;
   display: block;
   border: 0;
   color: #2c2c2c; }
@@ -3151,7 +3146,8 @@ p.promo__txt {
 
 .faqmain .cols {
   position: relative;
-  margin-right: -30px; }
+  margin-right: -30px;
+  margin-left: 0; }
 
 .faqmain .cols a {
   color: #1466a2;
@@ -3238,6 +3234,8 @@ p.promo__txt {
   position: relative;
   margin-bottom: 80px;
   -webkit-font-smoothing: antialiased; }
+  .video .cols {
+    margin: 0 -8px; }
 
 .video_main {
   padding-top: 70px;
@@ -3254,7 +3252,8 @@ p.promo__txt {
   margin-bottom: 0; }
 
 .video-item {
-  width: 94%;
+  margin: 0 8px;
+  width: auto;
   position: relative;
   background: #ffffff;
   border-radius: 10px;
@@ -5101,41 +5100,51 @@ p.services__info {
 .delivery_row {
   padding: 78px 0; }
 
-@media (max-width: 1080px) {
+@media (max-width: 1140px) {
+  .header__left {
+    width: 72%; }
+    .header__left .logo {
+      max-width: 250px; }
+  .header__contact {
+    top: 20px;
+    right: 5%; }
+  .header__right {
+    padding-top: 20px;
+    width: 28%; }
+    .header__right .profile-btn {
+      display: none; }
+  .mainmenu__buttons_fr {
+    width: 100%;
+    max-width: 100%;
+    float: none; }
   .mainmenu__list {
     display: none; }
   .mainmenu__btn-all {
-    display: block; } }
-
-.inside {
-  min-width: 768px; }
-
-@media (max-width: 890px) {
-  .header__wrap {
-    margin-bottom: 20px; }
-  .header__center {
-    padding-top: 15px; }
-  .header__tocart {
+    display: inline-block; }
+  .mainmenu__buttons_centr {
     display: none; }
-  .header__right {
-    padding-top: 15px; }
-  .header_fix .header__center {
-    display: block;
-    padding-top: 15px; }
-  .header_fix .mainmenu__buttons_centr {
-    display: none; } }
-
-@media (max-width: 768px) {
-  .promoslider__cont .inside {
-    padding: 0; } }
-
-@media (max-width: 890px) {
-  .panoram__content {
+  .header_fix .header__wrap {
+    padding: 7px 0px 10px; }
+  .header_fix .header__contact {
+    opacity: 1; }
+  .hits__slider {
+    width: 100%; }
+  .stock__slider {
+    width: 100%; }
+  .maincat .col--25 {
+    width: 33.3%; }
+  .video .cols {
+    margin: 0 -8px; }
+  .video__main .col {
+    margin-bottom: 20px; }
+  .video .col {
     width: 50%;
-    padding: 30px 0; }
-  .panoram__title {
-    font-size: 28px;
-    line-height: 40px; }
-  .panoram__sub-title {
-    font-size: 16px;
-    line-height: 22px; } }
+    margin-bottom: 20px; }
+  .video-item {
+    margin: 0 8px;
+    width: auto; }
+  .usfl .col--25 {
+    width: 50%;
+    margin-bottom: 20px; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -2,8 +2,8 @@ module.exports = {
   // Настройки для разработки
   dev: {
     options: {
-      style: 'nested',
-      sourcemap: true
+      outputStyle: 'nested',
+      sourceMap: true
     },
     files: [{
       expand: true,
@@ -16,8 +16,8 @@ module.exports = {
   // Настройки для продакшна
   prod: {
     options: {
-      style: 'compressed',
-      sourcemap: false
+      outputStyle: 'compressed',
+      sourceMap: false
     },
     files: [{
       expand: true,
