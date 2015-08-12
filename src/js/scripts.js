@@ -30,6 +30,7 @@ $(function(){
 	$('#accordionAside').accordionAside();
 	$('#videoSlider').videoSlider();
 	$('#videoSliderPromo, #infoSliderPromo').promoSliderList();
+	$('#faqmainSlider').faqmainSlider();
 	$('.js-lnk_popup').contactPopup();
 });
 
@@ -195,6 +196,13 @@ $(window).load(function(){initLikes();});
 			slideToScroll: 1,
 			swipe: false,
 			responsive: [
+				{
+					breakpoint: 960,
+					settings: {
+						slidesToShow: 3,
+						swipe: true
+					}
+				},
 				{
 					breakpoint: 765,
 					settings: {
@@ -403,6 +411,14 @@ function heightsToMax() {
 			dots: true,
 			responsive: [
 				{
+					breakpoint: 960,
+					settings: {
+						slidesToShow: 1,
+						arrows: false,
+						fade: false
+					}
+				},
+				{
 					breakpoint: 765,
 					settings: {
 						slidesToShow: 1,
@@ -460,7 +476,7 @@ function heightsToMax() {
 				wW = w.width(),
 				hH = that.height();
 
-			if(wW >= 768){
+			if(wW >= 965){
 				if (w.scrollTop() > 220) {
 					that.addClass('header_fix');
 					$('#all').css({'padding-top': 77});
@@ -470,6 +486,9 @@ function heightsToMax() {
 					$('#all').css({'padding-top': 208});
 					$('#footer').css('top', '-399px');
 				}
+			} else if(wW >= 768){
+				$('#all').css({'padding-top': 80});
+				$('#footer').css('top', '-154px');
 			} else {
 				that.removeClass('header_fix');
 				$('#all').css({'padding-top': 128});
@@ -566,6 +585,15 @@ function heightsToMax() {
 			infinite: false,
 			responsive: [
 				{
+					breakpoint: 965,
+					settings: {
+						slidesToShow: 3,
+						arrows: false,
+						dots: false,
+						infinite: true
+					}
+				},
+				{
 					breakpoint: 765,
 					settings: {
 						slidesToShow: 1,
@@ -608,6 +636,38 @@ function heightsToMax() {
 					opacity: 0.2
 				});
 			}
+		});
+	};
+})(jQuery);
+
+
+(function($){
+	$.fn.faqmainSlider = function(){
+		var slider = this;
+
+		slider.slick({
+			slidesToShow: 2,
+			slideToScroll: 1,
+			infinite: false,
+			swipe: true,
+			arrows: false,
+			responsive: [
+				{
+					breakpoint: 960,
+					settings: {
+						slidesToShow: 1,
+						swipe: true,
+						arrows: true
+					}
+				},
+				{
+					breakpoint: 765,
+					settings: {
+						slidesToShow: 1,
+						swipe: true
+					}
+				}
+			]
 		});
 	};
 })(jQuery);

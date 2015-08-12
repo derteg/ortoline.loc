@@ -5088,7 +5088,9 @@ p.services__info {
 .delivery_row {
   padding: 78px 0; }
 
-@media (max-width: 1140px) and (min-width: 769px) {
+@media (max-width: 1140px) and (min-width: 768px) {
+  #all {
+    padding-bottom: 154px; }
   .header__left {
     width: 72%; }
     .header__left .logo {
@@ -5140,9 +5142,130 @@ p.services__info {
     line-height: 40px;
     padding-right: 20px;
     width: auto; }
-  .hits__slider {
-    width: 100%; }
   .stock__slider {
+    width: 50%;
+    height: auto;
+    padding-bottom: 62px;
+    z-index: 2; }
+    .stock__slider .slick-dots {
+      position: absolute;
+      bottom: 12px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      z-index: 9;
+      opacity: .7;
+      -moz-transition: opacity 0.25s;
+      -o-transition: opacity 0.25s;
+      -webkit-transition: opacity 0.25s;
+      transition: opacity 0.25s; }
+      .stock__slider .slick-dots:hover {
+        opacity: 1; }
+      .stock__slider .slick-dots li {
+        display: inline-block;
+        margin: 0 5px;
+        width: 8px;
+        height: 8px; }
+      .stock__slider .slick-dots button {
+        width: 8px;
+        height: 8px;
+        outline: none;
+        cursor: pointer;
+        border-radius: 4px;
+        background: #8797a8;
+        padding: 0;
+        text-indent: -9999px;
+        font-size: 0;
+        text-align: start;
+        border: none;
+        vertical-align: top;
+        vertical-align: top; }
+      .stock__slider .slick-dots .slick-active button {
+        background: #f3a942;
+        cursor: default; }
+  .stock__image {
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    height: auto;
+    padding: 0;
+    padding-top: 70px;
+    margin-bottom: 12px;
+    box-sizing: border-box; }
+    .stock__image img {
+      width: 65%;
+      height: auto; }
+  .stock__text {
+    width: 100%;
+    top: 0;
+    padding: 0px 40px;
+    box-sizing: border-box; }
+  .stock__title_wrap {
+    width: 100%; }
+  .stock__title {
+    font-size: 30px;
+    line-height: 34px;
+    outline: #f3a942 solid 4px; }
+  .stock__list {
+    margin-top: 6px;
+    margin-left: 8px; }
+    .stock__list .big {
+      font-weight: bold;
+      font-size: 16px; }
+  .hits__slider {
+    width: 50%;
+    overflow: visible; }
+    .hits__slider .slick-dots {
+      bottom: auto;
+      top: 100%;
+      margin-top: 40px; }
+  .card {
+    padding-top: 20px; }
+  .card__image {
+    padding-bottom: 44px; }
+    .card__image img {
+      width: 50%; }
+  .card__text {
+    padding: 0px 50px; }
+  .card__title {
+    font-size: 16px;
+    line-height: 22px; }
+  .card__line {
+    top: 230px; }
+  .dvnt {
+    margin-top: 20px;
+    margin-bottom: 40px; }
+    .dvnt .col--25 {
+      width: 50%; }
+  .dvnt__title_sub-title {
+    padding: 0px 30px; }
+  .faqmain {
+    margin-bottom: 24px; }
+    .faqmain .cols {
+      margin: 0; }
+    .faqmain .col--50 {
+      width: 100%;
+      margin: 0; }
+  .faqmain__title {
+    font-size: 30px;
+    margin-bottom: 14px; }
+  .faqmain-item {
+    padding: 28px 34px 94px;
+    margin: 42px auto 0;
+    width: 70%; }
+  .faqmain-question {
+    margin-bottom: 30px; }
+  .faqmain-answer {
+    padding: 30px 20px 36px; }
+  .faqmain-doctor {
+    bottom: auto;
+    right: auto;
+    left: 50%;
+    top: 100%;
+    margin-top: 36px; }
+  .about-promo .col--75 {
+    display: none; }
+  .about-promo .col--25 {
     width: 100%; }
   .maincat .inside {
     padding: 0; }
@@ -5169,9 +5292,40 @@ p.services__info {
     width: auto; }
   .usfl .col--25 {
     width: 50%;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .footer {
+    top: -154px;
+    height: 154px; }
+  .footer-col--1,
+  .footer-col--2,
+  .footer-col--3,
+  .footer-col--4 {
+    display: none; }
+  .footer-col--5 {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding: 24px 0 70px;
+    position: relative; }
+  .footer-socs {
+    float: right;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    text-align: right; }
+  .footer-adr,
+  .footer-tel {
+    float: left;
+    width: 40%;
+    margin: 0;
+    padding: 0; }
+  .footer-left {
+    left: 20px; }
+  .footer-right {
+    width: auto;
+    right: 20px; } }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #all {
     padding-top: 128px;
     padding-bottom: 324px; }
@@ -5361,10 +5515,7 @@ p.services__info {
       margin: 0; }
     .faqmain .col--50 {
       width: 100%;
-      margin: 0;
-      display: none; }
-      .faqmain .col--50:first-child {
-        display: block; }
+      margin: 0; }
   .faqmain__title {
     font-size: 30px;
     margin-bottom: 14px;

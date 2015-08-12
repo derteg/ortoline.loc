@@ -34,10 +34,171 @@
 	width: auto;
 }
 
-.hits__slider{
+.stock__slider{
+	width: 50%;
+	height: auto;
+	padding-bottom: 62px;
+	z-index: 2;
+	.slick-dots{
+		position: absolute;
+		bottom: 12px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		z-index: 9;
+		opacity: .7;
+		@include transition(opacity .25s);
+		&:hover{
+			opacity: 1;
+		}
+		li{
+			display: inline-block;
+			margin: 0 5px;
+			width: 8px;
+			height: 8px;
+		}
+		button{
+			width: 8px;
+			height: 8px;
+			outline: none;
+			cursor: pointer;
+			border-radius: 4px;
+			background: $gray;
+			padding: 0;
+			text-indent: -9999px;
+			font-size: 0;
+			text-align: start;
+			border: none;
+			vertical-align: top;
+			vertical-align: top;
+		}
+		.slick-active{
+			button{
+				background: $orange;
+				cursor: default;
+			}			
+		}
+	}
+}
+.stock__image{
+	width: 100%;
+	text-align: center;
+	line-height: 1;
+	height: auto;
+	padding: 0;
+	padding-top: 70px;
+	margin-bottom: 12px;
+	box-sizing: border-box;
+	img{
+		width: 65%;
+		height: auto;
+	}
+}
+.stock__text{
+	width: 100%;
+	top: 0;
+	padding: 0px 40px;
+	box-sizing: border-box;
+}
+.stock__title_wrap{
 	width: 100%;
 }
+.stock__title{
+	font-size: 30px;
+	line-height: 34px;
+	outline: $orange solid 4px;
+}
+.stock__list{
+	margin-top: 6px;
+	margin-left: 8px;
+	.big{
+		font-weight: bold;
+		font-size: 16px;
+	}
+}
 
-.stock__slider{
-	width: 100%;
+
+.hits__slider{
+	width: 50%;
+	overflow: visible;
+	.slick-dots{
+		bottom: auto;
+		top: 100%;
+		margin-top: 40px;
+	}
+}
+.card{
+	padding-top: 20px;
+}
+.card__image {
+	padding-bottom: 44px;
+	img{
+		width: 50%;
+	}
+}
+.card__text{
+	padding: 0px 50px;
+}
+.card__title{
+	font-size: 16px;
+	line-height: 22px;
+}
+.card__line{
+	top: 230px;
+}
+
+
+.dvnt{
+	margin-top: 20px;
+	margin-bottom: 40px;
+	.col--25{
+		width: 50%;
+	}
+}
+.dvnt__title_sub-title{
+	padding: 0px 30px;
+}
+
+
+.faqmain{
+	margin-bottom: 24px;
+	.cols{
+		margin: 0;
+	}
+	.col--50{
+		width: 100%;
+		margin: 0;
+	}
+}
+.faqmain__title{
+	font-size: 30px;
+	margin-bottom: 14px;
+}
+.faqmain-item{
+	padding: 28px 34px 94px;
+	margin: 42px auto 0;
+	width: 70%;
+}
+.faqmain-question{
+	margin-bottom: 30px;
+}
+.faqmain-answer{
+	padding: 30px 20px 36px;
+}
+.faqmain-doctor{
+	bottom: auto;
+	right: auto;
+	left: 50%;
+	top: 100%;
+	margin-top: 36px;
+}
+
+
+.about-promo{
+	.col--75{
+		display: none;
+	}
+	.col--25{
+		width: 100%;
+	}
 }
