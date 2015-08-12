@@ -1,0 +1,39 @@
+.maincat{
+	.col--25{
+		width: 50%;
+	}
+}
+.maincat__image{
+	height: 126px;
+	line-height: 126px;
+	img{
+		width: 40%;
+		height: auto;
+	}
+}
+.maincat__title{
+	min-height: 100px;
+	font-size: 13px;
+	padding-bottom: 12px;
+	max-width: 100%;
+	overflow: hidden;
+}
+.maincat__all {
+	height: 218px;
+}
+.maincat__toall{
+	font-size: 22px;
+	line-height: 24px;
+	.text{
+		&:before{
+			bottom: 0;
+			margin-left: 10px;
+		}
+	}
+}
+.maincat__wrap{
+	&.final{
+		height: 238px;
+		line-height: 238px;
+	}
+}

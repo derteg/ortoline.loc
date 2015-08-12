@@ -38,6 +38,9 @@ $sprite_base64: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAyCAYAA
 $sprite: url('../ico/sprite_01.png');
 $sprite02: url('../ico/sprite_02.png');
 
+
+// $sprite2x: url('../ico/sprite@2x.png');
+
 @import "gui/mixin";
 @import "gui/social";
 @import "gui/gui";
@@ -90,11 +93,22 @@ $sprite02: url('../ico/sprite_02.png');
 @import "basket";
 
 
-@media (max-width:1140px) {
+@media (max-width:1140px) and (min-width:769px) {
 	@import "media_768/header__768";
-	@import "media_768/index__768"; 
+	@import "media_768/index__768";
 	@import "media_768/maincat__768";
 	@import "media_768/product__768"; 
 	@import "media_768/video__768";
 	@import "media_768/usfl__768";
+}
+
+@media (max-width:768px) {
+	@import "media_320/gui/gui__320";
+	@import "media_320/header__320";
+	@import "media_320/index__320";
+	@import "media_320/maincat__320";
+	@import "media_320/product__320";
+	@import "media_320/video__320";
+	@import "media_320/usfl__320";
+	@import "media_320/footer__320";
 }

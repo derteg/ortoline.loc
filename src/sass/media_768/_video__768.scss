@@ -1,12 +1,11 @@
 .video .cols{
 	margin: 0 -8px;
 }
-.video__main .col{
-	margin-bottom: 20px;
-}
-.video .col{
-	width: 50%;
-	margin-bottom: 20px;
+.video__main{
+	.col{
+		margin-bottom: 20px;
+		width: 50%;
+	}
 }
 .video-item{
 	margin: 0 8px;

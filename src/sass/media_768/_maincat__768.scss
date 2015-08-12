@@ -1,5 +1,24 @@
 .maincat{
-	.col--25{
-		width: 33.3%;
+	.inside{
+		padding: 0;
 	}
+}
+.maincat__wrap{
+	&.final{
+		height: 198px;
+	}
+}
+.maincat__image{
+	height: 126px;
+	line-height: 110px;
+	img{
+		width: 40%;
+		height: auto;
+	}
+}
+.maincat__title{
+	font-size: 13px;
+	width: 90%;
+	padding-bottom: 12px;
+	min-height: 60px;
 }

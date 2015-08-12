@@ -134,7 +134,8 @@
 	margin: 0 auto 10px;
 	text-align: center;
 	position: relative;
-	.slick-slide{
+	a{
+		display: block;
 		padding: 0px 20px;
 		box-sizing: border-box;
 	}

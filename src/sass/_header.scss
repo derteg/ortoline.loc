@@ -172,6 +172,7 @@
 }
 
 
+
 .mainmenu{
 	position: absolute;
 	top: 54%;
@@ -257,7 +258,7 @@
 .mainmenu__btn-all{
 	display: none;
 	.ico{
-		background: transparent $sprite -320px -24px no-repeat;
+		// background: $sprite2x;
 		width: 24px;
 		height: 18px;
 		display: inline-block;

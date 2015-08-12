@@ -17,7 +17,7 @@ module.exports = {
 
   styles: {
     files: [
-      'src/sass/*.scss'
+      'src/sass/**/*.scss'
     ],
     tasks: [
       'sass:dev'

@@ -1,3 +1,39 @@
+.promoslider__cont{
+	.inside{
+		padding: 0;
+	}
+}
+.promoslider__pic{
+	width: 100%;
+	height: auto;
+}
+.promoslider__text{
+	font-size: 26px;
+	line-height: 32px;
+	width: 250px;
+	right: 60px;
+	bottom: 114px;
+	&:before{
+		margin-bottom: 18px;
+		width: 36px;
+		height: 4px;
+	}
+}
+
+.panoram{
+	min-height: 476px;
+	margin-bottom: 0;
+}
+.panoram__content{
+	top: 45px;
+}
+.panoram__title{
+	font-size: 30px;
+	line-height: 40px;
+	padding-right: 20px;
+	width: auto;
+}
+
 .hits__slider{
 	width: 100%;
 }

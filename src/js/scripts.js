@@ -29,6 +29,7 @@ $(function(){
 	$('#searchInp').searchInp();
 	$('#accordionAside').accordionAside();
 	$('#videoSlider').videoSlider();
+	$('#videoSliderPromo, #infoSliderPromo').promoSliderList();
 	$('.js-lnk_popup').contactPopup();
 });
 
@@ -195,11 +196,11 @@ $(window).load(function(){initLikes();});
 			swipe: false,
 			responsive: [
 				{
-					breakpoint: 1140,
+					breakpoint: 765,
 					settings: {
-						slidesToShow: 3,
-						slidesToScroll: 1
-					  }
+						slidesToShow: 1,
+						swipe: true
+					}
 				}
 			]
 		});
@@ -398,7 +399,18 @@ function heightsToMax() {
 		var slider = this;
 
 		slider.slick({
-			fade: true
+			fade: true,
+			dots: true,
+			responsive: [
+				{
+					breakpoint: 765,
+					settings: {
+						slidesToShow: 1,
+						arrows: false,
+						fade: false
+					}
+				}
+			]
 		});
 	};
 })(jQuery);
@@ -412,16 +424,7 @@ function heightsToMax() {
 			arrows: false,
 			dots: true,
 			autoplay: true,
-			autoplaySpeed: 3000,
-			responsive: [
-				{
-					breakpoint: 1024,
-					settings: {
-						slidesToShow: 3,
-						slidesToScroll: 1
-					}
-				}
-			]
+			autoplaySpeed: 3000
 		});
 	};
 })(jQuery);
@@ -454,15 +457,23 @@ function heightsToMax() {
 
 		$(window).on('scroll resize', function() {
 			var w = $(this),
+				wW = w.width(),
 				hH = that.height();
-			if (w.scrollTop() > 220) {
-				that.addClass('header_fix');
-				$('#all').css({'padding-top': 77});
-				$('#footer').css('top', -399 + that.height());
+
+			if(wW >= 768){
+				if (w.scrollTop() > 220) {
+					that.addClass('header_fix');
+					$('#all').css({'padding-top': 77});
+					$('#footer').css('top', -399 + that.height());
+				} else {
+					that.removeClass('header_fix');
+					$('#all').css({'padding-top': 208});
+					$('#footer').css('top', '-399px');
+				}
 			} else {
 				that.removeClass('header_fix');
-				$('#all').css({'padding-top': 208});
-				$('#footer').css('top', '-399px');
+				$('#all').css({'padding-top': 128});
+				$('#footer').css('top', '-324px');
 			}
 		});
 	};
@@ -541,6 +552,29 @@ function heightsToMax() {
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			dots: true
+		});
+	};
+})(jQuery);
+
+(function($){
+	$.fn.promoSliderList = function(){
+		var slider = this;
+
+		slider.slick({
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			infinite: false,
+			responsive: [
+				{
+					breakpoint: 765,
+					settings: {
+						slidesToShow: 1,
+						arrows: false,
+						dots: true,
+						infinite: true
+					}
+				}
+			]
 		});
 	};
 })(jQuery);

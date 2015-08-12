@@ -1,0 +1,54 @@
+.header__wrap{
+	padding: 20px 0 6px;
+}
+.header__left {
+	width: 45%;
+	.logo{
+		max-width: 164px;
+		min-width: 164px;
+	}
+}
+.header__right{
+	padding-top: 10px;
+	.profile-btn{
+		display: none;
+	}
+}
+
+.mainmenu__buttons_fr{
+	width: 100%;
+	max-width: 100%;
+	float: none;
+}
+
+.basket-btn__cont,
+.header__contact,
+.mainmenu__list{
+	display: none;
+}
+
+.mainmenu{
+	position: relative;
+	top: 0;
+	padding: 0;
+}
+.mainmenu__buttons{
+	.button{
+		font-size: 14px;
+	}
+}
+.mainmenu__btn-all{
+	position: absolute;
+	bottom: 100%;
+	right: 70px;
+	margin-bottom: 22px;
+	display: inline-block;
+	.ico{
+		padding: 0;
+		background-size: 187px 207px;
+		background-position: 4px 3px;
+	}
+	.text{
+		display: none;
+	}
+}
