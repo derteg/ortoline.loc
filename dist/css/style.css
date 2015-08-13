@@ -1654,17 +1654,7 @@ p.promo__txt {
 .header__left {
   float: left;
   width: 65%;
-  position: relative;
-  text-align: justify;
-  font-size: 0;
-  line-height: 0; }
-  .header__left:after {
-    content: "";
-    width: 100%;
-    height: 0;
-    visibility: hidden;
-    overflow: hidden;
-    display: inline-block; }
+  position: relative; }
   .header__left .logo {
     width: 100%;
     max-width: 350px;
@@ -1674,31 +1664,57 @@ p.promo__txt {
     transition: width 0.25s; }
   .header__left .logo__lnk {
     display: inline-block;
-    vertical-align: middle; }
+    vertical-align: middle;
+    margin-left: -4px; }
 
 .header__left_wrap {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 10%; }
+  height: 60px;
+  right: 0;
+  width: 100%;
+  max-width: 270px;
+  position: absolute; }
+
+.header__call a {
+  color: #828282;
+  margin-left: 30px; }
+
+.header__call a:hover {
+  color: #f3a942; }
 
 .header__call a {
   margin-left: 46px;
-  display: inline-block;
   font-size: 12px;
-  line-height: 16px;
-  color: #828282; }
-  .header__call a:hover {
-    color: #f3a942; }
+  margin-top: 4px;
+  display: inline-block;
+  line-height: 16px; }
 
 .mainmenu__buttons_centr {
-  display: none; }
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  will-change: top;
+  -moz-transition: top 0.25s;
+  -o-transition: top 0.25s;
+  -webkit-transition: top 0.25s;
+  transition: top 0.25s; }
 
 .header__contact {
-  z-index: 10; }
+  opacity: 1;
+  position: absolute;
+  top: 30px;
+  right: 20%;
+  z-index: 10;
+  will-change: top;
+  -moz-transition: top 0.25s;
+  -o-transition: top 0.25s;
+  -webkit-transition: top 0.25s;
+  transition: top 0.25s; }
 
 .header__tel {
   font-size: 22px;
-  line-height: 26px;
   font-weight: 600;
   padding-left: 36px;
   background: url(../img/i-phone.png) no-repeat 2px 3px;
@@ -1874,8 +1890,6 @@ p.promo__txt {
 
 .mainmenu__btn-all {
   display: none; }
-  .mainmenu__btn-all span {
-    border: none; }
   .mainmenu__btn-all .ico {
     width: 24px;
     height: 18px;
@@ -1900,13 +1914,18 @@ p.promo__txt {
       width: 230px; }
   .header_fix .header__left_wrap {
     width: 100%;
+    right: 0;
     text-align: center;
-    max-width: 430px;
-    margin: 0; }
+    max-width: 430px; }
   .header_fix .mainmenu__buttons_centr {
-    display: block; }
+    opacity: 1;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 100%;
+    max-width: 420px; }
   .header_fix .header__contact {
-    display: none; }
+    opacity: 0; }
   .header_fix .header__right {
     padding-top: 16px; }
   .header_fix .mainmenu {
@@ -2108,8 +2127,7 @@ p.promo__txt {
   font-weight: bold;
   line-height: 36px;
   display: inline-block;
-  text-align: left;
-  vertical-align: middle; }
+  text-align: left; }
   .maincat__toall .text {
     position: relative;
     border-bottom: 1px solid rgba(0, 0, 0, 0.4); }
@@ -5073,16 +5091,15 @@ p.services__info {
 @media (max-width: 1140px) and (min-width: 768px) {
   #all {
     padding-bottom: 154px; }
-  .aside_right {
-    display: none; }
   .header__left {
     width: 72%; }
     .header__left .logo {
       max-width: 250px; }
-  .header__left_wrap {
-    margin-top: 14px; }
+  .header__contact {
+    top: 20px;
+    right: 5%; }
   .header__right {
-    padding-top: 16px;
+    padding-top: 20px;
     width: 28%; }
     .header__right .profile-btn {
       display: none; }
@@ -5097,12 +5114,9 @@ p.services__info {
   .mainmenu__buttons_centr {
     display: none; }
   .header_fix .header__wrap {
-    display: none; }
-  .header_fix .mainmenu {
-    z-index: 1000;
-    opacity: 1;
-    padding: 20px;
-    position: relative; }
+    padding: 7px 0px 10px; }
+  .header_fix .header__contact {
+    opacity: 1; }
   .promoslider__cont .inside {
     padding: 0; }
   .promoslider__pic {
@@ -5253,15 +5267,10 @@ p.services__info {
     display: none; }
   .about-promo .col--25 {
     width: 100%; }
-  .maincat .col--33 {
-    width: 25%; }
   .maincat .inside {
     padding: 0; }
-  .maincat.col--75 {
-    width: 100%; }
   .maincat__wrap.final {
-    height: 198px;
-    line-height: 198px; }
+    height: 198px; }
   .maincat__image {
     height: 126px;
     line-height: 110px; }
@@ -5325,17 +5334,8 @@ p.services__info {
     max-width: 450px; }
   .button {
     padding: 8px 12px; }
-  .aside_right {
-    display: none; }
-  .breadcrumbs {
-    padding-top: 24px;
-    margin-bottom: 18px; }
-  h1 {
-    font-size: 26px;
-    line-height: 30px;
-    margin-bottom: 26px; }
   .header__wrap {
-    padding: 20px 0 0px; }
+    padding: 20px 0 6px; }
   .header__left {
     width: 45%; }
     .header__left .logo {
@@ -5356,18 +5356,14 @@ p.services__info {
   .mainmenu {
     position: relative;
     top: 0;
-    padding: 0;
-    padding-bottom: 12px; }
+    padding: 0; }
   .mainmenu__buttons .button {
-    font-size: 14px;
-    padding: 10px 12px; }
-    .mainmenu__buttons .button.button--blue {
-      padding: 10px 20px; }
+    font-size: 14px; }
   .mainmenu__btn-all {
     position: absolute;
     bottom: 100%;
     right: 70px;
-    margin-bottom: 10px;
+    margin-bottom: 22px;
     display: inline-block; }
     .mainmenu__btn-all .ico {
       padding: 0;
@@ -5375,8 +5371,6 @@ p.services__info {
       background-position: 4px 3px; }
     .mainmenu__btn-all .text {
       display: none; }
-    .mainmenu__btn-all .button {
-      padding: 10px; }
   .promoslider__slide img {
     width: 240%;
     height: auto; }
@@ -5603,11 +5597,8 @@ p.services__info {
     width: 100%; }
   .news-aside__link {
     border: none; }
-  .maincat .col--25,
-  .maincat .col--33 {
+  .maincat .col--25 {
     width: 50%; }
-  .maincat.col--75 {
-    width: 100%; }
   .maincat__image {
     height: 126px;
     line-height: 126px; }
