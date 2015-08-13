@@ -484,15 +484,22 @@ function heightsToMax() {
 				} else {
 					that.removeClass('header_fix');
 					$('#all').css({'padding-top': 208});
-					$('#footer').css('top', '-399px');
+					$('#footer').css('top', -399);
 				}
 			} else if(wW >= 768){
-				$('#all').css({'padding-top': 80});
-				$('#footer').css('top', '-154px');
+				if (w.scrollTop() > 320) {
+					that.addClass('header_fix');
+					$('#all').css({'padding-top': 80});
+					$('#footer').css('top', -154 + that.height());
+				} else {
+					that.removeClass('header_fix');
+					$('#all').css({'padding-top': 182});
+					$('#footer').css('top', -154);
+				}
 			} else {
 				that.removeClass('header_fix');
 				$('#all').css({'padding-top': 128});
-				$('#footer').css('top', '-324px');
+				$('#footer').css('top', -324);
 			}
 		});
 	};

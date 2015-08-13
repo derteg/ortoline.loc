@@ -1,11 +1,18 @@
 .maincat{
+	.col--33{
+		width: 25%;
+	}
 	.inside{
 		padding: 0;
+	}
+	&.col--75{
+		width: 100%;
 	}
 }
 .maincat__wrap{
 	&.final{
 		height: 198px;
+		line-height: 198px;
 	}
 }
 .maincat__image{

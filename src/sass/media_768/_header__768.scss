@@ -4,13 +4,12 @@
 		max-width: 250px;
 	}
 }
-.header__contact{
-	top: 20px;
-	right: 5%;
+.header__left_wrap{
+	margin-top: 14px;
 }
 
 .header__right{
-	padding-top: 20px;
+	padding-top: 16px;
 	width: 28%;
 	.profile-btn{
 		display: none;
@@ -34,9 +33,12 @@
 }
 .header_fix {
 	.header__wrap{
-		padding: 7px 0px 10px;
+		display: none;
 	}
-	.header__contact{
+	.mainmenu{
+		z-index: 1000;
 		opacity: 1;
+		padding: 20px;
+		position: relative;
 	}
 }

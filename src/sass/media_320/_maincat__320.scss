@@ -1,6 +1,10 @@
 .maincat{
-	.col--25{
+	.col--25,
+	.col--33{
 		width: 50%;
+	}
+	&.col--75{
+		width: 100%;
 	}
 }
 .maincat__image{

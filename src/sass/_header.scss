@@ -19,6 +19,17 @@
 	float: left;
 	width: 65%;
 	position: relative;
+	text-align: justify;
+	font-size: 0;
+	line-height: 0;
+	&:after{
+		content: "";
+		width: 100%;
+		height: 0;
+		visibility: hidden;
+		overflow: hidden;
+		display: inline-block;
+	}
 	.logo{
 		width: 100%;
 		max-width: 350px;
@@ -27,52 +38,33 @@
 	.logo__lnk{
 		display: inline-block;
 		vertical-align: middle;
-		margin-left: -4px;
 	}
 }
 .header__left_wrap{
 	display: inline-block;
 	vertical-align: middle;
-	height: 60px;
-	right: 0;
-	width: 100%;
-	max-width: 270px;
-	position: absolute;
-}
-.header__call a{
-	color: #828282;
-	margin-left:30px
-}
-.header__call a:hover{
-	color:#f3a942
+	margin-right: 10%;
 }
 .header__call a{
 	margin-left: 46px;
-	font-size: 12px;
-	margin-top: 4px;
 	display: inline-block;
+	font-size: 12px;
 	line-height: 16px;
+	color: #828282;
+	&:hover{
+		color:#f3a942;
+	}
 }
 .mainmenu__buttons_centr{
-	position: absolute;
-	top: 0;
-	right: 0;
-	opacity: 0;
-	will-change: top;
-	@include transition(top .25s);
+	display: none;
 }
 
 .header__contact{
-	opacity: 1;
-	position: absolute;
-	top: 30px;
-	right: 20%;
 	z-index: 10;
-	will-change: top;
-	@include transition(top .25s);
 }
 .header__tel{
 	font-size:22px;
+	line-height: 26px;
 	font-weight:600;
 	padding-left:36px;
 	background:url(../img/i-phone.png) no-repeat 2px 3px;
@@ -257,6 +249,9 @@
 }
 .mainmenu__btn-all{
 	display: none;
+	span{
+		border: none;
+	}
 	.ico{
 		// background: $sprite2x;
 		width: 24px;
@@ -290,20 +285,15 @@
 	}
 	.header__left_wrap{
 		width: 100%;
-		right: 0;
 		text-align: center;
 		max-width: 430px;
+		margin: 0;
 	}
 	.mainmenu__buttons_centr{
-		opacity: 1;
-		position: absolute;
-		top: 8px;
-		right: 0;
-		width: 100%;
-		max-width: 420px;
+		display: block;	
 	}
 	.header__contact{
-		opacity: 0;
+		display: none;
 	}
 	.header__right{
 		padding-top: 16px;

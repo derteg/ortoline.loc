@@ -1,5 +1,5 @@
 .header__wrap{
-	padding: 20px 0 6px;
+	padding: 20px 0 0px;
 }
 .header__left {
 	width: 45%;
@@ -31,17 +31,22 @@
 	position: relative;
 	top: 0;
 	padding: 0;
+	padding-bottom: 12px;
 }
 .mainmenu__buttons{
 	.button{
 		font-size: 14px;
+		padding: 10px 12px;
+		&.button--blue{
+			padding: 10px 20px;
+		}
 	}
 }
 .mainmenu__btn-all{
 	position: absolute;
 	bottom: 100%;
 	right: 70px;
-	margin-bottom: 22px;
+	margin-bottom: 10px;
 	display: inline-block;
 	.ico{
 		padding: 0;
@@ -50,5 +55,8 @@
 	}
 	.text{
 		display: none;
+	}
+	.button{
+		padding: 10px;
 	}
 }
