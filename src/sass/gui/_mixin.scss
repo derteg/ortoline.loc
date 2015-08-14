@@ -77,3 +77,46 @@
     -webkit-transform:translate(-50%, -50%);
     transform:translate(-50%, -50%);
 }
+
+
+@mixin slickDots320() {
+    .slick-dots{
+        position: absolute;        
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 9;
+        opacity: .7;
+        @include transition(opacity .25s);
+        &:hover{
+            opacity: 1;
+        }
+        li{
+            display: inline-block;
+            margin: 0 5px;
+            width: 8px;
+            height: 8px;
+        }
+        button{
+            width: 8px;
+            height: 8px;
+            outline: none;
+            cursor: pointer;
+            border-radius: 4px;
+            background: $gray;
+            padding: 0;
+            text-indent: -9999px;
+            font-size: 0;
+            text-align: start;
+            border: none;
+            vertical-align: top;
+            vertical-align: top;
+        }
+        .slick-active{
+            button{
+                background: $orange;
+                cursor: default;
+            }           
+        }
+    }
+}
