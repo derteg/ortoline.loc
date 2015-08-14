@@ -1,0 +1,43 @@
+.services{
+	margin-bottom: 40px;
+}
+.services__sub-title{
+	margin-bottom: 20px;
+}
+.services__row{
+	margin: 0;
+}
+.services__col{
+	width: 100%;
+	padding: 0;
+}
+.services__map{
+	margin-bottom: 20px;
+	height: 400px;
+}
+.services__pic{
+	margin-bottom: 20px;
+}
+.services__list_2-col{
+	margin-bottom: 40px;
+}
+.services__person{
+	width: 100%;
+	float: none;
+}
+.services__company{
+	width: 100%;
+	float: none;
+	padding: 0;
+	p{
+		margin-left: 320px;
+	}
+}
+.services__company__logo{
+	float: left;
+	max-width: 280px;
+	img{
+		width: 100%;
+		height: auto;
+	}
+}

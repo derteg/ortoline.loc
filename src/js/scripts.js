@@ -501,7 +501,7 @@ function heightsToMax() {
 				wW = w.width(),
 				hH = that.height();
 
-			if(wW >= 965){
+			if(965 < wW){
 				if (w.scrollTop() > 220) {
 					that.addClass('header_fix');
 					$('#all').css({'padding-top': 77});
@@ -511,7 +511,7 @@ function heightsToMax() {
 					$('#all').css({'padding-top': 208});
 					$('#footer').css('top', -399);
 				}
-			} else if(wW >= 768){
+			} else if( 768 < wW <= 965 ) {
 				if (w.scrollTop() > 320) {
 					that.addClass('header_fix');
 					$('#all').css({'padding-top': 80});
@@ -521,7 +521,7 @@ function heightsToMax() {
 					$('#all').css({'padding-top': 182});
 					$('#footer').css('top', -154);
 				}
-			} else {
+			} else if(wW < 768){
 				that.removeClass('header_fix');
 				$('#all').css({'padding-top': 128});
 				$('#footer').css('top', -324);

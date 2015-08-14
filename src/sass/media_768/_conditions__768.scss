@@ -4,11 +4,12 @@
 .conditions__row{
 	margin-top: 0;
 	+ .conditions__row{
-		margin-top: 30px;
+		margin-top: 10px;
 	}
 }
 .conditions__col{
 	width: 100%;
+	margin-bottom: 20px;
 }
 .conditions__par{
 	font-size: 15px;
@@ -20,7 +21,10 @@
 	line-height: 24px;
 }
 .conditions-promo_brd{
-	padding: 20px 16px;
+	padding: 30px 40px;
+}
+.conditions-promo__list{
+	margin-bottom: 0;
 }
 .conditions__sub-title{
 	font-size: 18px;
