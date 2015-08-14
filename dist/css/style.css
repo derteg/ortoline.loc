@@ -5438,7 +5438,7 @@ p.services__info {
   h1 {
     font-size: 26px;
     line-height: 30px;
-    margin-bottom: 26px; }==
+    margin-bottom: 26px; }
   .title__h1_s2 {
     font-size: 20px;
     line-height: 26px;
@@ -5478,11 +5478,8 @@ p.services__info {
     padding-bottom: 12px; }
   .mainmenu__buttons .button {
     font-size: 14px;
-<<<<<<< HEAD
-=======
     font-weight: normal;
     text-transform: none;
->>>>>>> responsive
     padding: 10px 12px; }
     .mainmenu__buttons .button.button--blue {
       padding: 10px 20px; }
