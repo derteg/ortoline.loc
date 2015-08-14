@@ -39,8 +39,11 @@
 		font-weight: normal;
 		text-transform: none;
 		padding: 10px 12px;
+		img{
+			margin-right: 6px;
+		}
 		&.button--blue{
-			padding: 10px 20px;
+			padding: 10px 12px;
 		}
 	}
 }

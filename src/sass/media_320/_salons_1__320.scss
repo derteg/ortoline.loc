@@ -1,0 +1,42 @@
+.adress-inner{
+	.title__h1_s2{
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+}
+.adress-inner__row{
+	margin-bottom: 20px;
+}
+.adress-inner__col{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.adress-inner__pic{
+	display: none;
+	img{
+		width: 100%;
+		height: auto;
+	}
+}
+.adress-inner__info_col{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.adress-inner__info_row{
+	margin-bottom: 0;
+}
+.adress-inner__gallery{
+	text-align: center;
+	img{
+		display: inline-block;
+	}
+	.slick-dots{
+		bottom: -50px;
+	}
+	@include slickDots320();
+}
+.adress-inner__text{
+	line-height: 30px;
+}

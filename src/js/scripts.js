@@ -34,6 +34,7 @@ $(function(){
 	$('#faqmainSlider').faqmainSlider();
 	$('#cardSlider').cardSlider();
 	$('#adressNavBtns').adressNavBtns();
+	$('#adressPesronGall').adressPesronGall();
 });
 
 
@@ -783,5 +784,40 @@ function heightsToMax() {
 
 				$(window).trigger('resize');
 		}
+	};
+})(jQuery);
+
+(function($){
+	$.fn.adressPesronGall = function(){
+		var slider = this;
+
+		slider.slick({
+			slidesToShow: 4,
+			slideToScroll: 1,
+			infinite: false,
+			swipe: false,
+			arrows: false,
+			responsive: [
+				{
+					breakpoint: 960,
+					settings: {
+						slidesToShow: 3,
+						swipe: true,
+						dots: true,
+						arrows: false
+					}
+				},
+				{
+					breakpoint: 765,
+					settings: {
+						slidesToShow: 1,
+						swipe: true,
+						dots: true,
+						infinite: true
+					}
+				}
+			]
+		});
+
 	};
 })(jQuery);

@@ -1,0 +1,63 @@
+.about_gray{
+	padding: 30px 20px;
+	p{
+		line-height: 28px;
+		font-size: 14px;
+	}
+}
+.about{
+	width: 100%;
+	h2{
+		font-size: 25px;
+	}
+	p{
+		font-size: 15px;
+		line-height: 24px;
+	}
+	.promo__txt{
+		font-size: 16px;
+		line-height: 26px;
+	}
+}
+.about__content{
+	margin: 0;
+	width: 100%;
+}
+.about__pic{
+	margin-top: -20px;
+	margin-bottom: 26px;
+}
+.about-ours{
+	margin: 0;
+	margin-top: 34px;
+	.col--50{
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		margin-bottom: 20px;
+	}
+}
+.about-ours__round{
+	margin-bottom: 24px;
+	width: 130px;
+	height: 130px;
+	.sub__title{
+		line-height: 130px;
+		font-size: 40px;
+	}
+}
+.about-partner__list{
+	margin-left: 0;
+}
+.about-partner__item{
+	&.col--25{
+		width: 100%;
+		margin: 0;
+	}
+}
+.about-partner__lnk{
+	margin-left: 0;
+	margin-bottom: 10px;
+	height: 100px;
+	line-height: 100px;
+}
