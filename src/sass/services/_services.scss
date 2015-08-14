@@ -49,6 +49,11 @@ p.services__info{
 }
 .services__person__pic{
 	float: left;
+	max-width: 174px;
+	img{
+		width: 100%;
+		height: auto;
+	}
 }
 .services__person__cont{
 	margin-left: 208px;

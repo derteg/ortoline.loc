@@ -4558,7 +4558,11 @@ p.services__info {
   margin-bottom: 50px; }
 
 .services__person__pic {
-  float: left; }
+  float: left;
+  max-width: 174px; }
+  .services__person__pic img {
+    width: 100%;
+    height: auto; }
 
 .services__person__cont {
   margin-left: 208px;
@@ -5505,7 +5509,64 @@ p.services__info {
     width: 100%; }
   .about-partner__lnk img {
     width: 90%;
-    max-width: 140px; } }
+    max-width: 140px; }
+  .conditions {
+    margin-bottom: 40px; }
+  .conditions__row {
+    margin-top: 0; }
+    .conditions__row + .conditions__row {
+      margin-top: 10px; }
+  .conditions__col {
+    width: 100%;
+    margin-bottom: 20px; }
+  .conditions__par {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 24px; }
+  .conditions__content p {
+    font-size: 15px;
+    line-height: 24px; }
+  .conditions-promo_brd {
+    padding: 30px 40px; }
+  .conditions-promo__list {
+    margin-bottom: 0; }
+  .conditions__sub-title {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0; }
+    .conditions__sub-title + .conditions__row {
+      margin-top: 30px; }
+  .services {
+    margin-bottom: 40px; }
+  .services__sub-title {
+    margin-bottom: 20px; }
+  .services__row {
+    margin: 0; }
+  .services__col {
+    width: 100%;
+    padding: 0; }
+  .services__map {
+    margin-bottom: 20px;
+    height: 400px; }
+  .services__pic {
+    margin-bottom: 20px; }
+  .services__list_2-col {
+    margin-bottom: 40px; }
+  .services__person {
+    width: 100%;
+    float: none; }
+  .services__company {
+    width: 100%;
+    float: none;
+    padding: 0; }
+    .services__company p {
+      margin-left: 320px; }
+  .services__company__logo {
+    float: left;
+    max-width: 280px; }
+    .services__company__logo img {
+      width: 100%;
+      height: auto; } }
 
 @media (max-width: 767px) {
   #all {
@@ -6232,8 +6293,29 @@ p.services__info {
     margin-bottom: 10px;
     height: 100px;
     line-height: 100px; }
+  .conditions {
+    margin-bottom: 40px; }
+  .conditions__row {
+    margin-top: 0; }
+    .conditions__row + .conditions__row {
+      margin-top: 30px; }
+  .conditions__col {
+    width: 100%; }
+  .conditions__par {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 24px; }
+  .conditions__content p {
+    font-size: 15px;
+    line-height: 24px; }
   .conditions-promo_brd {
     padding: 20px 16px; }
+  .conditions__sub-title {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0; }
+    .conditions__sub-title + .conditions__row {
+      margin-top: 30px; }
   .contacts {
     margin-bottom: 40px; }
   .contacts__left {
@@ -6257,6 +6339,50 @@ p.services__info {
     margin-top: 20px; }
   .contacts__right {
     width: 100%;
-    float: none; } }
+    float: none; }
+  .services {
+    margin-bottom: 40px; }
+    .services h2 {
+      font-size: 30px;
+      line-height: 34px;
+      margin-bottom: 20px; }
+  .services__sub-title {
+    margin-bottom: 20px; }
+  .services__row {
+    margin: 0; }
+  .services__col {
+    padding: 0;
+    margin-bottom: 20px; }
+    .services__col.col--50 {
+      width: 100%; }
+  .services__content p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px; }
+  p.services__info {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 24px; }
+  .services__list_2-col {
+    margin-bottom: 20px; }
+    .services__list_2-col li {
+      width: 100%;
+      float: none; }
+  .services__person {
+    width: 100%;
+    margin-bottom: 30px; }
+  .services__person__pic {
+    float: none;
+    margin-bottom: 20px; }
+  .services__person__cont {
+    margin-left: 0; }
+    .services__person__cont .strong__text {
+      font-size: 18px;
+      line-height: 24px; }
+  .services__company {
+    width: 100%;
+    padding: 0; }
+  .services__company__logo {
+    margin-bottom: 16px; } }
 
 /*# sourceMappingURL=style.css.map */
