@@ -30,8 +30,10 @@ $(function(){
 	$('#accordionAside').accordionAside();
 	$('#videoSlider').videoSlider();
 	$('#videoSliderPromo, #infoSliderPromo').promoSliderList();
-	$('#faqmainSlider').faqmainSlider();
 	$('.js-lnk_popup').contactPopup();
+	$('#faqmainSlider').faqmainSlider();
+	$('#cardSlider').cardSlider();
+	$('#adressNavBtns').adressNavBtns();
 });
 
 
@@ -169,7 +171,16 @@ $(window).load(function(){initLikes();});
 			speed: 0,
 			swipe: false,
 			asNavFor: '.js-product__slider-nav',
-			infinite: false
+			infinite: false,
+			responsive: [
+				{
+					breakpoint: 765,
+					settings: {
+						swipe: true,
+						infinite: true
+					}
+				}
+			]
 		});
 
 		$sliderNav.slick({
@@ -182,7 +193,20 @@ $(window).load(function(){initLikes();});
 			centerMode: true,
 			focusOnSelect: true,
 			infinite: false,
-			swipe: false
+			swipe: false,
+			responsive: [
+				{
+					breakpoint: 765,
+					settings: {
+						slidesToShow: 3,
+						vertical: false,
+						verticalSwiping: false,
+						initialSlide: 1,
+						arrows: false,
+						infinite: true
+					}
+				}
+			]
 		});
 	};
 })(jQuery);
@@ -676,5 +700,88 @@ function heightsToMax() {
 				}
 			]
 		});
+	};
+})(jQuery);
+
+(function($){
+	$.fn.cardSlider = function(){
+		var slider = this;
+
+		slider.slick({
+			slidesToShow: 4,
+			slideToScroll: 1,
+			infinite: false,
+			swipe: false,
+			arrows: false,
+			responsive: [
+				{
+					breakpoint: 960,
+					settings: {
+						slidesToShow: 3,
+						swipe: true,
+						arrows: false
+					}
+				},
+				{
+					breakpoint: 765,
+					settings: {
+						slidesToShow: 1,
+						swipe: true
+					}
+				}
+			]
+		});
+	};
+})(jQuery);
+
+(function($){
+	$.fn.adressNavBtns = function(){
+		var nav = this,
+			$cont = $('#adressNavCont'),
+			$block = $('.js-adress__block', $cont),
+			resizeId;
+
+		$(window).load(adressResize);
+
+		$(window).resize(function() {
+		    clearTimeout(resizeId);
+		    resizeId = setTimeout(adressResize, 500);
+		});
+		 
+		function adressResize(){
+		    var w = $(this),
+		    	wW = w.width(),
+		    	$type = $('li.current', nav).data('btn-adress');
+
+		    if(wW > 1140){
+		    	$block.css('display', 'inline-block');
+
+		    	$('li', nav).removeClass('current');
+		    	nav.find('li[data-btn-adress="list"]').addClass('current');
+		    } else {
+		    	if($type == 'map'){ $cont.find('.adress__map').css('display', 'block'); }
+
+		    	if($type == 'list' || $type == 'scheme'){ $cont.find('.adress__tbl').css('display', 'block'); }
+		    }
+		}
+
+
+		nav.on('click', 'li:not(.current)', adressCurrent);
+
+		function adressCurrent(event){
+			var $btn = $(this),
+				$type = $btn.data('btn-adress');
+
+				$('li', nav).removeClass('current');
+				$btn.addClass('current');
+
+				$block.css('display', 'none');
+
+				if($type == 'map'){ $cont.find('.adress__map').css('display', 'block'); }
+
+				if($type == 'list' || $type == 'scheme'){ $cont.find('.adress__tbl').css('display', 'block'); }
+
+				$(window).trigger('resize');
+		}
 	};
 })(jQuery);
