@@ -1,0 +1,138 @@
+.adress__nav{
+
+}
+.adress__nav-select_wrap{
+	width: 100%;
+}
+.adress__nav-select_wrap{
+	.styledSelect{
+		width: 100%;
+		height: 100%;
+	}
+	.options{
+		width: 100%;
+	}
+}
+.adress__nav-type{
+	display: none;
+}
+
+.adress__nav-btn__list{
+	position: relative;
+	height: 78px;
+	margin-top: 18px;
+	&.fr{
+		float: none;
+	}
+}
+.adress__nav-btn__item{
+	width: 94px;
+	height: 78px;
+	line-height: 78px;
+	box-sizing: border-box;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	margin: 0;
+	border-radius: 4px;
+	color: $black;
+	background-color: $lightGray;
+	&.current{
+		color: $orange;
+		background-color: $black;
+	}
+	.button{
+		background-color: transparent;
+	}
+	.ico{
+		right: 0;
+		margin-bottom: 8px;
+	}
+	.text{
+		display: block;
+		font-size: 13px;
+		line-height: 12px;
+		font-weight: normal;
+		text-transform: none;
+		text-align: center;
+	}
+}
+.adress__nav-btn__wrap{
+	vertical-align: middle;
+	display: inline-block;
+	text-align: center;
+	line-height: 1;
+	width: 100%;
+	padding: 0;
+}
+
+.adress__nav-btn_lists{
+	left: 0;
+}
+.adress__nav-btn_sheme{
+	right: 0;
+}
+.adress__nav-btn_map{
+	left: 50%;
+	margin-left: -47px;
+	display: inline-block;
+}
+
+.adress__map{
+	width: 100%;
+	height: 400px;
+	display: none;
+}
+.adress__tbl{
+	width: 100%;
+}
+.adress__tbl-row{
+	min-height: 240px;
+	line-height: 240px;
+	text-align: center;
+	border: 1px solid $lightGray;
+	margin-top: -1px;
+	&:first-child{
+		margin-top: 0;
+	}
+	&:focus{
+		background-color: $dark;
+		color: $white;
+		.adress__lnk{
+			color: $orange;
+			border-bottom: 1px solid $orange;
+			border-bottom: 1px solid rgba(243, 169, 66, 0.4);
+		}
+	}
+}
+.adress__tbl-wrap{
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1;
+	width: 70%;
+}
+.adress__tbl-cell{
+	display: block;
+	width: 100%;
+	padding: 0;
+}
+.adress__type{
+	margin-top: -10px;
+}
+.adress__metro{
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.adress__lnk{
+	display: inline;
+	margin-bottom: 18px;
+	border-bottom: 1px solid $blue;
+	border-bottom: 1px solid rgba(19, 118, 186, 0.4);
+}
+.adress__phone{
+	margin-top: 18px;
+	margin-bottom: 6px;
+}
+.adress__subphone{
+	line-height: 14px;
+}

@@ -165,10 +165,18 @@ h3{
 .button--gray{
 	color: $black;
 	background: $lightGray;
+	&:hover{
+		color: $dark;
+		background: $lightGrayHov;
+	}
 }
-.button--gray:hover{
-	color: $dark;
-	background: $lightGrayHov;
+.button--black{
+	color: $white;
+	background: $black;
+	&:hover{
+		color: $white;
+		background: $dark;
+	}
 }
 .button--round{
 	border-radius: 23px;
