@@ -1,16 +1,22 @@
-.promoslider__slide {
+.promoslider__cont {
+	.inside{
+		padding: 0;
+	}
+}
+.promoslider__slide{
 	img{
 		width: 240%;
 		height: auto;
 	}
 }
+.promoslider__wrap{
+	width: 80%;
+}
 .promoslider__text{
-	width: 200px;
-	margin-left: -100px;
-	left: 50%;
+	width: 80%;
 	font-size: 26px;
 	line-height: 32px;
-	bottom: 114px;
+	margin-bottom: 0;
 	&:before{
 		margin-bottom: 18px;
 		width: 36px;
