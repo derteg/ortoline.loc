@@ -34,3 +34,41 @@
 		margin-top: 30px;
 	}
 }
+
+.services__promo{
+	display: block;
+}
+.services__promo__pic_01{
+	display: none;
+}
+.services__promo__wrap{
+	display: block;
+	width: 100%;
+}
+
+.services__gallery-resp{
+	padding-bottom: 82px;
+	.slick-dots{
+		padding-top: 40px;
+	}
+}
+
+.services__gallery_col-4__item {
+	padding-bottom: 0;
+	text-align: center;
+	.pic{
+		min-height: 211px;
+	}
+	img{
+		display: inline-block;
+	}
+	.title{
+		position: static;
+		padding-bottom: 30px;
+	}
+}
+.services__info_bottom{
+	padding: 0;
+	padding-top: 112px;
+	margin-bottom: 0;
+}
