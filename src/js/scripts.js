@@ -35,6 +35,8 @@ $(function(){
 	$('#cardSlider').cardSlider();
 	$('#adressNavBtns').adressNavBtns();
 	$('#adressPesronGall').adressPesronGall();
+	$('#servicesGalleryResp').servicesGalleryResp();
+	$('#servicesGallery').servicesGallery();
 });
 
 
@@ -823,6 +825,80 @@ function heightsToMax() {
 						swipe: true,
 						dots: true,
 						infinite: true
+					}
+				}
+			]
+		});
+
+	};
+})(jQuery);
+
+(function($){
+	$.fn.servicesGalleryResp = function(){
+		var slider = this;
+
+		slider.slick({
+			slidesToShow: 7,
+			slideToScroll: 1,
+			infinite: false,
+			swipe: false,
+			arrows: false,
+			responsive: [
+				{
+					breakpoint: 960,
+					settings: {
+						slidesToShow: 5,
+						swipe: true,
+						dots: true,
+						arrows: false
+					}
+				},
+				{
+					breakpoint: 765,
+					settings: {
+						slidesToShow: 1,
+						swipe: true,
+						dots: true,
+						infinite: true,
+						adaptiveHeight: true
+					}
+				}
+			]
+		});
+
+	};
+})(jQuery);
+
+(function($){
+	$.fn.servicesGallery = function(){
+		var slider = this;
+
+		slider.slick({
+			slidesToShow: 4,
+			slideToScroll: 1,
+			infinite: false,
+			swipe: false,
+			arrows: false,
+			responsive: [
+				{
+					breakpoint: 960,
+					settings: {
+						slidesToShow: 3,
+						swipe: true,
+						dots: true,
+						arrows: false,
+						adaptiveHeight: true
+					}
+				},
+				{
+					breakpoint: 765,
+					settings: {
+						slidesToShow: 1,
+						slideToScroll: 1,
+						swipe: true,
+						dots: true,
+						infinite: true,
+						adaptiveHeight: true
 					}
 				}
 			]
