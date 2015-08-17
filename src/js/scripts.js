@@ -505,39 +505,38 @@ function heightsToMax() {
 
 (function($){
 	$.fn.headerFixed = function(){
-		var that = this;
+		var header = this,
+			resizeId,
+			win = $(window);
 
-		$(window).on('scroll resize', function() {
-			var w = $(this),
-				wW = w.width(),
-				hH = that.height();
+		win.load(winPosCalc);
 
-			if(965 < wW){
-				if (w.scrollTop() > 220) {
-					that.addClass('header_fix');
-					$('#all').css({'padding-top': 77});
-					$('#footer').css('top', -399 + that.height());
-				} else {
-					that.removeClass('header_fix');
-					$('#all').css({'padding-top': 208});
-					$('#footer').css('top', -399);
-				}
-			} else if( 768 < wW ) {
-				if (w.scrollTop() > 320) {
-					that.addClass('header_fix');
-					$('#all').css({'padding-top': 80});
-					$('#footer').css('top', -154 + that.height());
-				} else {
-					that.removeClass('header_fix');
-					$('#all').css({'padding-top': 182});
-					$('#footer').css('top', -154);
-				}
-			} else if(wW < 768){
-				that.removeClass('header_fix');
-				$('#all').css({'padding-top': 128});
-				$('#footer').css('top', -324);
-			}
+		setTimeout(function(){
+			win.trigger('resize');
+		}, 100);
+
+		win.scroll(winPosCalc);
+
+		win.resize(function() {
+		    clearTimeout(resizeId);
+		    resizeId = setTimeout(winPosCalc, 200);
 		});
+		 
+		function winPosCalc(){
+			var wScrollTop = win.scrollTop(),
+				wW = win.width(),
+				hH = header.innerHeight();
+
+			if(768 < wW){
+				if (wScrollTop > 220) {
+					header.addClass('header_fix');
+				} else {
+					header.removeClass('header_fix');
+				}
+			} else {
+				header.removeClass('header_fix');
+			}   
+		}
 	};
 })(jQuery);
 

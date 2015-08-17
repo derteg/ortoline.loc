@@ -98,7 +98,7 @@ h3{
 	line-height:36px;
 }
 #all{
-	padding-bottom: 400px;
+	padding-bottom: 399px;
 	padding-top: 208px;
 	height:auto;
 	position:relative;
@@ -145,27 +145,31 @@ h3{
 .button--blue{
 	background:$blue;
 	border-bottom-color:#559cca;
-}
-.button--blue:hover{
-	background:$blueHov;
+	&:hover,
+	&:focus{
+		background:$blueHov;
+	}
 }
 .button--dark{
 	background:$dark;
-}
-.button--dark:hover{
-	background: $dark;
+	&:hover,
+	&:focus{
+		background: $dark;
+	}
 }
 .button--orange{
 	background:$orange;
 	border-bottom-color:#f6c070;
-}
-.button--orange:hover{
-	background:$orangeHov;
+	&:hover,
+	&:focus{
+		background:$orangeHov;
+	}
 }
 .button--gray{
 	color: $black;
 	background: $lightGray;
-	&:hover{
+	&:hover,
+	&:focus{
 		color: $dark;
 		background: $lightGrayHov;
 	}
