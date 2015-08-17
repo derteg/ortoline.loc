@@ -1,3 +1,22 @@
 .video{
-	
+	margin-bottom: 0;
+	&.col--75{
+		width: 100%;
+	}
+	.col--33{
+		width: 100%;
+	}
+}
+.video-footer{
+	font-size: 12px;
+	line-height: 18px;
+	bottom: 18px;
+}
+.video__player__text{
+	width: 100%;
+	float: none;
+	margin-bottom: 20px;
+}
+.video__player__chanel{
+	width: auto;
 }

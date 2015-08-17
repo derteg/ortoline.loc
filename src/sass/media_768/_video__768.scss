@@ -1,5 +1,10 @@
-.video .cols{
-	margin: 0 -8px;
+.video{
+	&.col--75{
+		width: 100%;
+	}
+	.cols{
+		margin: 0 -8px;
+	}
 }
 .video__main{
 	.col{
@@ -10,4 +15,9 @@
 .video-item{
 	margin: 0 8px;
 	width: auto;
+}
+.video-footer{
+	font-size: 12px;
+	line-height: 18px;
+	bottom: 18px;
 }
