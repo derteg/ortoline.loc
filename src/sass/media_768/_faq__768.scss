@@ -2,6 +2,8 @@
 	width: 100%;
 	margin-left: 0;
 	display: none;
+	margin-bottom: 0;
+	padding-bottom: 40px;
 	&.active{
 		display: block;
 	}
@@ -26,8 +28,8 @@
 .faq-aside{
 	width: 100%;
 	margin: 0;
-	margin-bottom: 40px;
 	padding: 0;
+	padding-bottom: 40px;
 	font-size: 0;
 	line-height: 0;
 	display: none;
@@ -58,5 +60,10 @@
 	.button{
 		display: block;
 		margin: 0px 10px;
+	}
+}
+.faq-quest__item{
+	&:last-of-type{
+		margin-bottom: 0;
 	}
 }
