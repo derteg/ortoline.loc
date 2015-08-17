@@ -4644,6 +4644,43 @@ p.services__info {
 .services__gallery-resp {
   padding: 40px 0 50px;
   margin-bottom: 62px; }
+  .services__gallery-resp .slick-dost {
+    display: none; }
+  .services__gallery-resp .slick-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 9;
+    opacity: .7;
+    -moz-transition: opacity 0.25s;
+    -o-transition: opacity 0.25s;
+    -webkit-transition: opacity 0.25s;
+    transition: opacity 0.25s; }
+    .services__gallery-resp .slick-dots:hover {
+      opacity: 1; }
+    .services__gallery-resp .slick-dots li {
+      display: inline-block;
+      margin: 0 5px;
+      width: 8px;
+      height: 8px; }
+    .services__gallery-resp .slick-dots button {
+      width: 8px;
+      height: 8px;
+      outline: none;
+      cursor: pointer;
+      border-radius: 4px;
+      background: #8797a8;
+      padding: 0;
+      text-indent: -9999px;
+      font-size: 0;
+      text-align: start;
+      border: none;
+      vertical-align: top;
+      vertical-align: top; }
+    .services__gallery-resp .slick-dots .slick-active button {
+      background: #f3a942;
+      cursor: default; }
 
 .services__gallery-resp__list {
   margin-top: 34px;
@@ -4700,6 +4737,43 @@ p.services__info {
 
 .services__gallery_col-4 {
   margin-bottom: 80px; }
+  .services__gallery_col-4 .slick-dots {
+    display: none; }
+  .services__gallery_col-4 .slick-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 9;
+    opacity: .7;
+    -moz-transition: opacity 0.25s;
+    -o-transition: opacity 0.25s;
+    -webkit-transition: opacity 0.25s;
+    transition: opacity 0.25s; }
+    .services__gallery_col-4 .slick-dots:hover {
+      opacity: 1; }
+    .services__gallery_col-4 .slick-dots li {
+      display: inline-block;
+      margin: 0 5px;
+      width: 8px;
+      height: 8px; }
+    .services__gallery_col-4 .slick-dots button {
+      width: 8px;
+      height: 8px;
+      outline: none;
+      cursor: pointer;
+      border-radius: 4px;
+      background: #8797a8;
+      padding: 0;
+      text-indent: -9999px;
+      font-size: 0;
+      text-align: start;
+      border: none;
+      vertical-align: top;
+      vertical-align: top; }
+    .services__gallery_col-4 .slick-dots .slick-active button {
+      background: #f3a942;
+      cursor: default; }
 
 .services__gallery_col-4__title {
   text-align: center; }
@@ -5548,6 +5622,30 @@ p.services__info {
     margin: 0; }
     .conditions__sub-title + .conditions__row {
       margin-top: 30px; }
+  .services__promo {
+    display: block; }
+  .services__promo__pic_01 {
+    display: none; }
+  .services__promo__wrap {
+    display: block;
+    width: 100%; }
+  .services__gallery-resp {
+    padding-bottom: 82px; }
+    .services__gallery-resp .slick-dots {
+      padding-top: 40px; }
+  .services__gallery_col-4__item {
+    padding-bottom: 0;
+    text-align: center; }
+    .services__gallery_col-4__item .pic {
+      min-height: 211px; }
+    .services__gallery_col-4__item img {
+      display: inline-block; }
+    .services__gallery_col-4__item .title {
+      position: static;
+      padding-bottom: 30px; }
+  .services__info_bottom {
+    padding: 0;
+    padding-top: 112px; }
   .services {
     margin-bottom: 40px; }
   .services__sub-title {
@@ -6330,6 +6428,49 @@ p.services__info {
     margin: 0; }
     .conditions__sub-title + .conditions__row {
       margin-top: 30px; }
+  .services__promo {
+    display: block;
+    margin-bottom: 20px; }
+  .services__promo__pic {
+    display: block;
+    min-height: 300px;
+    width: 100%; }
+  .services__promo__wrap {
+    display: block;
+    width: 100%; }
+  .conditions-promo__label {
+    font-size: 18px;
+    line-height: 30px; }
+  .conditions__content_bg-ico {
+    padding: 68px 0px 18px 0px;
+    background-position: 50% 0px;
+    background-size: 50px 50px;
+    text-align: center; }
+  .conditions-promo__item_num {
+    font-size: 15px; }
+  .services .button {
+    text-align: center;
+    padding: 14px 40px; }
+  .services__gallery-resp {
+    padding-bottom: 80px;
+    text-align: center; }
+    .services__gallery-resp img {
+      display: inline-block; }
+  .services__gallery-resp__list .slick-dots {
+    padding-top: 40px; }
+  .services__info_bottom {
+    padding: 0;
+    padding-top: 112px; }
+  .services__gallery_col-4__item {
+    text-align: center;
+    padding-bottom: 0; }
+    .services__gallery_col-4__item .pic {
+      min-height: 211px; }
+    .services__gallery_col-4__item img {
+      display: inline-block; }
+    .services__gallery_col-4__item .title {
+      position: static;
+      padding-bottom: 30px; }
   .contacts {
     margin-bottom: 40px; }
   .contacts__left {

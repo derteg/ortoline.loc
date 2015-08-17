@@ -125,6 +125,10 @@ p.services__info{
 .services__gallery-resp{
 	padding: 40px 0 50px;
 	margin-bottom: 62px;
+	.slick-dost{
+		display: none;
+	}
+	@include slickDots320();
 }
 .services__gallery-resp__list{
 	margin-top: 34px;
@@ -191,6 +195,10 @@ p.services__info{
 
 .services__gallery_col-4{
 	margin-bottom: 80px;
+	.slick-dots{
+		display: none;
+	}
+	@include slickDots320();
 }
 .services__gallery_col-4__title{
 	text-align: center;
