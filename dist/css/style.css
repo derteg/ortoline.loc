@@ -6359,7 +6359,9 @@ p.services__info {
     .services h2 {
       font-size: 30px;
       line-height: 34px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      overflow-y: hidden;
+      overflow-x: auto; }
   .services__sub-title {
     margin-bottom: 20px; }
   .services__row {

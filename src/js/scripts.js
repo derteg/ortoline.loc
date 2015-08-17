@@ -519,7 +519,8 @@ function heightsToMax() {
 					$('#all').css({'padding-top': 208});
 					$('#footer').css('top', -399);
 				}
-			} else if( 768 < wW <= 965 ) {
+			} else if( 768 < wW ) {
+					console.log(wW);
 				if (w.scrollTop() > 320) {
 					that.addClass('header_fix');
 					$('#all').css({'padding-top': 80});
