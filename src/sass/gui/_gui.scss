@@ -296,10 +296,8 @@ h3{
 
 .tag__item{
 	display: inline-block;
-	margin-left: 6px;
-	&:first-child{
-		margin-left: 0;
-	}
+	margin-right: 6px;
+	margin-bottom: 16px;
 	&.current{
 		a{
 			background-color: $blue;			
