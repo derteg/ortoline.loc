@@ -1,13 +1,21 @@
+.faq-main__btn-quest{
+	&.button:hover{
+		background-color: $orangeHov;
+	}
+}
 .faq-main{	
 	font-family: $openSans;
 	width: 66.6%;
 	margin-bottom: 52px;
 }
+.faq-main__btn-mobile{
+	display: none;
+}
 .faq-main__list{
 	margin-bottom: 44px;
 }
 .faq-main__item{
-	padding: 38px 0 30px;
+	padding: 38px 0 20px;
 	border-radius: 6px;
 	border: $brdLnk5;
 	background-color: $white;	
@@ -123,12 +131,7 @@
 	text-align: center;
 }
 .faq-quest__item{
-	background-color: $white;
-	border-radius: 6px;
-	box-sizing: border-box;
 	margin-bottom: 20px;
-	overflow: hidden;
-	border: $brdLnk5;
 }
 .faq-quest__left,
 .faq-quest__right{
@@ -151,6 +154,10 @@
 }
 .faq-quest__cont{
 	display: table;
+	background-color: $white;
+	border-radius: 6px;
+	border: $brdLnk5;
+	overflow: hidden;
 	&.opened{
 		.question{
 			border-bottom: 1px solid $grayBrd;
@@ -172,6 +179,7 @@
 		padding-bottom: 0px;
 		@include transition(opacity 1s);
 	}
+	&:focus,
 	&:hover{
 		background-color: #F7F7F7;
 	}
@@ -189,4 +197,7 @@
 	width: 100%;
 	text-align: center;
 	box-sizing: border-box;
+	.button{
+		display: block;
+	}
 }

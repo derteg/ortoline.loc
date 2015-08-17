@@ -37,6 +37,7 @@ $(function(){
 	$('#adressPesronGall').adressPesronGall();
 	$('#servicesGalleryResp').servicesGalleryResp();
 	$('#servicesGallery').servicesGallery();
+	$('#faqAccordMob').faqAccordMob();
 });
 
 
@@ -903,5 +904,18 @@ function heightsToMax() {
 			]
 		});
 
+	};
+})(jQuery);
+
+
+(function($){
+	$.fn.faqAccordMob = function(){
+		var wrap = this,
+			$btn = $('.js-faq__btn-accord', wrap);
+
+			$btn.click(function(){
+				var $cont = $('.js-faq_block-mob', wrap);
+				$cont.toggleClass('active');
+			});
 	};
 })(jQuery);
