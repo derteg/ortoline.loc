@@ -205,16 +205,17 @@
 		width: 100%;
 	}
 }
-.video__player__sub{
-	p{
-		color: $black;
-		float: left;
-		line-height: 22px;
-		width: 66.6%;
-	}
+.video__player__text{
+	color: $black;
+	float: left;
+	line-height: 22px;
+	width: 66.6%;
+	padding-right: 20px;
+	box-sizing: border-box;
 }
 .video__player__chanel{
 	float: right;
+	width: 33.3%;
 	border-radius: 6px;
 	overflow: hidden;
 	.ico{
@@ -243,7 +244,8 @@
 		margin-left: 60px;
 		text-transform: uppercase;
 		font-weight: bold;
-		padding: 20px;
+		padding: 20px 16px;
+		white-space: nowrap;
 		span{
 			color: $dark;
 			border-bottom: $brdLnk3;
@@ -267,6 +269,10 @@
 
 .video__slider{
 	padding-top: 58px;
+	.col{
+		margin-left: 0;
+		float: left;
+	}
 	.slick-dots{
 		position: absolute;
 		bottom: 100%;

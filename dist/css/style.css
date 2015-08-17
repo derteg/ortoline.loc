@@ -3418,14 +3418,17 @@ p.promo__txt {
   .video__player iframe {
     width: 100%; }
 
-.video__player__sub p {
+.video__player__text {
   color: #2c2c2c;
   float: left;
   line-height: 22px;
-  width: 66.6%; }
+  width: 66.6%;
+  padding-right: 20px;
+  box-sizing: border-box; }
 
 .video__player__chanel {
   float: right;
+  width: 33.3%;
   border-radius: 6px;
   overflow: hidden; }
   .video__player__chanel .ico {
@@ -3455,7 +3458,8 @@ p.promo__txt {
     margin-left: 60px;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 20px; }
+    padding: 20px 16px;
+    white-space: nowrap; }
     .video__player__chanel .b-lnk span {
       color: #282828;
       border-bottom: 1px solid #282828;
@@ -3471,6 +3475,9 @@ p.promo__txt {
 
 .video__slider {
   padding-top: 58px; }
+  .video__slider .col {
+    margin-left: 0;
+    float: left; }
   .video__slider .slick-dots {
     position: absolute;
     bottom: 100%;
@@ -5402,6 +5409,8 @@ p.services__info {
     width: 90%;
     padding-bottom: 12px;
     min-height: 60px; }
+  .video.col--75 {
+    width: 100%; }
   .video .cols {
     margin: 0 -8px; }
   .video__main .col {
@@ -5410,6 +5419,10 @@ p.services__info {
   .video-item {
     margin: 0 8px;
     width: auto; }
+  .video-footer {
+    font-size: 12px;
+    line-height: 18px;
+    bottom: 18px; }
   .usfl .col--25 {
     width: 50%;
     margin-bottom: 20px; }
@@ -5645,7 +5658,8 @@ p.services__info {
       padding-bottom: 30px; }
   .services__info_bottom {
     padding: 0;
-    padding-top: 112px; }
+    padding-top: 112px;
+    margin-bottom: 0; }
   .services {
     margin-bottom: 40px; }
   .services__sub-title {
@@ -6147,6 +6161,22 @@ p.services__info {
   .info-tabs__item {
     margin-bottom: 10px;
     padding: 8px 12px; }
+  .video {
+    margin-bottom: 0; }
+    .video.col--75 {
+      width: 100%; }
+    .video .col--33 {
+      width: 100%; }
+  .video-footer {
+    font-size: 12px;
+    line-height: 18px;
+    bottom: 18px; }
+  .video__player__text {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px; }
+  .video__player__chanel {
+    width: auto; }
   .usfl .col--25 {
     width: 50%;
     margin-bottom: 20px; }
