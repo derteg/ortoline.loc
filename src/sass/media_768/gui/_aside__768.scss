@@ -1,0 +1,24 @@
+.aside-filter{
+	width: 100%;
+	position: relative;
+	overflow: visible;
+	margin: 88px 0px 20px;
+}
+.aside-filter__wrap{
+	display: none;
+	padding-bottom: 20px;
+	border: $brdLnk5;
+	border-radius: 8px;
+	&.active{
+		display: block;
+	}
+}
+.aside-filter__title{
+	width: 33.3%;
+	position: absolute;
+	top: -66px;
+	left: 0px;
+	.button{
+		border-radius: 4px;
+	}
+}

@@ -145,10 +145,6 @@
 	}
 }
 
-.product__sub-card__list{
-	max-width: 288px;
-	margin: 0 auto;	
-}
 h3.product__sub-title{
 	font-size: 30px;
 	line-height: 40px;
@@ -156,32 +152,110 @@ h3.product__sub-title{
 }
 
 
-.info-tabs__wrap{
-	.col--50,
-	.col--25{
-		width: 100%;
+.product-catalogue{
+	width: 100%;
+	.search__menu{
+		position: absolute;
+		top: 20px;
+		left: 0;
 		padding: 0;
+		width: 100%;
+	}
+	.search__menu_field{
+		margin-left: 20px;
+		margin-right: 20px;
+		width: auto;
+	}
+	.card__image{
+		img{
+			width: 100%;
+		}
+	}
+	.card__text{
+		margin-bottom: 14px;
+	}
+	.card__title{
+		font-size: 13px;
+		font-weight: 500;
+		margin: 0;
+		width: 100%;
+	}
+	.card__brand{
+		margin-bottom: 10px;
+		.title{
+			display: none;
+		}
 	}
 }
-.info-tabs__col{
-	.info-tabs__adress{
-		padding-left: 0;
+.product-catalogue__row{
+	margin: 0;
+}
+h4.product__sub-title{
+	margin-left: 0;
+	line-height: 20px;
+	display: none;
+}
+.product__sub-card__list{
+	margin: 0;
+	width: auto;
+	max-width: none;
+	margin: 0px -10px;
+	font-size: 0;
+	line-height: 0;
+	&.slick-slider{
+		margin: 0;
+	}
+	.card{
+		width: 50%;
+		margin-left: 0;
+		margin-bottom: 20px;
 	}
 }
-.info-tabs__text{
-	margin-bottom: 20px;
-}
-.tabs__title_top{
-	top: 0;
-	margin-bottom: 22px;
-	+ .product__info_text{
-		margin-top: 0;
+.card__info {
+	p{
+		font-size: 14px;
+		line-height: 20px;
 	}
 }
-.info-tabs__list{
-	margin-bottom: 8px;
+.card__title{
+	font-size: 16px;
+	line-height: 22px;
 }
-.info-tabs__item{
-	margin-bottom: 10px;
-	padding: 8px 12px;
+.card__brand{
+	font-size: 13px;
+	line-height: 20px;
+}
+.card__price{
+	font-size: 22px;
+	line-height: 20px;
+}
+
+.product__filter_mob{
+	display: block;
+}
+.product__filter_mob-list{
+	font-size: 0;
+	line-height: 0;
+	margin: 0px -7px;
+}
+.product__filter_mob-item{
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+	margin-bottom: 14px;
+	.button{
+		display: block;
+		margin: 0px 7px;
+		padding: 18px 0;
+		font-size: 13px;
+		text-transform: none;
+		color: $white;
+		background-color: $gray2;
+		span{
+			border: none;
+		}
+		&.button--orange{
+			background-color: $orange;
+		}
+	}
 }

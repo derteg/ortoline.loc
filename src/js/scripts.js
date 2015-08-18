@@ -38,6 +38,7 @@ $(function(){
 	$('#servicesGalleryResp').servicesGalleryResp();
 	$('#servicesGallery').servicesGallery();
 	$('#faqAccordMob').faqAccordMob();
+	$('.js-product__filter_mob').productFilterMob();
 });
 
 
@@ -918,5 +919,17 @@ function heightsToMax() {
 				var $cont = $('.js-faq_block-mob', wrap);
 				$cont.toggleClass('active');
 			});
+	};
+})(jQuery);
+
+(function($){
+	$.fn.productFilterMob = function(){
+		var btn = this,
+			filterBl = btn.parents('.product__filter_mob').next();
+
+			btn.click(function(){
+				filterBl.toggleClass('active');
+			});
+
 	};
 })(jQuery);

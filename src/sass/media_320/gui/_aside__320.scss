@@ -1,0 +1,19 @@
+.aside-filter{
+	width: 100%;
+	margin-top: 80px;
+}
+.aside-filter__wrap{
+	display: none;
+	padding-bottom: 20px;
+	border: $brdLnk5;
+	border-radius: 8px;
+	&.active{
+		display: block;
+	}
+}
+.aside-filter__title{
+	margin-bottom: 14px;
+	.button{
+		border-radius: 4px;
+	}
+}

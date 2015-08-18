@@ -264,7 +264,7 @@
 }
 
 .product__sub{
-	margin-bottom: 50px;
+	margin-bottom: 24px;
 }
 h3.product__sub-title{
 	font-size: 30px;
@@ -274,8 +274,12 @@ h3.product__sub-title{
 h4.product__sub-title{
 	font-weight: bold;
 	font-size: 20px;
-	margin-left: 40px;
+	margin-left: 20px;
 	margin-bottom: 20px;
+}
+.product__sub-card__list{
+	margin-left: 20px;
+	margin-right: -10px;
 }
 .product__sub-card__item{
 	.wrap{
@@ -522,6 +526,7 @@ h4.product__sub-title{
 		margin-left: 20px;
 	}
 }
-.product-catalogue__row{
-	margin-bottom: 26px;
+
+.product__filter_mob{
+	display: none;
 }
