@@ -5259,8 +5259,6 @@ p.services__info {
   h1 {
     font-size: 35px;
     line-height: 40px; }
-  .search__menu {
-    margin-bottom: 0; }
   .info__item {
     display: inline-block;
     font-size: 15px; }
@@ -5966,7 +5964,23 @@ p.services__info {
       padding-left: 5%;
       line-height: 15px;
       font-size: 12px;
-      box-sizing: border-box; } }
+      box-sizing: border-box; }
+  .catalogue__cont {
+    margin: 0 -10px;
+    font-size: 0;
+    line-height: 0; }
+  .catalogue__col {
+    width: 50%;
+    margin-left: 0; }
+  .catalogue__wrap .title {
+    font-size: 14px;
+    line-height: 20px; }
+  .catalogue__wrap_procent .title {
+    font-size: 82px;
+    line-height: 1; }
+  .catalogue__wrap_procent .sub-title {
+    font-size: 30px;
+    line-height: 1; } }
 
 @media (max-width: 767px) {
   #all {
@@ -7077,6 +7091,23 @@ p.services__info {
       padding-left: 5%;
       line-height: 15px;
       font-size: 12px;
-      box-sizing: border-box; } }
+      box-sizing: border-box; }
+  .catalogue__cont {
+    margin: 0 -10px;
+    font-size: 0;
+    line-height: 0; }
+  .catalogue__col {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px; }
+  .catalogue__wrap .title {
+    font-size: 14px;
+    line-height: 20px; }
+  .catalogue__wrap_procent .title {
+    font-size: 82px;
+    line-height: 1; }
+  .catalogue__wrap_procent .sub-title {
+    font-size: 30px;
+    line-height: 1; } }
 
 /*# sourceMappingURL=style.css.map */
