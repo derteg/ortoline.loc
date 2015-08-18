@@ -55,6 +55,42 @@
 		margin: 0;
 		margin-bottom: 20px;
 	}
+	.card__image{
+		height: 150px;
+		line-height: 150px;
+		padding-bottom: 20px;
+		img{
+			width: 70%;
+			max-width: 160px;
+		}
+	}
+	.card__text{
+		margin-bottom: 14px;
+	}
+	.card__title{
+		font-size: 13px;
+		line-height: 22px;
+		font-weight: 500;
+		margin: 0;
+		width: 100%;
+	}
+	.card__brand{
+		margin-bottom: 10px;
+		line-height: 20px;
+		.title{
+			display: none;
+		}
+	}
+	.card__price{
+		line-height: 22px;
+	}
+	.card__line{
+		top: 186px;
+	}
+	.card__info{
+		font-size: 14px;
+		line-height: 20px;
+	}
 }
 .product__sub-title{
 	display: none;

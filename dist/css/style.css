@@ -5525,6 +5525,33 @@ p.services__info {
       padding-top: 0;
       margin: 0;
       margin-bottom: 20px; }
+    .product__sub-card__list .card__image {
+      height: 150px;
+      line-height: 150px;
+      padding-bottom: 20px; }
+      .product__sub-card__list .card__image img {
+        width: 70%;
+        max-width: 160px; }
+    .product__sub-card__list .card__text {
+      margin-bottom: 14px; }
+    .product__sub-card__list .card__title {
+      font-size: 13px;
+      line-height: 22px;
+      font-weight: 500;
+      margin: 0;
+      width: 100%; }
+    .product__sub-card__list .card__brand {
+      margin-bottom: 10px;
+      line-height: 20px; }
+      .product__sub-card__list .card__brand .title {
+        display: none; }
+    .product__sub-card__list .card__price {
+      line-height: 22px; }
+    .product__sub-card__list .card__line {
+      top: 186px; }
+    .product__sub-card__list .card__info {
+      font-size: 14px;
+      line-height: 20px; }
   .product__sub-title {
     display: none; }
   .video.col--75 {
