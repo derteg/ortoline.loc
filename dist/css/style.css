@@ -1560,24 +1560,24 @@ p.promo__txt {
   margin-bottom: 24px;
   text-transform: uppercase; }
 
-.form__register .b-capcha {
-  margin-bottom: 22px; }
-
-.form__register .capcha {
-  padding-left: 30px;
-  height: 94px;
-  box-sizing: border-box;
-  line-height: 94px; }
-  .form__register .capcha img {
-    width: 100%;
-    height: auto;
-    vertical-align: middle; }
-
-.form__register .form__btn {
-  padding: 14px 60px;
-  font-size: 13px;
-  text-transform: uppercase;
-  border: none; }
+.form__register {
+  margin-bottom: 30px; }
+  .form__register .b-capcha {
+    margin-bottom: 22px; }
+  .form__register .capcha {
+    padding-left: 30px;
+    height: 94px;
+    box-sizing: border-box;
+    line-height: 94px; }
+    .form__register .capcha img {
+      width: 100%;
+      height: auto;
+      vertical-align: middle; }
+  .form__register .form__btn {
+    padding: 14px 60px;
+    font-size: 13px;
+    text-transform: uppercase;
+    border: none; }
 
 .chk-cust {
   display: none; }
@@ -2589,10 +2589,6 @@ p.promo__txt {
   margin-top: -56px;
   letter-spacing: 0;
   text-transform: uppercase; }
-
-@media (max-width: 1024px) {
-  .panoram__title {
-    font-size: 34px; } }
 
 .panoram__sub-title {
   font-size: 18px;
@@ -5281,6 +5277,19 @@ p.services__info {
     left: 0px; }
     .aside-filter__title .button {
       border-radius: 4px; }
+  .form__tow-col.cols {
+    margin-left: 0;
+    font-size: 0;
+    line-height: 0; }
+  .form__tow-col .field__row {
+    padding: 0;
+    margin-left: 0; }
+  .form__tow-col .field__cell {
+    margin: 0 10px 16px; }
+  .form__register {
+    margin-bottom: 30px; }
+    .form__register .b-capcha .col--50 {
+      width: 50%; }
   .header__left {
     width: 72%; }
     .header__left .logo {
@@ -6058,6 +6067,23 @@ p.services__info {
     margin-bottom: 14px; }
     .aside-filter__title .button {
       border-radius: 4px; }
+  .form__tow-col.cols {
+    font-size: 0;
+    line-height: 0;
+    margin-left: 0; }
+  .form__tow-col .col--50 {
+    width: 100%; }
+  .form__tow-col .field__row {
+    padding: 0;
+    margin-left: 0; }
+  .form__tow-col .field__cell {
+    margin: 0 10px 16px; }
+  .form__register {
+    margin-bottom: 30px; }
+    .form__register .b-capcha .col--50 {
+      width: 50%; }
+  .form .field__cell-btn {
+    text-align: center; }
   .header__wrap {
     padding: 20px 0 0px; }
   .header__left {
