@@ -5283,7 +5283,7 @@ p.services__info {
     line-height: 0; }
   .form__tow-col .field__row {
     padding: 0;
-    margin-left: 0; }
+    margin: 0; }
   .form__tow-col .field__cell {
     margin: 0 10px 16px; }
   .form__register {
@@ -5974,6 +5974,10 @@ p.services__info {
       line-height: 15px;
       font-size: 12px;
       box-sizing: border-box; }
+  .delivery {
+    margin-bottom: 40px; }
+  .delivery_row {
+    padding: 38px 0 38px; }
   .catalogue__cont {
     margin: 0 -10px;
     font-size: 0;
@@ -5989,7 +5993,11 @@ p.services__info {
     line-height: 1; }
   .catalogue__wrap_procent .sub-title {
     font-size: 30px;
-    line-height: 1; } }
+    line-height: 1; }
+  .basket__cont {
+    width: 100%; }
+  .basket__cell-product .text {
+    text-align: left; } }
 
 @media (max-width: 767px) {
   #all {
@@ -6078,6 +6086,8 @@ p.services__info {
     margin-left: 0; }
   .form__tow-col .field__cell {
     margin: 0 10px 16px; }
+  .form__tow-col .radio__cell {
+    margin-bottom: 34px; }
   .form__register {
     margin-bottom: 30px; }
     .form__register .b-capcha .col--50 {
@@ -7104,6 +7114,8 @@ p.services__info {
       margin-bottom: 20px; }
   .faq-quest__item:last-of-type {
     margin-bottom: 0; }
+  .delivery {
+    margin-bottom: 40px; }
   .delivery__ico-post {
     margin-top: -10px;
     font-size: 0;
@@ -7118,6 +7130,10 @@ p.services__info {
       line-height: 15px;
       font-size: 12px;
       box-sizing: border-box; }
+  .delivery_row {
+    padding: 28px 0; }
+  .delivery textarea {
+    height: 138px; }
   .catalogue__cont {
     margin: 0 -10px;
     font-size: 0;
@@ -7134,6 +7150,44 @@ p.services__info {
     line-height: 1; }
   .catalogue__wrap_procent .sub-title {
     font-size: 30px;
-    line-height: 1; } }
+    line-height: 1; }
+  .basket__row {
+    position: relative;
+    margin-left: 0;
+    padding-bottom: 28px; }
+    .basket__row .col {
+      margin-left: 0; }
+  .basket__cont {
+    width: 100%;
+    margin-bottom: 54px; }
+  .basket__cell-product {
+    width: auto;
+    max-width: auto; }
+    .basket__cell-product .pic {
+      float: none;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: auto; }
+    .basket__cell-product .text {
+      text-align: left;
+      display: block;
+      width: 100%;
+      margin-left: 0;
+      margin-top: 100px;
+      box-sizing: border-box; }
+  .basket__cell-amount {
+    position: absolute;
+    left: 100px;
+    display: inline-block;
+    margin-left: 0; }
+  .basket__cell-price {
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .basket__row-final {
+    padding: 0px 0px 30px;
+    margin-top: -10px; } }
 
 /*# sourceMappingURL=style.css.map */
