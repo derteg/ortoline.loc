@@ -96,6 +96,7 @@ $sprite02: url('../ico/sprite_02.png');
 @media (max-width:1140px) and (min-width:768px) {
 	@import "media_768/gui/gui_768";
 	@import "media_768/gui/aside__768";
+	@import "media_768/gui/form__768";
 	@import "media_768/header__768";
 	@import "media_768/index__768";
 	@import "media_768/maincat__768";
@@ -117,6 +118,7 @@ $sprite02: url('../ico/sprite_02.png');
 @media (max-width:767px) {
 	@import "media_320/gui/gui__320";
 	@import "media_320/gui/aside__320";
+	@import "media_320/gui/form__320";
 	@import "media_320/header__320";
 	@import "media_320/index__320";
 	@import "media_320/maincat__320";

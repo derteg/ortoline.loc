@@ -1,0 +1,31 @@
+.form__tow-col {
+	&.cols{
+		font-size: 0;
+		line-height: 0;
+		margin-left: 0;
+	}
+	.col--50{
+		width: 100%;
+	}
+	.field__row{
+		padding: 0;
+		margin-left: 0;
+	}
+	.field__cell{
+		margin: 0 10px 16px;
+	}
+}
+
+.form__register {
+	margin-bottom: 30px;
+	.b-capcha{
+		.col--50{
+			width: 50%;
+		}
+	}
+}
+.form{
+	.field__cell-btn{
+		text-align: center;
+	}
+}
