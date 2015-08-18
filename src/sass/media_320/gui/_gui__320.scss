@@ -62,3 +62,33 @@ h1{
 .info__item{
 	font-size: 15px;
 }
+
+.info-tabs__wrap{
+	.col--50,
+	.col--25{
+		width: 100%;
+		padding: 0;
+	}
+}
+.info-tabs__col{
+	.info-tabs__adress{
+		padding-left: 0;
+	}
+}
+.info-tabs__text{
+	margin-bottom: 20px;
+}
+.tabs__title_top{
+	top: 0;
+	margin-bottom: 22px;
+	+ .product__info_text{
+		margin-top: 0;
+	}
+}
+.info-tabs__list{
+	margin-bottom: 8px;
+}
+.info-tabs__item{
+	margin-bottom: 10px;
+	padding: 8px 12px;
+}
