@@ -1371,30 +1371,6 @@ p.promo__txt {
   .paginator__lnk .rarr {
     background: transparent url("../ico/sprite_01.png") -776px -20px no-repeat; }
 
-.services-img {
-  position: relative;
-  top: -20px;
-  margin-bottom: 38px; }
-  .services-img img {
-    width: 100%;
-    height: auto; }
-
-.services-pic__info {
-  position: absolute;
-  top: 28%;
-  right: 9%;
-  width: 35%; }
-
-.services-pic__sub-title {
-  font-size: 24px;
-  font-family: "helveticaneuecyrlight", Verdana, Arial, sans-serif;
-  margin-bottom: 18px;
-  line-height: 40px; }
-
-.services-pic__text {
-  font-size: 16px;
-  font-weight: bold; }
-
 .aside__accordion__section {
   padding-bottom: 20px; }
 
@@ -2759,7 +2735,6 @@ p.promo__txt {
   font-family: 'Open Sans';
   display: inline-block;
   vertical-align: middle;
-  margin-bottom: -80px;
   line-height: 50px;
   width: 300px;
   opacity: 0;
@@ -4825,6 +4800,48 @@ p.services__info {
     padding-left: 40px;
     margin-top: 20px; }
 
+.services-img {
+  position: relative;
+  top: -20px;
+  margin-bottom: 38px; }
+  .services-img img {
+    width: 100%;
+    height: auto; }
+
+.services-pic__info-wrap {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  width: 40%;
+  height: 100%;
+  font-size: 0;
+  line-height: 0; }
+  .services-pic__info-wrap:before {
+    content: "";
+    height: 100%;
+    width: 0;
+    line-height: 100%;
+    vertical-align: middle;
+    display: inline-block; }
+
+.services-pic__info {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  position: relative;
+  margin-top: 46px; }
+
+.services-pic__sub-title {
+  font-size: 24px;
+  font-family: "helveticaneuecyrlight", Verdana, Arial, sans-serif;
+  margin-bottom: 18px;
+  line-height: 40px; }
+
+.services-pic__text {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold; }
+
 .about-promo {
   padding-top: 60px; }
 
@@ -4987,6 +5004,14 @@ p.services__info {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 14px; }
+    .conditions__content .promo__txt a {
+      color: #1376ba;
+      width: 280px;
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: bottom; }
+      .conditions__content .promo__txt a:hover {
+        color: #f3a942; }
 
 .conditions__content_bg-ico {
   padding: 38px 0px 18px 86px;
@@ -5225,6 +5250,9 @@ p.services__info {
     line-height: 40px; }
   .search__menu {
     margin-bottom: 0; }
+  .info__item {
+    display: inline-block;
+    font-size: 15px; }
   .header__left {
     width: 72%; }
     .header__left .logo {
@@ -5637,6 +5665,8 @@ p.services__info {
   .conditions__content p {
     font-size: 15px;
     line-height: 24px; }
+  .conditions__content .promo__txt {
+    font-size: 15px; }
   .conditions-promo_brd {
     padding: 30px 40px; }
   .conditions-promo__list {
@@ -5672,6 +5702,49 @@ p.services__info {
     padding: 0;
     padding-top: 112px;
     margin-bottom: 0; }
+  .conditions__group {
+    margin-bottom: 46px;
+    margin-left: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 0px 20px; }
+    .conditions__group .col--66,
+    .conditions__group .col--33 {
+      width: 100%; }
+  .conditions-table__title {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 20px; }
+  .conditions-table__info {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 12px; }
+  .conditions-table__cell {
+    padding: 14px 20px 26px; }
+    .conditions-table__cell .button {
+      font-size: 10px;
+      padding: 4px 20px;
+      margin: 0;
+      text-transform: uppercase; }
+  .conditions-table__btn {
+    position: absolute;
+    left: 0;
+    bottom: 24px;
+    width: 100%;
+    text-align: center; }
+  .conditions__info {
+    width: auto;
+    margin-bottom: 0; }
+    .conditions__info .info__list {
+      margin-bottom: 20px; }
+    .conditions__info h3 {
+      margin-bottom: 32px; }
+    .conditions__info p.phone {
+      font-size: 16px;
+      margin-top: 0;
+      margin-bottom: 36px; }
+  .delivery-cont__group {
+    padding-top: 30px; }
   .services {
     margin-bottom: 40px; }
   .services__sub-title {
@@ -5703,6 +5776,23 @@ p.services__info {
     .services__company__logo img {
       width: 100%;
       height: auto; }
+  .services-pic__info-wrap {
+    width: 50%; }
+  .services-img {
+    overflow: hidden;
+    margin-left: -20px;
+    margin-right: -20px; }
+    .services-img img {
+      width: 130%;
+      height: auto;
+      position: relative;
+      left: -20%; }
+  .services-pic__sub-title {
+    font-size: 20px;
+    line-height: 28px; }
+  .services-pic__text {
+    font-size: 15px;
+    line-height: 22px; }
   .faq-main {
     width: 100%;
     margin-left: 0;
@@ -5755,7 +5845,21 @@ p.services__info {
       display: block;
       margin: 0px 10px; }
   .faq-quest__item:last-of-type {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  .delivery__ico-post {
+    margin-top: -10px;
+    font-size: 0;
+    line-height: 0; }
+    .delivery__ico-post img {
+      width: 55%;
+      height: auto;
+      max-width: 151px; }
+    .delivery__ico-post .text {
+      width: 45%;
+      padding-left: 5%;
+      line-height: 15px;
+      font-size: 12px;
+      box-sizing: border-box; } }
 
 @media (max-width: 767px) {
   #all {
@@ -5799,6 +5903,8 @@ p.services__info {
     width: 30px;
     height: 30px;
     line-height: 30px; }
+  .info__item {
+    font-size: 15px; }
   .header__wrap {
     padding: 20px 0 0px; }
   .header__left {
@@ -6572,6 +6678,43 @@ p.services__info {
     .services__gallery_col-4__item .title {
       position: static;
       padding-bottom: 30px; }
+  .conditions-table {
+    display: block; }
+  .conditions-table__cell {
+    display: block;
+    width: 100%;
+    margin-top: -5px; }
+    .conditions-table__cell:first-child {
+      margin-top: 0; }
+    .conditions-table__cell .button {
+      font-size: 10px;
+      padding: 4px 20px; }
+  .conditions-table__title {
+    font-size: 15px;
+    margin-bottom: 10px; }
+  .conditions-table__info {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 12px; }
+  .conditions__group {
+    margin-bottom: 46px; }
+    .conditions__group .col--66,
+    .conditions__group .col--33 {
+      width: 100%; }
+  .conditions__content h2 {
+    font-size: 25px; }
+  .conditions__content .promo__txt {
+    font-size: 15px;
+    line-height: 24px; }
+    .conditions__content .promo__txt a {
+      max-width: 280px; }
+  .conditions__info h3 {
+    margin-bottom: 28px; }
+  .conditions__info p.phone {
+    font-size: 16px;
+    line-height: 32px;
+    margin: 0;
+    margin-bottom: 30px; }
   .contacts {
     margin-bottom: 40px; }
   .contacts__left {
@@ -6642,6 +6785,29 @@ p.services__info {
     padding: 0; }
   .services__company__logo {
     margin-bottom: 16px; }
+  .services-img {
+    top: 8px;
+    overflow: hidden;
+    margin-bottom: 36px;
+    padding-bottom: 340px; }
+    .services-img img {
+      position: absolute;
+      bottom: 0;
+      width: 300%;
+      left: -30%;
+      max-width: 840px; }
+    .services-img .services-pic__info-wrap {
+      position: relative;
+      width: 100%;
+      right: 0; }
+    .services-img .services-pic__info {
+      margin-top: 0; }
+  .services-pic__sub-title {
+    font-size: 18px;
+    line-height: 28px; }
+  .services-pic__text {
+    font-size: 15px;
+    line-height: 22px; }
   .faq-main {
     width: 100%;
     margin-left: 0;
@@ -6700,6 +6866,20 @@ p.services__info {
     .faq-main__answer p {
       margin-bottom: 20px; }
   .faq-quest__item:last-of-type {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  .delivery__ico-post {
+    margin-top: -10px;
+    font-size: 0;
+    line-height: 0; }
+    .delivery__ico-post img {
+      width: 55%;
+      height: auto;
+      max-width: 151px; }
+    .delivery__ico-post .text {
+      width: 45%;
+      padding-left: 5%;
+      line-height: 15px;
+      font-size: 12px;
+      box-sizing: border-box; } }
 
 /*# sourceMappingURL=style.css.map */

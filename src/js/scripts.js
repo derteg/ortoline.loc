@@ -444,14 +444,15 @@ function heightsToMax() {
 
 		slider.slick({
 			fade: true,
-			dots: true,
+			dots: false,
 			responsive: [
 				{
 					breakpoint: 960,
 					settings: {
 						slidesToShow: 1,
 						arrows: false,
-						fade: false
+						fade: false,
+						dots: true
 					}
 				},
 				{
@@ -459,7 +460,8 @@ function heightsToMax() {
 					settings: {
 						slidesToShow: 1,
 						arrows: false,
-						fade: false
+						fade: false,
+						dots: true
 					}
 				}
 			]
@@ -509,7 +511,7 @@ function heightsToMax() {
 			resizeId,
 			win = $(window);
 
-		win.load(winPosCalc);
+		document.addEventListener("DOMContentLoaded", winPosCalc);
 
 		setTimeout(function(){
 			win.trigger('resize');
@@ -752,11 +754,11 @@ function heightsToMax() {
 			$block = $('.js-adress__block', $cont),
 			resizeId;
 
-		$(window).load(adressResize);
+		document.addEventListener("DOMContentLoaded", adressResize);
 
 		$(window).resize(function() {
 		    clearTimeout(resizeId);
-		    resizeId = setTimeout(adressResize, 500);
+		    resizeId = setTimeout(adressResize, 200);
 		});
 		 
 		function adressResize(){

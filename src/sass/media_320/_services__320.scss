@@ -63,3 +63,33 @@ p.services__info{
 .services__company__logo{
 	margin-bottom: 16px;
 }
+
+.services-img{
+	top: 8px;
+	overflow: hidden;
+	margin-bottom: 36px;
+	padding-bottom: 340px;
+	img{
+		position: absolute;
+		bottom: 0;
+		width: 300%;
+		left: -30%;
+		max-width: 840px;
+	}
+	.services-pic__info-wrap{
+		position: relative;
+		width: 100%;
+		right: 0;
+	}
+	.services-pic__info{
+		margin-top: 0;
+	}
+}
+.services-pic__sub-title{
+	font-size: 18px;
+	line-height: 28px;
+}
+.services-pic__text{
+	font-size: 15px;
+	line-height: 22px;
+}
