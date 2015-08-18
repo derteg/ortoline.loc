@@ -51,7 +51,6 @@ $sprite02: url('../ico/sprite_02.png');
 @import "gui/slick";
 @import "gui/search__menu";
 @import "gui/paginator";
-@import "gui/services__img";
 @import "gui/accordion";
 @import "gui/popup";
 @import "gui/form";
@@ -85,6 +84,7 @@ $sprite02: url('../ico/sprite_02.png');
 @import "salons/contacts";
 
 @import "services/services";
+@import "services/services__img";
 
 @import "about/about";
 
@@ -109,6 +109,7 @@ $sprite02: url('../ico/sprite_02.png');
 	@import "media_768/conditions__768";
 	@import "media_768/services__768";
 	@import "media_768/faq__768";
+	@import "media_768/delivery__768";
 }
 
 @media (max-width:767px) {
@@ -127,4 +128,5 @@ $sprite02: url('../ico/sprite_02.png');
 	@import "media_320/contacts__320";
 	@import "media_320/services__320";
 	@import "media_320/faq__320";
+	@import "media_320/delivery__320";
 }

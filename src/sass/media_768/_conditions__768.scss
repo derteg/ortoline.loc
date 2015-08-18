@@ -16,9 +16,15 @@
 	line-height: 24px;
 	margin-bottom: 24px;
 }
-.conditions__content p{
-	font-size: 15px;
-	line-height: 24px;
+.conditions__content{
+	margin: 0 20px;
+	p{
+		font-size: 15px;
+		line-height: 24px;
+	}
+	.promo__txt{
+		font-size: 15px;
+	}
 }
 .conditions-promo_brd{
 	padding: 30px 40px;
@@ -71,4 +77,63 @@
 	padding: 0;
 	padding-top: 112px;
 	margin-bottom: 0;
+}
+
+.conditions__group{
+	margin-bottom: 46px;
+	margin-left: 0;
+	margin-left: -20px;
+	margin-right: -20px;
+	padding: 0px 20px;
+	.col--66,
+	.col--33{
+		width: 100%;
+	}
+}
+
+.conditions-table__title{
+	font-size: 15px;
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+.conditions-table__info{
+	font-size: 13px;
+	line-height: 20px;
+	margin-bottom: 12px;
+}
+.conditions-table__cell{
+	padding: 14px 20px 26px;
+	.button{
+		font-size: 10px;
+		padding: 4px 20px;
+		margin: 0;
+		text-transform: uppercase;
+	}
+}
+.conditions-table__btn{
+	position: absolute;
+	left: 0;
+	bottom: 24px;
+	width: 100%;
+	text-align: center;
+}
+
+.conditions__info{
+	width: auto;
+	margin-bottom: 0;
+	.info__list{
+		margin-bottom: 20px;
+	}
+	h3{
+		margin-bottom: 32px;
+	}
+	p.phone{
+		font-size: 16px;
+		margin-top: 0;
+		margin-bottom: 36px;
+
+	}
+}
+.delivery-cont__group{
+	padding-top: 30px;
 }

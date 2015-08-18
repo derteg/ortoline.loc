@@ -1,0 +1,44 @@
+.services-img{
+	position: relative;
+	top: -20px;
+	margin-bottom: 38px;
+	img{
+		width: 100%;
+		height: auto;
+	}
+}
+.services-pic__info-wrap{
+	position: absolute;
+	top: 0;
+	right: 50px;
+	width: 40%;
+	height: 100%;
+	font-size: 0;
+	line-height: 0;
+	&:before{
+		content: "";
+		height: 100%;
+		width: 0;
+		line-height: 100%;
+		vertical-align: middle;
+		display: inline-block;
+	}
+}
+.services-pic__info{
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	position: relative;
+	margin-top: 46px;
+}
+.services-pic__sub-title{
+	font-size: 24px;
+	font-family: $HelveticaNeueLight;
+	margin-bottom: 18px;
+	line-height: 40px;
+}
+.services-pic__text{
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: bold;
+}
