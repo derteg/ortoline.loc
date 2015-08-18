@@ -111,6 +111,7 @@ $sprite02: url('../ico/sprite_02.png');
 	@import "media_768/services__768";
 	@import "media_768/faq__768";
 	@import "media_768/delivery__768";
+	@import "media_768/catalogue__768";
 }
 
 @media (max-width:767px) {
@@ -131,4 +132,5 @@ $sprite02: url('../ico/sprite_02.png');
 	@import "media_320/services__320";
 	@import "media_320/faq__320";
 	@import "media_320/delivery__320";
+	@import "media_320/catalogue__320";
 }
