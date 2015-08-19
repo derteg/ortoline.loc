@@ -179,7 +179,7 @@ $(window).load(function(){initLikes();});
 			infinite: false,
 			responsive: [
 				{
-					breakpoint: 765,
+					breakpoint: 768,
 					settings: {
 						swipe: true,
 						infinite: true
@@ -201,7 +201,14 @@ $(window).load(function(){initLikes();});
 			swipe: false,
 			responsive: [
 				{
-					breakpoint: 765,
+					breakpoint: 1141,
+					settings: {
+						arrows: false,
+						infinite: true
+					}
+				},
+				{
+					breakpoint: 768,
 					settings: {
 						slidesToShow: 3,
 						vertical: false,
@@ -226,14 +233,14 @@ $(window).load(function(){initLikes();});
 			swipe: false,
 			responsive: [
 				{
-					breakpoint: 960,
+					breakpoint: 1141,
 					settings: {
 						slidesToShow: 3,
 						swipe: true
 					}
 				},
 				{
-					breakpoint: 765,
+					breakpoint: 768,
 					settings: {
 						slidesToShow: 1,
 						swipe: true
@@ -448,7 +455,7 @@ function heightsToMax() {
 			dots: false,
 			responsive: [
 				{
-					breakpoint: 960,
+					breakpoint: 1141,
 					settings: {
 						slidesToShow: 1,
 						arrows: false,
@@ -457,7 +464,7 @@ function heightsToMax() {
 					}
 				},
 				{
-					breakpoint: 765,
+					breakpoint: 768,
 					settings: {
 						slidesToShow: 1,
 						arrows: false,
@@ -630,7 +637,7 @@ function heightsToMax() {
 			infinite: false,
 			responsive: [
 				{
-					breakpoint: 965,
+					breakpoint: 1141,
 					settings: {
 						slidesToShow: 3,
 						arrows: false,
@@ -639,7 +646,7 @@ function heightsToMax() {
 					}
 				},
 				{
-					breakpoint: 765,
+					breakpoint: 768,
 					settings: {
 						slidesToShow: 1,
 						arrows: false,
@@ -698,7 +705,7 @@ function heightsToMax() {
 			arrows: false,
 			responsive: [
 				{
-					breakpoint: 960,
+					breakpoint: 1141,
 					settings: {
 						slidesToShow: 1,
 						swipe: true,
@@ -706,7 +713,7 @@ function heightsToMax() {
 					}
 				},
 				{
-					breakpoint: 765,
+					breakpoint: 768,
 					settings: {
 						slidesToShow: 1,
 						swipe: true
@@ -729,7 +736,7 @@ function heightsToMax() {
 			arrows: false,
 			responsive: [
 				{
-					breakpoint: 960,
+					breakpoint: 1141,
 					settings: {
 						slidesToShow: 3,
 						swipe: true,
@@ -737,7 +744,7 @@ function heightsToMax() {
 					}
 				},
 				{
-					breakpoint: 765,
+					breakpoint: 768,
 					settings: {
 						slidesToShow: 1,
 						swipe: true
@@ -812,7 +819,7 @@ function heightsToMax() {
 			arrows: false,
 			responsive: [
 				{
-					breakpoint: 960,
+					breakpoint: 1141,
 					settings: {
 						slidesToShow: 3,
 						swipe: true,
@@ -821,7 +828,7 @@ function heightsToMax() {
 					}
 				},
 				{
-					breakpoint: 765,
+					breakpoint: 768,
 					settings: {
 						slidesToShow: 1,
 						swipe: true,
@@ -847,7 +854,7 @@ function heightsToMax() {
 			arrows: false,
 			responsive: [
 				{
-					breakpoint: 960,
+					breakpoint: 1141,
 					settings: {
 						slidesToShow: 5,
 						swipe: true,
@@ -856,7 +863,7 @@ function heightsToMax() {
 					}
 				},
 				{
-					breakpoint: 765,
+					breakpoint: 768,
 					settings: {
 						slidesToShow: 1,
 						swipe: true,
@@ -883,7 +890,7 @@ function heightsToMax() {
 			arrows: false,
 			responsive: [
 				{
-					breakpoint: 960,
+					breakpoint: 1141,
 					settings: {
 						slidesToShow: 3,
 						swipe: true,
@@ -893,7 +900,7 @@ function heightsToMax() {
 					}
 				},
 				{
-					breakpoint: 765,
+					breakpoint: 768,
 					settings: {
 						slidesToShow: 1,
 						slideToScroll: 1,

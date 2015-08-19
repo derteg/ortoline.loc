@@ -14,3 +14,27 @@ h1{
 	display: inline-block;
 	font-size: 15px;
 }
+.info-tabs{
+	padding-bottom: 20px;
+}
+.info-tabs__col{
+	&.col--25{
+		width: 50%;
+		margin-bottom: 20px;
+	}
+}
+.info-tabs__adress {
+	.adress__type{
+		margin-bottom: 10px;
+	}
+	.adress__metro{
+		margin-bottom: 10px;
+	}
+}
+.tabs__title_top{
+	top: 0;
+	margin-bottom: 40px;
+	+.product__info_text{
+		margin-top: 0;
+	}
+}
