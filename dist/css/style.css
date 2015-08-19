@@ -5995,16 +5995,9 @@ p.services__info {
     font-size: 30px;
     line-height: 1; }
   .basket__cont {
-    width: 100%;
-    margin-bottom: 40px; }
-  .basket__cell-product {
-    width: 40%; }
-    .basket__cell-product .text {
-      text-align: left; }
-  .basket__row-final {
-    padding-bottom: 0; }
-    .basket__row-final .field__cell {
-      margin-bottom: 0; } }
+    width: 100%; }
+  .basket__cell-product .text {
+    text-align: left; } }
 
 @media (max-width: 767px) {
   #all {
@@ -7166,7 +7159,7 @@ p.services__info {
       margin-left: 0; }
   .basket__cont {
     width: 100%;
-    margin-bottom: 40px; }
+    margin-bottom: 54px; }
   .basket__cell-product {
     width: auto;
     max-width: auto; }
@@ -7186,7 +7179,7 @@ p.services__info {
       box-sizing: border-box; }
   .basket__cell-amount {
     position: absolute;
-    left: 26%;
+    left: 100px;
     display: inline-block;
     margin-left: 0; }
   .basket__cell-price {
@@ -7194,14 +7187,7 @@ p.services__info {
     top: 0;
     right: 0; }
   .basket__row-final {
-    padding: 0px;
-    margin-top: 0; }
-    .basket__row-final .col--50 {
-      width: 100%; }
-    .basket__row-final .right {
-      text-align: left; }
-    .basket__row-final .field__cell {
-      margin-bottom: 0px;
-      margin-top: 30px; } }
+    padding: 0px 0px 30px;
+    margin-top: -10px; } }
 
 /*# sourceMappingURL=style.css.map */
