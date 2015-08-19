@@ -1,0 +1,451 @@
+$sprite: (
+	ico_01: (
+		offset-x: -160px,
+		offset-y: -105px,
+		width: 33px,
+		height: 33px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_02: (
+		offset-x: -217px,
+		offset-y: -53px,
+		width: 32px,
+		height: 37px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_03: (
+		offset-x: -61px,
+		offset-y: -200px,
+		width: 17px,
+		height: 16px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_04: (
+		offset-x: -259px,
+		offset-y: -145px,
+		width: 8px,
+		height: 15px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_05: (
+		offset-x: -259px,
+		offset-y: -170px,
+		width: 8px,
+		height: 15px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_06: (
+		offset-x: -259px,
+		offset-y: -119px,
+		width: 8px,
+		height: 16px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_07: (
+		offset-x: -259px,
+		offset-y: -93px,
+		width: 8px,
+		height: 16px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_08: (
+		offset-x: -259px,
+		offset-y: -195px,
+		width: 11px,
+		height: 7px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_09: (
+		offset-x: -217px,
+		offset-y: -168px,
+		width: 25px,
+		height: 15px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_10: (
+		offset-x: -32px,
+		offset-y: -200px,
+		width: 19px,
+		height: 16px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_11: (
+		offset-x: -259px,
+		offset-y: 0px,
+		width: 11px,
+		height: 21px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_12: (
+		offset-x: 0px,
+		offset-y: -226px,
+		width: 12px,
+		height: 20px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_13: (
+		offset-x: -217px,
+		offset-y: -100px,
+		width: 24px,
+		height: 24px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_14: (
+		offset-x: -217px,
+		offset-y: -134px,
+		width: 24px,
+		height: 24px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_15: (
+		offset-x: -114px,
+		offset-y: -200px,
+		width: 12px,
+		height: 16px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_16: (
+		offset-x: -88px,
+		offset-y: -200px,
+		width: 16px,
+		height: 16px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_17: (
+		offset-x: -202px,
+		offset-y: -200px,
+		width: 14px,
+		height: 10px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_18: (
+		offset-x: -153px,
+		offset-y: -150px,
+		width: 16px,
+		height: 13px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_19: (
+		offset-x: 0px,
+		offset-y: -90px,
+		width: 44px,
+		height: 50px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_20: (
+		offset-x: 0px,
+		offset-y: -45px,
+		width: 69px,
+		height: 35px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_21: (
+		offset-x: -259px,
+		offset-y: -229px,
+		width: 5px,
+		height: 7px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_22: (
+		offset-x: -259px,
+		offset-y: -212px,
+		width: 5px,
+		height: 7px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_23: (
+		offset-x: -50px,
+		offset-y: -150px,
+		width: 23px,
+		height: 23px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_24: (
+		offset-x: -54px,
+		offset-y: -90px,
+		width: 47px,
+		height: 45px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_25: (
+		offset-x: -160px,
+		offset-y: 0px,
+		width: 47px,
+		height: 45px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_26: (
+		offset-x: 0px,
+		offset-y: 0px,
+		width: 70px,
+		height: 35px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_27: (
+		offset-x: -80px,
+		offset-y: 0px,
+		width: 70px,
+		height: 35px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_28: (
+		offset-x: -111px,
+		offset-y: -90px,
+		width: 32px,
+		height: 43px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_29: (
+		offset-x: -217px,
+		offset-y: 0px,
+		width: 32px,
+		height: 43px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_30: (
+		offset-x: -160px,
+		offset-y: -55px,
+		width: 40px,
+		height: 40px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_31: (
+		offset-x: 0px,
+		offset-y: -150px,
+		width: 40px,
+		height: 40px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_32: (
+		offset-x: -118px,
+		offset-y: -150px,
+		width: 25px,
+		height: 15px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_33: (
+		offset-x: -83px,
+		offset-y: -150px,
+		width: 25px,
+		height: 15px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_34: (
+		offset-x: -259px,
+		offset-y: -31px,
+		width: 11px,
+		height: 21px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_35: (
+		offset-x: -259px,
+		offset-y: -62px,
+		width: 11px,
+		height: 21px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_36: (
+		offset-x: -113px,
+		offset-y: -45px,
+		width: 24px,
+		height: 23px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_37: (
+		offset-x: -79px,
+		offset-y: -45px,
+		width: 24px,
+		height: 23px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_38: (
+		offset-x: -180px,
+		offset-y: -200px,
+		width: 12px,
+		height: 12px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_39: (
+		offset-x: -179px,
+		offset-y: -150px,
+		width: 12px,
+		height: 12px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_40: (
+		offset-x: -136px,
+		offset-y: -200px,
+		width: 12px,
+		height: 12px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_41: (
+		offset-x: -158px,
+		offset-y: -200px,
+		width: 12px,
+		height: 12px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_42: (
+		offset-x: 0px,
+		offset-y: -200px,
+		width: 22px,
+		height: 16px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_43: (
+		offset-x: -22px,
+		offset-y: -226px,
+		width: 16px,
+		height: 8px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+	ico_44: (
+		offset-x: -226px,
+		offset-y: -200px,
+		width: 16px,
+		height: 8px,
+		total-width: 270px,
+		total-height: 246px,
+		image: '../ico/sprite.png'
+	),
+);
+
+
+@mixin sprite-size($image) {
+	background-size: map-get(map-get($sprite, $image), 'total-width') map-get(map-get($sprite, $image), 'total-height');
+}
+
+@mixin sprite-width($image) {
+	width: map-get(map-get($sprite, $image), 'width');
+}
+
+@mixin sprite-height($image) {
+	height: map-get(map-get($sprite, $image), 'height');
+}
+
+@mixin sprite-position($image) {
+	background-position: map-get(map-get($sprite, $image), 'offset-x') map-get(map-get($sprite, $image), 'offset-y');
+}
+
+@mixin sprite-image($image) {
+	background-image: url(map-get(map-get($sprite, $image), 'image'));
+}
+
+@mixin sprite-image-retina($image) {
+	$image-path: map-get(map-get($sprite, $image), 'image');
+	$image-path-retina: str-slice($image-path, 1, str-index($image-path, '.png') - 1) + '@2x.png';
+
+	background-image: url($image-path-retina);
+}
+
+@mixin sprite($image, $size: true) {
+	@include sprite-image($image);
+	@include sprite-position($image);
+	background-repeat: no-repeat;
+
+	@if $size {
+		@include sprite-width($image);
+		@include sprite-height($image);
+	}
+
+	@media
+		only screen and (-webkit-min-device-pixel-ratio: 2),
+		only screen and (   min--moz-device-pixel-ratio: 2),
+		only screen and (     -o-min-device-pixel-ratio: 2/1),
+		only screen and (        min-device-pixel-ratio: 2),
+		only screen and (                min-resolution: 192dpi),
+		only screen and (                min-resolution: 2dppx) {
+
+		@include sprite-size($image);
+		@include sprite-image-retina($image);
+
+	}
+}
+

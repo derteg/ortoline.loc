@@ -1752,7 +1752,6 @@ p.promo__txt {
   text-align: center;
   float: left; }
   .basket-btn__badge .pic {
-    background: url(../img/i-cart.png) left top no-repeat;
     width: 32px;
     height: 38px;
     display: inline-block; }
@@ -5311,6 +5310,8 @@ p.services__info {
       max-width: 250px; }
   .header__left_wrap {
     margin-top: 14px; }
+  .header__tel {
+    padding-left: 28px; }
   .header__right {
     padding-top: 16px;
     width: 28%; }
@@ -7313,5 +7314,20 @@ p.services__info {
   .basket__row-final {
     padding: 0px 0px 30px;
     margin-top: -10px; } }
+
+.basket-btn__badge .pic {
+  background-image: url("../ico/sprite.png");
+  background-position: -217px -53px;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 37px; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .basket-btn__badge .pic {
+      background-size: 270px 246px;
+      background-image: url("../ico/sprite@2x.png"); } }
+
+.header__tel {
+  background: url("../ico/sprite2x/ico_03.png") 0 6px no-repeat;
+  background-size: 17px 16px; }
 
 /*# sourceMappingURL=style.css.map */

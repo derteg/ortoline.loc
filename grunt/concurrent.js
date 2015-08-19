@@ -27,6 +27,7 @@ module.exports = {
 
   // Image tasks
   imgFirst: [
+    'sprite',
     'imagemin'
   ]
 };
