@@ -384,6 +384,7 @@ h4.product__sub-title{
 		opacity: 1;
 	}
 	.ico{
+		min-height: 44px;
 		background: transparent $sprite02 no-repeat;
 		display: inline-block;
 	}
@@ -393,7 +394,7 @@ h4.product__sub-title{
 		height: 44px;
 	}	
 	&:hover .ico_01{
-		background-position: 0 100%;
+		background-position: 0 -56px;
 	}
 	.ico_02{
 		background-position: -69px 0;
@@ -401,7 +402,7 @@ h4.product__sub-title{
 		height: 34px;
 	}	
 	&:hover .ico_02{
-		background-position: -69px 100%;
+		background-position: -69px -56px;
 	}
 	.ico_03{
 		background-position: -184px 0;
@@ -409,7 +410,7 @@ h4.product__sub-title{
 		height: 43px;
 	}	
 	&:hover .ico_03{
-		background-position: -184px 100%;
+		background-position: -184px -56px;
 	}
 	.ico_04{
 		background-position: -280px 0;
@@ -417,7 +418,7 @@ h4.product__sub-title{
 		height: 40px;
 	}	
 	&:hover .ico_04{
-		background-position: -280px 100%;
+		background-position: -280px -56px;
 	}
 }
 

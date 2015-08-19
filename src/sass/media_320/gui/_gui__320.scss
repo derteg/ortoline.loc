@@ -6,6 +6,25 @@
 	min-width: 280px;
 	max-width: 450px;
 }
+.inside_fix{
+	.inside{
+		padding: 0;
+		min-width: 0;
+		max-width: none;
+	}
+	.search__menu{
+		min-width: 280px;
+		max-width: 450px;
+		margin: 0 auto;
+		padding: 20px 20px;
+	}
+	.info-tabs{
+		min-width: 280px;
+		max-width: 450px;
+		margin: 0 auto;
+		padding: 0 20px 20px;
+	}
+}
 
 .button{
 	padding: 12px 44px;
@@ -71,8 +90,16 @@ h1{
 	}
 }
 .info-tabs__col{
+	margin-bottom: 40px;
+	.adress__type{
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
 	.info-tabs__adress{
 		padding-left: 0;
+	}
+	.adress__metro{
+		display: block;
 	}
 }
 .info-tabs__text{
