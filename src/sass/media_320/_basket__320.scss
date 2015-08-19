@@ -8,7 +8,7 @@
 }
 .basket__cont{
 	width: 100%;
-	margin-bottom: 54px;
+	margin-bottom: 40px;
 }
 .basket__cell-product{
 	width: auto;
@@ -32,7 +32,7 @@
 }
 .basket__cell-amount{
 	position: absolute;
-	left: 100px;
+	left: 26%;
 	display: inline-block;
 	margin-left: 0;
 }
@@ -42,6 +42,16 @@
 	right: 0;
 }
 .basket__row-final{
-	padding: 0px 0px 30px;
-	margin-top: -10px;
+	padding: 0px;
+	margin-top: 0;
+	.col--50{
+		width: 100%;
+	}
+	.right{
+		text-align: left;
+	}
+	.field__cell{
+		margin-bottom: 0px;
+		margin-top: 30px;
+	}
 }

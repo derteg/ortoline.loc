@@ -1,8 +1,16 @@
 .basket__cont{
 	width: 100%;
+	margin-bottom: 40px;
 }
 .basket__cell-product{
+	width: 40%;
 	.text{
 		text-align: left;
+	}
+}
+.basket__row-final{
+	padding-bottom: 0;
+	.field__cell{
+		margin-bottom: 0;
 	}
 }
