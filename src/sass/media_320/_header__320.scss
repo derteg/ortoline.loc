@@ -9,7 +9,8 @@
 	}
 }
 .header__right{
-	padding-top: 10px;
+	padding-top: 0;
+	margin-bottom: 10px;
 	.profile-btn{
 		display: none;
 	}
@@ -50,18 +51,27 @@
 .mainmenu__btn-all{
 	position: absolute;
 	bottom: 100%;
-	right: 70px;
+	right: 60px;
 	margin-bottom: 10px;
 	display: inline-block;
 	.ico{
 		padding: 0;
-		background-size: 187px 207px;
-		background-position: 4px 3px;
+		@include sprite('ico_18');
 	}
 	.text{
 		display: none;
 	}
 	.button{
-		padding: 10px;
+		padding: 14px;
+		line-height: 1;
+	}
+}
+.basket-btn__badge{
+	background-color: $lightGray;
+	border-radius: 4px;
+	padding: 4px 10px;
+	.pic{
+		@include sprite('ico_76');
+		padding-bottom: 1px;
 	}
 }

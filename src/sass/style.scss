@@ -118,6 +118,7 @@ $sprite02: url('../ico/sprite_02.png');
 	@import "media_320/gui/gui__320";
 	@import "media_320/gui/aside__320";
 	@import "media_320/gui/form__320";
+	@import "media_320/gui/popup__320";
 	@import "media_320/header__320";
 	@import "media_320/index__320";
 	@import "media_320/maincat__320";
@@ -136,3 +137,5 @@ $sprite02: url('../ico/sprite_02.png');
 	@import "media_320/catalogue__320";
 	@import "media_320/basket__320";
 }
+
+@import "gui/media__other";

@@ -510,4 +510,41 @@ h4.product__sub-title{
 
 .product__filter_mob{
 	display: none;
+	margin-bottom: 20px;
+}
+.product__filter_mob-list{
+	font-size: 0;
+	line-height: 0;
+	margin: 0px -7px;
+	margin-bottom: 20px;
+}
+.product__filter_mob-item{
+	display: inline-block;
+	vertical-align: bottom;
+	width: auto;
+	text-align: center;
+	.button{
+		display: block;
+		margin: 0px 7px;
+		padding: 18px 20px;
+		font-size: 13px;
+		text-transform: none;
+		color: $white;
+		background-color: $gray2;
+		.ico{
+			display: inline-block;
+			line-height: 20px;
+			vertical-align: middle;
+			height: 20px;
+			padding-right: 4px;
+			@include sprite('ico_81');
+		}
+		span{
+			border: none;
+		}
+		&.button--orange{
+			padding: 7px 20px;
+			background-color: $orange;
+		}
+	}
 }

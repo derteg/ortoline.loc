@@ -22,7 +22,7 @@
 	display:block; 
 	text-align:center;
 	border:1px solid $lightGray; 
-	margin: -1px 0 0 -1px; 
+	margin: -1px 0 0 -1px;
 	position: relative;
 	background-color: $white;
 	@include transition(border-color .7s, color .2s, background-color .25s);
@@ -71,29 +71,25 @@
 		position: relative;
 		border-bottom:1px solid rgba(0,0,0,0.4);
 		&:before{
-			content:' ';
+			content:'';
 			display:block;
 			position:absolute;
 			left: 100%;
-			margin-left: 10px;
-			width:11px;
-			height:20px;
 			bottom:8px;
-			background:url(../img/all-cat.png) no-repeat 0 0;
+			margin-left: 10px;
 			opacity:1;
+			@include sprite('ico_78');
 		}
 	}
 }
 
 .maincat__item{
 	&:hover{
-		.maincat__toall{
-			 	.text{
-			 		border-color:rgba(240,170,50,0.4);
-			 	&:before{
-			 		background-position:0 -20px;
-			 	}
-			}
+		.text{
+	 		border-color:rgba(240,170,50,0.4);
+		 	&:before{
+		 		@include sprite('ico_79');
+		 	}
 		}
 	}
 }

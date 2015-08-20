@@ -29,6 +29,12 @@
 }
 .mainmenu__btn-all{
 	display: inline-block;
+	.ico{
+		@include sprite('ico_18');
+		padding: 0;
+		margin-right: 14px;
+		margin-bottom: 2px;
+	}
 }
 
 .mainmenu__buttons_centr{

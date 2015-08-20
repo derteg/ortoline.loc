@@ -31,14 +31,17 @@
 .form__popup .b-close{
 	width: 40px;
 	height: 40px;
-	background: $gray2 $sprite -952px -24px no-repeat;
 	position: absolute;
 	top: 17px;
 	right: 12px;
 	padding: 0;
-	@include transition(background-color .15s);
-	&:hover{
-		background-color: $grayHov2;
+	background-color: $grayHov2;
+	&:before{
+		content: "";
+		position: absolute;
+		top: 15px;
+		left: 15px;
+		@include sprite('ico_75'); 
 	}
 }
 .field__cell_button{
@@ -59,9 +62,7 @@
 	height: 470px;
 	display: none;
 	.b-close{
-		background: transparent $sprite -968px 0 no-repeat;
-		width: 20px;
-		height: 20px;
+		@include sprite('ico_82');
 		padding: 0;
 		position: absolute;
 		right: 0;

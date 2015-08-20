@@ -78,17 +78,16 @@
 	}
 }
 .about-partner__list{
-	margin-left: -20px;
-	margin-bottom: 12px;
+	margin: 0 0 12px -20px;
 }
 .about-partner__lnk{
 	display: block;
-	height: 150px;
 	border: 1px solid $gray;
-	margin-left: 20px;
+	height: 150px;
+	margin: 0 10px;
 	text-align: center;
 	line-height: 150px;
-	img{
+	img{ 
 		vertical-align: middle;
 	}
 }

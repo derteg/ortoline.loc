@@ -17,10 +17,30 @@
 	font-size: 26px;
 	line-height: 32px;
 	margin-bottom: 0;
-	&:before{
+	&:after{
 		margin-bottom: 18px;
 		width: 36px;
 		height: 4px;
+	}
+}
+
+.promophone_mob{
+	display: block;
+	background-color: $dark;
+	text-align: center;
+	padding: 4px 0;
+}
+.promophone__phone{
+	display: inline-block;
+	.ico{
+		display: inline-block;
+		@include sprite('ico_03');
+		margin-right: 10px;
+	}
+	.text{
+		color: $white;
+		font-size: 16px;
+		line-height: 24px;
 	}
 }
 
@@ -108,14 +128,19 @@ h3.product__sub-title{
 	margin-bottom: 40px;
 	.price{
 		font-size: 18px;
+		.rouble{
+			font-weight: bold;
+		}
 	}
 	.slick-prev{
 		right: auto;
 		left: 0;
+		top: 40px;
 	}
 	.slick-next{
 		left: auto;
 		right: 0;
+		top: 40px;
 	}
 }
 
@@ -130,12 +155,12 @@ h3.product__sub-title{
 	}
 }
 .dvnt__title{
-	top: -20px;
+	top: -26px;
 	width: 80%;
 	margin: 0 auto;
 }
 .dvnt__title_sub-title{
-	padding: 0;
+	padding: 0 20px;
 	font-size: 25px;
 	line-height: 30px;
 }

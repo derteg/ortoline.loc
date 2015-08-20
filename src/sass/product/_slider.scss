@@ -156,49 +156,13 @@
 			padding-left: 4px;
 		}
 	}
-	.slick-prev,
-	.slick-next{
-		background-color: #fff;
-		cursor: pointer;
-		border: $brdLnk4;
-		border-radius: 26px;
-		width: 51px;
-		height: 51px;		
-		position: absolute;
-		outline: none;
-		@include linkTextOffscreen;
-		&:hover{
-			background-color: $orange;
-			border: $brdLnk2;
-		}
-	}
 	.slick-prev{
-		right: 100%;
-		top: 60px;
+	    right: 100%;
+	    top: 60px;
 	}
 	.slick-next{
-		left: 100%;
-		top: 60px;
+	    left: 100%;
+	    top: 60px;
 	}
-	.slick-prev:before,
-	.slick-next:before{
-		content: "";
-		width: 8px;
-		height: 15px;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		margin-top: -7px;
-		margin-left: -4px;
-	}
-	.slick-prev{
-		&:before{
-			@include sprite('ico_05');
-		}
-	}
-	.slick-next{
-		&:before{
-			@include sprite('ico_04');
-		}
-	}
+	@include slickArrow();
 }

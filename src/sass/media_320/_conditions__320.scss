@@ -50,9 +50,12 @@
 }
 .conditions__content_bg-ico{
 	padding: 68px 0px 18px 0px;
-	background-position: 50% 0px;
-	background-size: 50px 50px;
 	text-align: center;
+	&:before{
+		top: 0;
+		left: 50%;
+		margin-left: -31px;
+	}
 }
 
 .conditions-promo__item_num{
@@ -118,7 +121,7 @@
 .conditions-table__info{
 	font-size: 13px;
 	line-height: 20px;
-	margin-bottom: 12px;
+	margin-bottom: 20px;
 }
 
 .conditions__group{
