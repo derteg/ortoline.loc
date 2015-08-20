@@ -96,8 +96,6 @@
 		display: inline-block;
 		line-height: 30px;
 		vertical-align: middle;
-		width: 14px;
-		height: 17px;
 	}
 	&.minus{
 		border-right: 1px solid $gray;
@@ -106,10 +104,10 @@
 		border-left: 1px solid $gray;
 	}
 	&.minus i{
-		background: transparent url('../ico/sprite_01.png') -181px 4px no-repeat;
+		@include sprite('ico_41');
 	}
 	&.plus i{
-		background: transparent url('../ico/sprite_01.png') -184px -12px no-repeat;
+		@include sprite('ico_39');
 	}
 	&.minus.disabled{
 		opacity: 0.5;
@@ -193,28 +191,19 @@
 	.price__old:before{
 		content: "";
 		height: 1px;
-		display: inline-block;
-		line-height: 24px;
-		width: 86px;
-		background-color: #FF1F1F;
+		display: block;
+		width: 100%;
 		position: absolute;
-		top: 14px;
+		top: 16px;
 		left: 0;
 		z-index: 10;
-		margin-left: -4px;
-	}
-	.price__old:after{
-		content: "";
-		display: inline-block;
-		background: transparent $sprite -532px top no-repeat;
-		width: 12px;
-		height: 17px;
-		vertical-align: baseline;
+		background-color: #FF1F1F;
 	}
 }
 
 .product__brand{
 	font-size: 14px;
+	margin-bottom: 10px;
 	img{
 		vertical-align: middle;
 	}
@@ -385,40 +374,31 @@ h4.product__sub-title{
 	}
 	.ico{
 		min-height: 44px;
-		background: transparent $sprite02 no-repeat;
 		display: inline-block;
 	}
 	.ico_01{
-		background-position: 0 0;
-		width: 47px;
-		height: 44px;
+		@include sprite('ico_25');
 	}	
 	&:hover .ico_01{
-		background-position: 0 -56px;
+		@include sprite('ico_24');
 	}
 	.ico_02{
-		background-position: -69px 0;
-		width: 68px;
-		height: 34px;
+		@include sprite('ico_27');
 	}	
 	&:hover .ico_02{
-		background-position: -69px -56px;
+		@include sprite('ico_26');
 	}
 	.ico_03{
-		background-position: -184px 0;
-		width: 32px;
-		height: 43px;
+		@include sprite('ico_29');
 	}	
 	&:hover .ico_03{
-		background-position: -184px -56px;
+		@include sprite('ico_28');
 	}
 	.ico_04{
-		background-position: -280px 0;
-		width: 40px;
-		height: 40px;
+		@include sprite('ico_31');
 	}	
 	&:hover .ico_04{
-		background-position: -280px -56px;
+		@include sprite('ico_30');
 	}
 }
 

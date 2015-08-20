@@ -67,8 +67,15 @@
 	line-height: 26px;
 	font-weight:600;
 	padding-left:36px;
-	background:url(../img/i-phone.png) no-repeat 2px 3px;
-	font-family:"Open Sans",sans-serif
+	position: relative;
+	font-family:"Open Sans",sans-serif;
+	&:before{
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 6px;
+		@include sprite('ico_03');
+	}
 }
 .header__right{
 	padding-top: 28px;
@@ -104,11 +111,9 @@
 	}
 }
 .profile-btn__pic{
-	background:url(../img/i-user.png) no-repeat;
-	width:33px;
-	height:33px;
 	float: left;
 	position: relative;	
+	@include sprite('ico_01');
 }
 .profile-btn__text{
 	margin-left: 56px;
@@ -132,7 +137,7 @@
 	text-align: center;
 	float: left;
 	.pic{
-		// background: url(../img/i-cart.png) left top no-repeat;
+		@include sprite('ico_02');
 		width: 32px;
 		height: 38px;
 		display: inline-block;

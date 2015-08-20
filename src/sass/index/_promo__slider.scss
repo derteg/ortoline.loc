@@ -44,14 +44,11 @@
 		@include transition(background-color .25s, border-color .25s);
 		&:before{
 			content: "";
-			background: transparent $sprite no-repeat;
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			width: 10px;
-			height: 18px;
-			margin-left: -5px;
-			margin-top: -9px;
+			margin-left: -4px;
+			margin-top: -8px;
 		}
 		&:hover{
 			background: $orange;
@@ -61,13 +58,13 @@
 	.slick-prev{
 		left: 20px;
 		&:before{
-			background-position: -216px -46px;
+			@include sprite('ico_07');
 		}
 	}
 	.slick-next{
 		right: 20px;
 		&:before{
-			background-position: -240px -46px;
+			@include sprite('ico_06');
 		}
 	}
 	.slick-dots{

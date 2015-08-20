@@ -17,18 +17,4 @@ module.exports = {
 
 		'destCss': '<%= sprite.buildretina.destCss %>'
 	}
-	// build: {
-	// 	name: 'retina',
-	// 	algorithm: 'left-right',
-	// 	src: 'src/ico/sprite2x/*.png',
-	// 	dest: 'src/ico/sprite_01@2x.png',
-	// 	cssTemplate: 'spritesmith-retina-mixins.template.mustache',
-	// 	destCss: 'src/sass/_sprite__retina.scss',
-	// 	format: 'scss',
-	// 	padding: 40,
-	// 	cssVarMap: function (sprite) {
-	// 		sprite.name = 'sprite_' + sprite.name;
-	// 	}
-	// }
-
 };

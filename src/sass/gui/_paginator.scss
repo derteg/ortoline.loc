@@ -18,7 +18,8 @@
 	margin: 0px 5px;
 	opacity: 1;
 	@include transition(color .25s, border-color .25s, opacity .25s);
-	&:hover{
+	&:hover,
+	&:focus{
 		border-color: transparent;
 		background-color: $orange;
 		color: $white;
@@ -29,7 +30,8 @@
 		color: $white;
 	}
 	&.disabled,
-	&.disabled:hover{
+	&.disabled:hover,
+	&.disabled:focus{
 		background-color: $white;
 		cursor: default;
 		opacity: 0.6;
@@ -42,9 +44,9 @@
 		height: 12px;
 	}
 	.larr{
-		background: transparent $sprite -776px 0 no-repeat;		
+		@include sprite('ico_67', false);
 	}
 	.rarr{
-		background: transparent $sprite -776px -20px no-repeat;
+		@include sprite('ico_68', false);
 	}
 }

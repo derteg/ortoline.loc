@@ -22,18 +22,16 @@
     .ico{
         position: absolute;
         top: 50%;
-        right: 20px;
+        right: 16px;
         display: inline-block;
     }
     .ico-arr{
-        width: 11px;
-        height: 8px;
         margin-top: -4px;
-        background: transparent $sprite -920px top no-repeat;        
+        @include sprite('ico_74');
     }
     &.active{
         .ico-arr{
-            background: transparent $sprite -944px top no-repeat;
+            @include sprite('ico_73');
         }
     }
 }

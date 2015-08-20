@@ -101,31 +101,38 @@
 	font-size:12px;
 	font-family:'PFDinDisplayPro',Verdana,sans-serif
 }
-.video-clock{
-	background:url(../img/ic-clock.png) no-repeat left center;
+.video-clock{	
 	padding-left:20px;
-	height:20px;
-	display:-moz-inline-stack;
 	display:inline-block;
 	vertical-align:top;
-	*zoom:1;
-	*display:inline;
 	margin-right:-4px;
 	margin-right:15px;
-	color:#787878
+	color:#787878;
+	position: relative;
+	&:before{
+		content: '';
+		position: absolute;
+		top: 2px;
+		left: 0;
+		@include sprite('ico_16');
+	}
 }
 .video-eye{
-	background:url(../img/ic-eye.png) no-repeat left center;
 	padding-left:26px;
 	height:20px;
-	display:-moz-inline-stack;
 	display:inline-block;
 	vertical-align:top;
-	*zoom:1;
-	*display:inline;
 	margin-right:-4px;
 	margin-right:0;
-	color:#787878
+	color:#787878;
+	position: relative;
+	&:before{
+		content: '';
+		position: absolute;
+		top: 4px;
+		left: 0;
+		@include sprite('ico_08');
+	}
 }
 .video-play{
 	background:url(../img/ic-play.png) no-repeat;
@@ -329,13 +336,25 @@
 		&:focus{
 			background-color: $lightGrayHov;
 		}
+		&:before{
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -4px;
+			margin-top: -7px;
+		}
 	}
 	.slick-prev{
-		background: $lightGray $sprite -202px 11px no-repeat;
+		&:before{
+			@include sprite('ico_05');
+		}
 		right: 48px;
 	}
 	.slick-next{
-		background: $lightGray $sprite -224px 11px no-repeat;
+		&:before{
+			@include sprite('ico_04');
+		}
 		right: 0;
 	}
 }

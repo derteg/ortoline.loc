@@ -99,13 +99,21 @@
     display:inline-block;
     width:20px;
     height:20px;
-    margin:-1px 4px 0 0;
+    margin:-1px 8px 0 0;
     vertical-align:middle;
     background-color: $lightGray;
     cursor:pointer;
+    border-radius: 4px;
+    position: relative;
 }
 .chk-cust:checked + .chk-cust__label .ico {
-    background: $lightGray $sprite -380px -55px no-repeat;
+	&:before{
+		content: "";
+		position: absolute;
+		@include sprite('ico_72');
+		top: 5px;
+		left: 4px;
+	}
 }
 
 .radio-cust {
