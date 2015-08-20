@@ -138,8 +138,6 @@
 	float: left;
 	.pic{
 		@include sprite('ico_02');
-		width: 32px;
-		height: 38px;
 		display: inline-block;
 	}
 	.num{
@@ -301,7 +299,7 @@
 		display: none;
 	}
 	.header__right{
-		padding-top: 16px;
+		padding-top: 12px;
 	}
 	.mainmenu{
 		position: absolute;

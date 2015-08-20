@@ -52,21 +52,6 @@
 	padding: 18px 25px;
 	display: block;
 }
-
-.adress__tbl-lnk{
-	display: inline-block;
-	width: 59px;
-	height: 59px;
-	background-color: $white;
-	border: $brdLnk5;
-	border-radius: 4px;
-	@include transition (background-color .25s, border .25s);
-	&:focus{
-		background-color: $orange;
-		border: 1px solid transparent;
-	}
-}
-
 .adress__wrap{
 	.col{
 		margin: 0;
@@ -90,5 +75,31 @@
 	width: 30%;
 	&.adress__tbl-cell_btn{
 		width: 10%;
+	}
+}
+.adress__tbl-lnk{
+	display: inline-block;
+	width: 59px;
+	height: 59px;
+	background-color: $white;
+	border: $brdLnk5;
+	border-radius: 4px;
+	position: relative;
+	@include transition (background-color .25s, border .25s);
+	&:before{
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -7px;
+		margin-left: -5px;
+		@include sprite('ico_04');
+	}
+	&:focus{
+		border: 1px solid transparent;
+		background-color: $orange;
+		&:before{
+			@include sprite('ico_06');
+		}
 	}
 }

@@ -155,6 +155,7 @@
 	}
 }
 .adress__nav-btn_sheme{
+	display: none;
 	.ico{
 		right: 8px;
 		@include sprite('ico_52');

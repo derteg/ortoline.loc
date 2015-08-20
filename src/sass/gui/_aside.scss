@@ -125,9 +125,7 @@
 	}
 	.ico{
 		display: inline-block;
-		background: transparent $sprite -128px -8px no-repeat;
-		width: 16px;
-		height: 15px;
+		@include sprite('ico_56');
 		position: absolute;
 		top: 15px;
 		right: 20px

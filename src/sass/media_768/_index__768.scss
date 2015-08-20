@@ -7,16 +7,6 @@
 	width: 100%;
 	height: auto;
 }
-.promoslider__text{
-	font-size: 26px;
-	line-height: 32px;
-	width: 250px;
-	&:before{
-		margin-bottom: 18px;
-		width: 36px;
-		height: 4px;
-	}
-}
 
 .panoram{
 	min-height: 476px;
@@ -168,6 +158,20 @@
 		margin: 0;
 	}
 }
+.faqmain__slider{
+	position: relative;
+	.slick-prev{
+	    left: 0;
+	    top: 50%;
+	    margin-top: -25px;
+	}
+	.slick-next{
+	    right: 0;
+	    top: 50%;
+	    margin-top: -25px;
+	}
+	@include slickArrow();
+}
 .faqmain__title{
 	font-size: 30px;
 	margin-bottom: 14px;
@@ -198,5 +202,10 @@
 	}
 	.col--25{
 		width: 100%;
+	}
+}
+.product__news-slider{
+	.rouble{
+		font-weight: bold;
 	}
 }

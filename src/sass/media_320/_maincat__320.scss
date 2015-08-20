@@ -1,3 +1,8 @@
+.promoslider__cont + {
+	.maincat{
+		margin-top: 1px;
+	}
+}
 .maincat{
 	.col--25,
 	.col--33{
@@ -23,16 +28,26 @@
 	overflow: hidden;
 }
 .maincat__all { 
-	height: 218px;
+	height: 240px; 
 }
 .maincat__toall{
 	font-size: 22px;
 	line-height: 24px;
+}
+.maincat__item{
 	.text{
 		&:before{
-			bottom: 0;
+			bottom: 4px;
 			margin-left: 10px;
+			@include sprite('ico_77');
 		}
+	}
+	&:hover{
+		.text{
+			&:before{
+				@include sprite('ico_80');
+			}
+		}	
 	}
 }
 .maincat__wrap{

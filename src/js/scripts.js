@@ -747,7 +747,8 @@ function heightsToMax() {
 					breakpoint: 768,
 					settings: {
 						slidesToShow: 1,
-						swipe: true
+						swipe: true,
+						dots: true
 					}
 				}
 			]
