@@ -9,23 +9,17 @@
 }
 .delivery__ico-money{
 	.ico{
-		background: transparent $sprite -795px 0 no-repeat;
-		width: 34px;
-		height: 24px;
+		@include sprite('ico_69');
 	}
 }
 .delivery__ico-wallet{
 	.ico{
-		background: transparent $sprite -835px 0 no-repeat;
-		width: 34px;
-		height: 23px;
+		@include sprite('ico_70');
 	}
 }
 .delivery__ico-range{
 	.ico{
-		background: transparent $sprite -880px 0 no-repeat;
-		width: 34px;
-		height: 17px;
+		@include sprite('ico_71');
 	}
 }
 .delivery__ico-post{

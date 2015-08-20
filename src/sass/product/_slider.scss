@@ -69,8 +69,8 @@
 	}	
 	.cont{
 		overflow: hidden;
-		width: 74px;
-		height: 68px;
+		width: 76px;
+		height: 70px;
 		padding: 10px;
 		box-sizing: border-box;
 		border: 1px solid $lightGray;
@@ -152,8 +152,8 @@
 		font-size: 14px;
 		font-weight: bold;
 		color: $orange;
-		.rouble{
-			font-weight: bold;
+		.b-rub{
+			padding-left: 4px;
 		}
 	}
 	.slick-prev,
@@ -191,10 +191,14 @@
 		margin-top: -7px;
 		margin-left: -4px;
 	}
-	.slick-prev:before{
-		background: transparent $sprite -216px top no-repeat;
+	.slick-prev{
+		&:before{
+			@include sprite('ico_05');
+		}
 	}
-	.slick-next:before{
-		background: transparent $sprite -240px top no-repeat;
+	.slick-next{
+		&:before{
+			@include sprite('ico_04');
+		}
 	}
 }

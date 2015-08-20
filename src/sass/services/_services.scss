@@ -74,7 +74,7 @@ p.services__info{
 			font-family: $openSans;
 		}
 		.ico{
-			background: transparent $sprite -418px 0 no-repeat;
+			@include sprite('ico_58');
 			width: 22px;
 			height: 28px;
 			display: inline-block;
@@ -171,17 +171,30 @@ p.services__info{
     .pic{
     	margin-bottom: 22px;
     	position: relative;
+    	&:before{
+    		content: "";
+    		position: absolute;
+    		bottom: 0;
+    		left: 50%;
+    		background-color: $blue;
+    		margin-left: -13px;
+    		margin-bottom: -13px;
+    		border-radius: 13px;
+    		width: 26px;
+    		height: 26px;
+    	}
     	&:after{
     		content: "";
     		position: absolute;
-    		background: $blue $sprite -377px -13px no-repeat;
-    		width: 26px;
-    		height: 26px;
+    		@include sprite('ico_61');
     		bottom: 0;
     		left: 50%;
-    		margin-left: -13px;
-    		margin-top: -13px;
-    		border-radius: 13px;
+    		margin-left: -6px;
+    		margin-bottom: -5px;
+    	}
+    	img{
+    		display: inline-block;
+    		vertical-align: bottom;
     	}
     }
     .title{
@@ -222,10 +235,10 @@ p.services__info{
 	}
 }
 .services__info_bottom{
-	background: transparent url('../img/ico_14.png') 50% top no-repeat;
 	padding: 112px 200px 0;
 	text-align: center;
 	margin-bottom: 120px;
+	position: relative;
 	p{
 		font-size: 16px;
 		line-height: 24px;
@@ -235,5 +248,15 @@ p.services__info{
 		padding-right: 40px;
 		padding-left: 40px;
 		margin-top: 20px;
+	}
+}
+.services__info_bottom-ico_feet{
+	&:before{
+		content: "";
+		position: absolute;
+		top: 22px;
+		left: 50%;
+		margin-left: -37px;
+		@include sprite('ico_60');
 	}
 }

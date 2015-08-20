@@ -87,12 +87,21 @@
 }
 .conditions__content_bg-ico{
 	padding: 38px 0px 18px 86px;
-	background: transparent url("../img/ico_13.png") 0 50px no-repeat;
+	position: relative;
 	.conditions-promo__label{
 		margin-bottom: 30px;
 	}
 	.button{
 		padding: 14px 54px;
+	}
+}
+.conditions__content_bg-ico_time{
+	&:before{
+		content: '';
+		position: absolute;
+		top: 50px;
+		left: 0;
+		@include sprite('ico_59');
 	}
 }
 .conditions-promo__label{
@@ -120,7 +129,7 @@
 		width: 5px;
 		background-color: $white;
 		display: inline-block;
-		margin-right: 5px;
+		margin-right: 6px;
 	}
 }
 .conditions-table__cell:first-child{

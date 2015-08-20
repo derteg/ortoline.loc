@@ -15,12 +15,10 @@
 	padding-right: 36px;
 	.ico{
 		display: inline-block;
-		background: transparent $sprite -128px -8px no-repeat;
-		width: 16px;
-		height: 15px;
 		position: absolute;
 		top: 15px;
-		right: 20px;		
+		right: 20px;
+		@include sprite('ico_56');
 	}
 }
 .search__menu_field{
@@ -63,10 +61,8 @@
 		}
 	}
 	.search__ico{
-		background: transparent $sprite -152px 0 no-repeat;
+		@include sprite('ico_23');
 		display: inline-block;
 		vertical-align: middle;
-		width: 22px;
-		height: 22px;
 	}
 }

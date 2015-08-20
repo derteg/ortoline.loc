@@ -10,8 +10,8 @@ module.exports = {
       'src/js/*.js'
     ],
     tasks: [
-      'jshint',
-      'uglify'
+      'newer:jshint',
+      'newer:uglify'
     ]
   },
 

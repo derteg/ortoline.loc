@@ -138,8 +138,6 @@ h3{
 .button img{vertical-align:top;margin-right:10px;margin-top:1px}
 .button:hover span{
 	border-bottom-color:rgba(255,255,255,0.8);
-	-webkit-transition: all .35s;
-	transition: all .35s;
 }
 .button--blue{
 	background:$blue;
@@ -194,8 +192,6 @@ h3{
 	display:-moz-inline-stack;
 	display:inline-block;
 	vertical-align:top;
-	*zoom:1;
-	*display:inline;
 	margin-right:-4px;
 	border:2px solid #166bae;
 	border:2px solid rgba(35,125,190,0.4);
@@ -238,8 +234,6 @@ h3{
     font-size: 14px;
     vertical-align: top;
     margin-left: -4px;
-
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -249,9 +243,7 @@ h3{
 	color: $gray;
 	font-family: $openSans;
 	.ico{
-		background: transparent $sprite -352px 0 no-repeat;
-		width: 17px;
-		height: 17px;
+		@include sprite('ico_64');
 		display: inline-block;
 		vertical-align: middle;
 		margin-right: 4px;
@@ -265,11 +257,17 @@ h3{
 }
 .my__item{
 	position: relative;
-	background: transparent url('../img/ico_10.png') 0 3px no-repeat;
 	padding-left: 22px;
 	margin-bottom: 18px;
 	line-height: 22px;
 	box-sizing: border-box;
+	&:before{
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 5px;
+		@include sprite('ico_57');
+	}
 }
 
 .my__list_num{

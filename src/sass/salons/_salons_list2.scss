@@ -87,7 +87,7 @@
 	        left: 18px;
 	        width: 22px;
 	        height: 15px;
-	        background: transparent $sprite -264px 0 no-repeat;
+	        @include sprite('ico_42');
 	    }
 	    &.orange{
 	    	background-color: $orange;
@@ -142,54 +142,49 @@
 		.adress__nav-btn__wrap{
 			cursor: default;
 			color: $white;
-			background: $black;
+			background-color: $black;
 		}
 	}
 	.ico{
-		background: transparent $sprite no-repeat;
 		display: inline-block;
 		padding: 0;
 		vertical-align: middle;
 		position: relative;
+		-webkit-transition: none;
+		transition: none;
 	}
 }
 .adress__nav-btn_sheme{
-	.ico{		
-		width: 16px;
-		height: 24px;
+	.ico{
 		right: 8px;
-		background-position: -298px 100%;
+		@include sprite('ico_52');
 	}
 	&.current{
 		.ico{
-			background-position: -298px 0;
+			@include sprite('ico_53'); 
 		}
 	}
 }
 .adress__nav-btn_lists{
 	.ico{
-		width: 24px;
-		height: 18px;
 		right: 8px;
-		background-position: -320px 100%;
+		@include sprite('ico_54');
 	}
 	&.current{
 		.ico{
-			background-position: -320px 0;
+			@include sprite('ico_55');
 		}
 	}
 }
 .adress__nav-btn_map{
 	display: none;
 	.ico{
-		width: 24px;
-		height: 24px;
 		right: 8px;
-		background-position: -1045px 100%;
+		@include sprite('ico_13');
 	}
 	&.current{
-		.ico{
-			background-position: -1045px 0;
+		.ico{ 
+			@include sprite('ico_14');
 		}
 	}
 }

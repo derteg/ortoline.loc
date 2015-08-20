@@ -42,23 +42,17 @@
 	.aside__menu_lnk.active:hover .brd{
 		border-bottom: 1px solid transparent;
 	}
-	.aside__menu_lnk:before{
-		content: "";
-		background: transparent $sprite -140px top no-repeat;
-		width: 4px;
-		height: 7px;
-		display: inline-block;
-		vertical-align: middle;
-		margin-right: 22px;
-	}
-	.aside__menu_lnk:hover:before{
-		background: transparent $sprite -132px top no-repeat;
-	}
-	.aside__menu_lnk.active:before{
-		background: transparent $sprite -140px top no-repeat;
-	}
-	.aside__menu_lnk.active:hover:before{
-		background: transparent $sprite -132px top no-repeat;
+	.aside__menu_lnk{
+		&:before{
+			content: "";
+			@include sprite('ico_21');
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 22px;
+		}
+		&:hover:before{
+			@include sprite('ico_22');
+		}
 	}
 }
 
@@ -93,9 +87,7 @@
 .aside__info_quest{
 	.aside__info_pic{
 		display: inline-block;
-		background: transparent url('../ico/sprite_01.png') 0 0 no-repeat;
-		width: 44px;
-		height: 50px;
+		@include sprite('ico_19');
 		margin-left: 24px;
 		margin-bottom: 20px;
 	}
@@ -103,10 +95,8 @@
 .aside__info_courier{
 	.aside__info_pic{
 		display: inline-block;
-		background: transparent url('../ico/sprite_01.png') -56px 0 no-repeat;
-		width: 72px;
-		height: 35px;
 		margin-bottom: 24px;
+		@include sprite('ico_20');
 	}
 }
 

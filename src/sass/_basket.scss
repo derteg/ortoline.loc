@@ -88,10 +88,19 @@
 		display: inline-block;
 		border-radius: 4px;
 		cursor: pointer;
-		background: $gray $sprite -958px -30px no-repeat;
+		position: relative;
+		background-color: $gray;
 		@include transition(background-color .25s);
-		&:hover{
+		&:hover,
+		&:focus{
 			background-color: $gray2;
+		}
+		&:before{
+			content: "";
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			@include sprite('ico_75'); 
 		}
 	}
 }

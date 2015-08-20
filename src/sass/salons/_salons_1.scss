@@ -40,6 +40,9 @@
 	text-align: center;
 	.pic{
 		margin-bottom: 28px;
+		img{
+			display: inline-block;
+		}
 	}
 	.title{
 		color: $black;
