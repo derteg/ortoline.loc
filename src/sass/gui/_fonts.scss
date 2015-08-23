@@ -48,26 +48,3 @@
   font-family: 'ALSRubl-Verdana', Verdana, sans-serif;
   line-height: normal;
 }
-
-@font-face {
-    font-family: 'als_rublregular';
-    src: url('../../fonts/rouble-webfont.eot');
-    src: url('../../fonts/rouble-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/rouble-webfont.woff') format('woff'),
-         url('../../fonts/rouble-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.rouble {
-    font-family: 'als_rublregular';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
