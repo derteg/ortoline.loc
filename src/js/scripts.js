@@ -547,10 +547,6 @@ function heightsToMax() {
 				wScroll = win.scrollTop(),
 				$footerPos = $footer.offset().top - wH;
 
-				console.log('wScroll ' + wScroll);
-				console.log('$footer.offset().top ' + $footer.offset().top);
-				console.log('$footerPos ' + $footerPos);
-
 			if(768 <= wW){
 				if (wScroll > 220) {
 					header.addClass('header_fix');
