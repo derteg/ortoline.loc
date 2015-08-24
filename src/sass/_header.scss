@@ -13,7 +13,7 @@
 }
 .header__wrap{
 	padding: 20px 0 94px;
-	@include transition(padding .25s);
+	// @include transition(padding .25s);
 }
 .header__left{
 	float: left;
@@ -33,7 +33,7 @@
 	.logo{
 		width: 100%;
 		max-width: 350px;
-		@include transition(width .25s);
+		// @include transition(width .25s);
 	}
 	.logo__lnk{
 		display: inline-block;
@@ -82,7 +82,7 @@
 	float: right;
 	width: 35%;
 	text-align: right;
-	@include transition(padding .25s);
+	// @include transition(padding .25s);
 }
 .header__right_btn{
 	display: inline-block;
@@ -170,15 +170,15 @@
 
 .mainmenu{
 	position: absolute;
-	top: 54%;
+	display: block;
+	bottom: 0;
 	left: 0;
 	right: 0;
 	width: 100%;
-	padding: 12px 20px 30px;
-	display: block;
+	padding: 12px 20px 12px;
 	opacity: 1;
 	box-sizing: border-box;
-	@include transition(padding .25s, top .25s);
+	// @include transition(padding .25s, top .25s);
 }
 .mainmenu__btn{
 	display: none;
@@ -206,7 +206,6 @@
     text-align: left;
     /* Востанавливаем у потомков, кроме последнего*/
     line-height: normal;
-    font-size: 16px;
     /* Без него в Opera будет отступ под элементами */
     vertical-align: top;
 }
@@ -222,7 +221,7 @@
 .mainmenu__buttons{
 	text-align: justify;
 	line-height: 0;
-	font-size: 1px; /* 1px для Opera */
+	font-size: 0; /* 1px для Opera */
 	/* Лекарство для IE6-7*/
 	text-justify: newspaper;
 	zoom:1;
@@ -250,6 +249,9 @@
 	width: 40%;
 	max-width: 410px;
 }
+.mainmenu__buttons_fr-wrap{
+	display: inline-block;
+}
 .mainmenu__btn-all{
 	display: none;
 	span{
@@ -262,6 +264,20 @@
 		display: inline-block;
 		padding-right: 14px;
 		vertical-align: middle;
+	}
+}
+
+.mainmenu__buttons_fr-wrap{
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+	.button{
+		display: block;
+		text-align: center;
+		margin: 0px 10px;
+		font-size: 16px;
+		padding: 14px 15px;
+		box-sizing: border-box;
 	}
 }
 
@@ -287,13 +303,26 @@
 		}
 	}
 	.header__left_wrap{
-		width: 100%;
 		text-align: center;
 		max-width: 430px;
+		width: 60%;
 		margin: 0;
 	}
 	.mainmenu__buttons_centr{
-		display: block;	
+		display: block;
+	}
+	.mainmenu__buttons_centr-wrap{
+		display: inline-block;
+		width: 50%;
+		vertical-align: top;
+		.button{
+			display: block;
+			font-size: 16px;
+			padding: 14px 15px;
+			margin: 0px 10px;
+			text-align: center;
+			box-sizing: border-box;
+		}
 	}
 	.header__contact{
 		display: none;

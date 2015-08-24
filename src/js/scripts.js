@@ -242,6 +242,13 @@ $(window).load(function(){initLikes();});
 				{
 					breakpoint: 768,
 					settings: {
+						slidesToShow: 2,
+						swipe: true
+					}
+				},
+				{
+					breakpoint: 450,
+					settings: {
 						slidesToShow: 1,
 						swipe: true
 					}
@@ -517,7 +524,9 @@ function heightsToMax() {
 	$.fn.headerFixed = function(){
 		var header = this,
 			resizeId,
-			win = $(window);
+			win = $(window),
+			$promoPhone = $('.js-promophone_mob'),
+			$footer = $('#footer');
 
 		document.addEventListener("DOMContentLoaded", winPosCalc);
 
@@ -529,23 +538,34 @@ function heightsToMax() {
 
 		win.resize(function() {
 		    clearTimeout(resizeId);
-		    resizeId = setTimeout(winPosCalc, 200);
+		    resizeId = setTimeout(winPosCalc, 100);
 		});
 		 
 		function winPosCalc(){
-			var wScrollTop = win.scrollTop(),
-				wW = win.width(),
-				hH = header.innerHeight();
+			var	wW = win.width(),
+				wH = win.height(),
+				wScroll = win.scrollTop(),
+				$footerPos = $footer.offset().top - wH;
 
-			if(768 < wW){
-				if (wScrollTop > 220) {
+				console.log('wScroll ' + wScroll);
+				console.log('$footer.offset().top ' + $footer.offset().top);
+				console.log('$footerPos ' + $footerPos);
+
+			if(768 <= wW){
+				if (wScroll > 220) {
 					header.addClass('header_fix');
 				} else {
 					header.removeClass('header_fix');
 				}
 			} else {
 				header.removeClass('header_fix');
-			}   
+
+				if(wScroll >= $footerPos){
+					$promoPhone.css('bottom','' + (wScroll - $footerPos) + 'px');
+				} else {
+					$promoPhone.css('bottom','0');
+				}
+			}
 		}
 	};
 })(jQuery);
@@ -647,6 +667,15 @@ function heightsToMax() {
 				},
 				{
 					breakpoint: 768,
+					settings: {
+						slidesToShow: 2,
+						arrows: false,
+						dots: true,
+						infinite: true
+					}
+				},
+				{
+					breakpoint: 450,
 					settings: {
 						slidesToShow: 1,
 						arrows: false,

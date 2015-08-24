@@ -91,7 +91,7 @@ $sprite02: url('../ico/sprite_02.png');
 @import "basket";
 
 
-@media (max-width:1140px) and (min-width:768px) {
+@media (max-width:1000px) and (min-width:768px) {
 	@import "media_768/gui/gui_768";
 	@import "media_768/gui/aside__768";
 	@import "media_768/gui/form__768";
