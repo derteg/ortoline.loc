@@ -159,11 +159,11 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        margin-top: -9px;
+        margin-top: -8px;
     }
     .slick-prev{
         &:before{
-            margin-left: -4px;
+            margin-left: -5px;
             @include sprite('ico_05');
         }
     }

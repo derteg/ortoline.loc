@@ -20,15 +20,27 @@
 }
 
 .mainmenu__buttons_fr{
-	width: 100%;
-	max-width: 100%;
+	width: auto;
+	max-width: none;
 	float: none;
+	margin: 0px -10px;
 }
 .mainmenu__list{
 	display: none;
 }
+.mainmenu__buttons_fr-wrap{
+	width: 33.3%;
+}
 .mainmenu__btn-all{
 	display: inline-block;
+	width: 33.3%;
+	.button{
+		display: block;
+		text-align: center;
+		margin: 0px 10px;
+		padding: 14px 15px;
+		box-sizing: border-box;
+	}
 	.ico{
 		@include sprite('ico_18');
 		padding: 0;
@@ -47,7 +59,7 @@
 	.mainmenu{
 		z-index: 1000;
 		opacity: 1;
-		padding: 20px;
+		padding: 20px 0;
 		position: relative;
 	}
 }

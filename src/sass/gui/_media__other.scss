@@ -1,4 +1,7 @@
 @media (max-width:999px) and (min-width:768px) {
+	.header__left_wrap{
+		margin-right: 7%;
+	}
 	.promoslider__text{
 		font-size: 26px;
 		line-height: 32px;
@@ -11,6 +14,15 @@
 	}
 }
 @media (max-width:1140px) and (min-width:1000px) {
+	.header__left_wrap{
+		margin-right: 5%;
+	}
+	.mainmenu__list{
+		width: 57%;	
+	}
+	.mainmenu__link{
+		font-size: 18px;
+	}
 	.promoslider__text{
 		font-size: 30px;
 		line-height: 35px;

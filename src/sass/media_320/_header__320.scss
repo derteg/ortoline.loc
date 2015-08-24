@@ -17,9 +17,10 @@
 }
 
 .mainmenu__buttons_fr{
-	width: 100%;
-	max-width: 100%;
+	width: auto;
+	max-width: none;
 	float: none;
+	margin: 0px -10px;
 }
 
 .basket-btn__cont,
@@ -34,18 +35,22 @@
 	padding: 0;
 	padding-bottom: 12px;
 }
-.mainmenu__buttons{
+.mainmenu__buttons_fr-wrap{
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
 	.button{
+		display: block;
+		margin: 0px 10px;
+		padding: 10px 6px;
 		font-size: 14px;
+		text-align: center;
 		font-weight: normal;
 		text-transform: none;
-		padding: 10px 12px;
-		img{
-			margin-right: 6px;
-		}
-		&.button--blue{
-			padding: 10px 12px;
-		}
+		box-sizing: border-box;
+	}
+	img{
+		margin-right: 6px;
 	}
 }
 .mainmenu__btn-all{
@@ -62,7 +67,7 @@
 		display: none;
 	}
 	.button{
-		padding: 14px;
+		padding: 12px 14px 13px;
 		line-height: 1;
 	}
 }
@@ -73,5 +78,31 @@
 	.pic{
 		@include sprite('ico_76');
 		padding-bottom: 1px;
+	}
+}
+
+.promophone_mob{
+	display: block;
+	background-color: $dark;
+	text-align: center;
+	padding: 4px 0;
+	width: 100%;
+	z-index: 100;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.promophone__phone{
+	display: inline-block;
+	.ico{
+		display: inline-block;
+		@include sprite('ico_03');
+		margin-right: 10px;
+		margin-left: -27px;
+	}
+	.text{
+		color: $white;
+		font-size: 16px;
+		line-height: 24px;
 	}
 }

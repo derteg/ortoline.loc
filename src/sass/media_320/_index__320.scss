@@ -4,8 +4,9 @@
 	}
 }
 .promoslider__slide{
+	max-height: 440px;
 	img{
-		width: 240%;
+		width: 160%;
 		height: auto;
 	}
 }
@@ -21,26 +22,6 @@
 		margin-bottom: 18px;
 		width: 36px;
 		height: 4px;
-	}
-}
-
-.promophone_mob{
-	display: block;
-	background-color: $dark;
-	text-align: center;
-	padding: 4px 0;
-}
-.promophone__phone{
-	display: inline-block;
-	.ico{
-		display: inline-block;
-		@include sprite('ico_03');
-		margin-right: 10px;
-	}
-	.text{
-		color: $white;
-		font-size: 16px;
-		line-height: 24px;
 	}
 }
 
@@ -156,13 +137,13 @@ h3.product__sub-title{
 }
 .dvnt__title{
 	top: -26px;
-	width: 80%;
-	margin: 0 auto;
+	width: 100%;
 }
 .dvnt__title_sub-title{
-	padding: 0 20px;
+	padding: 0 10px;
 	font-size: 25px;
 	line-height: 30px;
+	width: 80%;
 }
 .dvnt-item{
 	width: 100%;
@@ -225,10 +206,17 @@ h3.product__sub-title{
 	.col{
 		margin-bottom: 0;		
 	}
-	.video-footer{
-		bottom: 18px;
-		font-size: 11px;
-	}
+}
+.video-poster{
+	width: 100%;
+	margin: 0 auto;
+}
+.video-footer{
+	bottom: 18px;
+	left: 0;
+	width: 100%;
+	font-size: 11px;
+	text-align: center;
 }
 
 .usfl{
@@ -239,6 +227,17 @@ h3.product__sub-title{
 	.cols{
 		padding-bottom: 15px;
 	}
+}
+.usfl-poster{
+	width: 100%;
+	margin: 0 auto;
+}
+.usfl-footer{
+	bottom: 18px;
+	left: 0;
+	width: 100%;
+	font-size: 11px;
+	text-align: center;
 }
 
 .video_main,
