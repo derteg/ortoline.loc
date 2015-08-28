@@ -229,7 +229,7 @@
         background-size: 320px 312px;
         background-image: url("../ico/sprite@2x.png"); } }
 
-html, body {
+tml, body {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -618,7 +618,7 @@ h3 {
     .tag__item a:hover {
       background-color: #1376ba; }
 
-p.promo__txt {
+.promo__txt {
   display: block;
   font-size: 18px;
   line-height: 30px;
@@ -860,9 +860,25 @@ p.promo__txt {
     right: 21px;
     margin-top: -4px; }
   .styledSelect:before {
-    background: transparent url("../ico/sprite_01.png") -237px -28px no-repeat; }
+    background-image: url("../ico/sprite.png");
+    background-position: -168px -267px;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 8px; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      .styledSelect:before {
+        background-size: 320px 312px;
+        background-image: url("../ico/sprite@2x.png"); } }
   .styledSelect.active:before {
-    background: transparent url("../ico/sprite_01.png") -213px -28px no-repeat; }
+    background-image: url("../ico/sprite.png");
+    background-position: -142px -267px;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 8px; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      .styledSelect.active:before {
+        background-size: 320px 312px;
+        background-image: url("../ico/sprite@2x.png"); } }
   .styledSelect:after {
     content: "";
     width: 56px;
@@ -1597,7 +1613,7 @@ p.promo__txt {
   margin-left: 56px;
   display: block;
   color: #2c2c2c;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 18px;
   text-align: left; }
   .profile-btn__text .sub-text {
@@ -4428,7 +4444,10 @@ h4.product__sub-title {
   font-size: 14px; }
 
 .adress-inner__gallery {
-  margin: 40px 0 70px; }
+  margin: 40px 0 70px;
+  text-align: center; }
+  .adress-inner__gallery .slick-dots {
+    bottom: -50px; }
 
 .adress-inner__gallery__slide {
   text-align: center; }
@@ -4446,6 +4465,42 @@ h4.product__sub-title {
       display: block; }
   .adress-inner__gallery__slide .sub-title {
     color: #8797a8; }
+
+.slick-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 9;
+  opacity: .7;
+  -webkit-transition: opacity 0.25s;
+  -moz-transition: opacity 0.25s;
+  -o-transition: opacity 0.25s;
+  transition: opacity 0.25s; }
+  .slick-dots:hover {
+    opacity: 1; }
+  .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 8px;
+    height: 8px; }
+  .slick-dots button {
+    width: 8px;
+    height: 8px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background: #8797a8;
+    padding: 0;
+    text-indent: -9999px;
+    font-size: 0;
+    text-align: start;
+    border: none;
+    vertical-align: top;
+    vertical-align: top; }
+  .slick-dots .slick-active button {
+    background: #f3a942;
+    cursor: default; }
 
 .adress {
   margin-bottom: 70px; }
@@ -4518,13 +4573,9 @@ h4.product__sub-title {
     content: "";
     position: absolute;
     display: inline-block;
-    border-radius: 6px;
-    width: 12px;
-    height: 12px;
     top: 24px;
     left: 18px; }
     .adress__nav-select_wrap .select__ico.all {
-      border-radius: 0;
       top: 22px;
       left: 18px;
       width: 22px;
@@ -4538,12 +4589,6 @@ h4.product__sub-title {
         .adress__nav-select_wrap .select__ico.all {
           background-size: 320px 312px;
           background-image: url("../ico/sprite@2x.png"); } }
-    .adress__nav-select_wrap .select__ico.orange {
-      background-color: #f3a942; }
-    .adress__nav-select_wrap .select__ico.gray {
-      background-color: #8797a8; }
-    .adress__nav-select_wrap .select__ico.blue {
-      background-color: #1376ba; }
 
 .adress__nav-type {
   line-height: 20px;
@@ -4589,52 +4634,29 @@ h4.product__sub-title {
   -webkit-transition: none;
   transition: none; }
 
-.adress__nav-btn_sheme {
+.adress__nav-btn_lists {
   display: none; }
-  .adress__nav-btn_sheme .ico {
+  .adress__nav-btn_lists .ico {
     right: 8px;
     background-image: url("../ico/sprite.png");
-    background-position: -277px 0px;
+    background-position: -196px -90px;
     background-repeat: no-repeat;
-    width: 16px;
-    height: 24px; }
+    width: 24px;
+    height: 18px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-      .adress__nav-btn_sheme .ico {
+      .adress__nav-btn_lists .ico {
         background-size: 320px 312px;
         background-image: url("../ico/sprite@2x.png"); } }
-  .adress__nav-btn_sheme.current .ico {
+  .adress__nav-btn_lists.current .ico {
     background-image: url("../ico/sprite.png");
-    background-position: -277px -34px;
+    background-position: -238px -233px;
     background-repeat: no-repeat;
-    width: 16px;
-    height: 24px; }
+    width: 24px;
+    height: 18px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-      .adress__nav-btn_sheme.current .ico {
+      .adress__nav-btn_lists.current .ico {
         background-size: 320px 312px;
         background-image: url("../ico/sprite@2x.png"); } }
-
-.adress__nav-btn_lists .ico {
-  right: 8px;
-  background-image: url("../ico/sprite.png");
-  background-position: -196px -90px;
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 18px; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-    .adress__nav-btn_lists .ico {
-      background-size: 320px 312px;
-      background-image: url("../ico/sprite@2x.png"); } }
-
-.adress__nav-btn_lists.current .ico {
-  background-image: url("../ico/sprite.png");
-  background-position: -238px -233px;
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 18px; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-    .adress__nav-btn_lists.current .ico {
-      background-size: 320px 312px;
-      background-image: url("../ico/sprite@2x.png"); } }
 
 .adress__nav-btn_map {
   display: none; }
@@ -6008,7 +6030,6 @@ p.services__info {
     width: 50%;
     margin-bottom: 20px; }
   .footer {
-    top: -154px;
     height: 154px; }
   .footer-col--1,
   .footer-col--2,
@@ -6058,7 +6079,7 @@ p.services__info {
     height: 78px;
     text-align: justify;
     line-height: 0;
-    font-size: 1px;
+    font-size: 0;
     margin: 46px -10px 0; }
     .adress__nav-btn__list:after {
       width: 100%;
@@ -6070,7 +6091,7 @@ p.services__info {
     .adress__nav-btn__list.fr {
       float: none; }
   .adress__nav-btn__item {
-    width: 33.3%;
+    width: 50%;
     display: inline-block;
     margin: 0;
     text-align: center; }
@@ -6094,7 +6115,9 @@ p.services__info {
   .adress__tbl-cell {
     width: 30%; }
     .adress__tbl-cell.adress__tbl-cell_btn {
-      width: 10%; }
+      width: auto;
+      padding: 0;
+      text-align: right; }
   .adress__tbl-lnk {
     display: inline-block;
     width: 59px;
@@ -6155,47 +6178,6 @@ p.services__info {
     .adress-inner__pic img {
       width: 100%;
       height: auto; }
-  .adress-inner__gallery {
-    text-align: center; }
-    .adress-inner__gallery img {
-      display: inline-block; }
-    .adress-inner__gallery .slick-dots {
-      bottom: -50px; }
-    .adress-inner__gallery .slick-dots {
-      position: absolute;
-      left: 0;
-      right: 0;
-      text-align: center;
-      z-index: 9;
-      opacity: .7;
-      -webkit-transition: opacity 0.25s;
-      -moz-transition: opacity 0.25s;
-      -o-transition: opacity 0.25s;
-      transition: opacity 0.25s; }
-      .adress-inner__gallery .slick-dots:hover {
-        opacity: 1; }
-      .adress-inner__gallery .slick-dots li {
-        display: inline-block;
-        margin: 0 5px;
-        width: 8px;
-        height: 8px; }
-      .adress-inner__gallery .slick-dots button {
-        width: 8px;
-        height: 8px;
-        outline: none;
-        cursor: pointer;
-        border-radius: 4px;
-        background: #8797a8;
-        padding: 0;
-        text-indent: -9999px;
-        font-size: 0;
-        text-align: start;
-        border: none;
-        vertical-align: top;
-        vertical-align: top; }
-      .adress-inner__gallery .slick-dots .slick-active button {
-        background: #f3a942;
-        cursor: default; }
   .contacts {
     margin-bottom: 40px; }
     .contacts .adress__nav-btn__list {
@@ -6592,7 +6574,7 @@ p.services__info {
       width: 100%;
       height: auto; }
   .header__wrap {
-    padding: 20px 0 0px; }
+    padding: 20px 0 6px; }
   .header__left {
     width: 45%; }
     .header__left .logo {
@@ -6636,7 +6618,7 @@ p.services__info {
     position: absolute;
     bottom: 100%;
     right: 60px;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
     display: inline-block; }
     .mainmenu__btn-all .ico {
       padding: 0;
@@ -7281,7 +7263,6 @@ p.services__info {
     width: 50%;
     margin-bottom: 20px; }
   .footer {
-    top: -310px;
     height: 310px; }
   .footer-col--1,
   .footer-col--2,
@@ -7379,8 +7360,7 @@ p.services__info {
   .adress__nav-btn_sheme {
     right: 0; }
   .adress__nav-btn_map {
-    left: 50%;
-    margin-left: -44px;
+    right: 0;
     display: inline-block; }
   .adress__map {
     width: 100%;

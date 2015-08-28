@@ -40,10 +40,10 @@
         margin-top: -4px;   
     }    
     &:before{
-        background: transparent url("../ico/sprite_01.png") -237px -28px no-repeat;
+        @include sprite('ico_43');
     }
     &.active:before{
-        background: transparent url("../ico/sprite_01.png") -213px -28px no-repeat;
+        @include sprite('ico_44');
     }
     &:after{
         content: "";
