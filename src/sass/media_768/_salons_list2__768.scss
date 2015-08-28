@@ -24,7 +24,7 @@
 	height: 78px;
 	text-align: justify;
 	line-height: 0;
-	font-size: 1px;
+	font-size: 0;
 	margin: 46px -10px 0;
 	&:after{
 		width: 100%;
@@ -39,7 +39,7 @@
 	}
 }
 .adress__nav-btn__item{
-	width: 33.3%;
+	width: 50%;
 	display: inline-block;
 	margin: 0;
 	text-align: center;
@@ -74,7 +74,9 @@
 .adress__tbl-cell{
 	width: 30%;
 	&.adress__tbl-cell_btn{
-		width: 10%;
+		width: auto;
+		padding: 0;
+		text-align: right;
 	}
 }
 .adress__tbl-lnk{

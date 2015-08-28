@@ -5,98 +5,155 @@ $(window).load(function(){
 });
 
 $(function(){
-	if($('#adressMap').length){
-		$('#adressMap').adressMap();
-	}
+	// if($('#adressMap').length){
+	// 	adressMapGlobal();
+	// }
 	if($('#adressInnerMap').length){
 		$('#adressInnerMap').adressInnerMap();
 	}
 	if($('#servicesMap').length){
 		$('#servicesMap').servicesMap();
 	}
+	
+	$('.js-select').selectCustom();
 
+	$('.sl').socialLikes();
+
+	/* SLIDERS */
 	$('.js-promoslider').promoSlider();
 	$('.js-stock__slider').stockSlider();
 	$('.js-hits__slider').hitsSlider();
-	$('.js-card__info').cardInfo();	
 	$('.js-product__slider-for').productSlider();
 	$('.js-product__news-slider').productNewsSlider();
-	$('.js-product__amount').amountCart();
-	$('.js-select').selectCustom();
-	$('.js-header_fix').headerFixed();
-	$('.js-info-tabs').lightTabs();
-	$('.js-faq__list').faqList();
-	$('#searchInp').searchInp();
-	$('#accordionAside').accordionAside();
-	$('#videoSlider').videoSlider();
 	$('#videoSliderPromo, #infoSliderPromo').promoSliderList();
-	$('.js-lnk_popup').contactPopup();
 	$('#faqmainSlider').faqmainSlider();
 	$('#cardSlider').cardSlider();
-	$('#adressNavBtns').adressNavBtns();
 	$('#adressPesronGall').adressPesronGall();
 	$('#servicesGalleryResp').servicesGalleryResp();
 	$('#servicesGallery').servicesGallery();
-	$('#faqAccordMob').faqAccordMob();
+	
+	$('.js-card__info').cardInfo();	
+	$('.js-product__amount').amountCart();
+	$('.js-header_fix').headerFixed();
+	$('.js-info-tabs').lightTabs();
+	$('.js-faq__list').faqList();
+	$('.js-lnk_popup').contactPopup();
 	$('.js-product__filter_mob').productFilterMob();
+
+	$('#searchInp').searchInp();
+	$('#accordionAside').accordionAside();
+	$('#videoSlider').videoSlider();
+	$('#faqAccordMob').faqAccordMob();
 });
 
 
-
-function initLikes() {
-	$('.sl').socialLikes();
-}
-
-$(window).load(function(){initLikes();});
-
 (function($){
-	$.fn.adressMap = function(){
+	var myMap,
+		mapElement = $('#adressMap'),
+		myPlacemark,
+		nav = $('#adressNavBtns'),
+		$cont = $('#adressNavCont'),
+		$block = $('> div', $cont),
+		$list = $('.js-adress__list'),
+		$item = $(' > div', $list),
+		resizeId;
+
+	if($("#adressMap").length) adressMapGlobal();
+
+	function adressMapGlobal(){
 		ymaps.ready(init);
 
-		var myMap,
-		myPlacemark,
-			coordsBlue = [
-				[55.90, 37.70], [55.75, 37.71], [55.70, 37.70]
-			];
-			coordsYellow = [
-				[55.80, 37.50], [55.85, 37.71], [55.75, 37.50]
-			];
-
 		function init () {
-			myMap = new ymaps.Map('adressMap', {
+		var $select = $('.js-select'),
+			$selectItem = $select.siblings('ul').find('li'),
+
+			myMap = new ymaps.Map(mapElement[0], {
 				center: [55.76, 37.64],
 				zoom: 10,
-				controls: []
-			});
+				controls: []				
+				}, {
+					autoFitToViewport: 'always',
+					suppressMapOpenBlock: true
+				});
 
-			var myCollectionBlue = new ymaps.GeoObjectCollection({}, {
-			   iconLayout: 'default#image',
-			   iconImageHref: 'dist/img/ico_08.png',
-			   iconImageSize: [32, 44],
-			   iconImageOffset: [0, 0]
-			});
+				jQuery.getJSON('dist/json/adress_global.json', function(json){
+					jQuery.each(json.features, function(i, feature){
+						console.log(111);
+						myMap.geoObjects.add(new ymaps.Placemark(feature.geometry.coordinates, {
+						}, {
+							//preset: 'islands#circleDotIcon', //стандартный пресет
+							//iconColor: '#1faee9', //цвет метки из пресета
+				        }));
 
-			var myCollectionYellow = new ymaps.GeoObjectCollection({}, {
-				iconLayout: 'default#image',
-				iconImageHref: 'dist/img/ico_07.png',
-				iconImageSize: [32, 44],
-				iconImageOffset: [0, 0]
-			});
+					});
+				});
 
-			for(var i = 0; i < coordsBlue.length; i++){
-				myCollectionBlue.add(new ymaps.Placemark(coordsBlue[i]));
+			function selectGetCoord(){
+				var shownObjects,
+					byOffice = new ymaps.GeoQueryResult(),
+					byMetro = new ymaps.GeoQueryResult(),
+					$selectCurrentMetro = $select.siblings('.styledSelect').data('data-select-metro');
+					$selectCurrentColor = $select.siblings('.styledSelect').data('data-select-office');			
 			}
 
-			myMap.geoObjects.add(myCollectionBlue);
+			function adressResize(){					
+				var wW = $(window).width(),
+					$btn = $('li.current', nav),
+					$type = $btn.data('btn-adress');
 
-			for(var j = 0; j < coordsYellow.length; j++){
-				myCollectionYellow.add(new ymaps.Placemark(coordsYellow[j]));
+
+					if(wW > 1000){
+						$block.css('display', 'inline-block');
+						myMap.container.getElement().style.width = '100%';
+						myMap.container.getElement().style.height = '780px';
+						myMap.container.fitToViewport();
+					} else {
+						$block.css('display', 'none');
+
+						myMap.behaviors.disable('ruler');
+
+						if($type == 'map'){ 
+							$cont.find('.adress__map').css('display', 'block'); 
+
+							myMap.container.getElement().style.width = '100%';
+							myMap.container.getElement().style.height = '780px';
+							myMap.container.fitToViewport();
+						}
+
+						if($type == 'list'){ 
+							$cont.find('.adress__tbl').css('display', 'block'); 
+						}
+					}
 			}
 
-			myMap.geoObjects.add(myCollectionYellow);
+			function adressBtnSetCurrent(){
+				var $btn = $(this),
+					$type = $btn.data('btn-adress');
 
+					$('li', nav).removeClass('current');
+					$btn.addClass('current');
+
+					$block.css('display', 'none');
+
+					if($type == 'map'){ 
+						$cont.find('.adress__map').css('display', 'block');
+
+						myMap.container.getElement().style.width = '100%';
+						myMap.container.getElement().style.height = '780px';
+					}
+					if($type == 'list'){ $cont.find('.adress__tbl').css('display', 'block'); }
+			}
+
+			$selectItem.click(selectGetCoord);
+
+			$(window).resize(function() {
+				clearTimeout(resizeId);
+				resizeId = setTimeout(adressResize, 200);
+			});
+
+			nav.on('click', 'li:not(.current)', adressBtnSetCurrent);
 		}
-	};
+	}
 })(jQuery);
 
 (function($){
@@ -158,6 +215,86 @@ $(window).load(function(){initLikes();});
 
 			myMap.geoObjects.add(myCollectionBlue);
 		}
+	};
+})(jQuery);
+
+(function($){
+	$.fn.selectCustom = function(){
+		var select = this;
+		var numberOfSelects = select.length;
+
+		// Iterate over each select element
+		select.each( function() {
+			
+			// Cache the number of options
+			var $this = $(this),
+				numberOfOptions = $(this).children('option').length;
+			
+			// Hides the select element
+			$this.addClass('hidden');
+			
+			// Wrap the select element in a div
+			$this.wrap('<div class="select" />');
+			
+			// Insert a styled div to sit over the top of the hidden select element
+			$this.after('<div class="styledSelect"></div>');
+			
+			// Cache the styled div
+			var $styledSelect = $this.next('div.styledSelect');
+			
+			// Show the first select option in the styled div
+			$styledSelect.text($this.children('option').eq(0).text());		    
+			
+			// Insert an unordered list after the styled div and also cache the list
+			var $list = $('<ul />', {
+				'class' : 'options'
+			}).insertAfter($styledSelect);
+			
+			// Insert a list item into the unordered list for each select option
+			for(var i = 0; i < numberOfOptions; i++) {
+				$('<li />', {
+					text: $this.children('option').eq(i).text(),
+					'class': $this.children('option').eq(i).val(),
+					'data-select-metro': $this.children('option').eq(i).attr('data-select-metro')
+				}).appendTo($list);
+			}
+			
+			// Cache the list items
+			var $listItems = $list.children('li');
+			
+			// Show the unordered list when the styled div is clicked (also hides it if the div is clicked again)
+			$styledSelect.click( function(e) {
+				e.stopPropagation();
+
+				$('styledSelect.active').each( function() {
+					$(this).removeClass('active')
+						.next('ul.options').filter(':not(:animated)').slideUp(250);   
+				});
+				
+				$(this).toggleClass('active')
+					.next('ul.options').filter(':not(:animated)').slideToggle(250);
+			});
+			
+			// Hides the unordered list when a list item is clicked and updates the styled div to show the selected list item
+			// Updates the select element to have the value of the equivalent option
+			$listItems.click( function(e) {
+				e.stopPropagation();
+
+				var that = $(this);
+				$styledSelect.attr('data-select-metro', that.attr('data-select-metro'));
+				$styledSelect.text($(this).text())
+					.removeClass('active');
+				$this.val($(this).text().toLowerCase());
+				$list.filter(':not(:animated)').slideUp(250);
+			});
+			
+			// Hides the unordered list when clicking outside of it
+			$(document).click( function() {
+				$styledSelect.removeClass('active');
+				$list.filter(':not(:animated)').slideUp(250);
+			});
+			
+		});
 	};
 })(jQuery);
 
@@ -354,85 +491,6 @@ function heightsToMax() {
 
 
 (function($){
-	$.fn.selectCustom = function(){
-		var select = this;
-		var numberOfSelects = select.length;
-
-		// Iterate over each select element
-		select.each( function() {
-			
-			// Cache the number of options
-			var $this = $(this),
-				numberOfOptions = $(this).children('option').length;
-			
-			// Hides the select element
-			$this.addClass('hidden');
-			
-			// Wrap the select element in a div
-			$this.wrap('<div class="select" />');
-			
-			// Insert a styled div to sit over the top of the hidden select element
-			$this.after('<div class="styledSelect"></div>');
-			
-			// Cache the styled div
-			var $styledSelect = $this.next('div.styledSelect');
-			
-			// Show the first select option in the styled div
-			$styledSelect.text($this.children('option').eq(0).text());		    
-			
-			// Insert an unordered list after the styled div and also cache the list
-			var $list = $('<ul />', {
-				'class' : 'options'
-			}).insertAfter($styledSelect);
-			
-			// Insert a list item into the unordered list for each select option
-			for(var i = 0; i < numberOfOptions; i++) {
-				$('<li />', {
-					text: $this.children('option').eq(i).text(),
-					'class': $this.children('option').eq(i).val()
-				}).appendTo($list);
-			}
-			
-			// Cache the list items
-			var $listItems = $list.children('li');
-			
-			// Show the unordered list when the styled div is clicked (also hides it if the div is clicked again)
-			$styledSelect.click( function(e) {
-				e.stopPropagation();
-
-				$('styledSelect.active').each( function() {
-					$(this).removeClass('active')
-						.next('ul.options').filter(':not(:animated)').slideUp(250);   
-				});
-				
-				$(this).toggleClass('active')
-					.next('ul.options').filter(':not(:animated)').slideToggle(250);
-			});
-			
-			// Hides the unordered list when a list item is clicked and updates the styled div to show the selected list item
-			// Updates the select element to have the value of the equivalent option
-			$listItems.click( function(e) {
-				e.stopPropagation();
-				var that = $(this);
-				$styledSelect.parent().next(".select__ico").attr('class', 'select__ico ' + that.attr('class'));
-				$styledSelect.text($(this).text())
-					.removeClass('active');
-				$this.val($(this).text().toLowerCase());
-				$list.filter(':not(:animated)').slideUp(250);
-			});
-			
-			// Hides the unordered list when clicking outside of it
-			$(document).click( function() {
-				$styledSelect.removeClass('active');
-				$list.filter(':not(:animated)').slideUp(250);
-			});
-			
-		});
-	};
-})(jQuery);
-
-
-(function($){
 	$.fn.promoSlider = function(){
 		var slider = this;
 
@@ -537,8 +595,8 @@ function heightsToMax() {
 		win.scroll(winPosCalc);
 
 		win.resize(function() {
-		    clearTimeout(resizeId);
-		    resizeId = setTimeout(winPosCalc, 100);
+			clearTimeout(resizeId);
+			resizeId = setTimeout(winPosCalc, 100);
 		});
 		 
 		function winPosCalc(){
@@ -607,7 +665,7 @@ function heightsToMax() {
 				$cont = $title.next('.js-content');
 
 			$title.removeClass('active');
-			$cont.slideUp(300).removeClass('open');
+			$cont.finish().slideUp(300).removeClass('open');
 		}
 	 
 		$('.js-title', that).click(function(e) {
@@ -622,7 +680,7 @@ function heightsToMax() {
 				// Add active class to section title
 				$(this).addClass('active');
 				// Open up the hidden content panel
-				$(currentAttrValue + '.js-content').slideDown(300).addClass('open');
+				$(currentAttrValue + '.js-content').finish().slideDown(300).addClass('open');
 			}
 	 
 			e.preventDefault();
@@ -782,58 +840,6 @@ function heightsToMax() {
 })(jQuery);
 
 (function($){
-	$.fn.adressNavBtns = function(){
-		var nav = this,
-			$cont = $('#adressNavCont'),
-			$block = $('.js-adress__block', $cont),
-			resizeId;
-
-		document.addEventListener("DOMContentLoaded", adressResize);
-
-		$(window).resize(function() {
-		    clearTimeout(resizeId);
-		    resizeId = setTimeout(adressResize, 200);
-		});
-		 
-		function adressResize(){
-		    var w = $(this),
-		    	wW = w.width(),
-		    	$type = $('li.current', nav).data('btn-adress');
-
-		    if(wW > 1140){
-		    	$block.css('display', 'inline-block');
-
-		    	$('li', nav).removeClass('current');
-		    	nav.find('li[data-btn-adress="list"]').addClass('current');
-		    } else {
-		    	if($type == 'map'){ $cont.find('.adress__map').css('display', 'block'); }
-
-		    	if($type == 'list' || $type == 'scheme'){ $cont.find('.adress__tbl').css('display', 'block'); }
-		    }
-		}
-
-
-		nav.on('click', 'li:not(.current)', adressCurrent);
-
-		function adressCurrent(event){
-			var $btn = $(this),
-				$type = $btn.data('btn-adress');
-
-				$('li', nav).removeClass('current');
-				$btn.addClass('current');
-
-				$block.css('display', 'none');
-
-				if($type == 'map'){ $cont.find('.adress__map').css('display', 'block'); }
-
-				if($type == 'list' || $type == 'scheme'){ $cont.find('.adress__tbl').css('display', 'block'); }
-
-				$(window).trigger('resize');
-		}
-	};
-})(jQuery);
-
-(function($){
 	$.fn.adressPesronGall = function(){
 		var slider = this;
 
@@ -841,6 +847,7 @@ function heightsToMax() {
 			slidesToShow: 4,
 			slideToScroll: 1,
 			infinite: false,
+			dots: true,
 			swipe: false,
 			arrows: false,
 			responsive: [

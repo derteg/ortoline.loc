@@ -35,6 +35,10 @@
 
 .adress-inner__gallery{
 	margin: 40px 0 70px;
+	text-align: center;
+	.slick-dots{
+		bottom: -50px;
+	}
 }
 .adress-inner__gallery__slide{
 	text-align: center;
@@ -58,3 +62,4 @@
 		color: $gray;
 	}
 }
+@include slickDots320();
