@@ -1,0 +1,37 @@
+{
+"type": "FeatureCollection",
+"features": [
+	{ "type":"Feature",
+		"geometry": {"type": "Point", "coordinates": [55.70, 37.65]},
+		"properties": {"metro": "автозаводская", "office": "мини-офис", "color": "dist/img/ico_07.png" }
+	},
+	{ "type":"Feature",
+		"geometry": {"type": "Point", "coordinates": [55.69, 37.70]},
+		"properties": {"metro": "перова", "office": "офис", "color": "dist/img/ico_08.png" }
+	},
+	{"type":"Feature",
+		"geometry":{ "type":"Point", "coordinates":[55.75,37.50] },
+		"properties":{"metro": "первомайская", "office": "мини-офис", "color": "dist/img/ico_07.png" }
+	},
+	{"type":"Feature",
+		"geometry":{ "type":"Point", "coordinates":[55.85,37.71] },
+		"properties":{"metro": "бабушкинская", "office": "офис", "color": "dist/img/ico_08.png" }
+	},
+	{"type":"Feature",
+		"geometry":{ "type":"Point", "coordinates":[55.80,37.50] },
+		"properties":{"metro": "петровско-разумовская", "office": "мини-офис", "color": "dist/img/ico_07.png" }
+	},
+	{"type":"Feature",
+		"geometry":{ "type":"Point", "coordinates":[55.70,37.70] },
+		"properties":{"metro": "пролетарская", "office": "мини-офис", "color": "dist/img/ico_07.png" }
+	},
+	{"type":"Feature",
+		"geometry":{ "type":"Point", "coordinates":[55.75,37.71] },
+		"properties":{"metro": "краснопресненская", "office": "офис", "color": "dist/img/ico_08.png" }
+	},
+	{"type":"Feature",
+		"geometry":{ "type":"Point", "coordinates":[55.90,37.70] },
+		"properties":{"metro": "таганская", "office": "офис", "color": "dist/img/ico_08.png" }
+	}
+]
+}
