@@ -7864,7 +7864,8 @@ p.services__info {
       .basket__row-final .col--50.right {
         text-align: right; }
     .basket__row-final .text {
-      margin-right: 10px; }
+      margin-right: 10px;
+      text-align: left; }
     .basket__row-final .num {
       display: inline-block;
       margin-left: 0;
