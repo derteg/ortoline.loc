@@ -2,9 +2,15 @@
 	margin-bottom: 70px;
 }
 .adress__map{
+	display: inline-block;
+	vertical-align: top;
 	height: 780px;
 }
 
+.adress__tbl{
+	display: inline-block;
+	vertical-align: top;
+}
 .adress__tbl-row{
 	display: block;
 }
@@ -39,6 +45,7 @@
 .adress__lnk{
 	color: $blue;
 	line-height: 20px;
+	font-size: 14px;
 	border-bottom: none;
 	display: inline-block;
 }
@@ -46,6 +53,7 @@
 	font-size: 18px;
 	line-height: 20px;
 	font-weight: bold;
+	margin-bottom: 4px;
 }
 .adress__subphone{
 	font-size: 12px;

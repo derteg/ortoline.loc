@@ -4,6 +4,10 @@ $(window).load(function(){
 	heightsToMax();
 });
 
+onElementHeightChange(document.body, function(){
+	$(window).trigger('resize');
+});
+
 $(function(){
 	// if($('#adressMap').length){
 	// 	adressMapGlobal();
@@ -39,6 +43,7 @@ $(function(){
 	$('.js-faq__list').faqList();
 	$('.js-lnk_popup').contactPopup();
 	$('.js-product__filter_mob').productFilterMob();
+	$('.js-anchor__animate').anchorAnimate();
 
 	$('#searchInp').searchInp();
 	$('#accordionAside').accordionAside();
@@ -49,7 +54,6 @@ $(function(){
 
 (function($){
 	var myMap,
-		mapElement = $('#adressMap'),
 		myPlacemark,
 		nav = $('#adressNavBtns'),
 		$cont = $('#adressNavCont'),
@@ -64,37 +68,103 @@ $(function(){
 		ymaps.ready(init);
 
 		function init () {
-		var $select = $('.js-select'),
-			$selectItem = $select.siblings('ul').find('li'),
+			var $select = $('.js-select'),
+				$selectItem = $select.siblings('ul').find('li'),
+				pointsCollection;
 
-			myMap = new ymaps.Map(mapElement[0], {
-				center: [55.76, 37.64],
-				zoom: 10,
-				controls: []				
-				}, {
-					autoFitToViewport: 'always',
-					suppressMapOpenBlock: true
+			myMap = new ymaps.Map('adressMap', {
+			center: [55.76, 37.64],
+			zoom: 10,
+			controls: []				
+			}, {
+				autoFitToViewport: 'always',
+				suppressMapOpenBlock: true
+			});
+
+			//загружаем adress_global.json с помощью jQuery
+			jQuery.getJSON('dist/data/adress_global.json', function(json) {
+				
+				window.storageMapObj = ymaps.geoQuery(json);
+
+				//в json файле есть массив features с геообъектами, обходим его
+				jQuery.each(json.features,function(i, feature) {
+
+					var officeColor = feature.properties.color;
+
+					//добавляем на карту объект с координатами
+					pointsCollection = myMap.geoObjects.add(new ymaps.Placemark(feature.geometry.coordinates, {
+						balloonContent: 'метро: ' + feature.properties.metro + '<br/>' + feature.properties.office
+					}, {
+						iconLayout: 'default#image',
+						iconImageHref: officeColor,
+						iconImageSize: [32, 44],
+						iconImageOffset: [0, 0]
+			        }));
 				});
 
-				jQuery.getJSON('dist/json/adress_global.json', function(json){
-					jQuery.each(json.features, function(i, feature){
-						console.log(111);
-						myMap.geoObjects.add(new ymaps.Placemark(feature.geometry.coordinates, {
-						}, {
-							//preset: 'islands#circleDotIcon', //стандартный пресет
-							//iconColor: '#1faee9', //цвет метки из пресета
-				        }));
+		        function selectGetCoord(){
+		        	var shownObjects,
+		        		byMetro = new ymaps.GeoQueryResult(),
+		        		icon,
+		        		$selectCurrentMetro = $(this).text();
+		        		$selectCurrentColor = $(this).data('select-color');
 
-					});
-				});
+		        		if($selectCurrentColor == 'blue'){
+		        			icon = 'dist/img/ico_08.png';
+		        		} else {
+		        			icon = 'dist/img/ico_07.png';
+		        		}
+		        		
+		        		if($selectCurrentMetro !== 'Все станции метро'){
+		        			byMetro = storageMapObj.search('properties.metro = "' + $selectCurrentMetro.toLowerCase() + '"');
 
-			function selectGetCoord(){
-				var shownObjects,
-					byOffice = new ymaps.GeoQueryResult(),
-					byMetro = new ymaps.GeoQueryResult(),
-					$selectCurrentMetro = $select.siblings('.styledSelect').data('data-select-metro');
-					$selectCurrentColor = $select.siblings('.styledSelect').data('data-select-office');			
-			}
+		        			
+			        		byMetro.setOptions({
+		        				iconLayout: 'default#image',
+		        				iconImageHref: icon,
+		        				iconImageSize: [32, 44],
+		        				iconImageOffset: [0, 0]
+		        			}).setProperties({
+		        				balloonContent: 'метро: '
+		        			});
+
+			        		pointsCollection.removeAll();
+			        		byMetro.addToMap(myMap);
+		        		} else {
+		        			pointsCollection.removeAll();
+
+		        			jQuery.each(json.features,function(i, feature) {
+		        				var officeColor = feature.properties.color;
+
+			        			pointsCollection = myMap.geoObjects.add(new ymaps.Placemark(feature.geometry.coordinates, {
+									balloonContent: 'метро: ' + feature.properties.metro + '<br/>' + feature.properties.office
+								}, {
+									iconLayout: 'default#image',
+									iconImageHref: officeColor,
+									iconImageSize: [32, 44],
+									iconImageOffset: [0, 0]
+						        }));
+						    });
+		        		}
+
+
+		        		// $list
+		        		// 	.find('> div')
+		        		// 	.removeClass('active')
+		        		// .end()
+		        		// 	.find('[data-marker-metro="' + $selectCurrentMetro + '"]')
+		        		// 	.addClass('active');
+
+		        }
+
+		        $selectItem.click(selectGetCoord);
+
+		        $list.find('> div').on('mouseenter', function(event){
+		        	$(this).addClass('active');		        	
+		        }).on('mouseleave', function(){
+		        	$(this).removeClass('active');
+		        });
+			});
 
 			function adressResize(){					
 				var wW = $(window).width(),
@@ -143,8 +213,6 @@ $(function(){
 					}
 					if($type == 'list'){ $cont.find('.adress__tbl').css('display', 'block'); }
 			}
-
-			$selectItem.click(selectGetCoord);
 
 			$(window).resize(function() {
 				clearTimeout(resizeId);
@@ -255,7 +323,8 @@ $(function(){
 				$('<li />', {
 					text: $this.children('option').eq(i).text(),
 					'class': $this.children('option').eq(i).val(),
-					'data-select-metro': $this.children('option').eq(i).attr('data-select-metro')
+					'data-select-metro': $this.children('option').eq(i).attr('data-select-metro'),
+					'data-select-color': $this.children('option').eq(i).attr('data-select-color')
 				}).appendTo($list);
 			}
 			
@@ -297,8 +366,6 @@ $(function(){
 		});
 	};
 })(jQuery);
-
-
 
 (function($){
 	$.fn.productSlider = function(){
@@ -594,10 +661,7 @@ function heightsToMax() {
 
 		win.scroll(winPosCalc);
 
-		win.resize(function() {
-			clearTimeout(resizeId);
-			resizeId = setTimeout(winPosCalc, 100);
-		});
+		win.resize(winPosCalc);
 		 
 		function winPosCalc(){
 			var	wW = win.width(),
@@ -623,6 +687,23 @@ function heightsToMax() {
 		}
 	};
 })(jQuery);
+
+
+// listening height document
+function onElementHeightChange(elm, callback){
+	var lastHeight = elm.clientHeight, newHeight;
+	(function run(){
+		newHeight = elm.clientHeight;
+		if( lastHeight != newHeight )
+			callback();
+		lastHeight = newHeight;
+
+        if( elm.onElementHeightChangeTimer )
+          clearTimeout(elm.onElementHeightChangeTimer);
+
+		elm.onElementHeightChangeTimer = setTimeout(run, 0);
+	})();
+}
 
 
 (function($){
@@ -971,5 +1052,39 @@ function heightsToMax() {
 				filterBl.toggleClass('active');
 			});
 
+	};
+})(jQuery);
+
+(function($){
+	$.fn.anchorAnimate = function(){
+		var $btn = this,
+			resizeId,
+			headH;
+
+		$(window).load(doneResizing);
+
+		$(window).resize(function() {
+		    clearTimeout(resizeId);
+		    resizeId = setTimeout(doneResizing, 500);
+		});
+		 
+		function doneResizing(){
+			var wW = $(window).width();
+
+			if(wW > 768){
+				headH = $('.js-header_fix').height();
+			} else {
+				headH = 0;
+			}
+		}
+
+		$btn.click(function(event){
+			var $href = $(this).attr('href');
+			event.preventDefault();
+
+			$('body').animate({
+				scrollTop: $($href).offset().top - headH
+			}, 400);
+		});
 	};
 })(jQuery);

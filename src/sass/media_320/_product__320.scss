@@ -181,11 +181,6 @@ h3.product__sub-title{
 		margin-right: 20px;
 		width: auto;
 	}
-	.card__image{
-		img{
-			width: 80%;
-		}
-	}
 	.card__text{
 		margin-bottom: 14px;
 	}
@@ -226,7 +221,6 @@ h4.product__sub-title{
 		}	
 	}
 	.card{
-		width: 50%;
 		margin-left: 0;
 		margin-bottom: 20px;
 	}
@@ -236,7 +230,7 @@ h4.product__sub-title{
 		margin-bottom: 50px;
 	}
 	.slick-dots{
-		bottom: 30px;
+		bottom: 40px;
 	}
 	@include slickDots320();
 	.card__wrap{
@@ -279,8 +273,9 @@ h4.product__sub-title{
 	.button{
 		display: block;
 		margin: 0px 7px;
-		padding: 18px 0;
+		padding: 8px 4px;
 		font-size: 13px;
+		line-height: 20px;
 		text-transform: none;
 		color: $white;
 		background-color: $gray2;

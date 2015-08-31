@@ -16,10 +16,14 @@
 		content: '';
 		display: inline-block;
 	}
+	.col{
+		margin-left: 0;
+	}
 }
 .basket__cell-product{
-	width: 50%;
-	max-width: 380px;
+	width: 40%;
+	max-width: 350px;
+	text-align: left;
 	.pic{
 		line-height: 73px;
 		width: 68px;

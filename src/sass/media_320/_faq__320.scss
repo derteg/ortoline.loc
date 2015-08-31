@@ -1,8 +1,8 @@
 .faq-main{
 	width: 100%;
 	margin-left: 0;
-	margin-bottom: 0;
-	padding-bottom: 40px;
+	margin-bottom: 0px;
+	padding-bottom: 80px;
 	display: none;
 	&.active{
 		display: block;
@@ -37,7 +37,7 @@
 	display: none;
 	margin: 0;
 	padding: 0;
-	padding-bottom: 40px;
+	padding-bottom: 80px;
 	&.active{
 		display: block;
 	}
@@ -75,4 +75,7 @@
 	&:last-of-type{
 		margin-bottom: 0;
 	}
+}
+.faq-quest__cont{
+	width: 100%;
 }

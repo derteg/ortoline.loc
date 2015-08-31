@@ -11,8 +11,8 @@
 	margin-bottom: 54px;
 }
 .basket__cell-product{
-	width: auto;
-	max-width: auto;
+	width: 80%;
+	max-width: none;
 	.pic{
 		float: none;
 		display: inline-block;
@@ -36,12 +36,31 @@
 	display: inline-block;
 	margin-left: 0;
 }
-.basket__cell-price{
-	position: absolute;
-	top: 0;
-	right: 0;
+.basket__cont{
+	&.col--66{
+		.basket__cell-price{
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
 }
 .basket__row-final{
 	padding: 0px 0px 30px;
-	margin-top: -10px;
+	.col--50{
+		width: auto;
+		text-align: left;
+		&.right{
+			text-align: right;
+		}
+	}
+	.text{
+		margin-right: 10px;
+	}
+	.num{
+		display: inline-block;
+		margin-left: 0;
+		margin-right: 10px;
+		margin-bottom: 40px;
+	}
 }
