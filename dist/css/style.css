@@ -4544,7 +4544,27 @@ h4.product__sub-title {
     font-size: 14px;
     margin-left: 14px; }
   .adress__metro .red {
-    background-color: #ea1c1c; }
+    background-color: #EF1E25; }
+  .adress__metro .blue {
+    background-color: #5091BB; }
+  .adress__metro .darkblue {
+    background-color: #0252A2; }
+  .adress__metro .lightblue {
+    background-color: #85D4F3; }
+  .adress__metro .turquoise {
+    background-color: #019EE0; }
+  .adress__metro .brown {
+    background-color: #745C2F; }
+  .adress__metro .orange {
+    background-color: #FBAA33; }
+  .adress__metro .purple {
+    background-color: #B61D8E; }
+  .adress__metro .gray {
+    background-color: #ACADAF; }
+  .adress__metro .lightgreen {
+    background-color: #B1D332; }
+  .adress__metro .yellow {
+    background-color: #FFD803; }
 
 .adress__lnk {
   color: #1376ba;
