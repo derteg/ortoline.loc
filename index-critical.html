@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Главная :: Ortoline</title>
+
+		<style type="text/css">
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,500,700&subset=latin,cyrillic-ext);@font-face{font-family:'helveticaneuecyrroman';src:url("/fonts/helveticaneuecyr-roman-webfont.eot");src:url("/fonts/helveticaneuecyr-roman-webfont.eot?#iefix") format("embedded-opentype"),url("/fonts/helveticaneuecyr-roman-webfont.woff2") format("woff2"),url("/fonts/helveticaneuecyr-roman-webfont.woff") format("woff"),url("/fonts/helveticaneuecyr-roman-webfont.ttf") format("truetype");font-weight:normal;font-style:normal}@font-face{font-family:'ALSRubl-Verdana';src:url("/fonts/alsrubl-verdana-regular.eot");src:url("/fonts/alsrubl-verdana-regular.eot?#iefix") format("embedded-opentype"),url("/fonts/alsrubl-verdana-regular.woff") format("woff"),url("/fonts/alsrubl-verdana-regular.ttf") format("truetype"),url("/fonts/alsrubl-verdana-regular.svg#ALSRublRegular") format("svg");font-weight:normal;font-style:normal}.b-rub{font-family:'ALSRubl-Verdana', Verdana, sans-serif;line-height:normal}body{height:100%;width:100%;margin:0;background:#fff;font-family:"Open Sans",sans-serif,Arial,Verdana,sans-serif;font-size:14px;line-height:20px;position:relative}img{border:0}ul,nav{list-style:none;padding-left:0;margin:0}a{text-decoration:none;-webkit-transition:color 0.25s,border-color 0.25s;-moz-transition:color 0.25s,border-color 0.25s;-o-transition:color 0.25s,border-color 0.25s;transition:color 0.25s,border-color 0.25s}p{margin:0}.clearfix{*zoom:1}.clearfix:before,.clearfix:after{content:'';display:table}.clearfix:after{clear:both}.lnk__black{color:#2c2c2c;border-bottom:1px solid #8797a8}.dotted{border-bottom-style:dotted;border-bottom-width:1px}h2,h3{font-family:'Open Sans',sans-serif;font-weight:bold;margin:0}h2{font-size:32px;line-height:40px}h3{font-size:20px;font-weight:bold;line-height:36px}#all{height:auto;position:relative;-webkit-transition:padding 0.25s;-moz-transition:padding 0.25s;-o-transition:padding 0.25s;transition:padding 0.25s}.inside{position:relative;margin:0 auto;padding:0 20px;max-width:1200px}.button{display:inline-block;vertical-align:middle;padding:14px 25px;color:#fff;font-size:18px;font-weight:500;cursor:pointer;border-radius:4px}.button span{padding-bottom:2px;border-bottom:1px solid #fff;border-bottom:1px solid rgba(255,255,255,0.4);-webkit-transition:all 0.35s;transition:all 0.35s}.button img{vertical-align:top;margin-right:10px;margin-top:1px}.button--blue{background:#1376ba;border-bottom-color:#559cca}.button--orange{background:#f3a942;border-bottom-color:#f6c070}.button--gray{color:#2c2c2c;background:#e9e9e9}.col--75{width:75%}.col{display:inline-block;font-size:14px;vertical-align:top;margin-left:-4px;box-sizing:border-box}.promo__txt{display:block;font-size:18px;line-height:30px;margin-bottom:18px}.form__popup{background-color:#fff;width:460px;padding:72px 54px 26px;border-radius:8px;border:1px solid #dadada;text-align:center;display:none;box-sizing:border-box}.form__popup h3{font-size:30px;text-align:center;text-transform:uppercase;margin-bottom:38px}.form__popup .form__links{margin-top:22px}.form__popup .form__links p{margin-top:6px}.form__popup .form__links p:first-child{margin-top:0}.form__popup .form__links .gray{color:#8797a8}.form__popup .form__links a{color:#1376ba}.form__popup_center .button{text-align:center}.form__popup .b-close{width:40px;height:40px;position:absolute;top:17px;right:12px;padding:0;background-color:#C8C7C7}.form__popup .b-close:before{content:"";position:absolute;top:15px;left:15px;background-image:url("/dist/ico/sprite.png");background-position:-215px -210px;background-repeat:no-repeat;width:10px;height:10px}@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx){.form__popup .b-close:before{background-size:320px 312px;background-image:url("/dist/ico/sprite@2x.png")}}.field__cell_button{margin-top:40px}.field__cell_button .button{text-transform:uppercase;font-size:13px;letter-spacing:1px;padding:14px 60px}.form input[type="text"]{height:46px;width:100%;border-radius:4px;border:1px solid #dadada;padding:6px 10px;font-size:15px;font-family:"helveticaneuecyrroman",Verdana,Arial,sans-serif;box-sizing:border-box}.form textarea{width:100%;border-radius:4px;border:1px solid #dadada;padding:12px 10px;font-size:15px;font-family:"helveticaneuecyrroman",Verdana,Arial,sans-serif;box-sizing:border-box}.form button{border:none;outline:none}.field__cell{margin-bottom:16px}.header{width:100%;background-color:#fff;z-index:1000}.header__wrap{padding:20px 0 94px}.header__left{float:left;width:65%;position:relative;text-align:justify;font-size:0;line-height:0}.header__left:after{content:"";width:100%;height:0;visibility:hidden;overflow:hidden;display:inline-block}.header__left .logo{width:100%;max-width:350px}.header__left .logo__lnk{display:inline-block;vertical-align:middle}.header__left_wrap{display:inline-block;vertical-align:middle;margin-right:10%}.header__call a{margin-left:46px;display:inline-block;font-size:12px;line-height:16px;color:#828282}.mainmenu__buttons_centr{display:none}.header__contact{z-index:10}.header__tel{font-size:22px;line-height:26px;font-weight:600;padding-left:36px;position:relative;font-family:"Open Sans",sans-serif}.header__tel:before{content:"";position:absolute;left:0;top:6px;background-image:url("/dist/ico/sprite.png");background-position:-303px -27px;background-repeat:no-repeat;width:17px;height:16px}@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx){.header__tel:before{background-size:320px 312px;background-image:url("/dist/ico/sprite@2x.png")}}.header__right{padding-top:28px;float:right;width:35%;text-align:right}.header__right_btn{display:inline-block;margin-left:10%;vertical-align:top}.header__right_btn:first-child{margin-left:0}.profile-btn__pic{float:left;position:relative;background-image:url("/dist/ico/sprite.png");background-position:-80px -78px;background-repeat:no-repeat;width:33px;height:33px}@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx){.profile-btn__pic{background-size:320px 312px;background-image:url("/dist/ico/sprite@2x.png")}}.profile-btn__text{margin-left:56px;display:block;color:#2c2c2c;font-size:15px;line-height:18px;text-align:left}.basket-btn__badge{position:relative;font:bold 14px/20px "Open Sans",sans-serif;text-align:center;float:left}.basket-btn__badge .pic{background-image:url("/dist/ico/sprite.png");background-position:-235px -106px;background-repeat:no-repeat;width:32px;height:37px;display:inline-block}@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx){.basket-btn__badge .pic{background-size:320px 312px;background-image:url("/dist/ico/sprite@2x.png")}}.basket-btn__badge .num{background:#f3a942;color:#ffffff;position:absolute;bottom:0;left:20px;border-radius:10px;height:20px;width:20px}.basket-btn__cont{color:#2c2c2c;font-size:15px;line-height:18px;text-align:left;margin-left:60px}.basket__label{margin-bottom:4px}.basket__price{font-size:20px;font-weight:bold}.mainmenu{position:absolute;display:block;bottom:0;left:0;right:0;width:100%;padding:12px 20px 12px;opacity:1;box-sizing:border-box}.mainmenu__list{float:left;padding-top:10px;width:60%;max-width:685px;text-align:justify;line-height:0;font-size:1px}.mainmenu__list:after{width:100%;height:0;visibility:hidden;overflow:hidden;content:'';display:inline-block}.mainmenu__item{display:inline-block;text-align:left;line-height:normal;vertical-align:top}.mainmenu__link{font-size:20px;font-weight:600}.mainmenu__buttons{text-align:justify;line-height:0;font-size:0;text-justify:newspaper;zoom:1;text-align-last:justify}.mainmenu__buttons:after{width:100%;height:0px;visibility:hidden;overflow:hidden;content:'';display:inline-block}.mainmenu__buttons .button{text-align:left;line-height:normal;font-size:18px;vertical-align:top}.mainmenu__buttons_fr{float:right;width:40%;max-width:410px}.mainmenu__buttons_fr-wrap{display:inline-block}.mainmenu__btn-all{display:none}.mainmenu__btn-all span{border:none}.mainmenu__btn-all .ico{width:24px;height:18px;display:inline-block;padding-right:14px;vertical-align:middle}.mainmenu__buttons_fr-wrap{width:50%;display:inline-block;vertical-align:top}.mainmenu__buttons_fr-wrap .button{display:block;text-align:center;margin:0px 10px;font-size:16px;padding:14px 15px;box-sizing:border-box}.footer-col{display:-moz-inline-stack;display:inline-block;vertical-align:top;*zoom:1;*display:inline;margin-right:-4px;width:20%;font-family:'Open Sans',sans-serif;padding-top:47px;padding-bottom:10px}.footer-col h3{text-transform:uppercase;margin-bottom:10px;font-size:14px}.footer-col a{border:0}.footer-col li{line-height:16px;margin-bottom:20px}.footer-col li a{color:#2c2c2c}.footer-col--1{width:14%;padding-right:3%}.footer-col--2{width:18%;padding-right:2%}.footer-col--3{width:18%;padding-right:3%}.footer-col--4{width:20%;padding-right:3%}.card_nowrap .card__info{padding:30px}.card__info{position:absolute;top:0;left:0;background:#fff;background:rgba(255,255,255,0.9);text-align:left;z-index:5;display:none;padding:20px}.card__info p{margin-bottom:18px}.promoslider__cont{overflow:hidden}.promoslider{width:100%}.promoslider__wrap{position:absolute;right:0;top:0;height:100%;width:40%}.promoslider__wrap:before{content:"";height:100%;width:0;line-height:100%;vertical-align:middle;display:inline-block}.promoslider__text{color:#fff;font-size:40px;font-weight:normal;letter-spacing:.5px;font-family:'Open Sans';display:inline-block;vertical-align:middle;line-height:50px;width:300px;opacity:0;position:relative;-webkit-transition:opacity 0.4s;-moz-transition:opacity 0.4s;-o-transition:opacity 0.4s;transition:opacity 0.4s}.promoslider__text:after{content:'';display:block;position:absolute;width:55px;height:6px;background:#f3a942;bottom:100%;left:5px;margin-bottom:30px}.promophone_mob{display:none}h3.product__sub-title{font-size:30px;line-height:45px;margin-bottom:32px}.about__content>h2{margin-top:0}.about h2{font-family:'Open Sans',sans-serif;margin-bottom:20px}.about .promo__txt{line-height:30px;margin-bottom:18px}.about p{margin-bottom:26px;line-height:20px}.about__content{width:92%}@media (max-width: 1000px) and (min-width: 768px){.inside{max-width:1140px}.header__left{width:72%}.header__left .logo{max-width:250px}.header__left_wrap{margin-top:14px}.header__tel{padding-left:28px}.header__right{padding-top:16px;width:28%}.header__right .profile-btn{display:none}.mainmenu__buttons_fr{width:auto;max-width:none;float:none;margin:0px -10px}.mainmenu__list{display:none}.mainmenu__buttons_fr-wrap{width:33.3%}.mainmenu__btn-all{display:inline-block;width:33.3%}.mainmenu__btn-all .button{display:block;text-align:center;margin:0px 10px;padding:14px 15px;box-sizing:border-box}.mainmenu__btn-all .ico{background-image:url("/dist/ico/sprite.png");background-position:-277px -203px;background-repeat:no-repeat;width:16px;height:13px;padding:0;margin-right:14px;margin-bottom:2px}}@media only screen and (max-width: 1000px) and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 1000px) and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 1000px) and (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), only screen and (max-width: 1000px) and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (max-width: 1000px) and (min-width: 768px) and (min-resolution: 192dpi), only screen and (max-width: 1000px) and (min-width: 768px) and (min-resolution: 2dppx){.mainmenu__btn-all .ico{background-size:320px 312px;background-image:url("/dist/ico/sprite@2x.png")}}@media (max-width: 1000px) and (min-width: 768px){.mainmenu__buttons_centr{display:none}.promoslider__cont .inside{padding:0}.promoslider__pic{width:100%;height:auto}}@media (max-width: 1000px) and (min-width: 768px){.about-promo .col--75{display:none}.product__sub-title{display:none}.footer-col--1,.footer-col--2,.footer-col--3,.footer-col--4{display:none}}@media (max-width: 1000px) and (min-width: 768px){.about h2{font-size:25px}.about p{font-size:15px;line-height:24px}.about .promo__txt{font-size:16px;line-height:26px}.about__content{margin:0;margin-bottom:60px;width:100%}}@media (max-width: 767px){.inside{min-width:280px;max-width:767px}.button{padding:12px 44px;text-transform:uppercase;font-size:14px;font-weight:bold}.form__popup{width:280px;padding:22px 20px 26px}.form__popup h3{font-size:24px;margin-bottom:10px}.header__wrap{padding:20px 0 10px}.header__left{width:45%}.header__left .logo{max-width:250px;min-width:164px;margin-bottom:10px}.header__right{padding-top:0;margin-bottom:10px}.header__right .profile-btn{display:none}.header__right .basket-btn{position:absolute;right:20px;top:20%}.mainmenu__buttons_fr{width:auto;max-width:none;float:none;margin:0px -10px}.basket-btn__cont,.header__contact,.mainmenu__list{display:none}.mainmenu{position:static;top:0;padding:0;padding-bottom:12px}.mainmenu__buttons_fr-wrap{width:50%;display:inline-block;vertical-align:top}.mainmenu__buttons_fr-wrap .button{display:block;margin:0px 10px;padding:10px 6px;font-size:14px;text-align:center;font-weight:normal;text-transform:none;box-sizing:border-box}.mainmenu__buttons_fr-wrap img{margin-right:6px}.mainmenu__btn-all{position:absolute;top:20%;right:80px;display:inline-block}.mainmenu__btn-all .ico{padding:0;background-image:url("/dist/ico/sprite.png");background-position:-277px -203px;background-repeat:no-repeat;width:16px;height:13px;vertical-align:baseline}}@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi), only screen and (max-width: 767px) and (min-resolution: 2dppx){.mainmenu__btn-all .ico{background-size:320px 312px;background-image:url("/dist/ico/sprite@2x.png")}}@media (max-width: 767px){.mainmenu__btn-all .text{display:none}.mainmenu__btn-all .button{padding:12px 14px 13px;line-height:1}.basket-btn__badge{background-color:#e9e9e9;border-radius:4px;padding:4px 10px}.basket-btn__badge .pic{background-image:url("/dist/ico/sprite.png");background-position:-235px -153px;background-repeat:no-repeat;width:25px;height:29px;padding-bottom:1px}}@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi), only screen and (max-width: 767px) and (min-resolution: 2dppx){.basket-btn__badge .pic{background-size:320px 312px;background-image:url("/dist/ico/sprite@2x.png")}}@media (max-width: 767px){.promophone_mob{display:block;background-color:#282828;text-align:center;padding:4px 0;width:100%;min-width:320px;z-index:100;position:fixed;bottom:0;left:0}.promophone__phone{display:inline-block}.promophone__phone .ico{display:inline-block;background-image:url("/dist/ico/sprite.png");background-position:-303px -27px;background-repeat:no-repeat;width:17px;height:16px;margin-right:10px}}@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi), only screen and (max-width: 767px) and (min-resolution: 2dppx){.promophone__phone .ico{background-size:320px 312px;background-image:url("/dist/ico/sprite@2x.png")}}@media (max-width: 767px){.promophone__phone .text{color:#fff;font-size:16px;line-height:24px}.promoslider__cont .inside{padding:0}.promoslider__slide{max-height:440px}.promoslider__slide img{width:160%;height:auto}.promoslider__wrap{width:80%}.promoslider__text{width:80%;font-size:26px;line-height:32px;margin-bottom:0}.promoslider__text:after{margin-bottom:18px;width:36px;height:4px}h3.product__sub-title{margin-bottom:20px}.about-promo .col--75{display:none}}@media (max-width: 767px){h3.product__sub-title{font-size:30px;line-height:40px;text-align:center}.card__info p{font-size:14px;line-height:20px}.footer-col--1,.footer-col--2,.footer-col--3,.footer-col--4{display:none}.about h2{font-size:25px}.about p{font-size:15px;line-height:24px}.about .promo__txt{font-size:16px;line-height:26px}.about__content{margin:0;width:100%}}@media (max-width: 999px) and (min-width: 768px){.header__left_wrap{margin-right:7%}.promoslider__text{font-size:26px;line-height:32px;width:250px}.promoslider__text:after{margin-bottom:18px;width:36px;height:4px}}@media (max-width: 1140px) and (min-width: 1000px){.header__left_wrap{margin-right:5%}.mainmenu__list{width:57%}.mainmenu__link{font-size:18px}.promoslider__text{font-size:30px;line-height:35px;width:340px}.promoslider__text:after{margin-bottom:18px;width:36px;height:4px}}
+</style>
+<script>
+(function(u){function loadCSS(e,t,n){"use strict";function r(){for(var t,i=0;i<d.length;i++)d[i].href&&d[i].href.indexOf(e)>-1&&(t=!0);t?o.media=n||"all":setTimeout(r)}var o=window.document.createElement("link"),i=t||window.document.getElementsByTagName("script")[0],d=window.document.styleSheets;return o.rel="stylesheet",o.href=e,o.media="only x",i.parentNode.insertBefore(o,i),r(),o}for(var i in u){loadCSS(u[i]);}}(['dist/css/style.css']));
+</script>
+<noscript>
+<link href="dist/css/style.css" rel="stylesheet" type="text/css">
+</noscript>
+	</head>
+	
+	<body>
+		<header class="header js-header_fix">
+			<div class="inside">
+				<div class="header__wrap clearfix">
+					<div class="header__left">
+						<a class="logo__lnk" href="links.html"><img src="dist/img/logo.png" alt="logo" class="logo"></a>
+						
+						<div class="header__left_wrap">
+							<div class="header__contact">
+								<div class="header__tel">+7 495 988-95-05</div>
+								<div class="header__call"><a class="lnk dotted js-lnk_popup" data-popup-type="callback" href="#0">Заказать звонок</a></div>
+							</div>
+							
+							<div class="mainmenu__buttons mainmenu__buttons_centr">
+								<div class="mainmenu__buttons_centr-wrap">
+									<a class="button button--blue" href="#0"><span>Каталог товаров</span></a>
+								</div>
+								<div class="mainmenu__buttons_centr-wrap">
+									<a class="button button--orange" href="#0"><img src="dist/img/ic-location.png" alt="ic-location" width="12"><span>Наши салоны</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header__right">
+						<div class="header__right_cont">
+							<a class="header__right_btn profile-btn js-lnk_popup" data-popup-type="login" href="#">
+								<div class="profile-btn__pic"></div>
+								<span class="profile-btn__text">Личный<br> кабинет</span>
+							</a>
+							<a class="header__right_btn basket-btn" href="#">
+								<div class="basket-btn__badge">
+									<span class="pic"></span>
+									<span class="num">5</span>
+								</div>
+								<div class="basket-btn__cont">
+									<p class="basket__label">Заказ на сумму </p>
+									<p class="basket__price">2 650 <span class="b-rub">Р</span></p>
+								</div>
+							</a>                            
+						</div>
+					</div>
+				</div>
+			
+				<nav class="mainmenu clearfix">
+					<ul class="mainmenu__list">
+						<li class="mainmenu__item">
+							<a class="lnk__black mainmenu__link" href="#0">Компания</a>
+						</li>
+						<li class="mainmenu__item">
+							<a class="lnk__black mainmenu__link" href="#0">Услуги</a>
+						</li>
+						<li class="mainmenu__item">
+							<a class="lnk__black mainmenu__link" href="#0">Информация</a>
+						</li>
+						<li class="mainmenu__item">
+							<a class="lnk__black mainmenu__link" href="#0">Доставка</a>
+						</li>
+						<li class="mainmenu__item">
+							<a class="lnk__black mainmenu__link" href="#0">Контакты </a>
+						</li>
+					</ul>
+					<div class="mainmenu__buttons mainmenu__buttons_fr">
+						<div class="mainmenu__btn-all">
+							<a href="#0" class="button button--gray"><span class="ico"></span><span class="text">Все разделы сайта</span></a>
+						</div>
+						<div class="mainmenu__buttons_fr-wrap">
+							<a class="button button--blue" href="#0"><span>Каталог товаров</span></a>
+						</div>
+						<div class="mainmenu__buttons_fr-wrap">
+							<a class="button button--orange" href="#0"><img src="dist/img/ic-location.png" alt="ic-location" width="12"><span>Наши салоны</span></a>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<div class="promophone_mob js-promophone_mob">
+			<div class="promophone__phone">
+				<span class="ico"></span>
+				<a href="tel:+74959889505" class="text">+7 495 988-95-05</a>
+			</div>	
+		</div>
+
+		<div id="all">
+			<section class="promoslider__cont">
+				<div class="inside">
+					<div class="promoslider js-promoslider">
+						<div class="promoslider__slide">
+							<img src="dist/img/img1.jpg" alt="img1" width="1202" height="550" class="promoslider__pic">
+							<div class="promoslider__wrap">
+								<h3 class="promoslider__text">Средства реабилитации после травм и&nbsp;операций</h3>
+							</div>
+						</div>
+						<div class="promoslider__slide">
+							<img src="dist/img/img1.jpg" alt="img1" width="1202" height="550" class="promoslider__pic">
+							<div class="promoslider__wrap">
+								<h3 class="promoslider__text">Средства реабилитации после травм и&nbsp;операций</h3>
+							</div>
+						</div>
+						<div class="promoslider__slide">
+							<img src="dist/img/img1.jpg" alt="img1" width="1202" height="550" class="promoslider__pic">
+							<div class="promoslider__wrap">
+								<h3 class="promoslider__text">Средства реабилитации после травм и&nbsp;операций</h3>
+							</div>
+						</div>
+						<div class="promoslider__slide">
+							<img src="dist/img/img1.jpg" alt="img1" width="1202" height="550" class="promoslider__pic">
+							<div class="promoslider__wrap">
+								<h3 class="promoslider__text">Средства реабилитации после травм и&nbsp;операций</h3>
+							</div>
+						</div>
+						<div class="promoslider__slide">
+							<img src="dist/img/img1.jpg" alt="img1" width="1202" height="550" class="promoslider__pic">
+							<div class="promoslider__wrap">
+								<h3 class="promoslider__text">Средства реабилитации после травм и&nbsp;операций</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="maincat">
+				<div class="inside">
+					<div class="cols" data-max="parent">
+						<div class="col col--25 maincat__item" data-max="child">
+							<a class="maincat__wrap lnk__black" href="#0">
+								<div class="maincat__image">
+								<img src="dist/img/p-1.png" width="164" height="118" alt=""></div>
+								<h4 class="maincat__title">Ортопедическая обувь для взрослых</h4>
+							</a>
+						</div>
+						<div class="col col--25 maincat__item" data-max="child">
+							<a class="maincat__wrap lnk__black" href="#0">
+								<div class="maincat__image">
+								<img src="dist/img/p-2.png" width="160" height="160" alt=""></div>
+								<h4 class="maincat__title">Ортопедическая обувь для детей</h4>
+							</a>
+						</div>
+						<div class="col col--25 maincat__item" data-max="child">
+							<a class="maincat__wrap lnk__black" href="#0">
+								<div class="maincat__image">
+								<img src="dist/img/p-3.png" width="171" height="116" alt=""></div>
+								<h4 class="maincat__title">Реабилитационная (послеоперационная) обувь</h4>
+							</a>
+						</div>
+						<div class="col col--25 maincat__item" data-max="child">
+							<a class="maincat__wrap lnk__black" href="#0">
+								<div class="maincat__image">
+								<img src="dist/img/p-4.png" width="114" height="141" alt=""></div>
+								<h4 class="maincat__title">Ортезы для шейного отдела позвоночника</h4>
+							</a>
+						</div>
+						<div class="col col--25 maincat__item" data-max="child">
+							<a class="maincat__wrap lnk__black" href="#0">
+								<div class="maincat__image">
+								<img src="dist/img/p-5.png" width="128" height="131" alt=""></div>
+								<h4 class="maincat__title">Корсеты (бандажи) ортопедические пояснично-крестцовые</h4>
+							</a>
+						</div>
+						<div class="col col--25 maincat__item" data-max="child">
+							<a class="maincat__wrap lnk__black" href="#0">
+								<div class="maincat__image">
+								<img src="dist/img/m-6.png" width="136" height="163" alt=""></div>
+								<h4 class="maincat__title">Kорректоры осанки (реклинаторы)</h4>
+							</a>
+						</div>
+						<div class="col col--25 maincat__item" data-max="child">
+							<a class="maincat__wrap lnk__black" href="#0">
+								<div class="maincat__image">
+								<img src="dist/img/m-7.png" width="123" height="151" alt=""></div>
+								<h4 class="maincat__title">Бандажи эластичные противорадикулитные</h4>
+							</a>
+						</div>
+						<div class="col col--25 maincat__item" data-max="child">
+							<a class="maincat__wrap lnk__black final" href="#0">
+								<span class="maincat__all">
+									<span class="maincat__toall"><span class="text">Весь<br> каталог</span></span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="panoram">
+				<div class="inside">
+					<div class="panoram__content">
+						<h1 class="panoram__title">Индивидуальное изготовление стелек</h1>
+						<p class="panoram__sub-title">Мы изготавливаем индивидуальные<br> ортопедические стельки:</p>
+						<ul class="panoram__list">
+							<li class="panoram__item">— Строго с учетом индивидуальных особенностей стопы человека</li>
+							<li class="panoram__item">— По методике немецких ортопедов</li>
+							<li class="panoram__item">— За 15 минут</li>
+						</ul>
+						<a class="outlineBut" href="#"><img src="dist/img/i-pin.png" alt="i-pin" width="11" height="16"> Найти ближайший салон</a>
+					</div>
+				</div>
+			</section>
+			<section class="promo-stock-hits">
+				<div class="inside">
+					<div class="promo-stock-hits__wrap">
+						<div class="stock__slider js-stock__slider">
+							<div class="stock__slide">
+								<div class="stock__label">Акция</div>
+								<div class="stock__image">
+									<img src="dist/img/banner-1.png" alt="banner-1" width="422" height="385">
+								</div>
+								<div class="stock__text">
+									<div class="stock__title_wrap">
+										<h4 class="stock__title"><span>Цифровая диагностика стоп 1</span>
+										</h4>
+									</div>
+									<ul class="stock__list">
+										<li class="stock__item">Детская (до 35 размера) — <span class="big">600 руб. </span>
+										</li>
+										<li class="stock__item">Взрослая (с 36 размера) — <span class="big">750 руб. </span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="stock__slide">
+								<div class="stock__label">Акция</div>
+								<div class="stock__image">
+									<img src="dist/img/banner-1.png" alt="banner-1" width="422" height="385">
+								</div>
+								<div class="stock__text">
+									<div class="stock__title_wrap">
+										<h4 class="stock__title"><span>Цифровая диагностика стоп 2</span>
+										</h4>
+									</div>
+									<ul class="stock__list">
+										<li class="stock__item">Детская (до 35 размера) — <span class="big">600 руб. </span>
+										</li>
+										<li class="stock__item">Взрослая (с 36 размера) — <span class="big">750 руб. </span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="stock__slide">
+								<div class="stock__label">Акция</div>
+								<div class="stock__image">
+									<img src="dist/img/banner-1.png" alt="banner-1" width="422" height="385">
+								</div>
+								<div class="stock__text">
+									<div class="stock__title_wrap">
+										<h4 class="stock__title"><span>Цифровая диагностика стоп 3</span>
+										</h4>
+									</div>
+									<ul class="stock__list">
+										<li class="stock__item">Детская (до 35 размера) — <span class="big">600 руб. </span>
+										</li>
+										<li class="stock__item">Взрослая (с 36 размера) — <span class="big">750 руб. </span>	
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="hits__slider js-hits__slider">
+							<div class="hits__slide">
+								<div class="hits__label">Хит</div>
+								<div class="card card_nowrap">
+									<div class="card__image">
+										<img src="dist/img/m-8.png" alt="rec-2">
+									</div>
+									<div class="card__text">
+										<div class="card__title">Ортопедическая обувь БЕРН</div>
+										<div class="card__brand">Бренд <span class="black">Ortmann</span>
+										</div>
+										<div class="card__price">4 100 <span class="b-rub">Р</span>
+										</div>
+										<div class="card__info">
+											<p>Отопедические полуботинки для людей с деформацией стопы. Обувь из мягкой
+												телячьей кожи.</p>
+											<p>Наличие удобных застёжек "липучек" гарантирует лёгкое надевание обуви
+												и даёт возможность регулировать объем.</p>
+										</div>
+									</div>
+									<div class="card__button_cont">
+										<a class="lnk__black card__button" href="#">В корзину</a>
+									</div>
+									<div class="card__line">
+										<div class="card__circle js-card__info"></div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="hits__slide">
+								<div class="hits__label">Хит</div>
+								<div class="card card_nowrap">
+									<div class="card__image">
+										<img src="dist/img/m-8.png" alt="rec-2">
+									</div>
+									<div class="card__text">
+										<div class="card__title">Ортопедическая обувь БЕРН</div>
+										<div class="card__brand">Бренд <span class="black">Ortmann</span>
+										</div>
+										<div class="card__price">2 600 <span class="b-rub">Р</span>
+										</div>
+										<div class="card__info">
+											<p>Отопедические полуботинки для людей с деформацией стопы. Обувь из мягкой
+												телячьей кожи.</p>
+											<p>Наличие удобных застёжек "липучек" гарантирует лёгкое надевание обуви
+												и даёт возможность регулировать объем.</p>
+										</div>
+									</div>
+									<div>
+										<a class="lnk__black card__button" href="#">В корзину</a>
+									</div>
+									<div class="card__line">
+										<div class="card__circle js-card__info"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="hits__slide">
+								<div class="hits__label">Хит</div>
+								<div class="card card_nowrap">
+									<div class="card__image">
+										<img src="dist/img/m-8.png" alt="rec-2">
+									</div>
+									<div class="card__text">
+										<div class="card__title">Ортопедическая обувь БЕРН</div>
+										<div class="card__brand">Бренд <span class="black">Ortmann</span>
+										</div>
+										<div class="card__price">3 500 <span class="b-rub">Р</span>
+										</div>
+										<div class="card__info">
+											<p>Отопедические полуботинки для людей с деформацией стопы. Обувь из мягкой
+												телячьей кожи.</p>
+											<p>Наличие удобных застёжек "липучек" гарантирует лёгкое надевание обуви
+												и даёт возможность регулировать объем.</p>
+										</div>
+									</div>
+									<div>
+										<a class="lnk__black card__button" href="#">В корзину</a>
+									</div>
+									<div class="card__line">
+										<div class="card__circle js-card__info"></div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="product__news clearfix">
+				<div class="inside">
+					<h3 class="product__sub-title">Наши новинки</h3>
+					<div class="product__news-slider js-product__news-slider">
+						<div>
+							<a href="#0">
+								<img src="dist/pic/pic_22.jpg" alt="" width="130" height="110">
+								<p>Детская ортопедическая обувь МАЙЯ</p>
+								<p class="price orange">6 200<span class="rouble">p</span></p>
+							</a>
+						</div>
+						<div>
+							<a href="#0">
+								<img src="dist/pic/pic_23.jpg" alt="" width="130" height="110">
+								<p>Детская ортопедическая обувь Ангел</p>
+								<p class="price orange">6 200<span class="rouble">p</span></p>
+							</a>
+						</div>
+						<div>
+							<a href="#0">
+								<img src="dist/pic/pic_24.jpg" alt="" width="130" height="110">
+								<p>Ортопедическая обувь КАНАДА 6651</p>
+								<p class="price orange">6 200<span class="rouble">p</span></p>
+							</a>
+						</div>
+						<div>
+							<a href="#0">
+								<img src="dist/pic/pic_25.jpg" alt="" width="130" height="110">
+								<p>Детская ортопедическая обувь Ангел</p>
+								<p class="price orange">6 200<span class="rouble">p</span></p>
+							</a>
+						</div>
+						<div>
+							<a href="#0">
+								<img src="dist/pic/pic_23.jpg" alt="" width="130" height="110">
+								<p>Ортопедическая обувь КАНАДА 6651</p>
+								<p class="price orange">6 200<span class="rouble">p</span></p>
+							</a>
+						</div>
+						<div>
+							<a href="#0">
+								<img src="dist/pic/pic_24.jpg" alt="" width="130" height="110">
+								<p>Ортопедическая обувь КАНАДА 6651</p>
+								<p class="price orange">6 200<span class="rouble">p</span></p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="dvnt">
+				<div class="inside">
+					<div class="dvnt-wrap">
+						<h2 class="dvnt__title"><span class="dvnt__title_sub-title">Наши преимущества</span></h2>
+						<div class="dvnt-oh">
+							<div class="cols" data-max="parent">
+								<div class="col col--25" data-max="child">
+									<div class="dvnt-item">
+										<div class="dvnt-image">
+											<img src="dist/img/a-1.png" alt="a-1">
+										</div>
+										<div class="dvnt-text">
+											<p>Бесплатная консультация ортопеда-травматолога</p>
+										</div>
+									</div>
+								</div>
+								<div class="col col--25" data-max="child">
+									<div class="dvnt-item">
+										<div class="dvnt-image">
+											<img src="dist/img/a-2.png" alt="a-1">
+										</div>
+										<div class="dvnt-text">
+											<p>Все продавцы консультанты имеют мед. образование</p>
+										</div>
+									</div>
+								</div>
+								<div class="col col--25" data-max="child">
+									<div class="dvnt-item">
+										<div class="dvnt-image">
+											<img src="dist/img/a-3.png" alt="a-1">
+										</div>
+										<div class="dvnt-text">
+											<p>Компенсация ДСЗН</p>
+										</div>
+									</div>
+								</div>
+								<div class="col col--25" data-max="child">
+									<div class="dvnt-item">
+										<div class="dvnt-image">
+											<img src="dist/img/a-4.png" alt="a-1">
+										</div>
+										<div class="dvnt-text">
+											<p>Дисконтная программа</p>
+										</div>
+									</div>
+								</div>
+								<div class="col col--25" data-max="child">
+									<div class="dvnt-item">
+										<div class="dvnt-image">
+											<img src="dist/img/a-5.png" alt="a-1">
+										</div>
+										<div class="dvnt-text">
+											<p>Скидки!</p>
+										</div>
+									</div>
+								</div>
+								<div class="col col--25" data-max="child">
+									<div class="dvnt-item">
+										<div class="dvnt-image">
+											<img src="dist/img/a-6.png" alt="a-1">
+										</div>
+										<div class="dvnt-text">
+											<p>Оплата
+												<br>кредитной картой</p>
+										</div>
+									</div>
+								</div>
+								<div class="col col--25" data-max="child">
+									<div class="dvnt-item">
+										<div class="dvnt-image">
+											<img src="dist/img/a-7.png" alt="a-1">
+										</div>
+										<div class="dvnt-text">
+											<p>Доставка
+												<br>на следующий день!</p>
+										</div>
+									</div>
+								</div>
+								<div class="col col--25" data-max="child">
+									<div class="dvnt-item">
+										<div class="dvnt-image">
+											<img src="dist/img/a-8.png" alt="a-1">
+										</div>
+										<div class="dvnt-text">
+											<p>Доставка по России</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="faqmain">
+				<div class="inside">
+					<h2 class="faqmain__title"><a href="#" class="lnk__black">Вопросы и ответы</a></h2>
+					<div class="cols faqmain__slider" id="faqmainSlider">
+						<div class="col col--50">
+							<div class="faqmain-item">
+								<div class="faqmain-number">Вопрос № 967847</div>
+								<div class="faqmain-question">
+									<p>Здравствуйте, у меня травма колена, пока еще не сказали какая. Назначили
+										МРТ и бандаж коленный мягкий с силиконовым кольцом для надколенника Genumedi
+										компании Medi expert. Стоит он в среднем 3500 руб. Есть ли более дешевые
+										его аналоги?</p>
+								</div>
+								<div class="faqmain-answer">
+									<p>Более экономичный вариант наколенника с силиконовым кольцом - <a href="#">Бандаж на коленный сустав</a> (Артикул:
+										NKN 209) - 1120 рублей. Но более качественный и комфортный наколенник,
+										произведенный в Германии - Бандаж на коленный сустав (Артикул: 50K15) -
+										3300 рублей.</p>
+									<div class="faqmain-doctor">
+										<div class="faqmain-photo">
+											<img src="dist/img/si.png" alt="p-4">
+										</div>
+										<div class="faqmain-name">Сергей Ивановович</div>
+										<div class="faqmain-position">Врач-ортопед</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col col--50">
+							<div class="faqmain-item">
+								<div class="faqmain-number">Вопрос № 967847</div>
+								<div class="faqmain-question">
+									<p>Здравствуйте, у меня травма колена, пока еще не сказали какая. Назначили
+										МРТ и бандаж коленный мягкий с силиконовым кольцом для надколенника Genumedi
+										компании Medi expert. Стоит он в среднем 3500 руб. Есть ли более дешевые
+										его аналоги?</p>
+								</div>
+								<div class="faqmain-answer">
+									<p>Более экономичный вариант наколенника с силиконовым кольцом - <a href="#">Бандаж на коленный сустав</a> (Артикул:
+										NKN 209) - 1120 рублей. Но более качественный и комфортный наколенник,
+										произведенный в Германии - Бандаж на коленный сустав (Артикул: 50K15) -
+										3300 рублей.</p>
+									<div class="faqmain-doctor">
+										<div class="faqmain-photo">
+											<img src="dist/img/si.png" alt="p-4">
+										</div>
+										<div class="faqmain-name">Сергей Ивановович</div>
+										<div class="faqmain-position">Врач-ортопед</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="video bg_01 video_main">
+				<div class="inside">
+					<h2><a href="#" class="lnk__black">Видео</a></h2>
+					<div class="cols" data-max="parent" id="videoSliderPromo">
+						<div class="col col--25">
+							<div class="video-item">
+								<div class="video-wrap">
+									<img src="dist/img/video-1.png" alt="video-1" width="284" height="174" class="video-poster">
+									<div class="video-play"></div>
+								</div>
+								<div class="video-content" data-max="child">
+									<div class="video-title">Ортопедические товары для бущущих мам</div>
+									<div class="video-text">Врач ортопед-травматолог Морозов В.В. рассказывает об ортопедических изделиях
+										для беременных</div>
+									<div class="video-footer">
+										<div class="video-clock">05:02</div>
+										<div class="video-eye">12 450</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col col--25">
+							<div class="video-item">
+								<div class="video-wrap">
+									<img src="dist/img/v-2.png" alt="video-1" class="video-poster" width="284" height="174">
+									<div class="video-play"></div>
+								</div>
+								<div class="video-content" data-max="child">
+									<div class="video-title">Выбираем ортопедическую обувь для детей</div>
+									<div class="video-text">Как правильно подобрать ортопедическую обувь ребенку?</div>
+									<div class="video-footer">
+										<div class="video-clock">05:02</div>
+										<div class="video-eye">12 450</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col col--25">
+							<div class="video-item">
+								<div class="video-wrap">
+									<img src="dist/img/v-3.png" alt="video-1" class="video-poster">
+									<div class="video-play"></div>
+								</div>
+								<div class="video-content" data-max="child">
+									<div class="video-title">Профилактическая и лечебная обувь для детей</div>
+									<div class="video-text">Профилактическая и лечебная ортопедическая обувь для детей: отличия и
+										показания</div>
+									<div class="video-footer">
+										<div class="video-clock">05:02</div>
+										<div class="video-eye">12 450</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col col--25">
+							<div class="video-item">
+								<div class="video-wrap">
+									<img src="dist/img/v-3.png" alt="video-1" class="video-poster">
+									<div class="video-play"></div>
+								</div>
+								<div class="video-content" data-max="child">
+									<div class="video-title">Профилактическая и лечебная обувь для детей</div>
+									<div class="video-text">Профилактическая и лечебная ортопедическая обувь для детей: отличия и
+										показания</div>
+									<div class="video-footer">
+										<div class="video-clock">05:02</div>
+										<div class="video-eye">12 450</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="usfl">
+				<div class="inside">
+					<h2><a href="#" class="lnk__black">Полезная информация</a></h2>
+					<div class="cols" data-max="parent" id="infoSliderPromo">
+						<div class="col col--25"><a class="usfl-item" href="#"><div class="usfl-wrap"><img src="dist/img/v-5.png" alt="video-1" class="usfl-poster"></div><div class="usfl-content" data-max="child"><div class="usfl-title">Корректоры осанки</div><div class="usfl-text">Врач ортопед-травматолог Морозов В.В. рассказывает об ортопедических изделиях для беременных</div><div class="usfl-footer"><div class="video-eye">12 450</div></div></div></a>
+						</div>
+						<div class="col col--25"><a class="usfl-item" href="#"><div class="usfl-wrap"><img src="dist/img/v-6.png" alt="video-1" class="usfl-poster"></div><div class="usfl-content" data-max="child"><div class="usfl-title">Выбираем ортопедическую обувь для детей</div><div class="usfl-text">Как правильно подобрать ортопедическую обувь ребенку?</div><div class="usfl-footer"><div class="video-eye">12 450</div></div></div></a>
+						</div>
+						<div class="col col--25"><a class="usfl-item" href="#"><div class="usfl-wrap"><img src="dist/img/v-7.png" alt="video-1" class="usfl-poster"></div><div class="usfl-content" data-max="child"><div class="usfl-title">Ортопедические товары для бущущих мам</div><div class="usfl-text">Врач ортопед-травматолог Морозов В.В. рассказывает об ортопедических изделиях для беременных	</div><div class="usfl-footer"><div class="video-eye">1 245</div></div></div></a>
+						</div>
+						<div class="col col--25"><a class="usfl-item" href="#"><div class="usfl-wrap"><img src="dist/img/v-8.png" alt="video-1" class="usfl-poster"></div><div class="usfl-content" data-max="child"><div class="usfl-title">Ортопедические товары для бущущих мам</div><div class="usfl-text">Врач ортопед-травматолог Морозов В.В. рассказывает об ортопедических изделиях для беременных	</div><div class="usfl-footer"><div class="video-eye">12 450</div></div></div></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="about about-promo clearfix">
+				<div class="inside">
+					<div class="cols">
+						<div class="col col--75">
+							<div class="about__content">
+								<h2>О компании</h2>
+								<p class="promo__txt">Компания "Ортолайн", основанная в 1998 году, представляет собой розничную сеть ортопедических салонов по всей Москве. Мы работаем с ведущими производителями ортопедических изделий.
+								</p>
+								<p>У нас Вы найдете все необходимые ортопедические товары высокого качества
+									по доступным ценам. Мы предлагаем Вам большой выбор ортопедической обуви
+									для детей и взрослых, в том числе ортопедическую обувь от компании ORTEK,
+									ортопедические стельки, широкий ассортимент ортопедической обуви для женщин,
+									а также для людей, страдающих диабетом, ортопедические матрасы и подушки,
+									бандажи и другие товары для будущих мам. В наших салонах Вы также сможете
+									найти изделия из медицинского компрессионного трикотажа, средства реабилитации
+									после травм и операций, налокотники, наколенники, фиксаторы голеностопа;
+									костыли и трости, массажеры, товары корректирующей серии (корректоры осанки
+									- реклинаторы) и многое другое.</p>
+								<p>В наших магазинах вы найдете качественную ортопедическую обувь отечественных
+									и зарубежных производителей: ORTMAN (Ортман), SANAGENS (Санадженс), VALLEVERDE
+									(Веллаверде), ORTEK (Ортек), KALKOS (Калькос), FIDELIO (Фиделио). В наших
+									магазинах вы также сможете приобрести терапевтическую (послеоперационную)
+									обувь.</p>
+								<p>Сеть ортопедических салонов «Ортолайн» постоянно растет: Вы можете приобрести
+									необходимые товары более чем в 10 салонах, расположенных по всей Москве.
+									Наши ортопедические салоны есть на Юго-Западной, Петровско-Разумовской,
+									Марьино, Чертановской, Автозаводской, Ленинском Проспекте и в Перово. Недавно
+									отрылись новые магазины ортопедических товаров в Крылатском, на Октябрьском
+									поле, Бабушкинской и на Кутузовком проспекте.</p>
+								<p>В любом из наших салонов опытные продавцы – консультанты помогут Вам правильно
+									выбрать необходимую продукцию, кроме того, в ортопедических салонах «Ортолайн»
+									вы можете получить бесплатную консультацию врача ортопеда – травматолога.</p>
+							</div>
+						</div>
+						<div class="col col--25">
+							<div class="about__side">
+								<h2><a href="#" class="lnk__black">Новости</a></h2>
+								<ul class="about__list news-aside">
+									<li>
+										<div class="news-aside__date">04 апр 2015</div>
+										<a class="news-aside__link" href="#">Открыли новый салон</a>
+										<div class="news-aside__summary">Приглашаем посетить новый ортопедический салон «Ортолайн», расположенный дресу: ул. Первомайская, д.112</div>
+									</li>
+									<li>
+										<div class="news-aside__date">04 апр 2015</div>
+										<a class="news-aside__link" href="#">Осенне-зимняя коллекция элегантной ортопедической обуви VALLEVERDE (Италия)</a>
+										<div class="news-aside__summary">Поступление новой коллекции ортопедической обуви из Италии</div>
+									</li>
+									<li>
+										<div class="news-aside__date">04 апр 2015</div>
+										<a class="news-aside__link" href="#">Зимняя ортопедическая обувь для детей</a>
+										<div class="news-aside__summary">В наших ортопедических салонах новые модели зимней ортопедической обуви для детей</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!--#all-->
+		<footer class="footer" id="footer">
+			<div class="inside">
+				<div class="footer-col footer-col--1">
+					<h3>О КОМПАНИИ</h3>
+					<ul>
+						<li><a href="#">Ортолайн </a>
+						</li>
+						<li><a href="#">Новости </a>
+						</li>
+						<li><a href="#">Видео </a>
+						</li>
+						<li><a href="#">Полезная информация </a>
+						</li>
+						<li><a href="#">Производители </a>
+						</li>
+						<li><a href="#">Вакансии </a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col footer-col--2">
+					<h3>ЛИЧНЫЙ КАБИНЕТ</h3>
+					<ul>
+						<li><a href="#">Корзина</a>
+						</li>
+						<li><a href="#">Личный кабинет</a>
+						</li>
+						<li><a href="#">Доставка заказа</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col footer-col--3">
+					<h3>Услуги</h3>
+					<ul>
+						<li><a href="#">Бесплатная консультация ортопеда </a>
+						</li>
+						<li><a href="#">Индивидуальное изготовление стелек </a>
+						</li>
+						<li><a href="#">Диагностика стоп </a>
+						</li>
+						<li><a href="#">Ответы на вопросы	</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col footer-col--4">
+					<h3>ПОЛЕЗНАЯ ИНФОРМАЦИЯ</h3>
+					<ul>
+						<li><a href="#">Где купить</a>
+						</li>
+						<li><a href="#">Салоны</a>
+						</li>
+						<li><a href="#">Видео</a>
+						</li>
+						<li><a href="#">Статьи</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col footer-col--5">
+					<div class="footer-socs">
+						<div class="likes">
+							<div class="sl">
+								<div class="vkontakte"></div>
+								<div class="twitter"></div>
+								<div class="facebook"></div>
+								<div class="odnoklassniki"></div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-adr">142784, Московская область,
+						<br>Бизнес-Парк «Румянцево»,
+						<br>офис 510А (Киевское шоссе, 500 м от МКАД).</div>
+					<div class="footer-tel">Телефон/факс: <strong>(495) 988-95-05</strong>
+						<br><a href="mailto:info@orto.su">info@orto.su</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="inside">
+					<div class="footer-left">© 2015. Услуги представляются ООО «Экзотик-Центр»</div>
+					<div class="footer-right">Создание сайта — <a href="http://nikoland.ru" target="_blank">nikoland</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="form__popup form__popup_center callback__popup" id="callbackPopup">
+			<h3>Заказ звонка</h3>
+			<form class="form" action="index_submit" method="get" accept-charset="utf-8">	    	
+				<div class="field__cell">
+					<input type="text" placeholder="Представьтесь пожалуйста">
+				</div>
+				<div class="field__cell">
+					<input type="text" placeholder="Телефон">
+				</div>
+				<div class="field__cell">
+					<textarea name="comment" id="inp_03" cols="30" rows="10" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="field__cell field__cell_button">
+					<button class="button button--blue">Заказать</button>
+				</div>
+			</form>
+			<span class="button b-close"><i></i></span>            
+		</div>
+
+		<div class="form__popup form__popup_center login__popup" id="loginPopup">
+			<h3>Вход</h3>
+			<form class="form" action="index_submit" method="get" accept-charset="utf-8">
+				<div class="field__cell">
+					<input type="text" placeholder="Логин">
+				</div>
+				<div class="field__cell">
+					<input type="text" placeholder="Пароль">
+				</div>
+				<div class="form__links">
+					<p><a href="#0" class="gray">Забыли пароль?</a></p>
+					<p><a href="#0">Регистрация</a></p>
+				</div>
+				<div class="field__cell field__cell_button">
+					<button class="button button--blue">Войти</button>
+				</div>
+			</form>
+			<span class="button b-close"><i></i></span>
+		</div>
+
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript">
+		if (typeof jQuery == 'undefined') {document.write(unescape("%3Cscript src='bower_components/jquery/dist/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+		}
+		</script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+		<script type="text/javascript">
+		if (typeof jQuery == 'undefined') {document.write(unescape("%3Cscript src='bower_components/slick-carousel/slick/slick.min.js' type='text/javascript'%3E%3C/script%3E"));
+		}
+		</script>
+		
+		<script src="dist/js/plugins.min.js"></script>
+		<script src="dist/js/scripts.min.js"></script>
+	</body>
+	<!--body -->
+</html>
