@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Вопрос-ответ :: Ortoline</title>
+
+	    <style type="text/css">
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,500,700&subset=latin,cyrillic-ext);@font-face{font-family:'ALSRubl-Verdana';src:url("/fonts/alsrubl-verdana-regular.eot");src:url("/fonts/alsrubl-verdana-regular.eot?#iefix") format("embedded-opentype"),url("/fonts/alsrubl-verdana-regular.woff") format("woff"),url("/fonts/alsrubl-verdana-regular.ttf") format("truetype"),url("/fonts/alsrubl-verdana-regular.svg#ALSRublRegular") format("svg");font-weight:normal;font-style:normal}.b-rub{font-family:'ALSRubl-Verdana', Verdana, sans-serif;line-height:normal}body{height:100%;width:100%;margin:0;background:#fff;font-family:"Open Sans",sans-serif,Arial,Verdana,sans-serif;font-size:14px;line-height:20px;position:relative}img{border:0}ul,nav{list-style:none;padding-left:0;margin:0}a{text-decoration:none;-webkit-transition:color 0.25s,border-color 0.25s;-moz-transition:color 0.25s,border-color 0.25s;-o-transition:color 0.25s,border-color 0.25s;transition:color 0.25s,border-color 0.25s}p{margin:0}.clearfix{*zoom:1}.clearfix:before,.clearfix:after{content:'';display:table}.clearfix:after{clear:both}.lnk__black{color:#2c2c2c;border-bottom:1px solid #8797a8}.dotted{border-bottom-style:dotted;border-bottom-width:1px}h1,h3,h5{font-family:'Open Sans',sans-serif;font-weight:bold;margin:0}h1{font-size:43px;letter-spacing:-1px;line-height:50px;margin-bottom:30px;color:#2c2c2c;position:relative;z-index:100}h3{font-size:20px;font-weight:bold;line-height:36px}#all{height:auto;position:relative;-webkit-transition:padding 0.25s;-moz-transition:padding 0.25s;-o-transition:padding 0.25s;transition:padding 0.25s}.inside{position:relative;margin:0 auto;padding:0 20px;max-width:1200px}.bg_01{background-color:#f6f6f6}.button{display:inline-block;vertical-align:middle;padding:14px 25px;color:#fff;font-size:18px;font-weight:500;cursor:pointer;border-radius:4px}.button span{padding-bottom:2px;border-bottom:1px solid #fff;border-bottom:1px solid rgba(255,255,255,0.4);-webkit-transition:all 0.35s;transition:all 0.35s}.button img{vertical-align:top;margin-right:10px;margin-top:1px}.button--blue{background:#1376ba;border-bottom-color:#559cca}.button--orange{background:#f3a942;border-bottom-color:#f6c070}.button--gray{color:#2c2c2c;background:#e9e9e9}.button--center{text-align:center}.col--50{width:50%}.cols{margin-left:4px}.col{display:inline-block;font-size:14px;vertical-align:top;margin-left:-4px;box-sizing:border-box}.tag__item{display:inline-block;margin-right:6px;margin-bottom:16px}.tag__item.current a{background-color:#1376ba}.tag__item a{font-size:13px;text-transform:lowercase;line-height:22px;color:#fff;padding:2px 10px;border-radius:4px;background-color:#8797a8;-webkit-transition:background-color 0.25s;-moz-transition:background-color 0.25s;-o-transition:background-color 0.25s;transition:background-color 0.25s}.breadcrumbs{padding-top:42px;margin-bottom:18px}.breadcrumbs__item{display:inline;border-left:1px solid #a9a9a9;padding:0 12px;font-size:12px;line-height:1;font-weight:bold}.breadcrumbs__item:first-child{border-left:none;padding-left:0}.breadcrumbs__link{color:#1376ba;border-color:#1376ba}.breadcrumbs__link.current{color:#8797a8;border:none}.search__menu{position:relative;padding-top:30px;margin-bottom:40px}.search__menu_btn{width:264px;box-sizing:border-box;float:left;position:relative;padding-right:36px}.search__menu_field{margin-left:280px;position:relative}.search__menu_inp{height:48px;width:100%;border:none;border-radius:4px;font-size:14px;padding:15px 35% 15px 24px;box-sizing:border-box}.search__menu_item{position:absolute;right:20px;top:1px;line-height:42px;height:43px;background-color:#fff;opacity:1;-webkit-transition:opacity 0.5s;-moz-transition:opacity 0.5s;-o-transition:opacity 0.5s;transition:opacity 0.5s}.search__menu_item p{display:inline-block;vertical-align:middle;margin-right:16px}.search__menu_item .example{color:#1376ba;border-bottom:1px dotted #1376ba}.search__menu_item .search__ico{background-image:url("/dist/ico/sprite.png");background-position:-205px -233px;background-repeat:no-repeat;width:23px;height:23px;display:inline-block;vertical-align:middle}@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx){.search__menu_item .search__ico{background-size:320px 312px;background-image:url("/dist/ico/sprite@2x.png")}}.header{width:100%;background-color:#fff;z-index:1000}.header.brd__bottom{-webkit-box-shadow:0px 4px 5px 0px rgba(0,0,0,0.4);-moz-box-shadow:0px 4px 5px 0px rgba(0,0,0,0.4);box-shadow:0px 4px 5px 0px rgba(0,0,0,0.4)}.header__wrap{padding:20px 0 94px}.header__left{float:left;width:65%;position:relative;text-align:justify;font-size:0;line-height:0}.header__left:after{content:"";width:100%;height:0;visibility:hidden;overflow:hidden;display:inline-block}.header__left .logo{width:100%;max-width:350px}.header__left .logo__lnk{display:inline-block;vertical-align:middle}.header__left_wrap{display:inline-block;vertical-align:middle;margin-right:10%}.header__call a{margin-left:46px;display:inline-block;font-size:12px;line-height:16px;color:#828282}.mainmenu__buttons_centr{display:none}.header__contact{z-index:10}.header__tel{font-size:22px;line-height:26px;font-weight:600;padding-left:36px;position:relative;font-family:"Open Sans",sans-serif}.header__tel:before{content:"";position:absolute;left:0;top:6px;background-image:url("/dist/ico/sprite.png");background-position:-303px -27px;background-repeat:no-repeat;width:17px;height:16px}@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx){.header__tel:before{background-size:320px 312px;background-image:url("/dist/ico/sprite@2x.png")}}.header__right{padding-top:28px;float:right;width:35%;text-align:right}.header__right_btn{display:inline-block;margin-left:10%;vertical-align:top}.header__right_btn:first-child{margin-left:0}.profile-btn__pic{float:left;position:relative;background-image:url("/dist/ico/sprite.png");background-position:-80px -78px;background-repeat:no-repeat;width:33px;height:33px}@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx){.profile-btn__pic{background-size:320px 312px;background-image:url("/dist/ico/sprite@2x.png")}}.profile-btn__text{margin-left:56px;display:block;color:#2c2c2c;font-size:15px;line-height:18px;text-align:left}.basket-btn__badge{position:relative;font:bold 14px/20px "Open Sans",sans-serif;text-align:center;float:left}.basket-btn__badge .pic{background-image:url("/dist/ico/sprite.png");background-position:-235px -106px;background-repeat:no-repeat;width:32px;height:37px;display:inline-block}@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx){.basket-btn__badge .pic{background-size:320px 312px;background-image:url("/dist/ico/sprite@2x.png")}}.basket-btn__badge .num{background:#f3a942;color:#ffffff;position:absolute;bottom:0;left:20px;border-radius:10px;height:20px;width:20px}.basket-btn__cont{color:#2c2c2c;font-size:15px;line-height:18px;text-align:left;margin-left:60px}.basket__label{margin-bottom:4px}.basket__price{font-size:20px;font-weight:bold}.mainmenu{position:absolute;display:block;bottom:0;left:0;right:0;width:100%;padding:12px 20px 12px;opacity:1;box-sizing:border-box}.mainmenu__list{float:left;padding-top:10px;width:60%;max-width:685px;text-align:justify;line-height:0;font-size:1px}.mainmenu__list:after{width:100%;height:0;visibility:hidden;overflow:hidden;content:'';display:inline-block}.mainmenu__item{display:inline-block;text-align:left;line-height:normal;vertical-align:top}.mainmenu__link{font-size:20px;font-weight:600}.mainmenu__buttons{text-align:justify;line-height:0;font-size:0;text-justify:newspaper;zoom:1;text-align-last:justify}.mainmenu__buttons:after{width:100%;height:0px;visibility:hidden;overflow:hidden;content:'';display:inline-block}.mainmenu__buttons .button{text-align:left;line-height:normal;font-size:18px;vertical-align:top}.mainmenu__buttons_fr{float:right;width:40%;max-width:410px}.mainmenu__buttons_fr-wrap{display:inline-block}.mainmenu__btn-all{display:none}.mainmenu__btn-all span{border:none}.mainmenu__btn-all .ico{width:24px;height:18px;display:inline-block;padding-right:14px;vertical-align:middle}.mainmenu__buttons_fr-wrap{width:50%;display:inline-block;vertical-align:top}.mainmenu__buttons_fr-wrap .button{display:block;text-align:center;margin:0px 10px;font-size:16px;padding:14px 15px;box-sizing:border-box}.footer-col{display:-moz-inline-stack;display:inline-block;vertical-align:top;*zoom:1;*display:inline;margin-right:-4px;width:20%;font-family:'Open Sans',sans-serif;padding-top:47px;padding-bottom:10px}.footer-col h3{text-transform:uppercase;margin-bottom:10px;font-size:14px}.footer-col a{border:0}.footer-col li{line-height:16px;margin-bottom:20px}.footer-col li a{color:#2c2c2c}.footer-col--1{width:14%;padding-right:3%}.footer-col--2{width:18%;padding-right:2%}.footer-col--3{width:18%;padding-right:3%}.footer-col--4{width:20%;padding-right:3%}.faq-main{font-family:"Open Sans",sans-serif;width:66.6%;margin-bottom:52px}.faq-main__btn-mobile{display:none}.faq-main__list{margin-bottom:44px}.faq-main__item{padding:38px 0 20px;border-radius:6px;border:1px solid #dadada;background-color:#fff;margin-top:22px}.faq-main__item:first-child{margin-top:0}.faq-main__top,.faq-main__answer,.faq-main__footer{padding:0 46px;box-sizing:border-box}.faq-main__top{margin-bottom:22px}.faq-main__right{text-align:right}.faq-main__voting,.faq-main__published{font-size:12px;color:#8797a8;margin-left:4px}.faq-main__voting .ico,.faq-main__voting .text,.faq-main__published .ico,.faq-main__published .text{vertical-align:middle;line-height:17px;display:inline-block;margin-right:10px}.faq-main__published .ico{background-image:url("/dist/ico/sprite.png");background-position:-303px 0px;background-repeat:no-repeat;width:17px;height:17px}@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx){.faq-main__published .ico{background-size:320px 312px;background-image:url("/dist/ico/sprite@2x.png")}}.faq-main__voting{cursor:pointer;color:#8797a8}.faq-main__voting .ico{background-image:url("/dist/ico/sprite.png");background-position:-277px -179px;background-repeat:no-repeat;width:16px;height:14px}@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx){.faq-main__voting .ico{background-size:320px 312px;background-image:url("/dist/ico/sprite@2x.png")}}.faq-main__voting.current{color:#1376ba}.faq-main__voting.current .ico{background-image:url("/dist/ico/sprite.png");background-position:-277px -155px;background-repeat:no-repeat;width:16px;height:14px}@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx){.faq-main__voting.current .ico{background-size:320px 312px;background-image:url("/dist/ico/sprite@2x.png")}}.faq-main__voting .text{font-weight:bold}.faq-main__user__name{font-size:16px;margin-bottom:6px}.faq-main__user__data{color:#8797a8}.faq-main__quest{padding:0 46px;border-bottom:1px solid #dadada;padding-bottom:6px}.faq-main__quest p{line-height:22px;margin-bottom:22px}.faq-main__answer{padding-top:32px}.faq-main__answer p{line-height:22px;margin-bottom:22px}.faq-main__answer a{color:#1376ba;border-bottom:1px solid #1376ba}.faq-aside{width:33.3%;margin-top:-64px;padding-left:4%}.faq-aside__title{margin-bottom:30px;text-align:center}.faq-quest__item{margin-bottom:20px}.faq-quest__left,.faq-quest__right{display:table-cell}.faq-quest__left{border-right:1px solid #dadada;width:84%}.faq-quest__left .question{border-bottom:1px solid transparent;padding:20px;padding-top:16px;-webkit-transition:border-bottom 1s;-moz-transition:border-bottom 1s;-o-transition:border-bottom 1s;transition:border-bottom 1s}.faq-quest__left .answer{padding:20px;padding-bottom:16px;display:none}.faq-quest__cont{display:table;background-color:#fff;border-radius:6px;border:1px solid #dadada;overflow:hidden}.faq-quest__right{width:16%;text-align:center;vertical-align:middle;cursor:pointer;background-color:#fff;-webkit-transition:background-color 0.25s;-moz-transition:background-color 0.25s;-o-transition:background-color 0.25s;transition:background-color 0.25s}.faq-quest__right .ico{background-image:url("/dist/ico/sprite.png");background-position:-125px -210px;background-repeat:no-repeat;width:12px;height:12px;display:inline-block;width:12px;height:12px;padding-bottom:0px;-webkit-transition:opacity 1s;-moz-transition:opacity 1s;-o-transition:opacity 1s;transition:opacity 1s}@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx){.faq-quest__right .ico{background-size:320px 312px;background-image:url("/dist/ico/sprite@2x.png")}}.faq__quest__lnk{width:100%;text-align:center;box-sizing:border-box}.faq__quest__lnk .button{display:block}.promophone_mob{display:none}@media (max-width: 1000px) and (min-width: 768px){.inside{max-width:1140px}h1{font-size:35px;line-height:40px}.header__left{width:72%}.header__left .logo{max-width:250px}.header__left_wrap{margin-top:14px}.header__tel{padding-left:28px}.header__right{padding-top:16px;width:28%}.header__right .profile-btn{display:none}.mainmenu__buttons_fr{width:auto;max-width:none;float:none;margin:0px -10px}.mainmenu__list{display:none}.mainmenu__buttons_fr-wrap{width:33.3%}.mainmenu__btn-all{display:inline-block;width:33.3%}.mainmenu__btn-all .button{display:block;text-align:center;margin:0px 10px;padding:14px 15px;box-sizing:border-box}.mainmenu__btn-all .ico{background-image:url("/dist/ico/sprite.png");background-position:-277px -203px;background-repeat:no-repeat;width:16px;height:13px;padding:0;margin-right:14px;margin-bottom:2px}}@media only screen and (max-width: 1000px) and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 1000px) and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 1000px) and (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), only screen and (max-width: 1000px) and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (max-width: 1000px) and (min-width: 768px) and (min-resolution: 192dpi), only screen and (max-width: 1000px) and (min-width: 768px) and (min-resolution: 2dppx){.mainmenu__btn-all .ico{background-size:320px 312px;background-image:url("/dist/ico/sprite@2x.png")}}@media (max-width: 1000px) and (min-width: 768px){.mainmenu__buttons_centr{display:none}}@media (max-width: 1000px) and (min-width: 768px){.footer-col--1,.footer-col--2,.footer-col--3,.footer-col--4{display:none}}@media (max-width: 1000px) and (min-width: 768px){.faq-main{width:100%;margin-left:0;display:none;margin-bottom:0;padding-bottom:40px}.faq-main.active{display:block}.faq-main__btn-quest{font-size:14px;text-transform:uppercase}.faq-main__btn-mobile{font-size:14px;text-transform:uppercase;display:block;text-align:center;padding:12px 18px;letter-spacing:1px;margin-bottom:18px}.faq-main__top{margin:0;position:relative}.faq-aside{width:100%;margin:0;padding:0;padding-bottom:40px;font-size:0;line-height:0;display:none}.faq-aside__title{text-align:left}.faq-quest{margin:0px -10px}.faq-quest__item{width:50%;display:inline-block;vertical-align:top;font-size:15px;line-height:22px}.faq-quest__cont{margin:0 2%;width:96%}.faq__quest__lnk{font-size:15px;line-height:22px;display:inline-block}.faq__quest__lnk .button{display:block;margin:0px 10px}.faq-quest__item:last-of-type{margin-bottom:0}}@media (max-width: 767px){.inside{min-width:280px;max-width:767px}.button{padding:12px 44px;text-transform:uppercase;font-size:14px;font-weight:bold}.breadcrumbs{padding-top:24px;margin-bottom:18px}.breadcrumbs__item{padding:0px 8px}h1{font-size:26px;line-height:30px;margin-bottom:26px}.search__menu{margin-bottom:8px}.search__menu_btn{display:none}.search__menu_field{width:100%;margin-left:0}.search__menu_item p{display:none}.header__wrap{padding:20px 0 10px}.header__left{width:45%}.header__left .logo{max-width:250px;min-width:164px;margin-bottom:10px}.header__right{padding-top:0;margin-bottom:10px}.header__right .profile-btn{display:none}.header__right .basket-btn{position:absolute;right:20px;top:20%}.mainmenu__buttons_fr{width:auto;max-width:none;float:none;margin:0px -10px}.basket-btn__cont,.header__contact,.mainmenu__list{display:none}.mainmenu{position:static;top:0;padding:0;padding-bottom:12px}.mainmenu__buttons_fr-wrap{width:50%;display:inline-block;vertical-align:top}.mainmenu__buttons_fr-wrap .button{display:block;margin:0px 10px;padding:10px 6px;font-size:14px;text-align:center;font-weight:normal;text-transform:none;box-sizing:border-box}.mainmenu__buttons_fr-wrap img{margin-right:6px}.mainmenu__btn-all{position:absolute;top:20%;right:80px;display:inline-block}.mainmenu__btn-all .ico{padding:0;background-image:url("/dist/ico/sprite.png");background-position:-277px -203px;background-repeat:no-repeat;width:16px;height:13px;vertical-align:baseline}}@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi), only screen and (max-width: 767px) and (min-resolution: 2dppx){.mainmenu__btn-all .ico{background-size:320px 312px;background-image:url("/dist/ico/sprite@2x.png")}}@media (max-width: 767px){.mainmenu__btn-all .text{display:none}.mainmenu__btn-all .button{padding:12px 14px 13px;line-height:1}.basket-btn__badge{background-color:#e9e9e9;border-radius:4px;padding:4px 10px}.basket-btn__badge .pic{background-image:url("/dist/ico/sprite.png");background-position:-235px -153px;background-repeat:no-repeat;width:25px;height:29px;padding-bottom:1px}}@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi), only screen and (max-width: 767px) and (min-resolution: 2dppx){.basket-btn__badge .pic{background-size:320px 312px;background-image:url("/dist/ico/sprite@2x.png")}}@media (max-width: 767px){.promophone_mob{display:block;background-color:#282828;text-align:center;padding:4px 0;width:100%;min-width:320px;z-index:100;position:fixed;bottom:0;left:0}.promophone__phone{display:inline-block}.promophone__phone .ico{display:inline-block;background-image:url("/dist/ico/sprite.png");background-position:-303px -27px;background-repeat:no-repeat;width:17px;height:16px;margin-right:10px}}@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi), only screen and (max-width: 767px) and (min-resolution: 2dppx){.promophone__phone .ico{background-size:320px 312px;background-image:url("/dist/ico/sprite@2x.png")}}@media (max-width: 767px){.promophone__phone .text{color:#fff;font-size:16px;line-height:24px}}@media (max-width: 767px){.footer-col--1,.footer-col--2,.footer-col--3,.footer-col--4{display:none}.faq-main{width:100%;margin-left:0;margin-bottom:0px;padding-bottom:80px;display:none}.faq-main.active{display:block}.faq-main__btn-quest{display:block;margin-top:58px;width:100%}.faq-main__btn-quest+.search__menu_field{position:absolute}.faq-main__btn-mobile{font-size:13px;display:block;text-align:center;padding:12px 18px;letter-spacing:1px;margin-bottom:18px}.faq-main__top{margin:0;position:relative}.faq-main__left,.faq-main__right{width:100%}.faq-aside{width:100%;display:none;margin:0;padding:0;padding-bottom:80px}.faq-aside__title{display:none}.faq-main__top,.faq-main__answer,.faq-main__footer,.faq-main__quest{padding:0px 26px}.faq-main__left{margin:40px 0px 20px 0}.faq-main__right{position:absolute;top:0;left:0;margin:0;padding:0px 26px;text-align:left}.faq-main__quest{padding-bottom:22px}.faq-main__answer{padding-top:38px}.faq-main__answer p{margin-bottom:20px}.faq-quest__item:last-of-type{margin-bottom:0}.faq-quest__cont{width:100%}}@media (max-width: 999px) and (min-width: 768px){.header__left_wrap{margin-right:7%}}@media (max-width: 1140px) and (min-width: 1000px){.header__left_wrap{margin-right:5%}.mainmenu__list{width:57%}.mainmenu__link{font-size:18px}}@media (max-width: 1140px) and (min-width: 1000px){.faq-aside__title{font-size:18px}}
+</style>
+<script>
+(function(u){function loadCSS(e,t,n){"use strict";function r(){for(var t,i=0;i<d.length;i++)d[i].href&&d[i].href.indexOf(e)>-1&&(t=!0);t?o.media=n||"all":setTimeout(r)}var o=window.document.createElement("link"),i=t||window.document.getElementsByTagName("script")[0],d=window.document.styleSheets;return o.rel="stylesheet",o.href=e,o.media="only x",i.parentNode.insertBefore(o,i),r(),o}for(var i in u){loadCSS(u[i]);}}(['dist/css/style.css']));
+</script>
+<noscript>
+<link href="dist/css/style.css" rel="stylesheet" type="text/css">
+</noscript>
+	</head>
+	
+	<body>
+		<header class="header js-header_fix brd__bottom">
+		    <div class="inside">
+		        <div class="header__wrap clearfix">
+		            <div class="header__left">
+		                <a class="logo__lnk" href="links.html"><img src="dist/img/logo.png" alt="logo" class="logo"></a>
+		                
+		                <div class="header__left_wrap">
+		                    <div class="header__contact">
+		                        <div class="header__tel">+7 495 988-95-05</div>
+		                        <div class="header__call"><a class="lnk dotted js-lnk_popup" data-popup-type="callback" href="#0">Заказать звонок</a></div>
+		                    </div>
+		                    
+		                    <div class="mainmenu__buttons mainmenu__buttons_centr">
+		                        <div class="mainmenu__buttons_centr-wrap">
+		                            <a class="button button--blue" href="#0"><span>Каталог товаров</span></a>
+		                        </div>
+		                        <div class="mainmenu__buttons_centr-wrap">
+		                            <a class="button button--orange" href="#0"><img src="dist/img/ic-location.png" alt="ic-location" width="12"><span>Наши салоны</span></a>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		            <div class="header__right">
+		                <div class="header__right_cont">
+		                    <a class="header__right_btn profile-btn js-lnk_popup" data-popup-type="login" href="#">
+		                        <div class="profile-btn__pic"></div>
+		                        <span class="profile-btn__text">Личный<br> кабинет</span>
+		                    </a>
+		                    <a class="header__right_btn basket-btn" href="#">
+		                        <div class="basket-btn__badge">
+		                            <span class="pic"></span>
+		                            <span class="num">5</span>
+		                        </div>
+		                        <div class="basket-btn__cont">
+		                            <p class="basket__label">Заказ на сумму </p>
+		                            <p class="basket__price">2 650 <span class="b-rub">Р</span></p>
+		                        </div>
+		                    </a>                            
+		                </div>
+		            </div>
+		        </div>
+		    
+		        <nav class="mainmenu clearfix">
+		            <ul class="mainmenu__list">
+		                <li class="mainmenu__item">
+		                    <a class="lnk__black mainmenu__link" href="#0">Компания</a>
+		                </li>
+		                <li class="mainmenu__item">
+		                    <a class="lnk__black mainmenu__link" href="#0">Услуги</a>
+		                </li>
+		                <li class="mainmenu__item">
+		                    <a class="lnk__black mainmenu__link" href="#0">Информация</a>
+		                </li>
+		                <li class="mainmenu__item">
+		                    <a class="lnk__black mainmenu__link" href="#0">Доставка</a>
+		                </li>
+		                <li class="mainmenu__item">
+		                    <a class="lnk__black mainmenu__link" href="#0">Контакты </a>
+		                </li>
+		            </ul>
+		            <div class="mainmenu__buttons mainmenu__buttons_fr">
+		                <div class="mainmenu__btn-all">
+		                    <a href="#0" class="button button--gray"><span class="ico"></span><span class="text">Все разделы сайта</span></a>
+		                </div>
+		                <div class="mainmenu__buttons_fr-wrap">
+		                    <a class="button button--blue" href="#0"><span>Каталог товаров</span></a>
+		                </div>
+		                <div class="mainmenu__buttons_fr-wrap">
+		                    <a class="button button--orange" href="#0"><img src="dist/img/ic-location.png" alt="ic-location" width="12"><span>Наши салоны</span></a>
+		                </div>
+		            </div>
+		        </nav>
+		    </div>
+		</header>
+
+		<div class="promophone_mob js-promophone_mob">
+			<div class="promophone__phone">
+				<span class="ico"></span>
+				<a href="tel:+74959889505" class="text">+7 495 988-95-05</a>
+			</div>	
+		</div>
+		
+		<div id="all">
+			<div class="bg_01">
+				<div class="inside">
+					<form class="search__menu clearfix">
+						<a href="#0" class="faq-main__btn-quest button button--center button--orange search__menu_btn">Задать вопрос</a>
+					
+						<div class="search__menu_field" id="searchInp">
+							<input class="search__menu_inp" type="search" placeholder="ПОИСК">
+							<div class="search__menu_item">
+								<p>Например, <a href="#0" class="example js-example">Профилактика</a></p>
+								<span class="search__ico"></span>
+							</div>
+						</div>
+					</form>
+
+
+					<div class="breadcrumbs clearfix">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link">Главная</a></li>
+							<li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__link current">Вопрос-ответ</a></li>
+						</ul>
+					</div>
+					
+					<h1>Вопрос-ответ</h1>
+
+					<div class="cols" id="faqAccordMob">
+						<div class="js-faq__btn-accord faq-main__btn-mobile button button--blue">Часто задаваемые вопросы</div>
+
+						<section class="faq-main js-faq_block-mob col active">
+							<div class="faq-main__list">
+								<div class="faq-main__item">
+									<div class="faq-main__top cols">
+										<div class="faq-main__left col col--50">
+											<div class="faq-main__user">
+												<h5 class="faq-main__user__name">Екатерина Васильевна</h5>
+												<p class="faq-main__user__data"><span class="city">Москва</span>, <span class="age">44 года</span></p>
+											</div>									
+										</div>
+										<div class="faq-main__right col col--50">
+											<div class="col faq-main__published"><span class="ico"></span><span class="text">17.12.2014</span></div>
+											<div class="col faq-main__voting"><span class="ico"></span><span class="text">50</span></div>
+										</div>
+									</div>
+									<div class="faq-main__cont">
+										<div class="faq-main__quest">
+											<p>Добрый день! У меня обнаружили поперечное плоскостопие, мне нужна обувь специальная,т.к. у меня очень сильно болят ноги при ходьбе. к тому же нога полная. что Выможете посоветовать из Вашего ассортимента. Спасибо.</p>
+										</div>
+										<div class="faq-main__answer">
+											<p>Здравствуйте, Екатерина Васильевна!</p>
+											<p>Не видя рентген вашей стопы, после того как снимут гипс, очень сложно рекомендовать что-либо. Вам лучше проконсультироваться со своим лечащим врачом травматологом.</p>
+										</div>
+									</div>
+									<div class="faq-main__footer">
+										<ul class="tag__list">
+											<li class="tag__item"><a href="#0">Стельки</a></li>
+											<li class="tag__item"><a href="#0">Профилактика</a></li>
+											<li class="tag__item current"><a href="#0">Плоскостопие</a></li>
+										</ul>
+									</div>
+								</div>
+								
+								<div class="faq-main__item">
+									<div class="faq-main__top cols">
+										<div class="faq-main__left col col--50">
+											<div class="faq-main__user">
+												<h5 class="faq-main__user__name">Алексей</h5>
+											</div>									
+										</div>
+										<div class="faq-main__right col col--50">
+											<div class="col faq-main__published"><span class="ico"></span><span class="text">17.12.2014</span></div>
+											<div class="col faq-main__voting current"><span class="ico"></span><span class="text">50</span></div>
+										</div>
+									</div>
+									<div class="faq-main__cont">
+										<div class="faq-main__quest">
+											<p>Можно ли у вас пройти бесплатную консультацию по поводу плоскостопию?</p>
+										</div>
+										<div class="faq-main__answer">
+											<p>Да, конечно. В любом удобном для вас <a href="#0">салоне ОРТОЛАЙН</a>, по предварительной записи.</p>
+										</div>
+									</div>
+									<div class="faq-main__footer">
+										<ul class="tag__list">
+											<li class="tag__item"><a href="#0">Плоскостопие</a></li>
+											<li class="tag__item"><a href="#0">Салоны</a></li>
+											<li class="tag__item"><a href="#0">Консультация</a></li>
+										</ul>
+									</div>
+								</div>
+								
+								<div class="faq-main__item">
+									<div class="faq-main__top cols">
+										<div class="faq-main__left col col--50">
+											<div class="faq-main__user">
+												<h5 class="faq-main__user__name">Регина</h5>
+											</div>									
+										</div>
+										<div class="faq-main__right col col--50">
+											<div class="col faq-main__published"><span class="ico"></span><span class="text">17.12.2014</span></div>
+											<div class="col faq-main__voting"><span class="ico"></span><span class="text">2</span></div>
+										</div>
+									</div>
+									<div class="faq-main__cont">
+										<div class="faq-main__quest">
+											<p>Здравствуйте. Моей маме 56 лет и ее не редко мучают боли в пояснице. Подскажите пожалуйста какой пояс или бандаж следует нам приобрести?? Спасибо</p>
+										</div>
+										<div class="faq-main__answer">
+											<p>Для разгрузки и снятия воспалительного процесса нужно носить <a href="#0">Корсет пояснично-крестцовый. (Артикул: 2068)</a>.  Чтобы определить причину возникновения боли, можно проконсультироваться у врача ортопеда в любом удобном для вас <a href="#0">салоне ОРТОЛАЙН</a>. Консультация бесплатная.</p>
+										</div>
+									</div>
+									<div class="faq-main__footer">
+										<ul class="tag__list">
+											<li class="tag__item"><a href="#0">Бандаж</a></li>
+											<li class="tag__item"><a href="#0">ортопедическая обувь</a></li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="faq-main__item">
+									<div class="faq-main__top cols">
+										<div class="faq-main__left col col--50">
+											<div class="faq-main__user">
+												<h5 class="faq-main__user__name">Екатерина Васильевна</h5>
+												<p class="faq-main__user__data"><span class="city">Москва</span>, <span class="age">44 года</span></p>
+											</div>									
+										</div>
+										<div class="faq-main__right col col--50">
+											<div class="col faq-main__published"><span class="ico"></span><span class="text">17.12.2014</span></div>
+											<div class="col faq-main__voting"><span class="ico"></span><span class="text">50</span></div>
+										</div>
+									</div>
+									<div class="faq-main__cont">
+										<div class="faq-main__quest">
+											<p>Добрый день! У меня обнаружили поперечное плоскостопие, мне нужна обувь специальная,т.к. у меня очень сильно болят ноги при ходьбе. к тому же нога полная. что Выможете посоветовать из Вашего ассортимента. Спасибо.</p>
+										</div>
+										<div class="faq-main__answer">
+											<p>Здравствуйте, Екатерина Васильевна!</p>
+											<p>Не видя рентген вашей стопы, после того как снимут гипс, очень сложно рекомендовать что-либо. Вам лучше проконсультироваться со своим лечащим врачом травматологом.</p>
+										</div>
+									</div>
+									<div class="faq-main__footer">
+										<ul class="tag__list">
+											<li class="tag__item"><a href="#0">Стельки</a></li>
+											<li class="tag__item"><a href="#0">Профилактика</a></li>
+											<li class="tag__item current"><a href="#0">Плоскостопие</a></li>
+										</ul>
+									</div>
+								</div>
+								
+								<div class="faq-main__item">
+									<div class="faq-main__top cols">
+										<div class="faq-main__left col col--50">
+											<div class="faq-main__user">
+												<h5 class="faq-main__user__name">Алексей</h5>
+											</div>									
+										</div>
+										<div class="faq-main__right col col--50">
+											<div class="col faq-main__published"><span class="ico"></span><span class="text">17.12.2014</span></div>
+											<div class="col faq-main__voting current"><span class="ico"></span><span class="text">50</span></div>
+										</div>
+									</div>
+									<div class="faq-main__cont">
+										<div class="faq-main__quest">
+											<p>Можно ли у вас пройти бесплатную консультацию по поводу плоскостопию?</p>
+										</div>
+										<div class="faq-main__answer">
+											<p>Да, конечно. В любом удобном для вас <a href="#0">салоне ОРТОЛАЙН</a>, по предварительной записи.</p>
+										</div>
+									</div>
+									<div class="faq-main__footer">
+										<ul class="tag__list">
+											<li class="tag__item"><a href="#0">Плоскостопие</a></li>
+											<li class="tag__item"><a href="#0">Салоны</a></li>
+											<li class="tag__item"><a href="#0">Консультация</a></li>
+										</ul>
+									</div>
+								</div>
+								
+								<div class="faq-main__item">
+									<div class="faq-main__top cols">
+										<div class="faq-main__left col col--50">
+											<div class="faq-main__user">
+												<h5 class="faq-main__user__name">Регина</h5>
+											</div>									
+										</div>
+										<div class="faq-main__right col col--50">
+											<div class="col faq-main__published"><span class="ico"></span><span class="text">17.12.2014</span></div>
+											<div class="col faq-main__voting"><span class="ico"></span><span class="text">2</span></div>
+										</div>
+									</div>
+									<div class="faq-main__cont">
+										<div class="faq-main__quest">
+											<p>Здравствуйте. Моей маме 56 лет и ее не редко мучают боли в пояснице. Подскажите пожалуйста какой пояс или бандаж следует нам приобрести?? Спасибо</p>
+										</div>
+										<div class="faq-main__answer">
+											<p>Для разгрузки и снятия воспалительного процесса нужно носить <a href="#0">Корсет пояснично-крестцовый. (Артикул: 2068)</a>.  Чтобы определить причину возникновения боли, можно проконсультироваться у врача ортопеда в любом удобном для вас <a href="#0">салоне ОРТОЛАЙН</a>. Консультация бесплатная.</p>
+										</div>
+									</div>
+									<div class="faq-main__footer">
+										<ul class="tag__list">
+											<li class="tag__item"><a href="#0">Бандаж</a></li>
+											<li class="tag__item"><a href="#0">ортопедическая обувь</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="paginator">
+								<div class="paginator__list">
+									<a href="#0" class="paginator__lnk">
+										<span class="ico larr"></span>
+									</a>
+									<a href="#0" class="paginator__lnk">
+										<span class="text">1</span>
+									</a>
+									<a href="#0" class="paginator__lnk">
+										<span class="text">2</span>
+									</a>
+									<a href="#0" class="paginator__lnk current">
+										<span class="text">3</span>
+									</a>
+									<a href="#0" class="paginator__lnk">
+										<span class="text">4</span>
+									</a>
+									<a href="#0" class="paginator__lnk disabled">
+										<span class="ico rarr"></span>
+									</a>
+								</div>
+							</div>
+						</section>
+						
+						<aside class="faq-aside js-faq_block-mob col">
+							<h3 class="faq-aside__title">Часто задаваемые вопросы</h3>
+						
+							<div class="faq-quest">
+								<ul class="faq-quest__list">
+									<li class="faq-quest__item">
+										<div class="faq-quest__cont">
+											<div class="faq-quest__left">
+												<p class="question">Как получить очную/заочную консультацию доктора?</p>
+												<p class="answer">Записаться на консультацию можно позвонив в удобный для вас салон или по телефону: (495) 988-95-05.</p>
+											</div>
+											<div class="faq-quest__right js-faq__list">
+												<span class="ico"></span>
+											</div>
+										</div>									
+									</li>
+
+									<li class="faq-quest__item">
+										<div class="faq-quest__cont">
+											<div class="faq-quest__left">
+												<p class="question">Что Вы можете посоветовать в качестве профилактики?</p>
+												<p class="answer">Записаться на консультацию можно позвонив в удобный для вас салон или по телефону: (495) 988-95-05.</p>
+											</div>
+											<div class="faq-quest__right current js-faq__list">
+												<span class="ico"></span>
+											</div>
+										</div>									
+									</li>
+
+									<li class="faq-quest__item">
+										<div class="faq-quest__cont">
+											<div class="faq-quest__left">
+												<p class="question">Почему стоит заказывать индивидуальные стельки?</p>
+												<p class="answer">Записаться на консультацию можно позвонив в удобный для вас салон или по телефону: (495) 988-95-05.</p>
+											</div>
+											<div class="faq-quest__right current js-faq__list">
+												<span class="ico"></span>
+											</div>
+										</div>									
+									</li>
+
+									<li class="faq-quest__item">
+										<div class="faq-quest__cont">
+											<div class="faq-quest__left">
+												<p class="question">Как получить очную/заочную консультацию доктора?</p>
+												<p class="answer">Записаться на консультацию можно позвонив в удобный для вас салон или по телефону: (495) 988-95-05.</p>
+											</div>
+											<div class="faq-quest__right js-faq__list">
+												<span class="ico"></span>
+											</div>
+										</div>									
+									</li>
+
+									<li class="faq-quest__item">
+										<div class="faq-quest__cont">
+											<div class="faq-quest__left">
+												<p class="question">Что Вы можете посоветовать в качестве профилактики?</p>
+												<p class="answer">Записаться на консультацию можно позвонив в удобный для вас салон или по телефону: (495) 988-95-05.</p>
+											</div>
+											<div class="faq-quest__right current js-faq__list">
+												<span class="ico"></span>
+											</div>
+										</div>									
+									</li>
+
+									<li class="faq-quest__item">
+										<div class="faq-quest__cont">
+											<div class="faq-quest__left">
+												<p class="question">Что Вы можете посоветовать в качестве профилактики?</p>
+												<p class="answer">Записаться на консультацию можно позвонив в удобный для вас салон или по телефону: (495) 988-95-05.</p>
+											</div>
+											<div class="faq-quest__right current js-faq__list">
+												<span class="ico"></span>
+											</div>
+										</div>									
+									</li>
+
+									<li class="faq-quest__item">
+										<div class="faq-quest__cont">
+											<div class="faq-quest__left">
+												<p class="question">Почему стоит заказывать индивидуальные стельки?</p>
+												<p class="answer">Записаться на консультацию можно позвонив в удобный для вас салон или по телефону: (495) 988-95-05.</p>
+											</div>
+											<div class="faq-quest__right current js-faq__list">
+												<span class="ico"></span>
+											</div>
+										</div>									
+									</li>
+
+									<li class="faq-quest__item">
+										<div class="faq__quest__lnk">
+											<a href="#0" class="button button--orange">Задать вопрос</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</aside>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer" id="footer">
+			<div class="inside">
+				<div class="footer-col footer-col--1">
+					<h3>О КОМПАНИИ</h3>
+					<ul>
+						<li><a href="#0">Ортолайн </a>
+						</li>
+						<li><a href="#0">Новости </a>
+						</li>
+						<li><a href="#0">Видео </a>
+						</li>
+						<li><a href="#0">Полезная информация </a>
+						</li>
+						<li><a href="#0">Производители </a>
+						</li>
+						<li><a href="#0">Вакансии </a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col footer-col--2">
+					<h3>ЛИЧНЫЙ КАБИНЕТ</h3>
+					<ul>
+						<li><a href="#0">Корзина</a>
+						</li>
+						<li><a href="#0">Личный кабинет</a>
+						</li>
+						<li><a href="#0">Доставка заказа</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col footer-col--3">
+					<h3>Услуги</h3>
+					<ul>
+						<li><a href="#0">Бесплатная консультация ортопеда </a>
+						</li>
+						<li><a href="#0">Индивидуальное изготовление стелек </a>
+						</li>
+						<li><a href="#0">Диагностика стоп </a>
+						</li>
+						<li><a href="#0">Ответы на вопросы	</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col footer-col--4">
+					<h3>ПОЛЕЗНАЯ ИНФОРМАЦИЯ</h3>
+					<ul>
+						<li><a href="#0">Где купить</a>
+						</li>
+						<li><a href="#0">Салоны</a>
+						</li>
+						<li><a href="#0">Видео</a>
+						</li>
+						<li><a href="#0">Статьи</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col footer-col--5">
+					<div class="footer-socs">
+						<div class="likes">
+							<div class="sl">
+								<div class="vkontakte"></div>
+								<div class="twitter"></div>
+								<div class="facebook"></div>
+								<div class="odnoklassniki"></div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-adr">142784, Московская область,
+						<br>Бизнес-Парк «Румянцево»,
+						<br>офис 510А (Киевское шоссе, 500 м от МКАД).</div>
+					<div class="footer-tel">Телефон/факс: <strong>(495) 988-95-05</strong>
+						<br><a href="mailto:info@orto.su">info@orto.su</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="inside">
+					<div class="footer-left">© 2015. Услуги представляются ООО «Экзотик-Центр»</div>
+					<div class="footer-right">Создание сайта — <a href="http://nikoland.ru" target="_blank">nikoland</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript">
+		if (typeof jQuery == 'undefined') {document.write(unescape("%3Cscript src='bower_components/jquery/dist/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+		}
+		</script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+		<script type="text/javascript">
+		if (typeof jQuery == 'undefined') {document.write(unescape("%3Cscript src='bower_components/slick-carousel/slick/slick.min.js' type='text/javascript'%3E%3C/script%3E"));
+		}
+		</script>
+
+		
+		
+		<script src="dist/js/plugins.min.js"></script>
+		<script src="dist/js/scripts.min.js"></script>
+	</body>
+	<!--body -->    
+
+</html>

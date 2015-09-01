@@ -82,7 +82,7 @@ $(function(){
 			});
 
 			//загружаем adress_global.json с помощью jQuery
-			jQuery.getJSON('dist/data/adress_global.json', function(json) {
+			jQuery.getJSON('data/adress_global.json', function(json) {
 				
 				window.storageMapObj = ymaps.geoQuery(json);
 
