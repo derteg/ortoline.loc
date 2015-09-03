@@ -357,16 +357,20 @@ h4.product__sub-title{
 }
 .product__achieve-list{
 	text-align: center;
+	font-size: 0;
+	line-height: 0;
 }
 .product__achieve-item{
 	display: inline-block;
 	vertical-align: top;
 	height: 100%;
-	margin: 0 26px;
+	width: 25%;
 	text-align: center;
 	p{
 		margin-top: 6px;
 		opacity: 0;
+		font-size: 14px;
+		line-height: 20px;
 		@include transition(opacity .25s);
 	}
 	&:hover p{
