@@ -161,6 +161,7 @@
 	vertical-align: middle;
 	cursor: pointer;
 	background-color: $white;
+	border-radius: 0px 6px 6px 0px;
 	@include transition(background-color .25s);
 	.ico{
 		@include sprite('ico_62');

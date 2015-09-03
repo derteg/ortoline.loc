@@ -20,6 +20,7 @@ $(function(){
 	}
 	
 	$('.js-select').selectCustom();
+	$('.js-catalogue__menu').catalogeFilter();
 
 	$('.sl').socialLikes();
 
@@ -50,7 +51,6 @@ $(function(){
 	$('#videoSlider').videoSlider();
 	$('#faqAccordMob').faqAccordMob();
 });
-
 
 (function($){
 	var myMap,
@@ -685,6 +685,18 @@ function heightsToMax() {
 				}
 			}
 		}
+
+
+		(function mainMenu(){
+			var $btn = $('.js-mainmenu__btn-all'),
+				$menu = $btn.parents('.mainmenu'),
+				$header = $('.js-header_fix');
+
+				$btn.click(function(event){
+					$menu.toggleClass('active');
+					$header.toggleClass('sub-menu__active');
+				});
+		}());
 	};
 })(jQuery);
 
@@ -733,6 +745,22 @@ function onElementHeightChange(elm, callback){
 
 		$examp.click(function(event){
 			$inp.val($examp.text()).focus();
+		});
+	};
+})(jQuery);
+
+(function($){
+	$.fn.catalogeFilter = function(){
+		var categoryBlock = this;
+
+		$.getJSON('data/catalogue.json', function(json){
+			var items = [],
+				catalogue = json.catalogue,
+				name, filter;
+
+			for(var i = 0; i < catalogue.length; i++){
+				// console.log(catalogue[i].filter);
+			}
 		});
 	};
 })(jQuery);
@@ -1080,7 +1108,6 @@ function onElementHeightChange(elm, callback){
 
 		$btn.click(function(event){
 			var $href = $(this).attr('href');
-			event.preventDefault();
 
 			$('body').animate({
 				scrollTop: $($href).offset().top - headH

@@ -19,15 +19,125 @@
 	}
 }
 
+.mainmenu{
+	bottom: 0;
+}
 .mainmenu__buttons_fr{
 	width: auto;
 	max-width: none;
 	float: none;
 	margin: 0px -10px;
 }
+
+.mainmenu{
+	&.active{
+		.mainmenu__list{
+			display: block;
+		}
+	}
+}
 .mainmenu__list{
 	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	max-width: none;
+	padding-top: 58px;
+	margin-top: -4px;
+	background-color: $white;
+	z-index: 1000;
+	-webkit-box-shadow: 0px 9px 18px 5px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 9px 18px 5px rgba(0,0,0,0.3);
+	box-shadow: 0px 9px 18px 5px rgba(0,0,0,0.3);
 }
+.mainmenu__item{
+	display: block;
+	padding: 0 20px 16px;
+	border-bottom: $brdLnk5;
+}
+.mainmenu__link{
+	display: block;
+	font-weight: normal;
+	border: none;
+	padding: 18px 0 8px;
+	font-size: 14px;
+	line-height: 20px;
+}
+.mainmenu__list_sub{
+	display: block;
+	padding: 0px 10px;
+}
+.mainmenu__lnk_sub{
+	display: block;
+	color: $black;
+	font-size: 13px;
+	line-height: 18px;
+	padding: 4px 0;
+	&:hover,
+	&:focus{
+		color: $blue;
+	}
+}
+.header_fix{
+	.mainmenu__list{
+		left: -20px;
+		padding: 58px 20px 0;
+	}
+	.mainmenu__item{
+		margin: 0px -20px;
+	}
+	.mainmenu__list-links_sub{
+		left: -20px;
+		padding: 0px 20px;
+		.links_sub-wrap{
+			padding: 0;
+		}
+	}
+	&.sub-menu__active{
+		overflow-y: auto;
+		height: 100%;
+	}
+}
+.mainmenu{
+	&.active{
+		.mainmenu__list-links_sub{
+			display: block;
+		}
+	}
+}
+.mainmenu__list-links_sub{
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	margin-top: -4px;
+	left: 0;
+	line-height: 57px;
+	z-index: 1001;
+	background-color: #f7f7f7;
+	&:before{
+		content: "";
+		position: absolute;
+		bottom: 100%;
+		left: 5%;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 11px 14px 11px;
+		border-color: transparent transparent #f7f7f7 transparent;
+	}
+	.links_sub-wrap{
+		padding: 0px 20px;
+	}
+	.lnk{
+		display: inline-block;
+		vertical-align: bottom;
+		font-size: 12px;
+		color: $blue;
+		margin-right: 6px;
+	}
+}
+
 .mainmenu__buttons_fr-wrap{
 	width: 33.3%;
 }
@@ -60,6 +170,7 @@
 		z-index: 1000;
 		opacity: 1;
 		padding: 20px 0;
+		bottom: 0;
 		position: relative;
 	}
 }

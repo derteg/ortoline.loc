@@ -17,6 +17,13 @@
 	.header__left_wrap{
 		margin-right: 5%;
 	}
+	.header_fix {
+		.header__left {
+			.logo__lnk{
+				width: 38%;
+			}
+		}
+	}
 	.mainmenu__list{
 		width: 57%;	
 	}

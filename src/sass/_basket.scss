@@ -7,7 +7,7 @@
 	margin-bottom: 34px;
 	text-align: justify;
 	line-height: 0;
-	font-size: 0px;
+	font-size: 1px;
 	&:after{
 		width: 100%;
 		height: 0;
@@ -109,13 +109,12 @@
 	}
 }
 .basket__row-final{
+	text-align: left;
 	padding: 0px 30px 34px;
+	font-size: 0;
 	&.no-brd{
 		border-bottom: none;
 	}
-}
-.basket__row-final{
-	text-align: left;
 	.text{
 		font-size: 16px;
 		line-height: 45px;
@@ -134,8 +133,9 @@
 		}
 	}
 	.form__btn{
-		padding: 14px 60px;
+		padding: 0 60px;
 		font-size: 13px;
+		line-height: 44px;
 		text-transform: uppercase;
 		border: none;
 	}
