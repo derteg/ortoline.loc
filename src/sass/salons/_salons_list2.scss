@@ -129,8 +129,8 @@
 
 .adress__nav-type{
 	line-height: 20px;
-	display: inline-block;
-	margin-left: 144px;
+	display: inline-block; 
+	margin-left: 4%;
 	.text{
 		font-size: 14px;
 		vertical-align: middle;
@@ -180,19 +180,18 @@
 		transition: none;
 	}
 }
-// .adress__nav-btn_sheme{
-// 	.ico{
-// 		right: 8px;
-// 		@include sprite('ico_52');
-// 	}
-// 	&.current{
-// 		.ico{
-// 			@include sprite('ico_53'); 
-// 		}
-// 	}
-// }
+.adress__nav-btn_sheme{
+	.ico{
+		right: 8px;
+		@include sprite('ico_52');
+	}
+	&.current{
+		.ico{
+			@include sprite('ico_53'); 
+		}
+	}
+}
 .adress__nav-btn_lists{
-	display: none;
 	.ico{
 		right: 8px;
 		@include sprite('ico_54');

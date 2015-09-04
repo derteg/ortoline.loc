@@ -16,63 +16,34 @@
 
 .adress__nav-btn__list{
 	position: relative;
-	height: 78px;
-	margin-top: 18px;
+	margin: 18px -10px 0;
+	line-height: 0;
+	font-size: 0;
 	&.fr{
 		float: none;
 	}
 }
 .adress__nav-btn__item{
-	width: 88px;
-	height: 78px;
-	line-height: 78px;
-	box-sizing: border-box;
-	padding: 0;
-	position: absolute;
-	top: 0;
+	width: 50%;
+	display: inline-block;
 	margin: 0;
-	border-radius: 4px;
-	color: $black;
-	display: block;
-	background-color: $lightGray;
-	&.current{
-		color: $orange;
-		background-color: $black;
-	}
-	.button{
-		background-color: transparent;
-	}
+	text-align: center;
 	.ico{
-		right: 0;
-		margin-bottom: 8px;
+		right: 8px;
 	}
 	.text{
-		display: block;
-		font-size: 13px;
-		line-height: 12px;
-		font-weight: normal;
+		font-size: 15px;
 		text-transform: none;
-		text-align: center;
+		font-weight: normal;
 	}
 }
 .adress__nav-btn__wrap{
-	vertical-align: middle;
-	display: inline-block;
-	text-align: center;
-	line-height: 1;
-	width: 100%;
-	padding: 0;
-}
-
-.adress__nav-btn_lists{
-	left: 0;
+	margin: 0px 10px;
+	padding: 18px 25px;
+	display: block;
 }
 .adress__nav-btn_sheme{
-	right: 0;
-}
-.adress__nav-btn_map{
-	right: 0;
-	display: inline-block;
+	display: none;
 }
 
 .adress__map{

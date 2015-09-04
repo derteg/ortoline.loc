@@ -104,6 +104,24 @@
 		margin-top: -80px;
 		margin-bottom: 40px;
 	}
+
+	.contacts__left{
+		width: 62%;
+	}
+	.contacts__right{
+		width: 38%;
+	}
+	.contacts__el_yellow{
+		background-position: 0 10%;
+	}
+	.contacts__coord__text{
+		float: none;
+	}
+	.contacts__scheme{
+		float: none;
+		margin-top: 20px;
+		margin-left: -76px;
+	}
 }
 
 @media (max-width:767px) and (min-width:450px) {
@@ -149,5 +167,11 @@
 	}
 	.basket__cell-price{
 		display: block;
+	}
+	.adress__nav-btn__item{
+		width: 100%;
+	}
+	.adress__nav-btn_lists{
+		margin-bottom: 10px;
 	}
 }
