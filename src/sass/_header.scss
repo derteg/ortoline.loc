@@ -2,6 +2,8 @@
 	width: 100%;
 	background-color: $white;
 	z-index: 1000;
+	position: absolute;
+	top: 0;
 	&.brd__bottom{
 		-webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
 		-moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
@@ -293,6 +295,8 @@
 	-webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.3);
 	-moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.3);
 	box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.3);
+	-webkit-animation: headerFix .5s;
+	animation: headerFix .5s;
 	.header__wrap {
 		padding: 7px 0;
 	}

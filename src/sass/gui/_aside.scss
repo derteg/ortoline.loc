@@ -128,9 +128,10 @@
 		@include sprite('ico_56');
 		position: absolute;
 		top: 15px;
-		right: 20px
+		right: 20px;
 	}
 }
+
 .aside-filter__form{
 	padding: 0px 26px;
 }
@@ -139,12 +140,4 @@
 }
 .aside-filter__item{
 	margin-bottom: 28px;
-}
-.aside-filter__lnk{
-	font-size: 13px;
-	font-weight: bold;
-	color: $gray;
-	&:hover{
-		color: $grayHov2;
-	}
 }

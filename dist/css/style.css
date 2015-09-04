@@ -391,6 +391,8 @@ h3 {
   line-height: 36px; }
 
 #all {
+  top: 209px;
+  padding-bottom: 209px;
   height: auto;
   position: relative;
   -webkit-transition: padding 0.25s;
@@ -785,13 +787,6 @@ h3 {
 
 .aside-filter__item {
   margin-bottom: 28px; }
-
-.aside-filter__lnk {
-  font-size: 13px;
-  font-weight: bold;
-  color: #8797a8; }
-  .aside-filter__lnk:hover {
-    color: #C8C7C7; }
 
 .breadcrumbs {
   padding-top: 42px;
@@ -1493,10 +1488,24 @@ h3 {
   border-radius: 5px;
   display: inline-block; }
 
+@-webkit-keyframes headerFix {
+  0% {
+    -webkit-transform: translateY(-72px); }
+  100% {
+    -webkit-transform: translateY(0); } }
+
+@-webkit-keyframes headerFix {
+  0% {
+    transform: translateY(-72px); }
+  100% {
+    transform: translateY(0); } }
+
 .header {
   width: 100%;
   background-color: #ffffff;
-  z-index: 1000; }
+  z-index: 1000;
+  position: absolute;
+  top: 0; }
   .header.brd__bottom {
     -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
@@ -1779,7 +1788,9 @@ h3 {
   z-index: 1000;
   -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  -webkit-animation: headerFix 0.5s;
+  animation: headerFix 0.5s; }
   .header_fix .header__wrap {
     padding: 7px 0; }
   .header_fix .header__left .logo__lnk {
@@ -4397,6 +4408,56 @@ h4.product__sub-title {
       display: block;
       font-size: 30px; }
 
+.product__category {
+  display: none;
+  position: absolute;
+  top: 92px;
+  left: 20px;
+  width: 50%;
+  padding: 32px 20px;
+  border-radius: 4px;
+  z-index: 500;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.3); }
+
+.product__category-list {
+  font-size: 0;
+  line-height: 0; }
+
+.product__category-item {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 20px; }
+
+.product__category-lnk {
+  display: block;
+  margin-right: 30px; }
+  .product__category-lnk .text {
+    color: #2c2c2c;
+    font-size: 14px;
+    line-height: 20px;
+    border-bottom: 1px solid #dadada;
+    -webkit-transition: border 0.25s;
+    -moz-transition: border 0.25s;
+    -o-transition: border 0.25s;
+    transition: border 0.25s; }
+  .product__category-lnk:hover .text {
+    border-bottom-color: transparent; }
+
+.product__category-triangle {
+  display: inline-block;
+  position: absolute;
+  bottom: 100%;
+  left: 40px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 14px 14px 14px;
+  border-color: transparent transparent #ffffff transparent; }
+
 .adress-inner__map {
   width: 100%;
   height: 428px; }
@@ -4615,7 +4676,7 @@ h4.product__sub-title {
 .adress__nav-type {
   line-height: 20px;
   display: inline-block;
-  margin-left: 4%; }
+  margin-left: 120px; }
   .adress__nav-type .text {
     font-size: 14px;
     vertical-align: middle;
@@ -5642,6 +5703,9 @@ p.services__info {
   padding: 78px 0; }
 
 @media (max-width: 1000px) and (min-width: 768px) {
+  #all {
+    top: 183px;
+    padding-bottom: 183px; }
   .inside {
     max-width: 1140px; }
   .aside_right {
@@ -6608,6 +6672,9 @@ p.services__info {
     width: 100%; } }
 
 @media (max-width: 767px) {
+  #all {
+    top: 0;
+    padding-bottom: 0; }
   .inside {
     min-width: 280px;
     max-width: 767px; }
@@ -6732,6 +6799,8 @@ p.services__info {
     .contact__popup img {
       width: 100%;
       height: auto; }
+  .header {
+    position: relative; }
   .header__wrap {
     padding: 20px 0 10px; }
   .header__left {
@@ -7478,6 +7547,10 @@ p.services__info {
     padding: 0 20px; }
   .inside_fix .product__info {
     padding-bottom: 80px; }
+  .product__category {
+    width: 80%; }
+  .product__category-item {
+    width: 100%; }
   .video.col--75 {
     width: 100%; }
   .video-footer {
@@ -8214,7 +8287,9 @@ p.services__info {
   .contacts__scheme {
     float: none;
     margin-top: 20px;
-    margin-left: -76px; } }
+    margin-left: -76px; }
+  .adress__nav-type {
+    margin-left: 4%; } }
 
 @media (max-width: 767px) and (min-width: 450px) {
   .video .col--33 {

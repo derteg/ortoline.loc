@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+	<head>
+	    <meta charset="utf-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Каталог товаров :: Ortoline</title>
+	    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+	    <link href="dist/css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		<header class="header js-header_fix brd__bottom">
+		    <div class="inside">
+		        <div class="header__wrap clearfix">
+		            <div class="header__left">
+		                <a class="logo__lnk" href="links.html"><img src="dist/img/logo.png" alt="logo" class="logo" /></a>
+		                
+		                <div class="header__left_wrap">
+		                    <div class="header__contact">
+		                        <div class="header__tel">+7 495 988-95-05</div>
+		                        <div class="header__call"><a class="lnk dotted js-lnk_popup" data-popup-type="callback" href="#0">Заказать звонок</a></div>
+		                    </div>
+		                    
+		                    <div class="mainmenu__buttons mainmenu__buttons_centr">
+		                        <div class="mainmenu__buttons_centr-wrap">
+		                            <a class="button button--blue js-catalogue__menu" href="#0"><span>Каталог товаров</span></a>
+		                        </div>
+		                        <div class="mainmenu__buttons_centr-wrap">
+		                            <a class="button button--orange" href="#0"><img src="dist/img/ic-location.png" alt="ic-location" width="12" /><span>Наши салоны</span></a>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		            <div class="header__right">
+		                <div class="header__right_cont">
+		                    <a class="header__right_btn profile-btn js-lnk_popup" data-popup-type="login" href="#">
+		                        <div class="profile-btn__pic"></div>
+		                        <span class="profile-btn__text">Личный<br/> кабинет</span>
+		                    </a>
+		                    <a class="header__right_btn basket-btn" href="#">
+		                        <div class="basket-btn__badge">
+		                            <span class="pic"></span>
+		                            <span class="num">5</span>
+		                        </div>
+		                        <div class="basket-btn__cont">
+		                            <p class="basket__label">Заказ на сумму </p>
+		                            <p class="basket__price">2 650 <span class="b-rub">Р</span></p>
+		                        </div>
+		                    </a>                            
+		                </div>
+		            </div>
+		        </div>
+		    
+		        <nav class="mainmenu clearfix">
+		            <ul class="mainmenu__list">
+		                <li class="mainmenu__item">
+		                    <a class="lnk__black mainmenu__link" href="#0">Компания</a>
+		                </li>
+		                <li class="mainmenu__item">
+		                    <a class="lnk__black mainmenu__link" href="#0">Услуги</a>
+		                </li>
+		                <li class="mainmenu__item">
+		                    <a class="lnk__black mainmenu__link" href="#0">Информация</a>
+		                </li>
+		                <li class="mainmenu__item">
+		                    <a class="lnk__black mainmenu__link" href="#0">Доставка</a>
+		                </li>
+		                <li class="mainmenu__item">
+		                    <a class="lnk__black mainmenu__link" href="#0">Контакты </a>
+		                </li>
+		            </ul>
+		            <div class="mainmenu__buttons mainmenu__buttons_fr">
+		                <div class="mainmenu__btn-all">
+		                    <a href="#0" class="button button--gray"><span class="ico"></span><span class="text">Все разделы сайта</span></a>
+		                </div>
+		                <div class="mainmenu__buttons_fr-wrap">
+		                    <a class="button button--blue js-catalogue__menu" href="#0"><span>Каталог товаров</span></a>
+		                </div>
+		                <div class="mainmenu__buttons_fr-wrap">
+		                    <a class="button button--orange" href="#0"><img src="dist/img/ic-location.png" alt="ic-location" width="12" /><span>Наши салоны</span></a>
+		                </div>
+		            </div>
+		        </nav>
+		    </div>
+		</header>
+
+		<div class="promophone_mob js-promophone_mob">
+		    <div class="promophone__phone">
+		        <span class="ico"></span>
+		        <a href="tel:+74959889505" class="text">+7 495 988-95-05</a>
+		    </div>  
+		</div>
+		
+		<div id="all">
+			<div class="bg_01">
+				<div class="inside">
+					<div class="cols product__catalogue">
+						<aside class="aside aside_left aside-filter col col--25">
+							<div class="aside-filter__title">
+								<div class="button button--blue js-catalogue__menu">Каталог товаров <i class="ico"></i></div>
+							</div>
+							
+							<div class="product__filter_mob">
+								<ul class="product__filter_mob-list">
+									<li class="product__filter_mob-item">
+										<span class="button button--gray"><span class="text">Для детей</span></span>
+									</li>
+									<li class="product__filter_mob-item">
+										<span class="button button--gray"><span class="text">Ортопедические подушки для детей</span></span>
+									</li>
+									<li class="product__filter_mob-item">
+										<span class="button button--gray"><span class="text">Другая категория</span></span>
+									</li>
+									<li class="product__filter_mob-item">
+										<span class="button button__filter button--orange js-product__filter_mob"><span class="ico"></span><span class="text">Фильтры</span></span>
+									</li>
+								</ul>
+							</div>
+
+							<div class="aside-filter__wrap">
+								<form class="aside-filter__form">
+									<div class="aside__accordion accordion" id="accordionAside">
+										<div class="aside__accordion__section">
+											<a href="#accordion-1" class="aside__accordion__section__title js-title">Бандажи <span class="ico ico-arr"></span></a>
+														
+											<div id="accordion-1" class="aside__accordion__section__content js-content">
+												<div class="field__cell">
+													<input class="chk-cust" id="chk_01" type="checkbox" />
+													<label class="chk-cust__label" for="chk_01"><span class="ico"></span>Мужские</label>
+												</div>
+												<div class="field__cell">
+													<input class="chk-cust" id="chk_02" type="checkbox" checked="checked"/>
+													<label class="chk-cust__label" for="chk_02"><span class="ico"></span>Женские</label>
+												</div>
+												<div class="field__cell">
+													<input class="chk-cust" id="chk_03" type="checkbox" />
+													<label class="chk-cust__label" for="chk_03"><span class="ico"></span>Универсальные</label>
+												</div>
+											</div>
+										</div>
+														
+										<div class="aside__accordion__section">
+											<a href="#accordion-2" class="aside__accordion__section__title js-title">Для верхних конечностей <span class="ico ico-arr"></span></a>
+														
+											<div id="accordion-2" class="aside__accordion__section__content js-content">
+												<div class="field__cell">
+													<input class="chk-cust" id="chk_04" type="checkbox" />
+													<label class="chk-cust__label" for="chk_04"><span class="ico"></span>Мужские</label>
+												</div>
+												<div class="field__cell">
+													<input class="chk-cust" id="chk_05" type="checkbox" checked="checked"/>
+													<label class="chk-cust__label" for="chk_05"><span class="ico"></span>Женские</label>
+												</div>
+												<div class="field__cell">
+													<input class="chk-cust" id="chk_06" type="checkbox" />
+													<label class="chk-cust__label" for="chk_06"><span class="ico"></span>Универсальные</label>
+												</div>
+											</div>
+										</div>
+														
+										<div class="aside__accordion__section">
+											<a href="#accordion-3" class="aside__accordion__section__title js-title">Тип <span class="ico ico-arr"></span></a>
+														
+											<div id="accordion-3" class="aside__accordion__section__content js-content">
+												<div class="field__cell">
+													<input class="chk-cust" id="chk_07" type="checkbox" />
+													<label class="chk-cust__label" for="chk_07"><span class="ico"></span>Мужские</label>
+												</div>
+												<div class="field__cell">
+													<input class="chk-cust" id="chk_08" type="checkbox" checked="checked"/>
+													<label class="chk-cust__label" for="chk_08"><span class="ico"></span>Женские</label>
+												</div>
+												<div class="field__cell">
+													<input class="chk-cust" id="chk_09" type="checkbox" />
+													<label class="chk-cust__label" for="chk_09"><span class="ico"></span>Универсальные</label>
+												</div>
+											</div>
+										</div>
+														
+										<div class="aside__accordion__section">
+											<a href="#accordion-4" class="aside__accordion__section__title js-title">Пол <span class="ico ico-arr"></span></a>
+														
+											<div id="accordion-4" class="aside__accordion__section__content js-content">
+												<div class="field__cell">
+													<input class="chk-cust" id="chk_10" type="checkbox" />
+													<label class="chk-cust__label" for="chk_10"><span class="ico"></span>Мужские</label>
+												</div>
+												<div class="field__cell">
+													<input class="chk-cust" id="chk_11" type="checkbox" checked="checked"/>
+													<label class="chk-cust__label" for="chk_11"><span class="ico"></span>Женские</label>
+												</div>
+												<div class="field__cell">
+													<input class="chk-cust" id="chk_12" type="checkbox" />
+													<label class="chk-cust__label" for="chk_12"><span class="ico"></span>Универсальные</label>
+												</div>
+											</div>
+										</div>
+														
+										<div class="aside__accordion__section">
+											<a href="#accordion-5" class="aside__accordion__section__title js-title active">Выберите размер <span class="ico ico-arr"></span></a>
+														
+											<div id="accordion-5" class="aside__accordion__section__content js-content" style="display: block;">
+												<ul class="product__sizes-list">
+													<li class="product__sizes-item">35</li>
+													<li class="product__sizes-item">36</li>
+													<li class="product__sizes-item current">37</li>
+													<li class="product__sizes-item">38</li>
+													<li class="product__sizes-item">39</li>
+													<li class="product__sizes-item">40</li>
+													<li class="product__sizes-item">41</li>
+													<li class="product__sizes-item">42</li>
+													<li class="product__sizes-item">43</li>
+													<li class="product__sizes-item">44</li>
+													<li class="product__sizes-item">45</li>
+													<li class="product__sizes-item">46</li>
+													<li class="product__sizes-item">47</li>
+													<li class="product__sizes-item">48</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="aside__accordion__section">
+											<a href="#accordion-6" class="aside__accordion__section__title js-title">Бренды <span class="ico ico-arr"></span></a>
+														
+											<div id="accordion-6" class="aside__accordion__section__content bg_01 js-content">
+												<ul class="accordion__lnk-list">
+													<li class="accordion__lnk-list__item">
+														<a href="#0" class="accordion__lnk-list__lnk">VALLEVERDE</a>
+													</li>
+													<li class="accordion__lnk-list__item">
+														<a href="#0" class="accordion__lnk-list__lnk">ORTO</a>
+													</li>
+													<li class="accordion__lnk-list__item">
+														<a href="#0" class="accordion__lnk-list__lnk">CONFEETTI</a>
+													</li>
+													<li class="accordion__lnk-list__item">
+														<a href="#0" class="accordion__lnk-list__lnk">GELATTO</a>
+													</li>
+													<li class="accordion__lnk-list__item">
+														<a href="#0" class="accordion__lnk-list__lnk">KALKOS</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</form>
+
+								<ul class="aside-filter__list">
+									<li class="aside-filter__item">
+										<a href="#0" class="aside-filter__lnk">Для беременных</a>
+									</li>
+									<li class="aside-filter__item">
+										<a href="#0" class="aside-filter__lnk">Послеоперационные</a>
+									</li>
+									<li class="aside-filter__item">
+										<a href="#0" class="aside-filter__lnk">Паховые</a>
+									</li>
+									<li class="aside-filter__item">
+										<a href="#0" class="aside-filter__lnk">При опущении внутренних органов</a>
+									</li>
+									<li class="aside-filter__item">
+										<a href="#0" class="aside-filter__lnk">Для нижних конечностей</a>
+									</li>
+									<li class="aside-filter__item">
+										<a href="#0" class="aside-filter__lnk">Для спины</a>
+									</li>
+									<li class="aside-filter__item">
+										<a href="#0" class="aside-filter__lnk">Для шеи</a>
+									</li>
+									<li class="aside-filter__item">
+										<a href="#0" class="aside-filter__lnk">На грудную клетку</a>
+									</li>
+									<li class="aside-filter__item">
+										<a href="#0" class="aside-filter__lnk">Противорадикулитные</a>
+									</li>
+								</ul>
+							</div>
+						</aside>
+										
+						<section class="product__sub product-catalogue clearfix col col--75">
+							<form class="search__menu clearfix">
+							
+								<div class="search__menu_field" id="searchInp">
+									<input class="search__menu_inp" type="search" placeholder="ПОИСК">
+									<div class="search__menu_item">
+										<p>Например, <a href="#0" class="example js-example">Корсеты (бандажи)</a></p>
+										<span class="search__ico"></span>
+									</div>
+								</div>
+							</form>
+
+							<div class="product-catalogue__row mt-20">								
+								<div class="product__sub-card__list cols" data-inrow="4" data-max="parent">
+
+									<h4 class="product__sub-title">Для беременных</h4>
+									<div class="card col col--33" data-max="child">
+										<div class="card__wrap">
+											<div class="card__image">
+												<img src="dist/img/m-8.png" alt="rec-2" />
+											</div>
+											<div class="card__text">
+												<div class="card__title">Ортопедическая обувь БЕРН</div>
+												<div class="card__brand"><span class="title">Бренд</span> <span class="black">Ortmann</span>
+												</div>
+												<div class="card__price">4 100 <span class="b-rub">Р</span>
+												</div>
+												<div class="card__info">
+													<p>Отопедические полуботинки для людей с деформацией стопы. Обувь из мягкой
+														телячьей кожи.</p>
+													<p>Наличие удобных застёжек "липучек" гарантирует лёгкое надевание обуви
+														и даёт возможность регулировать объем.</p>
+												</div>
+											</div>
+											<div>
+												<a class="card__button lnk__black" href="#">В корзину</a>
+											</div>
+											<div class="card__line">
+												<div class="card__circle js-card__info"></div>
+											</div>
+										</div>
+									</div>
+									<div class="card col col--33" data-max="child">
+										<div class="card__wrap">
+										  <div class="card__image">
+											  <img src="dist/pic/pic_10.jpg" height="179" width="183" alt="rec-2" />
+										  </div>
+										  <div class="card__text">
+											  <div class="card__title">Ортопедическая обувь БЕРН</div>
+											  <div class="card__brand"><span class="title">Бренд</span> <span class="black">Ortmann</span>
+											  </div>
+											  <div class="card__price">4 100 <span class="b-rub">Р</span>
+											  </div>
+											  <div class="card__info">
+												  <p>Отопедические полуботинки для людей с деформацией стопы. Обувь из мягкой
+													  телячьей кожи.</p>
+												  <p>Наличие удобных застёжек "липучек" гарантирует лёгкое надевание обуви
+													  и даёт возможность регулировать объем.</p>
+											  </div>
+										  </div>
+										  <div>
+											  <a class="card__button lnk__black" href="#">В корзину</a>
+										  </div>
+										  <div class="card__line">
+											  <div class="card__circle js-card__info"></div>
+										  </div>
+										</div>
+									</div>
+									<div class="card col col--33" data-max="child">
+										<div class="card__wrap">
+										  <div class="card__image">
+											 <img src="dist/pic/pic_11.jpg" alt="rec-2" width="176" height="150" />
+										 </div>
+										 <div class="card__text">
+											 <div class="card__title">Ортопедическая обувь БЕРН</div>
+											 <div class="card__brand"><span class="title">Бренд</span> <span class="black">Ortmann</span>
+											 </div>
+											 <div class="card__price">4 100 <span class="b-rub">Р</span>
+											 </div>
+											 <div class="card__info">
+												 <p>Отопедические полуботинки для людей с деформацией стопы. Обувь из мягкой
+													 телячьей кожи.</p>
+												 <p>Наличие удобных застёжек "липучек" гарантирует лёгкое надевание обуви
+													 и даёт возможность регулировать объем.</p>
+											 </div>
+										 </div>
+										 <div>
+											 <a class="card__button lnk__black" href="#">В корзину</a>
+										 </div>
+										 <div class="card__line">
+											 <div class="card__circle js-card__info"></div>
+										 </div>
+									   </div>
+									</div>
+
+									<h4 class="product__sub-title">Послеоперационные</h4>
+									<div class="card col col--33" data-max="child">
+										<div class="card__wrap">
+											<div class="card__image">
+												<img src="dist/img/m-8.png" alt="rec-2" />
+											</div>
+											<div class="card__text">
+												<div class="card__title">Ортопедическая обувь БЕРН</div>
+												<div class="card__brand"><span class="title">Бренд</span> <span class="black">Ortmann</span>
+												</div>
+												<div class="card__price">4 100 <span class="b-rub">Р</span>
+												</div>
+												<div class="card__info">
+													<p>Отопедические полуботинки для людей с деформацией стопы. Обувь из мягкой
+														телячьей кожи.</p>
+													<p>Наличие удобных застёжек "липучек" гарантирует лёгкое надевание обуви
+														и даёт возможность регулировать объем.</p>
+												</div>
+											</div>
+											<div>
+												<a class="card__button lnk__black" href="#">В корзину</a>
+											</div>
+											<div class="card__line">
+												<div class="card__circle js-card__info"></div>
+											</div>
+										</div>
+									</div>
+									<div class="card col col--33" data-max="child">
+										<div class="card__wrap">
+										  <div class="card__image">
+											  <img src="dist/pic/pic_10.jpg" height="179" width="183" alt="rec-2" />
+										  </div>
+										  <div class="card__text">
+											  <div class="card__title">Ортопедическая обувь БЕРН</div>
+											  <div class="card__brand"><span class="title">Бренд</span> <span class="black">Ortmann</span>
+											  </div>
+											  <div class="card__price">4 100 <span class="b-rub">Р</span>
+											  </div>
+											  <div class="card__info">
+												  <p>Отопедические полуботинки для людей с деформацией стопы. Обувь из мягкой
+													  телячьей кожи.</p>
+												  <p>Наличие удобных застёжек "липучек" гарантирует лёгкое надевание обуви
+													  и даёт возможность регулировать объем.</p>
+											  </div>
+										  </div>
+										  <div>
+											  <a class="card__button lnk__black" href="#">В корзину</a>
+										  </div>
+										  <div class="card__line">
+											  <div class="card__circle js-card__info"></div>
+										  </div>
+										</div>
+									</div>
+									<div class="card col col--33" data-max="child">
+										<div class="card__wrap">
+										  <div class="card__image">
+											 <img src="dist/pic/pic_11.jpg" alt="rec-2" width="176" height="150" />
+										 </div>
+										 <div class="card__text">
+											 <div class="card__title">Ортопедическая обувь БЕРН</div>
+											 <div class="card__brand"><span class="title">Бренд</span> <span class="black">Ortmann</span>
+											 </div>
+											 <div class="card__price">4 100 <span class="b-rub">Р</span>
+											 </div>
+											 <div class="card__info">
+												 <p>Отопедические полуботинки для людей с деформацией стопы. Обувь из мягкой
+													 телячьей кожи.</p>
+												 <p>Наличие удобных застёжек "липучек" гарантирует лёгкое надевание обуви
+													 и даёт возможность регулировать объем.</p>
+											 </div>
+										 </div>
+										 <div>
+											 <a class="card__button lnk__black" href="#">В корзину</a>
+										 </div>
+										 <div class="card__line">
+											 <div class="card__circle js-card__info"></div>
+										 </div>
+									   </div>
+									</div>
+
+									<h4 class="product__sub-title">Паховые</h4>
+									<div class="card col col--33" data-max="child">
+										<div class="card__wrap">
+											<div class="card__image">
+												<img src="dist/img/m-8.png" alt="rec-2" />
+											</div>
+											<div class="card__text">
+												<div class="card__title">Ортопедическая обувь БЕРН</div>
+												<div class="card__brand"><span class="title">Бренд</span> <span class="black">Ortmann</span>
+												</div>
+												<div class="card__price">4 100 <span class="b-rub">Р</span>
+												</div>
+												<div class="card__info">
+													<p>Отопедические полуботинки для людей с деформацией стопы. Обувь из мягкой
+														телячьей кожи.</p>
+													<p>Наличие удобных застёжек "липучек" гарантирует лёгкое надевание обуви
+														и даёт возможность регулировать объем.</p>
+												</div>
+											</div>
+											<div>
+												<a class="card__button lnk__black" href="#">В корзину</a>
+											</div>
+											<div class="card__line">
+												<div class="card__circle js-card__info"></div>
+											</div>
+										</div>
+									</div>
+									<div class="card col col--33" data-max="child">
+										<div class="card__wrap">
+										  <div class="card__image">
+											  <img src="dist/pic/pic_10.jpg" height="179" width="183" alt="rec-2" />
+										  </div>
+										  <div class="card__text">
+											  <div class="card__title">Ортопедическая обувь БЕРН</div>
+											  <div class="card__brand"><span class="title">Бренд</span> <span class="black">Ortmann</span>
+											  </div>
+											  <div class="card__price">4 100 <span class="b-rub">Р</span>
+											  </div>
+											  <div class="card__info">
+												  <p>Отопедические полуботинки для людей с деформацией стопы. Обувь из мягкой
+													  телячьей кожи.</p>
+												  <p>Наличие удобных застёжек "липучек" гарантирует лёгкое надевание обуви
+													  и даёт возможность регулировать объем.</p>
+											  </div>
+										  </div>
+										  <div>
+											  <a class="card__button lnk__black" href="#">В корзину</a>
+										  </div>
+										  <div class="card__line">
+											  <div class="card__circle js-card__info"></div>
+										  </div>
+										</div>
+									</div>
+									<div class="card col col--33" data-max="child">
+										<div class="card__wrap">
+										  <div class="card__image">
+											 <img src="dist/pic/pic_11.jpg" alt="rec-2" width="176" height="150" />
+										 </div>
+										 <div class="card__text">
+											 <div class="card__title">Ортопедическая обувь БЕРН</div>
+											 <div class="card__brand"><span class="title">Бренд</span> <span class="black">Ortmann</span>
+											 </div>
+											 <div class="card__price">4 100 <span class="b-rub">Р</span>
+											 </div>
+											 <div class="card__info">
+												 <p>Отопедические полуботинки для людей с деформацией стопы. Обувь из мягкой
+													 телячьей кожи.</p>
+												 <p>Наличие удобных застёжек "липучек" гарантирует лёгкое надевание обуви
+													 и даёт возможность регулировать объем.</p>
+											 </div>
+										 </div>
+										 <div>
+											 <a class="card__button lnk__black" href="#">В корзину</a>
+										 </div>
+										 <div class="card__line">
+											 <div class="card__circle js-card__info"></div>
+										 </div>
+									   </div>
+									</div>
+
+									<h4 class="product__sub-title">Для нижних конечностей</h4>
+									<div class="card col col--33" data-max="child">
+										<div class="card__wrap">
+											<div class="card__image">
+												<img src="dist/img/m-8.png" alt="rec-2" />
+											</div>
+											<div class="card__text">
+												<div class="card__title">Ортопедическая обувь БЕРН</div>
+												<div class="card__brand"><span class="title">Бренд</span> <span class="black">Ortmann</span>
+												</div>
+												<div class="card__price">4 100 <span class="b-rub">Р</span>
+												</div>
+												<div class="card__info">
+													<p>Отопедические полуботинки для людей с деформацией стопы. Обувь из мягкой
+														телячьей кожи.</p>
+													<p>Наличие удобных застёжек "липучек" гарантирует лёгкое надевание обуви
+														и даёт возможность регулировать объем.</p>
+												</div>
+											</div>
+											<div>
+												<a class="card__button lnk__black" href="#">В корзину</a>
+											</div>
+											<div class="card__line">
+												<div class="card__circle js-card__info"></div>
+											</div>
+										</div>
+									</div>
+									<div class="card col col--33" data-max="child">
+										<div class="card__wrap">
+										  <div class="card__image">
+											  <img src="dist/pic/pic_10.jpg" height="179" width="183" alt="rec-2" />
+										  </div>
+										  <div class="card__text">
+											  <div class="card__title">Ортопедическая обувь БЕРН</div>
+											  <div class="card__brand"><span class="title">Бренд</span> <span class="black">Ortmann</span>
+											  </div>
+											  <div class="card__price">4 100 <span class="b-rub">Р</span>
+											  </div>
+											  <div class="card__info">
+												  <p>Отопедические полуботинки для людей с деформацией стопы. Обувь из мягкой
+													  телячьей кожи.</p>
+												  <p>Наличие удобных застёжек "липучек" гарантирует лёгкое надевание обуви
+													  и даёт возможность регулировать объем.</p>
+											  </div>
+										  </div>
+										  <div>
+											  <a class="card__button lnk__black" href="#">В корзину</a>
+										  </div>
+										  <div class="card__line">
+											  <div class="card__circle js-card__info"></div>
+										  </div>
+										</div>
+									</div>
+									<div class="card col col--33" data-max="child">
+										<div class="card__wrap">
+										  <div class="card__image">
+											 <img src="dist/pic/pic_11.jpg" alt="rec-2" width="176" height="150" />
+										 </div>
+										 <div class="card__text">
+											 <div class="card__title">Ортопедическая обувь БЕРН</div>
+											 <div class="card__brand"><span class="title">Бренд</span> <span class="black">Ortmann</span>
+											 </div>
+											 <div class="card__price">4 100 <span class="b-rub">Р</span>
+											 </div>
+											 <div class="card__info">
+												 <p>Отопедические полуботинки для людей с деформацией стопы. Обувь из мягкой
+													 телячьей кожи.</p>
+												 <p>Наличие удобных застёжек "липучек" гарантирует лёгкое надевание обуви
+													 и даёт возможность регулировать объем.</p>
+											 </div>
+										 </div>
+										 <div>
+											 <a class="card__button lnk__black" href="#">В корзину</a>
+										 </div>
+										 <div class="card__line">
+											 <div class="card__circle js-card__info"></div>
+										 </div>
+									   </div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+
+				<section class="product__news clearfix">
+					<div class="inside">
+						<h3 class="product__sub-title">Наши новинки</h3>
+						<div class="product__news-slider js-product__news-slider">
+							<div>
+								<img src="dist/pic/pic_22.jpg" alt="" width="130" height="110">
+								<p>Детская ортопедическая обувь МАЙЯ</p>
+								<p class="price orange">6 200<span class="b-rub">Р</span></p>
+							</div>
+							<div>
+								<img src="dist/pic/pic_23.jpg" alt="" width="130" height="110">
+								<p>Детская ортопедическая обувь Ангел</p>
+								<p class="price orange">6 200<span class="b-rub">Р</span></p>
+							</div>
+							<div>
+								<img src="dist/pic/pic_24.jpg" alt="" width="130" height="110">
+								<p>Ортопедическая обувь КАНАДА 6651</p>
+								<p class="price orange">6 200<span class="b-rub">Р</span></p>
+							</div>
+							<div>
+								<img src="dist/pic/pic_25.jpg" alt="" width="130" height="110">
+								<p>Детская ортопедическая обувь Ангел</p>
+								<p class="price orange">6 200<span class="b-rub">Р</span></p>
+							</div>
+							<div>
+								<img src="dist/pic/pic_23.jpg" alt="" width="130" height="110">
+								<p>Ортопедическая обувь КАНАДА 6651</p>
+								<p class="price orange">6 200<span class="b-rub">Р</span></p>
+							</div>
+							<div>
+								<img src="dist/pic/pic_24.jpg" alt="" width="130" height="110">
+								<p>Ортопедическая обувь КАНАДА 6651</p>
+								<p class="price orange">6 200<span class="b-rub">Р</span></p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<footer class="footer" id="footer">
+			<div class="inside">
+				<div class="footer-col footer-col--1">
+					<h3>О КОМПАНИИ</h3>
+					<ul>
+						<li><a href="#0">Ортолайн </a>
+						</li>
+						<li><a href="#0">Новости </a>
+						</li>
+						<li><a href="#0">Видео </a>
+						</li>
+						<li><a href="#0">Полезная информация </a>
+						</li>
+						<li><a href="#0">Производители </a>
+						</li>
+						<li><a href="#0">Вакансии </a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col footer-col--2">
+					<h3>ЛИЧНЫЙ КАБИНЕТ</h3>
+					<ul>
+						<li><a href="#0">Корзина</a>
+						</li>
+						<li><a href="#0">Личный кабинет</a>
+						</li>
+						<li><a href="#0">Доставка заказа</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col footer-col--3">
+					<h3>Услуги</h3>
+					<ul>
+						<li><a href="#0">Бесплатная консультация ортопеда </a>
+						</li>
+						<li><a href="#0">Индивидуальное изготовление стелек </a>
+						</li>
+						<li><a href="#0">Диагностика стоп </a>
+						</li>
+						<li><a href="#0">Ответы на вопросы	</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col footer-col--4">
+					<h3>ПОЛЕЗНАЯ ИНФОРМАЦИЯ</h3>
+					<ul>
+						<li><a href="#0">Где купить</a>
+						</li>
+						<li><a href="#0">Салоны</a>
+						</li>
+						<li><a href="#0">Видео</a>
+						</li>
+						<li><a href="#0">Статьи</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col footer-col--5">
+					<div class="footer-socs">
+						<div class="likes">
+							<div class="sl">
+								<div class="vkontakte"></div>
+								<div class="twitter"></div>
+								<div class="facebook"></div>
+								<div class="odnoklassniki"></div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-adr">142784, Московская область,
+						<br />Бизнес-Парк «Румянцево»,
+						<br />офис 510А (Киевское шоссе, 500 м от МКАД).</div>
+					<div class="footer-tel">Телефон/факс: <strong>(495) 988-95-05</strong>
+						<br /><a href="mailto:info@orto.su">info@orto.su</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="inside">
+					<div class="footer-left">© 2015. Услуги представляются ООО «Экзотик-Центр»</div>
+					<div class="footer-right">Создание сайта — <a href="http://nikoland.ru" target="_blank">nikoland</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="product__category js-product__category">
+			<div class="product__category-triangle"></div>
+			<ul class="product__category-list">
+				<li class="product__category-item">
+					<a href="#0" class="product__category-lnk"><span class="text">Ортопедическая обувь для взрослых</span></a>
+				</li>
+				<li class="product__category-item">
+					<a href="#0" class="product__category-lnk"><span class="text">Медицинские бандажи</span></a>
+				</li>
+				<li class="product__category-item">
+					<a href="#0" class="product__category-lnk"><span class="text">Ортопедическая обувь для детей</span></a>
+				</li>
+				<li class="product__category-item">
+					<a href="#0" class="product__category-lnk"><span class="text">Будущим мамам</span></a>
+				</li>
+				<li class="product__category-item">
+					<a href="#0" class="product__category-lnk"><span class="text">Реабилитационная (послеоперационная обувь)</span></a>
+				</li>
+				<li class="product__category-item">
+					<a href="#0" class="product__category-lnk"><span class="text">Ортезы для верхних конечностей</span></a>
+				</li>
+				<li class="product__category-item">
+					<a href="#0" class="product__category-lnk"><span class="text">Ортезы для шейного отдела позвоночника</span></a>
+				</li>
+				<li class="product__category-item">
+					<a href="#0" class="product__category-lnk"><span class="text">Ортезы для нижних конечностей</span></a>
+				</li>
+				<li class="product__category-item">
+					<a href="#0" class="product__category-lnk"><span class="text">Корсеты (бандажи) ортопедические грудопоясничные</span></a>
+				</li>
+				<li class="product__category-item">
+					<a href="#0" class="product__category-lnk"><span class="text">Медицинский компрессионный трикотаж</span></a>
+				</li>
+				<li class="product__category-item">
+					<a href="#0" class="product__category-lnk"><span class="text">Корректоры осанки (реклинаторы)</span></a>
+				</li>
+				<li class="product__category-item">
+					<a href="#0" class="product__category-lnk"><span class="text">Товары при диабете</span></a>
+				</li>
+				<li class="product__category-item">
+					<a href="#0" class="product__category-lnk"><span class="text">Бандажи эластичные противорадикулитные</span></a>
+				</li>
+				<li class="product__category-item">
+					<a href="#0" class="product__category-lnk"><span class="text">Бинты эластичные медицинские</span></a>
+				</li>
+				<li class="product__category-item">
+					<a href="#0" class="product__category-lnk"><span class="text">Ортопедические стельки супинаторы для взрослых</span></a>
+				</li>
+			</ul>
+		</div>
+
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript">
+		if (typeof jQuery == 'undefined') {document.write(unescape("%3Cscript src='bower_components/jquery/dist/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+		}
+		</script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+		<script type="text/javascript">
+		if (typeof jQuery == 'undefined') {document.write(unescape("%3Cscript src='bower_components/slick-carousel/slick/slick.min.js' type='text/javascript'%3E%3C/script%3E"));
+		}
+		</script>
+		
+		<script src="dist/js/plugins.min.js"></script>
+		<script src="dist/js/scripts.min.js"></script>
+	</body>
+	<!--body -->    
+
+</html>
