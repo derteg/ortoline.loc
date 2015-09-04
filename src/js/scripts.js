@@ -57,7 +57,9 @@ $(function(){
 		nav = $('#adressNavBtns'),
 		$cont = $('#adressNavCont'),
 		$block = $('> div', $cont),
-		$list = $('.js-adress__list'),
+		$list = $cont.find('.adress__tbl'),
+		$map = $cont.find('.adress__map'),
+		$sheme = $cont.find('.adress__sheme'),
 		$item = $(' > div', $list),
 		resizeId;
 
@@ -165,33 +167,40 @@ $(function(){
 		        });
 			});
 
-			function adressResize(){					
+			function adressResize(){			
 				var wW = $(window).width(),
 					$btn = $('li.current', nav),
 					$type = $btn.data('btn-adress');
 
-
 					if(wW > 1000){
-						$block.css('display', 'inline-block');
-						myMap.container.getElement().style.width = '100%';
-						myMap.container.getElement().style.height = '780px';
-						myMap.container.fitToViewport();
-					} else {
-						$block.css('display', 'none');
-
-						myMap.behaviors.disable('ruler');
-
-						if($type == 'map'){ 
-							$cont.find('.adress__map').css('display', 'block'); 
-
+						$cont.addClass('desktop');
+						if($type == 'list'){
+							$map.css('display', 'inline-block');
 							myMap.container.getElement().style.width = '100%';
 							myMap.container.getElement().style.height = '780px';
 							myMap.container.fitToViewport();
 						}
-
-						if($type == 'list'){ 
-							$cont.find('.adress__tbl').css('display', 'block'); 
+						if($type == 'map'){
+							$('.adress__nav-btn_lists').addClass('current');
+							$('.adress__nav-btn_map').removeClass('current');
+							$list.css('display', 'inline-block');
 						}
+					} else {
+						$cont.removeClass('desktop');
+						$map.css('display', 'none');
+						$sheme.css('display', 'none');
+
+						if($type == 'map'){
+							$map.css('display', 'inline-block');
+						}
+
+						if($type == 'sheme'){
+							$sheme.css('display', 'none');
+							$('.adress__nav-btn_lists').addClass('current');
+							$list.css('display', 'inline-block');
+						}
+
+						myMap.behaviors.disable('ruler');
 					}
 			}
 
@@ -199,18 +208,36 @@ $(function(){
 				var $btn = $(this),
 					$type = $btn.data('btn-adress');
 
+
 					$('li', nav).removeClass('current');
 					$btn.addClass('current');
 
 					$block.css('display', 'none');
 
 					if($type == 'map'){ 
-						$cont.find('.adress__map').css('display', 'block');
+						$map.css('display', 'inline-block');
 
 						myMap.container.getElement().style.width = '100%';
 						myMap.container.getElement().style.height = '780px';
+						myMap.container.fitToViewport();
 					}
-					if($type == 'list'){ $cont.find('.adress__tbl').css('display', 'block'); }
+
+					if($type == 'list'){ 
+						$list.css('display', 'inline-block');
+						if($cont.hasClass('desktop')){
+							$map.css('display', 'inline-block');
+
+							myMap.container.getElement().style.width = '100%';
+							myMap.container.getElement().style.height = '780px';
+							myMap.container.fitToViewport();
+						}
+					}
+
+					if($type == 'sheme'){
+						$map.css('display', 'none');
+						$list.css('display', 'none');
+						$sheme.css('display', 'block');
+					}
 			}
 
 			$(window).resize(function() {
