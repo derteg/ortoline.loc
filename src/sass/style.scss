@@ -51,6 +51,8 @@ $sprite02: url('../ico/sprite_02.png');
 @import "gui/accordion";
 @import "gui/popup";
 @import "gui/form";
+@import "gui/animate";
+
 
 @import "header";
 @import "footer";
@@ -75,6 +77,7 @@ $sprite02: url('../ico/sprite_02.png');
 @import "product/product";
 @import "product/slider";
 @import "product/catalogue";
+@import "product/product__filter";
 
 @import "salons/salons_1";
 @import "salons/salons_list2";
