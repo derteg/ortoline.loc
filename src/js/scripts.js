@@ -4,11 +4,10 @@ $(window).load(function(){
 	heightsToMax();
 });
 
-onElementHeightChange(document.body, function(){
-	$(window).trigger('resize');
-});
-
 $(function(){
+	onElementHeightChange(document.body, function(){
+		$(window).trigger('resize');
+	});
 	// if($('#adressMap').length){
 	// 	adressMapGlobal();
 	// }
@@ -869,6 +868,11 @@ function onElementHeightChange(elm, callback){
 				});
 			}
 
+			if(type == 'popup'){
+                $('#'+$(this).data("popup-id")).bPopup({
+                    opacity: 0.2
+                });
+            }
 			if(type == 'callback'){
 				$('#callbackPopup').bPopup({
 					opacity: 0.2
