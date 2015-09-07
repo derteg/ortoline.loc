@@ -1,3 +1,12 @@
+.catalogue__cont{
+	margin: 0px -10px;
+	font-size: 0;
+	line-height: 0;
+	padding-bottom: 15px;
+	.col{
+		margin-left: 0;
+	}
+}
 .catalogue__col{	
 	height: 336px;
 	margin-bottom: 28px;
@@ -22,8 +31,6 @@
 		}
 	}
 	.title{
-		background-color: $blue;
-		color: $white;
 		text-transform: uppercase;
 		padding: 30px 20px;
 		position: absolute;
@@ -31,11 +38,19 @@
 		width: 100%;
 		min-height: 100px;
 		line-height: 40px;
+		color: $white;
+		background-color: $blue;
 		box-sizing: border-box;
+		@include transition(background-color .25s);
 		span{
 			vertical-align: middle;
 			line-height: 20px;
 			display: inline-block;
+		}
+	}
+	&:hover{
+		.title{
+			background-color: $orange;
 		}
 	}
 }

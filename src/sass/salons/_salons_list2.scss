@@ -3,6 +3,60 @@
 }
 .adress__sheme{
 	display: none;
+	text-align: center;
+	background: url('../pic/pic_71.gif') no-repeat top center;
+	width: 1140px;
+	height: 1164px;
+	margin: 0 auto;
+	position: relative;
+}
+.adress__sheme-mark{
+	position: absolute;
+	display: inline-block;
+	width: 32px;
+	height: 44px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	&.yellow{
+		background-image: url('../img/ico_07.png');
+	}
+	&.blue{
+		background-image: url('../img/ico_08.png');
+	}
+	.link{
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+	}
+	.info{
+		position: absolute;
+		top: 0;
+		left: 40px;
+		padding: 15px;
+		width: 150px;
+		border-radius: 5px;
+		display: none;
+		font-size: 13px;
+		line-height: 18px;
+		text-align: left;
+		color: $white;
+		background-color: $blue;
+		z-index: 100;
+	}
+	&:hover{
+		.info{
+			display: inline-block;
+			p{
+				margin-top: 14px;
+				&:first-child{
+					margin-top: 0;
+				}
+			}
+			em{
+				font-style: italic;
+			}
+		}
+	}
 }
 .adress__map{
 	display: inline-block;
