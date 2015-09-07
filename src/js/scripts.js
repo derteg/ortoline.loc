@@ -778,8 +778,9 @@ function onElementHeightChange(elm, callback){
 	var $categoryBtn = $('.js-catalogue__menu'),
 		$categoryBlock = $('.js-product__category');
 
-		$categoryBtn.click(function(event){
-			event.preventDefault();
+		$categoryBtn.click(dropdownSettingsClick);
+
+		function dropdownSettingsClick(){
 			var that = $(this),
 				posT = that.offset().top,
 				posL = that.offset().left,
@@ -795,6 +796,7 @@ function onElementHeightChange(elm, callback){
 						'z-index': 1000,
 						'margin-left': 0
 					})
+					.addClass('dropdown_fixed')
 					.find('.product__category-triangle')
 					.css({
 						'left': '20px'
@@ -807,6 +809,7 @@ function onElementHeightChange(elm, callback){
 						'zIndex': 1000,
 						'margin-left': 0
 					})
+					.removeClass('dropdown_fixed')
 					.find('.product__category-triangle')
 					.css({
 						'left': '20px'
@@ -817,17 +820,28 @@ function onElementHeightChange(elm, callback){
 							'left': '100%',
 							'margin-left': -($(window).width() - $categoryBlock.width() + 100)
 						})
+						.removeClass('dropdown_fixed')
 						.find('.product__category-triangle')
 						.css({
 							'left': '50%'
 						});
 					}
 				} 
-		});
+
+				return false;
+		}
 
 		$(window).resize(function(){
 			$categoryBlock.hide();
 		});
+
+		$(window).scroll(dropdownSettingsScroll);
+
+		function dropdownSettingsScroll(){
+			if($('.header_fix').length === 0){
+				$categoryBlock.removeClass('dropdown_fixed').hide();
+			}
+		}
 }());
 
 (function($) {
