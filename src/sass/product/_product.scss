@@ -33,27 +33,33 @@
 	border-radius: 8px;
 	padding: 34px;
 	margin-bottom: 10px;
+	.product__sizes-list{
+	    width: 70%;
+	}
 }
 .product__sizes-list{
-	width: 70%;
+	width: 100%;
 	margin-bottom: 12px;
 }
 .product__sizes-item{
 	display: inline-block;
 	cursor: pointer;
-	width: 28px;
-	height: 28px;
+	width: 30px;
+	height: 30px;
 	margin-left: 4px;
+	font-size: 12px;
 	margin-bottom: 16px;
-	border: 1px solid $gray;
-	border-radius: 15px;
+	color: #b2b2b2;
+	border: 1px solid #a9a9a9;
+	border-radius: 16px;
 	text-align: center;
-	line-height: 28px;
+	line-height: 32px;
 	vertical-align: middle;
 }
 .product__sizes-item:hover,
 .product__sizes-item.current{
-	border: $brdLnk3;
+	color: #000;
+	border: 1px solid #000;
 }
 .product__sizes-item.current{
 	cursor: default;
