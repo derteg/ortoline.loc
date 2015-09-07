@@ -407,7 +407,7 @@ h3 {
   max-width: 1200px; }
 
 .bg_01 {
-  background-color: #f6f6f6; }
+  background-color: #f4f1ec; }
 
 .button {
   display: inline-block;
@@ -787,6 +787,11 @@ h3 {
 
 .aside-filter__item {
   margin-bottom: 28px; }
+
+.aside-filter__lnk {
+  color: #7f7f7f;
+  font-size: 13px;
+  font-family: "helveticaneuecyrroman", Verdana, Arial, sans-serif; }
 
 .breadcrumbs {
   padding-top: 42px;
@@ -1271,6 +1276,11 @@ h3 {
     color: #2c2c2c; }
     .aside__accordion__section__content .accordion__lnk-list__lnk:hover {
       color: #282828; }
+  .aside__accordion__section__content .product__sizes-list {
+    width: auto;
+    margin: 0px -10px 0 -12px; }
+  .aside__accordion__section__content .product__sizes-item {
+    margin-left: 6px; }
 
 .form__popup {
   background-color: #fff;
@@ -1785,7 +1795,7 @@ h3 {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 1100;
   -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
@@ -3032,7 +3042,7 @@ h3 {
 
 .usfl {
   position: relative;
-  background: #f6f6f6;
+  background: #f4f1ec;
   overflow: hidden;
   padding-bottom: 35px;
   padding-top: 40px; }
@@ -3613,27 +3623,32 @@ h3 {
   border-radius: 8px;
   padding: 34px;
   margin-bottom: 10px; }
+  .product__settings .product__sizes-list {
+    width: 70%; }
 
 .product__sizes-list {
-  width: 70%;
+  width: 100%;
   margin-bottom: 12px; }
 
 .product__sizes-item {
   display: inline-block;
   cursor: pointer;
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   margin-left: 4px;
+  font-size: 12px;
   margin-bottom: 16px;
-  border: 1px solid #8797a8;
-  border-radius: 15px;
+  color: #b2b2b2;
+  border: 1px solid #a9a9a9;
+  border-radius: 16px;
   text-align: center;
-  line-height: 28px;
+  line-height: 32px;
   vertical-align: middle; }
 
 .product__sizes-item:hover,
 .product__sizes-item.current {
-  border: 1px solid #282828; }
+  color: #000;
+  border: 1px solid #000; }
 
 .product__sizes-item.current {
   cursor: default; }
@@ -5896,7 +5911,7 @@ p.services__info {
   .header_fix .mainmenu {
     z-index: 1000;
     opacity: 1;
-    padding: 20px 0;
+    padding: 10px 0;
     bottom: 0;
     position: relative; }
   .promoslider__cont .inside {

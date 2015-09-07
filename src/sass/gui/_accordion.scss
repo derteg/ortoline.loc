@@ -49,7 +49,6 @@
             margin-top: 0;
         }
     }
-
     .accordion__lnk-list{
         padding: 0px 10px;
     }
@@ -67,5 +66,12 @@
         &:hover{
             color: $dark;
         }
+    }
+    .product__sizes-list{
+        width: auto;
+        margin: 0px -10px 0 -12px;
+    }
+    .product__sizes-item{
+        margin-left: 6px;   
     }
 }

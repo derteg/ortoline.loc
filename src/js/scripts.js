@@ -50,6 +50,20 @@ $(function(){
 	$('#faqAccordMob').faqAccordMob();
 });
 
+(function sizesList(){
+	var $sizeList = $('.js-product__sizes-list'),
+		$colorList = $('.js-product__color');
+
+	$sizeList.on('click', '> li', tooglerCurrent);
+	$colorList.on('click', '> span', tooglerCurrent);
+
+	function tooglerCurrent(){
+		var that = $(this);
+
+		that.toggleClass('current');
+	}
+}());
+
 (function($){
 	var myMap,
 		myPlacemark,
@@ -784,7 +798,8 @@ function onElementHeightChange(elm, callback){
 			var that = $(this),
 				posT = that.offset().top,
 				posL = that.offset().left,
-				height = that.innerHeight();
+				height = that.innerHeight(),
+				wW = $(window).innerWidth();
 
 				$categoryBlock.slideToggle();
 
@@ -793,13 +808,13 @@ function onElementHeightChange(elm, callback){
 						'position': 'fixed',
 						'top': $(this).parents('.header_fix').innerHeight() ,
 						'left': posL,
-						'z-index': 1000,
+						'z-index': 1200,
 						'margin-left': 0
 					})
 					.addClass('dropdown_fixed')
 					.find('.product__category-triangle')
 					.css({
-						'left': '20px'
+						'left': '30px'
 					});
 				} else {
 					$categoryBlock.css({
@@ -812,19 +827,32 @@ function onElementHeightChange(elm, callback){
 					.removeClass('dropdown_fixed')
 					.find('.product__category-triangle')
 					.css({
-						'left': '20px'
+						'left': '30px'
 					});
 
 					if($categoryBlock.position().left + $categoryBlock.width() > $(window).width()){
 						$categoryBlock.css({
-							'left': '100%',
-							'margin-left': -($(window).width() - $categoryBlock.width() + 100)
+							'left': 'auto',
+							'right': '30px'
 						})
-						.removeClass('dropdown_fixed')
-						.find('.product__category-triangle')
-						.css({
-							'left': '50%'
-						});
+						.removeClass('dropdown_fixed');
+
+						if(wW < 768){
+							$categoryBlock
+							.find('.product__category-triangle')
+							.css({
+								'left': 'auto',
+								'margin-left': '0',
+								'right': '60px'
+							});
+						} else {
+							$categoryBlock
+							.find('.product__category-triangle')
+							.css({
+								'left': '50%',
+								'margin-left': '-14px'
+							});
+						}
 					}
 				} 
 
@@ -838,8 +866,10 @@ function onElementHeightChange(elm, callback){
 		$(window).scroll(dropdownSettingsScroll);
 
 		function dropdownSettingsScroll(){
-			if($('.header_fix').length === 0){
-				$categoryBlock.removeClass('dropdown_fixed').hide();
+			var headerFixH = $('.header_fix').height();
+
+			if($('.header_fix').length === 0 && $('.dropdown_fixed').length){
+				$categoryBlock.add('.dropdown_fixed').removeClass('dropdown_fixed').hide();
 			}
 		}
 }());

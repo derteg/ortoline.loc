@@ -13,16 +13,7 @@ $orange: #f3a942;
 $orangeHov: #FAB24E; 
 $red: #ea1c1c;
 
-@import "gui/fonts.scss";
-
-$openSans: 'Open Sans',sans-serif;
-$PFDinDisplayPro:'PFDinDisplayPro',Verdana,sans-serif;
-$HelveticaNeue: 'helveticaneuecyrroman',Verdana,Arial,sans-serif;
-$HelveticaNeueBold: 'helveticaneuecyrbold',Verdana,Arial,sans-serif;
-$HelveticaNeueLight: 'helveticaneuecyrlight',Verdana,Arial,sans-serif;
-
-
-$bg01: #f6f6f6;
+$bg01: #f4f1ec;
 
 $brdLnk1: 1px solid $blue;
 $brdLnk2: 1px solid $orange;
@@ -32,7 +23,13 @@ $brdLnk5: 1px solid $grayBrd;
 $brdLnkHov5: 1px solid $grayHov2;
 
 
+@import "gui/fonts.scss";
 
+$openSans: 'Open Sans',sans-serif;
+$PFDinDisplayPro:'PFDinDisplayPro',Verdana,sans-serif;
+$HelveticaNeue: 'helveticaneuecyrroman',Verdana,Arial,sans-serif;
+$HelveticaNeueBold: 'helveticaneuecyrbold',Verdana,Arial,sans-serif;
+$HelveticaNeueLight: 'helveticaneuecyrlight',Verdana,Arial,sans-serif;
 
 $sprite: url('../ico/sprite_01.png');
 $sprite02: url('../ico/sprite_02.png');
