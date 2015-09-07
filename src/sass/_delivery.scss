@@ -1,3 +1,33 @@
+.delivery{
+	textarea{
+		height: 178px;
+	}
+	.radio-cust__label{
+		.ico{
+			float: left;
+		}
+		strong,
+		.text{
+			margin-left: 40px;
+			display: block;
+			line-height: 22px;
+		}
+		strong{
+			font-weight: bold;
+			font-size: 16px;
+		}
+		.text{
+			font-size: 14px;
+		}
+	}
+	.center{
+		text-align: center;
+	}
+}
+.delivery_row{
+	padding: 78px 0;
+}
+
 .delivery__ico{
 	.ico{
 		float: left;

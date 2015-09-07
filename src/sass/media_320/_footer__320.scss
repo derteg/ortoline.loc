@@ -1,5 +1,6 @@
 .footer{
 	height: 310px;
+	position: relative;
 }
 .footer-col--1,
 .footer-col--2,
@@ -32,6 +33,9 @@
 	position: relative;
 	text-align: center;
 	padding: 20px 0;
+	.inside{
+		height: auto;
+	}
 }
 .footer-left{
 	position: relative;
@@ -46,6 +50,8 @@
 	width: 100%;
 	position: relative;
 	height: auto;
+	right: auto;
+	text-align: center;
 	a{
 		letter-spacing: 0.5px;
 	}

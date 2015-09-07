@@ -52,6 +52,8 @@
 	// margin: 0px -10px 0px -10px;
 	.field__row{
 		padding: 0px 10px;
+		margin-bottom: 40px;
+		margin-top: -70px;
 	}
 	input.capcha-inp{
 		height: 94px;
@@ -68,7 +70,7 @@
 }
 
 .form__register{
-	margin-bottom: 30px;
+	margin: 0 -10px 30px -6px;
 	.b-capcha{
 		margin-bottom: 22px;
 	}
