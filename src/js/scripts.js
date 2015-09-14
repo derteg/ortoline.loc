@@ -557,15 +557,8 @@ function heightsToMax() {
 		$children.removeAttr('style').each(function(){
 			var $t = $(this);
 			if ($t.height() > max) {max = $t.height();}
-			$t.attr('data-index', j);
-			++i;
-			
-			if (i == inrow) {
-				$this.find('[data-max="child"][data-index="'+j+'"]').height(max);
-				++j;
-				i = 0;
-				max = 0;
-			}
+
+			$this.find('[data-max="child"]').height(max);
 		});
 		
 	});
