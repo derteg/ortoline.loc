@@ -64,17 +64,21 @@ $(function(){
 	}
 }());
 
-(function($){
+$(function(){
 	var myMap,
 		myPlacemark,
 		nav = $('#adressNavBtns'),
+		$select = $('.js-select'),
+		$selectLi = $select.parent().find('.options li'),
 		$cont = $('#adressNavCont'),
 		$block = $('> div', $cont),
 		$list = $cont.find('.adress__tbl'),
 		$map = $cont.find('.adress__map'),
 		$sheme = $cont.find('.adress__sheme'),
 		$item = $(' > div', $list),
-		resizeId;
+		resizeId,
+		coordsBlue = [],
+		coordsYellow = [];
 
 	if($("#adressMap").length) adressMapGlobal();
 
@@ -95,90 +99,95 @@ $(function(){
 				suppressMapOpenBlock: true
 			});
 
-			//загружаем adress_global.json с помощью jQuery
-			jQuery.getJSON('data/adress_global.json', function(json) {
-				
-				window.storageMapObj = ymaps.geoQuery(json);
-
-				//в json файле есть массив features с геообъектами, обходим его
-				jQuery.each(json.features,function(i, feature) {
-
-					var officeColor = feature.properties.color;
-
-					//добавляем на карту объект с координатами
-					pointsCollection = myMap.geoObjects.add(new ymaps.Placemark(feature.geometry.coordinates, {
-						balloonContent: 'метро: ' + feature.properties.metro + '<br/>' + feature.properties.office
-					}, {
-						iconLayout: 'default#image',
-						iconImageHref: officeColor,
-						iconImageSize: [32, 44],
-						iconImageOffset: [0, 0]
-			        }));
-				});
-
-		        function selectGetCoord(){
-		        	var shownObjects,
-		        		byMetro = new ymaps.GeoQueryResult(),
-		        		icon,
-		        		$selectCurrentMetro = $(this).text();
-		        		$selectCurrentColor = $(this).data('select-color');
-
-		        		if($selectCurrentColor == 'blue'){
-		        			icon = 'dist/img/ico_08.png';
-		        		} else {
-		        			icon = 'dist/img/ico_07.png';
-		        		}
-		        		
-		        		if($selectCurrentMetro !== 'Все станции метро'){
-		        			byMetro = storageMapObj.search('properties.metro = "' + $selectCurrentMetro.toLowerCase() + '"');
-
-		        			
-			        		byMetro.setOptions({
-		        				iconLayout: 'default#image',
-		        				iconImageHref: icon,
-		        				iconImageSize: [32, 44],
-		        				iconImageOffset: [0, 0]
-		        			}).setProperties({
-		        				balloonContent: 'метро: '
-		        			});
-
-			        		pointsCollection.removeAll();
-			        		byMetro.addToMap(myMap);
-		        		} else {
-		        			pointsCollection.removeAll();
-
-		        			jQuery.each(json.features,function(i, feature) {
-		        				var officeColor = feature.properties.color;
-
-			        			pointsCollection = myMap.geoObjects.add(new ymaps.Placemark(feature.geometry.coordinates, {
-									balloonContent: 'метро: ' + feature.properties.metro + '<br/>' + feature.properties.office
-								}, {
-									iconLayout: 'default#image',
-									iconImageHref: officeColor,
-									iconImageSize: [32, 44],
-									iconImageOffset: [0, 0]
-						        }));
-						    });
-		        		}
-
-
-		        		// $list
-		        		// 	.find('> div')
-		        		// 	.removeClass('active')
-		        		// .end()
-		        		// 	.find('[data-marker-metro="' + $selectCurrentMetro + '"]')
-		        		// 	.addClass('active');
-
-		        }
-
-		        $selectItem.click(selectGetCoord);
-
-		        $list.find('> div').on('mouseenter', function(event){
-		        	$(this).addClass('active');		        	
-		        }).on('mouseleave', function(){
-		        	$(this).removeClass('active');
-		        });
+			var myCollectionBlue = new ymaps.GeoObjectCollection({}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'dist/img/ico_08.png',
+				iconImageSize: [32, 44],
+				iconImageOffset: [0, 0]
 			});
+
+			var myCollectionYellow = new ymaps.GeoObjectCollection({}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'dist/img/ico_07.png',
+				iconImageSize: [32, 44],
+				iconImageOffset: [0, 0]
+			});
+ 
+			$list.find('.adress__tbl-row').filter('[data-salons-marker="blue"]').map(function(){
+				var dataLat = $(this).attr('data-salons-lat'),
+					dataLong = $(this).attr('data-salons-long'),
+					myArr = [];
+
+					myArr.push(+dataLat, +dataLong);
+
+				coordsBlue.push(myArr);
+			});
+
+
+			$list.find('.adress__tbl-row').filter('[data-salons-marker="yellow"]').map(function(){
+				var dataLat = $(this).attr('data-salons-lat'),
+					dataLong = $(this).attr('data-salons-long'),
+					myArr = [];
+
+					myArr.push(+dataLat, +dataLong);
+
+				coordsYellow.push(myArr);
+			});
+
+
+			for(var i = 0; i < coordsBlue.length; i++){
+				myCollectionBlue.add(new ymaps.Placemark(coordsBlue[i]));
+			}
+
+			myMap.geoObjects.add(myCollectionBlue);
+
+			for(var j = 0; j < coordsYellow.length; j++){
+				myCollectionYellow.add(new ymaps.Placemark(coordsYellow[j]));
+			}
+
+			myMap.geoObjects.add(myCollectionYellow);
+
+			
+			function selectNav(){
+				var that = $(this),
+					thatID = that.attr('data-salon-id'),
+					currentItem = $list.find('.adress__tbl-row[data-salons-id="' + thatID + '"]'),
+					dataLat = currentItem.attr('data-salons-lat'),
+					dataLong = currentItem.attr('data-salons-long'),
+					dataColor = currentItem.attr('data-salons-marker'),
+					myArr = [];
+
+				myCollectionBlue.removeAll();
+				myCollectionYellow.removeAll();
+
+				$list
+					.find('.adress__tbl-row')
+					.css('display', 'block')
+					.filter(':not([data-salons-id="' + thatID + '"])')
+					.css('display', 'none');
+
+				if(dataColor === "blue"){
+					myCollectionBlue.add(new ymaps.Placemark([+dataLat, +dataLong]));
+					myMap.geoObjects.add(myCollectionBlue);
+				} else if(dataColor === "yellow"){
+					myCollectionYellow.add(new ymaps.Placemark([+dataLat, +dataLong]));
+					myMap.geoObjects.add(myCollectionYellow);
+				} else {
+					for(var i = 0; i < coordsBlue.length; i++){
+						myCollectionBlue.add(new ymaps.Placemark(coordsBlue[i]));
+					}
+
+					myMap.geoObjects.add(myCollectionBlue);
+
+					for(var j = 0; j < coordsYellow.length; j++){
+						myCollectionYellow.add(new ymaps.Placemark(coordsYellow[j]));
+					}
+
+					myMap.geoObjects.add(myCollectionYellow);
+
+					$list.find('.adress__tbl-row').css('display', 'block');
+				}
+			}
 
 			function adressResize(){			
 				var wW = $(window).width(),
@@ -259,9 +268,10 @@ $(function(){
 			});
 
 			nav.on('click', 'li:not(.current)', adressBtnSetCurrent);
+			$selectLi.click(selectNav);
 		}
 	}
-})(jQuery);
+});
 
 (function($){
 	$.fn.adressInnerMap = function(){
@@ -362,8 +372,7 @@ $(function(){
 				$('<li />', {
 					text: $this.children('option').eq(i).text(),
 					'class': $this.children('option').eq(i).val(),
-					'data-select-metro': $this.children('option').eq(i).attr('data-select-metro'),
-					'data-select-color': $this.children('option').eq(i).attr('data-select-color')
+					'data-salon-id': $this.children('option').eq(i).attr('id')
 				}).appendTo($list);
 			}
 			
@@ -749,8 +758,8 @@ function onElementHeightChange(elm, callback){
 			callback();
 		lastHeight = newHeight;
 
-        if( elm.onElementHeightChangeTimer )
-          clearTimeout(elm.onElementHeightChangeTimer);
+		if( elm.onElementHeightChangeTimer )
+		  clearTimeout(elm.onElementHeightChangeTimer);
 
 		elm.onElementHeightChangeTimer = setTimeout(run, 0);
 	})();
@@ -979,10 +988,10 @@ function onElementHeightChange(elm, callback){
 			}
 
 			if(type == 'popup'){
-                $('#'+$(this).data("popup-id")).bPopup({
-                    opacity: 0.2
-                });
-            }
+				$('#'+$(this).data("popup-id")).bPopup({
+					opacity: 0.2
+				});
+			}
 			if(type == 'callback'){
 				$('#callbackPopup').bPopup({
 					opacity: 0.2
@@ -1206,8 +1215,8 @@ function onElementHeightChange(elm, callback){
 		$(window).load(doneResizing);
 
 		$(window).resize(function() {
-		    clearTimeout(resizeId);
-		    resizeId = setTimeout(doneResizing, 500);
+			clearTimeout(resizeId);
+			resizeId = setTimeout(doneResizing, 500);
 		});
 		 
 		function doneResizing(){
