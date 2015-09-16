@@ -22,4 +22,4 @@ prod:
  tasks:
   - 'concurrent:prodFirst'
   - 'concurrent:prodSecond'
-  - img'
+  - img
