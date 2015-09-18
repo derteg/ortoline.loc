@@ -1,6 +1,7 @@
-$(window).load(function(){
-	heightsToMax();	
-}).resize(function(){
+$(function(){
+	heightsToMax();
+});
+$(window).resize(function(){
 	heightsToMax();
 });
 
@@ -550,20 +551,19 @@ function heightsToMax() {
 	
 	$('[data-max="parent"]').each(function(){
 		var $this = $(this),
-				$children = $this.find('[data-max="child"]'),
-				inrow = parseInt($this.attr('data-inrow')) || $children.size(),
-				max = 0, i = 0, j = 0;
+			$children = $this.find('[data-max="child"]'),
+			maxHeight = 0;
 		
-		$children.removeAttr('style').each(function(){
-			var $t = $(this);
-			if ($t.height() > max) {max = $t.height();}
+		$children.each(function(){
+			var $that = $(this);
+			if ($that.height() > maxHeight) {maxHeight = $that.height();}
 
-			$this.find('[data-max="child"]').height(max);
 		});
 		
+		$children.height(maxHeight);
 	});
 	
-}
+} 
 
 
 (function($){
