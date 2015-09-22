@@ -170,6 +170,15 @@ h3.product__sub-title{
 
 .product-catalogue{
 	width: 100%;
+	.card{
+		&.col--33{
+			width: 50%;
+		}
+		.card__image img{
+			width: 100%;
+			max-width: 180px; 
+		}
+	}
 	.search__menu{
 		position: absolute;
 		top: 20px;
